@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nǐ hǎo – Học tiếng Trung từ số 0</title>
+  <meta name="description" content="Web tự học tiếng Trung cho người Việt từ con số 0 đến HSK 4: Pinyin, thanh điệu, bộ thủ, 1.200 từ HSK 1–4 trong 84 bài học, ôn tập ngắt quãng, luyện viết và luyện nói.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23c0392b'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif'>你</text></svg>">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <a href="#/" class="brand"><span class="brand-logo">你</span><span class="brand-name">Nǐ hǎo</span></a>
+      <nav class="nav" id="nav">
+        <a href="#/" data-route="/">Trang chủ</a>
+        <a href="#/roadmap" data-route="/roadmap">Lộ trình</a>
+        <a href="#/pinyin" data-route="/pinyin">Pinyin</a>
+        <a href="#/radicals" data-route="/radicals">Bộ thủ</a>
+        <a href="#/lessons" data-route="/lessons">Bài học</a>
+        <a href="#/read" data-route="/read">Đọc</a>
+        <a href="#/review" data-route="/review" class="nav-review">Ôn tập <span class="badge" id="due-badge">0</span></a>
+        <a href="#/write" data-route="/write">Luyện viết</a>
+        <a href="#/speak" data-route="/speak">Luyện nói</a>
+        <a href="#/dictionary" data-route="/dictionary">Từ điển</a>
+        <a href="#/settings" data-route="/settings">Cài đặt</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" title="Đổi giao diện sáng/tối">◐</button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+    </header>
+    <main id="view" class="view"></main>
+    <footer class="footer">
+      <span>Nǐ hǎo · Từ vựng theo chuẩn HSK 1–4 · Nét chữ bởi <a href="https://hanziwriter.org" target="_blank" rel="noopener">Hanzi Writer</a></span>
+    </footer>
+  </div>
+  <div id="toast" class="toast"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.7.0/dist/hanzi-writer.min.js"></script>
+  <script src="js/data/pinyin.js"></script>
+  <script src="js/data/radicals.js"></script>
+  <script src="js/data/vocab.js"></script>
+  <script src="js/data/lessons.js"></script>
+  <script src="js/data/hsk3-a.js"></script>
+  <script src="js/data/hsk3-b.js"></script>
+  <script src="js/data/hsk4-a.js"></script>
+  <script src="js/data/hsk4-b.js"></script>
+  <script src="js/data/hsk4-c.js"></script>
+  <script src="js/data/hsk4-d.js"></script>
+  <script>window.READINGS = window.READINGS || [];</script>
+  <script src="js/data/readings-1.js"></script>
+  <script src="js/data/readings-3.js"></script>
+  <script src="js/data/readings-4.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/srs.js"></script>
+  <script src="js/tts.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
