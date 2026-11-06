@@ -21,6 +21,7 @@
       case "read": r = parts[1] ? Views.reading(parts[1]) : Views.readList(); break;
       case "speak": r = Views.speak(); break;
       case "dictionary": r = Views.dictionary(); break;
+      case "exam": r = Views.exam(parts[1]); break;
       case "settings": r = Views.settings(); break;
       default: r = { html: `<div class="card center"><h2>Không tìm thấy trang</h2><a class="btn btn-primary" href="#/">Về trang chủ</a></div>` };
     }

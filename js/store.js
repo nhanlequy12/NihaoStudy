@@ -11,6 +11,7 @@
     cards: {},           // id -> { ef, interval, reps, due, lapses }  (bộ thẻ nhận biết)
     writeCards: {},      // id -> cùng cấu trúc  (bộ thẻ viết tay)
     readings: {},        // id bài đọc -> { done: true, score }
+    exams: [],           // lịch sử thi thử: { date, level, total, max, pass, sections, minutes }
     log: {},             // date -> { reviews, newWords, lessons, xp }
     routine: {},         // date -> { review: true, lesson: true, ... }
     toneDrill: { total: 0, correct: 0 },

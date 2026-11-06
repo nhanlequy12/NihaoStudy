@@ -741,5 +741,7 @@ window.RESOURCES = [
   { name: "Du Chinese", url: "https://www.duchinese.net", vi: "Bài đọc ngắn theo cấp độ từ HSK 1, có audio và dịch từng từ." },
   { name: "Chinese Zero to Hero (YouTube)", url: "https://www.youtube.com/@ChineseZeroToHero", vi: "Giảng HSK 1 từng bài, miễn phí." },
   { name: "Mandarin Corner (YouTube)", url: "https://www.youtube.com/@MandarinCorner", vi: "Video nghe thật, chậm, có phụ đề pinyin." },
+  { name: "Chinese Testing International", url: "https://www.chinesetest.cn/HSK", vi: "Trang chính thức của kỳ thi HSK: cấu trúc đề, đề mẫu kèm audio từng cấp. Luyện xong Thi thử trên web thì làm đề thật ở đây." },
+  { name: "Mandarin Bean – HSK test online", url: "https://mandarinbean.com/hsk-chinese-test-online/", vi: "Làm đề mẫu HSK 1–6 trực tuyến có audio, chấm ngay." },
   { name: "Anki", url: "https://apps.ankiweb.net", vi: "Nếu muốn ôn trên điện thoại, xuất tiến độ từ web này rồi nhập vào Anki." },
 ];

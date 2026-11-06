@@ -349,3 +349,24 @@ select, input[type="number"] { padding: 8px 10px; border: 1px solid var(--border
 .checklist input { width: 18px; height: 18px; accent-color: var(--primary); }
 .checklist label.done { color: var(--muted); text-decoration: line-through; }
 .checklist label:last-child { border-bottom: none; }
+
+/* ---- Thi thử HSK ---- */
+.timer { font-variant-numeric: tabular-nums; font-weight: 700; font-size: 1.25rem; padding: 4px 12px; border-radius: 8px; background: var(--surface-2); }
+.timer.danger { background: var(--primary); color: #fff; }
+.qnav { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+.qnav button { width: 32px; height: 28px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--muted); font-size: 0.78rem; cursor: pointer; }
+.qnav button.done { background: var(--blue-soft); color: var(--text); border-color: transparent; }
+.qnav button.cur { outline: 2px solid var(--primary); color: var(--text); }
+.exam-body { min-height: 220px; }
+.exam-stem { text-align: center; font-size: 1.5rem; margin: 10px 0 16px; line-height: 1.6; }
+.exam-stem.zh { font-family: var(--font-zh); font-size: 1.7rem; }
+.passage { padding: 14px 18px; border-radius: 10px; background: var(--surface-2); font-size: 1.15rem; line-height: 1.9; margin-bottom: 14px; }
+.pool-box { padding: 12px 16px; border-radius: 10px; border: 1px dashed var(--border); margin-bottom: 14px; line-height: 1.8; }
+.pool-box .zh { font-size: 1.1rem; }
+.options.one-col { grid-template-columns: 1fr; }
+.options.tf-btns { grid-template-columns: 1fr 1fr; max-width: 420px; margin: 0 auto; }
+.options.pool-letters { grid-template-columns: repeat(6, 1fr); max-width: 480px; margin: 0 auto; }
+.option.sel { border-color: var(--primary); background: var(--primary-soft); }
+.sentence.wrong { border-left: 4px solid var(--primary); }
+.pill.red { background: var(--primary-soft); color: var(--primary); }
+@media (max-width: 640px) { .options.pool-letters { grid-template-columns: repeat(3, 1fr); } }

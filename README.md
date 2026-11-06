@@ -56,6 +56,7 @@ Nguyên tắc rút ra từ research:
 - Luyện viết kiểu Skritter: **bộ thẻ viết tay riêng** (SM-2) cho cả từ nhiều chữ, viết từ trí nhớ không có khung, máy đếm nét sai và gợi ý mức chấm; dùng gợi ý thì tối đa Khó, xem đáp án thì Quên. Tab Luyện từng chữ giữ hoạt hình nét và tự viết.
 - Bài đọc ngắn: 17 đoạn văn 80–150 chữ sau mỗi 5 bài, chỉ dùng từ đã học; bấm từng từ hiện nghĩa và thêm vào thẻ, nghe cả đoạn, bật/tắt pinyin và bản dịch, 3 câu hỏi hiểu bài.
 - Luyện nói: shadowing câu mẫu, nhận dạng giọng nói so khớp theo phần trăm.
+- Thi thử HSK 1–4: đề sinh ngẫu nhiên từ kho từ/câu/hội thoại/bài đọc theo đúng cấu trúc đề chính thức (số phần, số câu, thời gian từng phần, số lần phát audio, thang điểm 200/300 và mốc đậu 120/180). Các phần nhìn tranh thay bằng nghĩa tiếng Việt, phần nghe dùng giọng trình duyệt. Có đồng hồ tự nộp, kết quả theo từng phần, xem lại từng câu, lịch sử thi và liên kết tới đề thật (chinesetest.cn, Mandarin Bean, Mandarin Temple, YouTube).
 - Từ điển HSK 1–4: tra theo chữ, pinyin có/không dấu, Hán Việt, tiếng Việt, lọc theo cấp; thêm thẳng vào bộ thẻ.
 - Cài đặt: chọn giọng đọc, tốc độ, giao diện sáng/tối, xuất/nhập tiến độ JSON.
 
@@ -75,6 +76,8 @@ js/store.js         lưu tiến độ (localStorage)
 js/srs.js           thuật toán SM-2 (bộ thẻ nhận biết SRS và bộ thẻ viết WSRS)
 js/tts.js           phát âm và nhận dạng giọng nói (Web Speech API)
 js/views.js         các màn hình
+js/exam.js          cấu trúc đề HSK 1–4, sinh câu hỏi, chấm điểm
+js/views-exam.js    màn hình thi thử
 js/app.js           định tuyến
 ```
 
