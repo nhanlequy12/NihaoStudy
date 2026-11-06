@@ -44,10 +44,16 @@
     Store.state.settings.theme = t; Store.save();
   }
 
-  window.App = { route, updateBadge, setTheme, keyHandler: null };
+  function setZh(size) {
+    document.documentElement.dataset.zh = size || "normal";
+    Store.state.settings.zhSize = size || "normal"; Store.save();
+  }
+
+  window.App = { route, updateBadge, setTheme, setZh, keyHandler: null };
 
   // init
   setTheme(Store.state.settings.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+  setZh(Store.state.settings.zhSize);
   document.getElementById("theme-toggle").onclick = () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
   document.getElementById("menu-toggle").onclick = () => nav.classList.toggle("open");
   document.addEventListener("keydown", (e) => { if (App.keyHandler) App.keyHandler(e); });

@@ -58,7 +58,8 @@ Nguyên tắc rút ra từ research:
 - Luyện nói: shadowing câu mẫu, nhận dạng giọng nói so khớp theo phần trăm.
 - Thi thử HSK 1–4: đề sinh ngẫu nhiên từ kho từ/câu/hội thoại/bài đọc theo đúng cấu trúc đề chính thức (số phần, số câu, thời gian từng phần, số lần phát audio, thang điểm 200/300 và mốc đậu 120/180). Các phần nhìn tranh thay bằng nghĩa tiếng Việt, phần nghe dùng giọng trình duyệt. Có đồng hồ tự nộp, kết quả theo từng phần, xem lại từng câu, lịch sử thi và liên kết tới đề thật (chinesetest.cn, Mandarin Bean, Mandarin Temple, YouTube).
 - Từ điển HSK 1–4: tra theo chữ, pinyin có/không dấu, Hán Việt, tiếng Việt, lọc theo cấp; thêm thẳng vào bộ thẻ.
-- Cài đặt: chọn giọng đọc, tốc độ, giao diện sáng/tối, xuất/nhập tiến độ JSON.
+- Cài đặt: chọn giọng đọc, tốc độ, giao diện sáng/tối, cỡ chữ Hán (bình thường/lớn/rất lớn), xuất/nhập tiến độ JSON.
+- Giao diện: cỡ chữ 17px, chữ Hán to và rõ, bảng từ vựng tự xếp thành thẻ trên điện thoại, menu dạng lưới có biểu tượng, nút chuyển bước Từ vựng → Ngữ pháp → Hội thoại → Luyện tập trong mỗi bài.
 
 ## Cấu trúc
 

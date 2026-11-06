@@ -247,10 +247,12 @@
     } else {
       body = `<div id="quiz"></div>`;
     }
-    const html = `<a href="#/lessons" class="small">← Tất cả bài học</a>
+    const ti = tabs.findIndex((t) => t[0] === tab), prevTab = tabs[ti - 1], nextTab = tabs[ti + 1];
+    const html = `<a href="#/lessons/${levelOfLesson(L)}" class="backlink">← Tất cả bài học</a>
       <div class="row between"><div><div class="eyebrow">Bài ${L.id}${done ? " · Đã hoàn thành" : ""}</div><h1>${esc(L.title)} <span class="zh-serif muted" style="font-weight:500">${esc(L.icon)}</span></h1><p class="subtitle">${esc(L.sub)}</p></div></div>
       <div class="card mb"><b>Mục tiêu:</b> ${L.goals.map((g) => `<span class="pill blue">${esc(g)}</span>`).join(" ")}</div>
-      <div class="tabs">${tabs.map(([k, v]) => `<button class="${k === tab ? "active" : ""}" data-tab="${k}">${v}</button>`).join("")}</div>${body}`;
+      <div class="tabs">${tabs.map(([k, v]) => `<button class="${k === tab ? "active" : ""}" data-tab="${k}">${v}</button>`).join("")}</div>${body}
+      ${tab === "quiz" ? "" : `<div class="lesson-nav">${prevTab ? `<a class="btn" href="#/lesson/${L.id}/${prevTab[0]}">← ${prevTab[1]}</a>` : `<a class="btn" href="#/lessons/${levelOfLesson(L)}">← Danh sách bài</a>`}<a class="btn btn-primary" href="#/lesson/${L.id}/${nextTab[0]}">${nextTab[0] === "quiz" ? "Làm bài luyện tập" : "Tiếp: " + nextTab[1]} →</a></div>`}`;
     return {
       html,
       after(el) {
@@ -671,7 +673,9 @@
         <p class="small muted">Web dùng giọng tiếng Trung có sẵn trong trình duyệt/hệ điều hành. ${voices.length ? `Tìm thấy ${voices.length} giọng tiếng Trung.` : "<b>Chưa tìm thấy giọng tiếng Trung.</b> Trên Windows: Settings → Time &amp; Language → Language → Add a language → 中文(简体) → tick Text-to-speech. Hoặc mở web bằng Microsoft Edge (có sẵn giọng Xiaoxiao online)."}</p>
         <div class="row"><label>Giọng: <select id="voice"><option value="">Tự động</option>${voices.map((v) => `<option value="${esc(v.name)}" ${s.voice === v.name ? "selected" : ""}>${esc(v.name)} (${esc(v.lang)})</option>`).join("")}</select></label>
         <label>Tốc độ: <input type="number" id="rate" min="0.5" max="1.2" step="0.05" value="${s.rate}"></label><button class="btn btn-sm" data-say="你好，我是你的汉语老师。">🔊 Thử</button></div></div>
-      <div class="card mt"><h3 style="margin-top:0">Giao diện</h3><div class="row"><button class="btn" id="light">☀ Sáng</button><button class="btn" id="dark">🌙 Tối</button></div></div>
+      <div class="card mt"><h3 style="margin-top:0">Giao diện</h3><div class="row"><button class="btn" id="light">☀ Sáng</button><button class="btn" id="dark">🌙 Tối</button></div>
+        <h3>Cỡ chữ Hán</h3><p class="small muted">Phóng to chữ Hán trong bảng từ vựng, thẻ ôn tập, bài đọc và đề thi. Chữ tiếng Việt giữ nguyên.</p>
+        <div class="row">${[["normal", "Bình thường"], ["large", "Lớn"], ["xlarge", "Rất lớn"]].map(([k, v]) => `<button class="btn ${(s.zhSize || "normal") === k ? "btn-primary" : ""}" data-zh="${k}">${v}</button>`).join("")}<span class="zh" style="font-size:calc(1.6rem * var(--zh-scale))">你好，谢谢</span></div></div>
       <div class="card mt"><h3 style="margin-top:0">Dữ liệu học</h3><p class="small muted">Tiến độ lưu trong trình duyệt này (localStorage). Xuất tệp để sao lưu hoặc chuyển sang máy khác.</p>
         <div class="row"><button class="btn" id="export">⬇ Xuất tiến độ (JSON)</button><label class="btn">⬆ Nhập tiến độ <input type="file" id="import" accept=".json" class="hidden"></label><button class="btn" id="reset" style="color:var(--primary)">Xoá toàn bộ tiến độ</button></div></div>
       <div class="card mt"><h3 style="margin-top:0">Về Nǐ hǎo</h3><p class="small muted">Từ vựng theo danh sách HSK 1–4 bộ cũ (${VOCAB.length} từ, ${LESSONS.length} bài). Nghĩa tiếng Việt và âm Hán Việt được biên soạn thủ công. Dữ liệu nét chữ từ dự án mã nguồn mở Hanzi Writer (giấy phép MIT). Phát âm và nhận dạng giọng nói dùng Web Speech API của trình duyệt.</p></div>`;
@@ -683,6 +687,7 @@
         el.querySelector("#rate").onchange = (e) => { s.rate = +e.target.value; Store.save(); };
         el.querySelector("#light").onclick = () => App.setTheme("light");
         el.querySelector("#dark").onclick = () => App.setTheme("dark");
+        el.querySelectorAll("[data-zh]").forEach((b) => b.onclick = () => { App.setZh(b.dataset.zh); el.querySelectorAll("[data-zh]").forEach((x) => x.classList.toggle("btn-primary", x === b)); });
         el.querySelector("#export").onclick = () => { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([Store.exportJSON()], { type: "application/json" })); a.download = `nihaostudy-${Store.today()}.json`; a.click(); };
         el.querySelector("#import").onchange = (e) => { const f = e.target.files[0]; if (!f) return; f.text().then((t) => { try { Store.importJSON(t); toast("Đã nhập tiến độ"); App.updateBadge(); } catch (err) { toast("Tệp không hợp lệ"); } }); };
         el.querySelector("#reset").onclick = () => { if (confirm("Xoá toàn bộ tiến độ học? Không thể hoàn tác.")) { Store.reset(); toast("Đã xoá"); location.hash = "#/"; } };
@@ -728,10 +733,10 @@
     const r = READINGS.find((x) => x.id === id);
     if (!r) return { html: `<p>Không tìm thấy bài đọc.</p>` };
     const toks = segment(r.zh, r.extra);
-    const html = `<a href="#/read" class="small">← Tất cả bài đọc</a>
+    const html = `<a href="#/read" class="backlink">← Tất cả bài đọc</a>
       <div class="row between"><div><div class="eyebrow">Bài đọc · sau bài ${r.after} · ${LEVELS[r.level].name}</div><h1>${esc(r.title)}</h1></div></div>
       <div class="row mb">${speakBtn(r.zh, "btn")}<button class="btn" id="slow">🐢 Đọc chậm</button><button class="btn" id="tpy">Hiện pinyin</button><button class="btn" id="tvi">Hiện bản dịch</button></div>
-      <div class="card"><div class="zh" id="rtext" style="font-size:1.6rem;line-height:2.1;letter-spacing:1px">${toks.map((k, i) => k.w ? `<span class="rtok" data-i="${i}" style="cursor:pointer;border-bottom:1px dotted var(--border);border-radius:4px;padding:0 1px">${esc(k.t)}</span>` : esc(k.t)).join("")}</div>
+      <div class="card"><div class="zh rtext" id="rtext">${toks.map((k, i) => k.w ? `<span class="rtok" data-i="${i}">${esc(k.t)}</span>` : esc(k.t)).join("")}</div>
         <div id="rpy" class="muted hidden" style="margin-top:10px">${pyHtml(r.py)}</div><div id="rvi" class="hidden" style="margin-top:10px">${esc(r.vi)}</div></div>
       <div class="card mt" id="rpop"><p class="muted small" style="margin:0">Bấm vào một từ trong bài để xem nghĩa.</p></div>
       <h2>Câu hỏi hiểu bài</h2><div id="rq"></div>`;
@@ -744,7 +749,7 @@
         el.querySelector("#tvi").onclick = () => el.querySelector("#rvi").classList.toggle("hidden");
         const pop = el.querySelector("#rpop");
         el.querySelectorAll(".rtok").forEach((t) => t.onclick = () => {
-          el.querySelectorAll(".rtok").forEach((x) => x.style.background = ""); t.style.background = "var(--gold-soft)";
+          el.querySelectorAll(".rtok").forEach((x) => x.classList.remove("hl")); t.classList.add("hl");
           const w = toks[+t.dataset.i].w;
           pop.innerHTML = `<div class="row between"><div><span class="zh" style="font-size:1.6rem;font-weight:500">${esc(w.hz)}</span> <b>${pyHtml(w.py)}</b> ${w.hv ? `<i class="muted">(${esc(w.hv)})</i>` : ""}<div>${esc(w.vi)}${w.l ? ` · <a href="#/lesson/${w.l}" class="small">Bài ${w.l}</a>` : ""}</div></div><div class="row">${speakBtn(w.hz)}${w.id ? (SRS.has(w.id) ? `<span class="pill green">✓ trong bộ thẻ</span>` : `<button class="btn btn-sm" id="addc">+ Thẻ</button>`) : ""}</div></div>`;
           bindSpeak(pop);
