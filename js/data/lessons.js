@@ -713,13 +713,19 @@ window.ROADMAP = [
     link: "#/lessons/4", linkText: "Vào bài học HSK 4",
   },
   {
-    phase: 7, doneWhen: "srs", title: "Ôn tập ngắt quãng (SRS) mỗi ngày", time: "Từ ngày 1 · 5–10 phút/ngày, không bỏ ngày nào",
+    phase: 7, lessons: [85, 149], title: "1.300 từ HSK 5 qua 65 bài học", time: "Tháng 25–40 · 10–12 từ mới/ngày",
+    why: "HSK 5 (2.500 từ tích lũy) tương đương B2–C1: đọc báo, tiểu thuyết đơn giản, xem phim không phụ đề, trình bày ý kiến có lập luận, viết đoạn văn 80 chữ. Từ vựng phần lớn là từ ghép hai âm tiết trừu tượng (xã hội, kinh tế, tâm lý, khoa học) và rất nhiều từ gần nghĩa; âm Hán Việt là lợi thế lớn nhất của người Việt ở cấp này. Ngữ pháp: 宁可…也, 与其…不如, 无论…都, 除非…否则, 以便, 以免, 反而, 居然, 未必, bổ ngữ phức hợp, câu 把/被 nâng cao.",
+    tasks: ["Học bài 85–149, mỗi ngày 1 bài hoặc nửa bài; 7 bài cuối là từ ngữ pháp, nên học rải đều", "Đọc bài đọc HSK 5 trong web và báo chí đơn giản (The Chairman's Bao, Du Chinese cấp Advanced)", "Mỗi tuần viết một đoạn 80–100 chữ dùng 5 từ mới (đề viết HSK 5)", "Nghe podcast tiếng Trung tốc độ thường, xem phim không phụ đề 20 phút/ngày"],
+    link: "#/lessons/5", linkText: "Vào bài học HSK 5",
+  },
+  {
+    phase: 8, doneWhen: "srs", title: "Ôn tập ngắt quãng (SRS) mỗi ngày", time: "Từ ngày 1 · 5–10 phút/ngày, không bỏ ngày nào",
     why: "Không có thói quen ôn tập thì học bao nhiêu cũng quên. Thuật toán ôn tập ngắt quãng (giống Anki) hiện thẻ ngay trước lúc bạn sắp quên, tiết kiệm 2–3 lần thời gian so với ôn tràn lan.",
     tasks: ["Mở mục Ôn tập mỗi sáng", "Chấm thật lòng: Quên / Khó / Tốt / Dễ", "Giữ chuỗi ngày học (streak)"],
     link: "#/review", linkText: "Ôn tập ngay",
   },
   {
-    phase: 8, title: "Nghe, nói & nội dung thật", time: "Tháng 2–3 trở đi · 15 phút/ngày",
+    phase: 9, title: "Nghe, nói & nội dung thật", time: "Tháng 2–3 trở đi · 15 phút/ngày",
     why: "Từ vựng và ngữ pháp chỉ 'sống' khi bạn dùng. Nghe 3 lượt (không phụ đề → có phụ đề → không phụ đề), nói theo (shadowing), và tự ghi âm so với giọng mẫu.",
     tasks: ["Luyện nói mỗi câu mẫu 3 lần với mục Luyện nói", "Nghe podcast/video đúng cấp độ đang học (gợi ý trong mục Lộ trình)", "Tự viết 3–5 câu mỗi ngày bằng từ đã học", "Tìm bạn trao đổi ngôn ngữ hoặc gia sư 1 giờ/tuần nếu có thể"],
     link: "#/speak", linkText: "Luyện nói",

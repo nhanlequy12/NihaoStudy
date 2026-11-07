@@ -208,6 +208,8 @@ a.lesson-card { display: flex; }
 .progress > span { display: block; height: 100%; background: var(--primary); border-radius: 999px; transition: width 0.4s; }
 .progress.gold > span { background: var(--gold); }
 .progress.green > span { background: var(--green); }
+.progress.blue > span { background: var(--blue); }
+.progress.purple > span { background: var(--tone3); }
 
 /* ---- Màu thanh điệu ---- */
 .t1 { color: var(--tone1); }
@@ -225,6 +227,7 @@ a.lesson-card { display: flex; }
 .pill.gold { background: var(--gold-soft); color: var(--gold-text); }
 .pill.green { background: var(--green-soft); color: var(--green); }
 .pill.blue { background: var(--blue-soft); color: var(--blue); }
+.pill.purple { background: color-mix(in srgb, var(--tone3) 14%, var(--surface)); color: var(--tone3); }
 
 /* ---- Hero ---- */
 .hero {

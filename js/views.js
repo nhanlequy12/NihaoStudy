@@ -13,8 +13,8 @@
   const bindSpeak = (el) => el.querySelectorAll("[data-say]").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); TTS.speak(b.dataset.say); }));
 
   // Cấp độ HSK: suy ra từ trường level hoặc id bài
-  const LEVELS = { 1: { name: "HSK 1", from: 1, to: 12, color: "blue" }, 2: { name: "HSK 2", from: 13, to: 24, color: "gold" }, 3: { name: "HSK 3", from: 25, to: 44, color: "green" }, 4: { name: "HSK 4", from: 45, to: 84, color: "red" } };
-  const levelOfId = (id) => (id <= 12 ? 1 : id <= 24 ? 2 : id <= 44 ? 3 : 4);
+  const LEVELS = { 1: { name: "HSK 1", from: 1, to: 12, color: "blue" }, 2: { name: "HSK 2", from: 13, to: 24, color: "gold" }, 3: { name: "HSK 3", from: 25, to: 44, color: "green" }, 4: { name: "HSK 4", from: 45, to: 84, color: "red" }, 5: { name: "HSK 5", from: 85, to: 149, color: "purple" } };
+  const levelOfId = (id) => (id <= 12 ? 1 : id <= 24 ? 2 : id <= 44 ? 3 : id <= 84 ? 4 : 5);
   const levelOfLesson = (l) => l.level || levelOfId(l.id);
   const levelOfWord = (w) => w.level || levelOfId(w.l);
   function levelStats() {
@@ -71,7 +71,7 @@
         <div class="card">
           <div class="eyebrow">Tiến độ</div>
           <h3 style="margin-top:4px">Bài học HSK 1–${maxLevel()}</h3>
-          ${levelStats().map((x) => `<div class="row between small" style="margin-top:6px"><span><b>${x.name}</b> · ${x.done}/${x.lessons} bài · ${x.learned}/${x.words} từ</span><a href="#/lessons/${x.level}" class="small">xem</a></div><div class="progress ${x.color === "gold" ? "gold" : x.color === "green" ? "green" : ""}"><span style="width:${x.lessons ? (x.done / x.lessons) * 100 : 0}%"></span></div>`).join("")}
+          ${levelStats().map((x) => `<div class="row between small" style="margin-top:6px"><span><b>${x.name}</b> · ${x.done}/${x.lessons} bài · ${x.learned}/${x.words} từ</span><a href="#/lessons/${x.level}" class="small">xem</a></div><div class="progress ${x.color}"><span style="width:${x.lessons ? (x.done / x.lessons) * 100 : 0}%"></span></div>`).join("")}
           <p class="small muted">Tổng: ${done}/${LESSONS.length} bài · ${learnedWords}/${VOCAB.length} từ</p>
           ${next ? `<a class="btn btn-primary" href="#/lesson/${next.id}">${done ? "Tiếp tục" : "Bắt đầu"} Bài ${next.id}: ${esc(next.title)}</a>` : ""}
           <h3>Bộ thẻ ôn tập</h3>
@@ -100,7 +100,7 @@
     const doneFlags = ROADMAP.map((p) => p.doneWhen === "tones" ? s.toneDrill.total >= 20 : p.doneWhen === "srs" ? Object.keys(s.cards).length > 0 && Store.streakAlive() >= 3 : p.lessons ? lessonsDone(p.lessons[0], p.lessons[1]) : false);
     const html = `
       <h1>Lộ trình học từ số 0 đến HSK ${maxLevel()}</h1>
-      <p class="subtitle">Tổng hợp từ cách HelloChinese dạy người mới, cách Anki/Hack Chinese ôn tập, cách Skritter luyện viết, và lộ trình 30 phút/ngày của HSK Lord. Mốc tham khảo: 2–3 tháng cho HSK 1 (150 từ), 5–6 tháng cho HSK 2 (300 từ), 9–12 tháng cho HSK 3 (600 từ), 18–24 tháng cho HSK 4 (1.200 từ) với 30–45 phút mỗi ngày.</p>
+      <p class="subtitle">Tổng hợp từ cách HelloChinese dạy người mới, cách Anki/Hack Chinese ôn tập, cách Skritter luyện viết, và lộ trình 30 phút/ngày của HSK Lord. Mốc tham khảo: 2–3 tháng cho HSK 1 (150 từ), 5–6 tháng cho HSK 2 (300 từ), 9–12 tháng cho HSK 3 (600 từ), 18–24 tháng cho HSK 4 (1.200 từ), 30–40 tháng cho HSK 5 (2.500 từ) với 30–45 phút mỗi ngày.</p>
       <div class="warn"><b>Nguyên tắc quan trọng nhất:</b> học ít nhưng đều. 30 phút mỗi ngày tốt hơn 4 giờ cuối tuần. Đừng bỏ qua thanh điệu, đừng học quá 10 từ mới/ngày, đừng học từ rời rạc không có câu.</div>
       <div class="stack mt">
       ${ROADMAP.map((p, i) => `
@@ -219,7 +219,7 @@
     const card = (l) => { const done = s.completedLessons.includes(l.id); const n = vocabByLesson(l.id).length; return `
         <a class="card lesson-card ${done ? "done" : ""}" href="#/lesson/${l.id}"><div class="lesson-icon">${done ? "✓" : l.icon}</div><div class="lesson-body"><div class="lesson-title">Bài ${l.id}: ${esc(l.title)}</div><div class="lesson-meta">${esc(l.sub)} · ${n} từ · ${l.grammar.length} ngữ pháp</div></div>${done ? `<span class="pill green">Xong</span>` : ""}</a>`; };
     const ls = LESSONS.filter((l) => levelOfLesson(l) === level);
-    const html = `<h1>${LESSONS.length} bài học HSK 1–${maxLevel()}</h1><p class="subtitle">Mỗi bài 10–17 từ theo chủ đề, 3–4 điểm ngữ pháp, một hội thoại và bài luyện tập. Hoàn thành bài (đạt 70%) thì từ vựng tự động vào bộ thẻ ôn tập. Học tuần tự theo cấp độ, mỗi ngày một bài là vừa.</p>
+    const html = `<h1>${LESSONS.length} bài học HSK 1–${maxLevel()}</h1><p class="subtitle">Mỗi bài 10–20 từ theo chủ đề, 3–4 điểm ngữ pháp, một hội thoại và bài luyện tập. Hoàn thành bài (đạt 70%) thì từ vựng tự động vào bộ thẻ ôn tập. Học tuần tự theo cấp độ, mỗi ngày một bài là vừa.</p>
       <div class="tabs">${stats.map((x) => `<button class="${x.level === level ? "active" : ""}" data-level="${x.level}">${x.name} <span class="muted small">${x.done}/${x.lessons}</span></button>`).join("")}</div>
       ${cur ? `<div class="row between mb"><span class="small muted">${cur.name} · ${cur.words} từ · bài ${LEVELS[level].from}–${LEVELS[level].from + cur.lessons - 1}</span><span class="small muted">${cur.done}/${cur.lessons} bài xong</span></div><div class="progress mb"><span style="width:${(cur.done / cur.lessons) * 100}%"></span></div>` : ""}
       <div class="grid grid-2">${ls.map(card).join("")}</div>`;

@@ -1,9 +1,9 @@
-// Thi thử HSK: cấu trúc đề theo đề thi chính thức (HSK 1–4, bộ cũ), sinh câu hỏi từ kho từ/câu/hội thoại/bài đọc của web, chấm điểm.
+// Thi thử HSK: cấu trúc đề theo đề thi chính thức (HSK 1–5, bộ cũ), sinh câu hỏi từ kho từ/câu/hội thoại/bài đọc của web, chấm điểm.
 // Vì web không có tranh và băng ghi âm thật, các phần "nhìn tranh" được thay bằng nghĩa tiếng Việt, phần nghe dùng giọng đọc của trình duyệt.
 (function () {
   const shuffle = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const pick = (arr, n, exclude) => shuffle(arr.filter((x) => !exclude || !exclude.includes(x))).slice(0, n);
-  const levelOfId = (id) => (id <= 12 ? 1 : id <= 24 ? 2 : id <= 44 ? 3 : 4);
+  const levelOfId = (id) => (id <= 12 ? 1 : id <= 24 ? 2 : id <= 44 ? 3 : id <= 84 ? 4 : 5);
   const levelOfWord = (w) => w.level || levelOfId(w.l);
   const levelOfLesson = (l) => l.level || levelOfId(l.id);
 
@@ -80,6 +80,24 @@
         { key: "writing", name: "三、书写", vi: "Viết", minutes: 25, parts: [
           { name: "第一部分", vi: "Sắp xếp các từ cho sẵn thành câu đúng.", type: "w_order", n: 10 },
           { name: "第二部分", vi: "Dùng từ cho sẵn viết một câu. Đề thật kèm tranh và do giám khảo chấm; ở đây máy chỉ kiểm tra sơ bộ.", type: "w_sentence", n: 5 },
+        ] },
+      ],
+    },
+    5: {
+      name: "HSK 5", total: 300, pass: 180, plays: 1, choices: 4, questions: 100, minutes: 125,
+      sections: [
+        { key: "listening", name: "一、听力", vi: "Nghe hiểu", minutes: 30, parts: [
+          { name: "第一部分", vi: "Nghe hội thoại ngắn và câu hỏi, chọn đáp án đúng trong 4 lựa chọn. Chỉ phát một lần.", type: "l_dialog_q", n: 20 },
+          { name: "第二部分", vi: "Nghe hội thoại dài hoặc đoạn độc thoại, chọn câu đúng với nội dung.", type: "l_dialog_long", n: 25 },
+        ] },
+        { key: "reading", name: "二、阅读", vi: "Đọc hiểu", minutes: 45, parts: [
+          { name: "第一部分", vi: "Chọn từ thích hợp điền vào chỗ trống trong đoạn văn (nhóm đáp án dùng chung).", type: "r_cloze", n: 15 },
+          { name: "第二部分", vi: "Đọc đoạn văn ngắn, chọn câu phù hợp với nội dung.", type: "r_passage", n: 10 },
+          { name: "第三部分", vi: "Đọc đoạn văn dài, trả lời câu hỏi theo nội dung.", type: "r_passage", n: 20 },
+        ] },
+        { key: "writing", name: "三、书写", vi: "Viết", minutes: 40, parts: [
+          { name: "第一部分", vi: "Sắp xếp các từ cho sẵn thành câu đúng.", type: "w_order", n: 8 },
+          { name: "第二部分", vi: "Viết đoạn văn ngắn (đề thật 80 chữ, theo 5 từ cho sẵn hoặc theo tranh). Ở đây viết một đoạn có dùng từ cho sẵn; máy chỉ kiểm tra sơ bộ, hãy tự đối chiếu với câu ví dụ.", type: "w_sentence", n: 2 },
         ] },
       ],
     },

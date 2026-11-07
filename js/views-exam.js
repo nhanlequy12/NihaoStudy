@@ -24,7 +24,7 @@
     const html = `<h1>Thi thử HSK</h1>
       <p class="subtitle">Đề được sinh ngẫu nhiên từ kho từ, câu mẫu, hội thoại và bài đọc của web theo đúng cấu trúc, số câu, thời gian và thang điểm của đề thi chính thức (bộ cũ, 2010–nay). Mỗi lần thi là một đề mới. Vì web không có tranh, các phần "nhìn tranh" được thay bằng nghĩa tiếng Việt; phần nghe dùng giọng đọc của trình duyệt.</p>
       <div class="grid grid-2">${Object.values(EXAM_SPEC).map((sp, k) => `
-        <div class="card"><div class="row between"><h3 style="margin:0">${esc(sp.name)}</h3><span class="pill ${["blue", "gold", "green", "red"][k]}">${sp.questions} câu · ${sp.minutes} phút</span></div>
+        <div class="card"><div class="row between"><h3 style="margin:0">${esc(sp.name)}</h3><span class="pill ${["blue", "gold", "green", "red", "purple"][k]}">${sp.questions} câu · ${sp.minutes} phút</span></div>
           <ul class="small muted" style="margin:8px 0 10px;padding-left:18px">${sp.sections.map((s) => `<li><b>${esc(s.name)}</b> ${esc(s.vi)} · ${s.parts.reduce((a, p) => a + p.n, 0)} câu · ${s.minutes} phút</li>`).join("")}</ul>
           <div class="row between"><span class="small muted">Tổng ${sp.total} điểm · đậu từ ${sp.pass}</span><a class="btn btn-primary" href="#/exam/${k + 1}">${current && current.level === k + 1 && !current.finished ? "Tiếp tục bài đang làm" : "Vào thi"}</a></div></div>`).join("")}</div>
       <div class="grid grid-2 mt">
@@ -58,7 +58,7 @@
         ${sp.sections.flatMap((s) => s.parts.map((p, i) => `<tr>${i === 0 ? `<td rowspan="${s.parts.length}"><b>${esc(s.name)}</b><br><span class="small muted">${esc(s.vi)}</span></td>` : ""}<td><b>${esc(p.name)}</b> <span class="small muted">${esc(p.vi)}</span></td><td>${p.n}</td>${i === 0 ? `<td rowspan="${s.parts.length}">${s.minutes} phút</td>` : ""}</tr>`)).join("")}
         </tbody></table></div>
       <div class="card mt"><h3 style="margin-top:0">Quy định như thi thật</h3><ul class="small" style="padding-left:18px;margin:0">
-        <li>Mỗi câu nghe được phát <b>${sp.plays} lần</b>${sp.plays === 1 ? " (HSK 4 chỉ phát một lần)" : ""}; bấm ▶ để phát, hết lượt thì không nghe lại được.</li>
+        <li>Mỗi câu nghe được phát <b>${sp.plays} lần</b>${sp.plays === 1 ? " (HSK 4–5 chỉ phát một lần)" : ""}; bấm ▶ để phát, hết lượt thì không nghe lại được.</li>
         <li>Mỗi phần có đồng hồ riêng; hết giờ máy tự nộp phần đó. Nộp phần rồi thì không quay lại được.</li>
         <li>Trong lúc làm có thể chuyển qua lại giữa các câu trong cùng một phần.</li>
         <li>Mỗi phần tính thang 100 điểm theo tỉ lệ câu đúng (đề thật quy đổi gần tương tự). Tổng ${sp.total}, đậu từ ${sp.pass} điểm.</li>
@@ -134,7 +134,7 @@
     }
 
     box.innerHTML = `<div class="exam-top card">
-        <div class="row between"><div><span class="pill ${["blue", "gold", "green", "red"][current.level - 1]}">${esc(sp.name)}</span> <b>${esc(sec.name)}</b> <span class="muted">${esc(sec.vi)}</span></div><div class="timer" id="timer">${mmss(current.deadline - Date.now())}</div></div>
+        <div class="row between"><div><span class="pill ${["blue", "gold", "green", "red", "purple"][current.level - 1]}">${esc(sp.name)}</span> <b>${esc(sec.name)}</b> <span class="muted">${esc(sec.vi)}</span></div><div class="timer" id="timer">${mmss(current.deadline - Date.now())}</div></div>
         <div class="row between small muted mt"><span><b>${esc(it.part.name)}</b> · ${esc(it.part.vi)}</span><span>Câu ${it.no}/${total}</span></div>
         <div class="qnav">${sec.items.map((x, k) => `<button class="${k === qi ? "cur" : ""} ${answered(x) ? "done" : ""}" data-q="${k}">${x.no}</button>`).join("")}</div>
       </div>
