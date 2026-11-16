@@ -8,7 +8,7 @@
 {"hz":"告辞","vi":"cáo từ, xin phép ra về","hv":"cáo từ","pos_vi":"động từ","ex":["时间不早了，我该告辞了。","Shíjiān bù zǎo le, wǒ gāi gàocí le.","Muộn rồi, tôi xin phép về."]}
 {"hz":"理睬","vi":"để ý, đếm xỉa","hv":"lý thải","pos_vi":"động từ","ex":["我跟他打招呼，他却不理睬我。","Wǒ gēn tā dǎ zhāohu, tā què bù lǐcǎi wǒ.","Tôi chào anh ta, nhưng anh ta chẳng thèm để ý."]}
 {"hz":"效益","vi":"hiệu quả, lợi ích","hv":"hiệu ích","pos_vi":"danh từ","ex":["今年公司的经济效益很好。","Jīnnián gōngsī de jīngjì xiàoyì hěn hǎo.","Năm nay hiệu quả kinh tế của công ty rất tốt."]}
-{"hz":"提炼","vi":"chiết xuất, tinh luyện; đúc kết","hv":"đề luyện","pos_vi":"động từ","ex":["这种油是从植物中提炼出来的。","Zhè zhǒng yóu shì cóng zhíwù zhōng tíliàn chūlái de.","Loại dầu này được chiết xuất từ thực vật."]}
+{"hz":"提炼","vi":"chiết xuất, tinh luyện; đúc kết","hv":"đề luyện","pos_vi":"động từ","ex":["这种油是从植物中提炼出来的。","Zhè zhǒng yóu shì cóng zhíwù zhōng tíliàn chūlai de.","Loại dầu này được chiết xuất từ thực vật."]}
 {"hz":"团圆","vi":"đoàn tụ, đoàn viên","hv":"đoàn viên","pos_vi":"động từ","ex":["春节是全家团圆的日子。","Chūnjié shì quánjiā tuányuán de rìzi.","Tết là ngày cả nhà đoàn tụ."]}
 {"hz":"恰巧","vi":"vừa hay, đúng lúc, tình cờ","hv":"kháp xảo","pos_vi":"phó từ","ex":["我去找他，恰巧他不在家。","Wǒ qù zhǎo tā, qiàqiǎo tā bú zài jiā.","Tôi đi tìm anh ấy, vừa hay anh ấy không có nhà."]}
 {"hz":"尖端","vi":"mũi nhọn, đầu nhọn; tiên tiến hàng đầu","hv":"tiêm đoan","pos_vi":"danh từ, tính từ","ex":["这是一项尖端技术。","Zhè shì yí xiàng jiānduān jìshù.","Đây là một công nghệ tiên tiến hàng đầu."]}
@@ -46,9 +46,9 @@
 {"hz":"变迁","vi":"biến đổi, đổi thay","hv":"biến thiên","pos_vi":"danh từ, động từ","ex":["这些照片记录了城市的变迁。","Zhèxiē zhàopiàn jìlù le chéngshì de biànqiān.","Những bức ảnh này ghi lại sự đổi thay của thành phố."]}
 {"hz":"充沛","vi":"dồi dào, tràn trề","hv":"sung bái","pos_vi":"tính từ","ex":["他每天都精力充沛。","Tā měitiān dōu jīnglì chōngpèi.","Ngày nào anh ấy cũng tràn trề sức lực."]}
 {"hz":"简要","vi":"ngắn gọn, tóm tắt","hv":"giản yếu","pos_vi":"tính từ","ex":["请简要介绍一下你自己。","Qǐng jiǎnyào jièshào yíxià nǐ zìjǐ.","Hãy giới thiệu ngắn gọn về bản thân."]}
-{"hz":"自力更生","vi":"tự lực cánh sinh","hv":"tự lực cánh sinh","pos_vi":"thành ngữ","ex":["他们靠自力更生发展起来。","Tāmen kào zìlìgēngshēng fāzhǎn qǐlái.","Họ phát triển nhờ tự lực cánh sinh."]}
+{"hz":"自力更生","vi":"tự lực cánh sinh","hv":"tự lực cánh sinh","pos_vi":"thành ngữ","ex":["他们靠自力更生发展起来。","Tāmen kào zìlìgēngshēng fāzhǎn qǐlai.","Họ phát triển nhờ tự lực cánh sinh."]}
 {"hz":"唯独","vi":"chỉ có, duy chỉ","hv":"duy độc","pos_vi":"phó từ","ex":["大家都来了，唯独他没来。","Dàjiā dōu lái le, wéidú tā méi lái.","Mọi người đều đến rồi, chỉ có anh ấy không đến."]}
-{"hz":"一帆风顺","vi":"thuận buồm xuôi gió","hv":"nhất phàm phong thuận","pos_vi":"thành ngữ","ex":["祝你一路一帆风顺！","Zhù nǐ yí lù yìfānfēngshùn!","Chúc bạn lên đường thuận buồm xuôi gió!"]}
+{"hz":"一帆风顺","vi":"thuận buồm xuôi gió","hv":"nhất phàm phong thuận","pos_vi":"thành ngữ","ex":["祝你工作一帆风顺！","Zhù nǐ gōngzuò yìfān-fēngshùn!","Chúc công việc của bạn thuận buồm xuôi gió!"]}
 {"hz":"学说","vi":"học thuyết","hv":"học thuyết","pos_vi":"danh từ","ex":["这是一种新的经济学说。","Zhè shì yì zhǒng xīn de jīngjì xuéshuō.","Đây là một học thuyết kinh tế mới."]}
 {"hz":"经商","vi":"buôn bán, kinh doanh","hv":"kinh thương","pos_vi":"động từ","ex":["他大学毕业后开始经商。","Tā dàxué bìyè hòu kāishǐ jīngshāng.","Tốt nghiệp đại học xong anh ấy bắt đầu kinh doanh."]}
 {"hz":"甘心","vi":"cam lòng, cam tâm; bằng lòng","hv":"cam tâm","pos_vi":"động từ","ex":["输了这场比赛，我真不甘心。","Shū le zhè chǎng bǐsài, wǒ zhēn bù gānxīn.","Thua trận này tôi thật không cam lòng."]}
@@ -77,7 +77,7 @@
 {"hz":"索性","vi":"dứt khoát, đành (làm luôn), cứ thế mà","hv":"sách tính","pos_vi":"phó từ","ex":["雨太大了，我们索性不走了。","Yǔ tài dà le, wǒmen suǒxìng bù zǒu le.","Mưa to quá, chúng tôi dứt khoát ở lại luôn."]}
 {"hz":"并列","vi":"đứng ngang hàng, song song, đồng hạng","hv":"tịnh liệt","pos_vi":"động từ","ex":["他们俩并列第一名。","Tāmen liǎ bìngliè dì yī míng.","Hai người họ đồng hạng nhất."]}
 {"hz":"鼓动","vi":"cổ động, xúi giục, kích động","hv":"cổ động","pos_vi":"động từ","ex":["是谁鼓动你这么做的？","Shì shéi gǔdòng nǐ zhème zuò de?","Ai xúi bạn làm như vậy?"]}
-{"hz":"缴纳","vi":"nộp, đóng (thuế, phí)","hv":"chước nạp","pos_vi":"động từ","ex":["每个公民都要依法缴纳税款。","Měi gè gōngmín dōu yào yīfǎ jiǎonà shuìkuǎn.","Mỗi công dân đều phải nộp thuế theo luật."]}
+{"hz":"缴纳","vi":"nộp, đóng (thuế, phí)","hv":"chước nạp","pos_vi":"động từ","ex":["每个公民都要依法缴纳税款。","Měi ge gōngmín dōu yào yīfǎ jiǎonà shuìkuǎn.","Mỗi công dân đều phải nộp thuế theo luật."]}
 {"hz":"歌颂","vi":"ca ngợi, ca tụng","hv":"ca tụng","pos_vi":"động từ","ex":["这首诗歌颂了母亲的爱。","Zhè shǒu shī gēsòng le mǔqīn de ài.","Bài thơ này ca ngợi tình mẹ."]}
 {"hz":"迁就","vi":"chiều theo, nhân nhượng","hv":"thiên tựu","pos_vi":"động từ","ex":["你不能总是迁就孩子。","Nǐ bù néng zǒngshì qiānjiù háizi.","Bạn không thể lúc nào cũng chiều theo con."]}
 {"hz":"空隙","vi":"khe hở, kẽ hở; khoảng trống (thời gian)","hv":"không khích","pos_vi":"danh từ","ex":["他利用工作的空隙学英语。","Tā lìyòng gōngzuò de kòngxì xué Yīngyǔ.","Anh ấy tranh thủ lúc rảnh trong giờ làm để học tiếng Anh."]}
@@ -85,7 +85,7 @@
 {"hz":"世代","vi":"nhiều đời, đời đời; thế hệ","hv":"thế đại","pos_vi":"danh từ","ex":["他们家世代住在这里。","Tāmen jiā shìdài zhù zài zhèlǐ.","Gia đình họ sống ở đây nhiều đời."]}
 {"hz":"洽谈","vi":"thương lượng, đàm phán, trao đổi","hv":"hiệp đàm","pos_vi":"động từ","ex":["双方正在洽谈合作事宜。","Shuāngfāng zhèngzài qiàtán hézuò shìyí.","Hai bên đang thương thảo việc hợp tác."]}
 {"hz":"茎","vi":"thân (cây), cuống","hv":"hành","pos_vi":"danh từ","ex":["这种植物的茎很粗。","Zhè zhǒng zhíwù de jīng hěn cū.","Thân của loài cây này rất to."]}
-{"hz":"威信","vi":"uy tín, uy danh (Wēixìn: huyện Uy Tín, Vân Nam)","hv":"uy tín","pos_vi":"danh từ","ex":["他在村里很有威信。","Tā zài cūn lǐ hěn yǒu wēixìn.","Ông ấy rất có uy tín trong làng."]}
+{"hz":"威信","vi":"uy tín, uy danh","hv":"uy tín","pos_vi":"danh từ","ex":["他在村里很有威信。","Tā zài cūn lǐ hěn yǒu wēixìn.","Ông ấy rất có uy tín trong làng."]}
 {"hz":"一目了然","vi":"nhìn qua là hiểu, rõ ràng","hv":"nhất mục liễu nhiên","pos_vi":"thành ngữ","ex":["这张图表让人一目了然。","Zhè zhāng túbiǎo ràng rén yímùliǎorán.","Biểu đồ này nhìn qua là hiểu ngay."]}
 {"hz":"舒畅","vi":"dễ chịu, khoan khoái, thoải mái","hv":"thư sướng","pos_vi":"tính từ","ex":["散完步，我心情很舒畅。","Sàn wán bù, wǒ xīnqíng hěn shūchàng.","Đi dạo xong, tâm trạng tôi rất khoan khoái."]}
 {"hz":"验收","vi":"nghiệm thu","hv":"nghiệm thu","pos_vi":"động từ","ex":["这项工程已经通过了验收。","Zhè xiàng gōngchéng yǐjīng tōngguò le yànshōu.","Công trình này đã qua nghiệm thu."]}

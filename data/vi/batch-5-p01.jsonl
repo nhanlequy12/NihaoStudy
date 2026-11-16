@@ -7,12 +7,12 @@
 {"hz":"收缩","vi":"co lại; thu hẹp","hv":"thu súc","pos_vi":"động từ","ex":["衣服洗了以后收缩了。","Yīfu xǐ le yǐhòu shōusuō le.","Quần áo giặt xong bị co lại."]}
 {"hz":"抚养","vi":"nuôi nấng, nuôi dưỡng","hv":"phủ dưỡng","pos_vi":"động từ","ex":["奶奶把我抚养长大。","Nǎinai bǎ wǒ fǔyǎng zhǎngdà.","Bà nuôi tôi khôn lớn."]}
 {"hz":"兼职","vi":"làm thêm, làm bán thời gian; kiêm nhiệm","hv":"kiêm chức","pos_vi":"động từ, danh từ","ex":["她周末在咖啡店兼职。","Tā zhōumò zài kāfēidiàn jiānzhí.","Cuối tuần cô ấy làm thêm ở quán cà phê."]}
-{"hz":"较量","vi":"đọ sức, so tài","hv":"giảo lượng","pos_vi":"động từ, danh từ","ex":["两个队又较量了一次。","Liǎng gè duì yòu jiàoliàng le yí cì.","Hai đội lại đọ sức thêm một lần."]}
+{"hz":"较量","vi":"đọ sức, so tài","hv":"giảo lượng","pos_vi":"động từ, danh từ","ex":["两个队又较量了一次。","Liǎng ge duì yòu jiàoliàng le yí cì.","Hai đội lại đọ sức thêm một lần."]}
 {"hz":"谣言","vi":"tin đồn (thất thiệt)","hv":"dao ngôn","pos_vi":"danh từ","ex":["别相信网上的谣言。","Bié xiāngxìn wǎngshàng de yáoyán.","Đừng tin những tin đồn trên mạng."]}
 {"hz":"探测","vi":"thăm dò, dò tìm","hv":"thám trắc","pos_vi":"động từ","ex":["他们用仪器探测地下的水。","Tāmen yòng yíqì tàncè dìxià de shuǐ.","Họ dùng máy để dò tìm nước dưới lòng đất."]}
 {"hz":"瘫痪","vi":"bại liệt; tê liệt (giao thông, hệ thống)","hv":"than hoán","pos_vi":"động từ","ex":["大雪让交通瘫痪了。","Dàxuě ràng jiāotōng tānhuàn le.","Tuyết lớn làm giao thông tê liệt."]}
 {"hz":"大臣","vi":"đại thần, quan đại thần","hv":"đại thần","pos_vi":"danh từ","ex":["皇帝召见了几位大臣。","Huángdì zhàojiàn le jǐ wèi dàchén.","Hoàng đế cho triệu kiến mấy vị đại thần."]}
-{"hz":"欣慰","vi":"vui mừng yên lòng, mãn nguyện","hv":"hân úy","pos_vi":"tính từ","ex":["看到孩子进步，妈妈很欣慰。","Kàndào háizi jìnbù, māma hěn xīnwèi.","Thấy con tiến bộ, mẹ rất vui lòng."]}
+{"hz":"欣慰","vi":"vui mừng yên lòng, mãn nguyện","hv":"hân úy","pos_vi":"tính từ","ex":["看到孩子进步，妈妈很欣慰。","Kàndào háizi jìnbù, māma hěn xīnwèi.","Thấy con tiến bộ, mẹ rất mãn nguyện."]}
 {"hz":"元首","vi":"nguyên thủ (quốc gia)","hv":"nguyên thủ","pos_vi":"danh từ","ex":["两国元首举行了会谈。","Liǎng guó yuánshǒu jǔxíng le huìtán.","Nguyên thủ hai nước đã tiến hành hội đàm."]}
 {"hz":"残留","vi":"còn sót lại, tồn dư","hv":"tàn lưu","pos_vi":"động từ","ex":["蔬菜上可能残留农药。","Shūcài shàng kěnéng cánliú nóngyào.","Rau có thể còn sót thuốc trừ sâu."]}
 {"hz":"密度","vi":"mật độ; tỷ trọng","hv":"mật độ","pos_vi":"danh từ","ex":["这个城市人口密度很大。","Zhège chéngshì rénkǒu mìdù hěn dà.","Thành phố này có mật độ dân số rất cao."]}
@@ -23,18 +23,18 @@
 {"hz":"徘徊","vi":"đi đi lại lại, quanh quẩn; lưỡng lự; dao động (số liệu)","hv":"bồi hồi","pos_vi":"động từ","ex":["他在门口徘徊了很久。","Tā zài ménkǒu páihuái le hěn jiǔ.","Anh ấy đi qua đi lại trước cửa rất lâu."]}
 {"hz":"迷惑","vi":"bối rối, khó hiểu; mê hoặc, đánh lừa","hv":"mê hoặc","pos_vi":"tính từ, động từ","ex":["他的话让我很迷惑。","Tā de huà ràng wǒ hěn míhuo.","Lời anh ấy làm tôi rất bối rối."]}
 {"hz":"黎明","vi":"bình minh, rạng sáng","hv":"lê minh","pos_vi":"danh từ","ex":["我们黎明时出发。","Wǒmen límíng shí chūfā.","Chúng tôi xuất phát lúc rạng sáng."]}
-{"hz":"琢磨","vi":"mài giũa (ngọc); trau chuốt (câu văn); (đọc zuómo) ngẫm nghĩ, suy tính","hv":"trác ma","pos_vi":"động từ","ex":["这块玉经过了仔细琢磨。","Zhè kuài yù jīngguò le zǐxì zhuómó.","Khối ngọc này đã được mài giũa kỹ lưỡng."]}
+{"hz":"琢磨","vi":"ngẫm nghĩ, suy tính, cân nhắc; (zhuómó) mài giũa (ngọc), trau chuốt (câu văn)","hv":"trác ma","pos_vi":"động từ","ex":["这个问题我琢磨了好几天。","Zhège wèntí wǒ zuómole hǎo jǐ tiān.","Vấn đề này tôi đã ngẫm nghĩ mấy ngày liền."]}
 {"hz":"表态","vi":"bày tỏ thái độ, lên tiếng","hv":"biểu thái","pos_vi":"động từ","ex":["他还没有表态。","Tā hái méiyǒu biǎotài.","Anh ấy vẫn chưa bày tỏ thái độ."]}
 {"hz":"双胞胎","vi":"sinh đôi, cặp song sinh","hv":"song bào thai","pos_vi":"danh từ","ex":["她们是一对双胞胎。","Tāmen shì yí duì shuāngbāotāi.","Họ là một cặp sinh đôi."]}
 {"hz":"殴打","vi":"đánh đập, hành hung","hv":"ẩu đả","pos_vi":"động từ","ex":["那个人因殴打他人被抓了。","Nàge rén yīn ōudǎ tārén bèi zhuā le.","Người đó bị bắt vì hành hung người khác."]}
-{"hz":"领土","vi":"lãnh thổ","hv":"lãnh thổ","pos_vi":"danh từ","ex":["每个国家都要保护自己的领土。","Měi gè guójiā dōu yào bǎohù zìjǐ de lǐngtǔ.","Mỗi quốc gia đều phải bảo vệ lãnh thổ của mình."]}
+{"hz":"领土","vi":"lãnh thổ","hv":"lãnh thổ","pos_vi":"danh từ","ex":["每个国家都要保护自己的领土。","Měi ge guójiā dōu yào bǎohù zìjǐ de lǐngtǔ.","Mỗi quốc gia đều phải bảo vệ lãnh thổ của mình."]}
 {"hz":"反馈","vi":"phản hồi","hv":"phản quỹ","pos_vi":"động từ, danh từ","ex":["请把意见反馈给我们。","Qǐng bǎ yìjiàn fǎnkuì gěi wǒmen.","Xin hãy phản hồi ý kiến cho chúng tôi."]}
 {"hz":"无能为力","vi":"bất lực, lực bất tòng tâm","hv":"vô năng vi lực","pos_vi":"thành ngữ","ex":["这件事我也无能为力。","Zhè jiàn shì wǒ yě wúnéngwéilì.","Việc này tôi cũng đành bất lực."]}
 {"hz":"比喻","vi":"so sánh, ví von; phép ẩn dụ","hv":"tỉ dụ","pos_vi":"động từ, danh từ","ex":["人们常把老师比喻成园丁。","Rénmen cháng bǎ lǎoshī bǐyù chéng yuándīng.","Người ta thường ví thầy cô như người làm vườn."]}
 {"hz":"跳跃","vi":"nhảy, nhảy nhót; nhảy cóc (ý nghĩ)","hv":"khiêu dược","pos_vi":"động từ","ex":["小鹿在草地上跳跃。","Xiǎo lù zài cǎodì shàng tiàoyuè.","Chú nai con nhảy nhót trên bãi cỏ."]}
 {"hz":"挫折","vi":"thất bại, trắc trở, vấp ngã","hv":"tỏa chiết","pos_vi":"danh từ, động từ","ex":["遇到挫折不要放弃。","Yùdào cuòzhé bú yào fàngqì.","Gặp thất bại đừng bỏ cuộc."]}
 {"hz":"惯例","vi":"thông lệ, lệ thường","hv":"quán lệ","pos_vi":"danh từ","ex":["按照惯例，周五开会。","Ànzhào guànlì, zhōuwǔ kāihuì.","Theo thông lệ, thứ Sáu họp."]}
-{"hz":"储蓄","vi":"tiết kiệm, gửi tiết kiệm; tiền tiết kiệm","hv":"trữ súc","pos_vi":"động từ, danh từ","ex":["他每个月都储蓄一部分工资。","Tā měi gè yuè dōu chǔxù yí bùfen gōngzī.","Mỗi tháng anh ấy đều để dành một phần lương."]}
+{"hz":"储蓄","vi":"tiết kiệm, gửi tiết kiệm; tiền tiết kiệm","hv":"trữ súc","pos_vi":"động từ, danh từ","ex":["他每个月都储蓄一部分工资。","Tā měi ge yuè dōu chǔxù yí bùfen gōngzī.","Mỗi tháng anh ấy đều để dành một phần lương."]}
 {"hz":"必定","vi":"nhất định, chắc chắn","hv":"tất định","pos_vi":"phó từ","ex":["他必定会来的。","Tā bìdìng huì lái de.","Anh ấy chắc chắn sẽ đến."]}
 {"hz":"弦","vi":"dây (đàn, cung); dây cót","hv":"huyền","pos_vi":"danh từ","ex":["吉他的一根弦断了。","Jítā de yì gēn xián duàn le.","Một dây đàn ghi-ta bị đứt."]}
 {"hz":"迫不及待","vi":"nóng lòng, không chờ nổi","hv":"bách bất cập đãi","pos_vi":"thành ngữ","ex":["孩子们迫不及待地打开礼物。","Háizimen pòbùjídài de dǎkāi lǐwù.","Bọn trẻ nóng lòng mở quà."]}

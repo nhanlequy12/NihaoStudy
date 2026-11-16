@@ -10,10 +10,10 @@
 {"hz":"吩咐","vi":"dặn dò, sai bảo","hv":"phân phó","pos_vi":"động từ","ex":["妈妈吩咐我早点回家。","Māma fēnfù wǒ zǎo diǎn huí jiā.","Mẹ dặn tôi về nhà sớm."]}
 {"hz":"导航","vi":"dẫn đường, định vị; hoa tiêu","hv":"đạo hàng","pos_vi":"động từ, danh từ","ex":["开车时我习惯用手机导航。","Kāichē shí wǒ xíguàn yòng shǒujī dǎoháng.","Khi lái xe tôi quen dùng điện thoại để dẫn đường."]}
 {"hz":"挽回","vi":"cứu vãn, vãn hồi, lấy lại","hv":"vãn hồi","pos_vi":"động từ","ex":["他想挽回这段感情。","Tā xiǎng wǎnhuí zhè duàn gǎnqíng.","Anh ấy muốn cứu vãn mối tình này."]}
-{"hz":"三角","vi":"hình tam giác; lượng giác","hv":"tam giác","pos_vi":"danh từ","ex":["他在纸上画了一个三角。","Tā zài zhǐ shàng huà le yí gè sānjiǎo.","Cậu ấy vẽ một hình tam giác trên giấy."]}
+{"hz":"三角","vi":"hình tam giác; lượng giác","hv":"tam giác","pos_vi":"danh từ","ex":["他在纸上画了一个三角。","Tā zài zhǐ shàng huà le yí ge sānjiǎo.","Cậu ấy vẽ một hình tam giác trên giấy."]}
 {"hz":"条约","vi":"hiệp ước, điều ước","hv":"điều ước","pos_vi":"danh từ","ex":["两国签订了和平条约。","Liǎng guó qiāndìng le hépíng tiáoyuē.","Hai nước đã ký hiệp ước hoà bình."]}
 {"hz":"本能","vi":"bản năng; theo bản năng","hv":"bản năng","pos_vi":"danh từ, phó từ","ex":["他本能地往后退了一步。","Tā běnnéng de wǎng hòu tuì le yí bù.","Theo bản năng anh ấy lùi lại một bước."]}
-{"hz":"塑造","vi":"nặn, đắp; xây dựng, khắc hoạ (nhân vật, hình ảnh)","hv":"tố tạo","pos_vi":"động từ","ex":["作者成功地塑造了一个英雄形象。","Zuòzhě chénggōng de sùzào le yí gè yīngxióng xíngxiàng.","Tác giả đã khắc hoạ thành công hình tượng một người anh hùng."]}
+{"hz":"塑造","vi":"nặn, đắp; xây dựng, khắc hoạ (nhân vật, hình ảnh)","hv":"tố tạo","pos_vi":"động từ","ex":["作者成功地塑造了一个英雄形象。","Zuòzhě chénggōng de sùzào le yí ge yīngxióng xíngxiàng.","Tác giả đã khắc hoạ thành công hình tượng một người anh hùng."]}
 {"hz":"连锁","vi":"liên hoàn, dây chuyền; chuỗi (cửa hàng)","hv":"liên toả","pos_vi":"tính từ, động từ","ex":["这是一家连锁超市。","Zhè shì yì jiā liánsuǒ chāoshì.","Đây là một siêu thị thuộc chuỗi."]}
 {"hz":"疲惫","vi":"mệt mỏi, kiệt sức","hv":"bì bại","pos_vi":"tính từ","ex":["下班后他感到十分疲惫。","Xiàbān hòu tā gǎndào shífēn píbèi.","Tan làm anh ấy cảm thấy vô cùng mệt mỏi."]}
 {"hz":"拧","vi":"vắt (khăn, quần áo); véo; (đọc nǐng) vặn (ốc, nắp); (đọc nìng) bướng bỉnh","hv":"ninh","pos_vi":"động từ","ex":["把毛巾拧干。","Bǎ máojīn níng gān.","Vắt khô khăn mặt."]}
@@ -29,12 +29,12 @@
 {"hz":"擅自","vi":"tự tiện, tự ý","hv":"thiện tự","pos_vi":"phó từ","ex":["不要擅自离开岗位。","Búyào shànzì líkāi gǎngwèi.","Không được tự ý rời khỏi vị trí làm việc."]}
 {"hz":"目睹","vi":"chứng kiến, tận mắt thấy","hv":"mục đổ","pos_vi":"động từ","ex":["他目睹了整个事故。","Tā mùdǔ le zhěnggè shìgù.","Anh ấy đã tận mắt chứng kiến toàn bộ vụ tai nạn."]}
 {"hz":"刊登","vi":"đăng (báo, tạp chí)","hv":"san đăng","pos_vi":"động từ","ex":["他的文章刊登在报纸上。","Tā de wénzhāng kāndēng zài bàozhǐ shàng.","Bài viết của anh ấy được đăng trên báo."]}
-{"hz":"泄露","vi":"tiết lộ, để lộ, rò rỉ (thông tin)","hv":"tiết lộ","pos_vi":"động từ","ex":["请不要泄露客户的信息。","Qǐng búyào xièlù kèhù de xìnxī.","Xin đừng làm lộ thông tin khách hàng."]}
+{"hz":"泄露","vi":"tiết lộ, để lộ, rò rỉ (thông tin)","hv":"tiết lộ","pos_vi":"động từ","ex":["请不要泄露客户的信息。","Qǐng búyào xièlòu kèhù de xìnxī.","Xin đừng làm lộ thông tin khách hàng."]}
 {"hz":"拖延","vi":"kéo dài, trì hoãn, dây dưa","hv":"tha diên","pos_vi":"động từ","ex":["这件事不能再拖延了。","Zhè jiàn shì bù néng zài tuōyán le.","Việc này không thể trì hoãn thêm nữa."]}
 {"hz":"文物","vi":"cổ vật, di vật văn hoá","hv":"văn vật","pos_vi":"danh từ","ex":["博物馆里有很多珍贵的文物。","Bówùguǎn lǐ yǒu hěn duō zhēnguì de wénwù.","Trong bảo tàng có nhiều cổ vật quý giá."]}
 {"hz":"昂贵","vi":"đắt đỏ","hv":"ngang quý","pos_vi":"tính từ","ex":["这里的房价非常昂贵。","Zhèlǐ de fángjià fēicháng ángguì.","Giá nhà ở đây rất đắt đỏ."]}
 {"hz":"卡通","vi":"phim hoạt hình, tranh hoạt hình","hv":"tạp thông","pos_vi":"danh từ","ex":["弟弟最喜欢看卡通片。","Dìdi zuì xǐhuan kàn kǎtōngpiàn.","Em trai thích xem phim hoạt hình nhất."]}
-{"hz":"生效","vi":"có hiệu lực","hv":"sinh hiệu","pos_vi":"động từ","ex":["新规定从下个月起生效。","Xīn guīdìng cóng xià gè yuè qǐ shēngxiào.","Quy định mới có hiệu lực từ tháng sau."]}
+{"hz":"生效","vi":"có hiệu lực","hv":"sinh hiệu","pos_vi":"động từ","ex":["新规定从下个月起生效。","Xīn guīdìng cóng xià ge yuè qǐ shēngxiào.","Quy định mới có hiệu lực từ tháng sau."]}
 {"hz":"兑现","vi":"đổi ra tiền mặt; thực hiện (lời hứa)","hv":"đoái hiện","pos_vi":"động từ","ex":["他终于兑现了自己的承诺。","Tā zhōngyú duìxiàn le zìjǐ de chéngnuò.","Anh ấy cuối cùng đã thực hiện lời hứa của mình."]}
 {"hz":"拳头","vi":"nắm đấm; (sản phẩm) chủ lực, mũi nhọn","hv":"quyền đầu","pos_vi":"danh từ","ex":["他气得握紧了拳头。","Tā qì de wò jǐn le quántou.","Anh ấy tức đến nắm chặt tay lại."]}
 {"hz":"遵循","vi":"tuân theo, tuân thủ","hv":"tuân tuần","pos_vi":"động từ","ex":["我们要遵循自然规律。","Wǒmen yào zūnxún zìrán guīlǜ.","Chúng ta phải tuân theo quy luật tự nhiên."]}
@@ -56,7 +56,7 @@
 {"hz":"充实","vi":"phong phú, đầy đủ; làm phong phú thêm, bổ sung","hv":"sung thực","pos_vi":"tính từ, động từ","ex":["他的大学生活过得很充实。","Tā de dàxué shēnghuó guò de hěn chōngshí.","Cuộc sống đại học của anh ấy rất phong phú."]}
 {"hz":"解剖","vi":"giải phẫu, mổ xẻ; phân tích sâu","hv":"giải phẫu","pos_vi":"động từ","ex":["学生们在实验室解剖青蛙。","Xuéshengmen zài shíyànshì jiěpōu qīngwā.","Học sinh mổ ếch trong phòng thí nghiệm."]}
 {"hz":"雕塑","vi":"điêu khắc; tác phẩm điêu khắc, tượng","hv":"điêu tố","pos_vi":"danh từ","ex":["广场中央有一座雕塑。","Guǎngchǎng zhōngyāng yǒu yí zuò diāosù.","Giữa quảng trường có một bức tượng."]}
-{"hz":"国防","vi":"quốc phòng","hv":"quốc phòng","pos_vi":"danh từ","ex":["国防对一个国家很重要。","Guófáng duì yí gè guójiā hěn zhòngyào.","Quốc phòng rất quan trọng đối với một quốc gia."]}
+{"hz":"国防","vi":"quốc phòng","hv":"quốc phòng","pos_vi":"danh từ","ex":["国防对一个国家很重要。","Guófáng duì yí ge guójiā hěn zhòngyào.","Quốc phòng rất quan trọng đối với một quốc gia."]}
 {"hz":"着想","vi":"nghĩ cho, lo cho (người khác)","hv":"trước tưởng","pos_vi":"động từ","ex":["父母总是为孩子着想。","Fùmǔ zǒngshì wèi háizi zhuóxiǎng.","Cha mẹ luôn nghĩ cho con cái."]}
 {"hz":"颁发","vi":"ban hành; trao tặng, cấp (giấy tờ, giải thưởng)","hv":"ban phát","pos_vi":"động từ","ex":["校长给我们颁发了毕业证书。","Xiàozhǎng gěi wǒmen bānfā le bìyè zhèngshū.","Hiệu trưởng trao bằng tốt nghiệp cho chúng tôi."]}
 {"hz":"呼吁","vi":"kêu gọi, hô hào","hv":"hô dụ","pos_vi":"động từ","ex":["政府呼吁大家节约用水。","Zhèngfǔ hūyù dàjiā jiéyuē yòng shuǐ.","Chính phủ kêu gọi mọi người tiết kiệm nước."]}
@@ -66,10 +66,10 @@
 {"hz":"敞开","vi":"mở toang, mở rộng; thoải mái, không hạn chế","hv":"sưởng khai","pos_vi":"động từ","ex":["他敞开大门欢迎客人。","Tā chǎngkāi dàmén huānyíng kèrén.","Ông ấy mở toang cửa đón khách."]}
 {"hz":"挪","vi":"dời, dịch chuyển; chuyển (tiền) sang dùng việc khác","hv":"na","pos_vi":"động từ","ex":["请把车往前挪一下。","Qǐng bǎ chē wǎng qián nuó yíxià.","Làm ơn dịch xe lên phía trước một chút."]}
 {"hz":"公关","vi":"quan hệ công chúng (PR)","hv":"công quan","pos_vi":"danh từ","ex":["她在一家公司做公关工作。","Tā zài yì jiā gōngsī zuò gōngguān gōngzuò.","Cô ấy làm công việc PR ở một công ty."]}
-{"hz":"信赖","vi":"tin cậy, tin tưởng","hv":"tín lại","pos_vi":"động từ","ex":["他是一个值得信赖的人。","Tā shì yí gè zhídé xìnlài de rén.","Anh ấy là người đáng tin cậy."]}
+{"hz":"信赖","vi":"tin cậy, tin tưởng","hv":"tín lại","pos_vi":"động từ","ex":["他是一个值得信赖的人。","Tā shì yí ge zhídé xìnlài de rén.","Anh ấy là người đáng tin cậy."]}
 {"hz":"澄清","vi":"làm rõ, đính chính; trong vắt; (đọc dèngqīng) để lắng cho trong","hv":"trừng thanh","pos_vi":"động từ, tính từ","ex":["他发表声明澄清了事实。","Tā fābiǎo shēngmíng chéngqīng le shìshí.","Anh ấy ra thông báo làm rõ sự thật."]}
 {"hz":"境界","vi":"cảnh giới, tầm (tư tưởng, nghệ thuật); ranh giới","hv":"cảnh giới","pos_vi":"danh từ","ex":["他的书法达到了很高的境界。","Tā de shūfǎ dádào le hěn gāo de jìngjiè.","Thư pháp của ông ấy đã đạt đến tầm rất cao."]}
-{"hz":"生育","vi":"sinh đẻ, sinh con","hv":"sinh dục","pos_vi":"động từ","ex":["她生育了两个孩子。","Tā shēngyù le liǎng gè háizi.","Bà ấy đã sinh hai người con."]}
+{"hz":"生育","vi":"sinh đẻ, sinh con","hv":"sinh dục","pos_vi":"động từ","ex":["她生育了两个孩子。","Tā shēngyù le liǎng ge háizi.","Bà ấy đã sinh hai người con."]}
 {"hz":"劈","vi":"bổ, chẻ; (sét) đánh; (đọc pǐ) tách ra, chia","hv":"phách","pos_vi":"động từ","ex":["爷爷在院子里劈柴。","Yéye zài yuànzi lǐ pī chái.","Ông đang bổ củi ngoài sân."]}
 {"hz":"品尝","vi":"nếm thử, thưởng thức","hv":"phẩm thường","pos_vi":"động từ","ex":["欢迎大家品尝我们的新菜。","Huānyíng dàjiā pǐncháng wǒmen de xīn cài.","Mời mọi người nếm thử món mới của chúng tôi."]}
 {"hz":"粉碎","vi":"nghiền nát, tan tành; đập tan","hv":"phấn toái","pos_vi":"động từ, tính từ","ex":["杯子掉在地上摔得粉碎。","Bēizi diào zài dì shàng shuāi de fěnsuì.","Cái cốc rơi xuống đất vỡ tan tành."]}
@@ -86,5 +86,5 @@
 {"hz":"渗透","vi":"thấm, thẩm thấu; xâm nhập, len lỏi","hv":"sấm thấu","pos_vi":"động từ","ex":["雨水渗透了墙壁。","Yǔshuǐ shèntòu le qiángbì.","Nước mưa đã thấm qua tường."]}
 {"hz":"塌","vi":"sập, đổ; sụp, xệ xuống","hv":"tháp","pos_vi":"động từ","ex":["大雨把老房子冲塌了。","Dàyǔ bǎ lǎo fángzi chōng tā le.","Mưa lớn làm sập căn nhà cũ."]}
 {"hz":"打仗","vi":"đánh trận, đánh nhau, chiến tranh","hv":"đả trượng","pos_vi":"động từ","ex":["那个年代到处都在打仗。","Nàge niándài dàochù dōu zài dǎzhàng.","Thời đó đâu đâu cũng có chiến tranh."]}
-{"hz":"把手","vi":"tay nắm, tay cầm, quả đấm cửa; bắt tay","hv":"bả thủ","pos_vi":"danh từ","ex":["门把手坏了。","Mén bǎshǒu huài le.","Tay nắm cửa hỏng rồi."]}
+{"hz":"把手","vi":"tay nắm, tay cầm, quả đấm cửa; bắt tay","hv":"bả thủ","pos_vi":"danh từ","ex":["门把手坏了。","Mén bǎshou huài le.","Tay nắm cửa hỏng rồi."]}
 {"hz":"和解","vi":"hoà giải, làm lành","hv":"hoà giải","pos_vi":"động từ","ex":["他们俩终于和解了。","Tāmen liǎ zhōngyú héjiě le.","Hai người họ cuối cùng đã làm lành."]}

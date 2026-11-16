@@ -59,7 +59,7 @@
 {"hz":"空洞","vi":"rỗng tuếch, sáo rỗng; lỗ hổng, khoang rỗng","hv":"không động","pos_vi":"tính từ, danh từ","ex":["他的讲话内容很空洞。","Tā de jiǎnghuà nèiróng hěn kōngdòng.","Nội dung bài phát biểu của ông ta rất sáo rỗng."]}
 {"hz":"胡乱","vi":"bừa bãi, tuỳ tiện, qua loa","hv":"hồ loạn","pos_vi":"phó từ","ex":["他胡乱吃了几口就走了。","Tā húluàn chī le jǐ kǒu jiù zǒu le.","Anh ấy ăn qua loa mấy miếng rồi đi."]}
 {"hz":"夕阳","vi":"mặt trời lặn, ánh hoàng hôn","hv":"tịch dương","pos_vi":"danh từ","ex":["我们在海边看夕阳。","Wǒmen zài hǎibiān kàn xīyáng.","Chúng tôi ngắm hoàng hôn bên bờ biển."]}
-{"hz":"发呆","vi":"ngẩn người, thẫn thờ, đờ đẫn","hv":"phát ngai","pos_vi":"động từ","ex":["他一个人坐在窗前发呆。","Tā yí gè rén zuò zài chuāng qián fādāi.","Anh ấy ngồi một mình thẫn thờ bên cửa sổ."]}
+{"hz":"发呆","vi":"ngẩn người, thẫn thờ, đờ đẫn","hv":"phát ngai","pos_vi":"động từ","ex":["他一个人坐在窗前发呆。","Tā yí ge rén zuò zài chuāng qián fādāi.","Anh ấy ngồi một mình thẫn thờ bên cửa sổ."]}
 {"hz":"连同","vi":"cùng với, kể cả","hv":"liên đồng","pos_vi":"liên từ, giới từ","ex":["请把护照连同申请表一起交上来。","Qǐng bǎ hùzhào liántóng shēnqǐngbiǎo yìqǐ jiāo shànglai.","Hãy nộp hộ chiếu cùng với đơn đăng ký."]}
 {"hz":"凝视","vi":"nhìn chăm chú, nhìn đăm đăm","hv":"ngưng thị","pos_vi":"động từ","ex":["她凝视着远方。","Tā níngshìzhe yuǎnfāng.","Cô ấy nhìn đăm đăm về phía xa."]}
 {"hz":"无赖","vi":"kẻ vô lại, đồ lưu manh; vô lại, ngang ngược","hv":"vô lại","pos_vi":"danh từ, tính từ","ex":["那个人是个无赖。","Nàge rén shì gè wúlài.","Gã đó là một tên vô lại."]}
@@ -77,7 +77,7 @@
 {"hz":"濒临","vi":"gần kề, bên bờ, đứng trước (nguy cơ)","hv":"tân lâm","pos_vi":"động từ","ex":["这种动物濒临灭绝。","Zhè zhǒng dòngwù bīnlín mièjué.","Loài động vật này đang đứng trước nguy cơ tuyệt chủng."]}
 {"hz":"屏障","vi":"bức chắn, tấm bình phong, lá chắn","hv":"bình chướng","pos_vi":"danh từ","ex":["这片森林是城市的绿色屏障。","Zhè piàn sēnlín shì chéngshì de lǜsè píngzhàng.","Khu rừng này là lá chắn xanh của thành phố."]}
 {"hz":"传单","vi":"tờ rơi, truyền đơn","hv":"truyền đơn","pos_vi":"danh từ","ex":["他在街上发传单。","Tā zài jiē shàng fā chuándān.","Anh ấy phát tờ rơi trên phố."]}
-{"hz":"眯","vi":"(bụi) bay vào mắt, làm cay mắt; (đọc mī) nheo mắt, híp mắt","hv":"mễ","pos_vi":"động từ","ex":["沙子眯了我的眼睛。","Shāzi mí le wǒ de yǎnjing.","Cát bay vào mắt tôi."]}
+{"hz":"眯","vi":"nheo mắt, híp mắt; (đọc mí) bụi bay vào làm cay mắt","hv":"mễ","pos_vi":"động từ","ex":["她笑得眼睛都眯成了一条缝。","Tā xiào de yǎnjing dōu mī chéng le yì tiáo fèng.","Cô ấy cười đến híp cả mắt lại."]}
 {"hz":"记性","vi":"trí nhớ","hv":"ký tính","pos_vi":"danh từ","ex":["我的记性越来越差了。","Wǒ de jìxing yuèláiyuè chà le.","Trí nhớ của tôi ngày càng kém."]}
 {"hz":"晾","vi":"phơi (cho khô), để nguội; bỏ mặc, cho ra rìa","hv":"lượng","pos_vi":"động từ","ex":["把衣服晾在阳台上。","Bǎ yīfu liàng zài yángtái shàng.","Phơi quần áo ngoài ban công."]}
 {"hz":"践踏","vi":"giẫm đạp; chà đạp","hv":"tiễn đạp","pos_vi":"động từ","ex":["请勿践踏草地。","Qǐng wù jiàntà cǎodì.","Xin đừng giẫm lên cỏ."]}
@@ -90,7 +90,7 @@
 {"hz":"咀嚼","vi":"nhai; nghiền ngẫm","hv":"trớ tước","pos_vi":"động từ","ex":["吃饭时要慢慢咀嚼。","Chīfàn shí yào mànmàn jǔjué.","Khi ăn cơm phải nhai chậm."]}
 {"hz":"更正","vi":"đính chính, sửa lại","hv":"canh chính","pos_vi":"động từ","ex":["报纸更正了昨天的错误。","Bàozhǐ gēngzhèng le zuótiān de cuòwù.","Báo đã đính chính lỗi hôm qua."]}
 {"hz":"耸","vi":"nhún (vai); cao vút, sừng sững; làm kinh động","hv":"tủng","pos_vi":"động từ","ex":["他耸了耸肩，没说话。","Tā sǒng le sǒng jiān, méi shuōhuà.","Anh ấy nhún vai, không nói gì."]}
-{"hz":"总和","vi":"tổng, tổng cộng","hv":"tổng hoà","pos_vi":"danh từ","ex":["这是三个月工资的总和。","Zhè shì sān gè yuè gōngzī de zǒnghé.","Đây là tổng tiền lương của ba tháng."]}
+{"hz":"总和","vi":"tổng, tổng cộng","hv":"tổng hoà","pos_vi":"danh từ","ex":["这是三个月工资的总和。","Zhè shì sān ge yuè gōngzī de zǒnghé.","Đây là tổng tiền lương của ba tháng."]}
 {"hz":"章程","vi":"điều lệ, quy chế","hv":"chương trình","pos_vi":"danh từ","ex":["公司章程规定了股东的权利。","Gōngsī zhāngchéng guīdìng le gǔdōng de quánlì.","Điều lệ công ty quy định quyền lợi của cổ đông."]}
 {"hz":"甭","vi":"khỏi, không cần, đừng (khẩu ngữ phương Bắc)","hv":"bằng","pos_vi":"phó từ","ex":["你甭担心，我自己能行。","Nǐ béng dānxīn, wǒ zìjǐ néng xíng.","Cậu khỏi lo, tôi tự làm được."]}
 {"hz":"算数","vi":"có giá trị, giữ lời; đếm số, tính toán","hv":"toán số","pos_vi":"động từ","ex":["我说话算数。","Wǒ shuōhuà suànshù.","Tôi nói là giữ lời."]}

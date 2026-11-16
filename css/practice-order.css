@@ -1,0 +1,22 @@
+/* Luyện tập: Sắp xếp câu */
+.od-vi { min-height: 24px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.od-answer { min-height: 64px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px 12px; border: 2px dashed var(--border-strong); border-radius: 14px; background: var(--surface-2); transition: border-color 0.15s var(--ease), background 0.15s var(--ease); }
+.od-answer.od-over { border-color: var(--primary); background: var(--primary-soft); }
+.od-end { margin-left: auto; font-size: calc(1.3rem * var(--zh-scale)); color: var(--muted); padding: 0 4px; }
+.od-answer { margin-bottom: 12px; }
+.od-bank { display: flex; flex-wrap: wrap; gap: 10px; min-height: 52px; padding: 4px 0; }
+.od-chip { position: relative; display: inline-flex; align-items: center; gap: 6px; min-height: 46px; padding: 6px 14px; border: 1px solid var(--border-strong); border-radius: 12px;
+  background: var(--surface); color: var(--text); font-size: calc(1.3rem * var(--zh-scale)); cursor: grab; touch-action: none; user-select: none; box-shadow: var(--shadow-sm);
+  transition: transform 0.12s var(--ease), box-shadow 0.12s var(--ease), background 0.12s var(--ease); }
+.od-chip small { font: 600 0.7rem var(--font); color: var(--muted); }
+.od-chip:hover:not(:disabled) { transform: translateY(-2px); box-shadow: var(--shadow); }
+.od-chip:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.od-answer .od-chip { border-color: var(--text-2); background: var(--surface); }
+.od-chip.od-lifted { opacity: 0.3; }
+.od-ghost { position: fixed; z-index: 1000; pointer-events: none; cursor: grabbing; transform: rotate(-2deg) scale(1.05); box-shadow: var(--shadow-lg); }
+.od-chip.good { background: var(--green-soft); border-color: var(--green); color: var(--green); }
+.od-chip.bad { background: var(--danger-soft); border-color: var(--danger); color: var(--danger); }
+.od-chip:disabled { cursor: default; opacity: 1; }
+.od-model { font-size: calc(1.35rem * var(--zh-scale)); margin: 2px 0 6px; display: flex; flex-wrap: wrap; gap: 4px; align-items: baseline; }
+.od-model span { padding: 0 6px; border-radius: 6px; background: var(--green-soft); color: var(--green); }
+@media (max-width: 600px) { .od-chip { font-size: calc(1.15rem * var(--zh-scale)); padding: 6px 12px; } .od-answer { min-height: 58px; } }

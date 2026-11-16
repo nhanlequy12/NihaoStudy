@@ -113,6 +113,33 @@ def join_pinyin(p):
     return re.sub(r"\s+", "", p)
 
 
+def add_apostrophe(py, py_num):
+    """Chèn ' trước âm tiết bắt đầu bằng a/o/e (trừ âm tiết đầu) khi chưa có dấu ngăn; chỉ làm khi gióng được với py_num."""
+    import unicodedata
+    syls = [re.sub(r"[0-9]", "", s).replace("u:", "ü").replace("v", "ü").lower() for s in (py_num or "").split()]
+    if len(syls) < 2 or not py:
+        return py
+    bare = lambda c: unicodedata.normalize("NFD", c)[0].lower()
+    out, i = [], 0
+    for k, s in enumerate(syls):
+        while i < len(py) and py[i] in " -'’":
+            out.append(py[i]); i += 1
+        seg = py[i:i + len(s)]
+        if len(seg) != len(s) or "".join(bare(c) for c in seg) != "".join(bare(c) for c in s):
+            return py                                    # không gióng được (儿 hoá, viết khác…): giữ nguyên
+        if k == len(syls) - 1 and k > 0 and s == "er" and (py_num or "").split()[-1].lower() in ("er5", "r5", "er"):
+            out.append(seg[1:]); i += len(s)              # 儿 hoá: niǔkòuer → niǔkòur
+            continue
+        if k > 0 and s[0] in "aoe" and out and out[-1] not in " -'’":
+            out.append("'")
+        out.append(seg); i += len(s)
+    return "".join(out) + py[i:]
+
+
+# âm Hán Việt theo cách đọc, cho chữ đa âm mà hai cách đọc có âm Hán Việt khác nhau (bạn đã duyệt 16/11/2026)
+HV_BY_PY = {"划": {"hua2": "hoa", "hua4": "hoạch"}}
+
+
 def levels_of(w):
     h2 = sorted(int(l.split("-")[1]) for l in w["level"] if l.startswith("old-"))
     h3 = sorted(int(l.split("-")[1]) for l in w["level"] if l.startswith("new-"))
@@ -235,6 +262,10 @@ def main():
                 rec["py_alt"] = [p for p in dict.fromkeys([rec["py"]] + rec.get("py_alt", [])) if p != spy]
                 rec["py"] = spy
 
+    # dấu cách âm (GB/T 16159): âm tiết bắt đầu bằng a/o/e đứng sau âm tiết khác phải có ' (téngài → téng'ài)
+    for rec in base.values():
+        rec["py"] = add_apostrophe(rec["py"], rec.get("py_num", ""))
+
     # âm Hán Việt từng chữ, học từ các từ đã biên soạn (lấy âm gặp nhiều nhất); Unihan chỉ dùng khi chữ chưa gặp
     from collections import Counter
     char_hv = defaultdict(Counter)
@@ -261,7 +292,10 @@ def main():
         codes = rec.pop("_pos_codes")
         if a.no_cedict:
             rec.pop("en", None)
-        hv_auto = " ".join(hv_of(c) for c in hz if "\u3400" <= c <= "\u9fff")
+        # chữ đa âm có âm Hán Việt khác nhau theo cách đọc (划 huá = hoa, huà = hoạch): chọn theo py_num
+        cj0 = [c for c in hz if "\u3400" <= c <= "\u9fff"]
+        pn = (rec.get("py_num") or "").lower().split()
+        hv_auto = " ".join(HV_BY_PY.get(c, {}).get(pn[k] if len(pn) == len(cj0) else "", None) or hv_of(c) for k, c in enumerate(cj0))
         rec["vi_cvdict"] = pick_cvdict(cvdict.get(hz), rec.get("py_num"))
         cj = [c for c in hz if "\u3400" <= c <= "\u9fff"]
         sk = [unihan.get(c, {}).get("kTotalStrokes", "").split(" ")[0] for c in cj]

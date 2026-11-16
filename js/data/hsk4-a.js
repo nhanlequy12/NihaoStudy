@@ -338,7 +338,7 @@
     { hz: "抱", py: "bào", hv: "bão", vi: "ôm, bế", pos: "động từ", ex: ["她抱着一只小猫。", "Tā bào zhe yì zhī xiǎo māo.", "Cô ấy ôm một chú mèo con."], l: 49 },
     { hz: "敲", py: "qiāo", hv: "xao", vi: "gõ", pos: "động từ", ex: ["有人在敲门。", "Yǒu rén zài qiāo mén.", "Có người đang gõ cửa."], l: 49 },
     { hz: "撞", py: "zhuàng", hv: "chàng", vi: "đâm, va vào", pos: "động từ", ex: ["小心别撞到人。", "Xiǎoxīn bié zhuàng dào rén.", "Cẩn thận đừng đâm vào người."], l: 49 },
-    { hz: "弹", py: "tán", hv: "đàn", vi: "chơi (đàn), gảy; đạn", pos: "động từ", ex: ["她弹钢琴弹得很好。", "Tā tán gāngqín tán de hěn hǎo.", "Cô ấy chơi piano rất hay."], l: 49 },
+    { hz: "弹", py: "tán", hv: "đàn", vi: "chơi (đàn), gảy, búng; bật nảy (đọc dàn: viên đạn)", pos: "động từ", ex: ["她弹钢琴弹得很好。", "Tā tán gāngqín tán de hěn hǎo.", "Cô ấy chơi piano rất hay."], l: 49 },
     { hz: "指", py: "zhǐ", hv: "chỉ", vi: "ngón tay; chỉ, trỏ", pos: "động từ", ex: ["他指着地图说。", "Tā zhǐ zhe dìtú shuō.", "Anh ấy chỉ vào bản đồ nói."], l: 49 },
     { hz: "握手", py: "wòshǒu", hv: "ác thủ", vi: "bắt tay", pos: "động từ", ex: ["两个人握手问好。", "Liǎng ge rén wòshǒu wènhǎo.", "Hai người bắt tay chào hỏi."], l: 49 },
     { hz: "动作", py: "dòngzuò", hv: "động tác", vi: "động tác, cử động", pos: "danh từ", ex: ["这个动作很简单。", "Zhège dòngzuò hěn jiǎndān.", "Động tác này rất đơn giản."], l: 49 },
@@ -348,7 +348,7 @@
     { hz: "修", py: "xiū", hv: "tu", vi: "sửa, sửa chữa", pos: "động từ", ex: ["他会修自行车。", "Tā huì xiū zìxíngchē.", "Anh ấy biết sửa xe đạp."], l: 49 },
     { hz: "弄", py: "nòng", hv: "lộng", vi: "làm, nghịch, xử lý", pos: "động từ", ex: ["谁把电脑弄坏了？", "Shéi bǎ diànnǎo nòng huài le?", "Ai làm hỏng máy tính rồi?"], l: 49 },
     { hz: "刀", py: "dāo", hv: "đao", vi: "dao", pos: "danh từ", ex: ["这把刀很快。", "Zhè bǎ dāo hěn kuài.", "Con dao này rất sắc."], l: 49 },
-    { hz: "干", py: "gàn", hv: "can", vi: "làm (việc); khô", pos: "động từ", ex: ["你在干什么？", "Nǐ zài gàn shénme?", "Bạn đang làm gì đấy?"], l: 49 },
+    { hz: "干", py: "gàn", hv: "can", vi: "làm (việc), làm gì", pos: "động từ", ex: ["你在干什么？", "Nǐ zài gàn shénme?", "Bạn đang làm gì đấy?"], l: 49 },
 
     // ---- Bài 50: Cơ thể & sức khỏe ----
     { hz: "肚子", py: "dùzi", hv: "đỗ tử", vi: "bụng", pos: "danh từ", ex: ["我肚子疼。", "Wǒ dùzi téng.", "Tôi đau bụng."], l: 50 },
@@ -419,9 +419,9 @@
 
     // ---- Bài 54: Địa lý & thế giới ----
     { hz: "首都", py: "shǒudū", hv: "thủ đô", vi: "thủ đô", pos: "danh từ", ex: ["河内是越南的首都。", "Hénèi shì Yuènán de shǒudū.", "Hà Nội là thủ đô của Việt Nam."], l: 54 },
-    { hz: "长城", py: "chángchéng", hv: "trường thành", vi: "Vạn Lý Trường Thành", pos: "danh từ", ex: ["我爬过长城。", "Wǒ pá guo Chángchéng.", "Tôi từng leo Trường Thành."], l: 54 },
-    { hz: "长江", py: "chángjiāng", hv: "trường giang", vi: "sông Trường Giang", pos: "danh từ", ex: ["长江是中国最长的河。", "Chángjiāng shì Zhōngguó zuì cháng de hé.", "Trường Giang là con sông dài nhất Trung Quốc."], l: 54 },
-    { hz: "亚洲", py: "yàzhōu", hv: "á châu", vi: "châu Á", pos: "danh từ", ex: ["越南在亚洲。", "Yuènán zài Yàzhōu.", "Việt Nam ở châu Á."], l: 54 },
+    { hz: "长城", py: "Chángchéng", hv: "trường thành", vi: "Vạn Lý Trường Thành", pos: "danh từ", ex: ["我爬过长城。", "Wǒ pá guo Chángchéng.", "Tôi từng leo Trường Thành."], l: 54 },
+    { hz: "长江", py: "Chángjiāng", hv: "trường giang", vi: "sông Trường Giang", pos: "danh từ", ex: ["长江是中国最长的河。", "Chángjiāng shì Zhōngguó zuì cháng de hé.", "Trường Giang là con sông dài nhất Trung Quốc."], l: 54 },
+    { hz: "亚洲", py: "Yàzhōu", hv: "á châu", vi: "châu Á", pos: "danh từ", ex: ["越南在亚洲。", "Yuènán zài Yàzhōu.", "Việt Nam ở châu Á."], l: 54 },
     { hz: "国际", py: "guójì", hv: "quốc tế", vi: "quốc tế", pos: "tính từ", ex: ["这是一个国际机场。", "Zhè shì yí ge guójì jīchǎng.", "Đây là một sân bay quốc tế."], l: 54 },
     { hz: "当地", py: "dāngdì", hv: "đương địa", vi: "địa phương, bản địa", pos: "danh từ", ex: ["我想尝尝当地的菜。", "Wǒ xiǎng chángchang dāngdì de cài.", "Tôi muốn nếm thử món ăn địa phương."], l: 54 },
     { hz: "农村", py: "nóngcūn", hv: "nông thôn", vi: "nông thôn", pos: "danh từ", ex: ["他在农村长大。", "Tā zài nóngcūn zhǎngdà.", "Anh ấy lớn lên ở nông thôn."], l: 54 },

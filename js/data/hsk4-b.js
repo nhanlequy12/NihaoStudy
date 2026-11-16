@@ -64,7 +64,7 @@
         ["A", "经理，我明天想请一天假。", "Jīnglǐ, wǒ míngtiān xiǎng qǐng yì tiān jià.", "Giám đốc, mai tôi muốn xin nghỉ một ngày."],
         ["B", "明天有会议，能推迟到后天吗？", "Míngtiān yǒu huìyì, néng tuīchí dào hòutiān ma?", "Mai có họp, dời sang ngày kia được không?"],
         ["A", "可以，我重新安排一下。", "Kěyǐ, wǒ chóngxīn ānpái yíxià.", "Được, tôi sắp xếp lại."],
-        ["B", "那你今天按时把报告交上来。", "Nà nǐ jīntiān ànshí bǎ bàogào jiāo shànglái.", "Vậy hôm nay cậu nộp báo cáo đúng hạn nhé."],
+        ["B", "那你今天按时把报告交上来。", "Nà nǐ jīntiān ànshí bǎ bàogào jiāo shànglai.", "Vậy hôm nay cậu nộp báo cáo đúng hạn nhé."],
         ["A", "好的，我来得及。", "Hǎo de, wǒ láidejí.", "Vâng, tôi kịp mà."],
       ],
       sentences: [
@@ -286,7 +286,7 @@
     { hz: "工具", py: "gōngjù", hv: "công cụ", vi: "công cụ, dụng cụ", pos: "danh từ", ex: ["电脑是工作的工具。", "Diànnǎo shì gōngzuò de gōngjù.", "Máy tính là công cụ làm việc."], l: 56 },
     { hz: "管理", py: "guǎnlǐ", hv: "quản lý", vi: "quản lý", pos: "động từ", ex: ["他管理一家公司。", "Tā guǎnlǐ yì jiā gōngsī.", "Anh ấy quản lý một công ty."], l: 56 },
     { hz: "代表", py: "dàibiǎo", hv: "đại biểu", vi: "đại diện, đại biểu", pos: "động từ", ex: ["她代表学校参加比赛。", "Tā dàibiǎo xuéxiào cānjiā bǐsài.", "Cô ấy đại diện trường dự thi."], l: 56 },
-    { hz: "申请", py: "shēnqǐng", hv: "thân thỉnh", vi: "xin, đăng ký, nộp đơn", pos: "động từ", ex: ["我想申请这个工作。", "Wǒ xiǎng shēnqǐng zhège gōngzuò.", "Tôi muốn xin vào công việc này."], l: 56 },
+    { hz: "申请", py: "shēnqǐng", hv: "thân thỉnh", vi: "xin, đăng ký, nộp đơn", pos: "động từ", ex: ["我想申请这个工作。", "Wǒ xiǎng shēnqǐng zhège gōngzuò.", "Tôi muốn ứng tuyển vào công việc này."], l: 56 },
     { hz: "笔记本", py: "bǐjìběn", hv: "bút ký bản", vi: "sổ tay, vở; laptop", pos: "danh từ", ex: ["我买了一个新笔记本。", "Wǒ mǎi le yí ge xīn bǐjìběn.", "Tôi mua một quyển sổ mới."], l: 56 },
 
     // ---- Bài 57: Thời gian & lịch trình ----

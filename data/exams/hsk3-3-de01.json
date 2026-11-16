@@ -42,7 +42,7 @@
           "Một cậu bé ngồi xem TV, mẹ đứng bên cạnh chỉ vào vở bài tập",
           "Một cô gái đang thử giày trong cửa hàng",
           "Một người phụ nữ đang tưới hoa trong vườn",
-          "Một người đàn ông đang chạy bộ trong công viên buổi sáng",
+          "Một người phụ nữ đang chạy bộ trong công viên buổi sáng",
           "Hai người ngồi trong thư viện, một người chỉ vào cuốn từ điển"
          ],
          "answer": 2,
@@ -84,7 +84,7 @@
           "Một cậu bé ngồi xem TV, mẹ đứng bên cạnh chỉ vào vở bài tập",
           "Một cô gái đang thử giày trong cửa hàng",
           "Một người phụ nữ đang tưới hoa trong vườn",
-          "Một người đàn ông đang chạy bộ trong công viên buổi sáng",
+          "Một người phụ nữ đang chạy bộ trong công viên buổi sáng",
           "Hai người ngồi trong thư viện, một người chỉ vào cuốn từ điển"
          ],
          "answer": 4,
@@ -125,7 +125,7 @@
           "Một cậu bé ngồi xem TV, mẹ đứng bên cạnh chỉ vào vở bài tập",
           "Một cô gái đang thử giày trong cửa hàng",
           "Một người phụ nữ đang tưới hoa trong vườn",
-          "Một người đàn ông đang chạy bộ trong công viên buổi sáng",
+          "Một người phụ nữ đang chạy bộ trong công viên buổi sáng",
           "Hai người ngồi trong thư viện, một người chỉ vào cuốn từ điển"
          ],
          "answer": 1,
@@ -166,7 +166,7 @@
           "Một cậu bé ngồi xem TV, mẹ đứng bên cạnh chỉ vào vở bài tập",
           "Một cô gái đang thử giày trong cửa hàng",
           "Một người phụ nữ đang tưới hoa trong vườn",
-          "Một người đàn ông đang chạy bộ trong công viên buổi sáng",
+          "Một người phụ nữ đang chạy bộ trong công viên buổi sáng",
           "Hai người ngồi trong thư viện, một người chỉ vào cuốn từ điển"
          ],
          "answer": 5,
@@ -208,7 +208,7 @@
           "Một cậu bé ngồi xem TV, mẹ đứng bên cạnh chỉ vào vở bài tập",
           "Một cô gái đang thử giày trong cửa hàng",
           "Một người phụ nữ đang tưới hoa trong vườn",
-          "Một người đàn ông đang chạy bộ trong công viên buổi sáng",
+          "Một người phụ nữ đang chạy bộ trong công viên buổi sáng",
           "Hai người ngồi trong thư viện, một người chỉ vào cuốn từ điển"
          ],
          "answer": 0,
@@ -1871,7 +1871,7 @@
          "answer": 1,
          "sample_answer": null,
          "rubric_vi": null,
-         "explain_vi": "\"这个学期她每天晚上都花一个小时复习外语\". Toán của em vẫn tốt; em học lớp 1 cấp hai.",
+         "explain_vi": "\"这个学期她每天晚上都花一个小时复习外语\". Toán của em vẫn tốt; em đang học năm thứ nhất cấp hai (初中一年级), không phải năm thứ ba.",
          "skills": [
           "doc-doan-van",
           "doc-chi-tiet"
@@ -1916,7 +1916,7 @@
       },
       {
        "audio": null,
-       "passage": "我们小区附近有一个小公园，以前里面很脏，到处都是纸和瓶子，很少有人去。去年，小区里的几位老人决定每天早上去公园打扫。慢慢地，越来越多的邻居也参加了进来。现在公园变得又干净又漂亮，晚上常常有人在那儿跳舞、聊天儿。",
+       "passage": "我们小区附近有一个小公园，以前里面很脏，到处都是纸和瓶子，很少有人去。去年，小区里的几位老人决定每天早上去公园打扫。慢慢地，越来越多的邻居也来一起打扫。现在公园变得又干净又漂亮，晚上常常有人在那儿跳舞、聊天儿。",
        "image_vi": null,
        "items": [
         {
@@ -1967,7 +1967,7 @@
       },
       {
        "audio": null,
-       "passage": "很多人学外语的时候，觉得最难的是记住新的词。我的办法是：把每天学的新词写在小纸上，放在家里经常能看见的地方，比如冰箱上、门上。这样，每次看见就读一遍，不用花很多时间，也能记得很清楚。",
+       "passage": "很多人学外语的时候，觉得最难的是记住新的词。我的办法是：把每天学的新词写在小纸条上，放在家里经常能看见的地方，比如冰箱上、门上。这样，每次看见就读一遍，不用花很多时间，也能记得很清楚。",
        "image_vi": null,
        "items": [
         {

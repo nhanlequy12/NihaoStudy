@@ -4,8 +4,8 @@ window.READINGS = window.READINGS || [];
 window.READINGS.push(
   {
     id: "r05", after: 5, level: 1, title: "Tôi là Vương Minh",
-    zh: "你好！我叫王明，我是中国人，我家在北京。我今年二十岁。我家有四个人：爸爸、妈妈、我，我有一个妹妹。爸爸四十八岁，妈妈四十五岁。我没有狗，我有一个猫，猫是我的好朋友。这是李红，她是我的朋友，她是北京人，她十九岁。今天是星期三，现在是上午十点。认识你我很高兴！",
-    py: "Nǐ hǎo! Wǒ jiào Wáng Míng, wǒ shì Zhōngguó rén, wǒ jiā zài Běijīng. Wǒ jīnnián èrshí suì. Wǒ jiā yǒu sì gè rén: bàba, māma, wǒ, wǒ yǒu yí gè mèimei. Bàba sìshíbā suì, māma sìshíwǔ suì. Wǒ méiyǒu gǒu, wǒ yǒu yí gè māo, māo shì wǒ de hǎo péngyou. Zhè shì Lǐ Hóng, tā shì wǒ de péngyou, tā shì Běijīng rén, tā shíjiǔ suì. Jīntiān shì xīngqīsān, xiànzài shì shàngwǔ shí diǎn. Rènshi nǐ wǒ hěn gāoxìng!",
+    zh: "你好！我叫王明，我是中国人，我家在北京。我今年二十岁。我家有四个人：爸爸、妈妈、我，我有一个妹妹。爸爸四十八岁，妈妈四十五岁。我没有狗，我有一只猫，猫是我的好朋友。这是李红，她是我的朋友，她是北京人，她十九岁。今天是星期三，现在是上午十点。认识你我很高兴！",
+    py: "Nǐ hǎo! Wǒ jiào Wáng Míng, wǒ shì Zhōngguó rén, wǒ jiā zài Běijīng. Wǒ jīnnián èrshí suì. Wǒ jiā yǒu sì ge rén: bàba, māma, wǒ, wǒ yǒu yí ge mèimei. Bàba sìshíbā suì, māma sìshíwǔ suì. Wǒ méiyǒu gǒu, wǒ yǒu yì zhī māo, māo shì wǒ de hǎo péngyou. Zhè shì Lǐ Hóng, tā shì wǒ de péngyou, tā shì Běijīng rén, tā shíjiǔ suì. Jīntiān shì xīngqīsān, xiànzài shì shàngwǔ shí diǎn. Rènshi nǐ wǒ hěn gāoxìng!",
     vi: "Xin chào! Tôi tên là Vương Minh, tôi là người Trung Quốc, nhà tôi ở Bắc Kinh. Năm nay tôi hai mươi tuổi. Nhà tôi có bốn người: bố, mẹ, tôi, và tôi có một em gái. Bố bốn mươi tám tuổi, mẹ bốn mươi lăm tuổi. Tôi không có chó, tôi có một con mèo, mèo là bạn tốt của tôi. Đây là Lý Hồng, cô ấy là bạn tôi, cô ấy là người Bắc Kinh, cô ấy mười chín tuổi. Hôm nay là thứ Tư, bây giờ là mười giờ sáng. Quen biết bạn tôi rất vui!",
     extra: [
       { hz: "王明", py: "Wáng Míng", vi: "Vương Minh (tên người)" },
@@ -21,7 +21,7 @@ window.READINGS.push(
   {
     id: "r10", after: 10, level: 1, title: "Một ngày ở trường",
     zh: "我叫王明，我是学生，我在北京学习汉语。我们学校很大，学校前面有一个商店，后面有一个饭馆。上午我在学校读书、写字。中午我去饭馆吃米饭，我喜欢吃菜，不喜欢喝茶。下午我去商店买东西，苹果一块钱一个。今天天气很热，我想喝水。五点我坐出租车回家。十点我睡觉。",
-    py: "Wǒ jiào Wáng Míng, wǒ shì xuésheng, wǒ zài Běijīng xuéxí Hànyǔ. Wǒmen xuéxiào hěn dà, xuéxiào qiánmiàn yǒu yí gè shāngdiàn, hòumiàn yǒu yí gè fànguǎn. Shàngwǔ wǒ zài xuéxiào dú shū, xiě zì. Zhōngwǔ wǒ qù fànguǎn chī mǐfàn, wǒ xǐhuan chī cài, bù xǐhuan hē chá. Xiàwǔ wǒ qù shāngdiàn mǎi dōngxi, píngguǒ yí kuài qián yí gè. Jīntiān tiānqì hěn rè, wǒ xiǎng hē shuǐ. Wǔ diǎn wǒ zuò chūzūchē huí jiā. Shí diǎn wǒ shuìjiào.",
+    py: "Wǒ jiào Wáng Míng, wǒ shì xuésheng, wǒ zài Běijīng xuéxí Hànyǔ. Wǒmen xuéxiào hěn dà, xuéxiào qiánmiàn yǒu yí ge shāngdiàn, hòumiàn yǒu yí ge fànguǎn. Shàngwǔ wǒ zài xuéxiào dú shū, xiě zì. Zhōngwǔ wǒ qù fànguǎn chī mǐfàn, wǒ xǐhuan chī cài, bù xǐhuan hē chá. Xiàwǔ wǒ qù shāngdiàn mǎi dōngxi, píngguǒ yí kuài qián yí ge. Jīntiān tiānqì hěn rè, wǒ xiǎng hē shuǐ. Wǔ diǎn wǒ zuò chūzūchē huí jiā. Shí diǎn wǒ shuìjiào.",
     vi: "Tôi tên là Vương Minh, tôi là học sinh, tôi học tiếng Trung ở Bắc Kinh. Trường chúng tôi rất lớn, trước trường có một cửa hàng, sau trường có một quán ăn. Buổi sáng tôi ở trường đọc sách, viết chữ. Buổi trưa tôi đến quán ăn ăn cơm, tôi thích ăn rau, không thích uống trà. Buổi chiều tôi đi cửa hàng mua đồ, táo một tệ một quả. Hôm nay trời rất nóng, tôi muốn uống nước. Năm giờ tôi đi taxi về nhà. Mười giờ tôi đi ngủ.",
     extra: [
       { hz: "王明", py: "Wáng Míng", vi: "Vương Minh (tên người)" },
@@ -35,7 +35,7 @@ window.READINGS.push(
   {
     id: "r12", after: 12, level: 1, title: "Ngày mưa thứ Bảy",
     zh: "今天是星期六，天气不好，下雨了。我在家学习汉语。我的桌子上有三本书和一个电脑。中午爸爸做菜，我们吃米饭和菜，很好。下午王明打电话，他说：“喂，你好！我们去看电影，怎么样？”我说：“太好了！”三点我们在商店前面看见了李小姐，她买了很多衣服。六点我们都回家了。",
-    py: "Jīntiān shì xīngqīliù, tiānqì bù hǎo, xiàyǔ le. Wǒ zài jiā xuéxí Hànyǔ. Wǒ de zhuōzi shang yǒu sān běn shū hé yí gè diànnǎo. Zhōngwǔ bàba zuò cài, wǒmen chī mǐfàn hé cài, hěn hǎo. Xiàwǔ Wáng Míng dǎ diànhuà, tā shuō: “Wèi, nǐ hǎo! Wǒmen qù kàn diànyǐng, zěnmeyàng?” Wǒ shuō: “Tài hǎo le!” Sān diǎn wǒmen zài shāngdiàn qiánmiàn kànjiàn le Lǐ xiǎojiě, tā mǎi le hěn duō yīfu. Liù diǎn wǒmen dōu huí jiā le.",
+    py: "Jīntiān shì xīngqīliù, tiānqì bù hǎo, xiàyǔ le. Wǒ zài jiā xuéxí Hànyǔ. Wǒ de zhuōzi shang yǒu sān běn shū hé yí ge diànnǎo. Zhōngwǔ bàba zuò cài, wǒmen chī mǐfàn hé cài, hěn hǎo. Xiàwǔ Wáng Míng dǎ diànhuà, tā shuō: “Wèi, nǐ hǎo! Wǒmen qù kàn diànyǐng, zěnmeyàng?” Wǒ shuō: “Tài hǎo le!” Sān diǎn wǒmen zài shāngdiàn qiánmiàn kànjiàn le Lǐ xiǎojiě, tā mǎi le hěn duō yīfu. Liù diǎn wǒmen dōu huí jiā le.",
     vi: "Hôm nay là thứ Bảy, thời tiết không đẹp, trời mưa rồi. Tôi ở nhà học tiếng Trung. Trên bàn tôi có ba quyển sách và một cái máy tính. Buổi trưa bố nấu ăn, chúng tôi ăn cơm và rau, rất ngon. Buổi chiều Vương Minh gọi điện, cậu ấy nói: “Alô, chào cậu! Chúng mình đi xem phim, thế nào?” Tôi nói: “Hay quá!” Ba giờ chúng tôi nhìn thấy cô Lý trước cửa hàng, cô ấy mua rất nhiều quần áo. Sáu giờ chúng tôi đều về nhà rồi.",
     extra: [
       { hz: "王明", py: "Wáng Míng", vi: "Vương Minh (tên người)" },
@@ -50,7 +50,7 @@ window.READINGS.push(
   {
     id: "r15", after: 15, level: 2, title: "Gia đình của Lý Hồng",
     zh: "我叫李红，我给你介绍我的家。我家有五个人：爸爸、妈妈、哥哥、妹妹和我。爸爸是医生，他在医院工作，每天早上七点上班。妈妈在家做饭。哥哥去年开始在一个商店工作，他卖水果和西瓜。妹妹还小，她今年八岁，是学生。早上我六点起床，喝牛奶，吃鸡蛋。晚上我们都在家。",
-    py: "Wǒ jiào Lǐ Hóng, wǒ gěi nǐ jièshào wǒ de jiā. Wǒ jiā yǒu wǔ gè rén: bàba, māma, gēge, mèimei hé wǒ. Bàba shì yīshēng, tā zài yīyuàn gōngzuò, měi tiān zǎoshang qī diǎn shàngbān. Māma zài jiā zuò fàn. Gēge qùnián kāishǐ zài yí gè shāngdiàn gōngzuò, tā mài shuǐguǒ hé xīguā. Mèimei hái xiǎo, tā jīnnián bā suì, shì xuésheng. Zǎoshang wǒ liù diǎn qǐchuáng, hē niúnǎi, chī jīdàn. Wǎnshang wǒmen dōu zài jiā.",
+    py: "Wǒ jiào Lǐ Hóng, wǒ gěi nǐ jièshào wǒ de jiā. Wǒ jiā yǒu wǔ ge rén: bàba, māma, gēge, mèimei hé wǒ. Bàba shì yīshēng, tā zài yīyuàn gōngzuò, měi tiān zǎoshang qī diǎn shàngbān. Māma zài jiā zuò fàn. Gēge qùnián kāishǐ zài yí ge shāngdiàn gōngzuò, tā mài shuǐguǒ hé xīguā. Mèimei hái xiǎo, tā jīnnián bā suì, shì xuésheng. Zǎoshang wǒ liù diǎn qǐchuáng, hē niúnǎi, chī jīdàn. Wǎnshang wǒmen dōu zài jiā.",
     vi: "Tôi tên là Lý Hồng, tôi xin giới thiệu với bạn gia đình mình. Nhà tôi có năm người: bố, mẹ, anh trai, em gái và tôi. Bố là bác sĩ, bố làm việc ở bệnh viện, mỗi ngày bảy giờ sáng đi làm. Mẹ ở nhà nấu cơm. Anh trai từ năm ngoái bắt đầu làm ở một cửa hàng, anh bán hoa quả và dưa hấu. Em gái còn nhỏ, năm nay tám tuổi, là học sinh. Buổi sáng tôi dậy lúc sáu giờ, uống sữa, ăn trứng. Buổi tối cả nhà đều ở nhà.",
     extra: [
       { hz: "李红", py: "Lǐ Hóng", vi: "Lý Hồng (tên người)" },

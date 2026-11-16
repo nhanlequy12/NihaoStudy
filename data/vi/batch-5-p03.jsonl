@@ -5,7 +5,7 @@
 {"hz":"还原","vi":"khôi phục nguyên trạng; tái hiện; (hóa học) khử","hv":"hoàn nguyên","pos_vi":"động từ","ex":["警察还原了事故的经过。","Jǐngchá huányuán le shìgù de jīngguò.","Cảnh sát đã tái hiện lại diễn biến vụ tai nạn."]}
 {"hz":"陶瓷","vi":"đồ gốm sứ","hv":"đào từ","pos_vi":"danh từ","ex":["这个城市以陶瓷闻名。","Zhège chéngshì yǐ táocí wénmíng.","Thành phố này nổi tiếng về gốm sứ."]}
 {"hz":"发火","vi":"nổi giận, nổi nóng; bốc cháy","hv":"phát hỏa","pos_vi":"động từ","ex":["他一听这话就发火了。","Tā yì tīng zhè huà jiù fāhuǒ le.","Vừa nghe câu đó anh ấy đã nổi giận."]}
-{"hz":"丰满","vi":"đầy đặn, đẫy đà; dồi dào (Fēngmǎn: quận Phong Mãn)","hv":"phong mãn","pos_vi":"tính từ","ex":["她的身材很丰满。","Tā de shēncái hěn fēngmǎn.","Dáng người cô ấy đầy đặn."]}
+{"hz":"丰满","vi":"đầy đặn, đẫy đà; dồi dào","hv":"phong mãn","pos_vi":"tính từ","ex":["她的身材很丰满。","Tā de shēncái hěn fēngmǎn.","Dáng người cô ấy đầy đặn."]}
 {"hz":"以致","vi":"đến nỗi, dẫn đến (kết quả xấu)","hv":"dĩ trí","pos_vi":"liên từ","ex":["他没看路，以致撞到了树上。","Tā méi kàn lù, yǐzhì zhuàng dào le shù shàng.","Anh ấy không nhìn đường, đến nỗi đâm vào cây."]}
 {"hz":"立体","vi":"lập thể, ba chiều (3D)","hv":"lập thể","pos_vi":"tính từ","ex":["我们去看立体电影吧。","Wǒmen qù kàn lìtǐ diànyǐng ba.","Chúng mình đi xem phim 3D đi."]}
 {"hz":"高涨","vi":"dâng cao, tăng vọt; (tinh thần) sục sôi","hv":"cao trướng","pos_vi":"động từ, tính từ","ex":["大家的热情非常高涨。","Dàjiā de rèqíng fēicháng gāozhǎng.","Nhiệt tình của mọi người vô cùng sục sôi."]}
@@ -26,7 +26,7 @@
 {"hz":"档次","vi":"đẳng cấp, cấp độ, hạng","hv":"đương thứ","pos_vi":"danh từ","ex":["这家酒店档次很高。","Zhè jiā jiǔdiàn dàngcì hěn gāo.","Khách sạn này rất đẳng cấp."]}
 {"hz":"让步","vi":"nhượng bộ","hv":"nhượng bộ","pos_vi":"động từ, danh từ","ex":["双方都做了一些让步。","Shuāngfāng dōu zuò le yìxiē ràngbù.","Hai bên đều đã nhượng bộ đôi chút."]}
 {"hz":"繁忙","vi":"bận rộn, tấp nập","hv":"phồn mang","pos_vi":"tính từ","ex":["这是一个繁忙的港口。","Zhè shì yí ge fánmáng de gǎngkǒu.","Đây là một bến cảng tấp nập."]}
-{"hz":"习俗","vi":"phong tục, tập tục","hv":"tập tục","pos_vi":"danh từ","ex":["每个地方都有自己的习俗。","Měi gè dìfang dōu yǒu zìjǐ de xísú.","Mỗi nơi đều có phong tục riêng."]}
+{"hz":"习俗","vi":"phong tục, tập tục","hv":"tập tục","pos_vi":"danh từ","ex":["每个地方都有自己的习俗。","Měi ge dìfang dōu yǒu zìjǐ de xísú.","Mỗi nơi đều có phong tục riêng."]}
 {"hz":"狭窄","vi":"chật hẹp, hẹp; hẹp hòi","hv":"hiệp trách","pos_vi":"tính từ","ex":["这条小巷很狭窄。","Zhè tiáo xiǎo xiàng hěn xiázhǎi.","Con hẻm này rất chật hẹp."]}
 {"hz":"布局","vi":"bố cục, cách bố trí; sắp xếp","hv":"bố cục","pos_vi":"danh từ, động từ","ex":["这套房子的布局很合理。","Zhè tào fángzi de bùjú hěn hélǐ.","Bố cục căn nhà này rất hợp lý."]}
 {"hz":"贪污","vi":"tham ô","hv":"tham ô","pos_vi":"động từ","ex":["他因为贪污被判了刑。","Tā yīnwèi tānwū bèi pàn le xíng.","Ông ta bị kết án vì tham ô."]}
@@ -46,7 +46,7 @@
 {"hz":"海滨","vi":"bờ biển, vùng ven biển","hv":"hải tân","pos_vi":"danh từ","ex":["我们在海滨度过了一个周末。","Wǒmen zài hǎibīn dùguò le yí ge zhōumò.","Chúng tôi đã có một cuối tuần ở bờ biển."]}
 {"hz":"利率","vi":"lãi suất","hv":"lợi suất","pos_vi":"danh từ","ex":["银行又降低了利率。","Yínháng yòu jiàngdī le lìlǜ.","Ngân hàng lại hạ lãi suất."]}
 {"hz":"腐蚀","vi":"ăn mòn; làm hủ hóa, tha hóa","hv":"hủ thực","pos_vi":"động từ","ex":["海水会腐蚀铁。","Hǎishuǐ huì fǔshí tiě.","Nước biển sẽ ăn mòn sắt."]}
-{"hz":"公道","vi":"lẽ công bằng, công lý; (gōngdao) công bằng, phải chăng","hv":"công đạo","pos_vi":"danh từ, tính từ","ex":["我一定要为他讨个公道。","Wǒ yídìng yào wèi tā tǎo ge gōngdào.","Tôi nhất định phải đòi lại công bằng cho anh ấy."]}
+{"hz":"公道","vi":"công bằng, hợp lý, phải chăng (giá cả); (đọc gōngdào) lẽ công bằng, công lý","hv":"công đạo","pos_vi":"tính từ","ex":["这家店的价格很公道。","Zhè jiā diàn de jiàgé hěn gōngdao.","Giá cả ở cửa hàng này rất phải chăng."]}
 {"hz":"辜负","vi":"phụ lòng, làm thất vọng","hv":"cô phụ","pos_vi":"động từ","ex":["我不会辜负你的期望。","Wǒ bú huì gūfù nǐ de qīwàng.","Tôi sẽ không phụ sự kỳ vọng của bạn."]}
 {"hz":"活该","vi":"đáng đời, đáng kiếp (khẩu ngữ)","hv":"hoạt cai","pos_vi":"động từ","ex":["谁让你不听话，活该！","Shéi ràng nǐ bù tīnghuà, huógāi!","Ai bảo không nghe lời, đáng đời!"]}
 {"hz":"上瘾","vi":"nghiện, ghiền","hv":"thượng ẩn","pos_vi":"động từ","ex":["玩游戏很容易上瘾。","Wán yóuxì hěn róngyì shàngyǐn.","Chơi game rất dễ nghiện."]}
@@ -57,7 +57,7 @@
 {"hz":"揭发","vi":"vạch trần, tố giác","hv":"yết phát","pos_vi":"động từ","ex":["他揭发了公司的违法行为。","Tā jiēfā le gōngsī de wéifǎ xíngwéi.","Anh ấy tố giác hành vi phạm pháp của công ty."]}
 {"hz":"阵容","vi":"đội hình, đội ngũ","hv":"trận dung","pos_vi":"danh từ","ex":["今天的比赛阵容很强大。","Jīntiān de bǐsài zhènróng hěn qiángdà.","Đội hình trận đấu hôm nay rất mạnh."]}
 {"hz":"畅销","vi":"bán chạy","hv":"sướng tiêu","pos_vi":"động từ, tính từ","ex":["这本书非常畅销。","Zhè běn shū fēicháng chàngxiāo.","Cuốn sách này bán rất chạy."]}
-{"hz":"拣","vi":"chọn, lựa; nhặt","hv":"giản","pos_vi":"động từ","ex":["她拣了几个最红的苹果。","Tā jiǎn le jǐ gè zuì hóng de píngguǒ.","Cô ấy chọn mấy quả táo đỏ nhất."]}
+{"hz":"拣","vi":"chọn, lựa; nhặt","hv":"giản","pos_vi":"động từ","ex":["她拣了几个最红的苹果。","Tā jiǎn le jǐ ge zuì hóng de píngguǒ.","Cô ấy chọn mấy quả táo đỏ nhất."]}
 {"hz":"附属","vi":"trực thuộc, phụ thuộc","hv":"phụ thuộc","pos_vi":"động từ, tính từ","ex":["我在大学附属医院工作。","Wǒ zài dàxué fùshǔ yīyuàn gōngzuò.","Tôi làm việc ở bệnh viện trực thuộc trường đại học."]}
 {"hz":"适宜","vi":"thích hợp, phù hợp","hv":"thích nghi","pos_vi":"tính từ","ex":["这里的气候适宜种茶。","Zhèlǐ de qìhòu shìyí zhòng chá.","Khí hậu ở đây thích hợp trồng chè."]}
 {"hz":"屈服","vi":"khuất phục, chịu khuất phục","hv":"khuất phục","pos_vi":"động từ","ex":["他从不向困难屈服。","Tā cóng bú xiàng kùnnan qūfú.","Anh ấy không bao giờ khuất phục trước khó khăn."]}
@@ -70,7 +70,7 @@
 {"hz":"申报","vi":"khai báo, kê khai","hv":"thân báo","pos_vi":"động từ","ex":["入境时要申报这些物品。","Rùjìng shí yào shēnbào zhèxiē wùpǐn.","Khi nhập cảnh phải khai báo những đồ này."]}
 {"hz":"冒充","vi":"giả danh, giả mạo","hv":"mạo sung","pos_vi":"động từ","ex":["有人冒充警察骗钱。","Yǒu rén màochōng jǐngchá piàn qián.","Có kẻ giả danh cảnh sát để lừa tiền."]}
 {"hz":"事态","vi":"tình hình (sự việc), cục diện","hv":"sự thái","pos_vi":"danh từ","ex":["事态越来越严重了。","Shìtài yuè lái yuè yánzhòng le.","Tình hình ngày càng nghiêm trọng."]}
-{"hz":"攒","vi":"gom lại, lắp ráp; (đọc zǎn) tích góp, dành dụm","hv":"toàn","pos_vi":"động từ","ex":["他自己攒了一台电脑。","Tā zìjǐ cuán le yì tái diànnǎo.","Anh ấy tự lắp một chiếc máy tính."]}
+{"hz":"攒","vi":"tích góp, dành dụm, để dành; (đọc cuán) gom lại, lắp ráp","hv":"toàn","pos_vi":"động từ","ex":["她每个月都攒一点儿钱。","Tā měi ge yuè dōu zǎn yìdiǎnr qián.","Tháng nào cô ấy cũng dành dụm một ít tiền."]}
 {"hz":"局限","vi":"giới hạn, hạn chế; bó hẹp","hv":"cục hạn","pos_vi":"động từ, danh từ","ex":["学习不要局限于课本。","Xuéxí bú yào júxiàn yú kèběn.","Học tập đừng bó hẹp trong sách giáo khoa."]}
 {"hz":"削弱","vi":"làm suy yếu, giảm sút","hv":"tước nhược","pos_vi":"động từ","ex":["这件事削弱了他的影响力。","Zhè jiàn shì xuēruò le tā de yǐngxiǎnglì.","Chuyện này làm suy giảm sức ảnh hưởng của ông ấy."]}
 {"hz":"牢固","vi":"vững chắc, kiên cố","hv":"lao cố","pos_vi":"tính từ","ex":["这座桥建得很牢固。","Zhè zuò qiáo jiàn de hěn láogù.","Cây cầu này được xây rất vững chắc."]}
@@ -78,15 +78,15 @@
 {"hz":"亲热","vi":"thân mật, thân thiết; âu yếm","hv":"thân nhiệt","pos_vi":"tính từ, động từ","ex":["她们俩很亲热，像亲姐妹一样。","Tāmen liǎ hěn qīnrè, xiàng qīn jiěmèi yíyàng.","Hai cô ấy rất thân thiết, như chị em ruột vậy."]}
 {"hz":"分量","vi":"trọng lượng, khối lượng; sức nặng (lời nói) (thường đọc fènliang; fēnliàng: thành phần vectơ)","hv":"phân lượng","pos_vi":"danh từ","ex":["他的话很有分量。","Tā de huà hěn yǒu fènliang.","Lời anh ấy rất có trọng lượng."]}
 {"hz":"兑换","vi":"đổi (tiền tệ), quy đổi","hv":"đoái hoán","pos_vi":"động từ","ex":["我想把美元兑换成人民币。","Wǒ xiǎng bǎ měiyuán duìhuàn chéng rénmínbì.","Tôi muốn đổi đô la Mỹ sang nhân dân tệ."]}
-{"hz":"遗留","vi":"để lại, sót lại (từ trước)","hv":"di lưu","pos_vi":"động từ","ex":["这是历史遗留下来的问题。","Zhè shì lìshǐ yíliú xiàlái de wèntí.","Đây là vấn đề do lịch sử để lại."]}
+{"hz":"遗留","vi":"để lại, sót lại (từ trước)","hv":"di lưu","pos_vi":"động từ","ex":["这是历史遗留下来的问题。","Zhè shì lìshǐ yíliú xiàlai de wèntí.","Đây là vấn đề do lịch sử để lại."]}
 {"hz":"大肆","vi":"tràn lan, rầm rộ, không kiêng nể (nghĩa xấu)","hv":"đại tứ","pos_vi":"phó từ","ex":["他们大肆宣传自己的产品。","Tāmen dàsì xuānchuán zìjǐ de chǎnpǐn.","Họ quảng cáo rầm rộ sản phẩm của mình."]}
 {"hz":"悬念","vi":"sự hồi hộp, gay cấn (truyện, phim); lo nghĩ, nhớ mong","hv":"huyền niệm","pos_vi":"danh từ, động từ","ex":["这部电影充满了悬念。","Zhè bù diànyǐng chōngmǎn le xuánniàn.","Bộ phim này đầy kịch tính."]}
 {"hz":"寂静","vi":"yên tĩnh, tĩnh lặng","hv":"tịch tĩnh","pos_vi":"tính từ","ex":["夜里四周一片寂静。","Yèlǐ sìzhōu yí piàn jìjìng.","Ban đêm xung quanh im phăng phắc."]}
-{"hz":"畏惧","vi":"sợ hãi, e sợ","hv":"úy cụ","pos_vi":"động từ","ex":["他面对困难毫不畏惧。","Tā miànduì kùnnan háo bù wèijù.","Anh ấy đối mặt với khó khăn mà không chút sợ hãi."]}
+{"hz":"畏惧","vi":"sợ hãi, e sợ","hv":"úy cụ","pos_vi":"động từ","ex":["他面对困难毫不畏惧。","Tā miànduì kùnnan háo bú wèijù.","Anh ấy đối mặt với khó khăn mà không chút sợ hãi."]}
 {"hz":"压缩","vi":"nén; cắt giảm, thu gọn","hv":"áp súc","pos_vi":"động từ","ex":["我们要压缩开支。","Wǒmen yào yāsuō kāizhī.","Chúng ta phải cắt giảm chi tiêu."]}
 {"hz":"宫殿","vi":"cung điện","hv":"cung điện","pos_vi":"danh từ","ex":["这座宫殿有几百年的历史。","Zhè zuò gōngdiàn yǒu jǐ bǎi nián de lìshǐ.","Cung điện này có lịch sử mấy trăm năm."]}
 {"hz":"缺口","vi":"chỗ sứt, lỗ hổng; khoản thiếu hụt","hv":"khuyết khẩu","pos_vi":"danh từ","ex":["碗边有个缺口。","Wǎn biān yǒu ge quēkǒu.","Miệng bát có một chỗ sứt."]}
-{"hz":"疲倦","vi":"mệt mỏi, uể oải","hv":"bì quyện","pos_vi":"tính từ","ex":["他看起来很疲倦。","Tā kàn qǐlái hěn píjuàn.","Anh ấy trông rất mệt mỏi."]}
+{"hz":"疲倦","vi":"mệt mỏi, uể oải","hv":"bì quyện","pos_vi":"tính từ","ex":["他看起来很疲倦。","Tā kàn qǐlai hěn píjuàn.","Anh ấy trông rất mệt mỏi."]}
 {"hz":"遥控","vi":"điều khiển từ xa","hv":"dao khống","pos_vi":"động từ, danh từ","ex":["电视的遥控器找不到了。","Diànshì de yáokòngqì zhǎo bú dào le.","Không tìm thấy cái điều khiển tivi đâu cả."]}
 {"hz":"排放","vi":"thải ra, xả (khí thải, nước thải)","hv":"bài phóng","pos_vi":"động từ","ex":["工厂不能随便排放污水。","Gōngchǎng bù néng suíbiàn páifàng wūshuǐ.","Nhà máy không được tùy tiện xả nước thải."]}
 {"hz":"顽固","vi":"ngoan cố, cố chấp, bảo thủ; (bệnh) dai dẳng","hv":"ngoan cố","pos_vi":"tính từ","ex":["他这个人很顽固。","Tā zhège rén hěn wángù.","Ông ấy là người rất cố chấp."]}

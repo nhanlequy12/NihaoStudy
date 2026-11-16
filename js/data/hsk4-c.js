@@ -31,7 +31,7 @@
       id: 66, level: 4, icon: "心", title: "Cảm xúc tích cực", sub: "Vui, phấn khích, tự hào, hồi hộp",
       goals: ["Miêu tả tâm trạng vui, thoải mái, phấn khích", "Nói về sự tự hào và ngạc nhiên", "Phân biệt 激动, 兴奋, 感动"],
       grammar: [
-        { pattern: "连…都/也…", vi: "'Ngay cả… cũng…', nhấn mạnh trường hợp cực đoan nhất mà vẫn đúng.", ex: ["他激动得连话都说不出来了。", "Tā jīdòng de lián huà dōu shuō bu chūlái le.", "Anh ấy xúc động đến mức nói không nên lời."] },
+        { pattern: "连…都/也…", vi: "'Ngay cả… cũng…', nhấn mạnh trường hợp cực đoan nhất mà vẫn đúng.", ex: ["他激动得连话都说不出来了。", "Tā jīdòng de lián huà dōu shuō bu chūlai le.", "Anh ấy xúc động đến mức nói không nên lời."] },
         { pattern: "竟然", vi: "Phó từ 'không ngờ, lại', đặt trước động từ/tính từ để tỏ ý ngạc nhiên.", ex: ["他竟然一点儿也不紧张。", "Tā jìngrán yìdiǎnr yě bù jǐnzhāng.", "Không ngờ anh ấy chẳng hề căng thẳng chút nào."] },
         { pattern: "不仅…而且…", vi: "'Không những… mà còn…', vế sau nâng cao hơn vế trước. Cùng chủ ngữ thì 不仅 đứng sau chủ ngữ.", ex: ["这本书不仅有趣，而且很感动人。", "Zhè běn shū bùjǐn yǒuqù, érqiě hěn gǎndòng rén.", "Cuốn sách này không những thú vị mà còn rất cảm động."] },
       ],
@@ -61,7 +61,7 @@
         { pattern: "即使…也…", vi: "'Cho dù… cũng…', nêu giả thiết rồi khẳng định kết quả không đổi.", ex: ["即使很辛苦，我也不会放弃。", "Jíshǐ hěn xīnkǔ, wǒ yě bú huì fàngqì.", "Dù rất vất vả, tôi cũng sẽ không bỏ cuộc."] },
       ],
       dialogue: [
-        ["A", "你怎么了？看起来很伤心。", "Nǐ zěnme le? Kàn qǐlái hěn shāngxīn.", "Cậu sao vậy? Trông buồn lắm."],
+        ["A", "你怎么了？看起来很伤心。", "Nǐ zěnme le? Kàn qǐlai hěn shāngxīn.", "Cậu sao vậy? Trông buồn lắm."],
         ["B", "我没通过考试，太失望了。", "Wǒ méi tōngguò kǎoshì, tài shīwàng le.", "Tớ không qua kỳ thi, thất vọng quá."],
         ["A", "真可惜。最近压力很大吧？", "Zhēn kěxī. Zuìjìn yālì hěn dà ba?", "Tiếc thật. Dạo này cậu áp lực lắm phải không?"],
         ["B", "是啊，我后悔没早点儿复习。", "Shì a, wǒ hòuhuǐ méi zǎodiǎnr fùxí.", "Ừ, tớ hối hận vì không ôn sớm hơn."],
@@ -71,7 +71,7 @@
         ["听 到 这个 消息 她 很 伤心", "Tīng dào zhège xiāoxi tā hěn shāngxīn.", "Nghe tin này cô ấy rất buồn."],
         ["我 后悔 没 听 妈妈 的 话", "Wǒ hòuhuǐ méi tīng māma de huà.", "Tôi hối hận vì không nghe lời mẹ."],
         ["工作 的 压力 越来越 大", "Gōngzuò de yālì yuèláiyuè dà.", "Áp lực công việc ngày càng lớn."],
-        ["我 受不了 这么 热 的 天气", "Wǒ shòubùliǎo zhème rè de tiānqì.", "Tôi không chịu nổi thời tiết nóng thế này."],
+        ["我 受不了 这么 热 的 天气", "Wǒ shòubuliǎo zhème rè de tiānqì.", "Tôi không chịu nổi thời tiết nóng thế này."],
         ["这 只 小狗 真 可怜", "Zhè zhī xiǎogǒu zhēn kělián.", "Con chó nhỏ này thật đáng thương."],
         ["一个人 住 有时候 很 孤单", "Yí ge rén zhù yǒu shíhou hěn gūdān.", "Sống một mình đôi khi rất cô đơn."],
       ],
@@ -298,7 +298,7 @@
     { hz: "可怜", py: "kělián", hv: "khả liên", vi: "đáng thương, tội nghiệp", pos: "tính từ", ex: ["这只小猫真可怜。", "Zhè zhī xiǎomāo zhēn kělián.", "Con mèo nhỏ này thật đáng thương."], l: 67 },
     { hz: "同情", py: "tóngqíng", hv: "đồng tình", vi: "thông cảm, thương cảm", pos: "động từ", ex: ["我很同情他的遭遇。", "Wǒ hěn tóngqíng tā de zāoyù.", "Tôi rất thương cảm hoàn cảnh của anh ấy."], l: 67 },
     { hz: "可惜", py: "kěxī", hv: "khả tích", vi: "đáng tiếc, tiếc là", pos: "tính từ", ex: ["可惜你没来参加。", "Kěxī nǐ méi lái cānjiā.", "Tiếc là bạn không đến tham gia."], l: 67 },
-    { hz: "受不了", py: "shòubùliǎo", hv: "thụ bất liễu", vi: "không chịu nổi", pos: "động từ", ex: ["我受不了这么热的天气。", "Wǒ shòubùliǎo zhème rè de tiānqì.", "Tôi không chịu nổi thời tiết nóng thế này."], l: 67 },
+    { hz: "受不了", py: "shòubuliǎo", hv: "thụ bất liễu", vi: "không chịu nổi", pos: "động từ", ex: ["我受不了这么热的天气。", "Wǒ shòubuliǎo zhème rè de tiānqì.", "Tôi không chịu nổi thời tiết nóng thế này."], l: 67 },
     { hz: "压力", py: "yālì", hv: "áp lực", vi: "áp lực", pos: "danh từ", ex: ["我最近工作压力很大。", "Wǒ zuìjìn gōngzuò yālì hěn dà.", "Dạo này áp lực công việc của tôi rất lớn."], l: 67 },
     { hz: "辛苦", py: "xīnkǔ", hv: "tân khổ", vi: "vất vả, cực nhọc", pos: "tính từ", ex: ["妈妈每天都很辛苦。", "Māma měitiān dōu hěn xīnkǔ.", "Mẹ ngày nào cũng rất vất vả."], l: 67 },
     { hz: "困难", py: "kùnnan", hv: "khốn nan", vi: "khó khăn", pos: "danh từ", ex: ["遇到困难不要放弃。", "Yùdào kùnnan bú yào fàngqì.", "Gặp khó khăn đừng bỏ cuộc."], l: 67 },
@@ -372,7 +372,7 @@
     // ---- Bài 72: Kết quả & kinh nghiệm ----
     { hz: "成功", py: "chénggōng", hv: "thành công", vi: "thành công", pos: "động từ", ex: ["他的生意很成功。", "Tā de shēngyi hěn chénggōng.", "Việc làm ăn của anh ấy rất thành công."], l: 72 },
     { hz: "失败", py: "shībài", hv: "thất bại", vi: "thất bại", pos: "động từ", ex: ["失败了也不要难过。", "Shībài le yě bú yào nánguò.", "Thất bại cũng đừng buồn."], l: 72 },
-    { hz: "结果", py: "jiéguǒ", hv: "kết quả", vi: "kết quả, kết cục", pos: "danh từ", ex: ["考试结果明天出来。", "Kǎoshì jiéguǒ míngtiān chūlái.", "Kết quả thi ngày mai có."], l: 72 },
+    { hz: "结果", py: "jiéguǒ", hv: "kết quả", vi: "kết quả, kết cục", pos: "danh từ", ex: ["考试结果明天出来。", "Kǎoshì jiéguǒ míngtiān chūlái.", "Ngày mai sẽ có kết quả thi."], l: 72 },
     { hz: "过程", py: "guòchéng", hv: "quá trình", vi: "quá trình", pos: "danh từ", ex: ["学习是一个过程。", "Xuéxí shì yí ge guòchéng.", "Học tập là một quá trình."], l: 72 },
     { hz: "经历", py: "jīnglì", hv: "kinh lịch", vi: "trải qua, trải nghiệm", pos: "động từ", ex: ["这是一次难忘的经历。", "Zhè shì yí cì nánwàng de jīnglì.", "Đây là một trải nghiệm khó quên."], l: 72 },
     { hz: "顺利", py: "shùnlì", hv: "thuận lợi", vi: "thuận lợi, suôn sẻ", pos: "tính từ", ex: ["祝你一切顺利！", "Zhù nǐ yíqiè shùnlì!", "Chúc bạn mọi việc thuận lợi!"], l: 72 },
@@ -386,7 +386,7 @@
     // ---- Bài 73: Năng lực & phát triển ----
     { hz: "能力", py: "nénglì", hv: "năng lực", vi: "năng lực, khả năng", pos: "danh từ", ex: ["他的工作能力很强。", "Tā de gōngzuò nénglì hěn qiáng.", "Năng lực làm việc của anh ấy rất mạnh."], l: 73 },
     { hz: "经验", py: "jīngyàn", hv: "kinh nghiệm", vi: "kinh nghiệm", pos: "danh từ", ex: ["他有很多工作经验。", "Tā yǒu hěn duō gōngzuò jīngyàn.", "Anh ấy có nhiều kinh nghiệm làm việc."], l: 73 },
-    { hz: "熟悉", py: "shúxī", hv: "thục tất", vi: "quen thuộc, thông thạo", pos: "động từ", ex: ["我对这里很熟悉。", "Wǒ duì zhèlǐ hěn shúxī.", "Tôi rất quen thuộc nơi này."], l: 73 },
+    { hz: "熟悉", py: "shúxī", hv: "thục tất", vi: "quen thuộc, thông thạo", pos: "động từ", ex: ["我对这里很熟悉。", "Wǒ duì zhèlǐ hěn shúxī.", "Tôi rất quen thuộc với nơi này."], l: 73 },
     { hz: "适应", py: "shìyìng", hv: "thích ứng", vi: "thích nghi, thích ứng", pos: "động từ", ex: ["我已经适应了这里的生活。", "Wǒ yǐjīng shìyìng le zhèlǐ de shēnghuó.", "Tôi đã thích nghi với cuộc sống ở đây."], l: 73 },
     { hz: "交流", py: "jiāoliú", hv: "giao lưu", vi: "giao lưu, trao đổi", pos: "động từ", ex: ["我常和中国朋友交流。", "Wǒ cháng hé Zhōngguó péngyou jiāoliú.", "Tôi thường trao đổi với bạn Trung Quốc."], l: 73 },
     { hz: "专门", py: "zhuānmén", hv: "chuyên môn", vi: "chuyên, đặc biệt dành cho", pos: "phó từ", ex: ["我专门来看你。", "Wǒ zhuānmén lái kàn nǐ.", "Tôi đến đây chỉ để thăm bạn."], l: 73 },

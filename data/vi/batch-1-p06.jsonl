@@ -21,7 +21,7 @@
 {"hz":"叫作","vi":"gọi là, được gọi là","hv":"khiếu tác","pos_vi":"động từ","ex":["这种花叫作什么？","Zhè zhǒng huā jiàozuò shénme?","Loài hoa này gọi là gì?"]}
 {"hz":"午睡","vi":"ngủ trưa; giấc ngủ trưa","hv":"ngọ thụy","pos_vi":"động từ, danh từ","ex":["我每天都午睡。","Wǒ měitiān dōu wǔshuì.","Ngày nào tôi cũng ngủ trưa."]}
 {"hz":"药片","vi":"viên thuốc, thuốc viên","hv":"dược phiến","pos_vi":"danh từ","ex":["每次吃两片药片。","Měi cì chī liǎng piàn yàopiàn.","Mỗi lần uống hai viên thuốc."]}
-{"hz":"音节","vi":"âm tiết","hv":"âm tiết","pos_vi":"danh từ","ex":["这个词有两个音节。","Zhège cí yǒu liǎng gè yīnjié.","Từ này có hai âm tiết."]}
+{"hz":"音节","vi":"âm tiết","hv":"âm tiết","pos_vi":"danh từ","ex":["这个词有两个音节。","Zhège cí yǒu liǎng ge yīnjié.","Từ này có hai âm tiết."]}
 {"hz":"中级","vi":"trung cấp, trình độ trung bình","hv":"trung cấp","pos_vi":"tính từ","ex":["我在上中级汉语课。","Wǒ zài shàng zhōngjí Hànyǔ kè.","Tôi đang học lớp tiếng Hán trung cấp."]}
 {"hz":"一点点","vi":"một chút xíu, một ít; từng chút một","hv":"nhất điểm điểm","pos_vi":"số lượng từ","ex":["我只喝了一点点。","Wǒ zhǐ hē le yìdiǎndiǎn.","Tôi chỉ uống một chút xíu."]}
 {"hz":"春节","vi":"Tết Nguyên đán, Tết âm lịch","hv":"xuân tiết","pos_vi":"danh từ","ex":["春节快乐！","Chūnjié kuàilè!","Chúc mừng năm mới!"]}
@@ -52,7 +52,7 @@
 {"hz":"时","vi":"lúc, khi; giờ; thời gian","hv":"thời","pos_vi":"danh từ","ex":["上课时不要说话。","Shàngkè shí búyào shuōhuà.","Lúc đang học đừng nói chuyện."]}
 {"hz":"并","vi":"(trước phủ định) hoàn toàn (không), hề; và, đồng thời; gộp lại","hv":"tịnh","pos_vi":"phó từ, liên từ","ex":["这件事并不难。","Zhè jiàn shì bìng bù nán.","Việc này hoàn toàn không khó."]}
 {"hz":"只是","vi":"chỉ là, chẳng qua là; chỉ có điều","hv":"chỉ thị","pos_vi":"phó từ, liên từ","ex":["我只是问问。","Wǒ zhǐshì wènwen.","Tôi chỉ hỏi thôi."]}
-{"hz":"心","vi":"tim; lòng, tâm; giữa, trung tâm","hv":"tâm","pos_vi":"danh từ","ex":["她的心很好。","Tā de xīn hěn hǎo.","Cô ấy rất tốt bụng."]}
+{"hz":"心","vi":"tim; lòng, tâm; giữa, trung tâm","hv":"tâm","pos_vi":"danh từ","ex":["她心很好，常常帮助别人。","Tā xīn hěn hǎo, chángcháng bāngzhù biérén.","Cô ấy rất tốt bụng, hay giúp đỡ người khác."]}
 {"hz":"已","vi":"đã (văn viết)","hv":"dĩ","pos_vi":"phó từ","ex":["他已回国了。","Tā yǐ huíguó le.","Anh ấy đã về nước rồi."]}
 {"hz":"总","vi":"luôn, lúc nào cũng; tổng, chung; dù sao, rốt cuộc","hv":"tổng","pos_vi":"phó từ, tính từ","ex":["他总是很忙。","Tā zǒngshì hěn máng.","Anh ấy lúc nào cũng bận."]}
 {"hz":"美","vi":"đẹp; (viết tắt) Mỹ, châu Mỹ","hv":"mỹ","pos_vi":"tính từ","ex":["这里的风景真美。","Zhèlǐ de fēngjǐng zhēn měi.","Phong cảnh ở đây đẹp thật."]}
@@ -78,8 +78,8 @@
 {"hz":"约","vi":"hẹn, mời; khoảng, ước chừng; (đọc yāo: cân)","hv":"ước","pos_vi":"động từ, phó từ","ex":["我约了朋友吃饭。","Wǒ yuē le péngyou chīfàn.","Tôi hẹn bạn đi ăn cơm."]}
 {"hz":"抓","vi":"bắt, tóm, nắm; gãi; nắm chắc, chú trọng","hv":"trảo","pos_vi":"động từ","ex":["警察抓住了小偷。","Jǐngchá zhuāzhù le xiǎotōu.","Cảnh sát đã tóm được tên trộm."]}
 {"hz":"金","vi":"vàng, kim loại; (họ) Kim","hv":"kim","pos_vi":"danh từ, tính từ","ex":["这是金做的吗？","Zhè shì jīn zuò de ma?","Cái này làm bằng vàng à?"]}
-{"hz":"下去","vi":"đi xuống; (sau động từ) tiếp tục, tiếp","hv":"hạ khứ","pos_vi":"động từ","ex":["请你说下去。","Qǐng nǐ shuō xiàqù.","Mời bạn nói tiếp."]}
-{"hz":"力","vi":"sức, sức lực, lực","hv":"lực","pos_vi":"danh từ","ex":["我没有力了。","Wǒ méiyǒu lì le.","Tôi hết sức rồi."]}
+{"hz":"下去","vi":"đi xuống; (sau động từ) tiếp tục, tiếp","hv":"hạ khứ","pos_vi":"động từ","ex":["请你说下去。","Qǐng nǐ shuō xiàqu.","Mời bạn nói tiếp."]}
+{"hz":"力","vi":"sức, sức lực, lực","hv":"lực","pos_vi":"danh từ","ex":["他用了很大的力才把门打开。","Tā yòng le hěn dà de lì cái bǎ mén dǎkāi.","Anh ấy phải dùng rất nhiều sức mới mở được cửa."]}
 {"hz":"父母","vi":"cha mẹ, bố mẹ","hv":"phụ mẫu","pos_vi":"danh từ","ex":["我很想我的父母。","Wǒ hěn xiǎng wǒ de fùmǔ.","Tôi rất nhớ bố mẹ."]}
 {"hz":"城","vi":"thành phố, thành thị; tường thành","hv":"thành","pos_vi":"danh từ","ex":["我明天进城。","Wǒ míngtiān jìn chéng.","Ngày mai tôi lên thành phố."]}
 {"hz":"随","vi":"theo, đi theo; tùy, mặc","hv":"tùy","pos_vi":"động từ, giới từ","ex":["你随我来。","Nǐ suí wǒ lái.","Bạn đi theo tôi."]}

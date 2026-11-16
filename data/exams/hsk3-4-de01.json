@@ -1686,7 +1686,7 @@
          "answer": 2,
          "sample_answer": null,
          "rubric_vi": null,
-         "explain_vi": "Ý chính: học ngoại ngữ phải dám nói, nói sai cũng không sao. A, D trái với câu đầu \"只会读和写是不够的\".",
+         "explain_vi": "Ý chính: học ngoại ngữ phải dám nói, nói sai cũng không sao. A, D không phải ý chính: bài chỉ nhắc đọc, viết để nói rằng như thế là chưa đủ (只会读和写是不够的). B không được nhắc đến.",
          "skills": [
           "doc-doan-van",
           "doc-y-chinh"
@@ -2030,7 +2030,7 @@
       },
       {
        "audio": null,
-       "passage": "很多人都有这样的经历：早上起床后，总是觉得时间不够用，（61）＿＿＿＿。其实，只要在前一天晚上做一些准备，就能解决这个问题。比如，睡觉前把第二天要穿的衣服准备好，（62）＿＿＿＿。另外，最好把手机放得远一点儿，（63）＿＿＿＿。这样，第二天早上你就会轻松很多。（64）＿＿＿＿，你的一天也会更顺利。",
+       "passage": "很多人都有这样的经历：早上起床后，总是觉得时间不够用，（61）＿＿＿＿。其实，只要在前一天晚上做一些准备，就能解决这个问题。比如，睡觉前把第二天要穿的衣服准备好，（62）＿＿＿＿。另外，最好把手机放得远一点儿，（63）＿＿＿＿。做好这些准备，第二天早上你就会轻松很多。（64）＿＿＿＿，你的一天也会更顺利。",
        "image_vi": null,
        "items": [
         {

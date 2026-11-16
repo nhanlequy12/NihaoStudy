@@ -505,7 +505,7 @@
                 ],
                 [
                   "男",
-                  "我跟小狗出去走走，一会儿就回来。"
+                  "我带小狗出去走走，一会儿就回来。"
                 ]
               ],
               "passage": null,
@@ -525,12 +525,12 @@
                   "answer": 0,
                   "sample_answer": null,
                   "rubric_vi": null,
-                  "explain_vi": "跟小狗出去走走 (đi dạo với chú chó): chọn A.",
+                  "explain_vi": "带小狗出去走走 (dắt chó đi dạo): chọn A.",
                   "skills": [
                     "nghe-ngu-canh"
                   ],
                   "words": [
-                    "跟",
+                    "带",
                     "狗",
                     "出去",
                     "一会儿",
@@ -706,7 +706,7 @@
                     "机场"
                   ],
                   "options_py": [
-                    "wǎngshang",
+                    "wǎngshàng",
                     "shāngchǎng",
                     "jīchǎng"
                   ],
@@ -1169,7 +1169,7 @@
                 {
                   "no": 27,
                   "stem": "我丈夫每个星期日都要洗车。",
-                  "stem_py": "Wǒ zhàngfu měi gè xīngqīrì dōu yào xǐ chē.",
+                  "stem_py": "Wǒ zhàngfu měi ge xīngqīrì dōu yào xǐ chē.",
                   "options": [
                     "Một người đàn ông đang rửa xe ô tô trước nhà",
                     "Một lớp học trống, bàn ghế xếp gọn, không có ai",
@@ -1223,7 +1223,7 @@
                 {
                   "no": 29,
                   "stem": "教室里一个人也没有。",
-                  "stem_py": "Jiàoshì lǐ yí gè rén yě méiyǒu.",
+                  "stem_py": "Jiàoshì lǐ yí ge rén yě méiyǒu.",
                   "options": [
                     "Một người đàn ông đang rửa xe ô tô trước nhà",
                     "Một lớp học trống, bàn ghế xếp gọn, không có ai",
@@ -1780,27 +1780,26 @@
                   "options": [
                     "因为我想去中国工作。",
                     "很好，她每天早上都出去走走。",
-                    "快到了，我已经在你家楼下了。",
+                    "我到了，我已经在你家楼下了。",
                     "跟朋友去踢足球。",
                     "往前走五分钟，车站就在左边。"
                   ],
                   "options_py": [
                     "Yīnwèi wǒ xiǎng qù Zhōngguó gōngzuò.",
                     "Hěn hǎo, tā měi tiān zǎoshang dōu chūqù zǒuzou.",
-                    "Kuài dào le, wǒ yǐjīng zài nǐ jiā lóu xià le.",
+                    "Wǒ dào le, wǒ yǐjīng zài nǐ jiā lóu xià le.",
                     "Gēn péngyou qù tī zúqiú.",
                     "Wǎng qián zǒu wǔ fēnzhōng, chēzhàn jiù zài zuǒbian."
                   ],
                   "answer": 2,
                   "sample_answer": null,
                   "rubric_vi": null,
-                  "explain_vi": "Hỏi đang ở đâu (到哪儿了) → 快到了，我已经在你家楼下了 (sắp tới rồi, tôi đang ở dưới nhà bạn).",
+                  "explain_vi": "Hỏi đang ở đâu (到哪儿了) → 我到了，我已经在你家楼下了 (tôi đến rồi, đang ở dưới nhà bạn).",
                   "skills": [
                     "doc-hoi-dap"
                   ],
                   "words": [
                     "到",
-                    "快",
                     "已经",
                     "楼"
                   ]
@@ -1855,8 +1854,8 @@
             },
             {
               "audio": null,
-              "passage": "我家有三只猫，一只白色的，两只黑色的。白色的那只最小，大家都很爱它。",
-              "passage_py": "Wǒ jiā yǒu sān zhī māo, yì zhī báisè de, liǎng zhī hēisè de. Báisè de nà zhī zuì xiǎo, dàjiā dōu hěn ài tā.",
+              "passage": "我家有三只猫，一只白色的，两只黑色的。白色的那只最小，大家最爱它。",
+              "passage_py": "Wǒ jiā yǒu sān zhī māo, yì zhī báisè de, liǎng zhī hēisè de. Báisè de nà zhī zuì xiǎo, dàjiā zuì ài tā.",
               "image_vi": null,
               "items": [
                 {
@@ -1876,7 +1875,7 @@
                   "answer": 0,
                   "sample_answer": null,
                   "rubric_vi": null,
-                  "explain_vi": "白色的那只最小，大家都很爱它 (con màu trắng nhỏ nhất, mọi người đều rất yêu nó): chọn A.",
+                  "explain_vi": "白色的那只最小，大家最爱它 (con màu trắng nhỏ nhất, mọi người yêu nó nhất): chọn A.",
                   "skills": [
                     "doc-chi-tiet",
                     "doc-dai-tu"
@@ -1894,7 +1893,7 @@
             {
               "audio": null,
               "passage": "上个星期我生病了，没有去上课。今天我去学校，同学们都来问我身体怎么样，我很高兴。",
-              "passage_py": "Shàng gè xīngqī wǒ shēngbìng le, méiyǒu qù shàngkè. Jīntiān wǒ qù xuéxiào, tóngxuémen dōu lái wèn wǒ shēntǐ zěnmeyàng, wǒ hěn gāoxìng.",
+              "passage_py": "Shàng ge xīngqī wǒ shēngbìng le, méiyǒu qù shàngkè. Jīntiān wǒ qù xuéxiào, tóngxuémen dōu lái wèn wǒ shēntǐ zěnmeyàng, wǒ hěn gāoxìng.",
               "image_vi": null,
               "items": [
                 {
@@ -1902,19 +1901,19 @@
                   "stem": "★ 说话人为什么高兴？",
                   "stem_py": "★ Shuōhuàrén wèishénme gāoxìng?",
                   "options": [
-                    "他的病好了",
+                    "他不想上课",
                     "他考试考得很好",
                     "同学们来问他"
                   ],
                   "options_py": [
-                    "tā de bìng hǎo le",
+                    "tā bù xiǎng shàngkè",
                     "tā kǎoshì kǎo de hěn hǎo",
                     "tóngxuémen lái wèn tā"
                   ],
                   "answer": 2,
                   "sample_answer": null,
                   "rubric_vi": null,
-                  "explain_vi": "Người nói vui (我很高兴) ngay sau khi kể 同学们都来问我身体怎么样: chọn C. Đoạn văn không nói gì về thi cử nên B sai; A không phải lý do được nêu.",
+                  "explain_vi": "Người nói vui (我很高兴) ngay sau khi kể 同学们都来问我身体怎么样: chọn C. Đoạn văn không nói gì về thi cử nên B sai; A (không muốn đi học) không được nhắc đến.",
                   "skills": [
                     "doc-nguyen-nhan",
                     "doc-suy-luan"

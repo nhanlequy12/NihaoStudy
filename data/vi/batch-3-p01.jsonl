@@ -12,7 +12,7 @@
 {"hz":"学科","vi":"môn học, ngành học","hv":"học khoa","pos_vi":"danh từ","ex":["数学是一门很重要的学科。","Shùxué shì yì mén hěn zhòngyào de xuékē.","Toán là một môn học rất quan trọng."]}
 {"hz":"号召","vi":"kêu gọi, hiệu triệu","hv":"hiệu triệu","pos_vi":"động từ, danh từ","ex":["学校号召大家节约用水。","Xuéxiào hàozhào dàjiā jiéyuē yòng shuǐ.","Nhà trường kêu gọi mọi người tiết kiệm nước."]}
 {"hz":"报答","vi":"báo đáp, đền đáp","hv":"báo đáp","pos_vi":"động từ","ex":["我要好好报答父母。","Wǒ yào hǎohǎo bàodá fùmǔ.","Tôi phải báo đáp cha mẹ thật tốt."]}
-{"hz":"大都","vi":"phần lớn, hầu hết (dàdōu); Đại Đô, kinh đô nhà Nguyên (Dàdū)","hv":"đại đô","pos_vi":"phó từ, danh từ","ex":["这里的人大都很热情。","Zhèlǐ de rén dàdōu hěn rèqíng.","Người ở đây phần lớn đều rất nhiệt tình."]}
+{"hz":"大都","vi":"phần lớn, hầu hết","hv":"đại đô","pos_vi":"phó từ","ex":["这里的人大都很热情。","Zhèlǐ de rén dàdū hěn rèqíng.","Người ở đây phần lớn đều rất nhiệt tình."]}
 {"hz":"南北","vi":"nam và bắc; từ nam đến bắc","hv":"nam bắc","pos_vi":"danh từ","ex":["中国南北的饮食差别很大。","Zhōngguó nánběi de yǐnshí chābié hěn dà.","Ẩm thực miền nam và miền bắc Trung Quốc khác nhau nhiều."]}
 {"hz":"香肠","vi":"xúc xích, lạp xưởng","hv":"hương trường","pos_vi":"danh từ","ex":["早饭我吃了两根香肠。","Zǎofàn wǒ chī le liǎng gēn xiāngcháng.","Bữa sáng tôi ăn hai cây xúc xích."]}
 {"hz":"餐饮","vi":"ăn uống; ngành dịch vụ ăn uống","hv":"xan ẩm","pos_vi":"danh từ","ex":["他在一家餐饮公司工作。","Tā zài yì jiā cānyǐn gōngsī gōngzuò.","Anh ấy làm việc ở một công ty dịch vụ ăn uống."]}
@@ -23,7 +23,7 @@
 {"hz":"法制","vi":"pháp chế, chế độ pháp luật","hv":"pháp chế","pos_vi":"danh từ","ex":["国家要加强法制建设。","Guójiā yào jiāqiáng fǎzhì jiànshè.","Nhà nước cần tăng cường xây dựng pháp chế."]}
 {"hz":"团长","vi":"trưởng đoàn; trung đoàn trưởng","hv":"đoàn trưởng","pos_vi":"danh từ","ex":["团长带着大家去参观博物馆。","Tuánzhǎng dàizhe dàjiā qù cānguān bówùguǎn.","Trưởng đoàn dẫn mọi người đi tham quan bảo tàng."]}
 {"hz":"正如","vi":"đúng như, chính như","hv":"chính như","pos_vi":"động từ","ex":["正如你所说，这件事不简单。","Zhèngrú nǐ suǒ shuō, zhè jiàn shì bù jiǎndān.","Đúng như bạn nói, chuyện này không đơn giản."]}
-{"hz":"高原","vi":"cao nguyên","hv":"cao nguyên","pos_vi":"danh từ","ex":["高原上的空气比较少。","Gāoyuán shang de kōngqì bǐjiào shǎo.","Không khí trên cao nguyên khá loãng."]}
+{"hz":"高原","vi":"cao nguyên","hv":"cao nguyên","pos_vi":"danh từ","ex":["高原上的空气比较稀薄。","Gāoyuán shang de kōngqì bǐjiào xībó.","Không khí trên cao nguyên khá loãng."]}
 {"hz":"考核","vi":"sát hạch, đánh giá, kiểm tra (năng lực, thành tích)","hv":"khảo hạch","pos_vi":"động từ, danh từ","ex":["公司每年都要考核员工。","Gōngsī měi nián dōu yào kǎohé yuángōng.","Hằng năm công ty đều đánh giá nhân viên."]}
 {"hz":"寿司","vi":"sushi (món ăn Nhật)","hv":"thọ ti","pos_vi":"danh từ","ex":["我很喜欢吃寿司。","Wǒ hěn xǐhuan chī shòusī.","Tôi rất thích ăn sushi."]}
 {"hz":"物业","vi":"bất động sản; ban quản lý tòa nhà, dịch vụ quản lý nhà ở","hv":"vật nghiệp","pos_vi":"danh từ","ex":["水管坏了，快给物业打电话。","Shuǐguǎn huài le, kuài gěi wùyè dǎ diànhuà.","Ống nước hỏng rồi, mau gọi cho ban quản lý."]}

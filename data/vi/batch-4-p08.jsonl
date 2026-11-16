@@ -27,13 +27,13 @@
 {"hz":"火焰","vi":"ngọn lửa","hv":"hoả diễm","pos_vi":"danh từ","ex":["火焰越烧越旺。","Huǒyàn yuè shāo yuè wàng.","Ngọn lửa càng cháy càng bùng lên."]}
 {"hz":"以免","vi":"để tránh, kẻo","hv":"dĩ miễn","pos_vi":"liên từ","ex":["出门带伞，以免淋雨。","Chūmén dài sǎn, yǐmiǎn lín yǔ.","Ra ngoài mang ô để tránh bị mưa ướt."]}
 {"hz":"处境","vi":"hoàn cảnh, tình cảnh","hv":"xử cảnh","pos_vi":"danh từ","ex":["他现在的处境很困难。","Tā xiànzài de chǔjìng hěn kùnnan.","Hoàn cảnh hiện tại của anh ấy rất khó khăn."]}
-{"hz":"哄","vi":"(tiếng) ồ, ầm (đám đông cười nói); (đọc hǒng) dỗ dành, lừa phỉnh; (đọc hòng) làm ầm ĩ","hv":"hống","pos_vi":"từ tượng thanh, động từ","ex":["大家哄的一声笑了起来。","Dàjiā hōng de yì shēng xiào le qǐlai.","Mọi người cười ồ lên."]}
+{"hz":"哄","vi":"dỗ dành; lừa phỉnh; (hōng) tiếng ồ, ầm (đám đông cười nói); (hòng) làm ầm ĩ","hv":"hống","pos_vi":"từ tượng thanh, động từ","ex":["妈妈正在哄孩子睡觉。","Māma zhèngzài hǒng háizi shuìjiào.","Mẹ đang dỗ con ngủ."]}
 {"hz":"沮丧","vi":"chán nản, ủ rũ, thất vọng","hv":"trở tang","pos_vi":"tính từ","ex":["考试没通过，他很沮丧。","Kǎoshì méi tōngguò, tā hěn jǔsàng.","Thi trượt, cậu ấy rất chán nản."]}
-{"hz":"庞大","vi":"khổng lồ, to lớn, đồ sộ","hv":"bàng đại","pos_vi":"tính từ","ex":["这是一个庞大的计划。","Zhè shì yí gè pángdà de jìhuà.","Đây là một kế hoạch đồ sộ."]}
+{"hz":"庞大","vi":"khổng lồ, to lớn, đồ sộ","hv":"bàng đại","pos_vi":"tính từ","ex":["这是一个庞大的计划。","Zhè shì yí ge pángdà de jìhuà.","Đây là một kế hoạch đồ sộ."]}
 {"hz":"储备","vi":"dự trữ; lượng dự trữ","hv":"trữ bị","pos_vi":"động từ, danh từ","ex":["冬天前要储备足够的粮食。","Dōngtiān qián yào chǔbèi zúgòu de liángshi.","Trước mùa đông phải dự trữ đủ lương thực."]}
 {"hz":"盲目","vi":"mù quáng","hv":"manh mục","pos_vi":"tính từ","ex":["不要盲目跟风。","Búyào mángmù gēnfēng.","Đừng chạy theo trào lưu một cách mù quáng."]}
 {"hz":"伴侣","vi":"bạn đời, bạn đồng hành","hv":"bạn lữ","pos_vi":"danh từ","ex":["她找到了理想的伴侣。","Tā zhǎo dào le lǐxiǎng de bànlǚ.","Cô ấy đã tìm được người bạn đời lý tưởng."]}
-{"hz":"书面","vi":"bằng văn bản, bằng giấy tờ; (ngôn ngữ) viết","hv":"thư diện","pos_vi":"tính từ","ex":["请给我一个书面答复。","Qǐng gěi wǒ yí gè shūmiàn dáfù.","Hãy trả lời tôi bằng văn bản."]}
+{"hz":"书面","vi":"bằng văn bản, bằng giấy tờ; (ngôn ngữ) viết","hv":"thư diện","pos_vi":"tính từ","ex":["请给我一个书面答复。","Qǐng gěi wǒ yí ge shūmiàn dáfù.","Hãy trả lời tôi bằng văn bản."]}
 {"hz":"步伐","vi":"bước chân, nhịp bước; nhịp độ","hv":"bộ phạt","pos_vi":"danh từ","ex":["他们迈着整齐的步伐前进。","Tāmen màizhe zhěngqí de bùfá qiánjìn.","Họ tiến lên với những bước chân đều tăm tắp."]}
 {"hz":"姿态","vi":"tư thế, dáng điệu; thái độ, lập trường","hv":"tư thái","pos_vi":"danh từ","ex":["我们要以积极的姿态面对困难。","Wǒmen yào yǐ jījí de zītài miànduì kùnnan.","Chúng ta phải đối mặt khó khăn với thái độ tích cực."]}
 {"hz":"榜样","vi":"tấm gương, hình mẫu","hv":"bảng dạng","pos_vi":"danh từ","ex":["他是我学习的榜样。","Tā shì wǒ xuéxí de bǎngyàng.","Anh ấy là tấm gương để tôi học tập."]}
@@ -51,7 +51,7 @@
 {"hz":"威力","vi":"uy lực, sức mạnh, sức tàn phá","hv":"uy lực","pos_vi":"danh từ","ex":["台风的威力很大。","Táifēng de wēilì hěn dà.","Sức tàn phá của bão rất lớn."]}
 {"hz":"勿","vi":"chớ, đừng (văn viết)","hv":"vật","pos_vi":"phó từ","ex":["请勿吸烟。","Qǐng wù xīyān.","Xin đừng hút thuốc."]}
 {"hz":"隆重","vi":"long trọng, trọng thể","hv":"long trọng","pos_vi":"tính từ","ex":["学校举行了隆重的开学典礼。","Xuéxiào jǔxíng le lóngzhòng de kāixué diǎnlǐ.","Nhà trường tổ chức lễ khai giảng long trọng."]}
-{"hz":"盛","vi":"thịnh vượng, rực rỡ; lớn, long trọng; họ Thịnh; (đọc chéng) đựng, xới (cơm)","hv":"thịnh","pos_vi":"tính từ, động từ","ex":["公园里的花开得正盛。","Gōngyuán lǐ de huā kāi de zhèng shèng.","Hoa trong công viên đang nở rộ."]}
+{"hz":"盛","vi":"xới, múc (cơm, canh); đựng, chứa; (đọc shèng) thịnh, thịnh vượng, nở rộ","hv":"thịnh","pos_vi":"tính từ, động từ","ex":["我给你盛碗饭吧。","Wǒ gěi nǐ chéng wǎn fàn ba.","Để tôi xới cho bạn bát cơm nhé."]}
 {"hz":"迷失","vi":"lạc, lạc lối, mất phương hướng","hv":"mê thất","pos_vi":"động từ","ex":["他在森林里迷失了方向。","Tā zài sēnlín lǐ míshī le fāngxiàng.","Anh ấy bị lạc phương hướng trong rừng."]}
 {"hz":"守护","vi":"canh giữ, bảo vệ, che chở","hv":"thủ hộ","pos_vi":"động từ","ex":["父母永远守护着我们。","Fùmǔ yǒngyuǎn shǒuhùzhe wǒmen.","Cha mẹ mãi luôn che chở chúng ta."]}
 {"hz":"视野","vi":"tầm nhìn, tầm mắt","hv":"thị dã","pos_vi":"danh từ","ex":["旅行可以开阔视野。","Lǚxíng kěyǐ kāikuò shìyě.","Du lịch có thể mở rộng tầm nhìn."]}
@@ -72,7 +72,7 @@
 {"hz":"论坛","vi":"diễn đàn","hv":"luận đàn","pos_vi":"danh từ","ex":["他经常在论坛上发帖。","Tā jīngcháng zài lùntán shàng fātiě.","Anh ấy thường đăng bài trên diễn đàn."]}
 {"hz":"分歧","vi":"bất đồng, khác biệt (ý kiến)","hv":"phân kỳ","pos_vi":"danh từ","ex":["我们在这个问题上有分歧。","Wǒmen zài zhège wèntí shàng yǒu fēnqí.","Chúng tôi có bất đồng về vấn đề này."]}
 {"hz":"机密","vi":"cơ mật, bí mật; tuyệt mật","hv":"cơ mật","pos_vi":"danh từ, tính từ","ex":["这是公司的机密文件。","Zhè shì gōngsī de jīmì wénjiàn.","Đây là tài liệu mật của công ty."]}
-{"hz":"弱点","vi":"nhược điểm, điểm yếu","hv":"nhược điểm","pos_vi":"danh từ","ex":["每个人都有自己的弱点。","Měi gè rén dōu yǒu zìjǐ de ruòdiǎn.","Ai cũng có điểm yếu của mình."]}
+{"hz":"弱点","vi":"nhược điểm, điểm yếu","hv":"nhược điểm","pos_vi":"danh từ","ex":["每个人都有自己的弱点。","Měi ge rén dōu yǒu zìjǐ de ruòdiǎn.","Ai cũng có điểm yếu của mình."]}
 {"hz":"灿烂","vi":"rực rỡ, chói lọi, rạng rỡ","hv":"xán lạn","pos_vi":"tính từ","ex":["她露出了灿烂的笑容。","Tā lù chū le cànlàn de xiàoróng.","Cô ấy nở một nụ cười rạng rỡ."]}
 {"hz":"损坏","vi":"làm hỏng, hư hại","hv":"tổn hoại","pos_vi":"động từ","ex":["请不要损坏公共设施。","Qǐng búyào sǔnhuài gōnggòng shèshī.","Xin đừng làm hư hại công trình công cộng."]}
 {"hz":"验证","vi":"kiểm chứng, xác minh","hv":"nghiệm chứng","pos_vi":"động từ","ex":["这个理论需要实验来验证。","Zhège lǐlùn xūyào shíyàn lái yànzhèng.","Lý thuyết này cần thí nghiệm để kiểm chứng."]}
@@ -82,7 +82,7 @@
 {"hz":"岩石","vi":"đá, nham thạch","hv":"nham thạch","pos_vi":"danh từ","ex":["海边有很多奇形怪状的岩石。","Hǎibiān yǒu hěn duō qíxíng guàizhuàng de yánshí.","Bờ biển có nhiều tảng đá hình thù kỳ lạ."]}
 {"hz":"精致","vi":"tinh xảo, tinh tế","hv":"tinh trí","pos_vi":"tính từ","ex":["这个小盒子做得很精致。","Zhège xiǎo hézi zuò de hěn jīngzhì.","Chiếc hộp nhỏ này làm rất tinh xảo."]}
 {"hz":"出身","vi":"xuất thân; thành phần gia đình","hv":"xuất thân","pos_vi":"động từ, danh từ","ex":["他出身于农民家庭。","Tā chūshēn yú nóngmín jiātíng.","Anh ấy xuất thân từ gia đình nông dân."]}
-{"hz":"动静","vi":"động tĩnh, tiếng động; tin tức, tình hình","hv":"động tĩnh","pos_vi":"danh từ","ex":["屋里一点儿动静也没有。","Wū lǐ yìdiǎnr dòngjìng yě méiyǒu.","Trong nhà không có chút động tĩnh nào."]}
+{"hz":"动静","vi":"động tĩnh, tiếng động; tin tức, tình hình","hv":"động tĩnh","pos_vi":"danh từ","ex":["屋里一点儿动静也没有。","Wū lǐ yìdiǎnr dòngjing yě méiyǒu.","Trong nhà không có chút động tĩnh nào."]}
 {"hz":"授予","vi":"trao tặng, phong tặng","hv":"thụ dư","pos_vi":"động từ","ex":["学校授予他荣誉博士学位。","Xuéxiào shòuyǔ tā róngyù bóshì xuéwèi.","Trường đã trao tặng ông học vị tiến sĩ danh dự."]}
 {"hz":"掐","vi":"véo, bấm; ngắt (hoa); bóp (cổ); cắt ngang","hv":"kháp","pos_vi":"động từ","ex":["她掐了我一下。","Tā qiā le wǒ yíxià.","Cô ấy véo tôi một cái."]}
 {"hz":"忠实","vi":"trung thành, trung thực; đúng với nguyên bản","hv":"trung thực","pos_vi":"tính từ","ex":["我是这个节目的忠实观众。","Wǒ shì zhège jiémù de zhōngshí guānzhòng.","Tôi là khán giả trung thành của chương trình này."]}

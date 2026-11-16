@@ -55,7 +55,7 @@ window.VOCAB = [
   { hz: "儿子", py: "érzi", hv: "nhi tử", vi: "con trai", pos: "danh từ", ex: ["他有一个儿子。", "Tā yǒu yí ge érzi.", "Anh ấy có một con trai."], l: 4 },
   { hz: "女儿", py: "nǚ'ér", hv: "nữ nhi", vi: "con gái", pos: "danh từ", ex: ["我女儿五岁。", "Wǒ nǚ'ér wǔ suì.", "Con gái tôi năm tuổi."], l: 4 },
   { hz: "有", py: "yǒu", hv: "hữu", vi: "có", pos: "động từ", ex: ["你有狗吗？", "Nǐ yǒu gǒu ma?", "Bạn có chó không?"], l: 4 },
-  { hz: "没", py: "méi", hv: "một", vi: "không (phủ định 有)", pos: "phó từ", ex: ["我没有猫。", "Wǒ méiyǒu māo.", "Tôi không có mèo."], l: 4 },
+  { hz: "没", py: "méi", hv: "một", vi: "không, chưa (phủ định 有 hoặc việc đã xảy ra)", pos: "phó từ, động từ", ex: ["我没有猫。", "Wǒ méiyǒu māo.", "Tôi không có mèo."], l: 4 },
   { hz: "个", py: "gè", hv: "cá", vi: "cái, người (lượng từ chung)", pos: "lượng từ", ex: ["三个苹果", "sān ge píngguǒ", "ba quả táo"], l: 4 },
   { hz: "朋友", py: "péngyou", hv: "bằng hữu", vi: "bạn bè", pos: "danh từ", ex: ["他是我的朋友。", "Tā shì wǒ de péngyou.", "Anh ấy là bạn tôi."], l: 4 },
   { hz: "狗", py: "gǒu", hv: "cẩu", vi: "chó", pos: "danh từ", ex: ["这是我的狗。", "Zhè shì wǒ de gǒu.", "Đây là chó của tôi."], l: 4 },
@@ -131,7 +131,7 @@ window.VOCAB = [
   { hz: "哪", py: "nǎ", hv: "ná", vi: "nào, đâu", pos: "đại từ", ex: ["你去哪儿？", "Nǐ qù nǎr?", "Bạn đi đâu?"], l: 9 },
   { hz: "里", py: "lǐ", hv: "lý", vi: "trong, bên trong", pos: "danh từ", ex: ["书在桌子里。", "Shū zài zhuōzi lǐ.", "Sách ở trong bàn."], l: 9 },
   { hz: "前面", py: "qiánmiàn", hv: "tiền diện", vi: "phía trước", pos: "danh từ", ex: ["医院在前面。", "Yīyuàn zài qiánmiàn.", "Bệnh viện ở phía trước."], l: 9 },
-  { hz: "后面", py: "hòumiàn", hv: "hậu diện", vi: "phía sau", pos: "danh từ", ex: ["学校在商店后面。", "Xuéxiào zài shāngdiàn hòumiàn.", "Trường ở sau cửa hàng."], l: 9 },
+  { hz: "后面", py: "hòumian", hv: "hậu diện", vi: "phía sau", pos: "danh từ", ex: ["学校在商店后面。", "Xuéxiào zài shāngdiàn hòumian.", "Trường ở sau cửa hàng."], l: 9 },
   { hz: "上", py: "shàng", hv: "thượng", vi: "trên", pos: "danh từ", ex: ["书在桌子上。", "Shū zài zhuōzi shàng.", "Sách ở trên bàn."], l: 9 },
   { hz: "下", py: "xià", hv: "hạ", vi: "dưới", pos: "danh từ", ex: ["猫在椅子下。", "Māo zài yǐzi xià.", "Mèo ở dưới ghế."], l: 9 },
   { hz: "出租车", py: "chūzūchē", hv: "xuất tô xa", vi: "taxi", pos: "danh từ", ex: ["我们坐出租车去。", "Wǒmen zuò chūzūchē qù.", "Chúng ta đi taxi."], l: 9 },
@@ -170,7 +170,7 @@ window.VOCAB = [
   // ---- Bài 12: Lịch sự & tổng ôn ----
   { hz: "请", py: "qǐng", hv: "thỉnh", vi: "mời, xin", pos: "động từ", ex: ["请喝茶。", "Qǐng hē chá.", "Mời uống trà."], l: 12 },
   { hz: "先生", py: "xiānsheng", hv: "tiên sinh", vi: "ông, ngài, anh (xưng hô)", pos: "danh từ", ex: ["王先生是老师。", "Wáng xiānsheng shì lǎoshī.", "Ông Vương là giáo viên."], l: 12 },
-  { hz: "小姐", py: "xiǎojiě", hv: "tiểu thư", vi: "cô (xưng hô)", pos: "danh từ", ex: ["李小姐，你好！", "Lǐ xiǎojiě, nǐ hǎo!", "Cô Lý, chào cô!"], l: 12 },
+  { hz: "小姐", py: "xiǎojie", hv: "tiểu thư", vi: "cô (xưng hô)", pos: "danh từ", ex: ["李小姐，你好！", "Lǐ xiǎojie, nǐ hǎo!", "Cô Lý, chào cô!"], l: 12 },
   { hz: "都", py: "dōu", hv: "đô", vi: "đều, cả", pos: "phó từ", ex: ["我们都是学生。", "Wǒmen dōu shì xuésheng.", "Chúng tôi đều là học sinh."], l: 12 },
   { hz: "和", py: "hé", hv: "hòa", vi: "và, với", pos: "liên từ", ex: ["我和他是朋友。", "Wǒ hé tā shì péngyou.", "Tôi và anh ấy là bạn."], l: 12 },
   { hz: "了", py: "le", hv: "liễu", vi: "rồi (trợ từ hoàn thành / thay đổi)", pos: "trợ từ", ex: ["我吃饭了。", "Wǒ chīfàn le.", "Tôi ăn cơm rồi."], l: 12 },
@@ -194,7 +194,7 @@ window.VOCAB = [
   // ---- Bài 14: Một ngày của tôi ----
   { hz: "早上", py: "zǎoshang", hv: "tảo thượng", vi: "buổi sáng (sớm)", pos: "danh từ", ex: ["我早上七点起床。", "Wǒ zǎoshang qī diǎn qǐchuáng.", "Sáng tôi dậy lúc 7 giờ."], l: 14 },
   { hz: "晚上", py: "wǎnshang", hv: "vãn thượng", vi: "buổi tối", pos: "danh từ", ex: ["晚上我看电视。", "Wǎnshang wǒ kàn diànshì.", "Buổi tối tôi xem tivi."], l: 14 },
-  { hz: "小时", py: "xiǎoshí", hv: "tiểu thời", vi: "giờ, tiếng (khoảng thời gian)", pos: "lượng từ", ex: ["我学习了两个小时。", "Wǒ xuéxí le liǎng ge xiǎoshí.", "Tôi đã học hai tiếng."], l: 14 },
+  { hz: "小时", py: "xiǎoshí", hv: "tiểu thời", vi: "giờ, tiếng (khoảng thời gian)", pos: "danh từ", ex: ["我学习了两个小时。", "Wǒ xuéxí le liǎng ge xiǎoshí.", "Tôi đã học hai tiếng."], l: 14 },
   { hz: "时间", py: "shíjiān", hv: "thời gian", vi: "thời gian", pos: "danh từ", ex: ["你有时间吗？", "Nǐ yǒu shíjiān ma?", "Bạn có thời gian không?"], l: 14 },
   { hz: "起床", py: "qǐchuáng", hv: "khởi sàng", vi: "thức dậy, ra khỏi giường", pos: "động từ", ex: ["他每天六点起床。", "Tā měi tiān liù diǎn qǐchuáng.", "Mỗi ngày anh ấy dậy lúc 6 giờ."], l: 14 },
   { hz: "上班", py: "shàngbān", hv: "thượng ban", vi: "đi làm", pos: "động từ", ex: ["我八点上班。", "Wǒ bā diǎn shàngbān.", "Tôi đi làm lúc 8 giờ."], l: 14 },
@@ -237,7 +237,7 @@ window.VOCAB = [
 
   // ---- Bài 17: So sánh & mô tả ----
   { hz: "比", py: "bǐ", hv: "tỷ", vi: "so với, hơn", pos: "giới từ", ex: ["他比我高。", "Tā bǐ wǒ gāo.", "Anh ấy cao hơn tôi."], l: 17 },
-  { hz: "得", py: "de", hv: "đắc", vi: "(trợ từ nối động từ với bổ ngữ mức độ)", pos: "trợ từ", ex: ["他说得很好。", "Tā shuō de hěn hǎo.", "Anh ấy nói rất hay."], l: 17 },
+  { hz: "得", py: "de", hv: "đắc", vi: "trợ từ nối động từ với bổ ngữ mức độ (说得很好)", pos: "trợ từ", ex: ["他说得很好。", "Tā shuō de hěn hǎo.", "Anh ấy nói rất hay."], l: 17 },
   { hz: "最", py: "zuì", hv: "tối", vi: "nhất", pos: "phó từ", ex: ["我最喜欢苹果。", "Wǒ zuì xǐhuan píngguǒ.", "Tôi thích táo nhất."], l: 17 },
   { hz: "高", py: "gāo", hv: "cao", vi: "cao", pos: "tính từ", ex: ["我哥哥很高。", "Wǒ gēge hěn gāo.", "Anh tôi rất cao."], l: 17 },
   { hz: "长", py: "cháng", hv: "trường", vi: "dài", pos: "tính từ", ex: ["这个桌子很长。", "Zhège zhuōzi hěn cháng.", "Cái bàn này rất dài."], l: 17 },
@@ -287,7 +287,7 @@ window.VOCAB = [
   { hz: "唱歌", py: "chànggē", hv: "xướng ca", vi: "hát", pos: "động từ", ex: ["我喜欢唱歌。", "Wǒ xǐhuan chànggē.", "Tôi thích hát."], l: 20 },
   { hz: "跳舞", py: "tiàowǔ", hv: "khiêu vũ", vi: "nhảy, khiêu vũ", pos: "động từ", ex: ["晚上我们去跳舞。", "Wǎnshang wǒmen qù tiàowǔ.", "Tối chúng ta đi nhảy."], l: 20 },
   { hz: "次", py: "cì", hv: "thứ", vi: "lần (lượng từ)", pos: "lượng từ", ex: ["我去过北京两次。", "Wǒ qù guo Běijīng liǎng cì.", "Tôi đã đến Bắc Kinh hai lần."], l: 20 },
-  { hz: "过", py: "guo", hv: "quá", vi: "(trợ từ: đã từng)", pos: "trợ từ", ex: ["你吃过羊肉吗？", "Nǐ chī guo yángròu ma?", "Bạn từng ăn thịt dê chưa?"], l: 20 },
+  { hz: "过", py: "guo", hv: "quá", vi: "đã từng (trợ từ chỉ kinh nghiệm)", pos: "trợ từ", ex: ["你吃过羊肉吗？", "Nǐ chī guo yángròu ma?", "Bạn từng ăn thịt dê chưa?"], l: 20 },
   { hz: "完", py: "wán", hv: "hoàn", vi: "xong, hết", pos: "động từ", ex: ["我吃完了。", "Wǒ chī wán le.", "Tôi ăn xong rồi."], l: 20 },
   { hz: "一起", py: "yìqǐ", hv: "nhất khởi", vi: "cùng nhau", pos: "phó từ", ex: ["我们一起去游泳吧。", "Wǒmen yìqǐ qù yóuyǒng ba.", "Chúng ta cùng đi bơi đi."], l: 20 },
 
@@ -342,7 +342,7 @@ window.VOCAB = [
   { hz: "雪", py: "xuě", hv: "tuyết", vi: "tuyết", pos: "danh từ", ex: ["北京下雪了！", "Běijīng xià xuě le!", "Bắc Kinh có tuyết rồi!"], l: 24 },
   { hz: "外", py: "wài", hv: "ngoại", vi: "ngoài; 外面 = bên ngoài", pos: "danh từ phương vị", ex: ["外面很冷。", "Wàimiàn hěn lěng.", "Bên ngoài rất lạnh."], l: 24 },
   { hz: "再", py: "zài", hv: "tái", vi: "lại, nữa (lần nữa)", pos: "phó từ", ex: ["请再说一次。", "Qǐng zài shuō yí cì.", "Xin nói lại một lần nữa."], l: 24 },
-  { hz: "着", py: "zhe", hv: "trước", vi: "(trợ từ: trạng thái đang duy trì)", pos: "trợ từ", ex: ["门开着。", "Mén kāi zhe.", "Cửa đang mở."], l: 24 },
+  { hz: "着", py: "zhe", hv: "trước", vi: "đang (trợ từ chỉ trạng thái đang tiếp diễn, 开着门)", pos: "trợ từ", ex: ["门开着。", "Mén kāi zhe.", "Cửa đang mở."], l: 24 },
   { hz: "吧", py: "ba", hv: "ba", vi: "(trợ từ: đề nghị / phỏng đoán) …đi, …nhỉ", pos: "trợ từ", ex: ["我们走吧！", "Wǒmen zǒu ba!", "Chúng ta đi thôi!"], l: 24 },
   { hz: "可能", py: "kěnéng", hv: "khả năng", vi: "có thể, có lẽ", pos: "phó từ", ex: ["明天可能下雪。", "Míngtiān kěnéng xià xuě.", "Mai có lẽ có tuyết."], l: 24 },
   { hz: "玩", py: "wán", hv: "ngoạn", vi: "chơi", pos: "động từ", ex: ["孩子们在外面玩。", "Háizimen zài wàimiàn wán.", "Bọn trẻ đang chơi ngoài kia."], l: 24 },

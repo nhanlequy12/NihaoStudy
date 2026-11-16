@@ -1,7 +1,7 @@
 {"hz":"平面","vi":"mặt phẳng; (thiết kế, truyền thông) đồ họa, báo in","hv":"bình diện","pos_vi":"danh từ","ex":["他是一名平面设计师。","Tā shì yì míng píngmiàn shèjìshī.","Anh ấy là một nhà thiết kế đồ họa."]}
-{"hz":"搂","vi":"gom, vơ, cào về phía mình; vén (áo); (đọc lǒu) ôm","hv":"lâu","pos_vi":"động từ","ex":["他把桌上的钱都搂过来了。","Tā bǎ zhuō shàng de qián dōu lōu guòlái le.","Hắn vơ hết tiền trên bàn về phía mình."]}
+{"hz":"搂","vi":"ôm; (lōu) gom, vơ, cào về phía mình; vén (áo)","hv":"lâu","pos_vi":"động từ","ex":["妈妈把孩子紧紧地搂在怀里。","Māma bǎ háizi jǐnjǐn de lǒu zài huái li.","Mẹ ôm chặt con vào lòng."]}
 {"hz":"包袱","vi":"bọc vải, tay nải; gánh nặng (tâm lý)","hv":"bao phục","pos_vi":"danh từ","ex":["别把这件事当成思想包袱。","Bié bǎ zhè jiàn shì dàngchéng sīxiǎng bāofu.","Đừng coi chuyện này là gánh nặng trong lòng."]}
-{"hz":"要点","vi":"ý chính, điểm mấu chốt","hv":"yếu điểm","pos_vi":"danh từ","ex":["请把文章的要点写下来。","Qǐng bǎ wénzhāng de yàodiǎn xiě xiàlái.","Hãy viết ra những ý chính của bài."]}
+{"hz":"要点","vi":"ý chính, điểm mấu chốt","hv":"yếu điểm","pos_vi":"danh từ","ex":["请把文章的要点写下来。","Qǐng bǎ wénzhāng de yàodiǎn xiě xiàlai.","Hãy viết ra những ý chính của bài."]}
 {"hz":"发财","vi":"phát tài, làm giàu","hv":"phát tài","pos_vi":"động từ","ex":["祝你新年发财！","Zhù nǐ xīnnián fācái!","Chúc bạn năm mới phát tài!"]}
 {"hz":"往常","vi":"mọi khi, thường ngày","hv":"vãng thường","pos_vi":"danh từ","ex":["他今天比往常来得早。","Tā jīntiān bǐ wǎngcháng lái de zǎo.","Hôm nay anh ấy đến sớm hơn mọi khi."]}
 {"hz":"隐蔽","vi":"ẩn nấp, che giấu; kín đáo, khuất","hv":"ẩn tế","pos_vi":"động từ, tính từ","ex":["他们躲在一个隐蔽的地方。","Tāmen duǒ zài yí ge yǐnbì de dìfang.","Họ trốn ở một nơi kín đáo."]}
@@ -28,7 +28,7 @@
 {"hz":"当心","vi":"cẩn thận, coi chừng","hv":"đương tâm","pos_vi":"động từ","ex":["当心，地上很滑！","Dāngxīn, dì shàng hěn huá!","Cẩn thận, sàn trơn lắm!"]}
 {"hz":"衰老","vi":"già yếu, lão hóa","hv":"suy lão","pos_vi":"tính từ, động từ","ex":["熬夜会让人衰老得更快。","Áoyè huì ràng rén shuāilǎo de gèng kuài.","Thức khuya khiến người ta lão hóa nhanh hơn."]}
 {"hz":"轰动","vi":"gây chấn động, gây xôn xao","hv":"oanh động","pos_vi":"động từ","ex":["这部电影轰动了全国。","Zhè bù diànyǐng hōngdòng le quánguó.","Bộ phim này gây chấn động cả nước."]}
-{"hz":"筛选","vi":"sàng lọc, chọn lọc","hv":"si tuyển","pos_vi":"động từ","ex":["公司从一百人中筛选出五个人。","Gōngsī cóng yìbǎi rén zhōng shāixuǎn chū wǔ gè rén.","Công ty sàng lọc ra năm người từ một trăm ứng viên."]}
+{"hz":"筛选","vi":"sàng lọc, chọn lọc","hv":"si tuyển","pos_vi":"động từ","ex":["公司从一百人中筛选出五个人。","Gōngsī cóng yìbǎi rén zhōng shāixuǎn chū wǔ ge rén.","Công ty sàng lọc ra năm người từ một trăm ứng viên."]}
 {"hz":"猛烈","vi":"dữ dội, mãnh liệt","hv":"mãnh liệt","pos_vi":"tính từ","ex":["风刮得很猛烈。","Fēng guā de hěn měngliè.","Gió thổi rất dữ dội."]}
 {"hz":"手势","vi":"cử chỉ tay, ra hiệu bằng tay","hv":"thủ thế","pos_vi":"danh từ","ex":["他用手势让我过去。","Tā yòng shǒushì ràng wǒ guòqù.","Anh ấy ra hiệu bảo tôi qua đó."]}
 {"hz":"示威","vi":"biểu tình; thị uy","hv":"thị uy","pos_vi":"động từ","ex":["很多人上街示威。","Hěn duō rén shàng jiē shìwēi.","Nhiều người xuống đường biểu tình."]}
@@ -42,8 +42,8 @@
 {"hz":"资深","vi":"kỳ cựu, lâu năm, giàu kinh nghiệm","hv":"tư thâm","pos_vi":"tính từ","ex":["他是一位资深记者。","Tā shì yí wèi zīshēn jìzhě.","Ông ấy là một nhà báo kỳ cựu."]}
 {"hz":"崇高","vi":"cao cả, cao thượng","hv":"sùng cao","pos_vi":"tính từ","ex":["教师是一个崇高的职业。","Jiàoshī shì yí ge chónggāo de zhíyè.","Nhà giáo là một nghề cao quý."]}
 {"hz":"密封","vi":"niêm phong, đóng kín","hv":"mật phong","pos_vi":"động từ","ex":["把茶叶放在密封的罐子里。","Bǎ cháyè fàng zài mìfēng de guànzi lǐ.","Hãy để trà trong hũ đậy kín."]}
-{"hz":"高明","vi":"cao minh, giỏi, cao tay (Gāomíng: quận Cao Minh)","hv":"cao minh","pos_vi":"tính từ","ex":["这个办法真高明！","Zhège bànfǎ zhēn gāomíng!","Cách này thật cao tay!"]}
-{"hz":"叼","vi":"ngậm, tha (bằng miệng)","hv":"điêu","pos_vi":"động từ","ex":["小狗叼着一个球跑过来。","Xiǎo gǒu diāo zhe yí ge qiú pǎo guòlái.","Chú chó nhỏ ngậm quả bóng chạy tới."]}
+{"hz":"高明","vi":"cao minh, giỏi, cao tay","hv":"cao minh","pos_vi":"tính từ","ex":["这个办法真高明！","Zhège bànfǎ zhēn gāomíng!","Cách này thật cao tay!"]}
+{"hz":"叼","vi":"ngậm, tha (bằng miệng)","hv":"điêu","pos_vi":"động từ","ex":["小狗叼着一个球跑过来。","Xiǎo gǒu diāo zhe yí ge qiú pǎo guòlai.","Chú chó nhỏ ngậm quả bóng chạy tới."]}
 {"hz":"堵塞","vi":"tắc nghẽn, bịt kín","hv":"đổ tắc","pos_vi":"động từ","ex":["下水道堵塞了。","Xiàshuǐdào dǔsè le.","Cống bị tắc rồi."]}
 {"hz":"磕","vi":"va, đập (vào vật cứng); gõ (cho rơi ra)","hv":"khái","pos_vi":"động từ","ex":["他的头磕在桌子上了。","Tā de tóu kē zài zhuōzi shàng le.","Đầu cậu ấy đập vào bàn."]}
 {"hz":"分明","vi":"rõ ràng, rõ rệt; rõ ràng là","hv":"phân minh","pos_vi":"tính từ, phó từ","ex":["他分明是在说谎。","Tā fēnmíng shì zài shuōhuǎng.","Rõ ràng là anh ta đang nói dối."]}

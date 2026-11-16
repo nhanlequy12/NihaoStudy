@@ -75,7 +75,7 @@
 {"hz":"沿","vi":"dọc theo, men theo; mép, bờ","hv":"duyên","pos_vi":"giới từ, danh từ","ex":["沿这条路一直往前走。","Yán zhè tiáo lù yìzhí wǎng qián zǒu.","Đi thẳng về phía trước dọc theo con đường này."]}
 {"hz":"用品","vi":"đồ dùng","hv":"dụng phẩm","pos_vi":"danh từ","ex":["超市里有各种生活用品。","Chāoshì lǐ yǒu gè zhǒng shēnghuó yòngpǐn.","Siêu thị có đủ loại đồ dùng sinh hoạt."]}
 {"hz":"重建","vi":"xây dựng lại, tái thiết","hv":"trùng kiến","pos_vi":"động từ","ex":["地震以后，人们开始重建家园。","Dìzhèn yǐhòu, rénmen kāishǐ chóngjiàn jiāyuán.","Sau động đất, người dân bắt đầu xây dựng lại nhà cửa."]}
-{"hz":"看好","vi":"trông coi, trông chừng (kān); (kàn) đánh giá cao, cho là có triển vọng","hv":"khán hảo","pos_vi":"động từ","ex":["你帮我看好孩子，我马上回来。","Nǐ bāng wǒ kānhǎo háizi, wǒ mǎshàng huílái.","Bạn trông giúp tôi đứa bé, tôi về ngay."]}
+{"hz":"看好","vi":"đánh giá cao, cho là có triển vọng; (kānhǎo) trông coi, trông chừng","hv":"khán hảo","pos_vi":"động từ","ex":["大家都很看好这位年轻的选手。","Dàjiā dōu hěn kànhǎo zhè wèi niánqīng de xuǎnshǒu.","Mọi người đều đánh giá cao tuyển thủ trẻ này."]}
 {"hz":"管道","vi":"đường ống; kênh, con đường (nghĩa bóng)","hv":"quản đạo","pos_vi":"danh từ","ex":["工人正在修理管道。","Gōngrén zhèngzài xiūlǐ guǎndào.","Công nhân đang sửa đường ống."]}
 {"hz":"薯条","vi":"khoai tây chiên","hv":"thự điều","pos_vi":"danh từ","ex":["孩子们都爱吃薯条。","Háizimen dōu ài chī shǔtiáo.","Bọn trẻ đều thích ăn khoai tây chiên."]}
 {"hz":"赶上","vi":"đuổi kịp, theo kịp; kịp (chuyến xe); gặp đúng lúc","hv":"cản thượng","pos_vi":"động từ","ex":["快走，还能赶上末班车。","Kuài zǒu, hái néng gǎnshàng mòbānchē.","Đi nhanh lên, vẫn còn kịp chuyến xe cuối."]}
@@ -95,6 +95,6 @@
 {"hz":"住宅","vi":"nhà ở, nơi ở","hv":"trú trạch","pos_vi":"danh từ","ex":["这里是一片新的住宅区。","Zhèlǐ shì yí piàn xīn de zhùzháiqū.","Đây là một khu dân cư mới."]}
 {"hz":"丧失","vi":"mất, đánh mất","hv":"táng thất","pos_vi":"động từ","ex":["失败了几次，他丧失了信心。","Shībài le jǐ cì, tā sàngshī le xìnxīn.","Thất bại vài lần, anh ấy mất hết tự tin."]}
 {"hz":"旋转","vi":"xoay tròn, quay","hv":"toàn chuyển","pos_vi":"động từ","ex":["地球不停地旋转。","Dìqiú bù tíng de xuánzhuǎn.","Trái đất không ngừng quay."]}
-{"hz":"吞","vi":"nuốt; chiếm đoạt","hv":"thôn","pos_vi":"động từ","ex":["药片太大，我吞不下去。","Yàopiàn tài dà, wǒ tūn bú xiàqù.","Viên thuốc to quá, tôi nuốt không trôi."]}
+{"hz":"吞","vi":"nuốt; chiếm đoạt","hv":"thôn","pos_vi":"động từ","ex":["药片太大，我吞不下去。","Yàopiàn tài dà, wǒ tūn bú xiàqu.","Viên thuốc to quá, tôi nuốt không trôi."]}
 {"hz":"反抗","vi":"phản kháng, chống lại","hv":"phản kháng","pos_vi":"động từ","ex":["他们起来反抗不公平的待遇。","Tāmen qǐlái fǎnkàng bù gōngpíng de dàiyù.","Họ đứng lên chống lại sự đối xử bất công."]}
 {"hz":"办公","vi":"làm việc (ở cơ quan, văn phòng)","hv":"biện công","pos_vi":"động từ","ex":["经理在三楼办公。","Jīnglǐ zài sān lóu bàngōng.","Giám đốc làm việc ở tầng ba."]}

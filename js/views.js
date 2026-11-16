@@ -328,7 +328,7 @@
         box.querySelectorAll(".tile").forEach((t) => t.onclick = () => (t.parentElement === bank ? ans : bank).appendChild(t));
         box.querySelector("#check").onclick = () => {
           const got = Array.from(ans.children).map((t) => t.textContent).join(" ");
-          grade(got === q.s[0], `${esc(q.s[0].replace(/ /g, ""))} · ${esc(q.s[1])}`, q.s[0].replace(/ /g, ""));
+          grade(got === q.s[0] || (q.s[3] || []).includes(got), `${esc(q.s[0].replace(/ /g, ""))} · ${esc(q.s[1])}`, q.s[0].replace(/ /g, ""));
         };
       } else {
         const w = q.w;

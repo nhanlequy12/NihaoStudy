@@ -124,10 +124,12 @@
       const chosen = it.user ? it.user.split(" ") : [];
       const isR = it.type === "r_order";
       const label = (t) => (isR ? t[0] : t);
-      const left = it.tokens.filter((t) => !chosen.includes(label(t)));
+      // từ lặp (vd hai chữ 了): chỉ ẩn khỏi ngân hàng đúng số lần đã chọn
+      const rest = chosen.slice();
+      const left = it.tokens.filter((t) => { const j = rest.indexOf(label(t)); if (j < 0) return true; rest.splice(j, 1); return false; });
       const chosenTokens = chosen.map((c) => it.tokens.find((t) => label(t) === c));
       body += `<p class="small muted center">Bấm để đưa ${isR ? "câu" : "từ"} lên dòng đáp án theo đúng thứ tự; bấm lại để bỏ xuống.</p>
-        <div class="tiles" id="answer">${chosenTokens.map((t) => `<button class="tile ${isR ? "" : "zh"}" data-t="${esc(label(t))}" data-from="answer">${esc(t)}</button>`).join("")}</div>
+        <div class="tiles" id="answer">${chosenTokens.map((t, j) => `<button class="tile ${isR ? "" : "zh"}" data-t="${esc(label(t))}" data-i="${j}" data-from="answer">${esc(t)}</button>`).join("")}</div>
         <div class="tiles" id="bank">${left.map((t) => `<button class="tile ${isR ? "" : "zh"}" data-t="${esc(label(t))}" data-from="bank">${esc(t)}</button>`).join("")}</div>`;
     } else if (it.kind === "text") {
       body += `<div class="center"><input class="search zh" id="txt" style="max-width:420px;text-align:center" placeholder="${it.free ? "Viết một câu có từ này" : "Gõ chữ Hán"}" value="${esc(it.user || "")}" autocomplete="off"></div>
@@ -155,7 +157,7 @@
     box.querySelectorAll(".tile[data-t]").forEach((b) => b.onclick = () => {
       const chosen = it.user ? it.user.split(" ") : [];
       const t = b.dataset.t;
-      it.user = (b.dataset.from === "bank" ? [...chosen, t] : chosen.filter((x) => x !== t)).join(" ") || null;
+      it.user = (b.dataset.from === "bank" ? [...chosen, t] : chosen.filter((x, j) => j !== +b.dataset.i)).join(" ") || null;
       render(box);
     });
     const txt = box.querySelector("#txt");

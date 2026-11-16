@@ -39,7 +39,7 @@
 {"hz":"衬衣","vi":"áo sơ mi","hv":"sấn y","pos_vi":"danh từ","ex":["他穿着白衬衣。","Tā chuān zhe bái chènyī.","Anh ấy mặc áo sơ mi trắng."]}
 {"hz":"班级","vi":"lớp, lớp học","hv":"ban cấp","pos_vi":"danh từ","ex":["我们班级有四十人。","Wǒmen bānjí yǒu sìshí rén.","Lớp chúng tôi có bốn mươi người."]}
 {"hz":"现代化","vi":"hiện đại hóa; hiện đại","hv":"hiện đại hóa","pos_vi":"động từ, danh từ","ex":["这是一个现代化的城市。","Zhè shì yí ge xiàndàihuà de chéngshì.","Đây là một thành phố hiện đại."]}
-{"hz":"专题","vi":"chuyên đề","hv":"chuyên đề","pos_vi":"danh từ","ex":["今天的讲座有一个专题。","Jīntiān de jiǎngzuò yǒu yí ge zhuāntí.","Buổi tọa đàm hôm nay có một chuyên đề."]}
+{"hz":"专题","vi":"chuyên đề","hv":"chuyên đề","pos_vi":"danh từ","ex":["这期杂志有一个关于环保的专题。","Zhè qī zázhì yǒu yí ge guānyú huánbǎo de zhuāntí.","Số tạp chí này có một chuyên đề về bảo vệ môi trường."]}
 {"hz":"工夫","vi":"thời gian, thì giờ; công sức","hv":"công phu","pos_vi":"danh từ","ex":["我没工夫跟你说。","Wǒ méi gōngfu gēn nǐ shuō.","Tôi không có thời gian nói với bạn."]}
 {"hz":"创业","vi":"khởi nghiệp, lập nghiệp","hv":"sáng nghiệp","pos_vi":"động từ","ex":["他大学毕业后开始创业。","Tā dàxué bìyè hòu kāishǐ chuàngyè.","Tốt nghiệp đại học xong anh ấy bắt đầu khởi nghiệp."]}
 {"hz":"旅行社","vi":"công ty du lịch, hãng lữ hành","hv":"lữ hành xã","pos_vi":"danh từ","ex":["我们找了一家旅行社。","Wǒmen zhǎo le yì jiā lǚxíngshè.","Chúng tôi đã tìm một công ty du lịch."]}
@@ -60,7 +60,7 @@
 {"hz":"有的是","vi":"có rất nhiều, thiếu gì","hv":"hữu đích thị","pos_vi":"cụm từ","ex":["别急，时间有的是。","Bié jí, shíjiān yǒudeshì.","Đừng vội, thời gian còn nhiều."]}
 {"hz":"皮包","vi":"túi da, cặp da","hv":"bì bao","pos_vi":"danh từ","ex":["她买了一个新皮包。","Tā mǎi le yí ge xīn píbāo.","Cô ấy mua một chiếc túi da mới."]}
 {"hz":"图画","vi":"tranh vẽ, bức tranh","hv":"đồ họa","pos_vi":"danh từ","ex":["孩子画了一张图画。","Háizi huà le yì zhāng túhuà.","Đứa bé vẽ một bức tranh."]}
-{"hz":"长处","vi":"ưu điểm, điểm mạnh, sở trường","hv":"trường xứ","pos_vi":"danh từ","ex":["每个人都有长处。","Měi gè rén dōu yǒu chángchù.","Ai cũng có ưu điểm."]}
+{"hz":"长处","vi":"ưu điểm, điểm mạnh, sở trường","hv":"trường xứ","pos_vi":"danh từ","ex":["每个人都有长处。","Měi ge rén dōu yǒu chángchù.","Ai cũng có ưu điểm."]}
 {"hz":"绿茶","vi":"trà xanh","hv":"lục trà","pos_vi":"danh từ","ex":["我喜欢喝绿茶。","Wǒ xǐhuan hē lǜchá.","Tôi thích uống trà xanh."]}
 {"hz":"白菜","vi":"cải thảo, bắp cải trắng","hv":"bạch thái","pos_vi":"danh từ","ex":["今天的白菜很便宜。","Jīntiān de báicài hěn piányi.","Cải thảo hôm nay rất rẻ."]}
 {"hz":"普及","vi":"phổ cập, phổ biến","hv":"phổ cập","pos_vi":"động từ, tính từ","ex":["手机已经很普及了。","Shǒujī yǐjīng hěn pǔjí le.","Điện thoại di động đã rất phổ biến."]}
@@ -77,7 +77,7 @@
 {"hz":"跳高","vi":"nhảy cao","hv":"khiêu cao","pos_vi":"động từ, danh từ","ex":["他跳高得了第一。","Tā tiàogāo dé le dì-yī.","Cậu ấy giành giải nhất môn nhảy cao."]}
 {"hz":"衣架","vi":"móc áo; giá treo quần áo","hv":"y giá","pos_vi":"danh từ","ex":["把衣服挂在衣架上。","Bǎ yīfu guà zài yījià shàng.","Treo quần áo lên móc."]}
 {"hz":"外文","vi":"ngoại văn, tiếng nước ngoài (chữ viết)","hv":"ngoại văn","pos_vi":"danh từ","ex":["这本外文书很难懂。","Zhè běn wàiwén shū hěn nán dǒng.","Cuốn sách ngoại văn này rất khó hiểu."]}
-{"hz":"短处","vi":"khuyết điểm, nhược điểm","hv":"đoản xứ","pos_vi":"danh từ","ex":["每个人都有短处。","Měi gè rén dōu yǒu duǎnchù.","Ai cũng có nhược điểm."]}
+{"hz":"短处","vi":"khuyết điểm, nhược điểm","hv":"đoản xứ","pos_vi":"danh từ","ex":["每个人都有短处。","Měi ge rén dōu yǒu duǎnchù.","Ai cũng có nhược điểm."]}
 {"hz":"空儿","vi":"thời gian rảnh; chỗ trống","hv":"không nhi","pos_vi":"danh từ","ex":["你有空儿吗？","Nǐ yǒu kòngr ma?","Bạn có rảnh không?"]}
 {"hz":"跳远","vi":"nhảy xa","hv":"khiêu viễn","pos_vi":"động từ, danh từ","ex":["我最喜欢跳远。","Wǒ zuì xǐhuan tiàoyuǎn.","Tôi thích nhảy xa nhất."]}
 {"hz":"后年","vi":"năm sau nữa","hv":"hậu niên","pos_vi":"danh từ","ex":["我后年大学毕业。","Wǒ hòunián dàxué bìyè.","Năm sau nữa tôi tốt nghiệp đại học."]}

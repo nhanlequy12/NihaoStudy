@@ -61,12 +61,12 @@
 {"hz":"录","vi":"ghi (âm, hình); chép; tuyển, nhận","hv":"lục","pos_vi":"động từ","ex":["我把课录下来了。","Wǒ bǎ kè lù xiàlai le.","Tôi đã ghi âm lại bài giảng."]}
 {"hz":"女子","vi":"phụ nữ, nữ (dùng trong thể thao, văn viết)","hv":"nữ tử","pos_vi":"danh từ","ex":["她参加了女子比赛。","Tā cānjiā le nǚzǐ bǐsài.","Cô ấy tham gia nội dung thi đấu nữ."]}
 {"hz":"快速","vi":"nhanh, nhanh chóng, tốc độ cao","hv":"khoái tốc","pos_vi":"tính từ, phó từ","ex":["经济快速发展。","Jīngjì kuàisù fāzhǎn.","Kinh tế phát triển nhanh chóng."]}
-{"hz":"连续","vi":"liên tục, liên tiếp","hv":"liên tục","pos_vi":"tính từ","ex":["我连续工作了十个小时。","Wǒ liánxù gōngzuò le shí gè xiǎoshí.","Tôi làm việc liên tục mười tiếng."]}
+{"hz":"连续","vi":"liên tục, liên tiếp","hv":"liên tục","pos_vi":"tính từ","ex":["我连续工作了十个小时。","Wǒ liánxù gōngzuò le shí ge xiǎoshí.","Tôi làm việc liên tục mười tiếng."]}
 {"hz":"厂","vi":"nhà máy, xưởng","hv":"xưởng","pos_vi":"danh từ","ex":["他在工厂上班。","Tā zài gōngchǎng shàngbān.","Anh ấy làm việc ở nhà máy."]}
 {"hz":"背后","vi":"phía sau, đằng sau; sau lưng (lén lút)","hv":"bối hậu","pos_vi":"phương vị từ","ex":["不要在背后说别人。","Búyào zài bèihòu shuō biérén.","Đừng nói xấu người khác sau lưng."]}
 {"hz":"公共","vi":"công cộng, chung","hv":"công cộng","pos_vi":"tính từ","ex":["这里是公共场所。","Zhèlǐ shì gōnggòng chǎngsuǒ.","Đây là nơi công cộng."]}
 {"hz":"当中","vi":"trong số, ở giữa","hv":"đương trung","pos_vi":"phương vị từ","ex":["我们当中谁最高？","Wǒmen dāngzhōng shéi zuì gāo?","Trong chúng ta ai cao nhất?"]}
-{"hz":"男子","vi":"đàn ông, nam (dùng trong thể thao, văn viết)","hv":"nam tử","pos_vi":"danh từ","ex":["一名男子走了进来。","Yì míng nánzǐ zǒu le jìnlái.","Một người đàn ông bước vào."]}
+{"hz":"男子","vi":"đàn ông, nam (dùng trong thể thao, văn viết)","hv":"nam tử","pos_vi":"danh từ","ex":["一名男子走了进来。","Yì míng nánzǐ zǒu le jìnlai.","Một người đàn ông bước vào."]}
 {"hz":"土","vi":"đất; quê mùa, lỗi mốt; địa phương","hv":"thổ","pos_vi":"danh từ, tính từ","ex":["他的鞋上都是土。","Tā de xié shàng dōu shì tǔ.","Giày anh ấy dính đầy đất."]}
 {"hz":"村","vi":"làng, thôn","hv":"thôn","pos_vi":"danh từ","ex":["我爷爷住在村里。","Wǒ yéye zhù zài cūn lǐ.","Ông tôi sống ở trong làng."]}
 {"hz":"缺","vi":"thiếu, khuyết; vắng mặt","hv":"khuyết","pos_vi":"động từ","ex":["我们还缺一个人。","Wǒmen hái quē yí ge rén.","Chúng ta còn thiếu một người."]}
@@ -87,7 +87,7 @@
 {"hz":"上升","vi":"tăng lên, đi lên, dâng lên","hv":"thượng thăng","pos_vi":"động từ","ex":["气温上升了。","Qìwēn shàngshēng le.","Nhiệt độ đã tăng lên."]}
 {"hz":"围","vi":"vây, bao quanh, quây","hv":"vi","pos_vi":"động từ","ex":["大家围着桌子坐。","Dàjiā wéi zhe zhuōzi zuò.","Mọi người ngồi quanh bàn."]}
 {"hz":"路线","vi":"lộ trình, tuyến đường; đường lối","hv":"lộ tuyến","pos_vi":"danh từ","ex":["你知道去机场的路线吗？","Nǐ zhīdào qù jīchǎng de lùxiàn ma?","Bạn biết đường ra sân bay không?"]}
-{"hz":"飞行","vi":"bay, chuyến bay","hv":"phi hành","pos_vi":"động từ","ex":["飞机飞行了五个小时。","Fēijī fēixíng le wǔ gè xiǎoshí.","Máy bay đã bay năm tiếng."]}
+{"hz":"飞行","vi":"bay, chuyến bay","hv":"phi hành","pos_vi":"động từ","ex":["飞机飞行了五个小时。","Fēijī fēixíng le wǔ ge xiǎoshí.","Máy bay đã bay năm tiếng."]}
 {"hz":"较","vi":"tương đối, khá; so với","hv":"giảo","pos_vi":"phó từ, giới từ","ex":["今天的天气较好。","Jīntiān de tiānqì jiào hǎo.","Thời tiết hôm nay khá tốt."]}
 {"hz":"福","vi":"phúc, hạnh phúc, may mắn","hv":"phúc","pos_vi":"danh từ","ex":["春节门上贴福字。","Chūnjié mén shàng tiē fú zì.","Tết dán chữ Phúc lên cửa."]}
 {"hz":"补","vi":"vá, sửa; bù, bổ sung; bồi bổ","hv":"bổ","pos_vi":"động từ","ex":["我要补一下课。","Wǒ yào bǔ yíxià kè.","Tôi phải học bù một chút."]}

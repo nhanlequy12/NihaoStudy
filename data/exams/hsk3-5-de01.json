@@ -110,7 +110,7 @@
         ],
         [
          "男",
-         "房间不大，但是离地铁站只有五分钟，房租也比现在这套便宜三百块。唯一的问题是楼层有点儿高，没有电梯。"
+         "房间不算大，不过一个人住够了，离地铁站只有五分钟，房租也比现在这套便宜三百块。唯一的问题是楼层有点儿高，没有电梯。"
         ]
        ],
        "passage": null,
@@ -129,7 +129,7 @@
          "answer": 3,
          "sample_answer": null,
          "rubric_vi": null,
-         "explain_vi": "Người nam nói 'vấn đề duy nhất' là tầng hơi cao mà không có thang máy. Phòng không lớn nhưng anh không coi là nhược điểm chính; tiền thuê còn rẻ hơn, gần ga tàu điện.",
+         "explain_vi": "Người nam nói 'vấn đề duy nhất' là tầng hơi cao mà không có thang máy. Phòng không lớn lắm nhưng một người ở là đủ, nên không phải nhược điểm; tiền thuê còn rẻ hơn, gần ga tàu điện.",
          "skills": [
           "nghe-chi-tiet"
          ],

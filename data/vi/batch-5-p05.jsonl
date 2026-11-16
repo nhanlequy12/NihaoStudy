@@ -13,7 +13,7 @@
 {"hz":"衰退","vi":"suy giảm, suy thoái","hv":"suy thoái","pos_vi":"động từ","ex":["他的记忆力开始衰退了。","Tā de jìyìlì kāishǐ shuāituì le.","Trí nhớ của ông ấy bắt đầu suy giảm."]}
 {"hz":"讨价还价","vi":"mặc cả, trả giá; cò kè","hv":"thảo giá hoàn giá","pos_vi":"thành ngữ","ex":["她在市场上跟老板讨价还价。","Tā zài shìchǎng shàng gēn lǎobǎn tǎojiàhuánjià.","Cô ấy mặc cả với chủ hàng ở chợ."]}
 {"hz":"雕刻","vi":"điêu khắc, chạm khắc; tác phẩm điêu khắc","hv":"điêu khắc","pos_vi":"động từ, danh từ","ex":["他在木头上雕刻了一只鸟。","Tā zài mùtou shàng diāokè le yì zhī niǎo.","Anh ấy khắc một con chim lên miếng gỗ."]}
-{"hz":"主权","vi":"chủ quyền","hv":"chủ quyền","pos_vi":"danh từ","ex":["每个国家都有自己的主权。","Měi gè guójiā dōu yǒu zìjǐ de zhǔquán.","Mỗi quốc gia đều có chủ quyền của mình."]}
+{"hz":"主权","vi":"chủ quyền","hv":"chủ quyền","pos_vi":"danh từ","ex":["每个国家都有自己的主权。","Měi ge guójiā dōu yǒu zìjǐ de zhǔquán.","Mỗi quốc gia đều có chủ quyền của mình."]}
 {"hz":"趣味","vi":"sự thú vị, hứng thú; sở thích, thị hiếu","hv":"thú vị","pos_vi":"danh từ","ex":["这本书很有趣味。","Zhè běn shū hěn yǒu qùwèi.","Cuốn sách này rất thú vị."]}
 {"hz":"枯燥","vi":"khô khan, tẻ nhạt","hv":"khô táo","pos_vi":"tính từ","ex":["这节课太枯燥了。","Zhè jié kè tài kūzào le.","Tiết học này tẻ nhạt quá."]}
 {"hz":"争端","vi":"tranh chấp, xung đột","hv":"tranh đoan","pos_vi":"danh từ","ex":["两国通过谈判解决了争端。","Liǎng guó tōngguò tánpàn jiějué le zhēngduān.","Hai nước giải quyết tranh chấp bằng đàm phán."]}
@@ -29,12 +29,12 @@
 {"hz":"不得已","vi":"bất đắc dĩ, đành phải","hv":"bất đắc dĩ","pos_vi":"tính từ","ex":["我这样做也是不得已。","Wǒ zhèyàng zuò yě shì bùdéyǐ.","Tôi làm vậy cũng là bất đắc dĩ."]}
 {"hz":"框架","vi":"khung; khuôn khổ","hv":"khuông giá","pos_vi":"danh từ","ex":["我们先搭好文章的框架。","Wǒmen xiān dā hǎo wénzhāng de kuàngjià.","Chúng ta dựng khung bài viết trước đã."]}
 {"hz":"断定","vi":"kết luận, khẳng định, đoán chắc","hv":"đoạn định","pos_vi":"động từ","ex":["我敢断定他没说实话。","Wǒ gǎn duàndìng tā méi shuō shíhuà.","Tôi dám khẳng định anh ta không nói thật."]}
-{"hz":"复兴","vi":"phục hưng, chấn hưng (Fùxīng: quận Phục Hưng)","hv":"phục hưng","pos_vi":"động từ","ex":["这个城市正在走向复兴。","Zhège chéngshì zhèngzài zǒuxiàng fùxīng.","Thành phố này đang trên đà phục hưng."]}
+{"hz":"复兴","vi":"phục hưng, chấn hưng","hv":"phục hưng","pos_vi":"động từ","ex":["这个城市正在走向复兴。","Zhège chéngshì zhèngzài zǒuxiàng fùxīng.","Thành phố này đang trên đà phục hưng."]}
 {"hz":"风趣","vi":"dí dỏm, hài hước","hv":"phong thú","pos_vi":"tính từ, danh từ","ex":["他说话很风趣。","Tā shuōhuà hěn fēngqù.","Anh ấy nói chuyện rất dí dỏm."]}
 {"hz":"曲折","vi":"quanh co, khúc khuỷu; phức tạp, gian nan","hv":"khúc chiết","pos_vi":"tính từ","ex":["这条山路很曲折。","Zhè tiáo shānlù hěn qūzhé.","Con đường núi này rất quanh co."]}
 {"hz":"搁","vi":"đặt, để; gác lại, xếp lại; cho thêm (gia vị)","hv":"các","pos_vi":"động từ","ex":["把书搁在桌子上吧。","Bǎ shū gē zài zhuōzi shàng ba.","Để sách lên bàn đi."]}
 {"hz":"变质","vi":"biến chất; (thức ăn) hỏng, ôi thiu","hv":"biến chất","pos_vi":"động từ","ex":["牛奶已经变质了。","Niúnǎi yǐjīng biànzhì le.","Sữa đã bị hỏng rồi."]}
-{"hz":"混淆","vi":"lẫn lộn, nhầm lẫn; đánh lừa","hv":"hỗn hào","pos_vi":"động từ","ex":["不要混淆这两个概念。","Bú yào hùnxiáo zhè liǎng gè gàiniàn.","Đừng nhầm lẫn hai khái niệm này."]}
+{"hz":"混淆","vi":"lẫn lộn, nhầm lẫn; đánh lừa","hv":"hỗn hào","pos_vi":"động từ","ex":["不要混淆这两个概念。","Bú yào hùnxiáo zhè liǎng ge gàiniàn.","Đừng nhầm lẫn hai khái niệm này."]}
 {"hz":"急剧","vi":"nhanh chóng, đột ngột, mạnh","hv":"cấp kịch","pos_vi":"tính từ, phó từ","ex":["人口急剧增加。","Rénkǒu jíjù zēngjiā.","Dân số tăng nhanh chóng."]}
 {"hz":"交涉","vi":"giao thiệp, thương lượng, can thiệp","hv":"giao thiệp","pos_vi":"động từ","ex":["我们正在和对方交涉。","Wǒmen zhèngzài hé duìfāng jiāoshè.","Chúng tôi đang thương lượng với phía bên kia."]}
 {"hz":"思索","vi":"suy nghĩ, suy ngẫm","hv":"tư sách","pos_vi":"động từ","ex":["他思索了一会儿才回答。","Tā sīsuǒ le yíhuìr cái huídá.","Anh ấy suy nghĩ một lúc mới trả lời."]}
@@ -93,8 +93,8 @@
 {"hz":"名副其实","vi":"danh xứng với thực","hv":"danh phó kỳ thực","pos_vi":"thành ngữ","ex":["他是一个名副其实的专家。","Tā shì yí ge míngfùqíshí de zhuānjiā.","Ông ấy là một chuyên gia danh xứng với thực."]}
 {"hz":"科目","vi":"môn học; hạng mục (thi cử, kế toán)","hv":"khoa mục","pos_vi":"danh từ","ex":["你最喜欢哪个科目？","Nǐ zuì xǐhuan nǎge kēmù?","Bạn thích môn học nào nhất?"]}
 {"hz":"妥当","vi":"thỏa đáng, ổn thỏa","hv":"thỏa đáng","pos_vi":"tính từ","ex":["这样安排比较妥当。","Zhèyàng ānpái bǐjiào tuǒdang.","Sắp xếp như vậy khá thỏa đáng."]}
-{"hz":"悬挂","vi":"treo, treo lên; (xe) hệ thống treo","hv":"huyền quải","pos_vi":"động từ","ex":["门口悬挂着两个红灯笼。","Ménkǒu xuánguà zhe liǎng gè hóng dēnglong.","Trước cửa treo hai chiếc đèn lồng đỏ."]}
-{"hz":"自发","vi":"tự phát, tự nguyện","hv":"tự phát","pos_vi":"tính từ","ex":["居民们自发组织起来打扫街道。","Jūmínmen zìfā zǔzhī qǐlái dǎsǎo jiēdào.","Người dân tự phát tổ chức dọn dẹp đường phố."]}
+{"hz":"悬挂","vi":"treo, treo lên; (xe) hệ thống treo","hv":"huyền quải","pos_vi":"động từ","ex":["门口悬挂着两个红灯笼。","Ménkǒu xuánguà zhe liǎng ge hóng dēnglong.","Trước cửa treo hai chiếc đèn lồng đỏ."]}
+{"hz":"自发","vi":"tự phát, tự nguyện","hv":"tự phát","pos_vi":"tính từ","ex":["居民们自发组织起来打扫街道。","Jūmínmen zìfā zǔzhī qǐlai dǎsǎo jiēdào.","Người dân tự phát tổ chức dọn dẹp đường phố."]}
 {"hz":"高超","vi":"cao siêu, điêu luyện, xuất sắc","hv":"cao siêu","pos_vi":"tính từ","ex":["他的球技非常高超。","Tā de qiújì fēicháng gāochāo.","Kỹ thuật chơi bóng của anh ấy cực kỳ điêu luyện."]}
 {"hz":"民用","vi":"dân dụng","hv":"dân dụng","pos_vi":"tính từ","ex":["这是一个民用机场。","Zhè shì yí ge mínyòng jīchǎng.","Đây là một sân bay dân dụng."]}
 {"hz":"反面","vi":"mặt trái, mặt sau; phản diện, tiêu cực","hv":"phản diện","pos_vi":"danh từ, tính từ","ex":["请在纸的反面签名。","Qǐng zài zhǐ de fǎnmiàn qiānmíng.","Vui lòng ký tên ở mặt sau tờ giấy."]}

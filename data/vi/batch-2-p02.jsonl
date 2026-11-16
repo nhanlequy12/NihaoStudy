@@ -1,7 +1,7 @@
 {"hz":"外套","vi":"áo khoác","hv":"ngoại sáo","pos_vi":"danh từ","ex":["外面冷，穿上外套吧。","Wàimiàn lěng, chuān shang wàitào ba.","Bên ngoài lạnh, mặc áo khoác vào đi."]}
 {"hz":"描述","vi":"miêu tả, mô tả; sự mô tả","hv":"miêu thuật","pos_vi":"động từ, danh từ","ex":["你能描述一下那个人的样子吗？","Nǐ néng miáoshù yíxià nàge rén de yàngzi ma?","Bạn có thể mô tả qua dáng vẻ người đó không?"]}
 {"hz":"聚","vi":"tụ tập, quây quần, họp mặt","hv":"tụ","pos_vi":"động từ","ex":["春节全家人聚在一起吃饭。","Chūnjié quán jiā rén jù zài yìqǐ chī fàn.","Tết cả nhà quây quần ăn cơm cùng nhau."]}
-{"hz":"黑暗","vi":"tối tăm, u tối; bóng tối","hv":"hắc ám","pos_vi":"tính từ, danh từ","ex":["孩子一个人在黑暗中很害怕。","Háizi yí gè rén zài hēi'àn zhōng hěn hàipà.","Đứa bé ở một mình trong bóng tối rất sợ hãi."]}
+{"hz":"黑暗","vi":"tối tăm, u tối; bóng tối","hv":"hắc ám","pos_vi":"tính từ, danh từ","ex":["孩子一个人在黑暗中很害怕。","Háizi yí ge rén zài hēi'àn zhōng hěn hàipà.","Đứa bé ở một mình trong bóng tối rất sợ hãi."]}
 {"hz":"含","vi":"ngậm; chứa, bao hàm","hv":"hàm","pos_vi":"động từ","ex":["这种饮料不含糖。","Zhè zhǒng yǐnliào bù hán táng.","Loại đồ uống này không chứa đường."]}
 {"hz":"地面","vi":"mặt đất; sàn nhà","hv":"địa diện","pos_vi":"danh từ","ex":["下过雨以后，地面很滑。","Xià guo yǔ yǐhòu, dìmiàn hěn huá.","Sau khi mưa, mặt đất rất trơn."]}
 {"hz":"纯","vi":"nguyên chất, tinh khiết; thuần túy, đơn thuần","hv":"thuần","pos_vi":"tính từ, phó từ","ex":["这件毛衣是纯羊毛的。","Zhè jiàn máoyī shì chún yángmáo de.","Chiếc áo len này làm bằng lông cừu nguyên chất."]}
@@ -40,12 +40,12 @@
 {"hz":"有限","vi":"có hạn, hữu hạn","hv":"hữu hạn","pos_vi":"tính từ","ex":["我们的时间很有限。","Wǒmen de shíjiān hěn yǒuxiàn.","Thời gian của chúng ta rất có hạn."]}
 {"hz":"眼里","vi":"trong mắt; theo cách nhìn của","hv":"nhãn lý","pos_vi":"danh từ","ex":["在妈妈眼里，我永远是个孩子。","Zài māma yǎnli, wǒ yǒngyuǎn shì gè háizi.","Trong mắt mẹ, tôi mãi là một đứa trẻ."]}
 {"hz":"不在乎","vi":"không quan tâm, không để ý, bất cần","hv":"bất tại hồ","pos_vi":"động từ","ex":["他不在乎别人怎么看他。","Tā bú zàihu biérén zěnme kàn tā.","Anh ấy không quan tâm người khác nhìn mình thế nào."]}
-{"hz":"粗","vi":"to, thô; thô lỗ; sơ suất, cẩu thả","hv":"thô","pos_vi":"tính từ","ex":["这棵树很粗，两个人才抱得住。","Zhè kē shù hěn cū, liǎng gè rén cái bào de zhù.","Cây này rất to, hai người mới ôm xuể."]}
+{"hz":"粗","vi":"to, thô; thô lỗ; sơ suất, cẩu thả","hv":"thô","pos_vi":"tính từ","ex":["这棵树很粗，两个人才抱得住。","Zhè kē shù hěn cū, liǎng ge rén cái bào de zhù.","Cây này rất to, hai người mới ôm xuể."]}
 {"hz":"多年","vi":"nhiều năm","hv":"đa niên","pos_vi":"cụm từ","ex":["我们是多年的老朋友了。","Wǒmen shì duōnián de lǎo péngyou le.","Chúng tôi là bạn cũ nhiều năm rồi."]}
 {"hz":"列车","vi":"đoàn tàu, chuyến tàu","hv":"liệt xa","pos_vi":"danh từ","ex":["开往上海的列车马上就要出发了。","Kāi wǎng Shànghǎi de lièchē mǎshàng jiù yào chūfā le.","Chuyến tàu đi Thượng Hải sắp khởi hành."]}
 {"hz":"喜爱","vi":"yêu thích, ưa thích","hv":"hỷ ái","pos_vi":"động từ","ex":["这本书深受孩子们的喜爱。","Zhè běn shū shēn shòu háizimen de xǐ'ài.","Cuốn sách này rất được trẻ em yêu thích."]}
 {"hz":"败","vi":"thua; đánh bại; hỏng, thất bại","hv":"bại","pos_vi":"động từ","ex":["我们队这次败给了对手。","Wǒmen duì zhè cì bài gěi le duìshǒu.","Lần này đội chúng tôi đã thua đối thủ."]}
-{"hz":"好友","vi":"bạn thân; bạn bè (trên mạng xã hội)","hv":"hảo hữu","pos_vi":"danh từ","ex":["周末我和几个好友去爬山。","Zhōumò wǒ hé jǐ gè hǎoyǒu qù pá shān.","Cuối tuần tôi đi leo núi với mấy người bạn thân."]}
+{"hz":"好友","vi":"bạn thân; bạn bè (trên mạng xã hội)","hv":"hảo hữu","pos_vi":"danh từ","ex":["周末我和几个好友去爬山。","Zhōumò wǒ hé jǐ ge hǎoyǒu qù pá shān.","Cuối tuần tôi đi leo núi với mấy người bạn thân."]}
 {"hz":"尺","vi":"thước (đơn vị đo chiều dài, khoảng 1/3 mét); cái thước","hv":"xích","pos_vi":"lượng từ, danh từ","ex":["这块布有三尺长。","Zhè kuài bù yǒu sān chǐ cháng.","Mảnh vải này dài ba thước."]}
 {"hz":"胖子","vi":"người béo, gã béo","hv":"bàn tử","pos_vi":"danh từ","ex":["他小时候是个小胖子。","Tā xiǎoshíhou shì gè xiǎo pàngzi.","Hồi nhỏ cậu ấy là một cậu bé mũm mĩm."]}
 {"hz":"多次","vi":"nhiều lần","hv":"đa thứ","pos_vi":"phó từ","ex":["我已经多次提醒过他了。","Wǒ yǐjīng duōcì tíxǐng guo tā le.","Tôi đã nhắc anh ấy nhiều lần rồi."]}
@@ -71,7 +71,7 @@
 {"hz":"获取","vi":"thu được, lấy được, có được","hv":"hoạch thủ","pos_vi":"động từ","ex":["我们可以从网上获取很多信息。","Wǒmen kěyǐ cóng wǎngshang huòqǔ hěn duō xìnxī.","Chúng ta có thể lấy được nhiều thông tin trên mạng."]}
 {"hz":"成人","vi":"người lớn, người trưởng thành; trưởng thành","hv":"thành nhân","pos_vi":"danh từ, động từ","ex":["这部电影只适合成人看。","Zhè bù diànyǐng zhǐ shìhé chéngrén kàn.","Bộ phim này chỉ phù hợp cho người lớn xem."]}
 {"hz":"招呼","vi":"gọi; chào hỏi; dặn dò; tiếp đãi","hv":"chiêu hô","pos_vi":"động từ, danh từ","ex":["他见到我就跟我打招呼。","Tā jiàn dào wǒ jiù gēn wǒ dǎ zhāohu.","Thấy tôi là anh ấy chào ngay."]}
-{"hz":"小型","vi":"cỡ nhỏ, quy mô nhỏ","hv":"tiểu hình","pos_vi":"tính từ","ex":["我们开了一个小型会议。","Wǒmen kāi le yí gè xiǎoxíng huìyì.","Chúng tôi đã họp một cuộc họp nhỏ."]}
+{"hz":"小型","vi":"cỡ nhỏ, quy mô nhỏ","hv":"tiểu hình","pos_vi":"tính từ","ex":["我们开了一个小型会议。","Wǒmen kāi le yí ge xiǎoxíng huìyì.","Chúng tôi đã họp một cuộc họp nhỏ."]}
 {"hz":"胸部","vi":"ngực, vùng ngực","hv":"hung bộ","pos_vi":"danh từ","ex":["他觉得胸部有点儿疼。","Tā juéde xiōngbù yǒudiǎnr téng.","Anh ấy thấy ngực hơi đau."]}
 {"hz":"楼梯","vi":"cầu thang","hv":"lâu thê","pos_vi":"danh từ","ex":["上楼梯的时候小心点儿。","Shàng lóutī de shíhou xiǎoxīn diǎnr.","Khi lên cầu thang cẩn thận một chút."]}
 {"hz":"品质","vi":"phẩm chất, phẩm cách; chất lượng (sản phẩm)","hv":"phẩm chất","pos_vi":"danh từ","ex":["诚实是一种很重要的品质。","Chéngshí shì yì zhǒng hěn zhòngyào de pǐnzhì.","Trung thực là một phẩm chất rất quan trọng."]}

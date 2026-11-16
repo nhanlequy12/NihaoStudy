@@ -17,7 +17,7 @@
 {"hz":"赠送","vi":"tặng, biếu","hv":"tặng tống","pos_vi":"động từ","ex":["买一杯咖啡，赠送一块蛋糕。","Mǎi yì bēi kāfēi, zèngsòng yí kuài dàngāo.","Mua một cốc cà phê được tặng một miếng bánh."]}
 {"hz":"流通","vi":"lưu thông","hv":"lưu thông","pos_vi":"động từ","ex":["打开窗户，让空气流通一下。","Dǎkāi chuānghu, ràng kōngqì liútōng yíxià.","Mở cửa sổ ra cho không khí lưu thông."]}
 {"hz":"不时","vi":"thỉnh thoảng, chốc chốc","hv":"bất thời","pos_vi":"phó từ","ex":["他一边看书，一边不时地看手表。","Tā yìbiān kàn shū, yìbiān bùshí de kàn shǒubiǎo.","Anh ấy vừa đọc sách vừa chốc chốc lại nhìn đồng hồ."]}
-{"hz":"一身","vi":"cả người, khắp người; một bộ (quần áo)","hv":"nhất thân","pos_vi":"danh từ","ex":["下了一场大雨，我淋了一身。","Xià le yì chǎng dà yǔ, wǒ lín le yìshēn.","Một trận mưa to làm tôi ướt hết cả người."]}
+{"hz":"一身","vi":"cả người, khắp người; một bộ (quần áo)","hv":"nhất thân","pos_vi":"danh từ","ex":["下了一场大雨，我淋了一身雨。","Xià le yì chǎng dà yǔ, wǒ lín le yìshēn yǔ.","Một trận mưa to làm tôi ướt hết cả người."]}
 {"hz":"修建","vi":"xây dựng, xây","hv":"tu kiến","pos_vi":"động từ","ex":["这里要修建一座新机场。","Zhèlǐ yào xiūjiàn yí zuò xīn jīchǎng.","Ở đây sẽ xây một sân bay mới."]}
 {"hz":"正规","vi":"chính quy, đúng quy chuẩn","hv":"chính quy","pos_vi":"tính từ","ex":["买药一定要去正规的药店。","Mǎi yào yídìng yào qù zhèngguī de yàodiàn.","Mua thuốc nhất định phải đến nhà thuốc chính quy."]}
 {"hz":"高大","vi":"cao lớn, to cao","hv":"cao đại","pos_vi":"tính từ","ex":["他长得又高大又帅。","Tā zhǎng de yòu gāodà yòu shuài.","Anh ấy vừa cao lớn vừa đẹp trai."]}
@@ -29,7 +29,7 @@
 {"hz":"依照","vi":"theo, dựa theo, căn cứ vào","hv":"y chiếu","pos_vi":"giới từ, động từ","ex":["请依照说明书使用。","Qǐng yīzhào shuōmíngshū shǐyòng.","Vui lòng sử dụng theo sách hướng dẫn."]}
 {"hz":"煤气","vi":"khí đốt, ga","hv":"môi khí","pos_vi":"danh từ","ex":["做完饭要记得关煤气。","Zuò wán fàn yào jìde guān méiqì.","Nấu cơm xong nhớ khóa ga."]}
 {"hz":"脆","vi":"giòn; (giọng) trong trẻo; dứt khoát, nhanh gọn","hv":"thúy","pos_vi":"tính từ","ex":["这种饼干又香又脆。","Zhè zhǒng bǐnggān yòu xiāng yòu cuì.","Loại bánh quy này vừa thơm vừa giòn."]}
-{"hz":"补贴","vi":"trợ cấp, phụ cấp; bù đắp","hv":"bổ thiếp","pos_vi":"danh từ, động từ","ex":["公司每个月给员工交通补贴。","Gōngsī měi gè yuè gěi yuángōng jiāotōng bǔtiē.","Công ty hằng tháng trả phụ cấp đi lại cho nhân viên."]}
+{"hz":"补贴","vi":"trợ cấp, phụ cấp; bù đắp","hv":"bổ thiếp","pos_vi":"danh từ, động từ","ex":["公司每个月给员工交通补贴。","Gōngsī měi ge yuè gěi yuángōng jiāotōng bǔtiē.","Công ty hằng tháng trả phụ cấp đi lại cho nhân viên."]}
 {"hz":"印刷","vi":"in, in ấn","hv":"ấn loát","pos_vi":"động từ, danh từ","ex":["这本书印刷得很清楚。","Zhè běn shū yìnshuā de hěn qīngchu.","Cuốn sách này in rất rõ nét."]}
 {"hz":"制成","vi":"làm thành, chế tạo thành","hv":"chế thành","pos_vi":"động từ","ex":["这种纸是用竹子制成的。","Zhè zhǒng zhǐ shì yòng zhúzi zhìchéng de.","Loại giấy này được làm từ tre."]}
 {"hz":"赠","vi":"tặng, biếu","hv":"tặng","pos_vi":"động từ","ex":["这本书是作者亲自赠给我的。","Zhè běn shū shì zuòzhě qīnzì zèng gěi wǒ de.","Cuốn sách này do chính tác giả tặng tôi."]}
@@ -42,14 +42,14 @@
 {"hz":"污水","vi":"nước thải, nước bẩn","hv":"ô thủy","pos_vi":"danh từ","ex":["工厂的污水不能直接排进河里。","Gōngchǎng de wūshuǐ bù néng zhíjiē pái jìn hé lǐ.","Nước thải nhà máy không được xả thẳng ra sông."]}
 {"hz":"被动","vi":"bị động, thụ động","hv":"bị động","pos_vi":"tính từ","ex":["我们不能总是这么被动。","Wǒmen bù néng zǒngshì zhème bèidòng.","Chúng ta không thể cứ bị động mãi thế này."]}
 {"hz":"增大","vi":"tăng lên, mở rộng, to ra","hv":"tăng đại","pos_vi":"động từ","ex":["最近工作压力增大了不少。","Zuìjìn gōngzuò yālì zēngdà le bù shǎo.","Gần đây áp lực công việc tăng lên khá nhiều."]}
-{"hz":"课题","vi":"đề tài (nghiên cứu); vấn đề cần giải quyết","hv":"khóa đề","pos_vi":"danh từ","ex":["他正在研究一个新课题。","Tā zhèngzài yánjiū yí gè xīn kètí.","Anh ấy đang nghiên cứu một đề tài mới."]}
+{"hz":"课题","vi":"đề tài (nghiên cứu); vấn đề cần giải quyết","hv":"khóa đề","pos_vi":"danh từ","ex":["他正在研究一个新课题。","Tā zhèngzài yánjiū yí ge xīn kètí.","Anh ấy đang nghiên cứu một đề tài mới."]}
 {"hz":"门诊","vi":"khám ngoại trú, phòng khám bệnh","hv":"môn chẩn","pos_vi":"danh từ","ex":["医院的门诊早上八点开始。","Yīyuàn de ménzhěn zǎoshang bā diǎn kāishǐ.","Khu khám ngoại trú của bệnh viện bắt đầu lúc tám giờ sáng."]}
 {"hz":"开幕","vi":"khai mạc; mở màn","hv":"khai mạc","pos_vi":"động từ","ex":["运动会明天上午开幕。","Yùndònghuì míngtiān shàngwǔ kāimù.","Hội thao khai mạc vào sáng mai."]}
 {"hz":"胜负","vi":"thắng thua, thắng bại","hv":"thắng phụ","pos_vi":"danh từ","ex":["比赛的胜负不是最重要的。","Bǐsài de shèngfù bú shì zuì zhòngyào de.","Thắng thua trong trận đấu không phải điều quan trọng nhất."]}
 {"hz":"特有","vi":"đặc hữu, riêng có","hv":"đặc hữu","pos_vi":"tính từ, động từ","ex":["熊猫是中国特有的动物。","Xióngmāo shì Zhōngguó tèyǒu de dòngwù.","Gấu trúc là loài động vật đặc hữu của Trung Quốc."]}
 {"hz":"领带","vi":"cà vạt","hv":"lĩnh đới","pos_vi":"danh từ","ex":["他今天打了一条红领带。","Tā jīntiān dǎ le yì tiáo hóng lǐngdài.","Hôm nay anh ấy thắt một chiếc cà vạt đỏ."]}
-{"hz":"依法","vi":"theo pháp luật, chiếu theo luật","hv":"y pháp","pos_vi":"phó từ","ex":["每个公民都应该依法纳税。","Měi gè gōngmín dōu yīnggāi yīfǎ nàshuì.","Mỗi công dân đều phải nộp thuế theo luật."]}
-{"hz":"先后","vi":"lần lượt, trước sau; thứ tự trước sau","hv":"tiên hậu","pos_vi":"phó từ, danh từ","ex":["他先后去过十几个国家。","Tā xiānhòu qù guo shí jǐ gè guójiā.","Anh ấy đã lần lượt đến hơn mười nước."]}
+{"hz":"依法","vi":"theo pháp luật, chiếu theo luật","hv":"y pháp","pos_vi":"phó từ","ex":["每个公民都应该依法纳税。","Měi ge gōngmín dōu yīnggāi yīfǎ nàshuì.","Mỗi công dân đều phải nộp thuế theo luật."]}
+{"hz":"先后","vi":"lần lượt, trước sau; thứ tự trước sau","hv":"tiên hậu","pos_vi":"phó từ, danh từ","ex":["他先后去过十几个国家。","Tā xiānhòu qù guo shí jǐ ge guójiā.","Anh ấy đã lần lượt đến hơn mười nước."]}
 {"hz":"摩托","vi":"xe máy, mô tô","hv":"ma thác","pos_vi":"danh từ","ex":["在越南，很多人骑摩托上班。","Zài Yuènán, hěn duō rén qí mótuō shàngbān.","Ở Việt Nam, nhiều người đi xe máy đi làm."]}
 {"hz":"烤肉","vi":"thịt nướng","hv":"khảo nhục","pos_vi":"danh từ","ex":["周末我们去吃烤肉吧。","Zhōumò wǒmen qù chī kǎoròu ba.","Cuối tuần chúng ta đi ăn thịt nướng nhé."]}
 {"hz":"天然气","vi":"khí thiên nhiên","hv":"thiên nhiên khí","pos_vi":"danh từ","ex":["我们家做饭用天然气。","Wǒmen jiā zuò fàn yòng tiānránqì.","Nhà tôi nấu ăn bằng khí thiên nhiên."]}
@@ -63,14 +63,14 @@
 {"hz":"保养","vi":"bảo dưỡng; giữ gìn sức khỏe, chăm sóc (da)","hv":"bảo dưỡng","pos_vi":"động từ","ex":["汽车要定期保养。","Qìchē yào dìngqī bǎoyǎng.","Ô tô phải bảo dưỡng định kỳ."]}
 {"hz":"转让","vi":"chuyển nhượng, sang nhượng","hv":"chuyển nhượng","pos_vi":"động từ","ex":["这家店要转让了。","Zhè jiā diàn yào zhuǎnràng le.","Cửa hàng này sắp sang nhượng."]}
 {"hz":"动员","vi":"động viên, vận động, huy động","hv":"động viên","pos_vi":"động từ","ex":["学校动员学生参加植树活动。","Xuéxiào dòngyuán xuésheng cānjiā zhíshù huódòng.","Nhà trường vận động học sinh tham gia hoạt động trồng cây."]}
-{"hz":"火腿","vi":"giăm bông, thịt dăm bông","hv":"hỏa thối","pos_vi":"danh từ","ex":["早饭我吃了一个火腿三明治。","Zǎofàn wǒ chī le yí gè huǒtuǐ sānmíngzhì.","Bữa sáng tôi ăn một chiếc bánh mì kẹp giăm bông."]}
+{"hz":"火腿","vi":"giăm bông, thịt dăm bông","hv":"hỏa thối","pos_vi":"danh từ","ex":["早饭我吃了一个火腿三明治。","Zǎofàn wǒ chī le yí ge huǒtuǐ sānmíngzhì.","Bữa sáng tôi ăn một chiếc bánh mì kẹp giăm bông."]}
 {"hz":"工艺","vi":"thủ công mỹ nghệ; công nghệ, quy trình sản xuất","hv":"công nghệ","pos_vi":"danh từ","ex":["这件工艺品是手工做的。","Zhè jiàn gōngyìpǐn shì shǒugōng zuò de.","Món đồ mỹ nghệ này được làm bằng tay."]}
-{"hz":"神情","vi":"thần sắc, vẻ mặt","hv":"thần tình","pos_vi":"danh từ","ex":["他的神情看起来很紧张。","Tā de shénqíng kàn qǐlái hěn jǐnzhāng.","Vẻ mặt anh ấy trông rất căng thẳng."]}
+{"hz":"神情","vi":"thần sắc, vẻ mặt","hv":"thần tình","pos_vi":"danh từ","ex":["他的神情看起来很紧张。","Tā de shénqíng kàn qǐlai hěn jǐnzhāng.","Vẻ mặt anh ấy trông rất căng thẳng."]}
 {"hz":"增多","vi":"tăng thêm, nhiều lên","hv":"tăng đa","pos_vi":"động từ","ex":["来这里旅游的人逐渐增多了。","Lái zhèlǐ lǚyóu de rén zhújiàn zēngduō le.","Người đến đây du lịch ngày càng nhiều lên."]}
 {"hz":"齐全","vi":"đầy đủ, đủ cả","hv":"tề toàn","pos_vi":"tính từ","ex":["这家超市的东西很齐全。","Zhè jiā chāoshì de dōngxi hěn qíquán.","Siêu thị này có đầy đủ mọi thứ."]}
 {"hz":"不能不","vi":"không thể không, buộc phải","hv":"bất năng bất","pos_vi":"phó từ","ex":["这件事我不能不告诉他。","Zhè jiàn shì wǒ bùnéngbù gàosu tā.","Chuyện này tôi không thể không nói với anh ấy."]}
 {"hz":"输出","vi":"xuất ra, xuất khẩu; đầu ra (output)","hv":"thâu xuất","pos_vi":"động từ, danh từ","ex":["这个国家主要输出石油。","Zhège guójiā zhǔyào shūchū shíyóu.","Quốc gia này chủ yếu xuất khẩu dầu mỏ."]}
-{"hz":"游泳池","vi":"bể bơi, hồ bơi","hv":"du vịnh trì","pos_vi":"danh từ","ex":["酒店里有一个大游泳池。","Jiǔdiàn lǐ yǒu yí gè dà yóuyǒngchí.","Trong khách sạn có một bể bơi lớn."]}
+{"hz":"游泳池","vi":"bể bơi, hồ bơi","hv":"du vịnh trì","pos_vi":"danh từ","ex":["酒店里有一个大游泳池。","Jiǔdiàn lǐ yǒu yí ge dà yóuyǒngchí.","Trong khách sạn có một bể bơi lớn."]}
 {"hz":"信箱","vi":"hòm thư; hộp thư (điện tử)","hv":"tín tương","pos_vi":"danh từ","ex":["我每天都查一下电子信箱。","Wǒ měi tiān dōu chá yíxià diànzǐ xìnxiāng.","Ngày nào tôi cũng kiểm tra hộp thư điện tử."]}
 {"hz":"调解","vi":"hòa giải, dàn xếp","hv":"điều giải","pos_vi":"động từ","ex":["经过调解，双方和好了。","Jīngguò tiáojiě, shuāngfāng héhǎo le.","Qua hòa giải, hai bên đã làm lành."]}
 {"hz":"山区","vi":"vùng núi, miền núi","hv":"sơn khu","pos_vi":"danh từ","ex":["她在山区当了十年老师。","Tā zài shānqū dāng le shí nián lǎoshī.","Cô ấy đã dạy học ở vùng núi mười năm."]}

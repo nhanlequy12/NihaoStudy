@@ -6,7 +6,7 @@
 {"hz":"声","vi":"tiếng, âm thanh; tiếng (lượng từ cho số lần phát ra âm thanh)","hv":"thanh","pos_vi":"danh từ, lượng từ","ex":["走之前跟我说一声。","Zǒu zhīqián gēn wǒ shuō yì shēng.","Trước khi đi thì nói với tôi một tiếng."]}
 {"hz":"令","vi":"khiến, làm cho; ra lệnh; mệnh lệnh","hv":"lệnh","pos_vi":"động từ, danh từ","ex":["这个结果令大家很失望。","Zhège jiéguǒ lìng dàjiā hěn shīwàng.","Kết quả này khiến mọi người rất thất vọng."]}
 {"hz":"神","vi":"thần, thần thánh; tinh thần; thần kỳ, tài tình","hv":"thần","pos_vi":"danh từ, tính từ","ex":["他的球技太神了！","Tā de qiújì tài shén le!","Kỹ thuật chơi bóng của anh ấy thật thần sầu!"]}
-{"hz":"至","vi":"đến, tới; nhất, cực kỳ (văn viết)","hv":"chí","pos_vi":"giới từ, động từ","ex":["商店每天九点至十点营业。","Shāngdiàn měi tiān jiǔ diǎn zhì shí diǎn yíngyè.","Cửa hàng mở cửa mỗi ngày từ chín giờ sáng đến mười giờ tối."]}
+{"hz":"至","vi":"đến, tới; nhất, cực kỳ (văn viết)","hv":"chí","pos_vi":"giới từ, động từ","ex":["商店每天上午九点至晚上十点营业。","Shāngdiàn měi tiān shàngwǔ jiǔ diǎn zhì wǎnshang shí diǎn yíngyè.","Cửa hàng mở cửa mỗi ngày từ chín giờ sáng đến mười giờ tối."]}
 {"hz":"再次","vi":"lần nữa, một lần nữa","hv":"tái thứ","pos_vi":"phó từ","ex":["欢迎你再次来中国。","Huānyíng nǐ zàicì lái Zhōngguó.","Chào mừng bạn lại đến Trung Quốc lần nữa."]}
 {"hz":"待","vi":"ở lại, nán lại (khẩu ngữ, đọc dāi); đọc dài: đối xử, đãi; chờ đợi","hv":"đãi","pos_vi":"động từ","ex":["我在北京待了三天。","Wǒ zài Běijīng dāi le sān tiān.","Tôi ở lại Bắc Kinh ba ngày."]}
 {"hz":"分享","vi":"chia sẻ","hv":"phân hưởng","pos_vi":"động từ","ex":["谢谢你跟我们分享你的经验。","Xièxie nǐ gēn wǒmen fēnxiǎng nǐ de jīngyàn.","Cảm ơn bạn đã chia sẻ kinh nghiệm với chúng tôi."]}
@@ -32,7 +32,7 @@
 {"hz":"启动","vi":"khởi động; bắt đầu triển khai","hv":"khải động","pos_vi":"động từ","ex":["电脑启动得很慢。","Diànnǎo qǐdòng de hěn màn.","Máy tính khởi động rất chậm."]}
 {"hz":"之外","vi":"ngoài, ngoài ra","hv":"chi ngoại","pos_vi":"danh từ","ex":["除了汉语之外，他还会说日语。","Chúle Hànyǔ zhīwài, tā hái huì shuō Rìyǔ.","Ngoài tiếng Trung ra, anh ấy còn biết nói tiếng Nhật."]}
 {"hz":"好运","vi":"vận may, may mắn","hv":"hảo vận","pos_vi":"danh từ","ex":["祝你考试好运！","Zhù nǐ kǎoshì hǎoyùn!","Chúc bạn thi may mắn!"]}
-{"hz":"狂","vi":"điên cuồng; ngông cuồng, kiêu ngạo; dữ dội","hv":"cuồng","pos_vi":"tính từ, phó từ","ex":["他赢了一场比赛就狂起来了。","Tā yíng le yì chǎng bǐsài jiù kuáng qǐlái le.","Mới thắng một trận mà anh ta đã đâm ra ngông cuồng."]}
+{"hz":"狂","vi":"điên cuồng; ngông cuồng, kiêu ngạo; dữ dội","hv":"cuồng","pos_vi":"tính từ, phó từ","ex":["他赢了一场比赛就狂起来了。","Tā yíng le yì chǎng bǐsài jiù kuáng qǐlai le.","Mới thắng một trận mà anh ta đã đâm ra ngông cuồng."]}
 {"hz":"为止","vi":"cho đến (khi), đến… thì thôi","hv":"vi chỉ","pos_vi":"trợ từ","ex":["到目前为止，一切都很顺利。","Dào mùqián wéizhǐ, yíqiè dōu hěn shùnlì.","Cho đến nay, mọi việc đều rất thuận lợi."]}
 {"hz":"视频","vi":"video; gọi video","hv":"thị tần","pos_vi":"danh từ","ex":["我每天晚上和家人视频。","Wǒ měi tiān wǎnshang hé jiārén shìpín.","Tối nào tôi cũng gọi video với gia đình."]}
 {"hz":"有着","vi":"có (văn viết, thường đi với danh từ trừu tượng)","hv":"hữu trước","pos_vi":"động từ","ex":["这座城市有着悠久的历史。","Zhè zuò chéngshì yǒuzhe yōujiǔ de lìshǐ.","Thành phố này có lịch sử lâu đời."]}
@@ -45,7 +45,7 @@
 {"hz":"冒","vi":"bốc lên, tỏa ra; bất chấp, liều; mạo nhận","hv":"mạo","pos_vi":"động từ","ex":["锅里冒出了白色的热气。","Guō lǐ mào chū le báisè de rèqì.","Trong nồi bốc lên hơi nóng màu trắng."]}
 {"hz":"礼","vi":"lễ, lễ nghĩa, lễ phép; quà tặng","hv":"lễ","pos_vi":"danh từ","ex":["他去朋友家总是带一份礼。","Tā qù péngyou jiā zǒngshì dài yí fèn lǐ.","Anh ấy đến nhà bạn lúc nào cũng mang theo một món quà."]}
 {"hz":"或是","vi":"hoặc là, hay là","hv":"hoặc thị","pos_vi":"liên từ","ex":["你可以坐地铁或是打车去。","Nǐ kěyǐ zuò dìtiě huòshì dǎ chē qù.","Bạn có thể đi tàu điện ngầm hoặc đi taxi."]}
-{"hz":"拼","vi":"ghép, chắp lại; liều mạng, dốc hết sức","hv":"bính","pos_vi":"động từ","ex":["为了买房子，他拼命工作。","Wèile mǎi fángzi, tā pīnmìng gōngzuò.","Để mua nhà, anh ấy làm việc bán mạng."]}
+{"hz":"拼","vi":"ghép, chắp lại; liều mạng, dốc hết sức","hv":"bính","pos_vi":"động từ","ex":["他把两张桌子拼在一起。","Tā bǎ liǎng zhāng zhuōzi pīn zài yìqǐ.","Anh ấy ghép hai cái bàn lại với nhau."]}
 {"hz":"歌曲","vi":"ca khúc, bài hát","hv":"ca khúc","pos_vi":"danh từ","ex":["这首歌曲很受年轻人欢迎。","Zhè shǒu gēqǔ hěn shòu niánqīngrén huānyíng.","Ca khúc này rất được giới trẻ yêu thích."]}
 {"hz":"只不过","vi":"chỉ là, chẳng qua là","hv":"chỉ bất quá","pos_vi":"phó từ","ex":["我只不过是开个玩笑。","Wǒ zhǐbuguò shì kāi gè wánxiào.","Tôi chẳng qua chỉ nói đùa thôi."]}
 {"hz":"必","vi":"ắt, nhất định; phải, cần phải","hv":"tất","pos_vi":"phó từ","ex":["这是来北京必去的地方。","Zhè shì lái Běijīng bì qù de dìfang.","Đây là nơi nhất định phải đến khi tới Bắc Kinh."]}
@@ -94,7 +94,7 @@
 {"hz":"虎","vi":"hổ, cọp; dũng mãnh","hv":"hổ","pos_vi":"danh từ","ex":["山里有虎，晚上别去。","Shān lǐ yǒu hǔ, wǎnshang bié qù.","Trong núi có hổ, buổi tối đừng đi."]}
 {"hz":"喷","vi":"phun, xịt, bắn ra","hv":"phún","pos_vi":"động từ","ex":["她出门前喷了点儿香水。","Tā chūmén qián pēn le diǎnr xiāngshuǐ.","Cô ấy xịt chút nước hoa trước khi ra ngoài."]}
 {"hz":"靠近","vi":"đến gần, tiến lại gần; gần, sát","hv":"kháo cận","pos_vi":"động từ","ex":["请不要靠近那只狗。","Qǐng búyào kàojìn nà zhī gǒu.","Xin đừng lại gần con chó đó."]}
-{"hz":"罚","vi":"phạt","hv":"phạt","pos_vi":"động từ","ex":["他开车太快，被罚了两百块。","Tā kāi chē tài kuài, bèi fá le liǎngbǎi kuài.","Anh ấy lái xe quá nhanh nên bị phạt hai trăm đồng."]}
+{"hz":"罚","vi":"phạt","hv":"phạt","pos_vi":"động từ","ex":["他开车太快，被罚了两百块。","Tā kāi chē tài kuài, bèi fá le liǎngbǎi kuài.","Anh ấy lái xe quá nhanh nên bị phạt hai trăm tệ."]}
 {"hz":"空中","vi":"trên không, giữa không trung","hv":"không trung","pos_vi":"danh từ","ex":["几只鸟在空中飞来飞去。","Jǐ zhī niǎo zài kōngzhōng fēi lái fēi qù.","Mấy con chim bay qua bay lại trên không."]}
-{"hz":"连接","vi":"kết nối, nối liền","hv":"liên tiếp","pos_vi":"động từ","ex":["这座桥连接着两个城市。","Zhè zuò qiáo liánjiē zhe liǎng gè chéngshì.","Cây cầu này nối liền hai thành phố."]}
+{"hz":"连接","vi":"kết nối, nối liền","hv":"liên tiếp","pos_vi":"động từ","ex":["这座桥连接着两个城市。","Zhè zuò qiáo liánjiē zhe liǎng ge chéngshì.","Cây cầu này nối liền hai thành phố."]}
 {"hz":"此时","vi":"lúc này, giờ này","hv":"thử thời","pos_vi":"đại từ","ex":["此时他正在开会。","Cǐshí tā zhèngzài kāihuì.","Lúc này anh ấy đang họp."]}

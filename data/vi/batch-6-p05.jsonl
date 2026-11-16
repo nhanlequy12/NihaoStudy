@@ -26,7 +26,7 @@
 {"hz":"冲动","vi":"bốc đồng, nông nổi; sự thôi thúc","hv":"xung động","pos_vi":"danh từ, tính từ","ex":["别太冲动，先冷静一下。","Bié tài chōngdòng, xiān lěngjìng yíxià.","Đừng bốc đồng quá, bình tĩnh lại đã."]}
 {"hz":"考验","vi":"thử thách, sát hạch","hv":"khảo nghiệm","pos_vi":"động từ","ex":["这次困难是对我们的考验。","Zhè cì kùnnan shì duì wǒmen de kǎoyàn.","Khó khăn lần này là thử thách đối với chúng ta."]}
 {"hz":"技巧","vi":"kỹ xảo, kỹ thuật, mẹo","hv":"kỹ xảo","pos_vi":"danh từ","ex":["学习也需要一些技巧。","Xuéxí yě xūyào yìxiē jìqiǎo.","Học tập cũng cần một số kỹ năng, mẹo."]}
-{"hz":"公正","vi":"công bằng, công chính","hv":"công chính","pos_vi":"tính từ","ex":["裁判的判决很公正。","Cáipàn de pànjué hěn gōngzhèng.","Phán quyết của trọng tài rất công bằng."]}
+{"hz":"公正","vi":"công bằng, công chính","hv":"công chính","pos_vi":"tính từ","ex":["法官的判决很公正。","Fǎguān de pànjué hěn gōngzhèng.","Phán quyết của thẩm phán rất công bằng."]}
 {"hz":"和谐","vi":"hài hòa, hòa thuận","hv":"hòa hài","pos_vi":"tính từ","ex":["他们一家人相处得很和谐。","Tāmen yì jiā rén xiāngchǔ de hěn héxié.","Cả nhà họ sống với nhau rất hòa thuận."]}
 {"hz":"呈现","vi":"hiện ra, thể hiện, bày ra","hv":"trình hiện","pos_vi":"động từ","ex":["秋天的山上呈现出一片金黄。","Qiūtiān de shān shang chéngxiàn chū yí piàn jīnhuáng.","Mùa thu trên núi hiện ra một màu vàng óng."]}
 {"hz":"规划","vi":"quy hoạch, kế hoạch dài hạn; lên kế hoạch","hv":"quy hoạch","pos_vi":"danh từ, động từ","ex":["你对未来有什么规划？","Nǐ duì wèilái yǒu shénme guīhuà?","Bạn có kế hoạch gì cho tương lai?"]}
@@ -94,7 +94,7 @@
 {"hz":"漫画","vi":"truyện tranh, tranh biếm họa","hv":"mạn họa","pos_vi":"danh từ","ex":["我弟弟最喜欢看日本漫画。","Wǒ dìdi zuì xǐhuan kàn Rìběn mànhuà.","Em trai tôi thích đọc truyện tranh Nhật Bản nhất."]}
 {"hz":"继承","vi":"thừa kế, kế thừa","hv":"kế thừa","pos_vi":"động từ","ex":["他继承了父亲的公司。","Tā jìchéngle fùqin de gōngsī.","Anh ấy đã thừa kế công ty của bố."]}
 {"hz":"弥补","vi":"bù đắp, bổ khuyết","hv":"di bổ","pos_vi":"động từ","ex":["我想用行动弥补我的错误。","Wǒ xiǎng yòng xíngdòng míbǔ wǒ de cuòwù.","Tôi muốn dùng hành động để bù đắp lỗi lầm của mình."]}
-{"hz":"扑","vi":"nhào tới, lao vào, vồ; vỗ (cánh)","hv":"phác","pos_vi":"động từ","ex":["孩子一看见妈妈就扑了过去。","Háizi yí kànjiàn māma jiù pūle guòqù.","Đứa bé vừa thấy mẹ đã nhào tới."]}
+{"hz":"扑","vi":"nhào tới, lao vào, vồ; vỗ (cánh)","hv":"phác","pos_vi":"động từ","ex":["孩子一看见妈妈就扑了过去。","Háizi yí kànjiàn māma jiù pūle guòqu.","Đứa bé vừa thấy mẹ đã nhào tới."]}
 {"hz":"抵达","vi":"đến nơi, tới","hv":"để đạt","pos_vi":"động từ","ex":["航班将于晚上八点抵达北京。","Hángbān jiāng yú wǎnshang bā diǎn dǐdá Běijīng.","Chuyến bay sẽ đến Bắc Kinh lúc tám giờ tối."]}
 {"hz":"忽略","vi":"bỏ qua, xem nhẹ, sơ suất không để ý","hv":"hốt lược","pos_vi":"động từ","ex":["工作再忙也不能忽略家人。","Gōngzuò zài máng yě bù néng hūlüè jiārén.","Công việc bận đến mấy cũng không được xem nhẹ gia đình."]}
 {"hz":"支撑","vi":"chống đỡ, nâng đỡ; gắng gượng","hv":"chi xanh","pos_vi":"động từ","ex":["是信念支撑他走到了今天。","Shì xìnniàn zhīchēng tā zǒudàole jīntiān.","Chính niềm tin đã nâng đỡ anh ấy đi đến ngày hôm nay."]}

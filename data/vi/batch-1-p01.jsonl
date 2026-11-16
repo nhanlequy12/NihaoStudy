@@ -1,7 +1,7 @@
 {"hz":"说","vi":"nói, kể; (đọc shuì: thuyết phục)","hv":"thuyết","pos_vi":"động từ","ex":["你说什么？","Nǐ shuō shénme?","Bạn nói gì thế?"]}
 {"hz":"没有","vi":"không có; chưa (phủ định việc đã xảy ra); không bằng","hv":"một hữu","pos_vi":"động từ, phó từ","ex":["我没有哥哥。","Wǒ méiyǒu gēge.","Tôi không có anh trai."]}
 {"hz":"他们","vi":"họ, bọn họ, các anh ấy","hv":"tha môn","pos_vi":"đại từ","ex":["他们都是我的朋友。","Tāmen dōu shì wǒ de péngyou.","Họ đều là bạn của tôi."]}
-{"hz":"中","vi":"giữa, trong; Trung Quốc (viết tắt); (đọc zhòng: trúng, đúng)","hv":"trung","pos_vi":"phương vị từ, tính từ","ex":["家中有三个人。","Jiā zhōng yǒu sān gè rén.","Trong nhà có ba người."]}
+{"hz":"中","vi":"giữa, trong; Trung Quốc (viết tắt); (đọc zhòng: trúng, đúng)","hv":"trung","pos_vi":"phương vị từ, tính từ","ex":["家中有三个人。","Jiā zhōng yǒu sān ge rén.","Trong nhà có ba người."]}
 {"hz":"天","vi":"ngày; trời, bầu trời","hv":"thiên","pos_vi":"danh từ, lượng từ","ex":["今天天气很好。","Jīntiān tiānqì hěn hǎo.","Hôm nay thời tiết rất đẹp."]}
 {"hz":"事","vi":"việc, chuyện, sự việc","hv":"sự","pos_vi":"danh từ","ex":["你有什么事？","Nǐ yǒu shénme shì?","Bạn có việc gì thế?"]}
 {"hz":"后","vi":"sau, phía sau; sau khi","hv":"hậu","pos_vi":"phương vị từ","ex":["下课后我回家。","Xiàkè hòu wǒ huí jiā.","Tan học xong tôi về nhà."]}
@@ -23,7 +23,7 @@
 {"hz":"得到","vi":"nhận được, có được, đạt được","hv":"đắc đáo","pos_vi":"động từ","ex":["他得到了一个礼物。","Tā dédào le yí ge lǐwù.","Cậu ấy nhận được một món quà."]}
 {"hz":"那些","vi":"những … đó, những … kia","hv":"na ta","pos_vi":"đại từ","ex":["那些书是我的。","Nàxiē shū shì wǒ de.","Những cuốn sách kia là của tôi."]}
 {"hz":"电话","vi":"điện thoại; cuộc gọi; số điện thoại","hv":"điện thoại","pos_vi":"danh từ","ex":["你的电话是多少？","Nǐ de diànhuà shì duōshao?","Số điện thoại của bạn là bao nhiêu?"]}
-{"hz":"女","vi":"nữ, con gái, phụ nữ","hv":"nữ","pos_vi":"tính từ, danh từ","ex":["我们班有十个女同学。","Wǒmen bān yǒu shí gè nǚ tóngxué.","Lớp chúng tôi có mười bạn nữ."]}
+{"hz":"女","vi":"nữ, con gái, phụ nữ","hv":"nữ","pos_vi":"tính từ, danh từ","ex":["我们班有十个女同学。","Wǒmen bān yǒu shí ge nǚ tóngxué.","Lớp chúng tôi có mười bạn nữ."]}
 {"hz":"有些","vi":"có một số, có những; hơi, có phần","hv":"hữu ta","pos_vi":"đại từ, phó từ","ex":["有些人不喜欢吃肉。","Yǒuxiē rén bù xǐhuan chī ròu.","Có những người không thích ăn thịt."]}
 {"hz":"帮","vi":"giúp, giúp đỡ","hv":"bang","pos_vi":"động từ","ex":["你能帮我吗？","Nǐ néng bāng wǒ ma?","Bạn có thể giúp tôi không?"]}
 {"hz":"早","vi":"sớm; buổi sáng; chào buổi sáng (khẩu ngữ)","hv":"tảo","pos_vi":"tính từ, danh từ","ex":["你今天来得很早。","Nǐ jīntiān lái de hěn zǎo.","Hôm nay bạn đến sớm thật."]}
@@ -40,10 +40,10 @@
 {"hz":"跑","vi":"chạy","hv":"bào","pos_vi":"động từ","ex":["他跑得很快。","Tā pǎo de hěn kuài.","Anh ấy chạy rất nhanh."]}
 {"hz":"回家","vi":"về nhà","hv":"hồi gia","pos_vi":"động từ","ex":["我们回家吧。","Wǒmen huíjiā ba.","Chúng ta về nhà thôi."]}
 {"hz":"晚","vi":"muộn, trễ; buổi tối","hv":"vãn","pos_vi":"tính từ, danh từ","ex":["今天我回来得很晚。","Jīntiān wǒ huílai de hěn wǎn.","Hôm nay tôi về rất muộn."]}
-{"hz":"男","vi":"nam, con trai, đàn ông","hv":"nam","pos_vi":"tính từ, danh từ","ex":["我们班有八个男同学。","Wǒmen bān yǒu bā gè nán tóngxué.","Lớp chúng tôi có tám bạn nam."]}
+{"hz":"男","vi":"nam, con trai, đàn ông","hv":"nam","pos_vi":"tính từ, danh từ","ex":["我们班有八个男同学。","Wǒmen bān yǒu bā ge nán tóngxué.","Lớp chúng tôi có tám bạn nam."]}
 {"hz":"动","vi":"động, cử động, di chuyển; động vào, chạm vào","hv":"động","pos_vi":"động từ","ex":["别动！","Bié dòng!","Đừng động đậy!"]}
 {"hz":"真的","vi":"thật, thật sự; thật à (hỏi lại)","hv":"chân đích","pos_vi":"phó từ, tính từ","ex":["你真的不去吗？","Nǐ zhēnde bú qù ma?","Bạn thật sự không đi à?"]}
-{"hz":"子","vi":"con, con cái; hạt; (đọc zi: hậu tố danh từ như 桌子, 椅子)","hv":"tử","pos_vi":"danh từ, hậu tố","ex":["这个孩子很可爱。","Zhège háizi hěn kě'ài.","Đứa bé này rất dễ thương."]}
+{"hz":"子","vi":"(hậu tố danh từ, đọc nhẹ) như trong 桌子, 椅子, 孩子 (đọc zǐ: con, con cái; hạt)","hv":"tử","pos_vi":"danh từ, hậu tố","ex":["这个孩子很可爱。","Zhège háizi hěn kě'ài.","Đứa bé này rất dễ thương."]}
 {"hz":"杯","vi":"cốc, ly, chén; (lượng từ) cốc, ly","hv":"bôi","pos_vi":"lượng từ, danh từ","ex":["我要一杯水。","Wǒ yào yì bēi shuǐ.","Cho tôi một cốc nước."]}
 {"hz":"歌","vi":"bài hát, bài ca","hv":"ca","pos_vi":"danh từ","ex":["这首歌很好听。","Zhè shǒu gē hěn hǎotīng.","Bài hát này rất hay."]}
 {"hz":"哪里","vi":"ở đâu, đâu; (khiêm tốn khi được khen) đâu có","hv":"na lí","pos_vi":"đại từ","ex":["你住在哪里？","Nǐ zhù zài nǎlǐ?","Bạn sống ở đâu?"]}
@@ -59,7 +59,7 @@
 {"hz":"汽车","vi":"xe hơi, ô tô","hv":"khí xa","pos_vi":"danh từ","ex":["他买了一辆新汽车。","Tā mǎi le yí liàng xīn qìchē.","Anh ấy mua một chiếc ô tô mới."]}
 {"hz":"来到","vi":"đến, tới","hv":"lai đáo","pos_vi":"động từ","ex":["欢迎来到中国！","Huānyíng láidào Zhōngguó!","Chào mừng đến Trung Quốc!"]}
 {"hz":"床","vi":"giường","hv":"sàng","pos_vi":"danh từ","ex":["我的床很大。","Wǒ de chuáng hěn dà.","Giường của tôi rất to."]}
-{"hz":"第","vi":"thứ (tiền tố chỉ số thứ tự)","hv":"đệ","pos_vi":"tiền tố","ex":["他是第一个来的。","Tā shì dì-yī gè lái de.","Anh ấy là người đến đầu tiên."]}
+{"hz":"第","vi":"thứ (tiền tố chỉ số thứ tự)","hv":"đệ","pos_vi":"tiền tố","ex":["他是第一个来的。","Tā shì dì-yī ge lái de.","Anh ấy là người đến đầu tiên."]}
 {"hz":"回到","vi":"trở về (một nơi), về đến","hv":"hồi đáo","pos_vi":"động từ","ex":["我八点回到家。","Wǒ bā diǎn huídào jiā.","Tám giờ tôi về đến nhà."]}
 {"hz":"家里","vi":"trong nhà, ở nhà; gia đình","hv":"gia lí","pos_vi":"danh từ","ex":["家里有人吗？","Jiālǐ yǒu rén ma?","Trong nhà có ai không?"]}
 {"hz":"不用","vi":"không cần, khỏi phải","hv":"bất dụng","pos_vi":"phó từ","ex":["不用谢！","Búyòng xiè!","Không cần cảm ơn đâu!"]}

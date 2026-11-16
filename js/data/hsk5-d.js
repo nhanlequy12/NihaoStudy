@@ -27,7 +27,7 @@
         ["开幕式 八点 开始 我们 来不及 吃饭 了", "Kāimùshì bā diǎn kāishǐ, wǒmen láibují chīfàn le.", "Lễ khai mạc bắt đầu lúc tám giờ, chúng ta không kịp ăn cơm rồi."],
         ["空闲 的 时候 我 喜欢 下 象棋", "Kòngxián de shíhou wǒ xǐhuan xià xiàngqí.", "Lúc rảnh tôi thích chơi cờ tướng."],
         ["他 的 功夫 是 跟 师傅 学 的", "Tā de gōngfu shì gēn shīfu xué de.", "Công phu của anh ấy là học từ sư phụ."],
-        ["球迷 们 为 胜利 高兴 得 叫 了 起来", "Qiúmí men wèi shènglì gāoxìng de jiào le qǐlai.", "Các cổ động viên vui vì chiến thắng đến mức reo hò lên."],
+        ["球迷 们 为 胜利 高兴 得 叫 了 起来", "Qiúmímen wèi shènglì gāoxìng de jiào le qǐlai.", "Các cổ động viên vui vì chiến thắng đến mức reo hò lên."],
       ],
       tips: "冠军 (quán quân) là 'nhà vô địch', không phải 'giải nhất' chung chung; 决赛 (quyết tái) là trận chung kết. 休闲 (hưu nhàn) chỉ kiểu sinh hoạt thư thái (休闲服 = đồ mặc thường ngày), còn 空闲 (không nhàn) là 'thời gian rảnh'. 业余 (nghiệp dư) vừa là 'ngoài giờ' (业余时间) vừa là 'không chuyên'. 功夫 ngoài nghĩa võ còn là 'công sức, thời gian' (花功夫).",
     },
@@ -81,7 +81,7 @@
         ["我们 生活 在 一个 新 的 时代", "Wǒmen shēnghuó zài yí ge xīn de shídài.", "Chúng ta đang sống trong một thời đại mới."],
         ["这 位 英雄 之所以 有名 是因为 他 救 了 很多 人", "Zhè wèi yīngxióng zhī suǒyǐ yǒumíng, shì yīnwèi tā jiù le hěn duō rén.", "Vị anh hùng này sở dĩ nổi tiếng là vì ông đã cứu rất nhiều người."],
         ["很多 华裔 每年 回 祖国 看 亲戚", "Hěn duō huáyì měi nián huí zǔguó kàn qīnqi.", "Nhiều người gốc Hoa mỗi năm về tổ quốc thăm họ hàng."],
-        ["士兵 们 不是 为了 自己 而是 为了 国家", "Shìbīng men bú shì wèile zìjǐ, ér shì wèile guójiā.", "Những người lính không phải vì bản thân mà vì đất nước."],
+        ["士兵 们 不是 为了 自己 而是 为了 国家", "Shìbīngmen bú shì wèile zìjǐ, ér shì wèile guójiā.", "Những người lính không phải vì bản thân mà vì đất nước."],
       ],
       tips: "古代 (cổ đại) – 近代 (cận đại) – 现代 (hiện đại) – 当代 (đương đại) là bốn mốc người Trung Quốc hay dùng; 当代 gần với 'ngày nay' nhất. 古老 (cổ lão) là tính từ 'cổ xưa, cổ kính' (古老的城市), đừng nhầm với 古代 là danh từ chỉ thời kỳ. 祖先 là tổ tiên (người), 祖国 là tổ quốc (nước); 华裔 (Hoa duệ) chỉ người gốc Hoa mang quốc tịch nước khác.",
     },
@@ -91,7 +91,7 @@
       grammar: [
         { pattern: "一旦 + A, + 就 + B", vi: "'Một khi A thì B'. Giả định một việc có thể xảy ra, thường là việc không mong muốn, và hậu quả theo sau.", ex: ["一旦发生战争，很多人就会失去家。", "Yídàn fāshēng zhànzhēng, hěn duō rén jiù huì shīqù jiā.", "Một khi chiến tranh xảy ra, nhiều người sẽ mất nhà."] },
         { pattern: "不得不 + Động từ", vi: "'Buộc phải, không thể không'. Nhấn mạnh làm vì hoàn cảnh ép buộc chứ không tự nguyện.", ex: ["敌人来了，他们不得不躲藏起来。", "Dírén lái le, tāmen bùdébù duǒcáng qǐlai.", "Kẻ địch đến, họ buộc phải ẩn nấp."] },
-        { pattern: "宁可 + A, + 也 + 不/要 + B", vi: "'Thà A chứ không B' hoặc 'thà A cũng phải B'. Chọn A dù A cũng không tốt, vì B còn tệ hơn.", ex: ["士兵们宁可死，也不离开祖国。", "Shìbīng men nìngkě sǐ, yě bù líkāi zǔguó.", "Những người lính thà chết cũng không rời tổ quốc."] },
+        { pattern: "宁可 + A, + 也 + 不/要 + B", vi: "'Thà A chứ không B' hoặc 'thà A cũng phải B'. Chọn A dù A cũng không tốt, vì B còn tệ hơn.", ex: ["士兵们宁可死，也不离开祖国。", "Shìbīngmen nìngkě sǐ, yě bù líkāi zǔguó.", "Những người lính thà chết cũng không rời tổ quốc."] },
       ],
       dialogue: [
         ["A", "这个电影讲的是什么？", "Zhège diànyǐng jiǎng de shì shénme?", "Bộ phim này kể về chuyện gì?"],
@@ -103,7 +103,7 @@
       ],
       sentences: [
         ["战争 给 人们 带来 了 很 大 的 危害", "Zhànzhēng gěi rénmen dàilái le hěn dà de wēihài.", "Chiến tranh mang đến tai họa rất lớn cho con người."],
-        ["士兵 们 用 枪 保护 自己 的 国家", "Shìbīng men yòng qiāng bǎohù zìjǐ de guójiā.", "Những người lính dùng súng bảo vệ đất nước mình."],
+        ["士兵 们 用 枪 保护 自己 的 国家", "Shìbīngmen yòng qiāng bǎohù zìjǐ de guójiā.", "Những người lính dùng súng bảo vệ đất nước mình."],
         ["一旦 敌人 进来 我们 就 来不及 逃 了", "Yídàn dírén jìnlái, wǒmen jiù láibují táo le.", "Một khi kẻ địch tiến vào, chúng ta sẽ không kịp chạy nữa."],
         ["他 不得不 离开 家 去 参加 军事 训练", "Tā bùdébù líkāi jiā qù cānjiā jūnshì xùnliàn.", "Anh ấy buộc phải rời nhà đi tham gia huấn luyện quân sự."],
         ["我们 要 阻止 任何 破坏 环境 的 行为", "Wǒmen yào zǔzhǐ rènhé pòhuài huánjìng de xíngwéi.", "Chúng ta phải ngăn chặn mọi hành vi phá hoại môi trường."],
@@ -237,7 +237,7 @@
     { hz: "太极拳", py: "tàijíquán", hv: "thái cực quyền", vi: "thái cực quyền", pos: "danh từ", ex: ["早上公园里有很多人练习太极拳。", "Zǎoshang gōngyuán lǐ yǒu hěn duō rén liànxí tàijíquán.", "Buổi sáng trong công viên có nhiều người tập thái cực quyền."], l: 109 },
     { hz: "武术", py: "wǔshù", hv: "võ thuật", vi: "võ thuật", pos: "danh từ", ex: ["他从小就学习武术。", "Tā cóngxiǎo jiù xuéxí wǔshù.", "Anh ấy học võ thuật từ nhỏ."], l: 109 },
     { hz: "象棋", py: "xiàngqí", hv: "tượng kỳ", vi: "cờ tướng", pos: "danh từ", ex: ["爷爷教我下象棋。", "Yéye jiāo wǒ xià xiàngqí.", "Ông dạy tôi chơi cờ tướng."], l: 109 },
-    { hz: "球迷", py: "qiúmí", hv: "cầu mê", vi: "người hâm mộ bóng (đá, rổ...), cổ động viên", pos: "danh từ", ex: ["球迷们在场外等了三个小时。", "Qiúmí men zài chǎng wài děng le sān ge xiǎoshí.", "Các cổ động viên đợi ngoài sân ba tiếng."], l: 109 },
+    { hz: "球迷", py: "qiúmí", hv: "cầu mê", vi: "người hâm mộ bóng (đá, rổ...), cổ động viên", pos: "danh từ", ex: ["球迷们在场外等了三个小时。", "Qiúmímen zài chǎng wài děng le sān ge xiǎoshí.", "Các cổ động viên đợi ngoài sân ba tiếng."], l: 109 },
     { hz: "开幕式", py: "kāimùshì", hv: "khai mạc thức", vi: "lễ khai mạc", pos: "danh từ", ex: ["开幕式的表演非常精彩。", "Kāimùshì de biǎoyǎn fēicháng jīngcǎi.", "Màn biểu diễn ở lễ khai mạc vô cùng đặc sắc."], l: 109 },
     { hz: "休闲", py: "xiūxián", hv: "hưu nhàn", vi: "thư giãn, giải trí; (trang phục) thường ngày", pos: "tính từ", ex: ["周末他喜欢穿休闲的衣服。", "Zhōumò tā xǐhuan chuān xiūxián de yīfu.", "Cuối tuần anh ấy thích mặc đồ thoải mái."], l: 109 },
     { hz: "业余", py: "yèyú", hv: "nghiệp dư", vi: "ngoài giờ làm; nghiệp dư, không chuyên", pos: "tính từ", ex: ["我业余时间喜欢看排球比赛。", "Wǒ yèyú shíjiān xǐhuan kàn páiqiú bǐsài.", "Ngoài giờ làm tôi thích xem thi đấu bóng chuyền."], l: 109 },
@@ -251,7 +251,7 @@
     { hz: "元旦", py: "yuándàn", hv: "nguyên đán", vi: "Tết Dương lịch (1/1)", pos: "danh từ", ex: ["元旦我们放假一天。", "Yuándàn wǒmen fàngjià yì tiān.", "Tết Dương lịch chúng tôi được nghỉ một ngày."], l: 110 },
     { hz: "国庆节", py: "guóqìngjié", hv: "quốc khánh tiết", vi: "ngày Quốc khánh", pos: "danh từ", ex: ["国庆节街道上到处都是花。", "Guóqìngjié jiēdào shàng dàochù dōu shì huā.", "Ngày Quốc khánh trên đường phố đâu đâu cũng là hoa."], l: 110 },
     { hz: "礼拜天", py: "lǐbàitiān", hv: "lễ bái thiên", vi: "chủ nhật", pos: "danh từ", ex: ["礼拜天我们去寺庙吧。", "Lǐbàitiān wǒmen qù sìmiào ba.", "Chủ nhật chúng ta đi chùa nhé."], l: 110 },
-    { hz: "正", py: "zhēng", hv: "chính", vi: "tháng Giêng (trong 正月)", pos: "danh từ", ex: ["正月十五我们去寺庙。", "Zhēngyuè shíwǔ wǒmen qù sìmiào.", "Rằm tháng Giêng chúng tôi đi chùa."], l: 110 },
+    { hz: "正", py: "zhèng", hv: "chính", vi: "ngay ngắn, thẳng; chính; đúng (lúc), đang (正在)", pos: "tính từ, phó từ", ex: ["请把帽子戴正。", "Qǐng bǎ màozi dài zhèng.", "Hãy đội mũ cho ngay ngắn."], l: 110 },
     { hz: "鞭炮", py: "biānpào", hv: "tiên pháo", vi: "pháo, dây pháo", pos: "danh từ", ex: ["孩子们在外面放鞭炮。", "Háizimen zài wàimiàn fàng biānpào.", "Bọn trẻ đốt pháo ở bên ngoài."], l: 110 },
     { hz: "庆祝", py: "qìngzhù", hv: "khánh chúc", vi: "chúc mừng, ăn mừng", pos: "động từ", ex: ["我们开了一个聚会庆祝生日。", "Wǒmen kāi le yí ge jùhuì qìngzhù shēngrì.", "Chúng tôi mở một buổi tiệc để mừng sinh nhật."], l: 110 },
     { hz: "祝福", py: "zhùfú", hv: "chúc phúc", vi: "chúc phúc; lời chúc", pos: "động từ", ex: ["谢谢大家的祝福。", "Xièxie dàjiā de zhùfú.", "Cảm ơn lời chúc của mọi người."], l: 110 },
@@ -286,7 +286,7 @@
     { hz: "文明", py: "wénmíng", hv: "văn minh", vi: "văn minh; lịch sự, có văn hóa", pos: "danh từ", ex: ["这是世界上最古老的文明之一。", "Zhè shì shìjiè shàng zuì gǔlǎo de wénmíng zhī yī.", "Đây là một trong những nền văn minh cổ nhất thế giới."], l: 111 },
     { hz: "革命", py: "gémìng", hv: "cách mạng", vi: "cách mạng", pos: "danh từ", ex: ["这场革命改变了国家的历史。", "Zhè chǎng gémìng gǎibiàn le guójiā de lìshǐ.", "Cuộc cách mạng này đã thay đổi lịch sử đất nước."], l: 111 },
     { hz: "英雄", py: "yīngxióng", hv: "anh hùng", vi: "anh hùng", pos: "danh từ", ex: ["他是我们民族的英雄。", "Tā shì wǒmen mínzú de yīngxióng.", "Ông là anh hùng của dân tộc chúng tôi."], l: 111 },
-    { hz: "士兵", py: "shìbīng", hv: "sĩ binh", vi: "binh lính, người lính", pos: "danh từ", ex: ["士兵们在保护国家的安全。", "Shìbīng men zài bǎohù guójiā de ānquán.", "Những người lính đang bảo vệ an toàn của đất nước."], l: 111 },
+    { hz: "士兵", py: "shìbīng", hv: "sĩ binh", vi: "binh lính, người lính", pos: "danh từ", ex: ["士兵们在保护国家的安全。", "Shìbīngmen zài bǎohù guójiā de ānquán.", "Những người lính đang bảo vệ an ninh đất nước."], l: 111 },
     { hz: "流传", py: "liúchuán", hv: "lưu truyền", vi: "lưu truyền", pos: "động từ", ex: ["这个故事流传了一千多年。", "Zhège gùshi liúchuán le yìqiān duō nián.", "Câu chuyện này lưu truyền hơn một nghìn năm."], l: 111 },
     // ---- Bài 112: Chiến tranh & hòa bình ----
     { hz: "战争", py: "zhànzhēng", hv: "chiến tranh", vi: "chiến tranh", pos: "danh từ", ex: ["战争让很多人失去了家。", "Zhànzhēng ràng hěn duō rén shīqù le jiā.", "Chiến tranh khiến nhiều người mất nhà."], l: 112 },
@@ -372,7 +372,7 @@
     { hz: "参与", py: "cānyù", hv: "tham dự", vi: "tham gia, tham dự", pos: "động từ", ex: ["很多年轻人参与了这次活动。", "Hěn duō niánqīngrén cānyù le zhè cì huódòng.", "Nhiều bạn trẻ đã tham gia hoạt động lần này."], l: 115 },
     { hz: "妇女", py: "fùnǚ", hv: "phụ nữ", vi: "phụ nữ", pos: "danh từ", ex: ["三月八日是妇女节。", "Sān yuè bā rì shì Fùnǚjié.", "Ngày 8 tháng 3 là ngày Phụ nữ."], l: 115 },
     // ---- Bài 116: Công việc & nghề nghiệp ----
-    { hz: "打工", py: "dǎgōng", hv: "đả công", vi: "làm thuê, làm thêm", pos: "động từ", ex: ["放假的时候我在饭店打工。", "Fàngjià de shíhou wǒ zài fàndiàn dǎgōng.", "Lúc nghỉ hè tôi làm thêm ở nhà hàng."], l: 116 },
+    { hz: "打工", py: "dǎgōng", hv: "đả công", vi: "làm thuê, làm thêm", pos: "động từ", ex: ["放假的时候我在饭店打工。", "Fàngjià de shíhou wǒ zài fàndiàn dǎgōng.", "Lúc được nghỉ, tôi làm thêm ở nhà hàng."], l: 116 },
     { hz: "干活儿", py: "gànhuór", hv: "can hoạt nhi", vi: "làm việc, làm lụng (khẩu ngữ)", pos: "động từ", ex: ["他干活儿又快又好。", "Tā gànhuór yòu kuài yòu hǎo.", "Anh ấy làm việc vừa nhanh vừa tốt."], l: 116 },
     { hz: "劳动", py: "láodòng", hv: "lao động", vi: "lao động", pos: "động từ", ex: ["五月一日是劳动节。", "Wǔ yuè yī rì shì Láodòngjié.", "Ngày 1 tháng 5 là ngày Quốc tế Lao động."], l: 116 },
     { hz: "辞职", py: "cízhí", hv: "từ chức", vi: "từ chức, xin nghỉ việc", pos: "động từ", ex: ["他上个月辞职了。", "Tā shàng ge yuè cízhí le.", "Tháng trước anh ấy đã nghỉ việc."], l: 116 },
@@ -382,7 +382,7 @@
     { hz: "简历", py: "jiǎnlì", hv: "giản lịch", vi: "sơ yếu lý lịch, CV", pos: "danh từ", ex: ["请把简历发给我。", "Qǐng bǎ jiǎnlì fā gěi wǒ.", "Hãy gửi CV cho tôi."], l: 116 },
     { hz: "人事", py: "rénshì", hv: "nhân sự", vi: "nhân sự", pos: "danh từ", ex: ["这件事情要问人事部门。", "Zhè jiàn shìqing yào wèn rénshì bùmén.", "Việc này phải hỏi phòng nhân sự."], l: 116 },
     { hz: "待遇", py: "dàiyù", hv: "đãi ngộ", vi: "đãi ngộ, chế độ lương thưởng", pos: "danh từ", ex: ["这家公司的待遇不错。", "Zhè jiā gōngsī de dàiyù búcuò.", "Đãi ngộ của công ty này khá tốt."], l: 116 },
-    { hz: "工人", py: "gōngrén", hv: "công nhân", vi: "công nhân", pos: "danh từ", ex: ["工人们正在修路。", "Gōngrén men zhèngzài xiū lù.", "Các công nhân đang sửa đường."], l: 116 },
+    { hz: "工人", py: "gōngrén", hv: "công nhân", vi: "công nhân", pos: "danh từ", ex: ["工人们正在修路。", "Gōngrénmen zhèngzài xiū lù.", "Các công nhân đang sửa đường."], l: 116 },
     { hz: "农民", py: "nóngmín", hv: "nông dân", vi: "nông dân", pos: "danh từ", ex: ["农民在地里种水果。", "Nóngmín zài dì lǐ zhòng shuǐguǒ.", "Nông dân trồng hoa quả ngoài đồng."], l: 116 },
     { hz: "秘书", py: "mìshū", hv: "bí thư", vi: "thư ký", pos: "danh từ", ex: ["秘书帮助经理安排了会议。", "Mìshū bāngzhù jīnglǐ ānpái le huìyì.", "Thư ký giúp giám đốc sắp xếp cuộc họp."], l: 116 },
     { hz: "专家", py: "zhuānjiā", hv: "chuyên gia", vi: "chuyên gia", pos: "danh từ", ex: ["他是环境方面的专家。", "Tā shì huánjìng fāngmiàn de zhuānjiā.", "Ông là chuyên gia về môi trường."], l: 116 },
@@ -391,7 +391,7 @@
     { hz: "总裁", py: "zǒngcái", hv: "tổng tài", vi: "tổng giám đốc, chủ tịch (công ty)", pos: "danh từ", ex: ["总裁今天来我们部门参观。", "Zǒngcái jīntiān lái wǒmen bùmén cānguān.", "Hôm nay tổng giám đốc đến thăm phòng chúng tôi."], l: 116 },
     { hz: "担任", py: "dānrèn", hv: "đảm nhiệm", vi: "đảm nhiệm, giữ chức", pos: "động từ", ex: ["他担任这家公司的经理。", "Tā dānrèn zhè jiā gōngsī de jīnglǐ.", "Anh ấy giữ chức giám đốc công ty này."], l: 116 },
     { hz: "雇佣", py: "gùyōng", hv: "cố dung", vi: "thuê (người làm), tuyển dụng", pos: "động từ", ex: ["工厂雇佣了一百个工人。", "Gōngchǎng gùyōng le yìbǎi ge gōngrén.", "Nhà máy đã thuê một trăm công nhân."], l: 116 },
-    { hz: "资格", py: "zīgé", hv: "tư cách", vi: "tư cách, điều kiện, chứng chỉ", pos: "danh từ", ex: ["你有资格参加这次考试。", "Nǐ yǒu zīgé cānjiā zhè cì kǎoshì.", "Bạn đủ điều kiện tham gia kỳ thi này."], l: 116 },
+    { hz: "资格", py: "zīgé", hv: "tư cách", vi: "tư cách, đủ điều kiện; thâm niên", pos: "danh từ", ex: ["你有资格参加这次考试。", "Nǐ yǒu zīgé cānjiā zhè cì kǎoshì.", "Bạn đủ điều kiện tham gia kỳ thi này."], l: 116 },
   ];
   vocab.forEach((w, i) => { w.id = "w" + level + "d_" + i; w.level = level; });
   window.VOCAB.push(...vocab);

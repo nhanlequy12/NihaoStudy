@@ -51,9 +51,9 @@
 {"hz":"尴尬","vi":"ngượng ngùng, khó xử, lúng túng","hv":"giam giới","pos_vi":"tính từ","ex":["我叫错了他的名字，真尴尬。","Wǒ jiàocuòle tā de míngzi, zhēn gāngà.","Tôi gọi nhầm tên anh ấy, ngượng thật."]}
 {"hz":"代价","vi":"cái giá (phải trả), giá","hv":"đại giá","pos_vi":"danh từ","ex":["他为这个错误付出了很大的代价。","Tā wèi zhège cuòwù fùchūle hěn dà de dàijià.","Anh ấy đã phải trả giá đắt cho sai lầm này."]}
 {"hz":"婴儿","vi":"trẻ sơ sinh, em bé","hv":"anh nhi","pos_vi":"danh từ","ex":["婴儿在床上睡得很香。","Yīng'ér zài chuáng shang shuì de hěn xiāng.","Em bé ngủ rất ngon trên giường."]}
-{"hz":"团结","vi":"đoàn kết; đoàn kết (tính chất)","hv":"đoàn kết","pos_vi":"động từ, tính từ","ex":["只要大家团结起来，就没有困难。","Zhǐyào dàjiā tuánjié qǐlái, jiù méiyǒu kùnnan.","Chỉ cần mọi người đoàn kết thì không có khó khăn nào."]}
+{"hz":"团结","vi":"đoàn kết; đoàn kết (tính chất)","hv":"đoàn kết","pos_vi":"động từ, tính từ","ex":["只要大家团结起来，就没有克服不了的困难。","Zhǐyào dàjiā tuánjié qǐlai, jiù méiyǒu kèfú bu liǎo de kùnnan.","Chỉ cần mọi người đoàn kết thì không có khó khăn nào không vượt qua được."]}
 {"hz":"涉及","vi":"liên quan đến, đề cập đến","hv":"thiệp cập","pos_vi":"động từ","ex":["这个问题涉及很多方面。","Zhège wèntí shèjí hěn duō fāngmiàn.","Vấn đề này liên quan đến nhiều mặt."]}
-{"hz":"发动","vi":"khởi động (máy); phát động; huy động","hv":"phát động","pos_vi":"động từ","ex":["天太冷，车发动不起来。","Tiān tài lěng, chē fādòng bu qǐlái.","Trời lạnh quá, xe không nổ máy được."]}
+{"hz":"发动","vi":"khởi động (máy); phát động; huy động","hv":"phát động","pos_vi":"động từ","ex":["天太冷，车发动不起来。","Tiān tài lěng, chē fādòng bu qǐlai.","Trời lạnh quá, xe không nổ máy được."]}
 {"hz":"策略","vi":"sách lược, chiến lược, chiến thuật","hv":"sách lược","pos_vi":"danh từ","ex":["我们需要改变一下销售策略。","Wǒmen xūyào gǎibiàn yíxià xiāoshòu cèlüè.","Chúng ta cần thay đổi chiến lược bán hàng."]}
 {"hz":"陷入","vi":"rơi vào, lâm vào; chìm đắm vào","hv":"hãm nhập","pos_vi":"động từ","ex":["他陷入了深深的思考。","Tā xiànrùle shēnshēn de sīkǎo.","Anh ấy chìm vào suy nghĩ sâu xa."]}
 {"hz":"回报","vi":"báo đáp, đền đáp; sự đền đáp, lợi nhuận thu về","hv":"hồi báo","pos_vi":"động từ","ex":["我要努力工作回报父母。","Wǒ yào nǔlì gōngzuò huíbào fùmǔ.","Tôi phải làm việc chăm chỉ để báo đáp bố mẹ."]}
@@ -96,5 +96,5 @@
 {"hz":"局面","vi":"cục diện, tình hình","hv":"cục diện","pos_vi":"danh từ","ex":["新经理很快改变了这种局面。","Xīn jīnglǐ hěn kuài gǎibiànle zhè zhǒng júmiàn.","Giám đốc mới nhanh chóng thay đổi tình hình này."]}
 {"hz":"期望","vi":"kỳ vọng, mong đợi; sự kỳ vọng","hv":"kỳ vọng","pos_vi":"động từ","ex":["父母对他的期望很高。","Fùmǔ duì tā de qīwàng hěn gāo.","Bố mẹ kỳ vọng ở anh ấy rất nhiều."]}
 {"hz":"补偿","vi":"bồi thường, đền bù","hv":"bổ thường","pos_vi":"động từ","ex":["公司会补偿你的损失。","Gōngsī huì bǔcháng nǐ de sǔnshī.","Công ty sẽ bồi thường thiệt hại cho bạn."]}
-{"hz":"抛","vi":"ném, tung; vứt bỏ, bỏ lại","hv":"phao","pos_vi":"động từ","ex":["他把球高高地抛了起来。","Tā bǎ qiú gāogāo de pāole qǐlái.","Anh ấy tung quả bóng lên thật cao."]}
+{"hz":"抛","vi":"ném, tung; vứt bỏ, bỏ lại","hv":"phao","pos_vi":"động từ","ex":["他把球高高地抛了起来。","Tā bǎ qiú gāogāo de pāole qǐlai.","Anh ấy tung quả bóng lên thật cao."]}
 {"hz":"年度","vi":"năm (tài chính, học tập…); hằng năm, thường niên","hv":"niên độ","pos_vi":"danh từ","ex":["他被评为年度最佳员工。","Tā bèi píngwéi niándù zuìjiā yuángōng.","Anh ấy được bầu là nhân viên xuất sắc nhất năm."]}

@@ -5,7 +5,7 @@
 {"hz":"柱子","vi":"cột, trụ","hv":"trụ tử","pos_vi":"danh từ","ex":["门口有两根红柱子。","Ménkǒu yǒu liǎng gēn hóng zhùzi.","Trước cửa có hai cây cột màu đỏ."]}
 {"hz":"岁数","vi":"tuổi, tuổi tác (khẩu ngữ, thường hỏi người lớn tuổi)","hv":"tuế số","pos_vi":"danh từ","ex":["您多大岁数了？","Nín duō dà suìshu le?","Cụ năm nay bao nhiêu tuổi rồi ạ?"]}
 {"hz":"指头","vi":"ngón tay; ngón chân","hv":"chỉ đầu","pos_vi":"danh từ","ex":["他的指头被门夹了一下。","Tā de zhǐtou bèi mén jiā le yíxià.","Ngón tay anh ấy bị cửa kẹp."]}
-{"hz":"试点","vi":"thí điểm; làm thí điểm","hv":"thí điểm","pos_vi":"danh từ, động từ","ex":["这个政策先在三个城市试点。","Zhège zhèngcè xiān zài sān gè chéngshì shìdiǎn.","Chính sách này được thí điểm trước ở ba thành phố."]}
+{"hz":"试点","vi":"thí điểm; làm thí điểm","hv":"thí điểm","pos_vi":"danh từ, động từ","ex":["这个政策先在三个城市试点。","Zhège zhèngcè xiān zài sān ge chéngshì shìdiǎn.","Chính sách này được thí điểm trước ở ba thành phố."]}
 {"hz":"讲课","vi":"giảng bài, lên lớp","hv":"giảng khoá","pos_vi":"động từ","ex":["王老师讲课很有意思。","Wáng lǎoshī jiǎngkè hěn yǒu yìsi.","Thầy Vương giảng bài rất thú vị."]}
 {"hz":"往年","vi":"những năm trước, mọi năm","hv":"vãng niên","pos_vi":"danh từ (thời gian)","ex":["今年夏天比往年热。","Jīnnián xiàtiān bǐ wǎngnián rè.","Mùa hè năm nay nóng hơn mọi năm."]}
 {"hz":"节能","vi":"tiết kiệm năng lượng","hv":"tiết năng","pos_vi":"động từ, tính từ","ex":["这种灯很节能。","Zhè zhǒng dēng hěn jiénéng.","Loại đèn này rất tiết kiệm điện."]}
@@ -37,9 +37,9 @@
 {"hz":"游玩","vi":"đi chơi, vui chơi, du ngoạn","hv":"du ngoạn","pos_vi":"động từ","ex":["周末我们去公园游玩。","Zhōumò wǒmen qù gōngyuán yóuwán.","Cuối tuần chúng tôi đi chơi công viên."]}
 {"hz":"两侧","vi":"hai bên, hai phía","hv":"lưỡng trắc","pos_vi":"danh từ (phương vị)","ex":["马路两侧种满了树。","Mǎlù liǎngcè zhòng mǎn le shù.","Hai bên đường trồng đầy cây."]}
 {"hz":"乐曲","vi":"bản nhạc, khúc nhạc","hv":"nhạc khúc","pos_vi":"danh từ","ex":["这首乐曲非常优美。","Zhè shǒu yuèqǔ fēicháng yōuměi.","Bản nhạc này vô cùng du dương."]}
-{"hz":"母鸡","vi":"gà mái","hv":"mẫu kê","pos_vi":"danh từ","ex":["母鸡每天下一个蛋。","Mǔjī měi tiān xià yí gè dàn.","Con gà mái mỗi ngày đẻ một quả trứng."]}
+{"hz":"母鸡","vi":"gà mái","hv":"mẫu kê","pos_vi":"danh từ","ex":["母鸡每天下一个蛋。","Mǔjī měi tiān xià yí ge dàn.","Con gà mái mỗi ngày đẻ một quả trứng."]}
 {"hz":"酒水","vi":"đồ uống (rượu bia, nước ngọt trong bữa tiệc)","hv":"tửu thuỷ","pos_vi":"danh từ","ex":["这顿饭的酒水另外算钱。","Zhè dùn fàn de jiǔshuǐ lìngwài suàn qián.","Đồ uống của bữa này tính tiền riêng."]}
-{"hz":"新兴","vi":"mới nổi, mới phát triển","hv":"tân hưng","pos_vi":"tính từ","ex":["人工智能是一个新兴行业。","Réngōng zhìnéng shì yí gè xīnxīng hángyè.","Trí tuệ nhân tạo là một ngành mới nổi."]}
+{"hz":"新兴","vi":"mới nổi, mới phát triển","hv":"tân hưng","pos_vi":"tính từ","ex":["人工智能是一个新兴行业。","Réngōng zhìnéng shì yí ge xīnxīng hángyè.","Trí tuệ nhân tạo là một ngành mới nổi."]}
 {"hz":"发炎","vi":"viêm, bị viêm","hv":"phát viêm","pos_vi":"động từ","ex":["我的嗓子发炎了。","Wǒ de sǎngzi fāyán le.","Họng tôi bị viêm rồi."]}
 {"hz":"发怒","vi":"nổi giận, nổi cáu","hv":"phát nộ","pos_vi":"động từ","ex":["他很少发怒。","Tā hěn shǎo fānù.","Anh ấy hiếm khi nổi giận."]}
 {"hz":"叹气","vi":"thở dài","hv":"thán khí","pos_vi":"động từ","ex":["别总是叹气，开心点儿！","Bié zǒngshì tànqì, kāixīn diǎnr!","Đừng cứ thở dài mãi, vui lên nào!"]}
@@ -52,7 +52,7 @@
 {"hz":"热水器","vi":"bình nóng lạnh, máy nước nóng","hv":"nhiệt thuỷ khí","pos_vi":"danh từ","ex":["热水器坏了，不能洗澡。","Rèshuǐqì huài le, bù néng xǐzǎo.","Bình nóng lạnh hỏng rồi, không tắm được."]}
 {"hz":"同期","vi":"cùng kỳ; cùng khoá","hv":"đồng kỳ","pos_vi":"danh từ","ex":["今年的销量比去年同期多一倍。","Jīnnián de xiāoliàng bǐ qùnián tóngqī duō yí bèi.","Doanh số năm nay gấp đôi so với cùng kỳ năm ngoái."]}
 {"hz":"常年","vi":"quanh năm; nhiều năm liền","hv":"thường niên","pos_vi":"phó từ, danh từ","ex":["山顶常年有雪。","Shāndǐng chángnián yǒu xuě.","Đỉnh núi quanh năm có tuyết."]}
-{"hz":"快车","vi":"tàu nhanh, xe tốc hành","hv":"khoái xa","pos_vi":"danh từ","ex":["坐快车两个小时就到。","Zuò kuàichē liǎng gè xiǎoshí jiù dào.","Đi tàu nhanh hai tiếng là tới."]}
+{"hz":"快车","vi":"tàu nhanh, xe tốc hành","hv":"khoái xa","pos_vi":"danh từ","ex":["坐快车两个小时就到。","Zuò kuàichē liǎng ge xiǎoshí jiù dào.","Đi tàu nhanh hai tiếng là tới."]}
 {"hz":"无边","vi":"vô biên, không bờ bến, bao la","hv":"vô biên","pos_vi":"tính từ","ex":["眼前是无边的大海。","Yǎnqián shì wúbiān de dàhǎi.","Trước mắt là biển cả bao la."]}
 {"hz":"山峰","vi":"đỉnh núi, ngọn núi","hv":"sơn phong","pos_vi":"danh từ","ex":["远处的山峰被白云盖住了。","Yuǎnchù de shānfēng bèi báiyún gài zhù le.","Ngọn núi đằng xa bị mây trắng che phủ."]}
 {"hz":"民工","vi":"lao động nhập cư (từ nông thôn lên thành phố làm thuê)","hv":"dân công","pos_vi":"danh từ","ex":["春节前很多民工回家过年。","Chūnjié qián hěn duō míngōng huí jiā guònián.","Trước Tết, nhiều lao động nhập cư về quê ăn Tết."]}
@@ -61,7 +61,7 @@
 {"hz":"这就是说","vi":"nói cách khác, như vậy có nghĩa là","hv":"giá tựu thị thuyết","pos_vi":"liên từ","ex":["这就是说，我们得重新开始。","Zhè jiùshì shuō, wǒmen děi chóngxīn kāishǐ.","Nói cách khác, chúng ta phải bắt đầu lại."]}
 {"hz":"宽阔","vi":"rộng rãi, rộng lớn; (tầm nhìn, lòng dạ) rộng mở","hv":"khoan khoát","pos_vi":"tính từ","ex":["这条马路很宽阔。","Zhè tiáo mǎlù hěn kuānkuò.","Con đường này rất rộng."]}
 {"hz":"遍地","vi":"khắp nơi, đầy mặt đất","hv":"biến địa","pos_vi":"phó từ, danh từ","ex":["秋天，公园里落叶遍地。","Qiūtiān, gōngyuán lǐ luòyè biàndì.","Mùa thu, lá rụng đầy khắp công viên."]}
-{"hz":"少儿","vi":"thiếu nhi, trẻ em","hv":"thiếu nhi","pos_vi":"danh từ","ex":["这是一个少儿节目。","Zhè shì yí gè shào'ér jiémù.","Đây là một chương trình thiếu nhi."]}
+{"hz":"少儿","vi":"thiếu nhi, trẻ em","hv":"thiếu nhi","pos_vi":"danh từ","ex":["这是一个少儿节目。","Zhè shì yí ge shào'ér jiémù.","Đây là một chương trình thiếu nhi."]}
 {"hz":"机动车","vi":"xe cơ giới","hv":"cơ động xa","pos_vi":"danh từ","ex":["这条路禁止机动车通行。","Zhè tiáo lù jìnzhǐ jīdòngchē tōngxíng.","Con đường này cấm xe cơ giới lưu thông."]}
 {"hz":"皮球","vi":"quả bóng (cao su, da)","hv":"bì cầu","pos_vi":"danh từ","ex":["孩子们在院子里踢皮球。","Háizimen zài yuànzi lǐ tī píqiú.","Bọn trẻ đá bóng trong sân."]}
 {"hz":"节假日","vi":"ngày lễ, ngày nghỉ","hv":"tiết giả nhật","pos_vi":"danh từ (thời gian)","ex":["节假日景区人特别多。","Jiéjiàrì jǐngqū rén tèbié duō.","Ngày lễ khu du lịch rất đông người."]}

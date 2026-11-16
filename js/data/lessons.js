@@ -96,7 +96,7 @@ window.LESSONS = [
       ["A", "那是谁？", "Nà shì shéi?", "Kia là ai?"],
       ["B", "那是我朋友。", "Nà shì wǒ péngyou.", "Kia là bạn tôi."],
       ["A", "你有狗吗？", "Nǐ yǒu gǒu ma?", "Bạn có chó không?"],
-      ["B", "我没有狗，我有一个猫。", "Wǒ méiyǒu gǒu, wǒ yǒu yì zhī māo.", "Tôi không có chó, tôi có một con mèo."],
+      ["B", "我没有狗，我有一只猫。", "Wǒ méiyǒu gǒu, wǒ yǒu yì zhī māo.", "Tôi không có chó, tôi có một con mèo."],
     ],
     sentences: [
       ["这 是 我 妈妈", "Zhè shì wǒ māma.", "Đây là mẹ tôi."],

@@ -13,7 +13,7 @@
 {"hz":"足","vi":"đủ, đầy đủ; tới, đến tận (số lượng); chân","hv":"túc","pos_vi":"tính từ, phó từ, danh từ","ex":["他足足等了两个小时。","Tā zúzú děng le liǎng ge xiǎoshí.","Anh ấy chờ tròn hai tiếng đồng hồ."]}
 {"hz":"公","vi":"công, chung, của nhà nước; công bằng; (động vật) đực, trống","hv":"công","pos_vi":"tính từ","ex":["这只鸡是公的。","Zhè zhī jī shì gōng de.","Con gà này là gà trống."]}
 {"hz":"托","vi":"nâng, đỡ; nhờ, gửi gắm; cái đế, giá đỡ","hv":"thác","pos_vi":"động từ, danh từ","ex":["我托朋友买了一本书。","Wǒ tuō péngyou mǎi le yì běn shū.","Tôi nhờ bạn mua giúp một cuốn sách."]}
-{"hz":"杆","vi":"cây sào, cột (gān); cán, quản (gǎn, lượng từ cho bút, súng)","hv":"can","pos_vi":"danh từ, lượng từ","ex":["路边立着一根电线杆。","Lù biān lìzhe yì gēn diànxiàngān.","Bên đường dựng một cột điện."]}
+{"hz":"杆","vi":"cán, quản (bút, súng…); lượng từ cho vật có cán (súng, cân); (đọc gān) cây sào, cột","hv":"can","pos_vi":"danh từ, lượng từ","ex":["他手里拿着一杆枪。","Tā shǒu lǐ ná zhe yì gǎn qiāng.","Anh ấy cầm trong tay một khẩu súng."]}
 {"hz":"绝","vi":"tuyệt đối (dùng với phủ định); dứt, cắt đứt; tuyệt, tuyệt diệu","hv":"tuyệt","pos_vi":"phó từ, động từ, tính từ","ex":["我绝不会告诉别人。","Wǒ jué bú huì gàosu biérén.","Tôi tuyệt đối sẽ không nói với ai."]}
 {"hz":"料","vi":"liệu, đoán trước; nguyên liệu, vật liệu","hv":"liệu","pos_vi":"động từ, danh từ","ex":["我早就料到他会来。","Wǒ zǎo jiù liào dào tā huì lái.","Tôi đã sớm đoán được anh ấy sẽ đến."]}
 {"hz":"公众","vi":"công chúng, quần chúng","hv":"công chúng","pos_vi":"danh từ","ex":["这个公园对公众免费开放。","Zhège gōngyuán duì gōngzhòng miǎnfèi kāifàng.","Công viên này mở cửa miễn phí cho công chúng."]}
@@ -75,7 +75,7 @@
 {"hz":"国王","vi":"quốc vương, vua","hv":"quốc vương","pos_vi":"danh từ","ex":["国王有三个女儿。","Guówáng yǒu sān ge nǚ'ér.","Nhà vua có ba cô con gái."]}
 {"hz":"播","vi":"phát (sóng); gieo (hạt); truyền bá","hv":"bá","pos_vi":"động từ","ex":["这个节目每天晚上八点播。","Zhège jiémù měi tiān wǎnshang bā diǎn bō.","Chương trình này phát lúc tám giờ tối hằng ngày."]}
 {"hz":"作战","vi":"tác chiến, chiến đấu","hv":"tác chiến","pos_vi":"động từ","ex":["士兵们勇敢地作战。","Shìbīngmen yǒnggǎn de zuòzhàn.","Các chiến sĩ chiến đấu dũng cảm."]}
-{"hz":"当天","vi":"ngay hôm đó, trong ngày","hv":"đương thiên","pos_vi":"danh từ","ex":["他去北京开会，当天就回来了。","Tā qù Běijīng kāihuì, dāngtiān jiù huílái le.","Anh ấy đi Bắc Kinh họp, về ngay trong ngày."]}
+{"hz":"当天","vi":"ngay hôm đó, trong ngày","hv":"đương thiên","pos_vi":"danh từ","ex":["他去北京开会，当天就回来了。","Tā qù Běijīng kāihuì, dàngtiān jiù huílái le.","Anh ấy đi Bắc Kinh họp, về ngay trong ngày."]}
 {"hz":"赚钱","vi":"kiếm tiền; có lãi","hv":"trám tiền","pos_vi":"động từ","ex":["他每天努力工作赚钱。","Tā měi tiān nǔlì gōngzuò zhuànqián.","Ngày nào anh ấy cũng chăm chỉ làm việc kiếm tiền."]}
 {"hz":"钻","vi":"khoan, chui, luồn; đi sâu nghiên cứu (zuān); mũi khoan, kim cương (zuàn)","hv":"toản","pos_vi":"động từ, danh từ","ex":["小猫钻到床底下去了。","Xiǎo māo zuān dào chuáng dǐxia qù le.","Con mèo con chui xuống gầm giường rồi."]}
 {"hz":"大街","vi":"đường phố, phố lớn","hv":"đại nhai","pos_vi":"danh từ","ex":["周末大街上人很多。","Zhōumò dàjiē shang rén hěn duō.","Cuối tuần ngoài phố rất đông người."]}
@@ -97,4 +97,4 @@
 {"hz":"适当","vi":"thích đáng, phù hợp, vừa phải","hv":"thích đáng","pos_vi":"tính từ","ex":["每天适当运动对身体好。","Měi tiān shìdàng yùndòng duì shēntǐ hǎo.","Mỗi ngày vận động vừa phải tốt cho cơ thể."]}
 {"hz":"高手","vi":"cao thủ, người giỏi","hv":"cao thủ","pos_vi":"danh từ","ex":["他是下棋的高手。","Tā shì xiàqí de gāoshǒu.","Anh ấy là cao thủ đánh cờ."]}
 {"hz":"参赛","vi":"tham gia thi đấu, dự thi","hv":"tham tái","pos_vi":"động từ","ex":["这次比赛有两百人参赛。","Zhè cì bǐsài yǒu liǎngbǎi rén cānsài.","Cuộc thi lần này có hai trăm người dự thi."]}
-{"hz":"录像","vi":"quay video, ghi hình; băng hình, video","hv":"lục tượng","pos_vi":"động từ, danh từ","ex":["我把比赛录像了。","Wǒ bǎ bǐsài lùxiàng le.","Tôi đã quay lại trận đấu."]}
+{"hz":"录像","vi":"quay video, ghi hình; băng hình, video","hv":"lục tượng","pos_vi":"động từ, danh từ","ex":["开会的时候请不要录像。","Kāihuì de shíhou qǐng búyào lùxiàng.","Trong lúc họp xin đừng quay video."]}

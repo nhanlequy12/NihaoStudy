@@ -25,7 +25,7 @@
 {"hz":"两手","vi":"hai tay; hai phương án, hai mặt (của một việc)","hv":"lưỡng thủ","pos_vi":"danh từ","ex":["我们要做好两手准备。","Wǒmen yào zuò hǎo liǎngshǒu zhǔnbèi.","Chúng ta phải chuẩn bị sẵn cả hai phương án."]}
 {"hz":"赶忙","vi":"vội vàng, vội","hv":"cản mang","pos_vi":"phó từ","ex":["看到老师进来，他赶忙站起来。","Kàndào lǎoshī jìnlai, tā gǎnmáng zhàn qǐlai.","Thấy thầy bước vào, cậu ấy vội đứng dậy."]}
 {"hz":"城乡","vi":"thành thị và nông thôn","hv":"thành hương","pos_vi":"danh từ","ex":["城乡差距正在缩小。","Chéngxiāng chājù zhèngzài suōxiǎo.","Khoảng cách giữa thành thị và nông thôn đang thu hẹp."]}
-{"hz":"出访","vi":"đi thăm chính thức (nước ngoài), công du","hv":"xuất phỏng","pos_vi":"động từ","ex":["总统下个月将出访欧洲。","Zǒngtǒng xià gè yuè jiāng chūfǎng Ōuzhōu.","Tổng thống tháng sau sẽ công du châu Âu."]}
+{"hz":"出访","vi":"đi thăm chính thức (nước ngoài), công du","hv":"xuất phỏng","pos_vi":"động từ","ex":["总统下个月将出访欧洲。","Zǒngtǒng xià ge yuè jiāng chūfǎng Ōuzhōu.","Tổng thống tháng sau sẽ công du châu Âu."]}
 {"hz":"用法","vi":"cách dùng","hv":"dụng pháp","pos_vi":"danh từ","ex":["这个词的用法比较复杂。","Zhège cí de yòngfǎ bǐjiào fùzá.","Cách dùng của từ này khá phức tạp."]}
 {"hz":"果树","vi":"cây ăn quả","hv":"quả thụ","pos_vi":"danh từ","ex":["院子里种了几棵果树。","Yuànzi lǐ zhòng le jǐ kē guǒshù.","Trong sân trồng mấy cây ăn quả."]}
 {"hz":"蓝领","vi":"cổ xanh, lao động chân tay","hv":"lam lĩnh","pos_vi":"danh từ, tính từ","ex":["他是一名蓝领工人。","Tā shì yì míng lánlǐng gōngrén.","Anh ấy là một công nhân cổ xanh."]}
@@ -48,7 +48,7 @@
 {"hz":"望见","vi":"trông thấy, nhìn thấy (từ xa)","hv":"vọng kiến","pos_vi":"động từ","ex":["远远地就能望见那座塔。","Yuǎnyuǎn de jiù néng wàngjiàn nà zuò tǎ.","Từ xa đã có thể trông thấy ngọn tháp ấy."]}
 {"hz":"考题","vi":"đề thi, câu hỏi thi","hv":"khảo đề","pos_vi":"danh từ","ex":["今年的考题不太难。","Jīnnián de kǎotí bú tài nán.","Đề thi năm nay không khó lắm."]}
 {"hz":"戏曲","vi":"hí khúc, kịch hát truyền thống Trung Quốc","hv":"hí khúc","pos_vi":"danh từ","ex":["爷爷很喜欢听戏曲。","Yéye hěn xǐhuan tīng xìqǔ.","Ông rất thích nghe kịch hát truyền thống."]}
-{"hz":"好学","vi":"dễ học; (đọc hàoxué) ham học, hiếu học","hv":"hảo học","pos_vi":"tính từ","ex":["汉语拼音很好学。","Hànyǔ pīnyīn hěn hǎoxué.","Phiên âm tiếng Trung rất dễ học."]}
+{"hz":"好学","vi":"ham học, hiếu học; (hǎoxué) dễ học","hv":"hảo học","pos_vi":"tính từ","ex":["他从小就很好学，每天都看书。","Tā cóngxiǎo jiù hěn hàoxué, měi tiān dōu kàn shū.","Từ nhỏ cậu ấy đã rất ham học, ngày nào cũng đọc sách."]}
 {"hz":"开夜车","vi":"thức khuya làm việc, học bài (khẩu ngữ)","hv":"khai dạ xa","pos_vi":"động từ","ex":["为了准备考试，他天天开夜车。","Wèile zhǔnbèi kǎoshì, tā tiāntiān kāiyèchē.","Để chuẩn bị thi, ngày nào cậu ấy cũng thức khuya học bài."]}
 {"hz":"初等","vi":"sơ đẳng, sơ cấp","hv":"sơ đẳng","pos_vi":"tính từ","ex":["这本书讲的是初等数学。","Zhè běn shū jiǎng de shì chūděng shùxué.","Cuốn sách này nói về toán sơ cấp."]}
 {"hz":"慢车","vi":"tàu chậm, xe chạy chậm (dừng nhiều ga)","hv":"mạn xa","pos_vi":"danh từ","ex":["慢车每站都停。","Mànchē měi zhàn dōu tíng.","Tàu chậm dừng ở mọi ga."]}
@@ -61,12 +61,12 @@
 {"hz":"薯片","vi":"khoai tây chiên lát (snack)","hv":"thự phiến","pos_vi":"danh từ","ex":["孩子们喜欢吃薯片。","Háizimen xǐhuan chī shǔpiàn.","Bọn trẻ thích ăn snack khoai tây."]}
 {"hz":"有没有","vi":"có… không, có hay không","hv":"hữu một hữu","pos_vi":"cụm từ","ex":["你有没有时间？","Nǐ yǒu méiyǒu shíjiān?","Bạn có thời gian không?"]}
 {"hz":"指着","vi":"chỉ vào, trỏ vào; trông cậy vào","hv":"chỉ trước","pos_vi":"động từ","ex":["他指着地图告诉我怎么走。","Tā zhǐzhe dìtú gàosu wǒ zěnme zǒu.","Anh ấy chỉ vào bản đồ chỉ đường cho tôi."]}
-{"hz":"呵","vi":"à, a (trợ từ ngữ khí, như 啊); (đọc hē) hà hơi; quát mắng","hv":"ha","pos_vi":"trợ từ, thán từ, động từ","ex":["多美的花呵！","Duō měi de huā a!","Hoa đẹp quá đi!"]}
+{"hz":"呵","vi":"hà (hơi); quát mắng; (tượng thanh) ha ha (呵呵); (đọc a) trợ từ ngữ khí như 啊","hv":"ha","pos_vi":"trợ từ, thán từ, động từ","ex":["天太冷了，他往手上呵了一口气。","Tiān tài lěng le, tā wǎng shǒu shang hēle yì kǒu qì.","Trời lạnh quá, anh ấy hà một hơi vào tay."]}
 {"hz":"刑事","vi":"hình sự","hv":"hình sự","pos_vi":"tính từ","ex":["这是一起刑事案件。","Zhè shì yì qǐ xíngshì ànjiàn.","Đây là một vụ án hình sự."]}
-{"hz":"孔","vi":"họ Khổng; lỗ, lỗ nhỏ","hv":"khổng","pos_vi":"danh từ, lượng từ","ex":["孔子是著名的教育家。","Kǒngzǐ shì zhùmíng de jiàoyùjiā.","Khổng Tử là nhà giáo dục nổi tiếng."]}
+{"hz":"孔","vi":"lỗ, lỗ nhỏ; họ Khổng","hv":"khổng","pos_vi":"danh từ, lượng từ","ex":["墙上有一个小孔。","Qiáng shang yǒu yí ge xiǎo kǒng.","Trên tường có một lỗ nhỏ."]}
 {"hz":"标记","vi":"dấu hiệu, ký hiệu; đánh dấu","hv":"tiêu ký","pos_vi":"danh từ, động từ","ex":["我在重要的地方做了标记。","Wǒ zài zhòngyào de dìfang zuò le biāojì.","Tôi đã đánh dấu ở những chỗ quan trọng."]}
 {"hz":"共和国","vi":"nước cộng hoà","hv":"cộng hoà quốc","pos_vi":"danh từ","ex":["越南的全称是越南社会主义共和国。","Yuènán de quánchēng shì Yuènán Shèhuìzhǔyì Gònghéguó.","Tên đầy đủ của Việt Nam là Cộng hoà Xã hội Chủ nghĩa Việt Nam."]}
-{"hz":"案例","vi":"trường hợp, vụ việc điển hình, ví dụ thực tế","hv":"án lệ","pos_vi":"danh từ","ex":["老师给我们讲了一个真实的案例。","Lǎoshī gěi wǒmen jiǎng le yí gè zhēnshí de ànlì.","Thầy kể cho chúng tôi một trường hợp có thật."]}
+{"hz":"案例","vi":"trường hợp, vụ việc điển hình, ví dụ thực tế","hv":"án lệ","pos_vi":"danh từ","ex":["老师给我们讲了一个真实的案例。","Lǎoshī gěi wǒmen jiǎng le yí ge zhēnshí de ànlì.","Thầy kể cho chúng tôi một trường hợp có thật."]}
 {"hz":"审理","vi":"xét xử, thẩm tra xử lý (vụ án)","hv":"thẩm lý","pos_vi":"động từ","ex":["法院正在审理这个案子。","Fǎyuàn zhèngzài shěnlǐ zhège ànzi.","Toà án đang xét xử vụ án này."]}
 {"hz":"粉色","vi":"màu hồng","hv":"phấn sắc","pos_vi":"danh từ","ex":["她穿了一条粉色的裙子。","Tā chuān le yì tiáo fěnsè de qúnzi.","Cô ấy mặc một chiếc váy màu hồng."]}
 {"hz":"国务院","vi":"Quốc vụ viện (chính phủ Trung Quốc); Bộ Ngoại giao (Mỹ)","hv":"quốc vụ viện","pos_vi":"danh từ riêng","ex":["国务院召开了常务会议。","Guówùyuàn zhàokāi le chángwù huìyì.","Quốc vụ viện đã triệu tập phiên họp thường vụ."]}
@@ -77,11 +77,11 @@
 {"hz":"哎哟","vi":"ối, ui da, ôi chao (kêu đau, ngạc nhiên)","hv":"ai dược","pos_vi":"thán từ","ex":["哎哟，我的脚好疼！","Āiyō, wǒ de jiǎo hǎo téng!","Ui da, chân tôi đau quá!"]}
 {"hz":"城堡","vi":"lâu đài, thành luỹ; quân xe (cờ vua)","hv":"thành bảo","pos_vi":"danh từ","ex":["山上有一座古老的城堡。","Shān shàng yǒu yí zuò gǔlǎo de chéngbǎo.","Trên núi có một toà lâu đài cổ."]}
 {"hz":"臂","vi":"cánh tay","hv":"tý","pos_vi":"danh từ","ex":["他的左臂受伤了。","Tā de zuǒ bì shòushāng le.","Cánh tay trái của anh ấy bị thương."]}
-{"hz":"战役","vi":"chiến dịch","hv":"chiến dịch","pos_vi":"danh từ","ex":["这场战役持续了三个月。","Zhè chǎng zhànyì chíxù le sān gè yuè.","Chiến dịch này kéo dài ba tháng."]}
+{"hz":"战役","vi":"chiến dịch","hv":"chiến dịch","pos_vi":"danh từ","ex":["这场战役持续了三个月。","Zhè chǎng zhànyì chíxù le sān ge yuè.","Chiến dịch này kéo dài ba tháng."]}
 {"hz":"债券","vi":"trái phiếu","hv":"trái khoán","pos_vi":"danh từ","ex":["他买了一些国家债券。","Tā mǎi le yìxiē guójiā zhàiquàn.","Anh ấy đã mua một ít trái phiếu chính phủ."]}
 {"hz":"溪","vi":"suối, khe nước","hv":"khê","pos_vi":"danh từ","ex":["山下有一条小溪。","Shān xià yǒu yì tiáo xiǎo xī.","Dưới chân núi có một con suối nhỏ."]}
 {"hz":"无耻","vi":"vô liêm sỉ, trơ trẽn","hv":"vô sỉ","pos_vi":"tính từ","ex":["他说谎还不认错，真无耻。","Tā shuōhuǎng hái bú rèn cuò, zhēn wúchǐ.","Nói dối mà còn không nhận sai, thật trơ trẽn."]}
-{"hz":"奔驰","vi":"(hãng xe) Mercedes-Benz; phi nhanh, lao vun vút","hv":"bôn trì","pos_vi":"danh từ riêng, động từ","ex":["他开着一辆奔驰。","Tā kāizhe yí liàng Bēnchí.","Anh ấy lái một chiếc Mercedes."]}
+{"hz":"奔驰","vi":"phi nhanh, lao vun vút; (Bēnchí) hãng xe Mercedes-Benz","hv":"bôn trì","pos_vi":"danh từ riêng, động từ","ex":["一列火车在田野上奔驰。","Yí liè huǒchē zài tiányě shang bēnchí.","Một đoàn tàu lao vun vút trên cánh đồng."]}
 {"hz":"厌恶","vi":"ghét, chán ghét, ghê tởm","hv":"yếm ố","pos_vi":"động từ","ex":["我厌恶说谎的人。","Wǒ yànwù shuōhuǎng de rén.","Tôi ghét những kẻ nói dối."]}
 {"hz":"大不了","vi":"cùng lắm thì; (thường dùng phủ định) to tát, nghiêm trọng","hv":"đại bất liễu","pos_vi":"phó từ, tính từ","ex":["大不了重新做一遍。","Dàbuliǎo chóngxīn zuò yí biàn.","Cùng lắm thì làm lại một lần."]}
 {"hz":"撤退","vi":"rút lui","hv":"triệt thoái","pos_vi":"động từ","ex":["部队开始撤退了。","Bùduì kāishǐ chètuì le.","Quân đội bắt đầu rút lui."]}
@@ -90,7 +90,7 @@
 {"hz":"苍白","vi":"trắng bệch, nhợt nhạt; yếu ớt, nhạt nhẽo (nghĩa bóng)","hv":"thương bạch","pos_vi":"tính từ","ex":["她的脸色很苍白。","Tā de liǎnsè hěn cāngbái.","Sắc mặt cô ấy rất nhợt nhạt."]}
 {"hz":"荒唐","vi":"hoang đường, vô lý","hv":"hoang đường","pos_vi":"tính từ","ex":["这个想法太荒唐了。","Zhège xiǎngfǎ tài huāngtáng le.","Ý nghĩ này thật vô lý."]}
 {"hz":"侦探","vi":"thám tử; trinh thám, dò la","hv":"trinh thám","pos_vi":"danh từ, động từ","ex":["我喜欢看侦探小说。","Wǒ xǐhuan kàn zhēntàn xiǎoshuō.","Tôi thích đọc tiểu thuyết trinh thám."]}
-{"hz":"正经","vi":"đứng đắn, nghiêm túc; đàng hoàng, chính đáng","hv":"chính kinh","pos_vi":"tính từ","ex":["别开玩笑了，说点正经的。","Bié kāi wánxiào le, shuō diǎn zhèngjīng de.","Đừng đùa nữa, nói chuyện nghiêm túc đi."]}
+{"hz":"正经","vi":"đứng đắn, nghiêm túc; đàng hoàng, chính đáng","hv":"chính kinh","pos_vi":"tính từ","ex":["别开玩笑了，说点正经的。","Bié kāi wánxiào le, shuō diǎn zhèngjing de.","Đừng đùa nữa, nói chuyện nghiêm túc đi."]}
 {"hz":"巷","vi":"ngõ, hẻm","hv":"hạng","pos_vi":"danh từ","ex":["他家住在这条小巷里。","Tā jiā zhù zài zhè tiáo xiǎo xiàng lǐ.","Nhà anh ấy ở trong con hẻm nhỏ này."]}
 {"hz":"棕色","vi":"màu nâu","hv":"tông sắc","pos_vi":"danh từ","ex":["他有一双棕色的眼睛。","Tā yǒu yì shuāng zōngsè de yǎnjing.","Anh ấy có đôi mắt màu nâu."]}
 {"hz":"方位","vi":"phương hướng và vị trí, phương vị","hv":"phương vị","pos_vi":"danh từ","ex":["在山里很容易搞不清方位。","Zài shān lǐ hěn róngyì gǎo bu qīng fāngwèi.","Trong núi rất dễ mất phương hướng."]}

@@ -58,7 +58,7 @@
 {"hz":"赛","vi":"thi đấu, cuộc thi; hơn, sánh bằng","hv":"tái","pos_vi":"động từ, danh từ","ex":["明天下午有一场篮球赛。","Míngtiān xiàwǔ yǒu yì chǎng lánqiúsài.","Chiều mai có một trận bóng rổ."]}
 {"hz":"集","vi":"tập (phim, sách); tụ tập, thu thập; phiên chợ","hv":"tập","pos_vi":"lượng từ, động từ, danh từ","ex":["这部电视剧一共有三十集。","Zhè bù diànshìjù yígòng yǒu sānshí jí.","Bộ phim truyền hình này có tổng cộng ba mươi tập."]}
 {"hz":"权","vi":"quyền, quyền lợi; quyền lực","hv":"quyền","pos_vi":"danh từ","ex":["你没有权这样做。","Nǐ méiyǒu quán zhèyàng zuò.","Bạn không có quyền làm như vậy."]}
-{"hz":"尽","vi":"hết mức, cố hết sức, ưu tiên (jǐn); hết, tận, làm tròn (jìn)","hv":"tận","pos_vi":"phó từ, động từ","ex":["请尽早告诉我结果。","Qǐng jǐnzǎo gàosu wǒ jiéguǒ.","Hãy báo kết quả cho tôi càng sớm càng tốt."]}
+{"hz":"尽","vi":"hết, tận; dùng hết, cố hết sức; làm tròn (trách nhiệm); (đọc jǐn) càng… càng tốt, trong phạm vi tối đa","hv":"tận","pos_vi":"phó từ, động từ","ex":["我已经尽了最大的努力。","Wǒ yǐjīng jìnle zuì dà de nǔlì.","Tôi đã cố gắng hết sức rồi."]}
 {"hz":"利","vi":"lợi, lợi ích; tiền lãi; sắc, bén; (Lì) họ Lợi","hv":"lợi","pos_vi":"danh từ, tính từ","ex":["这件事对大家都有利。","Zhè jiàn shì duì dàjiā dōu yǒu lì.","Việc này có lợi cho tất cả mọi người."]}
 {"hz":"若","vi":"nếu, nếu như (văn viết); giống như","hv":"nhược","pos_vi":"liên từ, động từ","ex":["若有问题，请给我打电话。","Ruò yǒu wèntí, qǐng gěi wǒ dǎ diànhuà.","Nếu có vấn đề gì, xin gọi điện cho tôi."]}
 {"hz":"之类","vi":"các thứ như vậy, đại loại như, vân vân","hv":"chi loại","pos_vi":"đại từ","ex":["我喜欢苹果、香蕉之类的水果。","Wǒ xǐhuan píngguǒ, xiāngjiāo zhīlèi de shuǐguǒ.","Tôi thích các loại quả như táo, chuối."]}
@@ -81,7 +81,7 @@
 {"hz":"部队","vi":"bộ đội, quân đội; đơn vị quân đội","hv":"bộ đội","pos_vi":"danh từ","ex":["他在部队当了五年兵。","Tā zài bùduì dāng le wǔ nián bīng.","Anh ấy đi bộ đội năm năm."]}
 {"hz":"为何","vi":"vì sao, tại sao (văn viết)","hv":"vị hà","pos_vi":"đại từ","ex":["你为何不早点说？","Nǐ wèihé bù zǎo diǎn shuō?","Sao bạn không nói sớm?"]}
 {"hz":"爆","vi":"nổ, nổ tung; bùng nổ; xào nhanh lửa to","hv":"bạo","pos_vi":"động từ","ex":["自行车的轮胎爆了。","Zìxíngchē de lúntāi bào le.","Lốp xe đạp bị nổ rồi."]}
-{"hz":"解","vi":"cởi, tháo, gỡ; giải (bài, vấn đề); hiểu; (Xiè) họ Giải","hv":"giải","pos_vi":"động từ","ex":["这道题我解不出来。","Zhè dào tí wǒ jiě bù chūlái.","Bài này tôi giải không ra."]}
+{"hz":"解","vi":"cởi, tháo, gỡ; giải (bài, vấn đề); hiểu; (Xiè) họ Giải","hv":"giải","pos_vi":"động từ","ex":["这道题我解不出来。","Zhè dào tí wǒ jiě bù chūlai.","Bài này tôi giải không ra."]}
 {"hz":"罪","vi":"tội, tội lỗi; nỗi khổ, sự khổ sở","hv":"tội","pos_vi":"danh từ","ex":["这几天生病，真是受罪。","Zhè jǐ tiān shēngbìng, zhēn shì shòuzuì.","Mấy hôm nay bị ốm, thật là khổ sở."]}
 {"hz":"觉","vi":"giấc ngủ (jiào); (jué) cảm thấy, cảm giác","hv":"giác","pos_vi":"danh từ, động từ","ex":["我太累了，想睡一觉。","Wǒ tài lèi le, xiǎng shuì yí jiào.","Tôi mệt quá, muốn ngủ một giấc."]}
 {"hz":"算是","vi":"coi như là, có thể xem là; rốt cuộc cũng","hv":"toán thị","pos_vi":"động từ, phó từ","ex":["他算是我的半个老师。","Tā suànshì wǒ de bàn ge lǎoshī.","Anh ấy coi như là nửa người thầy của tôi."]}

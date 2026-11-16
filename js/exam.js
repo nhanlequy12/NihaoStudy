@@ -131,7 +131,7 @@
       for (let i = 0; i + 1 < d.length; i++) if (/[？?]$/.test(d[i][1])) qa.push({ q: { zh: d[i][1], vi: d[i][3] }, a: { zh: d[i + 1][1], vi: d[i + 1][3] }, lesson: l.id });
     });
     const readings = (window.READINGS || []).filter((r) => r.level <= level && r.level >= Math.max(1, level - 1));
-    const tokenSentences = lessons.flatMap((l) => l.sentences.filter((s) => s[0].split(" ").length >= 4 && s[0].split(" ").length <= 8).map((s) => ({ tokens: s[0].split(" "), zh: s[0].replace(/ /g, ""), vi: s[2] })));
+    const tokenSentences = lessons.flatMap((l) => l.sentences.filter((s) => s[0].split(" ").length >= 4 && s[0].split(" ").length <= 8).map((s) => ({ tokens: s[0].split(" "), zh: s[0].replace(/ /g, ""), vi: s[2], alts: s[3] || [] })));
     return { level, words, sentences, qa, dialogs, readings, tokenSentences };
   }
 
@@ -268,7 +268,7 @@
     },
     w_order(P, n) {
       const ss = pick(P.tokenSentences, n);
-      return ss.map((s) => ({ kind: "order", stem: "", tokens: shuffle(s.tokens), answer: s.tokens.join(" "), explain: `${s.zh} (${s.vi})` }));
+      return ss.map((s) => ({ kind: "order", stem: "", tokens: shuffle(s.tokens), answer: s.tokens.join(" "), alts: s.alts, explain: `${s.zh} (${s.vi})` }));
     },
     w_char(P, n) {
       const usable = P.words.filter((w) => w.hz.length === 1 && w.ex[0].split(w.hz).length === 2);
@@ -315,7 +315,7 @@
     if (it.user == null || it.user === "") return false;
     if (it.kind === "tf") return it.user === it.answer;
     if (it.kind === "choice" || it.kind === "pool") return it.user === it.answer;
-    if (it.kind === "order") return it.user === it.answer;
+    if (it.kind === "order") return it.user === it.answer || (it.alts || []).includes(it.user);
     if (it.kind === "text") {
       if (it.free) { const u = norm(it.user); return u.includes(it.answer) && u.length >= it.answer.length + 4; }
       return norm(it.user) === it.answer;

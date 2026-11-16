@@ -4,7 +4,7 @@
 {"hz":"长大","vi":"lớn lên, trưởng thành","hv":"trưởng đại","pos_vi":"động từ","ex":["我在河内长大。","Wǒ zài Hénèi zhǎngdà.","Tôi lớn lên ở Hà Nội."]}
 {"hz":"交给","vi":"giao cho, đưa cho","hv":"giao cấp","pos_vi":"động từ","ex":["请把作业交给我。","Qǐng bǎ zuòyè jiāogěi wǒ.","Hãy nộp bài tập cho tôi."]}
 {"hz":"封","vi":"(lượng từ cho thư) bức, lá; niêm phong, phong tỏa","hv":"phong","pos_vi":"lượng từ, động từ","ex":["我给他写了一封信。","Wǒ gěi tā xiě le yì fēng xìn.","Tôi viết cho anh ấy một bức thư."]}
-{"hz":"蛋","vi":"trứng","hv":"đản","pos_vi":"danh từ","ex":["我早上吃了两个蛋。","Wǒ zǎoshang chī le liǎng gè dàn.","Sáng nay tôi ăn hai quả trứng."]}
+{"hz":"蛋","vi":"trứng","hv":"đản","pos_vi":"danh từ","ex":["我早上吃了两个蛋。","Wǒ zǎoshang chī le liǎng ge dàn.","Sáng nay tôi ăn hai quả trứng."]}
 {"hz":"科","vi":"khoa (bệnh viện, cơ quan); môn học, ngành","hv":"khoa","pos_vi":"danh từ","ex":["你要看哪个科？","Nǐ yào kàn nǎge kē?","Bạn muốn khám khoa nào?"]}
 {"hz":"占","vi":"chiếm, chiếm giữ; chiếm (tỉ lệ); (đọc zhān: bói)","hv":"chiếm","pos_vi":"động từ","ex":["女生占一半。","Nǚshēng zhàn yíbàn.","Nữ sinh chiếm một nửa."]}
 {"hz":"词","vi":"từ, từ ngữ; lời (bài hát)","hv":"từ","pos_vi":"danh từ","ex":["这个词是什么意思？","Zhège cí shì shénme yìsi?","Từ này nghĩa là gì?"]}
@@ -13,7 +13,7 @@
 {"hz":"纸","vi":"giấy; (lượng từ) tờ","hv":"chỉ","pos_vi":"danh từ, lượng từ","ex":["给我一张纸。","Gěi wǒ yì zhāng zhǐ.","Cho tôi một tờ giấy."]}
 {"hz":"一生","vi":"cả đời, suốt đời","hv":"nhất sinh","pos_vi":"danh từ","ex":["他一生都在教书。","Tā yìshēng dōu zài jiāoshū.","Cả đời ông ấy dạy học."]}
 {"hz":"急","vi":"vội, gấp; sốt ruột, lo lắng; khẩn cấp","hv":"cấp","pos_vi":"tính từ, động từ","ex":["别急，慢慢说。","Bié jí, mànmàn shuō.","Đừng vội, nói từ từ thôi."]}
-{"hz":"小组","vi":"nhóm, tổ","hv":"tiểu tổ","pos_vi":"danh từ","ex":["我们小组有五个人。","Wǒmen xiǎozǔ yǒu wǔ gè rén.","Nhóm chúng tôi có năm người."]}
+{"hz":"小组","vi":"nhóm, tổ","hv":"tiểu tổ","pos_vi":"danh từ","ex":["我们小组有五个人。","Wǒmen xiǎozǔ yǒu wǔ ge rén.","Nhóm chúng tôi có năm người."]}
 {"hz":"酒店","vi":"khách sạn; quán rượu, nhà hàng","hv":"tửu điếm","pos_vi":"danh từ","ex":["我住在这家酒店。","Wǒ zhù zài zhè jiā jiǔdiàn.","Tôi ở khách sạn này."]}
 {"hz":"接到","vi":"nhận được (thư, điện thoại…)","hv":"tiếp đáo","pos_vi":"động từ","ex":["我接到了他的电话。","Wǒ jiēdào le tā de diànhuà.","Tôi nhận được điện thoại của anh ấy."]}
 {"hz":"大量","vi":"số lượng lớn, rất nhiều","hv":"đại lượng","pos_vi":"tính từ","ex":["他看了大量的书。","Tā kàn le dàliàng de shū.","Anh ấy đã đọc rất nhiều sách."]}
@@ -63,7 +63,7 @@
 {"hz":"接下来","vi":"tiếp theo, kế tiếp","hv":"tiếp hạ lai","pos_vi":"cụm từ","ex":["接下来我们做什么？","Jiēxiàlái wǒmen zuò shénme?","Tiếp theo chúng ta làm gì?"]}
 {"hz":"早餐","vi":"bữa sáng","hv":"tảo xan","pos_vi":"danh từ","ex":["酒店有免费早餐。","Jiǔdiàn yǒu miǎnfèi zǎocān.","Khách sạn có bữa sáng miễn phí."]}
 {"hz":"图片","vi":"hình ảnh, tranh ảnh","hv":"đồ phiến","pos_vi":"danh từ","ex":["这张图片很漂亮。","Zhè zhāng túpiàn hěn piàoliang.","Bức ảnh này rất đẹp."]}
-{"hz":"车辆","vi":"xe cộ, phương tiện giao thông","hv":"xa lượng","pos_vi":"danh từ","ex":["这里不能停车辆。","Zhèlǐ bù néng tíng chēliàng.","Ở đây không được đỗ xe."]}
+{"hz":"车辆","vi":"xe cộ, phương tiện giao thông","hv":"xa lượng","pos_vi":"danh từ","ex":["这里禁止停放车辆。","Zhèlǐ jìnzhǐ tíngfàng chēliàng.","Ở đây cấm đỗ xe."]}
 {"hz":"有意思","vi":"thú vị, hay; có ý nghĩa","hv":"hữu ý tư","pos_vi":"tính từ","ex":["这本书很有意思。","Zhè běn shū hěn yǒu yìsi.","Cuốn sách này rất thú vị."]}
 {"hz":"早晨","vi":"buổi sáng sớm, sáng sớm","hv":"tảo thần","pos_vi":"danh từ","ex":["我早晨六点起床。","Wǒ zǎochén liù diǎn qǐchuáng.","Sáng sớm sáu giờ tôi dậy."]}
 {"hz":"出门","vi":"ra ngoài, ra khỏi nhà; đi xa","hv":"xuất môn","pos_vi":"động từ","ex":["下雨了，别出门了。","Xià yǔ le, bié chūmén le.","Mưa rồi, đừng ra ngoài nữa."]}

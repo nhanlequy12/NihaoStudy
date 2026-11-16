@@ -1,0 +1,19 @@
+/* Luyện tập: Chép chính tả */
+.dc-play { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.dc-big { min-height: 56px; padding: 0 26px; font-size: 1.1rem; border-radius: 999px; gap: 10px; }
+.dc-big .ic { width: 24px; height: 24px; }
+.dc-hint { margin-top: 14px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-height: 28px; }
+.dc-novoice { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: var(--gold-soft); color: var(--gold-text); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.dc-revealed { color: var(--text); font-size: 1.1rem; }
+.dc-input { width: 100%; font-size: 1.15rem; min-height: 48px; }
+.dc-input.zh { font-family: var(--font-zh); font-size: calc(1.3rem * var(--zh-scale)); }
+.dc-cmp { display: grid; gap: 2px; margin: 4px 0 10px; }
+.dc-line { font-size: 1.1rem; line-height: 1.9; margin-bottom: 6px; word-break: break-word; }
+.dc-line.zh { font-size: calc(1.35rem * var(--zh-scale)); letter-spacing: 1px; }
+.dc-u { padding: 1px 3px; border-radius: 5px; }
+.dc-u.ok { color: var(--green); background: var(--green-soft); }
+.dc-u.bad { color: var(--danger); background: var(--danger-soft); text-decoration: line-through; }
+.dc-u.tone { color: var(--gold-text); background: var(--gold-soft); box-shadow: inset 0 -2px 0 var(--gold); }
+.dc-u.miss { color: var(--muted); background: var(--surface-2); }
+.dc-full { font-size: calc(1.3rem * var(--zh-scale)); }
+@media (max-width: 600px) { .dc-big { flex: 1; justify-content: center; } .dc-play .btn { min-height: 48px; } }

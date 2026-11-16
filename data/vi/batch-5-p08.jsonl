@@ -1,8 +1,8 @@
 {"hz":"杜绝","vi":"chấm dứt, ngăn chặn triệt để","hv":"đỗ tuyệt","pos_vi":"động từ","ex":["我们要杜绝浪费。","Wǒmen yào dùjué làngfèi.","Chúng ta phải chấm dứt lãng phí."]}
 {"hz":"检讨","vi":"kiểm điểm, tự phê bình; xem xét lại","hv":"kiểm thảo","pos_vi":"động từ, danh từ","ex":["他向老师写了一份检讨。","Tā xiàng lǎoshī xiě le yí fèn jiǎntǎo.","Cậu ấy viết một bản kiểm điểm gửi thầy giáo."]}
 {"hz":"拟定","vi":"soạn thảo, vạch ra","hv":"nghĩ định","pos_vi":"động từ","ex":["我们已经拟定了新的计划。","Wǒmen yǐjīng nǐdìng le xīn de jìhuà.","Chúng tôi đã vạch ra kế hoạch mới."]}
-{"hz":"派别","vi":"phe phái, trường phái","hv":"phái biệt","pos_vi":"danh từ","ex":["这个党内有好几个派别。","Zhège dǎng nèi yǒu hǎo jǐ gè pàibié.","Trong đảng này có mấy phe phái."]}
-{"hz":"审美","vi":"thẩm mỹ, gu thẩm mỹ; cảm thụ cái đẹp","hv":"thẩm mỹ","pos_vi":"danh từ, động từ","ex":["每个人的审美都不一样。","Měi gè rén de shěnměi dōu bù yíyàng.","Gu thẩm mỹ của mỗi người đều khác nhau."]}
+{"hz":"派别","vi":"phe phái, trường phái","hv":"phái biệt","pos_vi":"danh từ","ex":["这个党内有好几个派别。","Zhège dǎng nèi yǒu hǎo jǐ ge pàibié.","Trong đảng này có mấy phe phái."]}
+{"hz":"审美","vi":"thẩm mỹ, gu thẩm mỹ; cảm thụ cái đẹp","hv":"thẩm mỹ","pos_vi":"danh từ, động từ","ex":["每个人的审美都不一样。","Měi ge rén de shěnměi dōu bù yíyàng.","Gu thẩm mỹ của mỗi người đều khác nhau."]}
 {"hz":"化肥","vi":"phân bón hóa học","hv":"hóa phì","pos_vi":"danh từ","ex":["农民给庄稼施化肥。","Nóngmín gěi zhuāngjia shī huàféi.","Nông dân bón phân hóa học cho cây trồng."]}
 {"hz":"雄厚","vi":"hùng hậu, dồi dào","hv":"hùng hậu","pos_vi":"tính từ","ex":["这家公司资金雄厚。","Zhè jiā gōngsī zījīn xiónghòu.","Công ty này có nguồn vốn hùng hậu."]}
 {"hz":"饱和","vi":"bão hòa","hv":"bão hòa","pos_vi":"động từ, tính từ","ex":["这个市场已经饱和了。","Zhège shìchǎng yǐjīng bǎohé le.","Thị trường này đã bão hòa."]}
@@ -44,7 +44,7 @@
 {"hz":"沉淀","vi":"lắng xuống, kết tủa; chất lắng; tích lũy, đúc kết","hv":"trầm điến","pos_vi":"động từ, danh từ","ex":["水里的泥沙慢慢沉淀了。","Shuǐ lǐ de níshā mànmàn chéndiàn le.","Bùn cát trong nước dần dần lắng xuống."]}
 {"hz":"蕴藏","vi":"tiềm ẩn, chứa đựng (trữ lượng)","hv":"uẩn tàng","pos_vi":"động từ","ex":["这座山里蕴藏着丰富的矿产。","Zhè zuò shān lǐ yùncáng zhe fēngfù de kuàngchǎn.","Ngọn núi này chứa nhiều khoáng sản."]}
 {"hz":"兴高采烈","vi":"hớn hở, vui mừng phấn khởi","hv":"hứng cao thải liệt","pos_vi":"thành ngữ","ex":["孩子们兴高采烈地去春游。","Háizimen xìnggāocǎiliè de qù chūnyóu.","Bọn trẻ hớn hở đi dã ngoại mùa xuân."]}
-{"hz":"凶恶","vi":"hung ác, hung dữ","hv":"hung ác","pos_vi":"tính từ","ex":["那条狗看起来很凶恶。","Nà tiáo gǒu kàn qǐlái hěn xiōng'è.","Con chó đó trông rất hung dữ."]}
+{"hz":"凶恶","vi":"hung ác, hung dữ","hv":"hung ác","pos_vi":"tính từ","ex":["那条狗看起来很凶恶。","Nà tiáo gǒu kàn qǐlai hěn xiōng'è.","Con chó đó trông rất hung dữ."]}
 {"hz":"封建","vi":"phong kiến; cổ hủ","hv":"phong kiến","pos_vi":"danh từ, tính từ","ex":["他的思想太封建了。","Tā de sīxiǎng tài fēngjiàn le.","Tư tưởng của ông ấy quá phong kiến."]}
 {"hz":"深奥","vi":"sâu xa, khó hiểu, uyên thâm","hv":"thâm áo","pos_vi":"tính từ","ex":["这本书的内容太深奥了。","Zhè běn shū de nèiróng tài shēn'ào le.","Nội dung cuốn sách này quá khó hiểu."]}
 {"hz":"出息","vi":"tiền đồ, triển vọng, nên người (đọc chūxi); (chūxī) sinh lời","hv":"xuất tức","pos_vi":"danh từ","ex":["这孩子将来一定有出息。","Zhè háizi jiānglái yídìng yǒu chūxi.","Đứa trẻ này sau này nhất định sẽ thành đạt."]}
@@ -77,12 +77,12 @@
 {"hz":"领事馆","vi":"lãnh sự quán","hv":"lãnh sự quán","pos_vi":"danh từ","ex":["我去领事馆办签证。","Wǒ qù lǐngshìguǎn bàn qiānzhèng.","Tôi đến lãnh sự quán làm thị thực."]}
 {"hz":"猖狂","vi":"điên cuồng, ngang ngược, lộng hành","hv":"xương cuồng","pos_vi":"tính từ","ex":["最近小偷很猖狂。","Zuìjìn xiǎotōu hěn chāngkuáng.","Dạo này trộm cắp rất lộng hành."]}
 {"hz":"哆嗦","vi":"run rẩy, run lẩy bẩy","hv":"đa sách","pos_vi":"động từ","ex":["他冷得直哆嗦。","Tā lěng de zhí duōsuo.","Anh ấy lạnh đến run lẩy bẩy."]}
-{"hz":"振兴","vi":"chấn hưng, phục hưng (Zhènxīng: quận Chấn Hưng, Đan Đông)","hv":"chấn hưng","pos_vi":"động từ","ex":["我们要振兴乡村经济。","Wǒmen yào zhènxīng xiāngcūn jīngjì.","Chúng ta phải chấn hưng kinh tế nông thôn."]}
+{"hz":"振兴","vi":"chấn hưng, phục hưng","hv":"chấn hưng","pos_vi":"động từ","ex":["我们要振兴乡村经济。","Wǒmen yào zhènxīng xiāngcūn jīngjì.","Chúng ta phải chấn hưng kinh tế nông thôn."]}
 {"hz":"壮丽","vi":"tráng lệ, hùng vĩ","hv":"tráng lệ","pos_vi":"tính từ","ex":["长江三峡的风景十分壮丽。","Chángjiāng Sānxiá de fēngjǐng shífēn zhuànglì.","Phong cảnh Tam Hiệp sông Trường Giang vô cùng tráng lệ."]}
 {"hz":"屡次","vi":"nhiều lần, liên tiếp","hv":"lũ thứ","pos_vi":"phó từ","ex":["他屡次迟到，被老板批评了。","Tā lǚcì chídào, bèi lǎobǎn pīpíng le.","Anh ấy nhiều lần đi muộn nên bị sếp phê bình."]}
 {"hz":"魄力","vi":"khí phách, bản lĩnh, sự quyết đoán","hv":"phách lực","pos_vi":"danh từ","ex":["新经理做事很有魄力。","Xīn jīnglǐ zuòshì hěn yǒu pòlì.","Giám đốc mới làm việc rất quyết đoán."]}
 {"hz":"神气","vi":"vẻ mặt, thần sắc; oai vệ, đắc ý; vênh váo","hv":"thần khí","pos_vi":"tính từ, danh từ","ex":["他穿上新衣服，显得很神气。","Tā chuān shàng xīn yīfu, xiǎnde hěn shénqì.","Mặc quần áo mới vào trông cậu ấy rất oai."]}
-{"hz":"供不应求","vi":"cung không đủ cầu","hv":"cung bất ứng cầu","pos_vi":"thành ngữ","ex":["这款手机供不应求。","Zhè kuǎn shǒujī gōngbùyìngqiú.","Mẫu điện thoại này cung không đủ cầu."]}
+{"hz":"供不应求","vi":"cung không đủ cầu","hv":"cung bất ứng cầu","pos_vi":"thành ngữ","ex":["这款手机供不应求。","Zhè kuǎn shǒujī gōngbúyìngqiú.","Mẫu điện thoại này cung không đủ cầu."]}
 {"hz":"元宵节","vi":"Tết Nguyên Tiêu (rằm tháng Giêng)","hv":"nguyên tiêu tiết","pos_vi":"danh từ","ex":["元宵节我们吃汤圆。","Yuánxiāojié wǒmen chī tāngyuán.","Tết Nguyên Tiêu chúng tôi ăn bánh trôi."]}
 {"hz":"饶恕","vi":"tha thứ, khoan thứ","hv":"nhiêu thứ","pos_vi":"động từ","ex":["请饶恕我的过错。","Qǐng ráoshù wǒ de guòcuò.","Xin hãy tha thứ cho lỗi lầm của tôi."]}
 {"hz":"鞭策","vi":"thúc đẩy, khích lệ, động viên","hv":"tiên sách","pos_vi":"động từ","ex":["老师的话一直鞭策着我。","Lǎoshī de huà yìzhí biāncè zhe wǒ.","Lời thầy luôn thúc đẩy tôi tiến lên."]}
@@ -91,7 +91,7 @@
 {"hz":"怠慢","vi":"lạnh nhạt, tiếp đãi không chu đáo; lơ là","hv":"đãi mạn","pos_vi":"động từ","ex":["招待不周，怠慢了。","Zhāodài bù zhōu, dàimàn le.","Tiếp đãi không chu đáo, thật thất lễ quá."]}
 {"hz":"把关","vi":"kiểm soát, kiểm tra kỹ (chất lượng); trấn giữ cửa ải","hv":"bả quan","pos_vi":"động từ","ex":["产品质量由他把关。","Chǎnpǐn zhìliàng yóu tā bǎguān.","Chất lượng sản phẩm do anh ấy kiểm soát."]}
 {"hz":"恍然大悟","vi":"bừng tỉnh, chợt hiểu ra","hv":"hoảng nhiên đại ngộ","pos_vi":"thành ngữ","ex":["听了他的解释，我恍然大悟。","Tīng le tā de jiěshì, wǒ huǎngrándàwù.","Nghe anh ấy giải thích, tôi chợt hiểu ra."]}
-{"hz":"不相上下","vi":"ngang ngửa, không hơn không kém","hv":"bất tương thượng hạ","pos_vi":"thành ngữ","ex":["两个队的水平不相上下。","Liǎng gè duì de shuǐpíng bùxiāngshàngxià.","Trình độ hai đội ngang ngửa nhau."]}
+{"hz":"不相上下","vi":"ngang ngửa, không hơn không kém","hv":"bất tương thượng hạ","pos_vi":"thành ngữ","ex":["两个队的水平不相上下。","Liǎng ge duì de shuǐpíng bùxiāngshàngxià.","Trình độ hai đội ngang ngửa nhau."]}
 {"hz":"辽阔","vi":"bao la, rộng lớn","hv":"liêu khoát","pos_vi":"tính từ","ex":["草原一望无际，非常辽阔。","Cǎoyuán yíwàngwújì, fēicháng liáokuò.","Thảo nguyên mênh mông, vô cùng rộng lớn."]}
 {"hz":"操劳","vi":"lao lực, vất vả lo toan","hv":"thao lao","pos_vi":"động từ","ex":["母亲为这个家操劳了一辈子。","Mǔqīn wèi zhège jiā cāoláo le yíbèizi.","Mẹ vất vả lo toan cho gia đình này cả đời."]}
 {"hz":"不像话","vi":"quá đáng, chẳng ra sao, không thể chấp nhận","hv":"bất tượng thoại","pos_vi":"tính từ","ex":["你这样做太不像话了！","Nǐ zhèyàng zuò tài bú xiànghuà le!","Bạn làm như vậy thật quá đáng!"]}

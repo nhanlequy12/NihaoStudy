@@ -243,7 +243,7 @@
    },
    {
     "pattern": "不要 + Động từ",
-    "vi": "不要 = đừng, dùng để khuyên hoặc cấm. Đứng trước động từ, có thể thêm 了 ở cuối câu cho nhẹ nhàng hơn.",
+    "vi": "不要 = đừng, dùng để khuyên hoặc cấm. Đứng trước động từ. Thêm 了 ở cuối câu (不要说了) thì nghĩa là 'đừng … nữa', bảo người khác thôi làm việc đang làm.",
     "ex": [
      "上课的时候不要说话。",
      "Shàngkè de shíhou búyào shuōhuà.",
@@ -340,17 +340,26 @@
    [
     "他 今天 没有 上学",
     "Tā jīntiān méiyǒu shàngxué.",
-    "Hôm nay cậu ấy không đi học."
+    "Hôm nay cậu ấy không đi học.",
+    [
+     "今天 他 没有 上学"
+    ]
    ],
    [
     "我们 八 点 上课",
     "Wǒmen bā diǎn shàngkè.",
-    "Chúng tôi vào học lúc tám giờ."
+    "Chúng tôi vào học lúc tám giờ.",
+    [
+     "八 点 我们 上课"
+    ]
    ],
    [
     "下课 后 我 回 家",
     "Xiàkè hòu wǒ huí jiā.",
-    "Tan học xong tôi về nhà."
+    "Tan học xong tôi về nhà.",
+    [
+     "我 下课 后 回 家"
+    ]
    ],
    [
     "不要 在 这里 睡",
@@ -370,7 +379,10 @@
    [
     "明年 我 哥哥 上 大学",
     "Míngnián wǒ gēge shàng dàxué.",
-    "Sang năm anh tôi vào đại học."
+    "Sang năm anh tôi vào đại học.",
+    [
+     "我 哥哥 明年 上 大学"
+    ]
    ]
   ],
   "tips": "Hán Việt giúp nhớ nhanh: 大学 = đại học, 中学 = trung học, 小学 = tiểu học, 汉字 = Hán tự, 读书 = độc thư (đọc sách, đi học). 上学/上课 (thượng học, thượng khóa) = đi học/vào lớp; 下课/下班 (hạ khóa, hạ ban) = tan học/tan làm: 上 = bắt đầu, 下 = kết thúc. Người Việt hay nói 我不去学校昨天 theo kiểu 'hôm qua tôi không đi học' — sai hai chỗ: thời gian đặt trước động từ, và việc đã qua dùng 没: 我昨天没去学校."
@@ -422,9 +434,9 @@
     "pattern": "好 + Động từ → Tính từ",
     "vi": "好 ghép trước động từ tạo tính từ 'dễ/hay': 好看 (đẹp, hay để xem), 好听 (hay, êm tai), 好吃 (ngon), 好玩儿 (vui). Ngược lại dùng 不 + 好看.",
     "ex": [
-     "这个歌很好听，那个电影不好看。",
-     "Zhège gē hěn hǎotīng, nàge diànyǐng bù hǎokàn.",
-     "Bài hát này rất hay, bộ phim kia không hay."
+     "他唱的歌很好听，那个电影不好看。",
+     "Tā chàng de gē hěn hǎotīng, nàge diànyǐng bù hǎokàn.",
+     "Anh ấy hát rất hay, bộ phim kia không hay."
     ]
    },
    {
@@ -503,9 +515,9 @@
     "Bạn gái tôi thích hát."
    ],
    [
-    "这 个 歌 很 好听",
-    "Zhège gē hěn hǎotīng.",
-    "Bài hát này rất hay."
+    "他 唱 的 歌 很 好听",
+    "Tā chàng de gē hěn hǎotīng.",
+    "Anh ấy hát rất hay."
    ],
    [
     "我们 在 饭店 吃 午饭",
@@ -535,7 +547,10 @@
    [
     "男 学生 和 女 学生 都 来 了",
     "Nán xuésheng hé nǚ xuésheng dōu lái le.",
-    "Học sinh nam và học sinh nữ đều đến rồi."
+    "Học sinh nam và học sinh nữ đều đến rồi.",
+    [
+     "女 学生 和 男 学生 都 来 了"
+    ]
    ]
   ],
   "tips": "Hán Việt: 电话 = điện thoại, 电影院 = điện ảnh viện, 饭店 = phạn điếm (ngoài nghĩa 'nhà hàng' còn có thể là khách sạn lớn), 火车 = hỏa xa, 家人 = gia nhân (người nhà, KHÔNG phải 'người giúp việc' như tiếng Việt). 看病 có hai nghĩa: bệnh nhân đi khám, hoặc bác sĩ khám bệnh. Chú ý thanh điệu: 男 (nán, thanh 2) và 女 (nǚ, thanh 3, có ü). Người Việt hay đọc 饭 (fàn) thành 'phan' thanh ngang, hãy hạ giọng mạnh ở thanh 4."
@@ -650,9 +665,9 @@
    ],
    [
     "A",
-    "你别动，我从外面打开。好了，进来吧。",
-    "Nǐ bié dòng, wǒ cóng wàimiàn dǎkāi. Hǎo le, jìnlai ba.",
-    "Mẹ đừng động vào, con mở từ bên ngoài. Được rồi, mẹ vào đi."
+    "你别动，我来打开。好了，进来吧。",
+    "Nǐ bié dòng, wǒ lái dǎkāi. Hǎo le, jìnlai ba.",
+    "Mẹ đừng động vào, để con mở. Được rồi, mẹ vào đi."
    ],
    [
     "B",
@@ -668,9 +683,9 @@
    ],
    [
     "B",
-    "到了门口打电话。右边有车。下午早点儿回来。",
+    "到了门口打电话。右边有车，小心！下午早点儿回来。",
     "Dàole ménkǒu dǎ diànhuà. Yòubian yǒu chē, xiǎoxīn! Xiàwǔ zǎo diǎnr huílai.",
-    "Đến cổng thì gọi điện. Bên phải có xe. Chiều về sớm nhé."
+    "Đến cổng thì gọi điện. Bên phải có xe, cẩn thận nhé! Chiều về sớm nhé."
    ]
   ],
   "sentences": [
@@ -712,7 +727,10 @@
    [
     "别 跑 下去 前面 有 车",
     "Bié pǎo xiàqu, qiánmiàn yǒu chē.",
-    "Đừng chạy xuống, phía trước có xe."
+    "Đừng chạy xuống, phía trước có xe.",
+    [
+     "前面 有 车 别 跑 下去"
+    ]
    ]
   ],
   "tips": "Mẹo nhớ: 来 = 'lại' (về phía mình), 去 = 'khứ' (đi xa mình) — đúng nghĩa Hán Việt 'lai' và 'khứ'. Người Việt hay nói 我进去房间 — sai; phải là 我进房间去 hoặc 我进去. 门口 = môn khẩu (cửa ra vào, cổng), 出门 = xuất môn (ra khỏi nhà). 面 (diện) trong 上面, 里面 thường đọc nhẹ: shàngmian, lǐmian. 忘 (vong) như trong 'vong ân', thường dùng 忘了."
@@ -814,8 +832,8 @@
    ],
    [
     "A",
-    "看电影的门票呢？",
-    "Kàn diànyǐng de ménpiào ne?",
+    "电影票呢？",
+    "Diànyǐngpiào ne?",
     "Còn vé xem phim?"
    ],
    [
@@ -832,9 +850,9 @@
    ],
    [
     "B",
-    "前面有个药店，我们去买点儿药。你别这样累了。",
-    "Qiánmiàn yǒu ge yàodiàn, wǒmen qù mǎi diǎnr yào. Nǐ bié zhèyàng lèi le.",
-    "Phía trước có hiệu thuốc, mình đi mua ít thuốc. Bạn đừng làm mệt mình như thế nữa."
+    "前面有个药店，我们去买点儿药。你别太累了。",
+    "Qiánmiàn yǒu ge yàodiàn, wǒmen qù mǎi diǎnr yào. Nǐ bié tài lèi le.",
+    "Phía trước có hiệu thuốc, mình đi mua ít thuốc. Bạn đừng để mình mệt quá."
    ],
    [
     "A",
@@ -878,7 +896,10 @@
    [
     "他 有时 喝 红茶",
     "Tā yǒushí hē hóngchá.",
-    "Anh ấy thỉnh thoảng uống hồng trà."
+    "Anh ấy thỉnh thoảng uống hồng trà.",
+    [
+     "有时 他 喝 红茶"
+    ]
    ],
    [
     "奶茶 怎么 这么 贵",
@@ -888,7 +909,10 @@
    [
     "我们 那 时 不 认识",
     "Wǒmen nà shí bú rènshi.",
-    "Hồi đó chúng tôi chưa quen nhau."
+    "Hồi đó chúng tôi chưa quen nhau.",
+    [
+     "那 时 我们 不 认识"
+    ]
    ]
   ],
   "tips": "Hán Việt: 外国 = ngoại quốc, 出国 = xuất quốc, 商场 = thương trường (ở đây là trung tâm thương mại, không phải 'thương trường' cạnh tranh), 药店 = dược điếm, 酒店 = tửu điếm (khách sạn, không phải quán rượu!). 门票 (môn phiếu) là vé vào cửa, 机票 (cơ phiếu) là vé máy bay. 打车 = gọi taxi (kể cả qua ứng dụng). Trà xanh 绿茶 (lǜchá) — chú ý âm ü, đừng đọc thành lùchá. 周 (chu) = tuần, 下周 = tuần sau, giống 下星期."
@@ -1015,8 +1039,8 @@
    ],
    [
     "B",
-    "是我哥哥。他从小喜欢足球，我喜欢打篮球，也喜欢游。",
-    "Shì wǒ gēge. Tā cóngxiǎo xǐhuan zúqiú, wǒ xǐhuan dǎ lánqiú, yě xǐhuan yóu.",
+    "是我哥哥。他从小喜欢足球，我喜欢打篮球，也喜欢游泳。",
+    "Shì wǒ gēge. Tā cóngxiǎo xǐhuan zúqiú, wǒ xǐhuan dǎ lánqiú, yě xǐhuan yóuyǒng.",
     "Là anh mình. Anh ấy thích bóng đá từ nhỏ, mình thích bóng rổ, cũng thích bơi."
    ],
    [
@@ -1036,7 +1060,10 @@
    [
     "我 从小 就 喜欢 打 篮球",
     "Wǒ cóngxiǎo jiù xǐhuan dǎ lánqiú.",
-    "Tôi thích chơi bóng rổ từ nhỏ."
+    "Tôi thích chơi bóng rổ từ nhỏ.",
+    [
+     "从小 我 就 喜欢 打 篮球"
+    ]
    ],
    [
     "他 的 书包 是 黑色 的",
@@ -1061,7 +1088,10 @@
    [
     "小时候 我 很 喜欢 绿色",
     "Xiǎoshíhou wǒ hěn xǐhuan lǜsè.",
-    "Hồi nhỏ tôi rất thích màu xanh lá."
+    "Hồi nhỏ tôi rất thích màu xanh lá.",
+    [
+     "我 小时候 很 喜欢 绿色"
+    ]
    ],
    [
     "我们 去 踢 足球 吧",
@@ -1232,22 +1262,34 @@
    [
     "春天 到 了 花 都 开 了",
     "Chūntiān dào le, huā dōu kāi le.",
-    "Mùa xuân đến rồi, hoa đều nở cả rồi."
+    "Mùa xuân đến rồi, hoa đều nở cả rồi.",
+    [
+     "花 都 开 了 春天 到 了"
+    ]
    ],
    [
     "我 直到 后天 才 放假",
     "Wǒ zhídào hòutiān cái fàngjià.",
-    "Phải đến ngày kia tôi mới được nghỉ."
+    "Phải đến ngày kia tôi mới được nghỉ.",
+    [
+     "直到 后天 我 才 放假"
+    ]
    ],
    [
     "新年 的 时候 大家 都 过节",
     "Xīnnián de shíhou dàjiā dōu guòjié.",
-    "Dịp năm mới mọi người đều ăn tết."
+    "Dịp năm mới mọi người đều ăn tết.",
+    [
+     "大家 新年 的 时候 都 过节"
+    ]
    ],
    [
     "下雨 了 别 忘 了 带 雨衣",
     "Xià yǔ le, bié wàng le dài yǔyī.",
-    "Trời mưa rồi, đừng quên mang áo mưa."
+    "Trời mưa rồi, đừng quên mang áo mưa.",
+    [
+     "别 忘 了 带 雨衣 下雨 了"
+    ]
    ],
    [
     "我们 好久 没 见面 了",
@@ -1338,9 +1380,9 @@
    ],
    [
     "B",
-    "你是外地来的游客吧？动物园在市的东南边。",
-    "Nǐ shì wàidì lái de yóukè ba? Dòngwùyuán zài shì de dōngnán biān.",
-    "Bạn là khách du lịch từ nơi khác đến à? Sở thú ở phía đông nam thành phố."
+    "你是外地来的游客吧？动物园在我们市的东南边。",
+    "Nǐ shì wàidì lái de yóukè ba? Dòngwùyuán zài wǒmen shì de dōngnán biān.",
+    "Bạn là khách du lịch từ nơi khác đến à? Sở thú ở phía đông nam thành phố chúng tôi."
    ],
    [
     "A",
@@ -1382,14 +1424,17 @@
     "A",
     "是，我坐高铁来的。高铁晚点了，检票的人也很多。",
     "Shì, wǒ zuò gāotiě lái de. Gāotiě wǎndiǎn le, jiǎnpiào de rén yě hěn duō.",
-    "Vâng, tôi đi tàu cao tốc. Tàu bị trễ, người soát vé cũng rất đông."
+    "Vâng, tôi đi tàu cao tốc. Tàu bị trễ, chỗ soát vé cũng rất đông người."
    ]
   ],
   "sentences": [
    [
     "我 下 个 月 要 搬家",
     "Wǒ xià ge yuè yào bānjiā.",
-    "Tháng sau tôi phải chuyển nhà."
+    "Tháng sau tôi phải chuyển nhà.",
+    [
+     "下 个 月 我 要 搬家"
+    ]
    ],
    [
     "新 房子 在 五 楼 要 走 楼梯",
@@ -1419,7 +1464,10 @@
    [
     "东方 人 和 西方 人 的 习惯 不 一样",
     "Dōngfāng rén hé xīfāng rén de xíguàn bù yíyàng.",
-    "Thói quen của người phương Đông và người phương Tây không giống nhau."
+    "Thói quen của người phương Đông và người phương Tây không giống nhau.",
+    [
+     "西方 人 和 东方 人 的 习惯 不 一样"
+    ]
    ],
    [
     "他 是 从 西北 来 的",
@@ -1552,7 +1600,7 @@
     "A",
     "今天的课文有一句我不懂，这真是个难题。",
     "Jīntiān de kèwén yǒu yí jù wǒ bù dǒng, zhè zhēn shì ge nántí.",
-    "Bài khoá hôm nay có một câu mình không hiểu, đúng là một câu đố khó."
+    "Bài khoá hôm nay có một câu mình không hiểu, đúng là một vấn đề khó."
    ],
    [
     "B",
@@ -1604,9 +1652,9 @@
     "Học ngoại ngữ phải biết phương pháp."
    ],
    [
-    "他 在 教室 里 写 本子",
-    "Tā zài jiàoshì li xiě běnzi.",
-    "Cậu ấy đang viết vở trong lớp học."
+    "他 在 教室 里 写 作业",
+    "Tā zài jiàoshì li xiě zuòyè.",
+    "Cậu ấy đang làm bài tập trong lớp học."
    ]
   ],
   "tips": "Hán Việt: 校园 = hiệu viên (sân trường), 班级 = ban cấp (lớp), 课文 = khoá văn (bài khoá), 留学生 = lưu học sinh (du học sinh), 画家 = hoạ gia, 喜爱 = hỷ ái. 初中 = cấp hai (sơ trung), 高中 = cấp ba. 室 (thất) là phòng: 教室, 办公室. 认得 = nhận ra/biết mặt chữ, người; 懂得 = hiểu (đạo lý, cách làm). Lỗi hay gặp: người Việt nói 'trên 60 điểm' nên viết 以上六十分; đúng là 六十分以上 — 以上/以下 luôn đứng SAU con số."
@@ -1758,7 +1806,10 @@
    [
     "我 一边 吃 冰激凌 一边 聊天儿",
     "Wǒ yìbiān chī bīngjīlíng yìbiān liáotiānr.",
-    "Tôi vừa ăn kem vừa tán gẫu."
+    "Tôi vừa ăn kem vừa tán gẫu.",
+    [
+     "我 一边 聊天儿 一边 吃 冰激凌"
+    ]
    ],
    [
     "请 你 小 声 一点儿",
@@ -1891,8 +1942,8 @@
    ],
    [
     "A",
-    "我明白。老人和病人最需要家人关注，大人也常常很急。",
-    "Wǒ míngbai. Lǎorén hé bìngrén zuì xūyào jiārén guānzhù, dàrén yě chángcháng hěn jí.",
+    "我明白。老人和病人最需要家人的关注，大人也常常很急。",
+    "Wǒ míngbai. Lǎorén hé bìngrén zuì xūyào jiārén de guānzhù, dàrén yě chángcháng hěn jí.",
     "Tôi hiểu. Người già và người bệnh cần người nhà quan tâm nhất, người lớn cũng thường rất sốt ruột."
    ],
    [
@@ -2023,9 +2074,9 @@
     "pattern": "如果 … 的话，(就) …",
     "vi": "'Nếu… thì…'. Có thể bỏ 如果 và chỉ giữ 的话 ở cuối vế điều kiện.",
     "ex": [
-     "如果手机没电的话，就不能扫了。",
-     "Rúguǒ shǒujī méi diàn dehuà, jiù bù néng sǎo le.",
-     "Nếu điện thoại hết pin thì không quét được nữa."
+     "如果手机没电的话，就不能扫码了。",
+     "Rúguǒ shǒujī méi diàn dehuà, jiù bù néng sǎomǎ le.",
+     "Nếu điện thoại hết pin thì không quét mã được nữa."
     ]
    },
    {
@@ -2083,9 +2134,9 @@
    ],
    [
     "A",
-    "不用急，我们的服务员可以帮您，您只能先关机等一下。",
-    "Búyòng jí, wǒmen de fúwùyuán kěyǐ bāng nín, nín zhǐ néng xiān guānjī děng yíxià.",
-    "Không cần vội, nhân viên phục vụ của chúng tôi có thể giúp anh, anh chỉ cần tắt máy đợi một chút."
+    "不用急，我们的工作人员可以帮您，您先关机等一下吧。",
+    "Búyòng jí, wǒmen de gōngzuò rényuán kěyǐ bāng nín, nín xiān guānjī děng yíxià ba.",
+    "Không cần vội, nhân viên của chúng tôi có thể giúp anh, anh tắt máy đợi một chút nhé."
    ],
    [
     "B",
@@ -2116,27 +2167,42 @@
    [
     "上课 了 大家 该 关机 了",
     "Shàngkè le, dàjiā gāi guānjī le.",
-    "Vào học rồi, mọi người nên tắt máy."
+    "Vào học rồi, mọi người nên tắt máy.",
+    [
+     "大家 该 关机 了 上课 了"
+    ]
    ],
    [
     "他 不 看 纸 书 只 看 电子书",
     "Tā bú kàn zhǐ shū, zhǐ kàn diànzǐshū.",
-    "Anh ấy không đọc sách giấy, chỉ đọc sách điện tử."
+    "Anh ấy không đọc sách giấy, chỉ đọc sách điện tử.",
+    [
+     "他 只 看 电子书 不 看 纸 书"
+    ]
    ],
    [
     "我 每 天 都 查 一下 邮箱",
     "Wǒ měi tiān dōu chá yíxià yóuxiāng.",
-    "Ngày nào tôi cũng kiểm tra hộp thư."
+    "Ngày nào tôi cũng kiểm tra hộp thư.",
+    [
+     "每 天 我 都 查 一下 邮箱"
+    ]
    ],
    [
     "苹果 多少 钱 一 斤",
     "Píngguǒ duōshao qián yì jīn?",
-    "Táo bao nhiêu tiền một cân?"
+    "Táo bao nhiêu tiền một cân?",
+    [
+     "苹果 一 斤 多少 钱"
+    ]
    ],
    [
     "坐 地铁 的 时候 我 用 耳机 听 歌",
     "Zuò dìtiě de shíhou wǒ yòng ěrjī tīng gē.",
-    "Khi đi tàu điện ngầm tôi dùng tai nghe nghe nhạc."
+    "Khi đi tàu điện ngầm tôi dùng tai nghe nghe nhạc.",
+    [
+     "我 坐 地铁 的 时候 用 耳机 听 歌"
+    ]
    ],
    [
     "这 两 张 卡 有 什么 不同",
@@ -2234,7 +2300,7 @@
    },
    {
     "pattern": "A 叫作 B",
-    "vi": "'A được gọi là B', dùng để giới thiệu tên gọi của sự vật hay khái niệm (khác 叫 dùng cho tên người).",
+    "vi": "'A được gọi là B', dùng để giới thiệu tên gọi của sự vật hay khái niệm; trang trọng hơn 叫, hay gặp trong văn viết, sách giáo khoa.",
     "ex": [
      "中国的大学入学考试叫作“高考”。",
      "Zhōngguó de dàxué rùxué kǎoshì jiàozuò “gāokǎo”.",
@@ -2302,7 +2368,10 @@
    [
     "老师 上课 以前 先 点名",
     "Lǎoshī shàngkè yǐqián xiān diǎnmíng.",
-    "Trước khi vào học thầy giáo điểm danh."
+    "Trước khi vào học thầy giáo điểm danh.",
+    [
+     "上课 以前 老师 先 点名"
+    ]
    ],
    [
     "这 本 杂志 的 读者 主要 是 大学生",
@@ -2446,7 +2515,7 @@
    [
     "A",
     "可是办公室的打印机坏了，表打不出来。",
-    "Kěshì bàngōngshì de dǎyìnjī huài le, biǎo dǎ bu chūlái.",
+    "Kěshì bàngōngshì de dǎyìnjī huài le, biǎo dǎ bu chūlai.",
     "Nhưng máy in văn phòng hỏng rồi, không in tờ khai ra được."
    ],
    [
@@ -2489,7 +2558,10 @@
    [
     "他 明天 上午 有 一 个 面试",
     "Tā míngtiān shàngwǔ yǒu yí ge miànshì.",
-    "Sáng mai anh ấy có một buổi phỏng vấn."
+    "Sáng mai anh ấy có một buổi phỏng vấn.",
+    [
+     "明天 上午 他 有 一 个 面试"
+    ]
    ],
    [
     "办 签证 要 带 身份证 和 护照",
@@ -2645,21 +2717,27 @@
    ],
    [
     "A",
-    "要，用手机支付。",
-    "Yào, yòng shǒujī zhīfù.",
-    "Lấy, tôi thanh toán bằng điện thoại."
+    "不要了，我回家在网上看看。",
+    "Bú yào le, wǒ huí jiā zài wǎngshang kànkan.",
+    "Thôi không lấy nữa, tôi về nhà xem trên mạng."
    ]
   ],
   "sentences": [
    [
     "这 个 房子 出租 房租 一 个 月 三千 块",
     "Zhège fángzi chūzū, fángzū yí ge yuè sānqiān kuài.",
-    "Căn nhà này cho thuê, tiền thuê ba nghìn tệ một tháng."
+    "Căn nhà này cho thuê, tiền thuê ba nghìn tệ một tháng.",
+    [
+     "这 个 房子 出租 一 个 月 房租 三千 块"
+    ]
    ],
    [
     "这 学期 的 学费 我 已经 交 了",
     "Zhè xuéqī de xuéfèi wǒ yǐjīng jiāo le.",
-    "Học phí kỳ này tôi đã nộp rồi."
+    "Học phí kỳ này tôi đã nộp rồi.",
+    [
+     "我 已经 交 了 这 学期 的 学费"
+    ]
    ],
    [
     "这 家 店 送 货 上门 不 收费",
@@ -2669,7 +2747,10 @@
    [
     "这 种 苹果 十 块 钱 一 千克",
     "Zhè zhǒng píngguǒ shí kuài qián yì qiānkè.",
-    "Loại táo này mười tệ một cân (kg)."
+    "Loại táo này mười tệ một cân (kg).",
+    [
+     "这 种 苹果 一 千克 十 块 钱"
+    ]
    ],
    [
     "这 种 笔 太 粗 了 我 要 细 一点儿 的",
@@ -2677,9 +2758,9 @@
     "Loại bút này nét to quá, tôi muốn cái nhỏ nét hơn."
    ],
    [
-    "买 以前 要 先 看 说明书",
-    "Mǎi yǐqián yào xiān kàn shuōmíngshū.",
-    "Trước khi mua phải đọc sách hướng dẫn trước."
+    "用 以前 要 先 看 说明书",
+    "Yòng yǐqián yào xiān kàn shuōmíngshū.",
+    "Trước khi dùng phải đọc sách hướng dẫn trước."
    ],
    [
     "很 多 年轻 人 喜欢 在 网上 购买 衣服",
@@ -2814,9 +2895,9 @@
    ],
    [
     "B",
-    "我们下车换乘地铁吧？公共交通不会堵车。",
-    "Wǒmen xià chē huànchéng dìtiě ba? Gōnggòng jiāotōng bú huì dǔchē.",
-    "Mình xuống xe chuyển sang tàu điện ngầm nhé? Giao thông công cộng không bị tắc đường."
+    "我们下车换乘地铁吧？地铁不会堵车。",
+    "Wǒmen xià chē huànchéng dìtiě ba? Dìtiě bú huì dǔchē.",
+    "Mình xuống xe chuyển sang tàu điện ngầm nhé? Tàu điện ngầm không bị tắc đường."
    ],
    [
     "A",
@@ -2829,7 +2910,10 @@
    [
     "我 每 天 骑 电动车 上班",
     "Wǒ měi tiān qí diàndòngchē shàngbān.",
-    "Hằng ngày tôi đi xe điện đi làm."
+    "Hằng ngày tôi đi xe điện đi làm.",
+    [
+     "每 天 我 骑 电动车 上班"
+    ]
    ],
    [
     "停车场 里 已经 没有 车位 了",
@@ -2844,7 +2928,10 @@
    [
     "我们 路过 商店 的 时候 停车 买 了 水",
     "Wǒmen lùguò shāngdiàn de shíhou tíngchē mǎi le shuǐ.",
-    "Lúc đi ngang qua cửa hàng, chúng tôi dừng xe mua nước."
+    "Lúc đi ngang qua cửa hàng, chúng tôi dừng xe mua nước.",
+    [
+     "路过 商店 的 时候 我们 停车 买 了 水"
+    ]
    ],
    [
     "这 列 动车 一 个 小时 跑 三百 公里",
@@ -2922,14 +3009,14 @@
     "pattern": "尽管 A，但是/可是 B",
     "vi": "'Mặc dù A nhưng B'. A là sự thật; B trái với điều người ta mong đợi.",
     "ex": [
-     "尽管是节假日，景区里的人却不太多。",
-     "Jǐnguǎn shì jiéjiàrì, jǐngqū lǐ de rén què bú tài duō.",
+     "尽管是节假日，但是景区里的人不太多。",
+     "Jǐnguǎn shì jiéjiàrì, dànshì jǐngqū lǐ de rén bú tài duō.",
      "Mặc dù là ngày lễ nhưng trong khu du lịch không đông lắm."
     ]
    },
    {
     "pattern": "V + 了 + thời lượng (+ 了)",
-    "vi": "Thời lượng đứng SAU động từ (khác tiếng Việt có thể nói 'ba ngày ở'). Thêm 了 cuối câu nghĩa là việc vẫn đang tiếp diễn.",
+    "vi": "Thời lượng đứng SAU động từ, giống tiếng Việt 'ở ba ngày' (待了三天), không đặt trước động từ. Thêm 了 cuối câu nghĩa là việc vẫn đang tiếp diễn.",
     "ex": [
      "我们在那个小村待了三天。",
      "Wǒmen zài nàge xiǎo cūn dāi le sān tiān.",
@@ -2976,9 +3063,9 @@
    ],
    [
     "A",
-    "一个人外出要小心，背包一定要放在眼前。",
-    "Yí ge rén wàichū yào xiǎoxīn, bēibāo yídìng yào fàng zài yǎnqián.",
-    "Đi xa một mình phải cẩn thận, ba lô nhất định để trước mắt."
+    "一个人外出要小心，背包一定要背在前面。",
+    "Yí ge rén wàichū yào xiǎoxīn, bēibāo yídìng yào bēi zài qiánmiàn.",
+    "Đi xa một mình phải cẩn thận, ba lô nhất định phải đeo ra phía trước."
    ],
    [
     "B",
@@ -3017,7 +3104,10 @@
    [
     "他 每 个 假日 都 外出 游玩",
     "Tā měi ge jiàrì dōu wàichū yóuwán.",
-    "Ngày nghỉ nào anh ấy cũng ra ngoài đi chơi."
+    "Ngày nghỉ nào anh ấy cũng ra ngoài đi chơi.",
+    [
+     "每 个 假日 他 都 外出 游玩"
+    ]
    ],
    [
     "眼前 的 美景 让 我 不 想 走",
@@ -3130,9 +3220,9 @@
    ],
    [
     "A",
-    "好主意。我们也可以点几道南方的中餐，那里的鱼很鲜。",
-    "Hǎo zhǔyi. Wǒmen yě kěyǐ diǎn jǐ dào nánfāng de zhōngcān, nàlǐ de yú hěn xiān.",
-    "Ý hay. Mình cũng có thể gọi vài món Trung kiểu miền Nam, cá ở đó tươi lắm."
+    "好主意。我们也可以点几道南方菜，那家店的鱼很鲜。",
+    "Hǎo zhǔyi. Wǒmen yě kěyǐ diǎn jǐ dào nánfāng cài, nà jiā diàn de yú hěn xiān.",
+    "Ý hay. Mình cũng có thể gọi vài món miền Nam, cá của quán đó tươi lắm."
    ],
    [
     "B",
@@ -3169,7 +3259,12 @@
    [
     "我 早餐 一般 吃 面包 喝 酸奶",
     "Wǒ zǎocān yìbān chī miànbāo hē suānnǎi.",
-    "Bữa sáng tôi thường ăn bánh mì, uống sữa chua."
+    "Bữa sáng tôi thường ăn bánh mì, uống sữa chua.",
+    [
+     "早餐 我 一般 吃 面包 喝 酸奶",
+     "我 早餐 一般 喝 酸奶 吃 面包",
+     "早餐 我 一般 喝 酸奶 吃 面包"
+    ]
    ],
    [
     "上班 的 人 午餐 常常 吃 快餐",
@@ -3318,7 +3413,7 @@
    [
     "A",
     "秋天的时候，叶子一片一片地落下来，特别美。",
-    "Qiūtiān de shíhou, yèzi yí piàn yí piàn de luò xiàlái, tèbié měi.",
+    "Qiūtiān de shíhou, yèzi yí piàn yí piàn de luò xiàlai, tèbié měi.",
     "Mùa thu lá rơi từng chiếc một, đẹp lắm."
    ],
    [
@@ -3431,7 +3526,7 @@
    },
    {
     "pattern": "减 + con số  /  减轻 + gánh nặng",
-    "vi": "减 (giảm) đi với con số cụ thể: 减了三公斤. 减轻 (giảm nhẹ) đi với những thứ 'đè nặng' như 压力, 头痛, 体重: 减轻压力. Không nói 减轻三公斤.",
+    "vi": "减 (giảm) đi với con số cụ thể: 减了三公斤. 减轻 (giảm nhẹ) đi với những thứ 'đè nặng' như 压力, 头痛, 体重: 减轻压力. Khi chủ ngữ là 体重 thì vẫn nói được kèm con số: 体重减轻了三公斤.",
     "ex": [
      "健身两个月以后，他的体重减了五公斤。",
      "Jiànshēn liǎng ge yuè yǐhòu, tā de tǐzhòng jiǎn le wǔ gōngjīn.",
@@ -3456,7 +3551,7 @@
     "A",
     "我先给你量一下体温。体温有点儿高，你发烧了。",
     "Wǒ xiān gěi nǐ liáng yíxià tǐwēn. Tǐwēn yǒudiǎnr gāo, nǐ fāshāo le.",
-    "Để tôi đo nhiệt độ cho bạn trước. Nhiệt độ hơi cao, bạn bị sốt rồi."
+    "Để tôi đo nhiệt độ cho anh trước. Nhiệt độ hơi cao, anh bị sốt rồi."
    ],
    [
     "B",
@@ -3525,7 +3620,10 @@
    [
     "那边 好像 着火 了",
     "Nàbiān hǎoxiàng zháohuǒ le.",
-    "Bên kia hình như bị cháy rồi."
+    "Bên kia hình như bị cháy rồi.",
+    [
+     "好像 那边 着火 了"
+    ]
    ],
    [
     "他 换 了 一 身 新 衣服",
@@ -3543,7 +3641,7 @@
     "Bạn đo nhiệt độ trước đã nhé."
    ]
   ],
-  "tips": "Hán Việt giúp nhớ nhanh: 体重 thể trọng, 体温 thể ôn, 体检 thể kiểm (khám thể chất), 健身 kiện thân, 远离 viễn ly, 有效 hữu hiệu, 卫生 vệ sinh, 加强 gia cường, 全身 toàn thân. Chú ý 量 có hai cách đọc: liáng là động từ 'đo' (量体温), liàng là danh từ 'lượng' (大量). 着火 đọc zháohuǒ, không đọc zhe. 空 đọc kōng khi là 'trống, rỗng' (空气), nhưng đọc kòng trong 有空 'rảnh'. 咳 thường dùng trong khẩu ngữ, đầy đủ là 咳嗽 (késou). Người Việt hay nói 'giảm cân' thành 减轻体重, câu này đúng, nhưng khi có con số thì phải dùng 减: 减了两公斤."
+  "tips": "Hán Việt giúp nhớ nhanh: 体重 thể trọng, 体温 thể ôn, 体检 thể kiểm (khám thể chất), 健身 kiện thân, 远离 viễn ly, 有效 hữu hiệu, 卫生 vệ sinh, 加强 gia cường, 全身 toàn thân. Chú ý 量 có hai cách đọc: liáng là động từ 'đo' (量体温), liàng là danh từ 'lượng' (大量). 着火 đọc zháohuǒ, không đọc zhe. 空 đọc kōng khi là 'trống, rỗng' (空气), nhưng đọc kòng trong 有空 'rảnh'. 咳 thường dùng trong khẩu ngữ, đầy đủ là 咳嗽 (késou). Người Việt hay nói 'giảm cân' thành 减轻体重, câu này đúng; khi nói số cân cụ thể thì 减了两公斤 hay 体重减轻了两公斤 đều được."
  },
  {
   "id": "h3b-21",
@@ -3655,7 +3753,7 @@
     "A",
     "给，一个星期十块。家长都说孩子要自己学着管钱。",
     "Gěi, yí ge xīngqī shí kuài. Jiāzhǎng dōu shuō háizi yào zìjǐ xuézhe guǎn qián.",
-    "Có, mỗi tuần mười đồng. Phụ huynh đều nói trẻ con phải tự tập quản lý tiền."
+    "Có, mỗi tuần mười tệ. Phụ huynh đều nói trẻ con phải tự tập quản lý tiền."
    ],
    [
     "B",
@@ -3879,7 +3977,10 @@
    [
     "我 每 天 早上 收听 中文 广播",
     "Wǒ měi tiān zǎoshang shōutīng Zhōngwén guǎngbō.",
-    "Sáng nào tôi cũng nghe đài tiếng Trung."
+    "Sáng nào tôi cũng nghe đài tiếng Trung.",
+    [
+     "每 天 早上 我 收听 中文 广播"
+    ]
    ],
    [
     "这 种 技术 用于 教学",
@@ -3899,7 +4000,10 @@
    [
     "收到 信 以后 他 马上 回信 了",
     "Shōudào xìn yǐhòu tā mǎshàng huíxìn le.",
-    "Nhận được thư, anh ấy liền viết thư trả lời."
+    "Nhận được thư, anh ấy liền viết thư trả lời.",
+    [
+     "他 收到 信 以后 马上 回信 了"
+    ]
    ],
    [
     "电话 打 了 很 久 都 没 打 通",
@@ -3961,7 +4065,7 @@
    },
    {
     "pattern": "A + 被 + B + 打败了",
-    "vi": "Câu bị động: A bị B đánh bại. Muốn nói chủ động thì đổi thành A + 打败了 + B.",
+    "vi": "Câu bị động: A bị B đánh bại. Muốn nói chủ động thì đổi thành B + 打败了 + A.",
     "ex": [
      "上个星期，我们队被三班打败了。",
      "Shàng ge xīngqī, wǒmen duì bèi sān bān dǎbài le.",
@@ -4265,7 +4369,7 @@
     "Tất cả chúng tôi đều có thể tham gia."
    ]
   ],
-  "tips": "Bài này là 'phiên bản văn viết' của những từ bạn đã biết: 已 = 已经 (dĩ), 仍 = 还 (nhưng → 'vẫn'), 仅 / 仅仅 = 只 (cận), 将 = 要/会 (tương lai), 此 = 这 (thử), 此次 = 这次, 共 = 一共, 能否 = 能不能, 无法 = 没办法, 全都 = 都. Hán Việt giúp đoán nghĩa: 最终 tối chung (cuối cùng), 相互 tương hỗ, 同样 đồng dạng, 再次 tái thứ, 基本上 cơ bản thượng, 实际上 thực tế thượng. 并 + 不/没 dùng để bác bỏ một suy đoán: 他并不知道 = 'thật ra anh ấy đâu có biết'. 另 (lánh) = khác: 另一个人, 另外. Lỗi hay gặp: sau 不论 lại dùng câu khẳng định (不论天气好 → sai), phải là câu hỏi hoặc lựa chọn. Các từ này dùng nhiều trong bài đọc HSK 4 và tin tức, khi nói chuyện thân mật dùng quá nhiều sẽ nghe cứng như đọc bản tin."
+  "tips": "Bài này là 'phiên bản văn viết' của những từ bạn đã biết: 已 = 已经 (dĩ), 仍 = 还 (Hán Việt: nhưng; nghĩa: vẫn), 仅 / 仅仅 = 只 (cận), 将 = 要/会 (tương lai), 此 = 这 (thử), 此次 = 这次, 共 = 一共, 能否 = 能不能, 无法 = 没办法, 全都 = 都. Hán Việt giúp đoán nghĩa: 最终 tối chung (cuối cùng), 相互 tương hỗ, 同样 đồng dạng, 再次 tái thứ, 基本上 cơ bản thượng, 实际上 thực tế thượng. 并 + 不/没 dùng để bác bỏ một suy đoán: 他并不知道 = 'thật ra anh ấy đâu có biết'. 另 (lánh) = khác: 另一个人, 另外. Lỗi hay gặp: sau 不论 lại dùng câu khẳng định (不论天气好 → sai), phải là câu hỏi hoặc lựa chọn. Các từ này dùng nhiều trong bài đọc HSK 4 và tin tức, khi nói chuyện thân mật dùng quá nhiều sẽ nghe cứng như đọc bản tin."
  },
  {
   "id": "h3b-25",
@@ -4385,9 +4489,9 @@
    ],
    [
     "A",
-    "好。各个部门之间还要准备节目。",
-    "Hǎo. Gègè bùmén zhījiān hái yào zhǔnbèi jiémù.",
-    "Được. Các phòng ban còn phải chuẩn bị tiết mục với nhau."
+    "好。各个部门还要准备节目。",
+    "Hǎo. Gègè bùmén hái yào zhǔnbèi jiémù.",
+    "Được. Các phòng ban còn phải chuẩn bị tiết mục."
    ],
    [
     "B",
@@ -4397,9 +4501,9 @@
    ],
    [
     "A",
-    "那七点之前开始，十点之后结束，对吧？",
-    "Nà qī diǎn zhīqián kāishǐ, shí diǎn zhīhòu jiéshù, duì ba?",
-    "Vậy bắt đầu trước bảy giờ, kết thúc sau mười giờ, đúng không?"
+    "那七点开始，十点之前结束，对吧？",
+    "Nà qī diǎn kāishǐ, shí diǎn zhīqián jiéshù, duì ba?",
+    "Vậy bắt đầu lúc bảy giờ, kết thúc trước mười giờ, đúng không?"
    ],
    [
     "B",
@@ -4412,7 +4516,10 @@
    [
     "他 是 我们 之中 最 高 的",
     "Tā shì wǒmen zhīzhōng zuì gāo de.",
-    "Anh ấy cao nhất trong số chúng tôi."
+    "Anh ấy cao nhất trong số chúng tôi.",
+    [
+     "我们 之中 他 是 最 高 的"
+    ]
    ],
    [
     "这 家 商店 有 各种 水果",
@@ -4422,7 +4529,10 @@
    [
     "等到 放假 我们 再 去 旅游",
     "Děngdào fàngjià wǒmen zài qù lǚyóu.",
-    "Đợi đến khi nghỉ lễ chúng ta hãy đi du lịch."
+    "Đợi đến khi nghỉ lễ chúng ta hãy đi du lịch.",
+    [
+     "我们 等到 放假 再 去 旅游"
+    ]
    ],
    [
     "过年 前后 机票 很 贵",
@@ -4442,7 +4552,10 @@
    [
     "跟 去年 相比 今年 的 人数 多 了",
     "Gēn qùnián xiāngbǐ, jīnnián de rénshù duō le.",
-    "So với năm ngoái, số người năm nay đông hơn."
+    "So với năm ngoái, số người năm nay đông hơn.",
+    [
+     "今年 的 人数 跟 去年 相比 多 了"
+    ]
    ],
    [
     "全 班 同学 都 来 了",
@@ -4549,8 +4662,8 @@
    ],
    [
     "B",
-    "好，我稍想一想怎么说。对了，昨天我看了一部电影，特别感人。",
-    "Hǎo, wǒ shāo xiǎng yi xiǎng zěnme shuō. Duì le, zuótiān wǒ kàn le yí bù diànyǐng, tèbié gǎnrén.",
+    "好，我稍想一下怎么说。对了，昨天我看了一部电影，特别感人。",
+    "Hǎo, wǒ shāo xiǎng yíxià zěnme shuō. Duì le, zuótiān wǒ kàn le yí bù diànyǐng, tèbié gǎnrén.",
     "Ừ, để tôi nghĩ một chút xem nói thế nào. À, hôm qua tôi xem một bộ phim, cảm động lắm."
    ],
    [
@@ -4602,7 +4715,10 @@
    [
     "听 到 声音 他 抬头 看 了 看",
     "Tīngdào shēngyīn, tā táitóu kàn le kàn.",
-    "Nghe thấy tiếng động, anh ấy ngẩng đầu nhìn."
+    "Nghe thấy tiếng động, anh ấy ngẩng đầu nhìn.",
+    [
+     "他 听 到 声音 抬头 看 了 看"
+    ]
    ],
    [
     "这 个 笑话 太 好笑 了",

@@ -10,12 +10,12 @@
 {"hz":"颠簸","vi":"xóc nảy, chòng chành; long đong vất vả","hv":"điên bá","pos_vi":"động từ","ex":["山路很颠簸。","Shānlù hěn diānbǒ.","Đường núi rất xóc."]}
 {"hz":"以至","vi":"đến nỗi, đến mức; cho đến (cũng viết 以至于)","hv":"dĩ chí","pos_vi":"liên từ","ex":["他太紧张了，以至说不出话来。","Tā tài jǐnzhāng le, yǐzhì shuō bu chū huà lái.","Anh ấy căng thẳng đến mức không nói nên lời."]}
 {"hz":"摧残","vi":"tàn phá, giày vò, huỷ hoại","hv":"tồi tàn","pos_vi":"động từ","ex":["战争摧残了这座城市。","Zhànzhēng cuīcán le zhè zuò chéngshì.","Chiến tranh đã tàn phá thành phố này."]}
-{"hz":"英明","vi":"anh minh, sáng suốt","hv":"anh minh","pos_vi":"tính từ","ex":["这是一个英明的决定。","Zhè shì yí gè yīngmíng de juédìng.","Đây là một quyết định sáng suốt."]}
+{"hz":"英明","vi":"anh minh, sáng suốt","hv":"anh minh","pos_vi":"tính từ","ex":["这是一个英明的决定。","Zhè shì yí ge yīngmíng de juédìng.","Đây là một quyết định sáng suốt."]}
 {"hz":"法人","vi":"pháp nhân","hv":"pháp nhân","pos_vi":"danh từ","ex":["他是公司的法人代表。","Tā shì gōngsī de fǎrén dàibiǎo.","Ông ấy là người đại diện theo pháp luật của công ty."]}
 {"hz":"羞耻","vi":"xấu hổ, nhục nhã; nỗi hổ thẹn","hv":"tu sỉ","pos_vi":"danh từ, tính từ","ex":["说谎是一件羞耻的事。","Shuōhuǎng shì yí jiàn xiūchǐ de shì.","Nói dối là việc đáng xấu hổ."]}
 {"hz":"吝啬","vi":"keo kiệt, bủn xỉn","hv":"lận sắc","pos_vi":"tính từ","ex":["他很吝啬，从来不请客。","Tā hěn lìnsè, cónglái bù qǐngkè.","Anh ta rất keo kiệt, chưa bao giờ mời ai."]}
 {"hz":"惊动","vi":"làm kinh động, làm giật mình; làm phiền","hv":"kinh động","pos_vi":"động từ","ex":["别惊动正在睡觉的孩子。","Bié jīngdòng zhèngzài shuìjiào de háizi.","Đừng làm thức giấc đứa trẻ đang ngủ."]}
-{"hz":"片断","vi":"đoạn, mẩu, mảnh (rời rạc)","hv":"phiến đoạn","pos_vi":"danh từ","ex":["我只记得电影的几个片断。","Wǒ zhǐ jìde diànyǐng de jǐ gè piànduàn.","Tôi chỉ nhớ vài đoạn của bộ phim."]}
+{"hz":"片断","vi":"đoạn, mẩu, mảnh (rời rạc)","hv":"phiến đoạn","pos_vi":"danh từ","ex":["我只记得电影的几个片断。","Wǒ zhǐ jìde diànyǐng de jǐ ge piànduàn.","Tôi chỉ nhớ vài đoạn của bộ phim."]}
 {"hz":"急躁","vi":"nóng nảy, hấp tấp","hv":"cấp táo","pos_vi":"tính từ","ex":["他性格急躁，容易发火。","Tā xìnggé jízào, róngyì fāhuǒ.","Anh ấy tính nóng nảy, dễ nổi cáu."]}
 {"hz":"为首","vi":"đứng đầu, cầm đầu, dẫn đầu","hv":"vi thủ","pos_vi":"động từ","ex":["以校长为首的代表团来访。","Yǐ xiàozhǎng wéishǒu de dàibiǎotuán láifǎng.","Đoàn đại biểu do hiệu trưởng dẫn đầu đến thăm."]}
 {"hz":"糟蹋","vi":"phí phạm, làm hỏng; chà đạp, làm nhục","hv":"tao đạp","pos_vi":"động từ","ex":["别糟蹋粮食。","Bié zāotà liángshi.","Đừng phí phạm lương thực."]}
@@ -38,12 +38,12 @@
 {"hz":"梢","vi":"ngọn, đầu mút (cành cây, tóc)","hv":"sao","pos_vi":"danh từ","ex":["小鸟站在树梢上唱歌。","Xiǎoniǎo zhàn zài shùshāo shàng chànggē.","Chú chim nhỏ đậu trên ngọn cây hót."]}
 {"hz":"港湾","vi":"vịnh, bến cảng; bến đỗ bình yên (nghĩa bóng)","hv":"cảng loan","pos_vi":"danh từ","ex":["家是我温暖的港湾。","Jiā shì wǒ wēnnuǎn de gǎngwān.","Gia đình là bến đỗ ấm áp của tôi."]}
 {"hz":"无理取闹","vi":"gây sự vô cớ, làm ầm ĩ vô lý","hv":"vô lý thủ náo","pos_vi":"thành ngữ","ex":["你别无理取闹了！","Nǐ bié wúlǐqǔnào le!","Anh đừng gây sự vô cớ nữa!"]}
-{"hz":"胸怀","vi":"tấm lòng, lòng dạ; ôm ấp, mang trong lòng","hv":"hung hoài","pos_vi":"danh từ, động từ","ex":["他是一个胸怀宽广的人。","Tā shì yí gè xiōnghuái kuānguǎng de rén.","Anh ấy là người có tấm lòng rộng lượng."]}
+{"hz":"胸怀","vi":"tấm lòng, lòng dạ; ôm ấp, mang trong lòng","hv":"hung hoài","pos_vi":"danh từ, động từ","ex":["他是一个胸怀宽广的人。","Tā shì yí ge xiōnghuái kuānguǎng de rén.","Anh ấy là người có tấm lòng rộng lượng."]}
 {"hz":"庄重","vi":"trang trọng, nghiêm trang","hv":"trang trọng","pos_vi":"tính từ","ex":["婚礼的气氛很庄重。","Hūnlǐ de qìfēn hěn zhuāngzhòng.","Không khí lễ cưới rất trang trọng."]}
 {"hz":"贬低","vi":"hạ thấp, chê bai, coi thường","hv":"biếm đê","pos_vi":"động từ","ex":["不要贬低别人来抬高自己。","Búyào biǎndī biérén lái táigāo zìjǐ.","Đừng hạ thấp người khác để nâng mình lên."]}
 {"hz":"狠心","vi":"nhẫn tâm; đành lòng, quyết tâm","hv":"ngận tâm","pos_vi":"tính từ, động từ","ex":["她狠心离开了家乡。","Tā hěnxīn líkāi le jiāxiāng.","Cô ấy đành lòng rời xa quê hương."]}
 {"hz":"山脉","vi":"dãy núi, mạch núi","hv":"sơn mạch","pos_vi":"danh từ","ex":["这条山脉有一千多公里长。","Zhè tiáo shānmài yǒu yìqiān duō gōnglǐ cháng.","Dãy núi này dài hơn một nghìn ki-lô-mét."]}
-{"hz":"淡水","vi":"nước ngọt (không mặn); Đạm Thuỷ (địa danh ở Đài Loan)","hv":"đạm thuỷ","pos_vi":"danh từ","ex":["地球上的淡水资源很有限。","Dìqiú shàng de dànshuǐ zīyuán hěn yǒuxiàn.","Tài nguyên nước ngọt trên Trái Đất rất hạn chế."]}
+{"hz":"淡水","vi":"nước ngọt (không mặn)","hv":"đạm thuỷ","pos_vi":"danh từ","ex":["地球上的淡水资源很有限。","Dìqiú shàng de dànshuǐ zīyuán hěn yǒuxiàn.","Tài nguyên nước ngọt trên Trái Đất rất hạn chế."]}
 {"hz":"款待","vi":"khoản đãi, tiếp đãi","hv":"khoản đãi","pos_vi":"động từ","ex":["谢谢你们的热情款待。","Xièxie nǐmen de rèqíng kuǎndài.","Cảm ơn sự tiếp đãi nồng hậu của các bạn."]}
 {"hz":"名次","vi":"thứ hạng","hv":"danh thứ","pos_vi":"danh từ","ex":["他在比赛中取得了好名次。","Tā zài bǐsài zhōng qǔdé le hǎo míngcì.","Anh ấy đạt thứ hạng cao trong cuộc thi."]}
 {"hz":"匪徒","vi":"kẻ cướp, thổ phỉ, côn đồ","hv":"phỉ đồ","pos_vi":"danh từ","ex":["警察抓住了匪徒。","Jǐngchá zhuā zhù le fěitú.","Cảnh sát đã bắt được bọn cướp."]}
@@ -51,14 +51,14 @@
 {"hz":"反之","vi":"ngược lại","hv":"phản chi","pos_vi":"liên từ","ex":["努力就会进步，反之就会落后。","Nǔlì jiù huì jìnbù, fǎnzhī jiù huì luòhòu.","Cố gắng thì sẽ tiến bộ, ngược lại sẽ tụt hậu."]}
 {"hz":"蔑视","vi":"khinh miệt, coi khinh","hv":"miệt thị","pos_vi":"động từ","ex":["他用蔑视的眼光看着我。","Tā yòng mièshì de yǎnguāng kànzhe wǒ.","Hắn nhìn tôi bằng ánh mắt khinh miệt."]}
 {"hz":"奖赏","vi":"khen thưởng; phần thưởng","hv":"tưởng thưởng","pos_vi":"động từ, danh từ","ex":["公司奖赏了表现优秀的员工。","Gōngsī jiǎngshǎng le biǎoxiàn yōuxiù de yuángōng.","Công ty khen thưởng những nhân viên xuất sắc."]}
-{"hz":"受罪","vi":"chịu khổ, chịu tội, khổ sở","hv":"thụ tội","pos_vi":"động từ","ex":["坐十几个小时的火车真受罪。","Zuò shí jǐ gè xiǎoshí de huǒchē zhēn shòuzuì.","Ngồi tàu mười mấy tiếng thật là khổ."]}
+{"hz":"受罪","vi":"chịu khổ, chịu tội, khổ sở","hv":"thụ tội","pos_vi":"động từ","ex":["坐十几个小时的火车真受罪。","Zuò shí jǐ ge xiǎoshí de huǒchē zhēn shòuzuì.","Ngồi tàu mười mấy tiếng thật là khổ."]}
 {"hz":"请示","vi":"xin chỉ thị, xin ý kiến (cấp trên)","hv":"thỉnh thị","pos_vi":"động từ","ex":["这件事我得先请示领导。","Zhè jiàn shì wǒ děi xiān qǐngshì lǐngdǎo.","Việc này tôi phải xin ý kiến lãnh đạo trước."]}
 {"hz":"虚荣","vi":"hư vinh, sĩ diện, thích phô trương","hv":"hư vinh","pos_vi":"danh từ, tính từ","ex":["她买名牌只是为了虚荣。","Tā mǎi míngpái zhǐ shì wèile xūróng.","Cô ấy mua hàng hiệu chỉ vì sĩ diện."]}
 {"hz":"乘务员","vi":"nhân viên phục vụ (trên tàu, máy bay, xe khách)","hv":"thừa vụ viên","pos_vi":"danh từ","ex":["乘务员给乘客送来了饮料。","Chéngwùyuán gěi chéngkè sòng lái le yǐnliào.","Nhân viên phục vụ mang đồ uống đến cho hành khách."]}
 {"hz":"推论","vi":"suy luận, suy ra; kết luận suy ra","hv":"suy luận","pos_vi":"động từ, danh từ","ex":["你的推论没有根据。","Nǐ de tuīlùn méiyǒu gēnjù.","Suy luận của bạn không có căn cứ."]}
 {"hz":"投掷","vi":"ném, phóng (đi xa)","hv":"đầu trịch","pos_vi":"động từ","ex":["他在投掷比赛中得了第一。","Tā zài tóuzhì bǐsài zhōng dé le dì yī.","Anh ấy giành hạng nhất ở môn ném."]}
-{"hz":"世界观","vi":"thế giới quan","hv":"thế giới quan","pos_vi":"danh từ","ex":["读书可以改变一个人的世界观。","Dúshū kěyǐ gǎibiàn yí gè rén de shìjièguān.","Đọc sách có thể thay đổi thế giới quan của một người."]}
-{"hz":"愚昧","vi":"ngu muội, dốt nát","hv":"ngu muội","pos_vi":"tính từ","ex":["那是一个愚昧落后的时代。","Nà shì yí gè yúmèi luòhòu de shídài.","Đó là một thời đại ngu muội lạc hậu."]}
+{"hz":"世界观","vi":"thế giới quan","hv":"thế giới quan","pos_vi":"danh từ","ex":["读书可以改变一个人的世界观。","Dúshū kěyǐ gǎibiàn yí ge rén de shìjièguān.","Đọc sách có thể thay đổi thế giới quan của một người."]}
+{"hz":"愚昧","vi":"ngu muội, dốt nát","hv":"ngu muội","pos_vi":"tính từ","ex":["那是一个愚昧落后的时代。","Nà shì yí ge yúmèi luòhòu de shídài.","Đó là một thời đại ngu muội lạc hậu."]}
 {"hz":"颈椎","vi":"đốt sống cổ","hv":"cảnh chuy","pos_vi":"danh từ","ex":["长时间看手机对颈椎不好。","Cháng shíjiān kàn shǒujī duì jǐngzhuī bù hǎo.","Xem điện thoại lâu không tốt cho đốt sống cổ."]}
 {"hz":"肆无忌惮","vi":"không kiêng nể gì, ngang nhiên, trắng trợn","hv":"tứ vô kỵ đạn","pos_vi":"thành ngữ","ex":["他们肆无忌惮地破坏环境。","Tāmen sìwújìdàn de pòhuài huánjìng.","Bọn họ ngang nhiên phá hoại môi trường."]}
 {"hz":"纵横","vi":"ngang dọc, chằng chịt; tung hoành, tự do","hv":"tung hoành","pos_vi":"động từ, tính từ","ex":["城市里道路纵横。","Chéngshì lǐ dàolù zònghéng.","Đường sá trong thành phố chằng chịt ngang dọc."]}
@@ -74,8 +74,8 @@
 {"hz":"礼节","vi":"lễ tiết, phép lịch sự","hv":"lễ tiết","pos_vi":"danh từ","ex":["去别人家要注意礼节。","Qù biérén jiā yào zhùyì lǐjié.","Đến nhà người khác phải chú ý phép lịch sự."]}
 {"hz":"并存","vi":"cùng tồn tại, song song tồn tại","hv":"tịnh tồn","pos_vi":"động từ","ex":["机遇和挑战并存。","Jīyù hé tiǎozhàn bìngcún.","Cơ hội và thách thức cùng tồn tại."]}
 {"hz":"败坏","vi":"làm hỏng, làm tổn hại (danh dự, đạo đức); đồi bại","hv":"bại hoại","pos_vi":"động từ","ex":["这件事败坏了公司的名声。","Zhè jiàn shì bàihuài le gōngsī de míngshēng.","Chuyện này đã làm tổn hại danh tiếng công ty."]}
-{"hz":"才干","vi":"tài cán, năng lực","hv":"tài cán","pos_vi":"danh từ","ex":["他是一个很有才干的年轻人。","Tā shì yí gè hěn yǒu cáigàn de niánqīngrén.","Anh ấy là một thanh niên rất có năng lực."]}
-{"hz":"裁缝","vi":"may, cắt may (quần áo); (đọc cáifeng) thợ may","hv":"tài phùng","pos_vi":"động từ, danh từ","ex":["这件衣服是她自己裁缝的。","Zhè jiàn yīfu shì tā zìjǐ cáiféng de.","Chiếc áo này là cô ấy tự cắt may."]}
+{"hz":"才干","vi":"tài cán, năng lực","hv":"tài cán","pos_vi":"danh từ","ex":["他是一个很有才干的年轻人。","Tā shì yí ge hěn yǒu cáigàn de niánqīngrén.","Anh ấy là một thanh niên rất có năng lực."]}
+{"hz":"裁缝","vi":"thợ may; (đọc cáiféng) cắt may","hv":"tài phùng","pos_vi":"danh từ","ex":["她妈妈是一名裁缝。","Tā māma shì yì míng cáifeng.","Mẹ cô ấy là thợ may."]}
 {"hz":"涂抹","vi":"bôi, quét, trát; viết vẽ nguệch ngoạc","hv":"đồ mạt","pos_vi":"động từ","ex":["把药膏涂抹在伤口上。","Bǎ yàogāo túmǒ zài shāngkǒu shàng.","Bôi thuốc mỡ lên vết thương."]}
 {"hz":"次序","vi":"thứ tự, trình tự","hv":"thứ tự","pos_vi":"danh từ","ex":["请按次序排队。","Qǐng àn cìxù páiduì.","Xin xếp hàng theo thứ tự."]}
 {"hz":"瘸","vi":"què, đi khập khiễng","hv":"qua","pos_vi":"động từ, tính từ","ex":["他的腿瘸了。","Tā de tuǐ qué le.","Chân anh ấy bị què."]}

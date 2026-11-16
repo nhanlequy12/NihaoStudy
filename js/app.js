@@ -4,8 +4,8 @@
   const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
 
   // Nhóm của từng trang, để tô sáng đúng mục trên thanh tab điện thoại
-  const TAB_OF = { "": "home", lessons: "learn", lesson: "learn", words: "learn", read: "learn", pinyin: "learn", radicals: "learn", roadmap: "learn", review: "review", exam: "exam" };
-  const SIDE_OF = { lesson: "/lessons" };
+  const TAB_OF = { "": "home", lessons: "learn", lesson: "learn", words: "learn", read: "learn", pinyin: "learn", radicals: "learn", roadmap: "learn", review: "review", practice: "practice", notebook: "practice" };
+  const SIDE_OF = { lesson: "/lessons", notebook: "/notebook" };
 
   function route() {
     const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
@@ -32,6 +32,8 @@
         case "words": r = H3V.words(parts[1]); break;
         case "about": r = H3V.about(); break;
         case "settings": r = Views.settings(); break;
+        case "practice": r = parts[1] ? Practice.view(parts[1], parts[2]) : Practice.hub(); break;
+        case "notebook": r = Practice.notebook(); break;
         default: r = { html: `<div class="card center empty"><h2>Không tìm thấy trang</h2><p class="muted">Đường dẫn này không tồn tại.</p><a class="btn btn-primary" href="#/">Về trang chủ</a></div>` };
       }
     } catch (err) {
@@ -138,6 +140,7 @@
     if (e.key === "Escape" && document.getElementById("sheet").classList.contains("open")) { UI.closeSheet(); return; }
     if (App.keyHandler) App.keyHandler(e);
   });
+  Practice.initMenu();
   window.addEventListener("hashchange", route);
   if (!location.hash) location.hash = "#/";
   route();
