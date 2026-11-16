@@ -4,6 +4,7 @@
    Chữ: Be Vietnam Pro (giao diện) + Noto Sans SC (chữ Hán).
    ========================================================= */
 :root {
+  --teal: #0e7490;
   --bg: #f7f5f1;
   --surface: #ffffff;
   --surface-2: #f1ede6;
@@ -46,6 +47,7 @@
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 :root[data-theme="dark"] {
+  --teal: #3cc0d6;
   --bg: #141210;
   --surface: #1d1a17;
   --surface-2: #27231f;
@@ -287,6 +289,7 @@ a.lesson-card { display: flex; }
 .progress.green > span { background: var(--green); }
 .progress.blue > span { background: var(--blue); }
 .progress.purple > span { background: var(--tone3); }
+.progress.teal > span { background: var(--teal); }
 
 /* ---- Màu thanh điệu ---- */
 .t1 { color: var(--tone1); }
@@ -305,6 +308,7 @@ a.lesson-card { display: flex; }
 .pill.green { background: var(--green-soft); color: var(--green); }
 .pill.blue { background: var(--blue-soft); color: var(--blue); }
 .pill.purple { background: color-mix(in srgb, var(--tone3) 14%, var(--surface)); color: var(--tone3); }
+.pill.teal { background: color-mix(in srgb, var(--teal) 14%, var(--surface)); color: var(--teal); }
 
 /* ---- Hero ---- */
 .hero {

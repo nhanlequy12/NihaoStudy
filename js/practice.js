@@ -4,7 +4,7 @@
   const { esc, pyHtml, speakBtn, bindSpeak } = Views.util;
 
   // ---------- Danh mục ----------
-  // std: "hsk2" = HSK cũ (HSK 2.0, cấp 1–5 của web), "hsk3" = HSK 3.0 (đề cương 2025, cấp 1–6)
+  // std: "hsk2" = HSK cũ (HSK 2.0, cấp 1–6 của web), "hsk3" = HSK 3.0 (đề cương 2025, cấp 1–6)
   const FEATURES = [
     { key: "rain", icon: "bubbles", tone: 1, name: "Mưa từ vựng", desc: "Bắn vỡ bong bóng từ: gõ pinyin, viết chữ Hán hoặc nhớ từ theo nghĩa", std: ["hsk2"], badge: { hsk2: "HOT" } },
     { key: "translate", icon: "translate", tone: 2, name: "Luyện dịch", desc: "Dịch câu Trung sang Việt, chấm theo ý chính", std: ["hsk2", "hsk3"] },
@@ -16,7 +16,7 @@
     { key: "qa", icon: "chat", tone: 8, name: "Hỏi đáp", desc: "Chọn câu đáp hợp với câu hỏi, luyện phản xạ", std: ["hsk2", "hsk3"] },
   ];
   const STD = {
-    hsk2: { name: "HSK cũ", long: "HSK cũ (HSK 2.0)", levels: [1, 2, 3, 4, 5] },
+    hsk2: { name: "HSK cũ", long: "HSK cũ (HSK 2.0)", levels: [1, 2, 3, 4, 5, 6] },
     hsk3: { name: "HSK 3.0", long: "HSK 3.0 (đề cương 2025)", levels: [1, 2, 3, 4, 5, 6] },
   };
   const impl = {};
@@ -26,7 +26,7 @@
   const nameIn = (f, std) => (std === "hsk3" ? `${f.name} HSK 3.0` : f.name);
 
   // ---------- Dữ liệu từ theo chuẩn và cấp ----------
-  const LEVEL_OF_LESSON = (l) => (l <= 12 ? 1 : l <= 24 ? 2 : l <= 44 ? 3 : l <= 84 ? 4 : 5);
+  const LEVEL_OF_LESSON = (l) => (l <= 12 ? 1 : l <= 24 ? 2 : l <= 44 ? 3 : l <= 84 ? 4 : l <= 149 ? 5 : 6);
   function wordsOf(std, level) {
     if (std === "hsk3") return H3.byLevel(level);
     return VOCAB.filter((w) => (w.level || LEVEL_OF_LESSON(w.l)) === level);

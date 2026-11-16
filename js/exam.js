@@ -1,9 +1,9 @@
-// Thi thử HSK: cấu trúc đề theo đề thi chính thức (HSK 1–5, bộ cũ), sinh câu hỏi từ kho từ/câu/hội thoại/bài đọc của web, chấm điểm.
+// Thi thử HSK: cấu trúc đề theo đề thi chính thức (HSK 1–6, bộ cũ), sinh câu hỏi từ kho từ/câu/hội thoại/bài đọc của web, chấm điểm.
 // Vì web không có tranh và băng ghi âm thật, các phần "nhìn tranh" được thay bằng nghĩa tiếng Việt, phần nghe dùng giọng đọc của trình duyệt.
 (function () {
   const shuffle = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const pick = (arr, n, exclude) => shuffle(arr.filter((x) => !exclude || !exclude.includes(x))).slice(0, n);
-  const levelOfId = (id) => (id <= 12 ? 1 : id <= 24 ? 2 : id <= 44 ? 3 : id <= 84 ? 4 : 5);
+  const levelOfId = (id) => (id <= 12 ? 1 : id <= 24 ? 2 : id <= 44 ? 3 : id <= 84 ? 4 : id <= 149 ? 5 : 6);
   const levelOfWord = (w) => w.level || levelOfId(w.l);
   const levelOfLesson = (l) => l.level || levelOfId(l.id);
 
@@ -98,6 +98,26 @@
         { key: "writing", name: "三、书写", vi: "Viết", minutes: 40, parts: [
           { name: "第一部分", vi: "Sắp xếp các từ cho sẵn thành câu đúng.", type: "w_order", n: 8 },
           { name: "第二部分", vi: "Viết đoạn văn ngắn (đề thật 80 chữ, theo 5 từ cho sẵn hoặc theo tranh). Ở đây viết một đoạn có dùng từ cho sẵn; máy chỉ kiểm tra sơ bộ, hãy tự đối chiếu với câu ví dụ.", type: "w_sentence", n: 2 },
+        ] },
+      ],
+    },
+    // HSK 6 (bộ cũ): 101 câu, 135 phút; nghe 50 / đọc 50 / viết 1 (缩写: đọc 1.000 chữ trong 10 phút rồi viết tóm tắt khoảng 400 chữ trong 35 phút)
+    6: {
+      name: "HSK 6", total: 300, pass: 180, plays: 1, choices: 4, questions: 101, minutes: 135,
+      sections: [
+        { key: "listening", name: "一、听力", vi: "Nghe hiểu", minutes: 35, parts: [
+          { name: "第一部分", vi: "Nghe một đoạn ngắn, chọn câu đúng với nội dung trong 4 lựa chọn. Chỉ phát một lần.", type: "l_dialog_long", n: 15 },
+          { name: "第二部分", vi: "Nghe phỏng vấn (đề thật 3 bài, mỗi bài 5 câu hỏi), chọn đáp án đúng. Ở đây dùng hội thoại dài của bài học.", type: "l_dialog_long", n: 15 },
+          { name: "第三部分", vi: "Nghe đoạn văn dài, chọn câu đúng với nội dung.", type: "l_dialog_long", n: 20 },
+        ] },
+        { key: "reading", name: "二、阅读", vi: "Đọc hiểu", minutes: 50, parts: [
+          { name: "第一部分", vi: "Chọn câu có lỗi sai (语病) trong 4 câu A–D.", type: "r_error", n: 10 },
+          { name: "第二部分", vi: "Chọn từ thích hợp điền vào chỗ trống (nhóm đáp án dùng chung). Đề thật điền 3–5 chỗ trống trong một đoạn.", type: "r_cloze", n: 10 },
+          { name: "第三部分", vi: "Chọn câu thích hợp điền vào 5 chỗ trống trong đoạn văn (mỗi câu dùng một lần).", type: "r_sentence_fill", n: 10 },
+          { name: "第四部分", vi: "Đọc đoạn văn dài, trả lời câu hỏi theo nội dung.", type: "r_passage", n: 20 },
+        ] },
+        { key: "writing", name: "三、书写", vi: "Viết", minutes: 45, parts: [
+          { name: "第一部分", vi: "缩写: đọc bài trong 10 phút (không ghi chép), bài sẽ ẩn đi; rồi viết tóm tắt khoảng 400 chữ, tự đặt tiêu đề, không thêm ý của mình. Đề thật 1.000 chữ và do giám khảo chấm; máy chỉ kiểm tra độ dài và ý chính.", type: "w_summary", n: 1 },
         ] },
       ],
     },
@@ -282,6 +302,48 @@
       const ws = pick(P.words.filter((w) => w.hz.length >= 2), n);
       return ws.map((w) => ({ kind: "text", free: true, stem: w.hz, sub: `${w.py} · ${w.vi}`, answer: w.hz, explain: `Ví dụ: ${w.ex[0]}` }));
     },
+    // HSK 6 đọc phần 1: một câu sai (từ kho Sửa câu sai, cấp cao) và ba câu đúng (câu ví dụ cùng cấp)
+    r_error(P, n) {
+      const bad = pick((window.FIX_ITEMS || []).filter((x) => (x.std === "hsk2" && x.level >= 4) || (x.std === "hsk3" && x.level >= 5)), n);
+      const good = P.sentences.filter((s) => s.level >= P.level - 1 && s.zh.length >= 10 && s.zh.length <= 40);
+      return bad.map((b) => {
+        const opts = shuffle([{ zh: b.wrong, bad: true }, ...pick(good, 3).map((s) => ({ zh: s.zh }))]);
+        return { kind: "choice", stem: "选出有语病的一项。(Chọn câu có lỗi sai)", options: opts.map((o) => o.zh), zhOptions: true, answer: opts.findIndex((o) => o.bad), explain: `Câu sai: ${b.wrong} → sửa: ${b.correct} (${b.explain})` };
+      });
+    },
+    // HSK 6 đọc phần 3: điền 5 câu vào 5 chỗ trống của một đoạn văn
+    r_sentence_fill(P, n) {
+      const split = (t) => (t.match(/[^。！？]+[。！？]+[”」』]?/g) || []).map((s) => s.trim());
+      const rs = shuffle(P.readings.filter((r) => split(r.zh).length >= 7));
+      const out = [];
+      for (const r of rs) {
+        if (out.length >= n) break;
+        const ss = split(r.zh);
+        const cand = ss.map((s, k) => ({ s, k })).filter((x) => x.k > 0 && x.s.length >= 8 && x.s.length <= 40);
+        if (cand.length < 5) continue;
+        const chosen = pick(cand, 5).sort((a, b) => a.k - b.k);
+        let num = 0;
+        const passage = ss.map((s, k) => (chosen.some((c) => c.k === k) ? `（${++num}）` : s)).join("");
+        const pool = shuffle(chosen.map((c) => c.s));
+        const g = { passage, title: r.title, pool, poolZh: true, items: [] };
+        chosen.forEach((c, j) => g.items.push({ kind: "pool", group: g, stem: `Chỗ trống （${j + 1}）`, answer: pool.indexOf(c.s), explain: c.s }));
+        out.push(...g.items);
+      }
+      return out.slice(0, n);
+    },
+    // HSK 6 viết: 缩写 – đọc rồi tóm tắt. Máy kiểm tra độ dài và tỉ lệ ý chính (từ khóa nhiều chữ của bài) có trong bài viết.
+    w_summary(P, n) {
+      const rs = P.readings.filter((r) => r.level >= P.level - 1).sort((a, b) => b.zh.length - a.zh.length);
+      const r = pick(rs.slice(0, 6), 1)[0];
+      if (!r) return [];
+      const dict = new Set(P.words.map((w) => w.hz).filter((h) => h.length >= 2));
+      const keys = [...new Set([...dict].filter((h) => r.zh.includes(h)))].sort((a, b) => b.length - a.length).slice(0, 12);
+      const han = [...r.zh].filter((c) => /[一-鿿]/.test(c)).length;
+      const g = { passage: r.zh, title: r.title, items: [] };
+      const it = { kind: "text", free: true, summary: true, group: g, stem: "缩写：请把这篇文章缩写成一篇短文，自拟标题。", sub: `Tóm tắt bài «${r.title}» (${han} chữ) thành khoảng ${Math.max(100, Math.round(han * 0.4))} chữ, có tiêu đề, không thêm ý riêng.`, keys, minLen: Math.max(80, Math.round(han * 0.25)), maxLen: Math.round(han * 0.75), answer: r.title, explain: `Ý chính cần có: ${keys.join("、")}. Bản dịch bài: ${r.vi}` };
+      g.items.push(it);
+      return [it].slice(0, n);
+    },
   };
   // Chia n câu thành các nhóm dùng chung một bảng đáp án A–F (như đề thật)
   function groups(n, size, make) {
@@ -317,6 +379,14 @@
     if (it.kind === "choice" || it.kind === "pool") return it.user === it.answer;
     if (it.kind === "order") return it.user === it.answer || (it.alts || []).includes(it.user);
     if (it.kind === "text") {
+      if (it.summary) {
+        const han = [...String(it.user)].filter((c) => /[一-鿿]/.test(c)).length;
+        const u = String(it.user), hit = it.keys.filter((k) => u.includes(k)).length;
+        // chép nguyên văn một đoạn dài (≥ 20 ký tự liền) của bài gốc thì không tính là tóm tắt
+        let copied = false;
+        for (let i = 0; i + 20 <= u.length && !copied; i += 5) copied = it.group.passage.includes(u.slice(i, i + 20));
+        return !copied && han >= it.minLen && han <= it.maxLen + 60 && hit >= Math.ceil(it.keys.length * 0.4);
+      }
       if (it.free) { const u = norm(it.user); return u.includes(it.answer) && u.length >= it.answer.length + 4; }
       return norm(it.user) === it.answer;
     }

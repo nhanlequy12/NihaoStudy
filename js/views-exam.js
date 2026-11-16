@@ -24,7 +24,7 @@
     const html = `<h1>Thi thử HSK</h1>${window.H3V ? H3V.examCards() + `<h2>Đề sinh ngẫu nhiên · HSK 2.0 (bộ cũ)</h2>` : ""}
       <p class="subtitle">Đề được sinh ngẫu nhiên từ kho từ, câu mẫu, hội thoại và bài đọc của web theo đúng cấu trúc, số câu, thời gian và thang điểm của đề thi chính thức (bộ cũ, 2010–nay). Mỗi lần thi là một đề mới. Vì web không có tranh, các phần "nhìn tranh" được thay bằng nghĩa tiếng Việt; phần nghe dùng giọng đọc của trình duyệt.</p>
       <div class="grid grid-2">${Object.values(EXAM_SPEC).map((sp, k) => `
-        <div class="card"><div class="row between"><h3 style="margin:0">${esc(sp.name)}</h3><span class="pill ${["blue", "gold", "green", "red", "purple"][k]}">${sp.questions} câu · ${sp.minutes} phút</span></div>
+        <div class="card"><div class="row between"><h3 style="margin:0">${esc(sp.name)}</h3><span class="pill ${["blue", "gold", "green", "red", "purple", "teal"][k]}">${sp.questions} câu · ${sp.minutes} phút</span></div>
           <ul class="small muted" style="margin:8px 0 10px;padding-left:18px">${sp.sections.map((s) => `<li><b>${esc(s.name)}</b> ${esc(s.vi)} · ${s.parts.reduce((a, p) => a + p.n, 0)} câu · ${s.minutes} phút</li>`).join("")}</ul>
           <div class="row between"><span class="small muted">Tổng ${sp.total} điểm · đậu từ ${sp.pass}</span><a class="btn btn-primary" href="#/exam/${k + 1}">${current && current.level === k + 1 && !current.finished ? "Tiếp tục bài đang làm" : "Vào thi"}</a></div></div>`).join("")}</div>
       <div class="grid grid-2 mt">
@@ -111,7 +111,11 @@
     const answered = (x) => x.user != null && x.user !== "";
     let body = "";
     const grp = it.group;
-    if (grp && grp.passage) body += `<div class="passage zh-serif"><div class="small muted" style="font-family:var(--font)">Đọc đoạn văn rồi trả lời câu ${grp.items[0].no}–${grp.items[grp.items.length - 1].no}</div>${esc(grp.passage)}</div>`;
+    if (it.summary) {
+      if (!it.shownAt) it.shownAt = Date.now();
+      if (!it.hidden && Date.now() - it.shownAt >= 10 * 60000) it.hidden = true;
+    }
+    if (grp && grp.passage && !(it.summary && it.hidden)) body += `<div class="passage zh-serif"><div class="small muted" style="font-family:var(--font)">${it.summary ? `Đọc kỹ trong 10 phút, không ghi chép. Bài sẽ tự ẩn sau ${Math.max(0, Math.ceil((it.shownAt + 10 * 60000 - Date.now()) / 60000))} phút nữa.` : `Đọc đoạn văn rồi trả lời câu ${grp.items[0].no}–${grp.items[grp.items.length - 1].no}`}</div>${grp.title && it.summary ? `<div style="font-weight:700;text-align:center">${esc(grp.title)}</div>` : ""}${esc(grp.passage)}</div>`;
     if (grp && grp.pool) body += `<div class="pool-box"><div class="small muted">Chọn một đáp án cho mỗi câu ${grp.items[0].no}–${grp.items[grp.items.length - 1].no} (có một đáp án thừa):</div>${grp.pool.map((p, k) => `<div class="${grp.poolZh ? "zh" : ""}"><b>${LET[k]}.</b> ${esc(p)}</div>`).join("")}</div>`;
     if (it.listening) body += `<div class="center mb"><button class="btn btn-primary btn-lg" id="play">▶ Nghe</button><div class="small muted mt">Nội dung phát: ${it.audio.length} câu</div></div>`;
     if (it.stem) body += `<div class="exam-stem ${it.kind === "choice" && it.type.startsWith("l_") ? "" : "zh"}">${esc(it.stem)}</div>`;
@@ -131,13 +135,18 @@
       body += `<p class="small muted center">Bấm để đưa ${isR ? "câu" : "từ"} lên dòng đáp án theo đúng thứ tự; bấm lại để bỏ xuống.</p>
         <div class="tiles" id="answer">${chosenTokens.map((t, j) => `<button class="tile ${isR ? "" : "zh"}" data-t="${esc(label(t))}" data-i="${j}" data-from="answer">${esc(t)}</button>`).join("")}</div>
         <div class="tiles" id="bank">${left.map((t) => `<button class="tile ${isR ? "" : "zh"}" data-t="${esc(label(t))}" data-from="bank">${esc(t)}</button>`).join("")}</div>`;
+    } else if (it.kind === "text" && it.summary) {
+      body += !it.hidden
+        ? `<div class="center"><button class="btn btn-primary" id="hidePassage">Đã đọc xong: ẩn bài và bắt đầu viết</button><p class="small muted mt">Ẩn rồi sẽ không xem lại được bài, giống đề thật.</p></div>`
+        : `<textarea class="search zh" id="txt" rows="12" style="width:100%;line-height:1.8" placeholder="Dòng đầu là tiêu đề, sau đó là bài tóm tắt…">${esc(it.user || "")}</textarea>
+          <div class="row between small muted mt"><span id="hanCount"></span><span>Máy chỉ kiểm tra độ dài (${it.minLen}–${it.maxLen} chữ) và ý chính; đề thật do giám khảo chấm.</span></div>`;
     } else if (it.kind === "text") {
       body += `<div class="center"><input class="search zh" id="txt" style="max-width:420px;text-align:center" placeholder="${it.free ? "Viết một câu có từ này" : "Gõ chữ Hán"}" value="${esc(it.user || "")}" autocomplete="off"></div>
         ${it.candidates ? `<p class="small muted center" style="margin:8px 0 4px">Không có bàn phím tiếng Trung? Bấm chữ:</p><div class="tiles" style="justify-content:center">${it.candidates.map((c) => `<button class="tile zh" data-c="${esc(c)}">${esc(c)}</button>`).join("")}</div>` : `<p class="small muted center mt">Máy chỉ kiểm tra câu có chứa từ cho sẵn và đủ dài; đề thật do giám khảo chấm.</p>`}`;
     }
 
     box.innerHTML = `<div class="exam-top card">
-        <div class="row between"><div><span class="pill ${["blue", "gold", "green", "red", "purple"][current.level - 1]}">${esc(sp.name)}</span> <b>${esc(sec.name)}</b> <span class="muted">${esc(sec.vi)}</span></div><div class="timer" id="timer">${mmss(current.deadline - Date.now())}</div></div>
+        <div class="row between"><div><span class="pill ${["blue", "gold", "green", "red", "purple", "teal"][current.level - 1]}">${esc(sp.name)}</span> <b>${esc(sec.name)}</b> <span class="muted">${esc(sec.vi)}</span></div><div class="timer" id="timer">${mmss(current.deadline - Date.now())}</div></div>
         <div class="row between small muted mt"><span><b>${esc(it.part.name)}</b> · ${esc(it.part.vi)}</span><span>Câu ${it.no}/${total}</span></div>
         <div class="qnav">${sec.items.map((x, k) => `<button class="${k === qi ? "cur" : ""} ${answered(x) ? "done" : ""}" data-q="${k}">${x.no}</button>`).join("")}</div>
       </div>
@@ -160,9 +169,14 @@
       it.user = (b.dataset.from === "bank" ? [...chosen, t] : chosen.filter((x, j) => j !== +b.dataset.i)).join(" ") || null;
       render(box);
     });
+    const hp = box.querySelector("#hidePassage");
+    if (hp) hp.onclick = () => { it.hidden = true; render(box); };
     const txt = box.querySelector("#txt");
+    const hc = box.querySelector("#hanCount");
+    const countHan = () => { if (hc) hc.textContent = `${[...txt.value].filter((c) => /[一-鿿]/.test(c)).length} chữ Hán`; };
     if (txt) {
-      txt.oninput = () => { it.user = txt.value; box.querySelectorAll(".qnav button")[qi].classList.toggle("done", !!txt.value.trim()); };
+      countHan();
+      txt.oninput = () => { it.user = txt.value; countHan(); box.querySelectorAll(".qnav button")[qi].classList.toggle("done", !!txt.value.trim()); };
       box.querySelectorAll("[data-c]").forEach((b) => b.onclick = () => { txt.value = (txt.value || "") + b.dataset.c; it.user = txt.value; txt.focus(); });
     }
     if (it.listening) {

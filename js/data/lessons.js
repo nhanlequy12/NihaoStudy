@@ -719,13 +719,19 @@ window.ROADMAP = [
     link: "#/lessons/5", linkText: "Vào bài học HSK 5",
   },
   {
-    phase: 8, doneWhen: "srs", title: "Ôn tập ngắt quãng (SRS) mỗi ngày", time: "Từ ngày 1 · 5–10 phút/ngày, không bỏ ngày nào",
+    phase: 8, lessons: [150, 270], title: "2.500 từ HSK 6 qua 121 bài học", time: "Tháng 41–60 · 10–15 từ mới/ngày",
+    why: "HSK 6 (5.000 từ tích lũy, danh sách chính thức sửa năm 2012) là cấp cao nhất của HSK 2.0, tương đương C1–C2: đọc báo, văn bản chuyên ngành, văn học; nghe phỏng vấn, bài giảng; viết tóm tắt 400 chữ (缩写). Nhiều thành ngữ, từ trang trọng và từ gần nghĩa; đề đọc có phần chọn câu sai ngữ pháp. Ngữ pháp: 倘若…就, 与其…不如, 即便…也, 何况, 以致, 从而, 固然…但, 尚且…何况, 非…不可, 就…而言, 鉴于.",
+    tasks: ["Học xong các bài «Bổ sung 2012» ở cuối HSK 1–5 trước (154 từ bản 2012 thêm vào)", "Học bài 150–270, mỗi ngày 1 bài; ghi chép thành ngữ vào sổ riêng", "Đọc 12 bài đọc HSK 6 trong web, rồi tập tóm tắt mỗi bài thành 1/3 độ dài (luyện 缩写)", "Làm thi thử HSK 6: chú ý phần chọn câu sai và phần viết tóm tắt"],
+    link: "#/lessons/6", linkText: "Vào bài học HSK 6",
+  },
+  {
+    phase: 9, doneWhen: "srs", title: "Ôn tập ngắt quãng (SRS) mỗi ngày", time: "Từ ngày 1 · 5–10 phút/ngày, không bỏ ngày nào",
     why: "Không có thói quen ôn tập thì học bao nhiêu cũng quên. Thuật toán ôn tập ngắt quãng (giống Anki) hiện thẻ ngay trước lúc bạn sắp quên, tiết kiệm 2–3 lần thời gian so với ôn tràn lan.",
     tasks: ["Mở mục Ôn tập mỗi sáng", "Chấm thật lòng: Quên / Khó / Tốt / Dễ", "Giữ chuỗi ngày học (streak)"],
     link: "#/review", linkText: "Ôn tập ngay",
   },
   {
-    phase: 9, title: "Nghe, nói & nội dung thật", time: "Tháng 2–3 trở đi · 15 phút/ngày",
+    phase: 10, title: "Nghe, nói & nội dung thật", time: "Tháng 2–3 trở đi · 15 phút/ngày",
     why: "Từ vựng và ngữ pháp chỉ 'sống' khi bạn dùng. Nghe 3 lượt (không phụ đề → có phụ đề → không phụ đề), nói theo (shadowing), và tự ghi âm so với giọng mẫu.",
     tasks: ["Luyện nói mỗi câu mẫu 3 lần với mục Luyện nói", "Nghe podcast/video đúng cấp độ đang học (gợi ý trong mục Lộ trình)", "Tự viết 3–5 câu mỗi ngày bằng từ đã học", "Tìm bạn trao đổi ngôn ngữ hoặc gia sư 1 giờ/tuần nếu có thể"],
     link: "#/speak", linkText: "Luyện nói",
