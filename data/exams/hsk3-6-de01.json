@@ -1,0 +1,2288 @@
+{
+ "id": "hsk3-6-de01",
+ "level": 6,
+ "format": "HSK 3.0 (2025)",
+ "title": "Đề luyện HSK 6 – số 1",
+ "minutes_total": 125,
+ "scoring_note": "CLEC chưa công bố thang điểm và điểm đạt của HSK 3.0 cấp 1–6; web chấm theo tỷ lệ đúng từng phần.",
+ "sections": [
+  {
+   "key": "listening",
+   "name_zh": "听力",
+   "name_vi": "Nghe hiểu",
+   "minutes": 30,
+   "parts": [
+    {
+     "part": 1,
+     "type": "l_statement_match",
+     "instruction_vi": "Câu 1–8: nghe một đoạn ngắn (độc thoại hoặc hội thoại ngắn), chọn câu khớp với nội dung đã nghe. Mỗi đoạn nghe một lần.",
+     "instruction_zh": "第1～8题：请选出与所听内容一致的一项。",
+     "plays": 1,
+     "groups": [
+      {
+       "audio": [
+        [
+         "",
+         "蜂蜜是少数几种可以长期保存而不容易变坏的食物之一。这是因为蜂蜜里糖的含量非常高，水分却很少，细菌很难在里面生存。不过，如果蜂蜜的盖子没有盖紧，空气中的水分进去以后，它也可能变酸、变质。所以，蜂蜜最好放在干燥、阴凉的地方，用完要及时盖好。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 1,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "蜂蜜没盖好也可能变坏",
+          "蜂蜜里的水分很多",
+          "蜂蜜应该放在冰箱里",
+          "细菌在蜂蜜中长得很快"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Bài nói: nếu nắp không đậy chặt, hơi nước vào thì mật ong cũng có thể chua, hỏng. Mật ong ít nước, vi khuẩn khó sống; nên để nơi khô, mát (không nói tủ lạnh).",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "蜂蜜",
+          "细菌",
+          "干燥"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "这次旅游的照片你怎么一张都没发到网上？"
+        ],
+        [
+         "女",
+         "以前我每到一个地方就忙着拍照、修照片、发到网上，回来以后发现自己根本不记得看到了什么。这次我决定把手机放进包里，用眼睛好好看看。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 2,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "女的想专心享受旅行",
+          "女的手机丢了",
+          "女的这次没去旅游",
+          "女的一向不喜欢拍照"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Trước đây cô mải chụp, sửa ảnh, đăng mạng nên về nhà không nhớ đã thấy gì; lần này cất điện thoại để 'dùng mắt ngắm cho kỹ', tức là muốn tận hưởng chuyến đi.",
+         "skills": [
+          "nghe-suy-luan"
+         ],
+         "words": [
+          "专心",
+          "享受"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "二十四节气是中国古人根据太阳在一年中位置的变化总结出来的，最早用来指导农业生产。比如“清明”前后适合种各种蔬菜，“芒种”则提醒农民抓紧时间收粮食、种水稻。2016年，二十四节气被列入了世界非物质文化遗产名录。如今，虽然很多人已经不再种田，但节气里的饮食习惯和生活智慧仍然影响着人们的日常生活。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 3,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "节气是根据月亮的变化总结的",
+          "现在已经没有人关注节气了",
+          "节气最早用来指导农业生产",
+          "节气是2016年才出现的"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Hai mươi bốn tiết khí do người xưa đúc kết dựa trên vị trí mặt trời, dùng để hướng dẫn sản xuất nông nghiệp. Năm 2016 là năm được đưa vào danh sách di sản, không phải năm ra đời.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "节气",
+          "农业",
+          "遗产"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "滴灌是一种节约用水的浇水方法。它通过放在地面上或者埋在土里的细管子，把水一滴一滴地直接送到植物的根部。和传统的大面积浇水相比，滴灌可以节约百分之三十到百分之五十的用水，还能减少杂草生长。在缺水的西北地区，这种技术已经被广泛使用。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 4,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "滴灌需要更多的水",
+          "滴灌把水直接送到植物根部",
+          "滴灌会让杂草长得更快",
+          "西北地区还没有使用滴灌"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Tưới nhỏ giọt dẫn nước qua ống nhỏ, từng giọt đến thẳng gốc cây; tiết kiệm 30–50% nước, giảm cỏ dại và đã dùng rộng rãi ở vùng Tây Bắc.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "节约",
+          "传统",
+          "广泛"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "在今年的一场城市长跑比赛中，组织方第一次没有向选手提供塑料瓶装水，而是在沿路设置了取水点，选手们可以用自己带的小水杯接水。据统计，这一做法让比赛产生的塑料垃圾减少了约百分之八十。不少选手表示，虽然多带一个杯子有点儿麻烦，但为了环保，值得。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 5,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "比赛取消了所有取水点",
+          "塑料垃圾完全消失了",
+          "选手需要自己带杯子",
+          "选手们普遍反对这个做法"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Ban tổ chức không phát nước đóng chai mà đặt điểm lấy nước, vận động viên dùng cốc gấp tự mang theo. Rác nhựa giảm khoảng 80%, không phải hết hoàn toàn; nhiều người cho là đáng làm.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "塑料",
+          "环保",
+          "值得"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "很多人以为拖延是因为懒，其实并不完全是这样。心理学研究发现，拖延常常和情绪有关：当一项任务让人感到焦虑、无聊或者害怕失败时，人们就会本能地想要躲开它，转而去做一些能马上让自己感到轻松的事情，比如看短视频。因此，解决拖延的关键不是逼自己更努力，而是学会管理面对任务时的消极情绪。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 6,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "拖延的主要原因是懒",
+          "逼自己努力是最好的办法",
+          "看短视频能减轻焦虑",
+          "拖延与情绪关系密切"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Bài nói: trì hoãn thường liên quan đến cảm xúc (lo âu, chán, sợ thất bại); then chốt là quản lý cảm xúc tiêu cực, chứ không phải ép mình cố gắng hơn.",
+         "skills": [
+          "nghe-y-chinh"
+         ],
+         "words": [
+          "拖延",
+          "情绪",
+          "焦虑"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "随着年龄增长，人对口渴的感觉会变得越来越不敏感。很多老年人等到感觉口渴的时候，身体其实已经处于缺水状态了。缺水不仅会让人感到疲劳、头晕，还会增加多种疾病的风险。因此，医生建议老年人不要等渴了再喝水，而应该定时、少量、多次地补充水分。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 7,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "老年人更容易感到口渴",
+          "缺水只会让人感到疲劳",
+          "一次喝大量的水对身体好",
+          "老年人应该定时喝水"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Người già kém nhạy với cảm giác khát, nên bác sĩ khuyên không đợi khát mới uống mà uống định giờ, mỗi lần ít, nhiều lần.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "敏感",
+          "缺水",
+          "定时"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "我们晚上看到的星星的光，其实是很久以前从星星上发出来的。比如，离太阳系最近的一颗星星——比邻星发出的光，要走四年多才能到达地球。也就是说，我们今晚看到的比邻星，是它四年多以前的样子。有些离我们更远的星星，当它的光到达地球时，那颗星星可能早就不存在了。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 8,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "星星的光一瞬间就能到达地球",
+          "我们看到的是星星过去的样子",
+          "比邻星已经不存在了",
+          "所有的星星都已经消失了"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Ánh sáng sao phải đi rất lâu mới tới Trái Đất (từ sao Cận Tinh mất hơn 4 năm), nên ta thấy dáng vẻ quá khứ của ngôi sao. Chỉ 'một số' sao xa có thể đã không còn.",
+         "skills": [
+          "nghe-suy-luan"
+         ],
+         "words": [
+          "距离",
+          "到达",
+          "存在"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 2,
+     "type": "l_passage",
+     "instruction_vi": "Câu 9–28: nghe 6 đoạn độc thoại dài (thuyết minh, tin tức, phổ biến kiến thức), mỗi đoạn 3–4 câu hỏi; chọn đáp án đúng. Mỗi đoạn nghe một lần.",
+     "instruction_zh": "第9～28题：请选出正确答案。",
+     "plays": 1,
+     "groups": [
+      {
+       "audio": [
+        [
+         "",
+         "从2021年开始，中国部分高铁线路陆续推出了“静音车厢”。乘客在买票时可以自己选择是否乘坐静音车厢。在这节车厢里，乘客需要把手机调成静音，打电话或者聊天要到车厢连接处去，看视频必须戴耳机。列车员也会尽量减少广播的次数，并且不在车厢里推车卖东西。静音车厢推出以后，很受经常出差的乘客和需要休息的乘客欢迎。不过，也有人提出，静音车厢对带小孩的家庭不太友好，因为孩子很难长时间保持安静。对此，铁路部门表示，如果乘客带的孩子年龄比较小，建议不要选择静音车厢。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 9,
+         "stem": "在静音车厢里，乘客打电话应该怎么做？",
+         "stem_py": "",
+         "options": [
+          "小声说话",
+          "到车厢连接处去",
+          "使用耳机",
+          "发短信代替"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Quy định: gọi điện hay trò chuyện phải ra chỗ nối giữa các toa; tai nghe là quy định khi xem video.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "车厢",
+          "乘客"
+         ]
+        },
+        {
+         "no": 10,
+         "stem": "静音车厢里，列车员会怎么做？",
+         "stem_py": "",
+         "options": [
+          "不再检查车票",
+          "提供免费耳机",
+          "减少广播的次数",
+          "推车卖东西"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Nhân viên tàu cố gắng giảm số lần phát thanh và không đẩy xe bán hàng trong toa.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "广播",
+          "尽量"
+         ]
+        },
+        {
+         "no": 11,
+         "stem": "铁路部门对带小孩的乘客有什么建议？",
+         "stem_py": "",
+         "options": [
+          "尽量不选静音车厢",
+          "提前买票",
+          "给孩子准备玩具",
+          "坐在车厢后面"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Ngành đường sắt khuyên nếu mang theo trẻ nhỏ thì không nên chọn toa yên lặng, vì trẻ khó giữ im lâu.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "建议",
+          "友好"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "在不少城市的小区里，出现了一种“智能回收箱”。居民把旧衣服、旧报纸、塑料瓶等可以回收的东西放进箱子以后，箱子会自动称重，并根据重量把钱直接转到居民的手机账户里。与传统的上门回收相比，智能回收箱二十四小时都能使用，居民不用等回收人员上门，时间安排更灵活。箱子装满以后，系统会自动通知工作人员来运走。不过，智能回收箱也存在一些问题。有些老年人不会用手机扫码，只好继续把旧东西卖给上门收旧东西的人。还有的居民反映，回收价格比较低，大家的积极性不高。专家认为，可以在小区里安排志愿者帮助老人操作，同时适当提高回收价格。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 12,
+         "stem": "和上门回收相比，智能回收箱的优点是：",
+         "stem_py": "",
+         "options": [
+          "使用时间更灵活",
+          "回收价格更高",
+          "能回收所有垃圾",
+          "完全不需要工作人员"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Thùng thu gom thông minh dùng được 24 giờ, cư dân không phải đợi người đến tận nhà, thời gian linh hoạt hơn. Giá thu mua lại bị phàn nàn là thấp.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "灵活",
+          "回收"
+         ]
+        },
+        {
+         "no": 13,
+         "stem": "箱子装满以后会怎么样？",
+         "stem_py": "",
+         "options": [
+          "自动关闭",
+          "由居民自己清理",
+          "发出很大的声音",
+          "系统通知工作人员"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Khi thùng đầy, hệ thống tự động báo nhân viên đến chở đi.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "系统",
+          "自动"
+         ]
+        },
+        {
+         "no": 14,
+         "stem": "关于智能回收箱存在的问题，下列哪项正确？",
+         "stem_py": "",
+         "options": [
+          "部分老人不会操作",
+          "箱子经常坏",
+          "占地面积太大",
+          "回收价格太高"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Một số người già không biết quét mã bằng điện thoại; ngoài ra giá thu mua thấp chứ không phải cao.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "操作",
+          "积极性"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "在古代，没有电话，也没有网络，皇帝的命令是怎么快速传到全国各地的呢？答案是驿站。驿站是古代为传递官方文书而建立的机构，一般每隔一段距离就建一个。送信的人骑马跑到一个驿站后，可以换一匹休息好的马，或者把文书交给下一个送信的人，这样文书就能日夜不停地往前传。据记载，唐朝时，最紧急的文书一天可以传送五百里左右。除了传递文书，驿站还为来往的官员提供吃住。可以说，驿站系统就像是古代的“快递网络”加上“酒店”。到了清朝末年，随着现代邮局和电话的出现，驿站才慢慢退出了历史舞台。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 15,
+         "stem": "驿站主要是为了什么建立的？",
+         "stem_py": "",
+         "options": [
+          "传递官方文书",
+          "接待外国客人",
+          "买卖马匹",
+          "收取过路费"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Dịch trạm là cơ quan thời xưa lập ra để truyền công văn chính thức; việc cho quan lại ăn ở chỉ là chức năng phụ.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "传递",
+          "文书",
+          "设立"
+         ]
+        },
+        {
+         "no": 16,
+         "stem": "送信人到了驿站以后可以怎么做？",
+         "stem_py": "",
+         "options": [
+          "休息一整天",
+          "领一笔钱",
+          "换一匹马继续跑",
+          "把信交给官员"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Người đưa thư đến trạm có thể đổi một con ngựa đã nghỉ ngơi, hoặc giao văn thư cho người đưa thư kế tiếp, để văn thư đi ngày đêm không ngừng.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "匹",
+          "日夜"
+         ]
+        },
+        {
+         "no": 17,
+         "stem": "驿站为什么逐渐消失了？",
+         "stem_py": "",
+         "options": [
+          "马越来越少",
+          "现代邮局和电话出现了",
+          "皇帝不再需要传递命令",
+          "酒店代替了驿站"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cuối đời Thanh, bưu cục hiện đại và điện thoại xuất hiện nên dịch trạm dần rút khỏi vũ đài lịch sử.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "邮局",
+          "逐渐"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "“间隔年”是指年轻人在高中毕业后上大学之前，或者大学毕业后开始工作之前，暂时停下来，用几个月到一年的时间去旅行、做志愿者或者体验不同的工作。这种做法在西方国家比较常见，近年来，在中国年轻人中也越来越受到关注。支持者认为，间隔年能帮助年轻人走出校园，更清楚地认识自己，想明白自己真正想做什么，从而避免随便地选择专业或职业。一些人在间隔年里发现了自己的兴趣，回来以后学习和工作的目标更明确了。但也有人担心，间隔年会让年轻人和同龄人拉开距离，晚一年进入职场，可能会影响将来的发展。还有一些年轻人把间隔年当成躲开压力的理由，一年过去了，什么收获也没有。教育专家指出，间隔年本身没有好坏之分，关键在于有没有清楚的计划。如果只是为了休息而休息，那么间隔年就很难发挥它的作用。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 18,
+         "stem": "关于间隔年，可以知道什么？",
+         "stem_py": "",
+         "options": [
+          "只在中国流行",
+          "是学校安排的课程",
+          "必须出国旅行",
+          "时间一般是几个月到一年"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Định nghĩa trong bài: tạm dừng lại, dùng vài tháng đến một năm để đi du lịch, làm tình nguyện hoặc trải nghiệm công việc. Nó phổ biến ở phương Tây trước, không phải chỉ ở Trung Quốc.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "暂时",
+          "体验"
+         ]
+        },
+        {
+         "no": 19,
+         "stem": "支持者认为间隔年有什么好处？",
+         "stem_py": "",
+         "options": [
+          "能挣很多钱",
+          "帮助年轻人认识自己",
+          "可以提高考试成绩",
+          "更容易找到工作"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Người ủng hộ cho rằng gap year giúp người trẻ hiểu rõ bản thân, biết mình thật sự muốn làm gì, tránh chọn ngành, chọn nghề tùy tiện.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "避免",
+          "明确"
+         ]
+        },
+        {
+         "no": 20,
+         "stem": "有人担心间隔年会：",
+         "stem_py": "",
+         "options": [
+          "浪费父母的钱",
+          "影响家庭关系",
+          "使人身体变差",
+          "让人晚一年进入职场"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Người lo ngại nói gap year khiến người trẻ bị bạn cùng tuổi bỏ xa, vào thị trường lao động muộn một năm.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "职场",
+          "同龄人"
+         ]
+        },
+        {
+         "no": 21,
+         "stem": "教育专家认为间隔年成功的关键是什么？",
+         "stem_py": "",
+         "options": [
+          "去的地方足够远",
+          "得到父母的支持",
+          "有清楚的计划",
+          "时间足够长"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Chuyên gia nói gap year không tốt không xấu, then chốt là có kế hoạch rõ ràng hay không.",
+         "skills": [
+          "nghe-y-chinh"
+         ],
+         "words": [
+          "关键",
+          "计划"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "“吃饭要慢”是中国人常说的健康道理，现在这个说法得到了科学研究的支持。研究人员让两组志愿者吃同样的午饭，一组每口饭嚼十五次左右，另一组嚼四十次左右。结果发现，嚼得多的那组人吃得更少，而且饭后很长时间都不觉得饿。原因在于，大脑接收到“吃饱了”的信号大约需要二十分钟。吃得太快的人，往往在大脑发出信号之前就已经吃多了。此外，多嚼几下还能减轻肠胃的负担，帮助消化。研究人员建议，吃饭时可以放下手机，专心吃饭，并试着每一口多嚼几下。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 22,
+         "stem": "实验中，嚼得多的那组人：",
+         "stem_py": "",
+         "options": [
+          "吃得更多",
+          "饭后不容易饿",
+          "更快吃完饭",
+          "胃更不舒服"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Nhóm nhai khoảng 40 lần mỗi miếng ăn ít hơn và rất lâu sau bữa vẫn không thấy đói.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "实验",
+          "志愿者"
+         ]
+        },
+        {
+         "no": 23,
+         "stem": "吃得太快为什么容易吃多？",
+         "stem_py": "",
+         "options": [
+          "食物的味道更好",
+          "胃会变得更大",
+          "大脑来不及发出“吃饱了”的信号",
+          "消化得更快"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Não cần khoảng 20 phút mới nhận được tín hiệu 'no rồi'; ăn quá nhanh thì đã ăn quá nhiều trước khi não kịp báo.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "信号",
+          "接收"
+         ]
+        },
+        {
+         "no": 24,
+         "stem": "研究人员建议吃饭时怎么做？",
+         "stem_py": "",
+         "options": [
+          "边看手机边吃",
+          "饭前多喝汤",
+          "只吃午饭",
+          "专心吃饭，每口多嚼几下"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Lời khuyên cuối bài: bỏ điện thoại xuống, chuyên tâm ăn và thử nhai mỗi miếng thêm vài lần.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "专心",
+          "消化"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "蜜蜂发现了花以后，是怎么把这个消息告诉同伴的呢？科学家发现，蜜蜂会用“跳舞”的方式来交流。当食物离蜂巢比较近，一般在一百米以内时，蜜蜂会跳“圆圈舞”，在原地转圈，告诉同伴附近有花，但不说明具体方向。如果食物离得比较远，蜜蜂就会跳“8字舞”。在跳舞的过程中，蜜蜂会先向前走一小段路，再转回来，然后重复。向前走的方向，表示食物相对于太阳的方向；而它向前走的时间越长，说明食物离得越远。更神奇的是，同伴们在黑暗的蜂巢里看不见舞蹈，它们是靠身体接触，感受跳舞蜜蜂的动作来“读懂”信息的。这一发现让奥地利科学家弗里希获得了1973年的诺贝尔奖。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 25,
+         "stem": "食物离蜂巢很近时，蜜蜂会怎么做？",
+         "stem_py": "",
+         "options": [
+          "跳8字舞",
+          "跳圆圈舞",
+          "直接带同伴过去",
+          "发出声音"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Khi thức ăn gần tổ (thường trong 100 mét), ong nhảy 'vũ điệu vòng tròn', chỉ báo gần đây có hoa mà không chỉ hướng.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "同伴",
+          "方向"
+         ]
+        },
+        {
+         "no": 26,
+         "stem": "跳8字舞时，蜜蜂向前走的时间越长，表示什么？",
+         "stem_py": "",
+         "options": [
+          "花越多",
+          "危险越大",
+          "天气越好",
+          "食物离得越远"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Khi nhảy hình số 8, ong đi thẳng về trước càng lâu thì thức ăn càng xa; hướng đi cho biết hướng so với mặt trời.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "表示",
+          "相对"
+         ]
+        },
+        {
+         "no": 27,
+         "stem": "同伴们在黑暗的蜂巢里怎样获得信息？",
+         "stem_py": "",
+         "options": [
+          "通过身体接触感受动作",
+          "用眼睛看",
+          "闻气味",
+          "听声音"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Trong tổ tối không nhìn thấy điệu nhảy, ong bạn tiếp xúc cơ thể để cảm nhận động tác của con đang nhảy để 'đọc' thông tin.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "黑暗",
+          "感受"
+         ]
+        },
+        {
+         "no": 28,
+         "stem": "这段话主要讲的是什么？",
+         "stem_py": "",
+         "options": [
+          "蜂巢的结构",
+          "一位科学家的一生",
+          "蜜蜂怎样传递食物的信息",
+          "花和蜜蜂的关系"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cả bài giải thích cách ong dùng điệu nhảy để báo vị trí thức ăn cho đồng loại; nhà khoa học chỉ được nhắc ở câu cuối.",
+         "skills": [
+          "nghe-y-chinh"
+         ],
+         "words": [
+          "传递",
+          "交流"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 3,
+     "type": "l_interview",
+     "instruction_vi": "Câu 29–40: nghe 3 cuộc phỏng vấn, mỗi cuộc 4 câu hỏi; chọn đáp án đúng. Mỗi đoạn nghe một lần.",
+     "instruction_zh": "第29～40题：请选出正确答案。",
+     "plays": 1,
+     "groups": [
+      {
+       "audio": [
+        [
+         "女",
+         "张老师，听说您在山区小学教了十五年书，还建起了一个图书室，能跟我们讲讲吗？"
+        ],
+        [
+         "男",
+         "我刚到村里的时候，学校连一本课外书都没有。孩子们除了课本，没有别的书可读。我就想，能不能给他们弄一个小小的图书室。"
+        ],
+        [
+         "女",
+         "书是从哪里来的呢？"
+        ],
+        [
+         "男",
+         "一开始是我自己买，后来我把孩子们读书的照片发到网上，很多陌生人看到了，纷纷寄书过来。现在我们的图书室已经有八千多本书了。"
+        ],
+        [
+         "女",
+         "有了图书室以后，孩子们有什么变化？"
+        ],
+        [
+         "男",
+         "变化特别明显。以前孩子们见到外人很害羞，说话声音很小。现在他们读了很多书，知道的东西多了，敢说话了，写作文也有内容了。去年还有两个孩子在县里的作文比赛中得了奖。"
+        ],
+        [
+         "女",
+         "您有没有想过离开山区？"
+        ],
+        [
+         "男",
+         "说实话，想过。城里的学校条件好，工资也高。但是每次看到孩子们拿着书看得那么认真，我就舍不得走了。我觉得自己在这里做的事情更有价值。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 29,
+         "stem": "张老师刚到村里时，学校是什么情况？",
+         "stem_py": "",
+         "options": [
+          "没有老师",
+          "没有教室",
+          "没有课外书",
+          "学生很少"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Thầy kể khi mới đến, trường không có lấy một cuốn sách ngoại khóa, ngoài sách giáo khoa các em không có gì để đọc.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "课外",
+          "课本"
+         ]
+        },
+        {
+         "no": 30,
+         "stem": "图书室的书主要是怎么来的？",
+         "stem_py": "",
+         "options": [
+          "陌生人寄来的",
+          "政府购买的",
+          "学生自己带来的",
+          "出版社送的"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Lúc đầu thầy tự mua, sau khi đăng ảnh các em đọc sách lên mạng thì nhiều người lạ gửi sách đến, nay đã hơn 8.000 cuốn.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "陌生",
+          "纷纷"
+         ]
+        },
+        {
+         "no": 31,
+         "stem": "有了图书室以后，孩子们有什么变化？",
+         "stem_py": "",
+         "options": [
+          "更爱运动了",
+          "都去城里上学了",
+          "成绩全县第一",
+          "敢说话了"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Trước đây các em ngại người lạ, nói nhỏ; nay đọc nhiều, hiểu biết rộng, dám nói, viết văn có nội dung.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "害羞",
+          "敢"
+         ]
+        },
+        {
+         "no": 32,
+         "stem": "张老师为什么留在山区？",
+         "stem_py": "",
+         "options": [
+          "城里找不到工作",
+          "家人住在村里",
+          "觉得这里的工作更有价值",
+          "这里的工资比城里高"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Thầy thừa nhận trường thành phố điều kiện và lương tốt hơn, nhưng thấy việc mình làm ở đây có giá trị hơn nên không nỡ đi.",
+         "skills": [
+          "nghe-thai-do"
+         ],
+         "words": [
+          "价值",
+          "舍不得"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "李导演，您的新纪录片拍的是候鸟，听说拍了整整四年？"
+        ],
+        [
+         "女",
+         "对。候鸟一年只在南方和北方之间飞两次，每次的时间、路线都会受天气影响，我们必须提前到达，常常一等就是好几个星期。有时候等了一个月，最后鸟群没从我们这儿经过，只能第二年再来。"
+        ],
+        [
+         "男",
+         "拍摄过程中最难忘的是什么？"
+        ],
+        [
+         "女",
+         "有一次在湖边，我们为了不打扰鸟群，提前三天就躲在用草和树枝做成的小房子里，不能说话，也不能随便走动。第四天早上，几千只大鸟从我们头上飞过，那个场面太让人感动了，我们几个人都激动得流泪了。"
+        ],
+        [
+         "男",
+         "这部纪录片想传达什么？"
+        ],
+        [
+         "女",
+         "我们发现，很多候鸟停留的湿地正在变少。鸟儿飞了几千公里，却找不到可以休息和吃东西的地方。我希望观众看完以后，能意识到保护湿地有多么重要。"
+        ],
+        [
+         "男",
+         "接下来有什么计划？"
+        ],
+        [
+         "女",
+         "我们准备和一些学校合作，把纪录片里没有用上的画面做成适合孩子看的短片，让保护自然的意识从小就在他们心里生根。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 33,
+         "stem": "拍摄为什么花了很长时间？",
+         "stem_py": "",
+         "options": [
+          "资金不够",
+          "设备经常出问题",
+          "候鸟经过的时间很难确定",
+          "团队人数太少"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Chim di cư mỗi năm chỉ bay hai lần, thời gian và đường bay chịu ảnh hưởng thời tiết; có khi đợi cả tháng mà đàn chim không bay qua, phải đợi năm sau.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "候鸟",
+          "路线"
+         ]
+        },
+        {
+         "no": 34,
+         "stem": "为了不打扰鸟群，他们做了什么？",
+         "stem_py": "",
+         "options": [
+          "提前躲在草做的小房子里",
+          "从飞机上拍摄",
+          "晚上才开始拍",
+          "站在很远的山上"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Họ nấp trước ba ngày trong chòi nhỏ làm bằng cỏ và cành cây, không nói chuyện, không đi lại tùy tiện.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "打扰",
+          "躲"
+         ]
+        },
+        {
+         "no": 35,
+         "stem": "这部纪录片想让观众意识到什么？",
+         "stem_py": "",
+         "options": [
+          "候鸟飞得很快",
+          "湖边的风景最美",
+          "拍纪录片很辛苦",
+          "保护湿地很重要"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đạo diễn mong khán giả xem xong nhận ra bảo vệ đất ngập nước quan trọng thế nào, vì nơi chim dừng chân đang ngày càng ít.",
+         "skills": [
+          "nghe-y-chinh"
+         ],
+         "words": [
+          "意识",
+          "湿地"
+         ]
+        },
+        {
+         "no": 36,
+         "stem": "他们接下来打算做什么？",
+         "stem_py": "",
+         "options": [
+          "拍一部电影",
+          "为孩子制作短片",
+          "去国外拍摄",
+          "举办照片展览"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Họ định hợp tác với trường học, dùng tư liệu chưa dùng làm phim ngắn phù hợp cho trẻ em.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "合作",
+          "短片"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "王先生，您设计的这个文化园原来是一家老工厂，为什么没有拆掉重建，而是选择了改造？"
+        ],
+        [
+         "男",
+         "这家工厂有六十多年的历史，附近很多老居民年轻时都在这里工作过。如果全部拆掉，这一段城市记忆也就消失了。而且从环保的角度看，改造比拆了重建能节约大量材料，减少建筑垃圾。"
+        ],
+        [
+         "女",
+         "改造中最大的难点是什么？"
+        ],
+        [
+         "男",
+         "是怎样在保留老建筑特点的同时，满足现代人的使用需求。比如原来的工厂建筑又高又大，但窗户很少，光线不好。我们在房子上面开了一排天窗，既保留了原来的结构，又让室内变得明亮。"
+        ],
+        [
+         "女",
+         "现在文化园里有哪些内容？"
+        ],
+        [
+         "男",
+         "有书店、咖啡馆、小剧场，还有一些年轻设计师的工作室。我们还特意保留了几台旧机器，旁边放了说明牌，介绍它们过去的用途。很多老工人会带着孙子孙女来，给他们讲当年的故事。"
+        ],
+        [
+         "女",
+         "您觉得一个成功的改造项目，最重要的是什么？"
+        ],
+        [
+         "男",
+         "我认为是“人”。建筑再漂亮，如果没有人愿意来，也是失败的。一个好的空间应该让周围的居民觉得，这里跟自己的生活有关系。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 37,
+         "stem": "为什么选择改造而不是拆掉重建？",
+         "stem_py": "",
+         "options": [
+          "政府不允许拆",
+          "能保留城市记忆，也更环保",
+          "改造的费用更低",
+          "原来的建筑非常结实"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Kiến trúc sư nêu hai lý do: giữ lại ký ức của thành phố (nhiều cư dân từng làm ở nhà máy) và cải tạo tiết kiệm vật liệu, giảm rác xây dựng.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "改造",
+          "拆",
+          "记忆"
+         ]
+        },
+        {
+         "no": 38,
+         "stem": "改造中，设计师是怎样解决光线问题的？",
+         "stem_py": "",
+         "options": [
+          "在房子上面开了天窗",
+          "把墙换成玻璃",
+          "增加了很多灯",
+          "降低了建筑的高度"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Họ mở một dãy cửa sổ trời trên mái, vừa giữ kết cấu cũ vừa làm trong nhà sáng sủa.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "光线",
+          "结构"
+         ]
+        },
+        {
+         "no": 39,
+         "stem": "文化园里为什么保留了几台旧机器？",
+         "stem_py": "",
+         "options": [
+          "还能继续生产",
+          "准备卖给收藏者",
+          "搬走太困难",
+          "让人了解工厂的过去"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Bên cạnh máy có biển giới thiệu công dụng xưa; nhiều công nhân cũ dẫn cháu đến kể chuyện năm xưa, tức là giúp người ta hiểu quá khứ nhà máy.",
+         "skills": [
+          "nghe-suy-luan"
+         ],
+         "words": [
+          "保留",
+          "用途"
+         ]
+        },
+        {
+         "no": 40,
+         "stem": "男的认为成功的改造项目最重要的是什么？",
+         "stem_py": "",
+         "options": [
+          "建筑外形漂亮",
+          "有人愿意来",
+          "投入的钱多",
+          "交通方便"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Ông nói quan trọng nhất là 'con người': công trình đẹp mấy mà không ai muốn đến thì vẫn thất bại.",
+         "skills": [
+          "nghe-y-chinh"
+         ],
+         "words": [
+          "空间",
+          "失败"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "reading",
+   "name_zh": "阅读",
+   "name_vi": "Đọc hiểu",
+   "minutes": 40,
+   "parts": [
+    {
+     "part": 1,
+     "type": "r_cloze",
+     "instruction_vi": "Câu 41–50: chọn từ điền vào chỗ trống. Hai đoạn văn, mỗi đoạn 5 chỗ trống, mỗi chỗ trống có 4 từ để chọn.",
+     "instruction_zh": "第41～50题：选词填空。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": "陈师傅是一家酒店的厨师长。在厨房工作了二十多年，他发现每天都有大量做菜的材料被浪费：切下来的菜叶子、鱼骨头、面包边……这些东西虽然不好看，但其实很有营养。于是，他开始想办法让这些“边角料”重新（41）作用。他把菜叶子包进饺子里，把鱼骨头做成汤，把面包边烤成小点心。刚开始，同事们觉得他是在（42）时间，可没想到，这些菜推出以后很受客人欢迎。\n在陈师傅的（43）下，酒店厨房浪费的材料减少了三分之一，每个月能节省好几万元的成本。他的做法还被写进了当地餐饮行业的培训（44），让其他饭店学习。陈师傅说：“节约不是小气，而是对食物和劳动的（45）。”",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 41,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "发布",
+          "发表",
+          "发挥",
+          "发明"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cụm cố định '发挥作用' (phát huy tác dụng). 发表 (đăng bài, phát biểu), 发布 (công bố), 发明 (phát minh) không đi với 作用.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "发挥",
+          "作用"
+         ]
+        },
+        {
+         "no": 42,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "节省",
+          "浪费",
+          "度过",
+          "消费"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đồng nghiệp lúc đầu nghĩ ông đang 'lãng phí thời gian', rồi '可没想到' món ăn lại được khách thích – quan hệ trái ngược hợp lý. 节省 trái nghĩa với ngữ cảnh; 度过, 消费 không hợp.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "浪费"
+         ]
+        },
+        {
+         "no": 43,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "保持",
+          "安慰",
+          "带领",
+          "承担"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Khung '在…的带领下' = dưới sự dẫn dắt của… 安慰 (an ủi), 保持 (duy trì), 承担 (gánh vác) không dùng trong khung này.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "带领"
+         ]
+        },
+        {
+         "no": 44,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "教材",
+          "档案",
+          "协议",
+          "简历"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cách làm được đưa vào 'giáo trình đào tạo' của ngành để nhà hàng khác học theo. 档案 (hồ sơ lưu trữ), 协议 (thỏa thuận), 简历 (sơ yếu lý lịch) không hợp mục đích 'để học'.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "教材"
+         ]
+        },
+        {
+         "no": 45,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "怀念",
+          "安慰",
+          "依赖",
+          "尊重"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "'Tiết kiệm không phải keo kiệt mà là sự tôn trọng đối với thức ăn và lao động'. Các từ còn lại (an ủi, phụ thuộc, hoài niệm) sai nghĩa.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "尊重",
+          "劳动"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "最近，一种“旧物交换”活动在年轻人中（46）起来。参加的人带上自己不再需要的东西，比如看过的书、穿不下的衣服、很少用的小家电，和其他人进行交换。整个过程不用花钱，（47）做到了“以物换物”。\n组织者小刘说，举办这个活动的（48）很简单：她发现身边很多朋友家里都堆着用不上的东西，扔掉可惜，卖又卖不了几个钱。“通过交换，这些东西可以到真正需要它的人手里，（49）减少了浪费，又认识了新朋友。”\n专家表示，旧物交换体现了年轻人消费观念的变化——从“拥有更多”到“用得更好”。这种绿色、简单的生活方式，（50）得到越来越多人的认可。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 46,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "增长",
+          "流行",
+          "成立",
+          "显示"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "'在年轻人中流行起来' = trở nên thịnh hành trong giới trẻ. 增长 dùng cho số lượng; 成立 dùng cho tổ chức; 显示 là hiển thị.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "流行"
+         ]
+        },
+        {
+         "no": 47,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "认真",
+          "真实",
+          "真理",
+          "真正"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cần phó từ bổ nghĩa cho cụm '以物换物': 真正 (đúng nghĩa là). 真实 là tính từ, 真理 là danh từ (chân lý), 认真 là chăm chỉ.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "真正"
+         ]
+        },
+        {
+         "no": 48,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "理由",
+          "理论",
+          "理想",
+          "理解"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "'举办这个活动的理由很简单', câu sau giải thích lý do. 理论 (lý thuyết), 理想 (lý tưởng), 理解 (hiểu) không hợp.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "理由"
+         ]
+        },
+        {
+         "no": 49,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "又",
+          "既",
+          "也",
+          "还"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cấu trúc '既…又…' (vừa… vừa…): vế sau đã có '又认识了新朋友', nên vế trước dùng 既.",
+         "skills": [
+          "doc-ngu-phap"
+         ],
+         "words": [
+          "既…又…"
+         ]
+        },
+        {
+         "no": 50,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "正在",
+          "曾经",
+          "刚才",
+          "从来"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "'正在得到越来越多人的认可' – xu hướng đang diễn ra, hợp với '越来越多'. 曾经, 刚才 chỉ quá khứ; 从来 thường đi với phủ định.",
+         "skills": [
+          "doc-ngu-phap"
+         ],
+         "words": [
+          "正在",
+          "认可"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 2,
+     "type": "r_sentence_cloze",
+     "instruction_vi": "Câu 51–60: chọn câu điền vào chỗ trống. Hai đoạn văn, mỗi đoạn 5 chỗ trống và 6 câu A–F; trong đó có một câu thừa (câu nhiễu) phải loại bỏ. Mỗi câu chỉ dùng một lần.",
+     "instruction_zh": "第51～60题：选句填空。注意：其中一句为干扰项，需排除。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": "清晨，江苏的一个小村子里，一排排深蓝色的太阳能板整齐地排列在养鱼的水面上方。板子下面，村民老吴正划着小船喂鱼。\n这种“上面发电、下面养鱼”的模式，被称为“渔光互补”。（51）。太阳能板发出的电，一部分给村里使用，剩下的则卖给电力公司，每年能给村里带来几十万元的收入。\n起初，不少村民对这种做法心里没底。老吴说：“我担心板子挡住了阳光，（52）。”但事实证明，这种担心是多余的。太阳能板挡住了一部分强烈的阳光，夏天水的温度不会太高，（53），鱼的产量不但没有下降，反而提高了。\n如今，老吴每年除了卖鱼的收入，还能拿到一笔租金。（54），村里还用发电的收入修了路、建了文化广场。\n专家指出，渔光互补既不需要用新的土地，又能同时生产清洁能源和食物，（55）。目前，这一模式已经在全国多个省份推广。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 51,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "鱼生活得更舒服了",
+          "这样一来，同一片水面就能带来两份收入",
+          "鱼就长不大了",
+          "是一种很值得推广的发展方式",
+          "不仅村民的收入增加了",
+          "太阳能板的价格越来越低"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Câu trước giới thiệu mô hình 'trên phát điện, dưới nuôi cá'; câu cần điền tổng kết lợi ích 'một mặt nước, hai nguồn thu', câu sau nói tiếp về tiền điện.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 52,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "鱼生活得更舒服了",
+          "这样一来，同一片水面就能带来两份收入",
+          "鱼就长不大了",
+          "是一种很值得推广的发展方式",
+          "不仅村民的收入增加了",
+          "太阳能板的价格越来越低"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Ông Ngô lo tấm pin che mất ánh nắng thì cá không lớn được – đúng là nỗi lo sau đó được chứng minh là thừa.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 53,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "鱼生活得更舒服了",
+          "这样一来，同一片水面就能带来两份收入",
+          "鱼就长不大了",
+          "是一种很值得推广的发展方式",
+          "不仅村民的收入增加了",
+          "太阳能板的价格越来越低"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Nước mùa hè không quá nóng nên cá sống thoải mái hơn, dẫn đến sản lượng tăng.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 54,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "鱼生活得更舒服了",
+          "这样一来，同一片水面就能带来两份收入",
+          "鱼就长不大了",
+          "是一种很值得推广的发展方式",
+          "不仅村民的收入增加了",
+          "太阳能板的价格越来越低"
+         ],
+         "answer": 4,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Vế sau có '村里还…', cần vế trước dạng '不仅…' để thành cặp 不仅…还….",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 55,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "鱼生活得更舒服了",
+          "这样一来，同一片水面就能带来两份收入",
+          "鱼就长不大了",
+          "是一种很值得推广的发展方式",
+          "不仅村民的收入增加了",
+          "太阳能板的价格越来越低"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Chuyên gia đánh giá: không chiếm thêm đất, vừa có năng lượng sạch vừa có thực phẩm → là cách phát triển đáng nhân rộng; câu sau nói đã được nhân rộng ở nhiều tỉnh. Câu về giá tấm pin là câu nhiễu.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "打哈欠是一种再普通不过的行为，几乎每个人每天都会打好几个。（56）？科学家到现在还没有完全弄清楚。\n过去，人们普遍认为，打哈欠是因为大脑缺少氧气，需要深吸一口气来补充。（57）：让人吸入含氧量更高的空气，并没有减少打哈欠的次数。\n近年来，一种新的观点得到了较多支持：打哈欠可能是为了给大脑“降温”。（58），冷空气进入身体，能带走大脑的一部分热量，让大脑保持在最适合工作的温度。有研究发现，人们在冬天打哈欠的次数比夏天少，（59）。\n打哈欠还有一个有趣的特点——它会“传染”。看到别人打哈欠，甚至只是读到“打哈欠”这几个字，（60）。研究人员认为，这可能与人的同情心有关：关系越近的人之间，打哈欠越容易互相传染。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 56,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "但后来的实验并不支持这种说法",
+          "然而，我们为什么要打哈欠",
+          "张大嘴深吸气时",
+          "这似乎也说明了温度和打哈欠之间的关系",
+          "很多人也会忍不住跟着打一个",
+          "打哈欠时最好用手挡住嘴"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Câu trước nói ngáp là việc rất bình thường; câu sau 'các nhà khoa học vẫn chưa hiểu rõ' → cần câu hỏi chuyển ý '然而，我们为什么要打哈欠'.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 57,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "但后来的实验并不支持这种说法",
+          "然而，我们为什么要打哈欠",
+          "张大嘴深吸气时",
+          "这似乎也说明了温度和打哈欠之间的关系",
+          "很多人也会忍不住跟着打一个",
+          "打哈欠时最好用手挡住嘴"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Câu trước nêu quan niệm cũ (não thiếu oxy); dấu hai chấm sau chỗ trống dẫn ra thí nghiệm phản bác → '但后来的实验并不支持这种说法'.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 58,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "但后来的实验并不支持这种说法",
+          "然而，我们为什么要打哈欠",
+          "张大嘴深吸气时",
+          "这似乎也说明了温度和打哈欠之间的关系",
+          "很多人也会忍不住跟着打一个",
+          "打哈欠时最好用手挡住嘴"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Chỗ trống mở đầu câu mô tả cơ chế: khi há miệng hít sâu, không khí lạnh vào cơ thể mang bớt nhiệt của não.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 59,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "但后来的实验并不支持这种说法",
+          "然而，我们为什么要打哈欠",
+          "张大嘴深吸气时",
+          "这似乎也说明了温度和打哈欠之间的关系",
+          "很多人也会忍不住跟着打一个",
+          "打哈欠时最好用手挡住嘴"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Mùa đông ngáp ít hơn mùa hè – điều này 'dường như cũng cho thấy' quan hệ giữa nhiệt độ và ngáp, củng cố quan điểm 'làm mát não'.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 60,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "但后来的实验并不支持这种说法",
+          "然而，我们为什么要打哈欠",
+          "张大嘴深吸气时",
+          "这似乎也说明了温度和打哈欠之间的关系",
+          "很多人也会忍不住跟着打一个",
+          "打哈欠时最好用手挡住嘴"
+         ],
+         "answer": 4,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Thấy người khác ngáp, thậm chí chỉ đọc chữ 'ngáp', nhiều người cũng không nhịn được ngáp theo – minh họa tính 'lây'. Câu 'nên lấy tay che miệng' là câu nhiễu.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 3,
+     "type": "r_passage",
+     "instruction_vi": "Câu 61–80: đọc 5 bài văn, mỗi bài 4 câu hỏi; chọn đáp án đúng.",
+     "instruction_zh": "第61～80题：请选出正确答案。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": "在北京的一个训练基地里，三十二岁的刘静正带着一只大狗练习过马路。“停！”到了路边，狗立刻停下脚步，安静地坐了下来。刘静是一名导盲犬训练师，这已经是她做这份工作的第八年。\n一只合格的导盲犬，需要经过严格的挑选和长期的训练。小狗出生后，先要被送到志愿者家庭生活一年左右，学习和人相处，熟悉城市里的各种声音和环境。然后，它们才会回到基地接受专业训练，学习认识路口、避开路上的障碍、带主人上下楼梯等。整个过程大约需要两年，最后能通过考核的狗只有三成左右。\n在训练中，刘静最看重的是导盲犬的“聪明的不听话”。她解释说：“比如主人发出前进的命令，但前面有一辆车正开过来，这时候导盲犬必须拒绝执行命令。它要学会自己判断，而不是只会听话。”\n目前，中国有一千七百多万视力障碍者，但正在工作的导盲犬只有几百只，远远不能满足需求。刘静希望社会能更多地了解导盲犬：“很多公共场所还不让导盲犬进入，这让它们的主人出行非常不方便。”",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 61,
+         "stem": "小狗在接受专业训练以前要做什么？",
+         "stem_py": "",
+         "options": [
+          "参加比赛",
+          "学习过马路",
+          "在志愿者家庭生活",
+          "检查身体"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Chó con trước hết được gửi đến gia đình tình nguyện viên sống khoảng một năm để học cách sống với người, làm quen âm thanh và môi trường đô thị.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "志愿者",
+          "熟悉"
+         ]
+        },
+        {
+         "no": 62,
+         "stem": "关于导盲犬的训练，可以知道什么？",
+         "stem_py": "",
+         "options": [
+          "通过考核的比例不高",
+          "半年就能完成",
+          "所有的狗都能通过",
+          "只在室内进行"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cả quá trình khoảng hai năm, cuối cùng chỉ khoảng 30% số chó vượt qua sát hạch.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "考核",
+          "严格"
+         ]
+        },
+        {
+         "no": 63,
+         "stem": "第三段中的“聪明的不听话”是指导盲犬：",
+         "stem_py": "",
+         "options": [
+          "不喜欢听命令",
+          "只听训练师的话",
+          "比主人更聪明",
+          "遇到危险时能拒绝错误的命令"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Ví dụ trong bài: chủ ra lệnh đi tiếp nhưng có xe đang tới thì chó phải từ chối thực hiện, tự phán đoán chứ không chỉ biết nghe lời.",
+         "skills": [
+          "doc-suy-luan"
+         ],
+         "words": [
+          "判断",
+          "执行"
+         ]
+        },
+        {
+         "no": 64,
+         "stem": "根据最后一段，导盲犬面临的问题是：",
+         "stem_py": "",
+         "options": [
+          "很多公共场所不让进入",
+          "训练费用太高",
+          "寿命太短",
+          "主人不愿意使用"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Chị Lưu nói nhiều nơi công cộng chưa cho chó dẫn đường vào, khiến chủ của chúng đi lại rất bất tiện; ngoài ra số chó còn quá ít.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "公共场所",
+          "满足"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "每周只上四天班，工资却不减少——这听起来像是一个梦想，但在一些国家和企业，它正在变成现实。\n2022年，英国有六十多家公司参加了一项为期六个月的“四天工作制”试验。员工每周工作的时间从五天减少到四天，工资保持不变，前提是工作成果不能下降。试验结束后，大多数公司表示愿意继续实行这一制度。数据显示，员工请病假的天数减少了约三分之二，主动辞职的人数也明显下降。不少员工说，多出来的一天让他们有更多精力照顾家人、发展兴趣爱好，回到工作中时状态更好。\n不过，四天工作制并不适合所有行业。医院、学校、商店等需要每天有人值班的单位，很难让所有员工同时休息。如果安排轮流休息，又会增加管理的难度。此外，一些员工反映，为了在四天里完成原来五天的工作，每天的工作强度明显加大，压力反而更大了。\n专家认为，四天工作制的核心不是“少工作一天”，而是提高工作效率，比如减少不必要的会议、改进工作流程等。即使不能马上实行四天工作制，企业也可以先从这些方面做起，让员工工作得更轻松、更高效。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 65,
+         "stem": "参加试验的公司对员工有什么要求？",
+         "stem_py": "",
+         "options": [
+          "每天加班",
+          "周末值班",
+          "接受减少工资",
+          "工作成果不能下降"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Điều kiện tiên quyết: lương giữ nguyên nhưng kết quả công việc không được giảm.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "前提",
+          "成果"
+         ]
+        },
+        {
+         "no": 66,
+         "stem": "试验结束后，出现了什么变化？",
+         "stem_py": "",
+         "options": [
+          "会议变多了",
+          "公司收入下降了",
+          "辞职的员工增加了",
+          "员工请病假的天数减少了"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Số liệu cho thấy số ngày nghỉ ốm giảm khoảng 2/3, số người tự nghỉ việc cũng giảm rõ.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "病假",
+          "辞职"
+         ]
+        },
+        {
+         "no": 67,
+         "stem": "第三段主要讲的是：",
+         "stem_py": "",
+         "options": [
+          "四天工作制存在的困难",
+          "四天工作制的好处",
+          "医院怎样安排值班",
+          "员工的工资问题"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn 3 mở đầu bằng '不过，四天工作制并不适合所有行业' và nêu khó khăn: ngành cần trực hằng ngày, khó quản lý, cường độ làm việc tăng.",
+         "skills": [
+          "doc-y-chinh"
+         ],
+         "words": [
+          "行业",
+          "强度"
+         ]
+        },
+        {
+         "no": 68,
+         "stem": "专家认为四天工作制的核心是什么？",
+         "stem_py": "",
+         "options": [
+          "增加假期",
+          "提高工作效率",
+          "减少员工人数",
+          "改变工资制度"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Chuyên gia nói cốt lõi không phải 'làm ít một ngày' mà là nâng cao hiệu suất (bớt họp không cần thiết, cải tiến quy trình).",
+         "skills": [
+          "doc-y-chinh"
+         ],
+         "words": [
+          "核心",
+          "效率"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "在热带和一些比较温暖的海边，生长着一种特别的森林——红树林。它们的根长在海水和土之间，每天要经历两次涨潮和退潮。\n红树林的名字很容易让人误会，其实它们的叶子是绿色的。之所以叫“红树”，是因为这类植物的树皮里含有一种物质，被割开以后会在空气中变成红色。\n红树林被称为海岸的“保护墙”。它们发达的根像一张张大网，能够减弱海水的冲击力量，保护海岸不被冲坏。2004年印度洋海啸发生时，一些有红树林保护的村子，受到的损失明显小于没有红树林的地方。此外，红树林还是许多鱼和鸟的家，为它们提供了食物和躲避危险的地方。\n更值得一提的是，红树林储存碳的能力非常强。同样面积的红树林，储存的碳可以达到热带森林的好几倍，在应对气候变化方面发挥着重要作用。\n然而，过去几十年里，由于人们在海边大量养鱼、建设城市等原因，全球的红树林面积大幅减少。近年来，中国、越南等国家都在积极开展红树林的保护和恢复工作，中国的红树林面积已经由本世纪初的约220平方公里增加到约300平方公里。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 69,
+         "stem": "红树林为什么被叫做“红树”？",
+         "stem_py": "",
+         "options": [
+          "叶子是红色的",
+          "会开红色的花",
+          "树皮被割开后会变红",
+          "长在红色的土里"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Lá cây thực ra màu xanh; gọi là 'cây đỏ' vì vỏ cây chứa một chất, khi bị cắt ra gặp không khí sẽ chuyển màu đỏ.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "误会",
+          "物质"
+         ]
+        },
+        {
+         "no": 70,
+         "stem": "根据第三段，红树林能：",
+         "stem_py": "",
+         "options": [
+          "减少海水对海岸的破坏",
+          "让海水变淡",
+          "阻止台风形成",
+          "提高海水温度"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Hệ rễ phát triển như tấm lưới lớn, làm giảm sức va đập của sóng, bảo vệ bờ biển không bị xói.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "保护",
+          "海岸"
+         ]
+        },
+        {
+         "no": 71,
+         "stem": "关于红树林储存碳的能力，可以知道什么？",
+         "stem_py": "",
+         "options": [
+          "比热带森林弱",
+          "比同样面积的热带森林强得多",
+          "还没有人研究过",
+          "和普通森林一样"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cùng diện tích, lượng carbon rừng ngập mặn lưu trữ có thể gấp nhiều lần rừng nhiệt đới.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "储存",
+          "气候"
+         ]
+        },
+        {
+         "no": 72,
+         "stem": "根据上文，下列哪项正确？",
+         "stem_py": "",
+         "options": [
+          "全球红树林面积在增加",
+          "中国红树林面积有所增加",
+          "红树林只生长在中国",
+          "红树林不能在海水中生长"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Diện tích rừng ngập mặn ở Trung Quốc tăng từ khoảng 220 lên khoảng 300 km²; còn diện tích toàn cầu thì giảm mạnh mấy chục năm qua.",
+         "skills": [
+          "doc-suy-luan"
+         ],
+         "words": [
+          "恢复",
+          "面积"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "近年来，“国潮”成了中国消费市场上的一个热门词。“国潮”，指的是把中国传统文化元素和现代设计结合起来的国产品牌和产品。从印着古代图案的口红，到融入书法元素的运动鞋，再到用古诗句命名的茶饮料，“国潮”产品受到了越来越多年轻消费者的喜爱。\n“国潮”的兴起，首先是因为国产品牌质量的提高。过去，一些人认为国产品牌的优点只是“便宜”，而现在，许多国产品牌在设计、技术和服务上都不比国外品牌差。其次，年轻一代对本国文化的认同感和自信心不断增强，他们愿意通过消费来表达自己的文化态度。\n不过，也有人对“国潮热”表示担心。一些商家只是在产品上简单地印几个汉字、加一点儿红色，就说自己是“国潮”，价格却比普通产品高出不少。这种做法不仅让消费者感到失望，也伤害了“国潮”在大家心中的形象。\n业内人士认为，“国潮”要想走得长远，不能只停留在表面的“中国元素”上，而应该真正理解传统文化的内涵，并在产品质量和创新上下功夫。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 73,
+         "stem": "下列哪项属于“国潮”产品？",
+         "stem_py": "",
+         "options": [
+          "进口的高档手表",
+          "外国电影",
+          "普通的矿泉水",
+          "融入书法元素的运动鞋"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "'Quốc triều' là thương hiệu, sản phẩm nội địa kết hợp yếu tố văn hóa truyền thống với thiết kế hiện đại; bài lấy ví dụ giày thể thao có yếu tố thư pháp.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "元素",
+          "结合"
+         ]
+        },
+        {
+         "no": 74,
+         "stem": "“国潮”兴起的原因不包括：",
+         "stem_py": "",
+         "options": [
+          "国产品牌质量提高",
+          "年轻人的文化自信增强",
+          "国外品牌全部退出了市场",
+          "国产品牌设计有了进步"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Bài nêu hai nguyên nhân: chất lượng (thiết kế, công nghệ, dịch vụ) của hàng nội tăng và giới trẻ tự tin vào văn hóa hơn; không hề nói thương hiệu nước ngoài rút khỏi thị trường.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "兴起",
+          "自信"
+         ]
+        },
+        {
+         "no": 75,
+         "stem": "第三段中，作者批评了哪种现象？",
+         "stem_py": "",
+         "options": [
+          "产品价格太低",
+          "商家只做表面功夫却抬高价格",
+          "年轻人不爱国货",
+          "外国品牌模仿国潮"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Có thương gia chỉ in vài chữ Hán, thêm chút màu đỏ là gắn mác 'quốc triều' nhưng giá cao hơn nhiều – làm hình thức, nâng giá.",
+         "skills": [
+          "doc-suy-luan"
+         ],
+         "words": [
+          "批评",
+          "表面"
+         ]
+        },
+        {
+         "no": 76,
+         "stem": "作者认为“国潮”要长远发展应该：",
+         "stem_py": "",
+         "options": [
+          "多使用红色",
+          "降低价格",
+          "真正理解传统文化，重视质量和创新",
+          "只在国内销售"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn cuối: không thể dừng ở 'yếu tố Trung Hoa' bề ngoài mà phải hiểu nội hàm văn hóa truyền thống và đầu tư vào chất lượng, sáng tạo.",
+         "skills": [
+          "doc-y-chinh"
+         ],
+         "words": [
+          "创新",
+          "长远"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "在国家图书馆的一间工作室里，工作人员正小心地把一本几百年前的古书放在专门的扫描设备上。一页一页扫描完成后，这本书清楚的图片就会被上传到网上。任何人只要打开电脑，就能免费阅读这本过去只能隔着玻璃观看的珍贵古书。\n这就是正在进行的古书数字化工作。中国现存的古书有几千万册，其中很多由于年代久远，纸张已经变黄、变脆，翻一次就可能造成损坏。数字化以后，研究人员和普通读者都可以通过网络查阅，原书则可以放在条件更好的书库里保存，大大减少了使用对它们造成的伤害。\n但古书数字化并不只是简单的“拍照”。古书里很多字的写法和现在不一样，句子之间也没有标点，普通人很难读懂。为此，一些研究机构开始利用人工智能技术，自动识别古书中的文字，并加上标点。过去，一位专家整理一本古书可能需要好几年，现在借助人工智能，速度提高了几十倍。当然，机器识别的结果还需要专家最后检查和确认。\n有专家说，古书数字化让“藏在书库里的文字活了起来”。它不仅保护了珍贵的文化遗产，也让更多普通人有机会走近传统文化。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 77,
+         "stem": "根据第一段，数字化以后的古书：",
+         "stem_py": "",
+         "options": [
+          "只有专家能看",
+          "可以在网上免费阅读",
+          "需要付费下载",
+          "放在玻璃后面展出"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Sau khi số hóa, ai mở máy tính cũng đọc miễn phí được cuốn sách quý mà trước đây chỉ được nhìn qua lớp kính.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "免费",
+          "珍贵"
+         ]
+        },
+        {
+         "no": 78,
+         "stem": "古书数字化对原书有什么好处？",
+         "stem_py": "",
+         "options": [
+          "让纸张变新",
+          "让原书的价格更高",
+          "方便把原书借出去",
+          "减少使用对原书造成的损坏"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Mọi người đọc qua mạng, sách gốc được cất trong kho điều kiện tốt hơn, giảm hẳn tổn hại do việc sử dụng.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "损坏",
+          "保存"
+         ]
+        },
+        {
+         "no": 79,
+         "stem": "人工智能在古书整理中的作用是：",
+         "stem_py": "",
+         "options": [
+          "自动识别文字并加上标点",
+          "完全代替专家",
+          "修理坏了的纸",
+          "把古书翻译成外语"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "AI tự động nhận dạng chữ và thêm dấu câu; kết quả vẫn cần chuyên gia kiểm tra, nên không 'thay thế hoàn toàn'.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "识别",
+          "标点"
+         ]
+        },
+        {
+         "no": 80,
+         "stem": "最后一段中“藏在书库里的文字活了起来”是什么意思？",
+         "stem_py": "",
+         "options": [
+          "古书被重新印刷了",
+          "文字会自己移动",
+          "古书能被更多人阅读和使用",
+          "书库对外开放了"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cách nói hình ảnh: chữ trong sách cổ vốn nằm im trong kho nay được nhiều người đọc, dùng tới – tức là 'sống lại'.",
+         "skills": [
+          "doc-suy-luan"
+         ],
+         "words": [
+          "遗产",
+          "走近"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "writing",
+   "name_zh": "写作",
+   "name_vi": "Viết",
+   "minutes": 45,
+   "parts": [
+    {
+     "part": 1,
+     "type": "w_practical",
+     "instruction_vi": "Câu 81: viết văn bản ứng dụng (thông báo, thư, tin đăng…) theo tình huống cho sẵn, không ít hơn 150 chữ.",
+     "instruction_zh": "第81题：应用文写作。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 81,
+         "stem": "你是一家公司办公室的职员。公司计划下个月组织员工参加一次周末种树活动。请写一则通知，内容包括活动的时间、地点、安排和注意事项等，字数不少于150字。",
+         "stem_py": "",
+         "options": [],
+         "answer": null,
+         "sample_answer": "关于组织员工参加周末种树活动的通知\n各位同事：\n为了丰富大家的业余生活，同时为保护环境出一份力，公司决定组织员工参加周末种树活动。具体安排如下：\n一、时间：4月12日（星期六）上午8:00至下午3:00。\n二、地点：城东森林公园北门。\n三、安排：早上7:30在公司门口集合，统一坐大巴出发；上午种树，中午公司提供午饭，下午可以自由参观公园，3:00准时返回。\n四、注意事项：请穿运动鞋和方便活动的衣服，自己带好水杯和帽子；种树工具由公司统一准备；如果当天下雨，活动将推迟一周。\n请愿意参加的同事在4月8日下班以前到公司办公室报名，或者在公司内部网站上填写报名表。欢迎大家带家人一起参加！\n公司办公室\n2026年4月1日",
+         "rubric_vi": "Đạt yêu cầu khi: (1) ≥ 150 chữ Hán, đúng thể loại 通知 (thông báo): có tiêu đề, lời gọi (各位同事), nội dung, đơn vị và ngày ký; (2) có đủ thời gian, địa điểm, sắp xếp hoạt động, những điều cần chú ý, cách đăng ký; (3) văn phong trang trọng, ngắn gọn, đánh số mục rõ ràng; (4) ít lỗi ngữ pháp, chữ viết. Thiếu một trong các thông tin bắt buộc hoặc viết thành bài văn kể chuyện thì bị trừ điểm.",
+         "explain_vi": "Bài mẫu theo đúng khuôn thông báo: tiêu đề – lời gọi – mục đích – các mục đánh số (thời gian, địa điểm, sắp xếp, lưu ý) – cách đăng ký – đơn vị và ngày.",
+         "skills": [
+          "viet-ung-dung"
+         ],
+         "words": [
+          "通知",
+          "安排",
+          "注意事项"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 2,
+     "type": "w_topic_essay",
+     "instruction_vi": "Câu 82: viết bài nghị luận theo chủ đề, nêu quan điểm của mình, không ít hơn 300 chữ.",
+     "instruction_zh": "第82题：话题作文。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 82,
+         "stem": "越来越多的年轻人选择离开大城市，到中小城市甚至农村去工作和生活。有人认为这是一种聪明的选择，也有人认为这样会失去很多发展机会。你怎么看？请就这个话题谈谈你的观点，字数不少于300字。",
+         "stem_py": "",
+         "options": [],
+         "answer": null,
+         "sample_answer": "近年来，越来越多的年轻人选择离开大城市，到中小城市甚至农村去工作和生活。对此，有人认为这是聪明的选择，也有人觉得这样会失去发展机会。我认为，这个选择本身没有对错，关键在于是否适合自己。\n首先，大城市确实有它的优势。大公司多，工作机会多，收入相对较高，文化生活也很丰富。对于刚毕业、希望快速积累经验的年轻人来说，在大城市锻炼几年是很有价值的。\n但是，大城市的压力也非常大。房价高、交通拥挤、工作时间长，很多人每天在路上就要花两三个小时，几乎没有时间陪伴家人和照顾自己。相比之下，中小城市的生活成本低，节奏比较慢，人们有更多时间享受生活。而且随着网络和交通的发展，在小城市也能远程工作、开网店，发展机会并不像过去那么少。\n其次，年轻人回到家乡，也能为当地的发展带来新的想法和活力。我的一位朋友大学毕业后回到老家，利用网络帮助村民销售农产品，不仅自己过得很充实，也让很多家庭增加了收入。\n总之，无论选择大城市还是小城市，都应该先想清楚自己真正需要的是什么。只要目标明确、努力奋斗，在哪里都能实现自己的价值。",
+         "rubric_vi": "Đạt yêu cầu khi: (1) ≥ 300 chữ Hán, nêu rõ quan điểm của mình ngay đầu hoặc cuối bài; (2) có ít nhất 2–3 luận điểm, mỗi luận điểm có lý lẽ hoặc ví dụ cụ thể, có xét cả hai mặt; (3) bố cục mở – thân – kết, dùng từ nối lập luận (首先、其次、相比之下、总之、无论…都…); (4) từ vựng, ngữ pháp phù hợp cấp 6, ít lỗi. Chỉ liệt kê ý mà không lập luận hoặc lạc đề thì bị trừ nhiều điểm.",
+         "explain_vi": "Bài mẫu nêu quan điểm 'không có đúng sai, quan trọng là phù hợp với bản thân', phân tích cả ưu điểm của thành phố lớn lẫn thành phố nhỏ, có ví dụ cụ thể và kết luận rõ.",
+         "skills": [
+          "viet-nghi-luan"
+         ],
+         "words": [
+          "观点",
+          "优势",
+          "价值"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "self_check": {
+  "items": 82,
+  "levels_used": "≤ 6",
+  "out_of_level_words": [
+   "国潮",
+   "太阳能板",
+   "导盲犬",
+   "驿站",
+   "静音",
+   "蜂蜜",
+   "蜂巢",
+   "嚼",
+   "滴灌",
+   "候鸟",
+   "湿地",
+   "节气",
+   "热带",
+   "红树林",
+   "碳",
+   "标点",
+   "打哈欠",
+   "非物质文化遗产",
+   "海啸"
+  ]
+ }
+}

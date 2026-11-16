@@ -1,0 +1,2288 @@
+{
+ "id": "hsk3-3-de01",
+ "level": 3,
+ "format": "HSK 3.0 (2025)",
+ "title": "Đề luyện HSK 3 – số 1",
+ "minutes_total": 83,
+ "scoring_note": "CLEC chưa công bố thang điểm và điểm đạt của HSK 3.0 cấp 1–6; web chấm theo tỷ lệ đúng từng phần.",
+ "sections": [
+  {
+   "key": "listening",
+   "name_zh": "听力",
+   "name_vi": "Nghe hiểu",
+   "minutes": 23,
+   "parts": [
+    {
+     "part": 1,
+     "type": "l_dialog_pick",
+     "instruction_vi": "Nghe hội thoại ngắn, chọn tranh phù hợp. Câu 1–5 dùng chung 6 tranh A–F (một tranh không dùng), câu 6–10 dùng chung 5 tranh A–E; mỗi tranh dùng một lần. Web thay tranh bằng mô tả tiếng Việt.",
+     "instruction_zh": "听对话，选择与对话内容一致的图片。",
+     "plays": 2,
+     "groups": [
+      {
+       "audio": [
+        [
+         "女",
+         "这双怎么样？颜色我很喜欢。"
+        ],
+        [
+         "男",
+         "好看是好看，但是你穿着有点儿大，换一双小一号的吧。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 1,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "Hai người đang đứng ở ga tàu cao tốc, bên cạnh có hành lý",
+          "Một cậu bé ngồi xem TV, mẹ đứng bên cạnh chỉ vào vở bài tập",
+          "Một cô gái đang thử giày trong cửa hàng",
+          "Một người phụ nữ đang tưới hoa trong vườn",
+          "Một người đàn ông đang chạy bộ trong công viên buổi sáng",
+          "Hai người ngồi trong thư viện, một người chỉ vào cuốn từ điển"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Nữ hỏi đôi này thế nào, nam nói đi vào hơi rộng, nên đổi đôi nhỏ hơn một số (小一号): họ đang thử giày, chọn tranh C.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-noi-dung-chinh"
+         ],
+         "words": [
+          "双",
+          "换",
+          "号"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "你每天早上都来这儿跑步吗？"
+        ],
+        [
+         "女",
+         "是啊，跑半个小时，然后回家洗澡、上班。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 2,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "Hai người đang đứng ở ga tàu cao tốc, bên cạnh có hành lý",
+          "Một cậu bé ngồi xem TV, mẹ đứng bên cạnh chỉ vào vở bài tập",
+          "Một cô gái đang thử giày trong cửa hàng",
+          "Một người phụ nữ đang tưới hoa trong vườn",
+          "Một người đàn ông đang chạy bộ trong công viên buổi sáng",
+          "Hai người ngồi trong thư viện, một người chỉ vào cuốn từ điển"
+         ],
+         "answer": 4,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Nữ nói mỗi sáng chạy bộ nửa tiếng ở đây rồi về nhà tắm, đi làm: chọn tranh E (chạy bộ trong công viên).",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-noi-dung-chinh"
+         ],
+         "words": [
+          "跑步",
+          "洗澡"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "先别看了，把作业写完再看电视。"
+        ],
+        [
+         "男",
+         "妈妈，再给我五分钟，好不好？"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 3,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "Hai người đang đứng ở ga tàu cao tốc, bên cạnh có hành lý",
+          "Một cậu bé ngồi xem TV, mẹ đứng bên cạnh chỉ vào vở bài tập",
+          "Một cô gái đang thử giày trong cửa hàng",
+          "Một người phụ nữ đang tưới hoa trong vườn",
+          "Một người đàn ông đang chạy bộ trong công viên buổi sáng",
+          "Hai người ngồi trong thư viện, một người chỉ vào cuốn từ điển"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Mẹ bắt con làm xong bài tập rồi mới xem TV (把作业写完再看电视): chọn tranh B.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-noi-dung-chinh"
+         ],
+         "words": [
+          "作业",
+          "把"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "这个词我查了好几遍词典，还是不明白。"
+        ],
+        [
+         "女",
+         "我看看……这个词有两个意思，你看下面的句子就清楚了。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 4,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "Hai người đang đứng ở ga tàu cao tốc, bên cạnh có hành lý",
+          "Một cậu bé ngồi xem TV, mẹ đứng bên cạnh chỉ vào vở bài tập",
+          "Một cô gái đang thử giày trong cửa hàng",
+          "Một người phụ nữ đang tưới hoa trong vườn",
+          "Một người đàn ông đang chạy bộ trong công viên buổi sáng",
+          "Hai người ngồi trong thư viện, một người chỉ vào cuốn từ điển"
+         ],
+         "answer": 5,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Nam tra từ điển nhiều lần vẫn chưa hiểu, nữ xem giúp và giải thích nghĩa của từ: chọn tranh F (thư viện, từ điển).",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-noi-dung-chinh"
+         ],
+         "words": [
+          "词典",
+          "遍",
+          "清楚"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "车几点开？"
+        ],
+        [
+         "男",
+         "十点二十，还有十五分钟，我们先去检票吧，行李我来拿。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 5,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "Hai người đang đứng ở ga tàu cao tốc, bên cạnh có hành lý",
+          "Một cậu bé ngồi xem TV, mẹ đứng bên cạnh chỉ vào vở bài tập",
+          "Một cô gái đang thử giày trong cửa hàng",
+          "Một người phụ nữ đang tưới hoa trong vườn",
+          "Một người đàn ông đang chạy bộ trong công viên buổi sáng",
+          "Hai người ngồi trong thư viện, một người chỉ vào cuốn từ điển"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Hỏi tàu mấy giờ chạy, nói đi soát vé (检票) và xách hành lý: họ đang ở ga tàu, chọn tranh A. Tranh D không dùng.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-noi-dung-chinh"
+         ],
+         "words": [
+          "检票",
+          "行李"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "你看，它又睡在沙发上了。"
+        ],
+        [
+         "女",
+         "没关系，它最喜欢那儿，就让它睡吧。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 6,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "Bác sĩ đang khám cho một cậu bé bị sốt",
+          "Một chiếc bánh sinh nhật đặt trên bàn",
+          "Một người đàn ông đang quét dọn nhà",
+          "Hai người đang xem bản đồ ở ngã tư",
+          "Một con mèo đang ngủ trên ghế sofa"
+         ],
+         "answer": 4,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"它又睡在沙发上了\": con vật (它) ngủ trên ghế sofa, chọn tranh E.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-noi-dung-chinh"
+         ],
+         "words": [
+          "沙发"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "这个周末你朋友要来做客，你把屋子打扫干净了吗？"
+        ],
+        [
+         "男",
+         "正在打扫呢，地已经扫完了。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 7,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "Bác sĩ đang khám cho một cậu bé bị sốt",
+          "Một chiếc bánh sinh nhật đặt trên bàn",
+          "Một người đàn ông đang quét dọn nhà",
+          "Hai người đang xem bản đồ ở ngã tư",
+          "Một con mèo đang ngủ trên ghế sofa"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Nam nói đang quét dọn, đã quét xong sàn (地已经扫完了): chọn tranh C.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-noi-dung-chinh"
+         ],
+         "words": [
+          "打扫",
+          "扫",
+          "干净",
+          "做客"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "孩子昨天晚上发烧了，现在还有点儿热。"
+        ],
+        [
+         "女",
+         "别着急，我先给他检查一下。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 8,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "Bác sĩ đang khám cho một cậu bé bị sốt",
+          "Một chiếc bánh sinh nhật đặt trên bàn",
+          "Một người đàn ông đang quét dọn nhà",
+          "Hai người đang xem bản đồ ở ngã tư",
+          "Một con mèo đang ngủ trên ghế sofa"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đứa trẻ bị sốt (发烧), nữ nói \"để tôi khám cho cháu\": đây là bác sĩ, chọn tranh A.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-noi-dung-chinh"
+         ],
+         "words": [
+          "发烧",
+          "检查",
+          "着急"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "地图上说，图书馆就在这个路口的左边。"
+        ],
+        [
+         "男",
+         "可是我们已经找了半天了，还是问问别人吧。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 9,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "Bác sĩ đang khám cho một cậu bé bị sốt",
+          "Một chiếc bánh sinh nhật đặt trên bàn",
+          "Một người đàn ông đang quét dọn nhà",
+          "Hai người đang xem bản đồ ở ngã tư",
+          "Một con mèo đang ngủ trên ghế sofa"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"地图上说\" và \"这个路口\": hai người đang xem bản đồ ở ngã tư, chọn tranh D.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-noi-dung-chinh"
+         ],
+         "words": [
+          "地图",
+          "路口"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "生日快乐！这是我自己做的蛋糕，你尝尝。"
+        ],
+        [
+         "女",
+         "太好看了！谢谢你，我先拍照再吃。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 10,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "Bác sĩ đang khám cho một cậu bé bị sốt",
+          "Một chiếc bánh sinh nhật đặt trên bàn",
+          "Một người đàn ông đang quét dọn nhà",
+          "Hai người đang xem bản đồ ở ngã tư",
+          "Một con mèo đang ngủ trên ghế sofa"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"生日快乐\" và \"我自己做的蛋糕\": chọn tranh B (bánh sinh nhật).",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-noi-dung-chinh"
+         ],
+         "words": [
+          "蛋糕",
+          "尝",
+          "拍照"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 2,
+     "type": "l_dialog_q",
+     "instruction_vi": "Nghe hội thoại hai lượt lời và câu hỏi, chọn đáp án đúng trong 3 lựa chọn.",
+     "instruction_zh": "听对话和问题，选择正确答案。",
+     "plays": 2,
+     "groups": [
+      {
+       "audio": [
+        [
+         "女",
+         "你怎么才来？电影都开始十分钟了。"
+        ],
+        [
+         "男",
+         "路上车太多了，出租车走了快一个小时。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 11,
+         "stem": "问：男的为什么来晚了？",
+         "stem_py": "",
+         "options": [
+          "路上车多",
+          "起床晚了",
+          "忘了时间"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Nam nói đường đông xe, taxi đi gần một tiếng. B, C không được nhắc đến.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "才"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "这件衬衫多少钱？"
+        ],
+        [
+         "女",
+         "一件一百八，买两件可以少五十。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 12,
+         "stem": "问：买两件要多少钱？",
+         "stem_py": "",
+         "options": [
+          "180元",
+          "310元",
+          "360元"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Hai chiếc: 180 × 2 = 360, bớt 50 nên còn 310 tệ. 360 là giá chưa bớt, 180 là giá một chiếc.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-so-lieu"
+         ],
+         "words": [
+          "衬衫",
+          "件"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "你的腿怎么了？"
+        ],
+        [
+         "男",
+         "上周踢足球的时候被人踢了一脚，医生说要休息一个月。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 13,
+         "stem": "问：男的腿是怎么回事？",
+         "stem_py": "",
+         "options": [
+          "爬山爬累了",
+          "走路太多了",
+          "踢足球时被踢了"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Nam nói tuần trước đá bóng bị người khác đá trúng (被人踢了一脚). Chú ý câu bị động với 被.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "腿",
+          "被",
+          "踢"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "经理，我想下周一请假，我妈妈要住院了。"
+        ],
+        [
+         "女",
+         "好，你放心去吧，工作我让小李帮你做。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 14,
+         "stem": "问：男的为什么要请假？",
+         "stem_py": "",
+         "options": [
+          "妈妈要住院",
+          "要搬家",
+          "去外地开会"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Lý do xin nghỉ: mẹ sắp nhập viện (住院). Hai lựa chọn còn lại không có trong bài.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "请假",
+          "住院",
+          "放心"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "这个西瓜真甜，你在哪儿买的？"
+        ],
+        [
+         "男",
+         "就在小区门口，那个卖水果的老人那儿，又新鲜又便宜。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 15,
+         "stem": "问：西瓜是在哪儿买的？",
+         "stem_py": "",
+         "options": [
+          "超市",
+          "小区门口",
+          "公园旁边"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Nam mua ở cổng khu chung cư (小区门口), chỗ một ông cụ bán hoa quả.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-dia-diem"
+         ],
+         "words": [
+          "西瓜",
+          "甜",
+          "小区",
+          "新鲜"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "你的汉语说得这么好，学了多久了？"
+        ],
+        [
+         "女",
+         "差不多两年了，我每天晚上都和中国同学聊天儿。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 16,
+         "stem": "问：女的怎么练习汉语？",
+         "stem_py": "",
+         "options": [
+          "看中文电影",
+          "上网听新闻",
+          "和中国同学聊天儿"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Nữ nói tối nào cũng trò chuyện với bạn học người Trung Quốc. \"两年\" là thời gian học, không phải cách học.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "差不多",
+          "聊天儿"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "明天的会议下午三点开始，你告诉大家一下。"
+        ],
+        [
+         "男",
+         "好的，我马上发邮件给每个人。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 17,
+         "stem": "问：男的要做什么？",
+         "stem_py": "",
+         "options": [
+          "发邮件",
+          "打电话",
+          "去开会"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Nam trả lời sẽ gửi email cho từng người ngay (马上发邮件).",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "会议",
+          "马上",
+          "邮件"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "这个房子离公司很近，可是太小了。"
+        ],
+        [
+         "女",
+         "我觉得挺好的，附近有地铁，也有超市，生活很方便。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 18,
+         "stem": "问：女的觉得这个房子怎么样？",
+         "stem_py": "",
+         "options": [
+          "太小了",
+          "生活方便",
+          "离公司远"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"太小了\" là ý của nam. Nữ thấy ổn vì gần tàu điện ngầm, siêu thị, sinh hoạt tiện (生活很方便).",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-quan-diem"
+         ],
+         "words": [
+          "挺",
+          "附近",
+          "方便"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "你不是说要去游泳吗？怎么还在家？"
+        ],
+        [
+         "男",
+         "外面刮大风，看来要下雨，我还是明天再去吧。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 19,
+         "stem": "问：男的为什么没有去游泳？",
+         "stem_py": "",
+         "options": [
+          "身体不舒服",
+          "作业还没有写完",
+          "天气不好"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Ngoài trời gió to, có vẻ sắp mưa (刮大风，看来要下雨): lý do là thời tiết.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "刮",
+          "看来"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "服务员，我们的菜怎么还没有来？已经等了半个多小时了。"
+        ],
+        [
+         "女",
+         "对不起，今天客人太多了，我马上去问问。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 20,
+         "stem": "问：他们最可能在哪儿？",
+         "stem_py": "",
+         "options": [
+          "饭馆",
+          "银行",
+          "医院"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Gọi \"服务员\", hỏi món ăn (菜) sao chưa lên: đang ở quán ăn.",
+         "skills": [
+          "nghe-hoi-thoai",
+          "nghe-suy-luan"
+         ],
+         "words": [
+          "服务员",
+          "客人"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 3,
+     "type": "l_mono_q",
+     "instruction_vi": "Nghe một đoạn nói ngắn (một người nói) và câu hỏi, chọn đáp án đúng trong 3 lựa chọn.",
+     "instruction_zh": "听一段话和问题，选择正确答案。",
+     "plays": 2,
+     "groups": [
+      {
+       "audio": [
+        [
+         "",
+         "我们班的王老师每次上课前都会让大家先读五分钟课文，她说这样能让大家的耳朵和嘴先“热起来”。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 21,
+         "stem": "问：王老师上课前让学生做什么？",
+         "stem_py": "",
+         "options": [
+          "读课文",
+          "写汉字",
+          "听音乐"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Trước giờ học cô Vương cho cả lớp đọc bài khóa năm phút (读五分钟课文).",
+         "skills": [
+          "nghe-doan-van",
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "课文",
+          "耳朵",
+          "嘴"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "我家楼下新开了一家面包店，开店的是一个年轻的女孩儿。她做的面包不太甜，很受老人欢迎，每天早上七点以前就卖完了。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 22,
+         "stem": "问：关于那家面包店，可以知道什么？",
+         "stem_py": "",
+         "options": [
+          "只在晚上开门",
+          "开店的是老人",
+          "面包很受欢迎"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Bánh được người già ưa chuộng, 7 giờ sáng đã bán hết: bánh rất được ưa chuộng. Người mở tiệm là cô gái trẻ nên B sai.",
+         "skills": [
+          "nghe-doan-van",
+          "nghe-suy-luan"
+         ],
+         "words": [
+          "年轻",
+          "受",
+          "欢迎"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "我以前很怕冷，冬天总是感冒。后来我开始每天早上去公园跑步，到现在已经坚持了一年多，身体比以前好多了。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 23,
+         "stem": "问：说话人现在怎么样？",
+         "stem_py": "",
+         "options": [
+          "还常常感冒",
+          "身体变好了",
+          "不喜欢冬天"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"身体比以前好多了\": sức khỏe bây giờ tốt hơn nhiều. Hay bị cảm là chuyện trước đây (以前).",
+         "skills": [
+          "nghe-doan-van",
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "感冒",
+          "坚持",
+          "后来"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "李阿姨的女儿在国外留学，每个周末都会给她打电话。李阿姨说，听到女儿的声音，她就放心了。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 24,
+         "stem": "问：李阿姨听到女儿的声音后觉得怎么样？",
+         "stem_py": "",
+         "options": [
+          "很生气",
+          "很难过",
+          "很放心"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Câu cuối: nghe giọng con gái là bà yên tâm (就放心了).",
+         "skills": [
+          "nghe-doan-van",
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "阿姨",
+          "留学",
+          "声音",
+          "放心"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "这个公园早上六点开门，晚上十点关门。周一到周五不要门票，周末和节日的时候，一个人要十块钱。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 25,
+         "stem": "问：什么时候去公园要门票？",
+         "stem_py": "",
+         "options": [
+          "星期六",
+          "星期三",
+          "星期一"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cuối tuần và ngày lễ mới cần vé; thứ Bảy là cuối tuần. Thứ Hai đến thứ Sáu miễn vé.",
+         "skills": [
+          "nghe-doan-van",
+          "nghe-suy-luan"
+         ],
+         "words": [
+          "门票",
+          "节日",
+          "周末"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "小周是我们公司最年轻的经理，他工作非常认真，对同事也很热情，大家有什么问题都愿意去找他。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 26,
+         "stem": "问：关于小周，可以知道什么？",
+         "stem_py": "",
+         "options": [
+          "不太爱说话",
+          "对同事很热情",
+          "已经五十多岁了"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Bài nói anh ấy \"对同事也很热情\". Anh là giám đốc trẻ nhất nên C (đã ngoài năm mươi) sai.",
+         "skills": [
+          "nghe-doan-van",
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "经理",
+          "认真",
+          "热情",
+          "愿意"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "出门旅游以前，最好先在网上查一下那个地方的天气，这样就知道应该带什么衣服了。如果要去的地方经常下雨，别忘了带一把伞。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 27,
+         "stem": "问：出门旅游前最好先做什么？",
+         "stem_py": "",
+         "options": [
+          "买新衣服",
+          "借雨伞",
+          "查天气"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"最好先在网上查一下那个地方的天气\": việc nên làm trước là tra thời tiết. Mang ô chỉ khi nơi đến hay mưa.",
+         "skills": [
+          "nghe-doan-van",
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "最好",
+          "查",
+          "伞"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "我的邻居是一位画家，他家的门总是开着，邻居家的孩子常常跑进去看他画画儿。他也很愿意教孩子们怎么画小动物。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 28,
+         "stem": "问：那位画家常常做什么？",
+         "stem_py": "",
+         "options": [
+          "教孩子画画儿",
+          "在公园画画儿",
+          "卖自己的画儿"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Ông họa sĩ sẵn lòng dạy bọn trẻ vẽ con vật nhỏ. B, C không được nhắc đến.",
+         "skills": [
+          "nghe-doan-van",
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "邻居",
+          "画家",
+          "动物"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "我第一次坐高铁是从北京到上海，以前坐火车要十几个小时，现在不到五个小时就到了，又快又舒服。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 29,
+         "stem": "问：说话人觉得坐高铁怎么样？",
+         "stem_py": "",
+         "options": [
+          "太贵了",
+          "又快又舒服",
+          "不太安全"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Câu cuối nói thẳng: \"又快又舒服\". Bài không nói đến giá vé hay an toàn.",
+         "skills": [
+          "nghe-doan-van",
+          "nghe-quan-diem"
+         ],
+         "words": [
+          "高铁",
+          "舒服"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "很多人觉得吃得越多，身体越好。其实不是这样的，吃饭最好吃到七八分饱，吃得太饱对身体不好。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 30,
+         "stem": "问：说话人主要想告诉我们什么？",
+         "stem_py": "",
+         "options": [
+          "要多吃水果",
+          "晚饭要早吃",
+          "吃饭别太饱"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Ý chính sau \"其实\": chỉ nên ăn no bảy, tám phần, ăn quá no không tốt cho sức khỏe.",
+         "skills": [
+          "nghe-doan-van",
+          "nghe-y-chinh"
+         ],
+         "words": [
+          "越……越……",
+          "其实",
+          "饱"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "reading",
+   "name_zh": "阅读",
+   "name_vi": "Đọc hiểu",
+   "minutes": 30,
+   "parts": [
+    {
+     "part": 1,
+     "type": "r_match_qa",
+     "instruction_vi": "Chọn câu đáp phù hợp. Câu 31–35: chọn câu trả lời trong nhóm A–F (có một câu thừa). Câu 36–40: mỗi câu là lời đáp, chọn câu nói trước nó trong nhóm A–E.",
+     "instruction_zh": "选出与句子内容相关的句子。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 31,
+         "stem": "你奶奶的病怎么样了？",
+         "stem_py": "",
+         "options": [
+          "好啊，可是我得先问问我妈妈。",
+          "别着急，我们去问问司机吧。",
+          "不是，我借的是那本历史书。",
+          "已经好多了，医生说下个星期就能出院。",
+          "我也是，所以我每天都坐地铁上班。",
+          "大家都去外地参加比赛了。"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Hỏi bệnh của bà thế nào, câu đáp hợp là \"đã đỡ nhiều, tuần sau xuất viện được\" (D).",
+         "skills": [
+          "doc-hoi-dap",
+          "doc-ngu-canh"
+         ],
+         "words": [
+          "出院"
+         ]
+        },
+        {
+         "no": 32,
+         "stem": "周末我们去河边骑自行车，你去吗？",
+         "stem_py": "",
+         "options": [
+          "好啊，可是我得先问问我妈妈。",
+          "别着急，我们去问问司机吧。",
+          "不是，我借的是那本历史书。",
+          "已经好多了，医生说下个星期就能出院。",
+          "我也是，所以我每天都坐地铁上班。",
+          "大家都去外地参加比赛了。"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Lời rủ đi đạp xe, đáp \"được thôi, nhưng phải hỏi mẹ trước\" (A).",
+         "skills": [
+          "doc-hoi-dap",
+          "doc-ngu-canh"
+         ],
+         "words": [
+          "河",
+          "骑",
+          "自行车"
+         ]
+        },
+        {
+         "no": 33,
+         "stem": "你从图书馆借的是这本汉语书吗？",
+         "stem_py": "",
+         "options": [
+          "好啊，可是我得先问问我妈妈。",
+          "别着急，我们去问问司机吧。",
+          "不是，我借的是那本历史书。",
+          "已经好多了，医生说下个星期就能出院。",
+          "我也是，所以我每天都坐地铁上班。",
+          "大家都去外地参加比赛了。"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Câu hỏi \"có phải cuốn này không\" được đáp bằng \"不是，…那本历史书\" (C).",
+         "skills": [
+          "doc-hoi-dap",
+          "doc-ngu-canh"
+         ],
+         "words": [
+          "借",
+          "历史"
+         ]
+        },
+        {
+         "no": 34,
+         "stem": "我的包好像忘在车上了，车还没有开走。",
+         "stem_py": "",
+         "options": [
+          "好啊，可是我得先问问我妈妈。",
+          "别着急，我们去问问司机吧。",
+          "不是，我借的是那本历史书。",
+          "已经好多了，医生说下个星期就能出院。",
+          "我也是，所以我每天都坐地铁上班。",
+          "大家都去外地参加比赛了。"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Để quên túi trên xe, xe chưa chạy: đáp hợp là \"đừng vội, ta hỏi tài xế\" (B).",
+         "skills": [
+          "doc-hoi-dap",
+          "doc-ngu-canh"
+         ],
+         "words": [
+          "好像",
+          "司机"
+         ]
+        },
+        {
+         "no": 35,
+         "stem": "今天办公室里怎么一个人也没有？",
+         "stem_py": "",
+         "options": [
+          "好啊，可是我得先问问我妈妈。",
+          "别着急，我们去问问司机吧。",
+          "不是，我借的是那本历史书。",
+          "已经好多了，医生说下个星期就能出院。",
+          "我也是，所以我每天都坐地铁上班。",
+          "大家都去外地参加比赛了。"
+         ],
+         "answer": 5,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Hỏi vì sao văn phòng không có ai, F giải thích: mọi người đi tỉnh khác thi đấu rồi. E là đáp án thừa.",
+         "skills": [
+          "doc-hoi-dap",
+          "doc-ngu-canh"
+         ],
+         "words": [
+          "办公室",
+          "外地",
+          "参加"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 36,
+         "stem": "真的吗？太好了！到时候我一定去。",
+         "stem_py": "",
+         "options": [
+          "你这次数学考得怎么样？",
+          "你家附近有没有好一点儿的饭馆？",
+          "这个箱子我一个人搬不动，你能帮我一下吗？",
+          "下个月我要结婚了，你一定要来啊！",
+          "你怎么总是晚上十二点以后才睡觉？"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"到时候我一定去\" đáp lời mời đám cưới (D).",
+         "skills": [
+          "doc-hoi-dap",
+          "doc-ngu-canh"
+         ],
+         "words": [
+          "结婚",
+          "一定"
+         ]
+        },
+        {
+         "no": 37,
+         "stem": "好的，放在哪儿？",
+         "stem_py": "",
+         "options": [
+          "你这次数学考得怎么样？",
+          "你家附近有没有好一点儿的饭馆？",
+          "这个箱子我一个人搬不动，你能帮我一下吗？",
+          "下个月我要结婚了，你一定要来啊！",
+          "你怎么总是晚上十二点以后才睡觉？"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"好的，放在哪儿？\" là nhận lời khuân giúp cái thùng và hỏi đặt ở đâu (C).",
+         "skills": [
+          "doc-hoi-dap",
+          "doc-ngu-canh"
+         ],
+         "words": [
+          "箱子",
+          "搬"
+         ]
+        },
+        {
+         "no": 38,
+         "stem": "有一家北方菜不错，就在银行旁边。",
+         "stem_py": "",
+         "options": [
+          "你这次数学考得怎么样？",
+          "你家附近有没有好一点儿的饭馆？",
+          "这个箱子我一个人搬不动，你能帮我一下吗？",
+          "下个月我要结婚了，你一定要来啊！",
+          "你怎么总是晚上十二点以后才睡觉？"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Giới thiệu một quán món miền Bắc gần ngân hàng, đáp câu hỏi về quán ăn (B).",
+         "skills": [
+          "doc-hoi-dap",
+          "doc-ngu-canh"
+         ],
+         "words": [
+          "北方",
+          "银行"
+         ]
+        },
+        {
+         "no": 39,
+         "stem": "比上次好一点儿，可是还是不太满意。",
+         "stem_py": "",
+         "options": [
+          "你这次数学考得怎么样？",
+          "你家附近有没有好一点儿的饭馆？",
+          "这个箱子我一个人搬不动，你能帮我一下吗？",
+          "下个月我要结婚了，你一定要来啊！",
+          "你怎么总是晚上十二点以后才睡觉？"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "So sánh với lần trước và nói chưa hài lòng: đáp câu hỏi thi môn toán (A).",
+         "skills": [
+          "doc-hoi-dap",
+          "doc-ngu-canh"
+         ],
+         "words": [
+          "满意",
+          "数学"
+         ]
+        },
+        {
+         "no": 40,
+         "stem": "作业太多了，我也没有办法。",
+         "stem_py": "",
+         "options": [
+          "你这次数学考得怎么样？",
+          "你家附近有没有好一点儿的饭馆？",
+          "这个箱子我一个人搬不动，你能帮我一下吗？",
+          "下个月我要结婚了，你一定要来啊！",
+          "你怎么总是晚上十二点以后才睡觉？"
+         ],
+         "answer": 4,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Giải thích vì sao thức khuya: bài tập quá nhiều (E).",
+         "skills": [
+          "doc-hoi-dap",
+          "doc-ngu-canh"
+         ],
+         "words": [
+          "作业",
+          "办法"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 2,
+     "type": "r_cloze",
+     "instruction_vi": "Chọn từ trong nhóm A–F điền vào chỗ trống; mỗi nhóm có một từ thừa. Câu 41–45 là câu đơn, câu 46–50 là hội thoại.",
+     "instruction_zh": "选词填空。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 41,
+         "stem": "我们班（　　）有二十八个学生，女生有十个。",
+         "stem_py": "",
+         "options": [
+          "安静",
+          "一共",
+          "习惯",
+          "页",
+          "刚才",
+          "留学"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Trước con số tổng dùng 一共 (tổng cộng).",
+         "skills": [
+          "doc-tu-vung",
+          "doc-ngu-phap"
+         ],
+         "words": [
+          "一共"
+         ]
+        },
+        {
+         "no": 42,
+         "stem": "图书馆里很（　　），大家都在看书。",
+         "stem_py": "",
+         "options": [
+          "安静",
+          "一共",
+          "习惯",
+          "页",
+          "刚才",
+          "留学"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Sau 很 cần tính từ; thư viện \"rất yên tĩnh\" (安静).",
+         "skills": [
+          "doc-tu-vung",
+          "doc-ngu-phap"
+         ],
+         "words": [
+          "安静"
+         ]
+        },
+        {
+         "no": 43,
+         "stem": "你（　　）去哪儿了？经理一直在找你。",
+         "stem_py": "",
+         "options": [
+          "安静",
+          "一共",
+          "习惯",
+          "页",
+          "刚才",
+          "留学"
+         ],
+         "answer": 4,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "刚才 (vừa nãy) đứng trước động từ, hợp với việc giám đốc đang tìm.",
+         "skills": [
+          "doc-tu-vung",
+          "doc-ngu-phap"
+         ],
+         "words": [
+          "刚才"
+         ]
+        },
+        {
+         "no": 44,
+         "stem": "来中国两年了，我已经（　　）这里的生活了。",
+         "stem_py": "",
+         "options": [
+          "安静",
+          "一共",
+          "习惯",
+          "页",
+          "刚才",
+          "留学"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "习惯 + tân ngữ: quen với cuộc sống ở đây.",
+         "skills": [
+          "doc-tu-vung",
+          "doc-ngu-phap"
+         ],
+         "words": [
+          "习惯",
+          "生活"
+         ]
+        },
+        {
+         "no": 45,
+         "stem": "请大家打开书，看第三十五（　　）。",
+         "stem_py": "",
+         "options": [
+          "安静",
+          "一共",
+          "习惯",
+          "页",
+          "刚才",
+          "留学"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "第 + số + lượng từ 页: trang 35. 留学 là từ thừa.",
+         "skills": [
+          "doc-tu-vung",
+          "doc-ngu-phap"
+         ],
+         "words": [
+          "页"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 46,
+         "stem": "A：这条裙子你穿着很（　　），买了吧。\nB：可是有点儿贵。",
+         "stem_py": "",
+         "options": [
+          "合适",
+          "简单",
+          "关心",
+          "照顾",
+          "而且",
+          "迟到"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Mặc váy \"rất vừa\" (合适) nên khuyên mua.",
+         "skills": [
+          "doc-tu-vung",
+          "doc-ngu-phap"
+         ],
+         "words": [
+          "裙子",
+          "合适"
+         ]
+        },
+        {
+         "no": 47,
+         "stem": "A：这次考试难吗？\nB：不难，题都很（　　）。",
+         "stem_py": "",
+         "options": [
+          "合适",
+          "简单",
+          "关心",
+          "照顾",
+          "而且",
+          "迟到"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"不难\" đi với 简单 (đơn giản).",
+         "skills": [
+          "doc-tu-vung",
+          "doc-ngu-phap"
+         ],
+         "words": [
+          "简单"
+         ]
+        },
+        {
+         "no": 48,
+         "stem": "A：下个星期我要去外地，你能帮我（　　）一下我的猫吗？\nB：当然可以，你放心吧。",
+         "stem_py": "",
+         "options": [
+          "合适",
+          "简单",
+          "关心",
+          "照顾",
+          "而且",
+          "迟到"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đi vắng, nhờ \"chăm sóc\" con mèo: 照顾.",
+         "skills": [
+          "doc-tu-vung",
+          "doc-ngu-phap"
+         ],
+         "words": [
+          "照顾",
+          "外地"
+         ]
+        },
+        {
+         "no": 49,
+         "stem": "A：这个手机怎么样？\nB：很好用，（　　）也不贵。",
+         "stem_py": "",
+         "options": [
+          "合适",
+          "简单",
+          "关心",
+          "照顾",
+          "而且",
+          "迟到"
+         ],
+         "answer": 4,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "而且 nối hai ý cùng chiều: dễ dùng, \"hơn nữa\" không đắt.",
+         "skills": [
+          "doc-tu-vung",
+          "doc-ngu-phap"
+         ],
+         "words": [
+          "而且"
+         ]
+        },
+        {
+         "no": 50,
+         "stem": "A：你妈妈常给你打电话吗？\nB：是啊，她很（　　）我在这边的生活。",
+         "stem_py": "",
+         "options": [
+          "合适",
+          "简单",
+          "关心",
+          "照顾",
+          "而且",
+          "迟到"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "关心 + người/việc: quan tâm cuộc sống của tôi. 迟到 là từ thừa.",
+         "skills": [
+          "doc-tu-vung",
+          "doc-ngu-phap"
+         ],
+         "words": [
+          "关心"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 3,
+     "type": "r_passage",
+     "instruction_vi": "Đọc đoạn văn ngắn, chọn đáp án đúng cho câu hỏi (★) trong 3 lựa chọn. Câu 57–58 và 59–60 dùng chung một đoạn.",
+     "instruction_zh": "请选出正确答案。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": "我每天早上都喝牛奶，吃一个鸡蛋。以前我总是不吃早饭就去上学，上午第三节课的时候就饿得不能认真听课了。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 51,
+         "stem": "★ 他以前上午常常：",
+         "stem_py": "",
+         "options": [
+          "很饿",
+          "迟到",
+          "睡觉"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Trước đây cậu không ăn sáng, đến tiết ba buổi sáng thì đói không nghe giảng được (饿得不能认真听课).",
+         "skills": [
+          "doc-doan-van",
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "饿",
+          "以前"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "这家宾馆离火车站只有五分钟的路，房间干净，也很便宜，所以很多游客都选择住在这里。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 52,
+         "stem": "★ 关于这家宾馆，可以知道：",
+         "stem_py": "",
+         "options": [
+          "很便宜",
+          "离机场很近",
+          "房间很大"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Bài nói \"也很便宜\". Khách sạn gần ga tàu chứ không phải sân bay; phòng sạch chứ không nói rộng.",
+         "skills": [
+          "doc-doan-van",
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "宾馆",
+          "干净",
+          "选择"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "小马是我的大学同学，他特别喜欢动物。大学的时候他就养了两只狗和一只猫。现在他在动物园工作，每天照顾大熊猫。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 53,
+         "stem": "★ 小马现在：",
+         "stem_py": "",
+         "options": [
+          "在动物园上班",
+          "是大学老师",
+          "养了很多鸟"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"现在他在动物园工作\": nay làm ở sở thú. Hồi đại học anh nuôi chó, mèo chứ không phải chim.",
+         "skills": [
+          "doc-doan-van",
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "动物园",
+          "养",
+          "大熊猫"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "冬天天气很冷，很多人不愿意出门运动。其实，在家里也可以锻炼身体，比如爬楼梯、跳舞，都是不错的方法。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 54,
+         "stem": "★ 说话人认为，冬天：",
+         "stem_py": "",
+         "options": [
+          "最好不要出门",
+          "在家也能锻炼",
+          "应该多睡觉"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Ý chính sau 其实: ở nhà cũng có thể rèn luyện, ví dụ leo cầu thang, nhảy.",
+         "skills": [
+          "doc-doan-van",
+          "doc-y-chinh"
+         ],
+         "words": [
+          "锻炼",
+          "其实",
+          "比如"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "妹妹今年上初中一年级。她的数学一直很好，可是外语成绩比较差。这个学期她每天晚上都花一个小时复习外语。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 55,
+         "stem": "★ 妹妹这个学期：",
+         "stem_py": "",
+         "options": [
+          "数学成绩变差了",
+          "每天复习外语",
+          "上初中三年级"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"这个学期她每天晚上都花一个小时复习外语\". Toán của em vẫn tốt; em học lớp 1 cấp hai.",
+         "skills": [
+          "doc-doan-van",
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "初中",
+          "复习",
+          "外语",
+          "学期"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "在中国，很多人过生日的时候会吃一碗长长的面条，意思是希望自己身体健康、快乐。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 56,
+         "stem": "★ 生日吃面条是希望：",
+         "stem_py": "",
+         "options": [
+          "考试成绩好",
+          "更聪明",
+          "身体健康"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"意思是希望自己身体健康、快乐\": mong khỏe mạnh, vui vẻ.",
+         "skills": [
+          "doc-doan-van",
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "健康",
+          "面条儿"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "我们小区附近有一个小公园，以前里面很脏，到处都是纸和瓶子，很少有人去。去年，小区里的几位老人决定每天早上去公园打扫。慢慢地，越来越多的邻居也参加了进来。现在公园变得又干净又漂亮，晚上常常有人在那儿跳舞、聊天儿。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 57,
+         "stem": "★ 以前那个公园：",
+         "stem_py": "",
+         "options": [
+          "很干净",
+          "没有树",
+          "很少有人去"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"以前里面很脏……很少有人去\": trước đây ít người đến. A ngược với \"很脏\".",
+         "skills": [
+          "doc-doan-van",
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "脏",
+          "到处"
+         ]
+        },
+        {
+         "no": 58,
+         "stem": "★ 现在公园：",
+         "stem_py": "",
+         "options": [
+          "变干净了",
+          "要门票了",
+          "有很多鸟"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"现在公园变得又干净又漂亮\". Bài không nhắc vé vào cửa hay chim.",
+         "skills": [
+          "doc-doan-van",
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "变",
+          "干净"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "很多人学外语的时候，觉得最难的是记住新的词。我的办法是：把每天学的新词写在小纸上，放在家里经常能看见的地方，比如冰箱上、门上。这样，每次看见就读一遍，不用花很多时间，也能记得很清楚。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 59,
+         "stem": "★ 说话人把写着新词的纸放在：",
+         "stem_py": "",
+         "options": [
+          "书包里",
+          "冰箱上",
+          "桌子下面"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Người viết dán giấy ở chỗ hay nhìn thấy, \"比如冰箱上、门上\".",
+         "skills": [
+          "doc-doan-van",
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "冰箱",
+          "比如"
+         ]
+        },
+        {
+         "no": 60,
+         "stem": "★ 说话人觉得这个办法：",
+         "stem_py": "",
+         "options": [
+          "需要很多时间",
+          "只能学汉字",
+          "简单有用"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "\"不用花很多时间，也能记得很清楚\": cách này đơn giản và hiệu quả. A ngược với bài.",
+         "skills": [
+          "doc-doan-van",
+          "doc-suy-luan"
+         ],
+         "words": [
+          "办法",
+          "清楚",
+          "记"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "writing",
+   "name_zh": "书写",
+   "name_vi": "Viết",
+   "minutes": 20,
+   "parts": [
+    {
+     "part": 1,
+     "type": "w_char",
+     "instruction_vi": "Viết chữ Hán vào chỗ trống theo pinyin cho sẵn.",
+     "instruction_zh": "看拼音写汉字。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 61,
+         "stem": "这个问题很简单，我一下就（ jiě ）决了。",
+         "stem_py": "",
+         "options": null,
+         "answer": null,
+         "sample_answer": "解",
+         "rubric_vi": "Đúng khi viết đúng chữ Hán 解 (giản thể); viết sai nét, sai chữ đồng âm hoặc chỉ ghi pinyin đều tính sai.",
+         "explain_vi": "解决 (giải quyết): chữ 解 có bộ 角 bên trái. Chú ý đừng nhầm với 姐 (jiě, chị gái).",
+         "skills": [
+          "viet-chu-han"
+         ],
+         "words": [
+          "解决"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 62,
+         "stem": "我（ yòng ）手机给你拍照吧。",
+         "stem_py": "",
+         "options": null,
+         "answer": null,
+         "sample_answer": "用",
+         "rubric_vi": "Đúng khi viết đúng chữ Hán 用 (giản thể); viết sai nét, sai chữ đồng âm hoặc chỉ ghi pinyin đều tính sai.",
+         "explain_vi": "用 + công cụ + động từ: dùng điện thoại để chụp ảnh.",
+         "skills": [
+          "viet-chu-han"
+         ],
+         "words": [
+          "用",
+          "拍照"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 63,
+         "stem": "他每天晚上都去楼下的公园（ duàn ）炼身体。",
+         "stem_py": "",
+         "options": null,
+         "answer": null,
+         "sample_answer": "锻",
+         "rubric_vi": "Đúng khi viết đúng chữ Hán 锻 (giản thể); viết sai nét, sai chữ đồng âm hoặc chỉ ghi pinyin đều tính sai.",
+         "explain_vi": "锻炼 (rèn luyện): chữ 锻 có bộ 钅 (kim loại). Đừng nhầm với 段 (đoạn).",
+         "skills": [
+          "viet-chu-han"
+         ],
+         "words": [
+          "锻炼"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 64,
+         "stem": "这件衣服的颜（ sè ）我不太喜欢。",
+         "stem_py": "",
+         "options": null,
+         "answer": null,
+         "sample_answer": "色",
+         "rubric_vi": "Đúng khi viết đúng chữ Hán 色 (giản thể); viết sai nét, sai chữ đồng âm hoặc chỉ ghi pinyin đều tính sai.",
+         "explain_vi": "颜色 (màu sắc): chữ 色.",
+         "skills": [
+          "viet-chu-han"
+         ],
+         "words": [
+          "颜色"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 65,
+         "stem": "我们（ xiān ）吃饭，然后去看电影。",
+         "stem_py": "",
+         "options": null,
+         "answer": null,
+         "sample_answer": "先",
+         "rubric_vi": "Đúng khi viết đúng chữ Hán 先 (giản thể); viết sai nét, sai chữ đồng âm hoặc chỉ ghi pinyin đều tính sai.",
+         "explain_vi": "Cấu trúc 先……然后……: trước … sau đó …",
+         "skills": [
+          "viet-chu-han"
+         ],
+         "words": [
+          "先",
+          "然后"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 2,
+     "type": "w_picture_sentence",
+     "instruction_vi": "Nhìn tranh, dùng từ cho sẵn viết một câu. Web thay tranh bằng mô tả tiếng Việt.",
+     "instruction_zh": "看图，用词造句。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": "Một chàng trai ở sân bay đang cố kéo hai chiếc vali rất lớn, mặt đầy mồ hôi",
+       "items": [
+        {
+         "no": 66,
+         "stem": "箱子",
+         "stem_py": "",
+         "options": null,
+         "answer": null,
+         "sample_answer": "他一个人拿不动这两个大箱子。",
+         "rubric_vi": "Đạt khi: (1) dùng đúng từ「箱子」; (2) câu đúng ngữ pháp, chữ Hán viết đúng; (3) nội dung khớp với tranh. Câu quá ngắn hoặc chỉ ghép từ, sai chữ, không khớp tranh sẽ bị trừ điểm.",
+         "explain_vi": "Có thể tả việc kéo vali nặng bằng bổ ngữ khả năng: 拿不动 / 搬不动.",
+         "skills": [
+          "viet-dat-cau"
+         ],
+         "words": [
+          "箱子"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": "Một ông cụ đang đạp xe đạp trên con đường ven sông vào buổi sáng",
+       "items": [
+        {
+         "no": 67,
+         "stem": "骑",
+         "stem_py": "",
+         "options": null,
+         "answer": null,
+         "sample_answer": "爷爷每天早上都骑自行车去河边。",
+         "rubric_vi": "Đạt khi: (1) dùng đúng từ「骑」; (2) câu đúng ngữ pháp, chữ Hán viết đúng; (3) nội dung khớp với tranh. Câu quá ngắn hoặc chỉ ghép từ, sai chữ, không khớp tranh sẽ bị trừ điểm.",
+         "explain_vi": "骑 đi với 自行车/马; có thể thêm thời gian, nơi chốn để câu đầy đủ.",
+         "skills": [
+          "viet-dat-cau"
+         ],
+         "words": [
+          "骑"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": "Một cậu bé vừa đá bóng xong, đang uống ừng ực một chai nước",
+       "items": [
+        {
+         "no": 68,
+         "stem": "渴",
+         "stem_py": "",
+         "options": null,
+         "answer": null,
+         "sample_answer": "他踢了一下午足球，渴极了。",
+         "rubric_vi": "Đạt khi: (1) dùng đúng từ「渴」; (2) câu đúng ngữ pháp, chữ Hán viết đúng; (3) nội dung khớp với tranh. Câu quá ngắn hoặc chỉ ghép từ, sai chữ, không khớp tranh sẽ bị trừ điểm.",
+         "explain_vi": "Có thể dùng bổ ngữ mức độ: 渴极了 / 渴得不得了 hoặc 因为……所以很渴.",
+         "skills": [
+          "viet-dat-cau"
+         ],
+         "words": [
+          "渴"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": "Một người phụ nữ mở tủ lạnh, bên trong đầy rau và hoa quả",
+       "items": [
+        {
+         "no": 69,
+         "stem": "冰箱",
+         "stem_py": "",
+         "options": null,
+         "answer": null,
+         "sample_answer": "冰箱里有很多新鲜的水果和菜。",
+         "rubric_vi": "Đạt khi: (1) dùng đúng từ「冰箱」; (2) câu đúng ngữ pháp, chữ Hán viết đúng; (3) nội dung khớp với tranh. Câu quá ngắn hoặc chỉ ghép từ, sai chữ, không khớp tranh sẽ bị trừ điểm.",
+         "explain_vi": "Câu tồn tại: nơi chốn + 有 + vật: 冰箱里有……",
+         "skills": [
+          "viet-dat-cau"
+         ],
+         "words": [
+          "冰箱"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": "Một em bé đang khóc, người mẹ ngồi bên cạnh dỗ dành",
+       "items": [
+        {
+         "no": 70,
+         "stem": "哭",
+         "stem_py": "",
+         "options": null,
+         "answer": null,
+         "sample_answer": "孩子哭了，妈妈正在照顾他。",
+         "rubric_vi": "Đạt khi: (1) dùng đúng từ「哭」; (2) câu đúng ngữ pháp, chữ Hán viết đúng; (3) nội dung khớp với tranh. Câu quá ngắn hoặc chỉ ghép từ, sai chữ, không khớp tranh sẽ bị trừ điểm.",
+         "explain_vi": "Có thể dùng 哭了 / 正在哭 và nói thêm hành động của người mẹ.",
+         "skills": [
+          "viet-dat-cau"
+         ],
+         "words": [
+          "哭"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "self_check": {
+  "items": 70,
+  "levels_used": "≤ 3",
+  "out_of_level_words": []
+ }
+}

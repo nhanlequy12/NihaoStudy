@@ -1,0 +1,1587 @@
+{
+  "id": "hsk3-1-de01",
+  "level": 1,
+  "format": "HSK 3.0 (2025)",
+  "title": "Đề luyện HSK 1 – số 1",
+  "minutes_total": 40,
+  "scoring_note": "CLEC chưa công bố thang điểm và điểm đạt của HSK 3.0 cấp 1–6; web chấm theo tỷ lệ đúng từng phần.",
+  "structure_note_vi": "Cấu trúc theo đề mẫu HSK (一级) của CLEC: Nghe 20 câu (4 phần × 5), khoảng 12 phút; Đọc 20 câu (4 phần × 5), 20 phút; tổng 40 câu, khoảng 40 phút (gồm 5 phút điền thông tin, 3 phút tô phiếu sau phần nghe). Số lần phát audio không ghi trong đề mẫu; web đặt 2 lần theo thông lệ HSK 1–2.",
+  "sections": [
+    {
+      "key": "listening",
+      "name_zh": "听力",
+      "name_vi": "Nghe hiểu",
+      "minutes": 12,
+      "parts": [
+        {
+          "part": 1,
+          "type": "l_pick",
+          "instruction_vi": "Nghe một câu ngắn, chọn bức tranh đúng (A, B hoặc C). Web không có tranh nên mỗi tranh được mô tả bằng tiếng Việt.",
+          "instruction_zh": "听句子，选择对应的图片。",
+          "plays": 2,
+          "groups": [
+            {
+              "audio": [
+                [
+                  "",
+                  "外边下雪了。"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 1,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "Sân nhà phủ đầy tuyết trắng, tuyết vẫn đang rơi",
+                    "Trời nắng to, một người đội mũ đi trên phố",
+                    "Trời mưa, mặt đường ướt, người đi đường cầm ô"
+                  ],
+                  "answer": 0,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu nghe: 外边下雪了 (Bên ngoài tuyết rơi rồi). Chỉ tranh A có tuyết; B là trời nắng, C là trời mưa.",
+                  "skills": [
+                    "nghe-tu-vung",
+                    "chu-de-thoi-tiet"
+                  ],
+                  "words": [
+                    "外边",
+                    "下",
+                    "雪"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "",
+                  "我女儿正在睡觉。"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 2,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "Một bé gái đang ngồi ăn cơm",
+                    "Một bé gái đang ngồi đọc sách",
+                    "Một bé gái đang ngủ trên giường"
+                  ],
+                  "answer": 2,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu nghe: 我女儿正在睡觉 (Con gái tôi đang ngủ). 睡觉 = ngủ, nên chọn C. A là ăn cơm (吃饭), B là đọc sách (看书).",
+                  "skills": [
+                    "nghe-tu-vung",
+                    "nghe-hanh-dong"
+                  ],
+                  "words": [
+                    "女儿",
+                    "正在",
+                    "睡觉"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "",
+                  "我有两个孩子。"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 3,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "Một người mẹ bế một đứa con",
+                    "Một người mẹ đứng cùng hai đứa con",
+                    "Một người mẹ đứng cùng ba đứa con"
+                  ],
+                  "answer": 1,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu nghe: 我有两个孩子 (Tôi có hai đứa con). Chú ý số lượng 两 = hai, nên chọn B; A là một con, C là ba con.",
+                  "skills": [
+                    "nghe-so",
+                    "nghe-tu-vung"
+                  ],
+                  "words": [
+                    "两",
+                    "个",
+                    "孩子"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "",
+                  "我的手机在桌子上。"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 4,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "Một chiếc điện thoại di động đặt trên mặt bàn",
+                    "Một chiếc điện thoại di động nằm trong túi xách",
+                    "Một chiếc máy tính xách tay đặt trên mặt bàn"
+                  ],
+                  "answer": 0,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu nghe: 我的手机在桌子上 (Điện thoại của tôi ở trên bàn). Cần nghe cả đồ vật (手机) lẫn vị trí (桌子上): B sai vị trí, C sai đồ vật (máy tính = 电脑).",
+                  "skills": [
+                    "nghe-tu-vung",
+                    "nghe-vi-tri"
+                  ],
+                  "words": [
+                    "手机",
+                    "桌子",
+                    "上"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "",
+                  "我们吃饺子吧。"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 5,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "Một bát mì nóng",
+                    "Một bát cơm trắng",
+                    "Một đĩa sủi cảo"
+                  ],
+                  "answer": 2,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu nghe: 我们吃饺子吧 (Chúng ta ăn sủi cảo đi). 饺子 = sủi cảo, chọn C. A là mì (面条儿), B là cơm (米饭).",
+                  "skills": [
+                    "nghe-tu-vung",
+                    "chu-de-an-uong"
+                  ],
+                  "words": [
+                    "吃",
+                    "饺子",
+                    "吧"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "type": "l_reply",
+          "instruction_vi": "Nghe một câu hỏi, chọn câu trả lời phù hợp trong ba lựa chọn A, B, C (đáp án in sẵn có pinyin).",
+          "instruction_zh": "听问题，选择合适的回答。",
+          "plays": 2,
+          "groups": [
+            {
+              "audio": [
+                [
+                  "",
+                  "你今天几点起床？"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 6,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "在学校",
+                    "七点半",
+                    "很好吃"
+                  ],
+                  "options_py": [
+                    "zài xuéxiào",
+                    "qī diǎn bàn",
+                    "hěn hǎochī"
+                  ],
+                  "answer": 1,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu hỏi: 你今天几点起床？ (Hôm nay bạn mấy giờ dậy?). Hỏi giờ (几点) nên trả lời 七点半 (bảy rưỡi). A là nơi chốn, C là nhận xét món ăn.",
+                  "skills": [
+                    "nghe-phan-hoi",
+                    "nghe-thoi-gian"
+                  ],
+                  "words": [
+                    "几点",
+                    "起床",
+                    "半"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "",
+                  "这件衣服怎么样？"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 7,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "很漂亮",
+                    "去商店",
+                    "两个人"
+                  ],
+                  "options_py": [
+                    "hěn piàoliang",
+                    "qù shāngdiàn",
+                    "liǎng gè rén"
+                  ],
+                  "answer": 0,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu hỏi: 这件衣服怎么样？ (Bộ quần áo này thế nào?). 怎么样 hỏi nhận xét, nên đáp 很漂亮 (rất đẹp). B và C không trả lời cho câu hỏi đánh giá.",
+                  "skills": [
+                    "nghe-phan-hoi"
+                  ],
+                  "words": [
+                    "件",
+                    "衣服",
+                    "怎么样",
+                    "漂亮"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "",
+                  "你的电脑是新的吗？"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 8,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "在房间里",
+                    "三百块",
+                    "不是，是去年买的"
+                  ],
+                  "options_py": [
+                    "zài fángjiān lǐ",
+                    "sānbǎi kuài",
+                    "bú shì, shì qùnián mǎi de"
+                  ],
+                  "answer": 2,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu hỏi: 你的电脑是新的吗？ (Máy tính của bạn là máy mới à?). Câu hỏi 吗 cần trả lời có/không; C 不是，是去年买的 (Không, mua năm ngoái) là phù hợp.",
+                  "skills": [
+                    "nghe-phan-hoi",
+                    "ngu-phap-cau-hoi-ma"
+                  ],
+                  "words": [
+                    "电脑",
+                    "新",
+                    "去年"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "",
+                  "你在哪儿学习汉语？"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 9,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "非常好",
+                    "在大学",
+                    "下个星期"
+                  ],
+                  "options_py": [
+                    "fēicháng hǎo",
+                    "zài dàxué",
+                    "xià gè xīngqī"
+                  ],
+                  "answer": 1,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu hỏi: 你在哪儿学习汉语？ (Bạn học tiếng Trung ở đâu?). 哪儿 hỏi nơi chốn, nên chọn 在大学 (ở trường đại học).",
+                  "skills": [
+                    "nghe-phan-hoi",
+                    "nghe-vi-tri"
+                  ],
+                  "words": [
+                    "哪儿",
+                    "学习",
+                    "汉语",
+                    "大学"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "",
+                  "谁给你打电话了？"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 10,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "我姐姐",
+                    "九点",
+                    "不客气"
+                  ],
+                  "options_py": [
+                    "wǒ jiějie",
+                    "jiǔ diǎn",
+                    "búkèqi"
+                  ],
+                  "answer": 0,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu hỏi: 谁给你打电话了？ (Ai gọi điện cho bạn vậy?). 谁 hỏi người, nên chọn 我姐姐 (chị tôi). B là giờ, C là câu đáp lại lời cảm ơn.",
+                  "skills": [
+                    "nghe-phan-hoi",
+                    "ngu-phap-dai-tu-nghi-van"
+                  ],
+                  "words": [
+                    "谁",
+                    "给",
+                    "打电话",
+                    "姐姐"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "type": "l_dialog_pick",
+          "instruction_vi": "Có sáu bức tranh A–F (mô tả bằng tiếng Việt). Nghe từng đoạn hội thoại ngắn, chọn bức tranh phù hợp. Mỗi tranh dùng nhiều nhất một lần, có một tranh thừa.",
+          "instruction_zh": "听对话，选择对应的图片。",
+          "plays": 2,
+          "groups": [
+            {
+              "audio": [
+                [
+                  "男",
+                  "医生，我病了，不想吃东西。"
+                ],
+                [
+                  "女",
+                  "你喝一点儿水，休息一下吧。"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 11,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "Hai người bạn ngồi trong rạp chiếu phim, đang xem phim",
+                    "Một tài xế taxi quay lại hỏi chuyện một hành khách ngồi phía sau",
+                    "Một bé gái đang uống sữa và ăn bánh mì ở bàn ăn sáng",
+                    "Một nữ bác sĩ đang khám bệnh cho một người đàn ông",
+                    "Người bán hàng ở quầy trái cây đang đưa táo cho khách",
+                    "Một chú chó nhỏ đang chạy trên bãi cỏ"
+                  ],
+                  "answer": 3,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Người nam gọi 医生 (bác sĩ) và nói 我病了 (tôi bị ốm), người nữ khuyên uống nước, nghỉ ngơi: cảnh khám bệnh, chọn D.",
+                  "skills": [
+                    "nghe-ngu-canh",
+                    "nghe-tu-vung"
+                  ],
+                  "words": [
+                    "医生",
+                    "病",
+                    "休息"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "男",
+                  "这个电影真好看！"
+                ],
+                [
+                  "女",
+                  "对，我也很喜欢。"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 12,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "Hai người bạn ngồi trong rạp chiếu phim, đang xem phim",
+                    "Một tài xế taxi quay lại hỏi chuyện một hành khách ngồi phía sau",
+                    "Một bé gái đang uống sữa và ăn bánh mì ở bàn ăn sáng",
+                    "Một nữ bác sĩ đang khám bệnh cho một người đàn ông",
+                    "Người bán hàng ở quầy trái cây đang đưa táo cho khách",
+                    "Một chú chó nhỏ đang chạy trên bãi cỏ"
+                  ],
+                  "answer": 0,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Hai người khen 这个电影真好看 (bộ phim này hay thật), nên là cảnh đang xem phim ở rạp, chọn A.",
+                  "skills": [
+                    "nghe-ngu-canh"
+                  ],
+                  "words": [
+                    "电影",
+                    "好看",
+                    "喜欢"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "女",
+                  "苹果多少钱？"
+                ],
+                [
+                  "男",
+                  "一个两块钱。"
+                ],
+                [
+                  "女",
+                  "我买四个。"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 13,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "Hai người bạn ngồi trong rạp chiếu phim, đang xem phim",
+                    "Một tài xế taxi quay lại hỏi chuyện một hành khách ngồi phía sau",
+                    "Một bé gái đang uống sữa và ăn bánh mì ở bàn ăn sáng",
+                    "Một nữ bác sĩ đang khám bệnh cho một người đàn ông",
+                    "Người bán hàng ở quầy trái cây đang đưa táo cho khách",
+                    "Một chú chó nhỏ đang chạy trên bãi cỏ"
+                  ],
+                  "answer": 4,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Người nữ hỏi giá táo (苹果多少钱) và mua bốn quả: cảnh mua táo ở quầy trái cây, chọn E.",
+                  "skills": [
+                    "nghe-ngu-canh",
+                    "nghe-so"
+                  ],
+                  "words": [
+                    "苹果",
+                    "多少",
+                    "钱",
+                    "买"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "男",
+                  "你吃早饭了吗？"
+                ],
+                [
+                  "女",
+                  "吃了，我喝了牛奶，也吃了面包。"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 14,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "Hai người bạn ngồi trong rạp chiếu phim, đang xem phim",
+                    "Một tài xế taxi quay lại hỏi chuyện một hành khách ngồi phía sau",
+                    "Một bé gái đang uống sữa và ăn bánh mì ở bàn ăn sáng",
+                    "Một nữ bác sĩ đang khám bệnh cho một người đàn ông",
+                    "Người bán hàng ở quầy trái cây đang đưa táo cho khách",
+                    "Một chú chó nhỏ đang chạy trên bãi cỏ"
+                  ],
+                  "answer": 2,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Nhắc đến 早饭 (bữa sáng), 牛奶 (sữa), 面包 (bánh mì): khớp với tranh C. Tranh F (con chó) không được dùng.",
+                  "skills": [
+                    "nghe-ngu-canh",
+                    "chu-de-an-uong"
+                  ],
+                  "words": [
+                    "早饭",
+                    "牛奶",
+                    "面包"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "男",
+                  "您好，您去哪儿？"
+                ],
+                [
+                  "女",
+                  "北京大学，谢谢。"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 15,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "Hai người bạn ngồi trong rạp chiếu phim, đang xem phim",
+                    "Một tài xế taxi quay lại hỏi chuyện một hành khách ngồi phía sau",
+                    "Một bé gái đang uống sữa và ăn bánh mì ở bàn ăn sáng",
+                    "Một nữ bác sĩ đang khám bệnh cho một người đàn ông",
+                    "Người bán hàng ở quầy trái cây đang đưa táo cho khách",
+                    "Một chú chó nhỏ đang chạy trên bãi cỏ"
+                  ],
+                  "answer": 1,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Người nam hỏi khách 您去哪儿 (Ông/bà đi đâu ạ), khách đáp tên điểm đến: lời của tài xế taxi, chọn B.",
+                  "skills": [
+                    "nghe-ngu-canh"
+                  ],
+                  "words": [
+                    "您",
+                    "去",
+                    "哪儿",
+                    "大学"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "type": "l_dialog_q",
+          "instruction_vi": "Nghe một câu nói ngắn và một câu hỏi, chọn đáp án đúng trong A, B, C (đáp án in sẵn có pinyin).",
+          "instruction_zh": "听句子和问题，选择正确答案。",
+          "plays": 2,
+          "groups": [
+            {
+              "audio": [
+                [
+                  "",
+                  "我哥哥是老师，他在一个中学工作。"
+                ],
+                [
+                  "",
+                  "问：他哥哥在哪儿工作？"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 16,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "医院",
+                    "大学",
+                    "中学"
+                  ],
+                  "options_py": [
+                    "yīyuàn",
+                    "dàxué",
+                    "zhōngxué"
+                  ],
+                  "answer": 2,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu nghe: 他在一个中学工作 (anh ấy làm việc ở một trường trung học). Câu hỏi hỏi nơi làm việc, nên chọn 中学; 大学 là bẫy về âm.",
+                  "skills": [
+                    "nghe-chi-tiet",
+                    "nghe-vi-tri"
+                  ],
+                  "words": [
+                    "哥哥",
+                    "老师",
+                    "中学",
+                    "工作"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "",
+                  "我是去年九月来中国的。"
+                ],
+                [
+                  "",
+                  "问：他是什么时候来中国的？"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 17,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "今年九月",
+                    "去年九月",
+                    "去年十月"
+                  ],
+                  "options_py": [
+                    "jīnnián jiǔ yuè",
+                    "qùnián jiǔ yuè",
+                    "qùnián shí yuè"
+                  ],
+                  "answer": 1,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu nghe: 我是去年九月来中国的 (tôi đến Trung Quốc vào tháng 9 năm ngoái). Phải nghe đúng cả 去年 (năm ngoái) và 九月 (tháng 9): A sai năm, C sai tháng.",
+                  "skills": [
+                    "nghe-thoi-gian",
+                    "nghe-chi-tiet"
+                  ],
+                  "words": [
+                    "去年",
+                    "月",
+                    "来"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "",
+                  "这个饭店的菜很好吃，也很便宜。"
+                ],
+                [
+                  "",
+                  "问：那个饭店怎么样？"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 18,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "菜很便宜",
+                    "菜不好吃",
+                    "人很少"
+                  ],
+                  "options_py": [
+                    "cài hěn piányi",
+                    "cài bù hǎochī",
+                    "rén hěn shǎo"
+                  ],
+                  "answer": 0,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu nghe: 菜很好吃，也很便宜 (món ăn ngon, cũng rất rẻ). Chọn A 菜很便宜. B trái với 很好吃, C không được nhắc đến.",
+                  "skills": [
+                    "nghe-chi-tiet"
+                  ],
+                  "words": [
+                    "饭店",
+                    "菜",
+                    "好吃",
+                    "便宜"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "",
+                  "我不喜欢喝茶，我喜欢喝水。"
+                ],
+                [
+                  "",
+                  "问：他喜欢喝什么？"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 19,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "茶",
+                    "牛奶",
+                    "水"
+                  ],
+                  "options_py": [
+                    "chá",
+                    "niúnǎi",
+                    "shuǐ"
+                  ],
+                  "answer": 2,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu nghe: 我不喜欢喝茶，我喜欢喝水 (tôi không thích uống trà, tôi thích uống nước). Chọn C 水; A 茶 là thứ người nói không thích.",
+                  "skills": [
+                    "nghe-chi-tiet",
+                    "ngu-phap-phu-dinh"
+                  ],
+                  "words": [
+                    "喜欢",
+                    "喝",
+                    "茶",
+                    "水"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": [
+                [
+                  "",
+                  "我的同学都很喜欢我们的汉语老师。"
+                ],
+                [
+                  "",
+                  "问：同学们喜欢谁？"
+                ]
+              ],
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 20,
+                  "stem": "",
+                  "stem_py": "",
+                  "options": [
+                    "中国朋友",
+                    "汉语老师",
+                    "医生"
+                  ],
+                  "options_py": [
+                    "Zhōngguó péngyou",
+                    "Hànyǔ lǎoshī",
+                    "yīshēng"
+                  ],
+                  "answer": 1,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu nghe: 我的同学都很喜欢我们的汉语老师 (các bạn cùng lớp đều rất thích cô giáo tiếng Trung). Người được thích là 汉语老师, chọn B.",
+                  "skills": [
+                    "nghe-chi-tiet"
+                  ],
+                  "words": [
+                    "同学",
+                    "都",
+                    "喜欢",
+                    "汉语",
+                    "老师"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "reading",
+      "name_zh": "阅读",
+      "name_vi": "Đọc hiểu",
+      "minutes": 20,
+      "parts": [
+        {
+          "part": 1,
+          "type": "r_match_vi",
+          "instruction_vi": "Có sáu bức tranh A–F (mô tả bằng tiếng Việt). Đọc từng câu, chọn bức tranh phù hợp. Có một tranh thừa.",
+          "instruction_zh": "看图片，选择与句子对应的图片。",
+          "groups": [
+            {
+              "audio": null,
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 21,
+                  "stem": "我的猫很喜欢在椅子上睡觉。",
+                  "stem_py": "Wǒ de māo hěn xǐhuan zài yǐzi shàng shuìjiào.",
+                  "options": [
+                    "Một cậu bé đang ngồi viết chữ Hán vào vở",
+                    "Cả nhà quây quần ăn tối quanh bàn",
+                    "Một cô gái đang cười, nói chuyện điện thoại",
+                    "Một con mèo đang ngủ trên ghế",
+                    "Một người đàn ông đang chọn áo trong cửa hàng quần áo",
+                    "Hai người đi dưới nắng gắt, tay cầm chai nước"
+                  ],
+                  "answer": 3,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "猫 = mèo, 椅子 = ghế, 睡觉 = ngủ: khớp với tranh D.",
+                  "skills": [
+                    "doc-hieu-cau",
+                    "doc-tu-vung"
+                  ],
+                  "words": [
+                    "猫",
+                    "椅子",
+                    "睡觉"
+                  ]
+                },
+                {
+                  "no": 22,
+                  "stem": "儿子在学写汉字。",
+                  "stem_py": "Érzi zài xué xiě Hànzì.",
+                  "options": [
+                    "Một cậu bé đang ngồi viết chữ Hán vào vở",
+                    "Cả nhà quây quần ăn tối quanh bàn",
+                    "Một cô gái đang cười, nói chuyện điện thoại",
+                    "Một con mèo đang ngủ trên ghế",
+                    "Một người đàn ông đang chọn áo trong cửa hàng quần áo",
+                    "Hai người đi dưới nắng gắt, tay cầm chai nước"
+                  ],
+                  "answer": 0,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "儿子 (con trai) đang học viết 汉字 (chữ Hán): tranh A.",
+                  "skills": [
+                    "doc-hieu-cau",
+                    "doc-tu-vung"
+                  ],
+                  "words": [
+                    "儿子",
+                    "写",
+                    "汉字"
+                  ]
+                },
+                {
+                  "no": 23,
+                  "stem": "今天太热了，我们喝一点儿水吧。",
+                  "stem_py": "Jīntiān tài rè le, wǒmen hē yìdiǎnr shuǐ ba.",
+                  "options": [
+                    "Một cậu bé đang ngồi viết chữ Hán vào vở",
+                    "Cả nhà quây quần ăn tối quanh bàn",
+                    "Một cô gái đang cười, nói chuyện điện thoại",
+                    "Một con mèo đang ngủ trên ghế",
+                    "Một người đàn ông đang chọn áo trong cửa hàng quần áo",
+                    "Hai người đi dưới nắng gắt, tay cầm chai nước"
+                  ],
+                  "answer": 5,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "太热了 (nóng quá) và 喝一点儿水 (uống chút nước): tranh F, hai người đi dưới nắng cầm chai nước.",
+                  "skills": [
+                    "doc-hieu-cau"
+                  ],
+                  "words": [
+                    "热",
+                    "喝",
+                    "一点儿",
+                    "水"
+                  ]
+                },
+                {
+                  "no": 24,
+                  "stem": "晚上我们一家人在家吃饭。",
+                  "stem_py": "Wǎnshang wǒmen yì jiārén zài jiā chī fàn.",
+                  "options": [
+                    "Một cậu bé đang ngồi viết chữ Hán vào vở",
+                    "Cả nhà quây quần ăn tối quanh bàn",
+                    "Một cô gái đang cười, nói chuyện điện thoại",
+                    "Một con mèo đang ngủ trên ghế",
+                    "Một người đàn ông đang chọn áo trong cửa hàng quần áo",
+                    "Hai người đi dưới nắng gắt, tay cầm chai nước"
+                  ],
+                  "answer": 1,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "晚上 (buổi tối), 一家人 (cả nhà), 吃饭 (ăn cơm): tranh B.",
+                  "skills": [
+                    "doc-hieu-cau"
+                  ],
+                  "words": [
+                    "晚上",
+                    "家人",
+                    "吃饭"
+                  ]
+                },
+                {
+                  "no": 25,
+                  "stem": "她在给男朋友打电话。",
+                  "stem_py": "Tā zài gěi nánpéngyou dǎdiànhuà.",
+                  "options": [
+                    "Một cậu bé đang ngồi viết chữ Hán vào vở",
+                    "Cả nhà quây quần ăn tối quanh bàn",
+                    "Một cô gái đang cười, nói chuyện điện thoại",
+                    "Một con mèo đang ngủ trên ghế",
+                    "Một người đàn ông đang chọn áo trong cửa hàng quần áo",
+                    "Hai người đi dưới nắng gắt, tay cầm chai nước"
+                  ],
+                  "answer": 2,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "打电话 = gọi điện thoại: tranh C. Tranh E (mua áo) là tranh thừa.",
+                  "skills": [
+                    "doc-hieu-cau",
+                    "doc-tu-vung"
+                  ],
+                  "words": [
+                    "给",
+                    "男朋友",
+                    "打电话"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "type": "r_match_qa",
+          "instruction_vi": "Đọc câu hỏi, chọn câu trả lời phù hợp trong nhóm A–F. Có một câu trả lời thừa.",
+          "instruction_zh": "选择合适的回答。",
+          "groups": [
+            {
+              "audio": null,
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 26,
+                  "stem": "你什么时候回家？",
+                  "stem_py": "Nǐ shénme shíhou huí jiā?",
+                  "options": [
+                    "认识，她是我同学。",
+                    "下午四点。",
+                    "我想去商店买东西。",
+                    "是我妹妹的。",
+                    "会一点儿。",
+                    "没关系，明天见。"
+                  ],
+                  "options_py": [
+                    "Rènshi, tā shì wǒ tóngxué.",
+                    "Xiàwǔ sì diǎn.",
+                    "Wǒ xiǎng qù shāngdiàn mǎi dōngxi.",
+                    "Shì wǒ mèimei de.",
+                    "Huì yìdiǎnr.",
+                    "Méiguānxi, míngtiān jiàn."
+                  ],
+                  "answer": 1,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "什么时候 hỏi thời gian, nên đáp 下午四点 (bốn giờ chiều).",
+                  "skills": [
+                    "doc-hoi-dap",
+                    "doc-thoi-gian"
+                  ],
+                  "words": [
+                    "什么时候",
+                    "回",
+                    "家"
+                  ]
+                },
+                {
+                  "no": 27,
+                  "stem": "这个杯子是谁的？",
+                  "stem_py": "Zhège bēizi shì shéi de?",
+                  "options": [
+                    "认识，她是我同学。",
+                    "下午四点。",
+                    "我想去商店买东西。",
+                    "是我妹妹的。",
+                    "会一点儿。",
+                    "没关系，明天见。"
+                  ],
+                  "options_py": [
+                    "Rènshi, tā shì wǒ tóngxué.",
+                    "Xiàwǔ sì diǎn.",
+                    "Wǒ xiǎng qù shāngdiàn mǎi dōngxi.",
+                    "Shì wǒ mèimei de.",
+                    "Huì yìdiǎnr.",
+                    "Méiguānxi, míngtiān jiàn."
+                  ],
+                  "answer": 3,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "谁的 (của ai) → 是我妹妹的 (là của em gái tôi).",
+                  "skills": [
+                    "doc-hoi-dap"
+                  ],
+                  "words": [
+                    "杯子",
+                    "谁"
+                  ]
+                },
+                {
+                  "no": 28,
+                  "stem": "你会做饭吗？",
+                  "stem_py": "Nǐ huì zuòfàn ma?",
+                  "options": [
+                    "认识，她是我同学。",
+                    "下午四点。",
+                    "我想去商店买东西。",
+                    "是我妹妹的。",
+                    "会一点儿。",
+                    "没关系，明天见。"
+                  ],
+                  "options_py": [
+                    "Rènshi, tā shì wǒ tóngxué.",
+                    "Xiàwǔ sì diǎn.",
+                    "Wǒ xiǎng qù shāngdiàn mǎi dōngxi.",
+                    "Shì wǒ mèimei de.",
+                    "Huì yìdiǎnr.",
+                    "Méiguānxi, míngtiān jiàn."
+                  ],
+                  "answer": 4,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "会…吗 hỏi có biết làm không → 会一点儿 (biết một chút).",
+                  "skills": [
+                    "doc-hoi-dap",
+                    "ngu-phap-dong-tu-nang-nguyen"
+                  ],
+                  "words": [
+                    "会",
+                    "做饭"
+                  ]
+                },
+                {
+                  "no": 29,
+                  "stem": "你认识那个女学生吗？",
+                  "stem_py": "Nǐ rènshi nàge nǚ xuéshēng ma?",
+                  "options": [
+                    "认识，她是我同学。",
+                    "下午四点。",
+                    "我想去商店买东西。",
+                    "是我妹妹的。",
+                    "会一点儿。",
+                    "没关系，明天见。"
+                  ],
+                  "options_py": [
+                    "Rènshi, tā shì wǒ tóngxué.",
+                    "Xiàwǔ sì diǎn.",
+                    "Wǒ xiǎng qù shāngdiàn mǎi dōngxi.",
+                    "Shì wǒ mèimei de.",
+                    "Huì yìdiǎnr.",
+                    "Méiguānxi, míngtiān jiàn."
+                  ],
+                  "answer": 0,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "认识…吗 → 认识，她是我同学 (quen, cô ấy là bạn cùng lớp tôi).",
+                  "skills": [
+                    "doc-hoi-dap"
+                  ],
+                  "words": [
+                    "认识",
+                    "学生",
+                    "同学"
+                  ]
+                },
+                {
+                  "no": 30,
+                  "stem": "你想去哪里玩？",
+                  "stem_py": "Nǐ xiǎng qù nǎlǐ wán?",
+                  "options": [
+                    "认识，她是我同学。",
+                    "下午四点。",
+                    "我想去商店买东西。",
+                    "是我妹妹的。",
+                    "会一点儿。",
+                    "没关系，明天见。"
+                  ],
+                  "options_py": [
+                    "Rènshi, tā shì wǒ tóngxué.",
+                    "Xiàwǔ sì diǎn.",
+                    "Wǒ xiǎng qù shāngdiàn mǎi dōngxi.",
+                    "Shì wǒ mèimei de.",
+                    "Huì yìdiǎnr.",
+                    "Méiguānxi, míngtiān jiàn."
+                  ],
+                  "answer": 2,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "哪里 hỏi nơi chốn → 我想去商店买东西. Câu F 没关系，明天见 là câu thừa.",
+                  "skills": [
+                    "doc-hoi-dap"
+                  ],
+                  "words": [
+                    "想",
+                    "哪里",
+                    "玩",
+                    "商店"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "type": "r_cloze",
+          "instruction_vi": "Chọn từ thích hợp trong nhóm A–F điền vào chỗ trống. Có một từ thừa.",
+          "instruction_zh": "选词填空。",
+          "groups": [
+            {
+              "audio": null,
+              "passage": null,
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 31,
+                  "stem": "这件衣服太（ ）了，我不买。",
+                  "stem_py": "Zhè jiàn yīfu tài (    ) le, wǒ bù mǎi.",
+                  "options": [
+                    "菜",
+                    "贵",
+                    "哪儿",
+                    "认识",
+                    "一下",
+                    "正在"
+                  ],
+                  "options_py": [
+                    "cài",
+                    "guì",
+                    "nǎr",
+                    "rènshi",
+                    "yíxià",
+                    "zhèngzài"
+                  ],
+                  "answer": 1,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "太…了 thường đi với tính từ; 太贵了 (đắt quá) hợp với 我不买 (tôi không mua).",
+                  "skills": [
+                    "doc-dien-tu",
+                    "ngu-phap-tai-le"
+                  ],
+                  "words": [
+                    "件",
+                    "衣服",
+                    "太",
+                    "贵"
+                  ]
+                },
+                {
+                  "no": 32,
+                  "stem": "我（ ）他，他是我哥哥的朋友。",
+                  "stem_py": "Wǒ (    ) tā, tā shì wǒ gēge de péngyou.",
+                  "options": [
+                    "菜",
+                    "贵",
+                    "哪儿",
+                    "认识",
+                    "一下",
+                    "正在"
+                  ],
+                  "options_py": [
+                    "cài",
+                    "guì",
+                    "nǎr",
+                    "rènshi",
+                    "yíxià",
+                    "zhèngzài"
+                  ],
+                  "answer": 3,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Biết người đó vì là bạn của anh trai: 认识 (quen biết).",
+                  "skills": [
+                    "doc-dien-tu",
+                    "doc-tu-vung"
+                  ],
+                  "words": [
+                    "认识",
+                    "哥哥",
+                    "朋友"
+                  ]
+                },
+                {
+                  "no": 33,
+                  "stem": "妈妈（ ）做饭呢。",
+                  "stem_py": "Māma (    ) zuòfàn ne.",
+                  "options": [
+                    "菜",
+                    "贵",
+                    "哪儿",
+                    "认识",
+                    "一下",
+                    "正在"
+                  ],
+                  "options_py": [
+                    "cài",
+                    "guì",
+                    "nǎr",
+                    "rènshi",
+                    "yíxià",
+                    "zhèngzài"
+                  ],
+                  "answer": 5,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "正在…呢 diễn tả hành động đang diễn ra: 妈妈正在做饭呢 (mẹ đang nấu cơm).",
+                  "skills": [
+                    "doc-dien-tu",
+                    "ngu-phap-zhengzai"
+                  ],
+                  "words": [
+                    "正在",
+                    "做饭",
+                    "呢"
+                  ]
+                },
+                {
+                  "no": 34,
+                  "stem": "请问，医院在（ ）？",
+                  "stem_py": "Qǐngwèn, yīyuàn zài (    )?",
+                  "options": [
+                    "菜",
+                    "贵",
+                    "哪儿",
+                    "认识",
+                    "一下",
+                    "正在"
+                  ],
+                  "options_py": [
+                    "cài",
+                    "guì",
+                    "nǎr",
+                    "rènshi",
+                    "yíxià",
+                    "zhèngzài"
+                  ],
+                  "answer": 2,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "在 + 哪儿 dùng để hỏi vị trí: 医院在哪儿？ (Bệnh viện ở đâu?).",
+                  "skills": [
+                    "doc-dien-tu",
+                    "ngu-phap-dai-tu-nghi-van"
+                  ],
+                  "words": [
+                    "请问",
+                    "医院",
+                    "哪儿"
+                  ]
+                },
+                {
+                  "no": 35,
+                  "stem": "A：这个（ ）是你做的吗？\nB：是，你吃一点儿吧。",
+                  "stem_py": "A: Zhège (    ) shì nǐ zuò de ma?\nB: Shì, nǐ chī yìdiǎnr ba.",
+                  "options": [
+                    "菜",
+                    "贵",
+                    "哪儿",
+                    "认识",
+                    "一下",
+                    "正在"
+                  ],
+                  "options_py": [
+                    "cài",
+                    "guì",
+                    "nǎr",
+                    "rènshi",
+                    "yíxià",
+                    "zhèngzài"
+                  ],
+                  "answer": 0,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Thứ “làm ra” và “ăn” được là món ăn: 菜. Từ 一下 là từ thừa.",
+                  "skills": [
+                    "doc-dien-tu",
+                    "doc-hoi-dap"
+                  ],
+                  "words": [
+                    "菜",
+                    "做",
+                    "吃"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "part": 4,
+          "type": "r_passage",
+          "instruction_vi": "Đọc câu, rồi chọn đáp án đúng cho câu hỏi ★ trong A, B, C.",
+          "instruction_zh": "阅读句子，选择正确答案。",
+          "groups": [
+            {
+              "audio": null,
+              "passage": "我爸爸很喜欢看书，他的房间里有很多书。",
+              "passage_py": "Wǒ bàba hěn xǐhuan kàn shū, tā de fángjiān lǐ yǒu hěn duō shū.",
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 36,
+                  "stem": "★ 爸爸喜欢：",
+                  "stem_py": "★ Bàba xǐhuan:",
+                  "options": [
+                    "看电视",
+                    "看电影",
+                    "看书"
+                  ],
+                  "options_py": [
+                    "kàn diànshì",
+                    "kàn diànyǐng",
+                    "kàn shū"
+                  ],
+                  "answer": 2,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu đọc: 爸爸很喜欢看书 (bố rất thích đọc sách), phòng có nhiều sách. Chọn C 看书; A, B không được nhắc đến.",
+                  "skills": [
+                    "doc-chi-tiet"
+                  ],
+                  "words": [
+                    "喜欢",
+                    "看书",
+                    "房间"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": null,
+              "passage": "我昨天晚上看电视看到十二点，今天早上起床很晚。",
+              "passage_py": "Wǒ zuótiān wǎnshang kàn diànshì kàn dào shí'èr diǎn, jīntiān zǎoshang qǐchuáng hěn wǎn.",
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 37,
+                  "stem": "★ 他今天：",
+                  "stem_py": "★ Tā jīntiān:",
+                  "options": [
+                    "起床很晚",
+                    "没有上班",
+                    "看了电影"
+                  ],
+                  "options_py": [
+                    "qǐchuáng hěn wǎn",
+                    "méiyǒu shàngbān",
+                    "kàn le diànyǐng"
+                  ],
+                  "answer": 0,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Tối qua xem ti vi đến 12 giờ nên 今天早上起床很晚 (sáng nay dậy rất muộn). Chọn A. B, C không có trong câu.",
+                  "skills": [
+                    "doc-chi-tiet",
+                    "doc-suy-luan"
+                  ],
+                  "words": [
+                    "看电视",
+                    "起床",
+                    "晚"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": null,
+              "passage": "我们学校很大，有六千多个学生。",
+              "passage_py": "Wǒmen xuéxiào hěn dà, yǒu liùqiān duō gè xuéshēng.",
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 38,
+                  "stem": "★ 他们学校：",
+                  "stem_py": "★ Tāmen xuéxiào:",
+                  "options": [
+                    "很小",
+                    "学生很多",
+                    "老师很少"
+                  ],
+                  "options_py": [
+                    "hěn xiǎo",
+                    "xuéshēng hěn duō",
+                    "lǎoshī hěn shǎo"
+                  ],
+                  "answer": 1,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "六千多个学生 = hơn sáu nghìn học sinh, tức là trường có nhiều học sinh. Chọn B. A trái với 很大, C không được nhắc đến.",
+                  "skills": [
+                    "doc-chi-tiet",
+                    "doc-so"
+                  ],
+                  "words": [
+                    "学校",
+                    "大",
+                    "千",
+                    "学生"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": null,
+              "passage": "这本书120块，那本80块。",
+              "passage_py": "Zhè běn shū 120 kuài, nà běn 80 kuài.",
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 39,
+                  "stem": "★ 那本书多少钱？",
+                  "stem_py": "★ Nà běn shū duōshao qián?",
+                  "options": [
+                    "120块",
+                    "80块",
+                    "20块"
+                  ],
+                  "options_py": [
+                    "120 kuài",
+                    "80 kuài",
+                    "20 kuài"
+                  ],
+                  "answer": 1,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "这本 (quyển này) giá 120 tệ, 那本 (quyển kia) giá 80 tệ. Câu hỏi về 那本书, nên chọn B 八十块.",
+                  "skills": [
+                    "doc-so",
+                    "doc-chi-tiet"
+                  ],
+                  "words": [
+                    "本",
+                    "书",
+                    "块",
+                    "多少",
+                    "钱"
+                  ]
+                }
+              ]
+            },
+            {
+              "audio": null,
+              "passage": "我朋友是中国人，她现在在越南学习。",
+              "passage_py": "Wǒ péngyou shì Zhōngguó rén, tā xiànzài zài Yuènán xuéxí.",
+              "image_vi": null,
+              "items": [
+                {
+                  "no": 40,
+                  "stem": "★ 他的朋友：",
+                  "stem_py": "★ Tā de péngyou:",
+                  "options": [
+                    "是中国人",
+                    "是老师",
+                    "在中国学习"
+                  ],
+                  "options_py": [
+                    "shì Zhōngguó rén",
+                    "shì lǎoshī",
+                    "zài Zhōngguó xuéxí"
+                  ],
+                  "answer": 0,
+                  "sample_answer": null,
+                  "rubric_vi": null,
+                  "explain_vi": "Câu đọc: 我朋友是中国人，她现在在越南学习 (bạn tôi là người Trung Quốc, đang học ở Việt Nam). Chọn A. C sai vì bạn ấy học ở Việt Nam, không phải ở Trung Quốc.",
+                  "skills": [
+                    "doc-chi-tiet"
+                  ],
+                  "words": [
+                    "朋友",
+                    "中国人",
+                    "现在",
+                    "学习"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "self_check": {
+    "items": 40,
+    "levels_used": "≤ 1",
+    "out_of_level_words": [],
+    "proper_names": [
+      "北京",
+      "越南"
+    ]
+  }
+}

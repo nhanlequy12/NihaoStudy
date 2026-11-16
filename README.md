@@ -95,3 +95,12 @@ Windows: Settings → Time & Language → Language & region → Add a language �
 - Danh sách từ HSK 1–5 (bộ cũ): [complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary) (MIT) để đối chiếu chữ và pinyin; nghĩa tiếng Việt và Hán Việt biên soạn thủ công. Tệp HSK 2 của nguồn này có 147 mục, ba từ còn lại (过, 等, 对) được bổ sung thủ công; tệp HSK 3, 4, 5 có 298, 598 và 1.298 mục (HSK 5 chính thức 1.300 từ). Một số chữ đa âm trong nguồn chọn sai âm (ví dụ 胖, 骑, 场, 脏, 大夫) đã được sửa thủ công theo âm đọc HSK.
 - Nét chữ: [Hanzi Writer](https://hanziwriter.org) (MIT).
 - Font: Noto Sans SC, Noto Serif SC, Be Vietnam Pro (Google Fonts).
+
+## Dữ liệu và tài liệu
+
+- [data/README.md](data/README.md): bộ từ vựng HSK 3.0 (đề cương 2025), HSK 2.0 và HSK 3.0 (2021), xuất ra JSON và CSV theo cấp. Có nguồn và giấy phép của từng trường.
+- [data/exams/](data/exams/): 6 đề luyện HSK 3.0 cấp 1–6 tự soạn, mỗi câu có giải thích tiếng Việt.
+- [data/lessons/hsk3-bo-sung.json](data/lessons/hsk3-bo-sung.json): 26 bài học bổ sung cho từ HSK 3.0 cấp 1–4.
+- [docs/01-phan-tich-chuc-nang.md](docs/01-phan-tich-chuc-nang.md): so sánh chức năng với các web luyện thi HSK khác.
+- [docs/02-de-thi-va-bai-hoc.md](docs/02-de-thi-va-bai-hoc.md): mô tả đề luyện và bài học.
+- [docs/03-ke-hoach-trien-khai.md](docs/03-ke-hoach-trien-khai.md) và [docs/schema.sql](docs/schema.sql): kế hoạch triển khai, cấu trúc database, danh sách trang.

@@ -2,3 +2,6 @@
 *.log
 .DS_Store
 Thumbs.db
+
+# Dữ liệu nguồn tải về (chạy data/scripts/fetch_sources.sh)
+data/raw/

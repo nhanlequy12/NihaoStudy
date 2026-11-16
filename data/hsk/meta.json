@@ -1,0 +1,152 @@
+{
+ "words": 12309,
+ "chars": 3132,
+ "chars_mmah": 3132,
+ "chars_strokes": 3132,
+ "unihan": "Unicode Version 18.0.0",
+ "cc_cedict_date": "2026-11-15T07:10:58Z",
+ "cedict_included": true,
+ "cvdict": "CVDICT (ph0ngp/CVDICT, CC BY-SA 4.0)",
+ "coverage": [
+  {
+   "set": "HSK 3.0 (2025) cấp 1",
+   "words": 300,
+   "vi_nihao": 300,
+   "vi_cvdict": 0,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 3.0 (2025) cấp 2",
+   "words": 197,
+   "vi_nihao": 197,
+   "vi_cvdict": 0,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 3.0 (2025) cấp 3",
+   "words": 491,
+   "vi_nihao": 491,
+   "vi_cvdict": 0,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 3.0 (2025) cấp 4",
+   "words": 990,
+   "vi_nihao": 990,
+   "vi_cvdict": 0,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 3.0 (2025) cấp 5",
+   "words": 1579,
+   "vi_nihao": 1579,
+   "vi_cvdict": 0,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 3.0 (2025) cấp 6",
+   "words": 1777,
+   "vi_nihao": 1777,
+   "vi_cvdict": 0,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 3.0 (2025) cấp 7–9",
+   "words": 5562,
+   "vi_nihao": 1741,
+   "vi_cvdict": 3811,
+   "vi_missing": 10
+  },
+  {
+   "set": "HSK 2.0 cấp 1",
+   "words": 150,
+   "vi_nihao": 150,
+   "vi_cvdict": 0,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 2.0 cấp 2",
+   "words": 147,
+   "vi_nihao": 147,
+   "vi_cvdict": 0,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 2.0 cấp 3",
+   "words": 298,
+   "vi_nihao": 298,
+   "vi_cvdict": 0,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 2.0 cấp 4",
+   "words": 598,
+   "vi_nihao": 598,
+   "vi_cvdict": 0,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 2.0 cấp 5",
+   "words": 1298,
+   "vi_nihao": 1298,
+   "vi_cvdict": 0,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 2.0 cấp 6",
+   "words": 2500,
+   "vi_nihao": 2372,
+   "vi_cvdict": 128,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 3.0 (2021) cấp 1",
+   "words": 506,
+   "vi_nihao": 506,
+   "vi_cvdict": 0,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 3.0 (2021) cấp 2",
+   "words": 750,
+   "vi_nihao": 750,
+   "vi_cvdict": 0,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 3.0 (2021) cấp 3",
+   "words": 953,
+   "vi_nihao": 952,
+   "vi_cvdict": 1,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 3.0 (2021) cấp 4",
+   "words": 972,
+   "vi_nihao": 967,
+   "vi_cvdict": 5,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 3.0 (2021) cấp 5",
+   "words": 1059,
+   "vi_nihao": 1047,
+   "vi_cvdict": 12,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 3.0 (2021) cấp 6",
+   "words": 1123,
+   "vi_nihao": 1096,
+   "vi_cvdict": 27,
+   "vi_missing": 0
+  },
+  {
+   "set": "HSK 3.0 (2021) cấp 7–9",
+   "words": 5606,
+   "vi_nihao": 1884,
+   "vi_cvdict": 3708,
+   "vi_missing": 14
+  }
+ ]
+}

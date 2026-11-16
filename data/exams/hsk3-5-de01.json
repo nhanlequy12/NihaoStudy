@@ -1,0 +1,2154 @@
+{
+ "id": "hsk3-5-de01",
+ "level": 5,
+ "format": "HSK 3.0 (2025)",
+ "title": "Đề luyện HSK 5 – số 1",
+ "minutes_total": 110,
+ "scoring_note": "CLEC chưa công bố thang điểm và điểm đạt của HSK 3.0 cấp 1–6; web chấm theo tỷ lệ đúng từng phần.",
+ "sections": [
+  {
+   "key": "listening",
+   "name_zh": "听力",
+   "name_vi": "Nghe hiểu",
+   "minutes": 25,
+   "parts": [
+    {
+     "part": 1,
+     "type": "l_dialog_q",
+     "instruction_vi": "Câu 1–19: nghe hội thoại rồi chọn đáp án đúng. Câu 1–12 mỗi đoạn hội thoại ngắn một câu hỏi; câu 13–19 là hội thoại dài hơn, mỗi đoạn 2–3 câu hỏi. Mỗi đoạn nghe một lần.",
+     "instruction_zh": "第1～19题：请选出正确答案。",
+     "plays": 1,
+     "groups": [
+      {
+       "audio": [
+        [
+         "女",
+         "小张，三楼的打印机又坏了，我这份合同下午就要交给客户。"
+        ],
+        [
+         "男",
+         "别着急，旁边办公室那台是新买的，你去那儿打吧，我帮你跟他们说一声。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 1,
+         "stem": "问：女的接下来最可能做什么？",
+         "stem_py": "",
+         "options": [
+          "修理打印机",
+          "推迟交合同",
+          "去旁边办公室打印",
+          "联系客户"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Máy in tầng 3 hỏng, người nam bảo cô sang văn phòng bên cạnh dùng máy mới và anh sẽ nói trước giúp, nên cô sẽ sang đó in. Không ai nói đến sửa máy hay hoãn nộp hợp đồng.",
+         "skills": [
+          "nghe-suy-luan"
+         ],
+         "words": [
+          "打印机",
+          "合同",
+          "客户"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "你最近脸色不太好，是不是没睡好？"
+        ],
+        [
+         "女",
+         "是啊，每天躺下以后总忍不住看手机，一看就到半夜一两点。"
+        ],
+        [
+         "男",
+         "那你试试睡前一个小时把手机放到客厅去。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 2,
+         "stem": "问：男的建议女的怎么做？",
+         "stem_py": "",
+         "options": [
+          "去医院检查",
+          "早点儿下班",
+          "睡前远离手机",
+          "换一部新手机"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Người nam khuyên cô để điện thoại ra phòng khách một tiếng trước khi ngủ, tức là tránh xa điện thoại trước giờ ngủ.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "脸色",
+          "忍不住",
+          "半夜",
+          "客厅"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "你看的那套房子怎么样？"
+        ],
+        [
+         "男",
+         "房间不大，但是离地铁站只有五分钟，房租也比现在这套便宜三百块。唯一的问题是楼层有点儿高，没有电梯。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 3,
+         "stem": "问：那套房子有什么缺点？",
+         "stem_py": "",
+         "options": [
+          "面积太小",
+          "房租太贵",
+          "交通不方便",
+          "没有电梯"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Người nam nói 'vấn đề duy nhất' là tầng hơi cao mà không có thang máy. Phòng không lớn nhưng anh không coi là nhược điểm chính; tiền thuê còn rẻ hơn, gần ga tàu điện.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "房租",
+          "唯一",
+          "电梯",
+          "楼层"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "这家餐厅在网上的评价特别高，我们今晚去试试？"
+        ],
+        [
+         "女",
+         "网上的评价不能全信，有些是商家花钱请人写的。我上次去过一家评分很高的店，结果菜又贵又难吃。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 4,
+         "stem": "问：女的是什么态度？",
+         "stem_py": "",
+         "options": [
+          "有些怀疑",
+          "很感兴趣",
+          "非常支持",
+          "不在乎"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cô nói đánh giá trên mạng 'không thể tin hết', có cái do cửa hàng trả tiền thuê người viết, nên cô hoài nghi.",
+         "skills": [
+          "nghe-thai-do"
+         ],
+         "words": [
+          "评价",
+          "商家",
+          "怀疑"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "咱们小区下个月开始实行垃圾分类了，厨房垃圾要单独放。"
+        ],
+        [
+         "男",
+         "那得在家里多准备一个垃圾桶了。听说分得好还能换鸡蛋呢。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 5,
+         "stem": "问：根据对话，可以知道什么？",
+         "stem_py": "",
+         "options": [
+          "分类做得好有奖励",
+          "小区已经实行垃圾分类",
+          "男的不支持垃圾分类",
+          "垃圾桶由小区免费送"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Người nam nghe nói phân loại tốt còn được đổi trứng gà, tức là có phần thưởng. Khu nhà tháng sau mới bắt đầu, nên 'đã thực hiện' là sai.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "垃圾分类",
+          "实行",
+          "单独"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "明天和德国客户的视频会议定在几点？"
+        ],
+        [
+         "女",
+         "他们那边比我们晚七个小时，所以我们定在下午四点，这样他们一上班就能开会。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 6,
+         "stem": "问：对德国客户来说，会议是几点？",
+         "stem_py": "",
+         "options": [
+          "早上七点",
+          "上午九点",
+          "下午四点",
+          "晚上十一点"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Bên Đức chậm hơn 7 tiếng; 4 giờ chiều bên mình trừ 7 tiếng là 9 giờ sáng bên họ. 'Bốn giờ chiều' là giờ bên người nói.",
+         "skills": [
+          "nghe-suy-luan"
+         ],
+         "words": [
+          "视频",
+          "会议",
+          "正好"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "周末的做饭课你报名了吗？"
+        ],
+        [
+         "男",
+         "报名了，不过我选的是中级班。初级班教的那几个菜我早就会做了，再学一遍太浪费时间。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 7,
+         "stem": "问：男的为什么选中级班？",
+         "stem_py": "",
+         "options": [
+          "初级班满了",
+          "中级班更便宜",
+          "初级班的内容他已经会了",
+          "朋友也在中级班"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Anh nói mấy món lớp sơ cấp dạy thì anh đã biết nấu từ lâu, học lại là phí thời gian.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "报名",
+          "初级",
+          "中级",
+          "浪费"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "咱们这次去云南，要不要租辆车自己开？"
+        ],
+        [
+         "女",
+         "好主意。山里的景点之间公共汽车很少，自己开车想停哪儿就停哪儿，自由多了。不过你得先查查那边的路好不好开。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 8,
+         "stem": "问：女的为什么同意租车？",
+         "stem_py": "",
+         "options": [
+          "能节省费用",
+          "男的开车技术好",
+          "公共汽车太挤",
+          "行动更自由"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cô nói xe buýt giữa các điểm tham quan trong núi rất ít, tự lái thì muốn dừng đâu thì dừng, 'tự do hơn nhiều'.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "租",
+          "景点",
+          "自由"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "你怎么每个周六上午都不在家？"
+        ],
+        [
+         "男",
+         "我在市图书馆当志愿者，帮小朋友挑书，给他们讲故事。看他们听得那么认真，我觉得特别有意义。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 9,
+         "stem": "问：男的周六上午在做什么？",
+         "stem_py": "",
+         "options": [
+          "在图书馆加班",
+          "给孩子讲故事",
+          "带孩子上课",
+          "去图书馆借书"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Anh làm tình nguyện viên ở thư viện thành phố, giúp các em nhỏ chọn sách và kể chuyện cho các em nghe; không phải đi làm thêm giờ hay mượn sách.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "志愿者",
+          "挑",
+          "意义"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "下个月那场音乐会的票你买到了吗？"
+        ],
+        [
+         "女",
+         "别提了，网上一开始卖，不到三分钟就全没了。我只好等着看有没有人退票。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 10,
+         "stem": "问：女的现在是什么情况？",
+         "stem_py": "",
+         "options": [
+          "买到了好座位",
+          "不想去了",
+          "没买到票",
+          "把票退了"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Vé bán trên mạng chưa đến ba phút đã hết, cô đành chờ xem có ai trả vé không, tức là cô chưa mua được vé.",
+         "skills": [
+          "nghe-suy-luan"
+         ],
+         "words": [
+          "音乐会",
+          "退票",
+          "只好"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "听说老周当上部门经理了？"
+        ],
+        [
+         "男",
+         "是啊，他这几年负责的项目都完成得很出色，大家早就觉得他当经理是早晚的事。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 11,
+         "stem": "问：关于老周，可以知道什么？",
+         "stem_py": "",
+         "options": [
+          "刚换了部门",
+          "和同事关系一般",
+          "想离开公司",
+          "工作能力强"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Các dự án anh Chu phụ trách đều hoàn thành xuất sắc, mọi người đều cho rằng anh làm trưởng phòng là chuyện sớm muộn, cho thấy năng lực làm việc tốt.",
+         "skills": [
+          "nghe-suy-luan"
+         ],
+         "words": [
+          "经理",
+          "项目",
+          "出色"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "我买的那盆花才一个星期叶子就掉了好几片，我可是天天给它浇水啊。"
+        ],
+        [
+         "女",
+         "问题可能就在这儿。这种花不喜欢水，浇多了根会坏，一个星期浇一次就够了。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 12,
+         "stem": "问：花的叶子为什么掉了？",
+         "stem_py": "",
+         "options": [
+          "晒太阳太少",
+          "浇水太多",
+          "天气太冷",
+          "花盆太小"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Lá rụng vì người nam tưới mỗi ngày, còn loại hoa này không ưa nước, tưới nhiều thì rễ hỏng; chỉ cần mỗi tuần tưới một lần.",
+         "skills": [
+          "nghe-suy-luan"
+         ],
+         "words": [
+          "叶子",
+          "浇水",
+          "根"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "林姐，你的咖啡馆最近好像人多了不少。"
+        ],
+        [
+         "女",
+         "是啊，我把店里的一面墙改成了“旧书交换区”。客人可以带一本自己看过的书来，换走一本别人的。"
+        ],
+        [
+         "男",
+         "这个办法挺新鲜的。"
+        ],
+        [
+         "女",
+         "开始我只是想让店里多点儿读书的感觉，没想到很多人专门为了换书来，顺便点一杯咖啡坐下来看。现在周末的座位常常不够。"
+        ],
+        [
+         "男",
+         "那你不考虑再开一家分店吗？"
+        ],
+        [
+         "女",
+         "暂时不想。我更希望把这一家做好，让它成为附近居民愿意常来的地方。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 13,
+         "stem": "问：咖啡馆的客人为什么变多了？",
+         "stem_py": "",
+         "options": [
+          "咖啡降价了",
+          "增加了换书活动",
+          "装修得更现代",
+          "搬到了地铁站旁"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Chị Lâm biến một bức tường thành 'khu đổi sách cũ'; nhiều người đến chuyên để đổi sách rồi gọi cà phê ngồi đọc.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "交换",
+          "专门",
+          "顺便"
+         ]
+        },
+        {
+         "no": 14,
+         "stem": "问：女的对开分店是什么态度？",
+         "stem_py": "",
+         "options": [
+          "暂时不考虑",
+          "已经在准备",
+          "需要找人一起出钱",
+          "要看客人的意见"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cô nói 'tạm thời không muốn', chỉ mong làm tốt quán hiện tại để cư dân gần đó thích ghé thường xuyên.",
+         "skills": [
+          "nghe-thai-do"
+         ],
+         "words": [
+          "分店",
+          "暂时",
+          "居民"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "您好，请问博物馆晚上也开放吗？"
+        ],
+        [
+         "男",
+         "从这个月开始，每周五和周六晚上开到九点。晚上来的话，除了参观展览，还可以参加我们的“博物馆之夜”活动，工作人员会带大家一边参观一边介绍。"
+        ],
+        [
+         "女",
+         "这个活动需要另外付费吗？"
+        ],
+        [
+         "男",
+         "不用，是免费的。不过因为结束得比较晚，十二岁以下的孩子暂时不能参加。"
+        ],
+        [
+         "女",
+         "真遗憾，我本来想带儿子来的。那我还是周末白天带他来吧。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 15,
+         "stem": "问：关于博物馆，下列哪项正确？",
+         "stem_py": "",
+         "options": [
+          "周五晚上也开放",
+          "每天晚上都开放",
+          "晚上门票更贵",
+          "晚上只能参加活动"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Từ tháng này, bảo tàng mở đến 9 giờ tối vào thứ Sáu và thứ Bảy hằng tuần, nên 'tối thứ Sáu cũng mở cửa' là đúng; không phải tối nào cũng mở.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "开放",
+          "展览",
+          "活动"
+         ]
+        },
+        {
+         "no": 16,
+         "stem": "问：女的为什么觉得遗憾？",
+         "stem_py": "",
+         "options": [
+          "活动要另外收费",
+          "人数已经满了",
+          "博物馆周末不开门",
+          "儿子不能参加晚上的活动"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Hoạt động buổi tối miễn phí nhưng trẻ dưới 12 tuổi chưa được tham gia; cô định dẫn con trai đi nên thấy tiếc.",
+         "skills": [
+          "nghe-suy-luan"
+         ],
+         "words": [
+          "遗憾",
+          "本来",
+          "暂时"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "男",
+         "医生，我这几个月腰一直疼，有时候连站起来都困难。"
+        ],
+        [
+         "女",
+         "你平时做什么工作？"
+        ],
+        [
+         "男",
+         "我是做设计的，一天差不多要在电脑前坐十个小时。"
+        ],
+        [
+         "女",
+         "问题就在这儿。长时间坐着不动，腰的压力太大。我先给你开点儿药，不过药只能减轻疼痛，关键还是要改变习惯。"
+        ],
+        [
+         "男",
+         "那我该怎么做呢？"
+        ],
+        [
+         "女",
+         "每坐四十分钟左右，就站起来活动五分钟。另外，椅子的高度也要调整，让脚能平放在地上。周末可以去游游泳，对腰有好处。"
+        ],
+        [
+         "男",
+         "好的，我回去就试试。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 17,
+         "stem": "问：男的为什么腰疼？",
+         "stem_py": "",
+         "options": [
+          "运动时受了伤",
+          "搬了很重的东西",
+          "睡觉的姿势不对",
+          "长时间坐着工作"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Anh làm thiết kế, mỗi ngày ngồi trước máy tính khoảng mười tiếng; bác sĩ nói ngồi lâu không vận động làm lưng chịu áp lực lớn.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "腰",
+          "设计",
+          "压力"
+         ]
+        },
+        {
+         "no": 18,
+         "stem": "问：医生认为药有什么作用？",
+         "stem_py": "",
+         "options": [
+          "能彻底治好病",
+          "需要长期吃",
+          "只能减轻疼痛",
+          "吃了容易想睡觉"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Bác sĩ nói thuốc 'chỉ có thể giảm đau', quan trọng là thay đổi thói quen.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "减轻",
+          "疼痛",
+          "关键"
+         ]
+        },
+        {
+         "no": 19,
+         "stem": "问：医生没有提到哪个建议？",
+         "stem_py": "",
+         "options": [
+          "每隔一段时间站起来活动",
+          "换一份工作",
+          "周末去游泳",
+          "调整椅子的高度"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Bác sĩ khuyên cứ ngồi khoảng 40 phút thì đứng dậy 5 phút, chỉnh độ cao ghế và cuối tuần đi bơi; bà không hề khuyên đổi việc.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "调整",
+          "高度",
+          "活动"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 2,
+     "type": "l_passage",
+     "instruction_vi": "Câu 20–35: nghe hội thoại dài hoặc đoạn độc thoại (thông báo, câu chuyện, tin tức, bài nói), mỗi đoạn 2–3 câu hỏi; chọn đáp án đúng. Mỗi đoạn nghe một lần.",
+     "instruction_zh": "第20～35题：请选出正确答案。",
+     "plays": 1,
+     "groups": [
+      {
+       "audio": [
+        [
+         "",
+         "各位市民，本周日上午七点到中午十二点，我市将举行城市跑步比赛。比赛期间，人民路、江边大道等十二条道路将暂时禁止车辆通行，部分公交车也会临时改变路线。请大家提前安排好出行，尽量选择坐地铁。那天，地铁一号线和三号线的地铁站将提前半小时开门。另外，比赛需要大量志愿者，有兴趣的市民可以在本周四以前通过市政府网站报名。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 20,
+         "stem": "问：比赛期间，部分道路会怎么样？",
+         "stem_py": "",
+         "options": [
+          "只允许公交车通过",
+          "暂时禁止车辆通行",
+          "只允许出租车通过",
+          "可以免费停车"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Bản tin nói 12 con đường như đường Nhân Dân sẽ tạm thời cấm xe cộ đi lại; xe buýt còn phải đổi tuyến, nên 'chỉ cho xe buýt đi' là sai.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "禁止",
+          "通行",
+          "临时"
+         ]
+        },
+        {
+         "no": 21,
+         "stem": "问：比赛那天，地铁站有什么变化？",
+         "stem_py": "",
+         "options": [
+          "可以免费乘坐",
+          "开通了新的地铁",
+          "提前半小时开门",
+          "晚上推迟关门"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Các ga tuyến số 1 và số 3 hôm đó mở cửa sớm hơn nửa tiếng.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "提前"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "女",
+         "小陈，听说你大学毕业以后回老家卖橙子，还在网上做起了直播？"
+        ],
+        [
+         "男",
+         "对。我们村的橙子味道特别好，但是以前交通不方便，只能低价卖给来村里收橙子的商人。"
+        ],
+        [
+         "女",
+         "做直播以后情况有什么变化？"
+        ],
+        [
+         "男",
+         "变化很大。我每天在橙子树中间直播，让大家看到橙子是怎么种出来、怎么摘下来的。顾客觉得放心，买的人一下子多了起来。去年村里的橙子全部卖完了，价格也比以前高了不少。"
+        ],
+        [
+         "女",
+         "你觉得最大的困难是什么？"
+        ],
+        [
+         "男",
+         "一开始是运输。橙子容易坏，路上时间一长就不新鲜了。后来我们跟快递公司合作，让他们每天直接到村里来拿货，问题就解决了。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 22,
+         "stem": "问：直播为什么能让顾客放心？",
+         "stem_py": "",
+         "options": [
+          "价格比超市低",
+          "能看到橙子种出来和摘下来的过程",
+          "有专家进行介绍",
+          "可以先尝后买"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Anh livestream ngay trong vườn để mọi người thấy cam được trồng và hái thế nào, nên khách yên tâm.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "直播",
+          "放心",
+          "摘"
+         ]
+        },
+        {
+         "no": 23,
+         "stem": "问：一开始最大的困难是什么？",
+         "stem_py": "",
+         "options": [
+          "缺少资金",
+          "村民不支持",
+          "运输和保存",
+          "不会使用手机"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Anh nói lúc đầu khó nhất là vận chuyển vì cam dễ hỏng; sau khi hợp tác để công ty chuyển phát đến tận làng lấy hàng mỗi ngày thì giải quyết được.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "运输",
+          "合作",
+          "快递"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "小林跟着一位老师傅学做菜。头三个月，师傅什么菜都不让他做，只让他每天切土豆。小林心里很不高兴，觉得这是在浪费时间。有一天师傅不在，他自己炒了一份土豆，结果一点儿也不好吃。师傅回来尝了一口，说：“你的土豆切得有大有小，大的还没熟，小的已经炒得太软了。”小林这才明白，看起来最简单的切菜，其实是做好一道菜的基础。从那以后，他再也不抱怨了。三年后，他在一次做菜比赛中得了一等奖。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 24,
+         "stem": "问：头三个月，师傅让小林做什么？",
+         "stem_py": "",
+         "options": [
+          "洗碗",
+          "打扫厨房",
+          "切土豆",
+          "去市场买菜"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Ba tháng đầu sư phụ không cho nấu món nào, chỉ bắt mỗi ngày thái khoai tây (切土豆).",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "师傅",
+          "切",
+          "土豆"
+         ]
+        },
+        {
+         "no": 25,
+         "stem": "问：小林炒的土豆为什么不好吃？",
+         "stem_py": "",
+         "options": [
+          "火太小",
+          "土豆切得有大有小",
+          "盐放得太多",
+          "炒的时间太长"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Sư phụ nói khoai thái miếng to miếng nhỏ không đều nên miếng to còn sống, miếng nhỏ đã quá mềm; không phải do lửa hay muối.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "尝",
+          "熟",
+          "软"
+         ]
+        },
+        {
+         "no": 26,
+         "stem": "问：这个故事主要想告诉我们什么？",
+         "stem_py": "",
+         "options": [
+          "要相信自己的判断",
+          "老师应该多表扬学生",
+          "比赛能让人进步",
+          "打好基础非常重要"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Tiểu Lâm hiểu ra việc thái rau tưởng đơn giản nhất lại là nền tảng để nấu ngon một món, tức là kỹ năng cơ bản rất quan trọng.",
+         "skills": [
+          "nghe-y-chinh"
+         ],
+         "words": [
+          "基础",
+          "抱怨"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "最近，阳光社区的“老年食堂”正式开门了。食堂在社区活动中心一楼，每天提供午饭和晚饭。六十岁以上的社区居民在这里吃饭可以少付百分之二十，八十岁以上的老人还可以享受免费送饭到家的服务。食堂的菜每周换一次，厨师会根据老人的身体情况，少放盐和油。开门第一周，每天来吃饭的人就超过了两百位。不少年轻人也来这里吃饭，他们说，这里的饭菜干净、便宜，有“家里的味道”。社区负责人表示，下一步打算请营养专家定期来讲课，帮助老人吃得更健康。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 27,
+         "stem": "问：哪些人可以享受送饭到家的服务？",
+         "stem_py": "",
+         "options": [
+          "八十岁以上的老人",
+          "六十岁以上的老人",
+          "所有社区居民",
+          "行动不便的年轻人"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Người trên 60 tuổi được trả ít hơn 20%; chỉ người trên 80 tuổi mới được đưa cơm miễn phí tận nhà.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "享受",
+          "免费"
+         ]
+        },
+        {
+         "no": 28,
+         "stem": "问：关于食堂的菜，可以知道什么？",
+         "stem_py": "",
+         "options": [
+          "少放盐和油",
+          "每天换一次",
+          "没有肉菜",
+          "价格比较高"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Thực đơn đổi mỗi tuần (không phải mỗi ngày), đầu bếp bớt muối và dầu theo sức khỏe người già.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "盐",
+          "油",
+          "根据"
+         ]
+        },
+        {
+         "no": 29,
+         "stem": "问：社区下一步打算做什么？",
+         "stem_py": "",
+         "options": [
+          "扩大食堂面积",
+          "增加早饭",
+          "招聘更多厨师",
+          "请营养专家讲课"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Người phụ trách nói bước tiếp theo sẽ mời chuyên gia dinh dưỡng đến giảng định kỳ.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "营养",
+          "专家",
+          "定期"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "很多人认为，越安静的环境越适合学习和工作。但是研究发现，完全没有声音的环境反而会让一些人感到紧张，注意力也不容易集中。相比之下，适当的背景声音，比如咖啡馆里人们小声说话的声音、下雨的声音，能让大脑保持一种既放松又集中的状态。这也是为什么有的人喜欢到咖啡馆去写东西。不过，这里说的“适当”很重要。研究人员发现，声音一旦超过一定的大小，或者里面有能听清楚的谈话内容，人就很容易被吸引过去，效率反而会下降。所以，如果你需要专心做事，可以试试播放一些没有歌词的音乐或者自然的声音。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 30,
+         "stem": "问：完全安静的环境可能会让一些人怎么样？",
+         "stem_py": "",
+         "options": [
+          "更有创造力",
+          "很快睡着",
+          "感到紧张",
+          "记忆力变好"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Nghiên cứu cho thấy môi trường hoàn toàn không có âm thanh lại khiến một số người căng thẳng, khó tập trung.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "环境",
+          "注意力",
+          "集中"
+         ]
+        },
+        {
+         "no": 31,
+         "stem": "问：为什么有的人喜欢到咖啡馆写东西？",
+         "stem_py": "",
+         "options": [
+          "背景声音让大脑放松又集中",
+          "咖啡能让人兴奋",
+          "可以和朋友讨论",
+          "那里可以免费上网"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Âm thanh nền vừa phải như tiếng trò chuyện nhỏ trong quán cà phê giúp não ở trạng thái vừa thư giãn vừa tập trung.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "背景",
+          "放松",
+          "状态"
+         ]
+        },
+        {
+         "no": 32,
+         "stem": "问：说话人建议需要专心的时候怎么做？",
+         "stem_py": "",
+         "options": [
+          "去图书馆",
+          "戴上耳机听新闻",
+          "关掉所有电器",
+          "播放没有歌词的音乐"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Người nói khuyên thử mở nhạc không lời hoặc âm thanh tự nhiên; nghe tin tức có nội dung lời nói rõ ràng sẽ làm phân tán.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "专心",
+          "播放",
+          "歌词"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": [
+        [
+         "",
+         "你有没有注意到，很多快餐店都喜欢用红色和黄色来装修？这并不是偶然的。心理学家认为，红色和黄色能让人兴奋，让人更想吃东西，同时也会让人加快吃饭的速度，自己却没有发现。对于希望客人吃完就走、让座位不断有新客人的快餐店来说，这正合适。相反，一些高级餐厅更喜欢使用深蓝色、咖啡色这样比较安静的颜色，再加上不太亮的灯光，让客人愿意多坐一会儿，点更多的菜和饮料。当然，颜色只是影响人们行为的因素之一，菜的味道和服务质量才是一家餐厅能不能长期成功的关键。"
+        ]
+       ],
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 33,
+         "stem": "问：快餐店为什么喜欢用红色和黄色？",
+         "stem_py": "",
+         "options": [
+          "这些颜色比较便宜",
+          "能让客人吃得快一些",
+          "容易打扫干净",
+          "显得比较高级"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đỏ và vàng làm người ta hưng phấn, thèm ăn và vô thức ăn nhanh hơn, hợp với quán ăn nhanh muốn khách ăn xong là đi.",
+         "skills": [
+          "nghe-chi-tiet"
+         ],
+         "words": [
+          "快餐",
+          "兴奋",
+          "速度"
+         ]
+        },
+        {
+         "no": 34,
+         "stem": "问：高级餐厅使用安静的颜色是为了什么？",
+         "stem_py": "",
+         "options": [
+          "让客人多坐一会儿",
+          "节约用电",
+          "吸引年轻人",
+          "突出菜的颜色"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Màu trầm cùng ánh đèn dịu khiến khách muốn ngồi lâu hơn và gọi thêm món, đồ uống.",
+         "skills": [
+          "nghe-suy-luan"
+         ],
+         "words": [
+          "灯光",
+          "饮料"
+         ]
+        },
+        {
+         "no": 35,
+         "stem": "问：说话人认为餐厅长期成功的关键是什么？",
+         "stem_py": "",
+         "options": [
+          "装修风格",
+          "餐厅的位置",
+          "广告宣传",
+          "菜的味道和服务"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Câu cuối nói màu sắc chỉ là một yếu tố; hương vị món ăn và chất lượng phục vụ mới là then chốt.",
+         "skills": [
+          "nghe-y-chinh"
+         ],
+         "words": [
+          "因素",
+          "质量",
+          "关键"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "reading",
+   "name_zh": "阅读",
+   "name_vi": "Đọc hiểu",
+   "minutes": 35,
+   "parts": [
+    {
+     "part": 1,
+     "type": "r_cloze",
+     "instruction_vi": "Câu 36–45: đọc 3 đoạn văn có chỗ trống; mỗi chỗ trống chọn một từ hoặc một câu phù hợp nhất trong 4 phương án.",
+     "instruction_zh": "第36～45题：请选出正确答案。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": "爷爷今年七十五岁，最近刚学会用手机发语音消息。有一天，他给在外地工作的孙子发了一条语音，（36）说了整整五分钟，从家里的小狗说到楼下新开的超市。孙子听完以后，笑着回了一句：“爷爷，下次您直接打电话吧，这样我们还能聊聊天。”爷爷却（37）地说：“打电话你总说在忙，发语音你什么时候有空什么时候听，（38）。”孙子听了，心里一下子觉得特别温暖。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 36,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "一会儿",
+          "一口气",
+          "一边",
+          "一路"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "'一口气说了五分钟' = nói một mạch năm phút. 一会儿 (một lát), 一边 (vừa… vừa…), 一路 (suốt dọc đường) không đi với ý nói liền một hơi.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "一口气"
+         ]
+        },
+        {
+         "no": 37,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "害羞",
+          "紧张",
+          "失望",
+          "得意"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Ông tự thấy cách của mình rất hay (cháu lúc nào rảnh cũng nghe được) nên nói một cách đắc ý; không có gì để căng thẳng, thất vọng hay xấu hổ.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "得意"
+         ]
+        },
+        {
+         "no": 38,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "电话费实在太贵了",
+          "我还不会用视频",
+          "你就不用回复了",
+          "这样就不会打扰你了"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Ông giải thích gọi điện thì cháu bận, gửi tin nhắn thoại thì cháu rảnh lúc nào nghe lúc ấy, nghĩa là ông không muốn làm phiền cháu; vì vậy cháu thấy ấm lòng.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": [
+          "打扰"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "竹子是一种生长速度非常快的植物，有的品种一天能长高一米左右，三到五年就可以使用。（39），重量却比很多建筑材料轻得多，而且不容易断。因此，在中国南方和东南亚的许多地区，人们很早以前就用竹子建房子、修桥。近年来，随着人们越来越重视环保，竹子重新（40）了建筑师的注意。和木头相比，竹子用掉以后能更快地重新长出来，对森林的（41）也小得多。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 39,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "和木头一样",
+          "虽然竹子非常硬",
+          "因为它的颜色很漂亮",
+          "竹子在北方很少见"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Vế sau có '却' (nhưng trọng lượng lại nhẹ hơn nhiều), cần vế trước dạng '虽然…' (tuy rất cứng) để tạo quan hệ nhượng bộ.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": [
+          "虽然…却…",
+          "硬"
+         ]
+        },
+        {
+         "no": 40,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "发生",
+          "提醒",
+          "引起",
+          "产生"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cụm cố định '引起…的注意' (thu hút sự chú ý). 提醒 là nhắc nhở; 发生, 产生 không kết hợp với '注意'.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "引起",
+          "注意"
+         ]
+        },
+        {
+         "no": 41,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "影响",
+          "效果",
+          "结果",
+          "印象"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "'对森林的影响也小得多' = tác động đến rừng nhỏ hơn nhiều. 效果 (hiệu quả), 结果 (kết quả), 印象 (ấn tượng) không hợp nghĩa.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "影响",
+          "森林"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "在土地非常紧张的大城市里，建一个大公园往往不太现实。于是，“口袋公园”开始出现在人们身边。口袋公园，指的是（42）不大、分布在街道旁或居民区里的小型公园。它们的面积可能只有一两个篮球场那么大，却有椅子、树木，有的还有孩子们玩的地方。\n口袋公园最大的优点是方便。（43），居民走路五到十分钟就能到达。老人可以在这里坐着聊天、晒太阳，上班族也能在中午休息时出来走一走。另外，口袋公园还能（44）城市环境：树木可以降低周围的温度，让环境更安静。\n当然，口袋公园也需要（45）设计。如果只是随便放几张椅子、种几棵树，就很难真正被人们使用起来。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 42,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "水平",
+          "程度",
+          "规模",
+          "质量"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "'规模不大' = quy mô không lớn, dùng cho công viên, công trình. 程度, 水平, 质量 không đi với nghĩa kích thước.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "规模"
+         ]
+        },
+        {
+         "no": 43,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "虽然花的钱不多",
+          "但是管理比较困难",
+          "很多人还不知道它们",
+          "由于数量多、距离近"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Câu đang giải thích ưu điểm 'tiện lợi': vì nhiều và gần nên đi bộ 5–10 phút là tới. Các lựa chọn khác không giải thích sự tiện lợi.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": [
+          "数量",
+          "距离"
+         ]
+        },
+        {
+         "no": 44,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "改正",
+          "修改",
+          "改善",
+          "修理"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "'改善环境' = cải thiện môi trường. 修改 dùng cho bài viết, kế hoạch; 改正 dùng cho lỗi sai; 修理 dùng cho đồ vật hỏng.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "改善"
+         ]
+        },
+        {
+         "no": 45,
+         "stem": "",
+         "stem_py": "",
+         "options": [
+          "认真",
+          "关心",
+          "担心",
+          "放心"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "'需要认真设计' = cần thiết kế nghiêm túc, chu đáo; câu sau nói nếu đặt bừa vài cái ghế thì không ai dùng.",
+         "skills": [
+          "doc-tu-vung"
+         ],
+         "words": [
+          "认真",
+          "设计"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 2,
+     "type": "r_paragraph_order",
+     "instruction_vi": "Câu 46–55: sắp xếp đoạn. Mỗi bài có 5 đoạn A–E bị xáo trộn; chọn đoạn đứng ở vị trí thứ nhất, thứ hai… để thành bài văn hoàn chỉnh.",
+     "instruction_zh": "第46～55题：段落排序。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": "A　内容准备好了，还要多练习几遍。最好请朋友当听众，或者把自己的报告录下来，看看哪些地方说得太快，哪些地方不够清楚。\nB　在工作和学习中，我们常常需要在别人面前做报告。一次成功的报告，并不只是靠说话的能力，更需要提前做好准备。\nC　了解听众以后，就可以开始整理内容了。一次报告最好只讲两三个重点，每个重点再用具体的例子或数字来说明，这样别人更容易记住。\nD　最后，正式报告时不要害怕出错。即使忘了一两句话，也不必紧张，自然地接着往下说就可以了。听众关心的是你要表达的信息，而不是每一个字是不是完美。\nE　首先，要弄清楚听众是谁。给专业人员讲和给普通观众讲，选择的内容和说话的方式都应该不一样。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 46,
+         "stem": "第一段",
+         "stem_py": "",
+         "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn B mở bài: nêu chủ đề (thuyết trình thành công cần chuẩn bị trước).",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 47,
+         "stem": "第二段",
+         "stem_py": "",
+         "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+         ],
+         "answer": 4,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn E bắt đầu bằng '首先', bước đầu tiên: tìm hiểu người nghe.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 48,
+         "stem": "第三段",
+         "stem_py": "",
+         "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn C nối tiếp bằng '了解听众以后', bước sắp xếp nội dung.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 49,
+         "stem": "第四段",
+         "stem_py": "",
+         "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn A '内容准备好了' nên đứng sau C: luyện tập nhiều lần.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 50,
+         "stem": "第五段",
+         "stem_py": "",
+         "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn D bắt đầu bằng '最后', kết bài: khi thuyết trình chính thức đừng sợ sai.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "A　停车的时候，他发现后座上放着一个黑色的包。打开一看，里面有一台电脑、一些合同，还有一张飞往上海的机票，时间是第二天早上七点。\nB　到了酒店，服务员帮他联系上了那位客人。原来客人是来这儿出差的，正准备报警。看到包里的东西一样不少，他激动得说不出话来，一定要给老马一千块钱表示感谢。\nC　老马笑着拒绝了：“这本来就是我该做的。”第二天，酒店把这件事发到了网上，很多人都称赞这位普通的司机。\nD　那天晚上十一点多，出租车司机老马送完最后一位客人，准备回家休息。\nE　老马想，丢包的人一定急坏了。他记得这位客人是在火车站附近的一家酒店下的车，于是马上开车回去了。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 51,
+         "stem": "第一段",
+         "stem_py": "",
+         "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn D mở đầu câu chuyện: thời gian, nhân vật (bác tài xế Mã chuẩn bị về nhà).",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 52,
+         "stem": "第二段",
+         "stem_py": "",
+         "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn A: khi đỗ xe, ông phát hiện chiếc túi đen ở ghế sau.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 53,
+         "stem": "第三段",
+         "stem_py": "",
+         "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+         ],
+         "answer": 4,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn E: ông đoán người mất túi rất lo, nhớ khách xuống ở khách sạn nên quay lại.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 54,
+         "stem": "第四段",
+         "stem_py": "",
+         "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn B '到了酒店' nối tiếp E: lễ tân liên lạc được với khách, khách muốn cảm ơn bằng tiền.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        },
+        {
+         "no": 55,
+         "stem": "第五段",
+         "stem_py": "",
+         "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn C kết thúc: ông Mã từ chối và câu chuyện được nhiều người khen.",
+         "skills": [
+          "doc-lien-ket"
+         ],
+         "words": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 3,
+     "type": "r_passage",
+     "instruction_vi": "Câu 56–70: đọc 4 bài văn, mỗi bài 3–4 câu hỏi; chọn đáp án đúng.",
+     "instruction_zh": "第56～70题：请选出正确答案。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": "三十岁的周晓，工作是修理旧家具。她大学学的是设计，毕业后在一家广告公司工作了五年。一次偶然的机会，她帮外婆修好了一把用了四十多年的木椅子。看到外婆高兴得像个孩子，她第一次感受到这份工作的意义。\n后来，周晓离开了公司，开了一家小工作室。来找她的客人，带来的常常不是很贵的东西，而是一张旧桌子、一个旧柜子，上面有一家人的回忆。周晓说：“修理不是把旧家具变成新的，而是让它带着原来的故事继续被使用。”所以她修理时会尽量保留家具原来的颜色和用过的样子。\n现在，每个月都有几十位客人来找周晓。她还在网上分享修理过程的视频，吸引了很多年轻人。有人留言说，看了她的视频，才明白“旧”也可以是一种美。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 56,
+         "stem": "周晓为什么开始修理旧家具？",
+         "stem_py": "",
+         "options": [
+          "广告公司的生意不好",
+          "想赚更多的钱",
+          "她大学学的就是修理",
+          "帮外婆修好椅子后很受感动"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn 1: sau khi sửa chiếc ghế cho bà ngoại và thấy bà vui như trẻ con, cô lần đầu cảm nhận ý nghĩa của công việc này.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "偶然",
+          "外婆",
+          "意义"
+         ]
+        },
+        {
+         "no": 57,
+         "stem": "周晓修理家具时会怎么做？",
+         "stem_py": "",
+         "options": [
+          "全部换成新材料",
+          "只修理很贵的家具",
+          "重新设计家具的样子",
+          "保留原来的颜色和用过的样子"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Cô nói phục chế không phải biến đồ cũ thành mới, nên cố gắng giữ màu gốc và dấu vết sử dụng.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "保留",
+          "尽量"
+         ]
+        },
+        {
+         "no": 58,
+         "stem": "根据上文，下列哪项正确？",
+         "stem_py": "",
+         "options": [
+          "周晓的客人都很富有",
+          "周晓的视频受到年轻人关注",
+          "周晓现在还在广告公司上班",
+          "外婆的椅子是新买的"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn cuối: video chia sẻ quá trình phục chế thu hút nhiều người trẻ. Khách thường mang đồ không đắt tiền, cô đã nghỉ việc, ghế của bà dùng hơn 40 năm.",
+         "skills": [
+          "doc-suy-luan"
+         ],
+         "words": [
+          "分享",
+          "吸引"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "人们常说“睡一觉就忘了”，但科学研究发现，事实可能正好相反：睡眠能帮助我们记住白天学过的东西。\n在一项实验中，研究人员让两组大学生学习同样的一组单词。学完以后，第一组学生马上睡了八个小时，而第二组一直不睡觉。十二个小时后再进行测试，睡过觉的那组记住的单词明显更多。\n为什么会这样呢？研究人员认为，白天得到的信息，开始时只是暂时保存在大脑里，很容易丢失。而在睡眠过程中，大脑会把这些信息重新整理一遍，把重要的内容“搬”到能长期保存的地方。这个过程有点儿像我们把电脑上乱放的文件分类整理好。\n所以，考试前熬夜复习其实不是一个好办法。熬夜多看两个小时书，不如早点儿睡觉，让大脑完成它的“整理工作”。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 59,
+         "stem": "第一段中“事实可能正好相反”是指：",
+         "stem_py": "",
+         "options": [
+          "睡眠会让人忘记事情",
+          "学习时不能睡觉",
+          "人们白天睡得太多",
+          "睡眠有助于记忆"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Người ta hay nói 'ngủ một giấc là quên', còn nghiên cứu lại cho thấy điều ngược lại: giấc ngủ giúp ghi nhớ.",
+         "skills": [
+          "doc-suy-luan"
+         ],
+         "words": [
+          "睡眠",
+          "相反"
+         ]
+        },
+        {
+         "no": 60,
+         "stem": "实验中，睡过觉的学生：",
+         "stem_py": "",
+         "options": [
+          "学习的时间更长",
+          "记住的单词更多",
+          "测试时更紧张",
+          "比另一组年龄小"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Sau 12 tiếng kiểm tra lại, nhóm được ngủ nhớ được nhiều từ hơn rõ rệt; hai nhóm học cùng một bộ từ.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "实验",
+          "测试",
+          "明显"
+         ]
+        },
+        {
+         "no": 61,
+         "stem": "第三段主要讲的是：",
+         "stem_py": "",
+         "options": [
+          "实验的过程",
+          "电脑的使用方法",
+          "睡眠帮助记忆的原因",
+          "怎样提高睡眠质量"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn 3 mở đầu bằng '为什么会这样呢' rồi giải thích cơ chế não sắp xếp lại thông tin khi ngủ. Máy tính chỉ là phép so sánh.",
+         "skills": [
+          "doc-y-chinh"
+         ],
+         "words": [
+          "整理",
+          "信息"
+         ]
+        },
+        {
+         "no": 62,
+         "stem": "作者对考试前熬夜复习是什么看法？",
+         "stem_py": "",
+         "options": [
+          "不是好办法",
+          "很有必要",
+          "要看个人情况",
+          "没有什么影响"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Tác giả nói thức khuya ôn thi 'không phải cách hay', thức thêm hai tiếng đọc sách không bằng ngủ sớm để não hoàn thành việc sắp xếp.",
+         "skills": [
+          "doc-suy-luan"
+         ],
+         "words": [
+          "熬夜",
+          "不如"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "走进上海的一个小区，抬头就能看到楼顶上一片绿色：西红柿、黄瓜长得正好，还开着各种颜色的花，几位老人正在给菜浇水。这是小区居民一起建起来的“屋顶花园”。\n三年前，这里的楼顶还堆满了旧家具和垃圾，夏天最高一层的房间特别热。后来，社区组织居民把楼顶打扫干净，运来了专门的土，开始种菜种花。\n屋顶花园带来的变化超出了大家的想象。首先，住在最高一层的居民发现，夏天家里的温度降低了两三度，空调用得少了。其次，植物和土能吸收一部分雨水，下大雨时，路上的水就没那么多了。更让人高兴的是，以前互相不认识的邻居，因为一起种菜，关系变得越来越好。孩子们也多了一个认识大自然的地方。\n现在，这个小区的经验已经在全市推广。有关部门表示，屋顶是城市里被浪费的“第五个面”，利用好它，城市会变得更绿色、更适合居住。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 63,
+         "stem": "三年前，楼顶是什么样子？",
+         "stem_py": "",
+         "options": [
+          "是一个停车场",
+          "已经有了花园",
+          "堆满了旧东西",
+          "租给了一家公司"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn 2: ba năm trước sân thượng chất đầy đồ nội thất cũ và rác.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "堆",
+          "垃圾"
+         ]
+        },
+        {
+         "no": 64,
+         "stem": "屋顶花园对住在最高一层的居民最直接的好处是：",
+         "stem_py": "",
+         "options": [
+          "能卖菜赚钱",
+          "房子能卖更高的价钱",
+          "夏天家里更凉快",
+          "能看到更好的风景"
+         ],
+         "answer": 2,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Hộ ở tầng trên cùng thấy mùa hè nhiệt độ trong nhà giảm 2–3 độ, ít phải bật điều hòa.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "温度",
+          "降低",
+          "空调"
+         ]
+        },
+        {
+         "no": 65,
+         "stem": "根据第三段，下列哪项不是屋顶花园带来的变化？",
+         "stem_py": "",
+         "options": [
+          "邻居关系更好了",
+          "下大雨时路上的水少了",
+          "孩子能接触大自然",
+          "小区的房租降低了"
+         ],
+         "answer": 3,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn 3 nêu: giảm nhiệt, mưa to thì nước đọng trên đường ít hơn, hàng xóm thân hơn, trẻ có chỗ tìm hiểu thiên nhiên; không nhắc đến tiền thuê nhà.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "吸收",
+          "邻居",
+          "关系"
+         ]
+        },
+        {
+         "no": 66,
+         "stem": "最后一段中“第五个面”指的是：",
+         "stem_py": "",
+         "options": [
+          "房子的屋顶",
+          "城市的地下空间",
+          "大楼的窗户",
+          "小区的停车场"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Câu nói 'mái nhà là mặt thứ năm bị lãng phí trong thành phố' (ngoài bốn mặt tường), nên 'mặt thứ năm' là mái nhà.",
+         "skills": [
+          "doc-suy-luan"
+         ],
+         "words": [
+          "屋顶",
+          "利用"
+         ]
+        }
+       ]
+      },
+      {
+       "audio": null,
+       "passage": "“时间银行”是一种帮助老人的新方式。它的规则很简单：年轻一些的志愿者为需要帮助的老人提供服务，比如陪老人聊天、帮忙买菜、打扫房间、教老人使用手机等，服务的时间会被记录在自己的“账户”里。等将来自己老了，需要帮助的时候，就可以把存下的时间“取”出来，换来别人为自己服务。\n南京的一个社区从2019年开始试着做“时间银行”，现在已经有六百多名会员。六十二岁的退休教师王阿姨就是其中之一。她每周两次去看望一位八十多岁、一个人生活的老人。“我现在身体还好，能帮就多帮一点儿。我存下的时间，以后说不定就用得上。”\n不过，时间银行也面临一些问题。比如，如果会员搬到了别的城市，他存下的时间还能不能用？二三十年以后，这家“银行”是不是还存在？专家建议，应该由政府参与建立统一的平台，让存下的时间在不同城市之间也能使用，这样人们才能更放心地“存时间”。",
+       "image_vi": null,
+       "items": [
+        {
+         "no": 67,
+         "stem": "根据第一段，“时间银行”的会员可以：",
+         "stem_py": "",
+         "options": [
+          "把服务时间换成钱",
+          "用服务时间换来以后的帮助",
+          "免费得到一套房子",
+          "获得政府的奖金"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Thời gian phục vụ được ghi vào 'tài khoản', sau này khi già có thể 'rút' ra để đổi lấy sự giúp đỡ của người khác; không đổi ra tiền.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "账户",
+          "记录"
+         ]
+        },
+        {
+         "no": 68,
+         "stem": "王阿姨为什么参加时间银行？",
+         "stem_py": "",
+         "options": [
+          "想在身体好的时候多帮助别人",
+          "想找一份工作",
+          "自己需要人照顾",
+          "学校要求她参加"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Bà nói 'bây giờ sức khỏe còn tốt, giúp được thì giúp nhiều hơn', thời gian tích lũy sau này có thể dùng tới.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "退休",
+          "看望"
+         ]
+        },
+        {
+         "no": 69,
+         "stem": "时间银行面临的问题是：",
+         "stem_py": "",
+         "options": [
+          "参加的老人太少",
+          "存下的时间可能无法在别的城市使用",
+          "志愿者的服务质量不高",
+          "参加的费用太高"
+         ],
+         "answer": 1,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Đoạn 3 nêu vấn đề: nếu hội viên chuyển sang thành phố khác thì thời gian đã tích có dùng được không, và 'ngân hàng' có còn tồn tại sau 20–30 năm không.",
+         "skills": [
+          "doc-chi-tiet"
+         ],
+         "words": [
+          "面临",
+          "统一"
+         ]
+        },
+        {
+         "no": 70,
+         "stem": "下列哪项最适合做上文的题目？",
+         "stem_py": "",
+         "options": [
+          "“存时间”：帮助老人的新方式与新问题",
+          "王阿姨的退休生活",
+          "怎样当好志愿者",
+          "南京的社区服务"
+         ],
+         "answer": 0,
+         "sample_answer": null,
+         "rubric_vi": null,
+         "explain_vi": "Bài giới thiệu cách thức 'gửi thời gian' để dưỡng lão, ví dụ thực tế và các vấn đề còn tồn tại; các tiêu đề khác chỉ nói một chi tiết.",
+         "skills": [
+          "doc-y-chinh"
+         ],
+         "words": [
+          "方式",
+          "问题"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "writing",
+   "name_zh": "写作",
+   "name_vi": "Viết",
+   "minutes": 40,
+   "parts": [
+    {
+     "part": 1,
+     "type": "w_picture_story",
+     "instruction_vi": "Câu 71: viết theo tranh. Dựa vào 4 bức tranh (ở đây thay bằng mô tả), viết một bài không ít hơn 100 chữ, kể câu chuyện xảy ra với 王小雨.",
+     "instruction_zh": "第71题：看图写作。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": "Tranh 1: chiều mưa, cô bé 王小雨 đeo cặp đi học về, thấy một chú mèo con ướt sũng run rẩy nép ở góc chân tòa nhà. Tranh 2: ở nhà, cô lấy khăn lau khô cho mèo và đặt trước nó một bát sữa nóng. Tranh 3: cô dán tờ thông báo tìm chủ có ảnh mèo ở cổng khu chung cư, tay cầm điện thoại. Tranh 4: một cậu bé cùng mẹ đứng ở cửa, cậu ôm chú mèo, mọi người đều cười.",
+       "items": [
+        {
+         "no": 71,
+         "stem": "请根据下面四张图，写一篇不少于100字的短文，讲一讲发生在王小雨身上的故事。",
+         "stem_py": "",
+         "options": [],
+         "answer": null,
+         "sample_answer": "一个下雨的傍晚，王小雨放学回家，在楼门旁边看见一只小猫，全身都湿了，看起来又冷又饿。她马上把小猫抱回了家，用毛巾把它擦干，又给它倒了一碗热牛奶。小猫喝完牛奶，舒服地睡着了。\n第二天，王小雨想：“小猫的主人一定很着急。”于是她写了一张寻找主人的通知，贴在小区门口，还发到了小区的网上群里。\n过了两天，一个小男孩和他的妈妈来敲门。原来小猫是男孩的，已经丢了三天了。男孩抱着小猫，高兴得跳了起来，一直对王小雨说谢谢。看着他们开心的样子，王小雨觉得自己做了一件特别有意义的事。",
+         "rubric_vi": "Đạt yêu cầu khi: (1) viết ≥ 100 chữ Hán, kể đủ 4 tranh theo trình tự; (2) có nhân vật 王小雨, có mở đầu – diễn biến – kết thúc; (3) dùng từ nối thời gian/nguyên nhân (于是、原来、过了两天…); (4) câu đúng ngữ pháp, ít lỗi chữ. Điểm cao hơn nếu có miêu tả tâm trạng, lời thoại và một câu kết nêu cảm nghĩ.",
+         "explain_vi": "Bài mẫu kể đủ 4 tranh theo thứ tự thời gian, dùng 于是、原来、过了两天 để nối các tình tiết và kết bằng cảm nghĩ của nhân vật.",
+         "skills": [
+          "viet-ke-chuyen"
+         ],
+         "words": [
+          "躲",
+          "通知",
+          "原来"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "part": 2,
+     "type": "w_topic_essay",
+     "instruction_vi": "Câu 72: viết theo chủ đề. Viết một bài không ít hơn 200 chữ theo yêu cầu.",
+     "instruction_zh": "第72题：话题作文。",
+     "plays": null,
+     "groups": [
+      {
+       "audio": null,
+       "passage": null,
+       "image_vi": null,
+       "items": [
+        {
+         "no": 72,
+         "stem": "现代人的生活越来越忙，但有时候“慢下来”反而能让我们得到更多。请写一篇不少于200字的作文，讲一讲你生活中一次“慢下来”的经历，以及它带给你的感受。",
+         "stem_py": "",
+         "options": [],
+         "answer": null,
+         "sample_answer": "我是一个做什么都追求快的人。走路快，吃饭快，连看书也只看重点。去年暑假，我和奶奶一起在农村住了一个月，这段经历让我学会了“慢下来”。\n奶奶每天早上都要花一个小时在院子里浇花、喂鸡。一开始我觉得她太浪费时间了，就帮她一起做，想快点儿做完。奶奶笑着说：“急什么？你仔细看看这些花。”我这才停下来，发现每朵花的颜色都不一样，叶子上还留着一点点水，在阳光下特别好看。\n从那以后，我每天跟奶奶一起慢慢地做事、慢慢地聊天。我发现，慢下来以后，我能注意到很多以前没有发现的美好，心情也变得平静了。回到城市以后，我虽然还是很忙，但每天都会给自己留半个小时，放下手机，安静地看看书、散散步。\n我觉得，“慢”不是浪费时间，而是让我们更好地感受生活。有时候，只有慢下来，才能走得更远。",
+         "rubric_vi": "Đạt yêu cầu khi: (1) viết ≥ 200 chữ Hán, đúng chủ đề 'một lần chậm lại'; (2) có trải nghiệm cụ thể (thời gian, địa điểm, chuyện gì) và cảm nhận/thay đổi sau đó; (3) bố cục rõ: mở bài – kể chuyện – cảm nghĩ; (4) dùng được cấu trúc cấp 5 như 一开始…后来…、只有…才…、虽然…但…; (5) ít lỗi ngữ pháp, chữ viết. Lạc đề hoặc chỉ nêu ý chung chung, không có câu chuyện riêng thì bị trừ nhiều điểm.",
+         "explain_vi": "Bài mẫu kể một trải nghiệm cụ thể (một tháng ở quê với bà), có chi tiết miêu tả, nêu thay đổi sau đó và kết bằng quan điểm cá nhân.",
+         "skills": [
+          "viet-nghi-luan"
+         ],
+         "words": [
+          "经历",
+          "感受"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "self_check": {
+  "items": 72,
+  "levels_used": "≤ 5",
+  "out_of_level_words": [
+   "屋顶",
+   "楼顶",
+   "一口气"
+  ]
+ }
+}

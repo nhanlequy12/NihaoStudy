@@ -1,0 +1,4625 @@
+[
+ {
+  "id": "h3b-01",
+  "level": 1,
+  "icon": "哪",
+  "title": "Ở đâu? Cái nào?",
+  "sub": "Đại từ số nhiều, chỉ định và vị trí",
+  "goals": [
+   "Nói 'chúng nó, các bạn, những cái này' với 们 và 些",
+   "Hỏi và chỉ nơi chốn: 这里/那里/哪里, 这儿/那儿/哪儿",
+   "Phân biệt 有点儿 + tính từ và tính từ + 一点儿"
+  ],
+  "words": [
+   "他们",
+   "你们",
+   "她们",
+   "它们",
+   "们",
+   "这些",
+   "那些",
+   "一些",
+   "有些",
+   "有的",
+   "哪些",
+   "这里",
+   "那里",
+   "哪里",
+   "这儿",
+   "那儿",
+   "哪儿",
+   "这边",
+   "那边",
+   "边",
+   "外边",
+   "前",
+   "后",
+   "这个",
+   "那个",
+   "哪个",
+   "一半",
+   "一点儿",
+   "有点儿",
+   "一下",
+   "第"
+  ],
+  "grammar": [
+   {
+    "pattern": "Đại từ + 们",
+    "vi": "们 biến đại từ chỉ người thành số nhiều: 我们, 你们, 他们, 她们. 它们 dùng cho con vật, đồ vật. Khi đã có số đếm (三个老师) thì KHÔNG thêm 们.",
+    "ex": [
+     "她们是我的同学，它们是我家的猫。",
+     "Tāmen shì wǒ de tóngxué, tāmen shì wǒ jiā de māo.",
+     "Các cô ấy là bạn học của tôi, chúng nó là mèo nhà tôi."
+    ]
+   },
+   {
+    "pattern": "这些 / 那些 / 哪些 / 一些 + Danh từ",
+    "vi": "些 chỉ số nhiều không xác định: 这些 (những … này), 那些 (những … kia), 哪些 (những … nào?), 一些 (một ít, một vài). 有的 … 有的 … = 'có cái thì …, có cái thì …'.",
+    "ex": [
+     "这些书有的是我的，有的是你们的。",
+     "Zhèxiē shū yǒude shì wǒ de, yǒude shì nǐmen de.",
+     "Mấy quyển sách này, có quyển của tôi, có quyển của các bạn."
+    ]
+   },
+   {
+    "pattern": "这里 = 这儿, 那里 = 那儿, 哪里 = 哪儿",
+    "vi": "Hai cách nói nơi chốn có nghĩa như nhau. Dạng 儿 là khẩu ngữ miền Bắc Trung Quốc; dạng 里 phổ biến ở miền Nam và trong văn viết. 这边/那边 = bên này/bên kia.",
+    "ex": [
+     "你家在哪儿？——在那边，饭店的后边。",
+     "Nǐ jiā zài nǎr? — Zài nàbiān, fàndiàn de hòubian.",
+     "Nhà bạn ở đâu? — Ở bên kia, phía sau nhà hàng."
+    ]
+   },
+   {
+    "pattern": "有点儿 + Tính từ  /  Tính từ + 一点儿",
+    "vi": "有点儿 đứng TRƯỚC tính từ, thường mang ý không hài lòng ('hơi …'). 一点儿 đứng SAU tính từ hoặc động từ: so sánh hoặc yêu cầu ('… một chút'). Động từ + 一下 = làm thử, làm nhanh một chút.",
+    "ex": [
+     "今天有点儿冷，你多喝一点儿热水。",
+     "Jīntiān yǒudiǎnr lěng, nǐ duō hē yìdiǎnr rè shuǐ.",
+     "Hôm nay hơi lạnh, bạn uống thêm chút nước nóng nhé."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "请问，你们学校在哪里？",
+    "Qǐngwèn, nǐmen xuéxiào zài nǎlǐ?",
+    "Xin hỏi, trường các bạn ở đâu?"
+   ],
+   [
+    "B",
+    "在那边，商店的前边。你看一下那个大的。",
+    "Zài nàbiān, shāngdiàn de qiánbian. Nǐ kàn yíxià nàge dà de.",
+    "Ở bên kia, phía trước cửa hàng. Bạn nhìn thử cái to to kia kìa."
+   ],
+   [
+    "A",
+    "这些人都是你们学校的学生吗？",
+    "Zhèxiē rén dōu shì nǐmen xuéxiào de xuésheng ma?",
+    "Những người này đều là học sinh trường các bạn à?"
+   ],
+   [
+    "B",
+    "有些是，有些不是。那些女孩子是我的同学。",
+    "Yǒuxiē shì, yǒuxiē bú shì. Nàxiē nǚ háizi shì wǒ de tóngxué.",
+    "Có người phải, có người không. Mấy bạn nữ kia là bạn học của tôi."
+   ],
+   [
+    "A",
+    "她们是第一年来这儿学习吗？",
+    "Tāmen shì dì yī nián lái zhèr xuéxí ma?",
+    "Các bạn ấy là năm đầu tiên đến đây học à?"
+   ],
+   [
+    "B",
+    "是。一半的学生住在学校里，一半住在外边。",
+    "Shì. Yíbàn de xuésheng zhù zài xuéxiào lǐ, yíbàn zhù zài wàibian.",
+    "Đúng. Một nửa học sinh ở trong trường, một nửa ở bên ngoài."
+   ],
+   [
+    "A",
+    "这里有点儿热。我们去那儿坐一下吧？",
+    "Zhèlǐ yǒudiǎnr rè. Wǒmen qù nàr zuò yíxià ba?",
+    "Ở đây hơi nóng. Chúng mình ra chỗ kia ngồi một chút nhé?"
+   ],
+   [
+    "B",
+    "好。这边有茶，你想喝哪个？",
+    "Hǎo. Zhèbiān yǒu chá, nǐ xiǎng hē nǎge?",
+    "Được. Bên này có trà, bạn muốn uống loại nào?"
+   ],
+   [
+    "A",
+    "这个吧。我喝一点儿。你们这里有哪些好吃的？",
+    "Zhège ba. Wǒ hē yìdiǎnr. Nǐmen zhèlǐ yǒu nǎxiē hǎochī de?",
+    "Cái này đi. Mình uống một chút. Chỗ các bạn có những món gì ngon?"
+   ],
+   [
+    "B",
+    "有一些！饭后我们去看看。",
+    "Yǒu yìxiē! Fàn hòu wǒmen qù kànkan.",
+    "Có vài món đấy! Ăn cơm xong chúng mình đi xem."
+   ]
+  ],
+  "sentences": [
+   [
+    "这些 书 是 你们 的 吗",
+    "Zhèxiē shū shì nǐmen de ma?",
+    "Mấy quyển sách này là của các bạn à?"
+   ],
+   [
+    "今天 有点儿 冷",
+    "Jīntiān yǒudiǎnr lěng.",
+    "Hôm nay hơi lạnh."
+   ],
+   [
+    "你 看 一下 这个",
+    "Nǐ kàn yíxià zhège.",
+    "Bạn xem thử cái này."
+   ],
+   [
+    "他们 在 外边 喝 茶",
+    "Tāmen zài wàibian hē chá.",
+    "Họ đang uống trà ở bên ngoài."
+   ],
+   [
+    "有的 人 喜欢 喝 茶",
+    "Yǒude rén xǐhuan hē chá.",
+    "Có người thích uống trà."
+   ],
+   [
+    "那个 商店 在 哪儿",
+    "Nàge shāngdiàn zài nǎr?",
+    "Cửa hàng đó ở đâu?"
+   ],
+   [
+    "我 是 第 一 个 来 的",
+    "Wǒ shì dì yī ge lái de.",
+    "Tôi là người đến đầu tiên."
+   ],
+   [
+    "那里 有 一些 水果",
+    "Nàlǐ yǒu yìxiē shuǐguǒ.",
+    "Ở đó có một ít hoa quả."
+   ]
+  ],
+  "tips": "这些/那些 rất giống 'những … này/kia' của tiếng Việt, nhưng thứ tự khác: 这些书 = những quyển sách này (từ chỉ định đứng TRƯỚC danh từ). Người Việt hay nói 'hơi đắt một chút' thành 有点儿贵一点儿 — sai, chỉ chọn một: 有点儿贵 (hơi đắt, chê) hoặc 便宜一点儿 (rẻ hơn chút, đề nghị). 第 = đệ (đệ nhất 第一), 一半 = nhất bán. Nghe người miền Bắc Trung Quốc nói 哪儿 (nǎr) và miền Nam nói 哪里 (nǎlǐ) đều đúng."
+ },
+ {
+  "id": "h3b-02",
+  "level": 1,
+  "icon": "学",
+  "title": "Một ngày đi học",
+  "sub": "Trường lớp, giờ giấc, sáng và tối",
+  "goals": [
+   "Nói về các cấp học: 小学, 中学, 大学",
+   "Kể lịch trong ngày: 上学, 上课, 下课, 下班, 睡觉",
+   "Phủ định với 没有 (chưa/không) và khuyên ngăn với 不要"
+  ],
+  "words": [
+   "学",
+   "上学",
+   "上课",
+   "下课",
+   "大学",
+   "大学生",
+   "小学",
+   "小学生",
+   "中学",
+   "中学生",
+   "读书",
+   "汉字",
+   "说",
+   "见",
+   "听见",
+   "请问",
+   "你好",
+   "天",
+   "白天",
+   "今年",
+   "明年",
+   "星期天",
+   "星期日",
+   "早",
+   "晚",
+   "睡",
+   "下班",
+   "事",
+   "没事",
+   "不要",
+   "没有"
+  ],
+  "grammar": [
+   {
+    "pattern": "没(有) + Động từ",
+    "vi": "没有/没 phủ định việc ĐÃ xảy ra hoặc chưa xảy ra ('chưa, không có'). Không dùng 了 cùng với 没有. Còn 没事 = không sao, không có việc gì.",
+    "ex": [
+     "我今天没有上课。",
+     "Wǒ jīntiān méiyǒu shàngkè.",
+     "Hôm nay tôi không đi học (không lên lớp)."
+    ]
+   },
+   {
+    "pattern": "不要 + Động từ",
+    "vi": "不要 = đừng, dùng để khuyên hoặc cấm. Đứng trước động từ, có thể thêm 了 ở cuối câu cho nhẹ nhàng hơn.",
+    "ex": [
+     "上课的时候不要说话。",
+     "Shàngkè de shíhou búyào shuōhuà.",
+     "Trong giờ học đừng nói chuyện."
+    ]
+   },
+   {
+    "pattern": "Thời gian + 早 / 晚",
+    "vi": "早 = sớm, 晚 = muộn. Chú ý vị trí: 早 + động từ (đến sớm) hoặc động từ + 得 + 早 ở bậc sau. Ở bậc này chỉ cần nói: 我很早上学, 他很晚睡.",
+    "ex": [
+     "我爸爸今天很晚下班，很晚睡。",
+     "Wǒ bàba jīntiān hěn wǎn xiàbān, hěn wǎn shuì.",
+     "Hôm nay bố tôi tan làm muộn, ngủ muộn."
+    ]
+   },
+   {
+    "pattern": "听见 / 看见 (Động từ + kết quả)",
+    "vi": "听 = nghe (hành động), 听见 = nghe thấy (kết quả). Phủ định kết quả dùng 没: 我没听见. Tương tự 看 / 看见.",
+    "ex": [
+     "老师说什么，你听见了吗？",
+     "Lǎoshī shuō shénme, nǐ tīngjiàn le ma?",
+     "Cô giáo nói gì, bạn có nghe thấy không?"
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "你好！请问，你是这个大学的学生吗？",
+    "Nǐ hǎo! Qǐngwèn, nǐ shì zhège dàxué de xuésheng ma?",
+    "Chào bạn! Xin hỏi, bạn là sinh viên trường đại học này à?"
+   ],
+   [
+    "B",
+    "是，我是大学生，今年是第二年。你呢？",
+    "Shì, wǒ shì dàxuéshēng, jīnnián shì dì èr nián. Nǐ ne?",
+    "Đúng, mình là sinh viên, năm nay là năm thứ hai. Còn bạn?"
+   ],
+   [
+    "A",
+    "我是中学生，明年上大学。我妹妹是小学生。",
+    "Wǒ shì zhōngxuéshēng, míngnián shàng dàxué. Wǒ mèimei shì xiǎoxuéshēng.",
+    "Mình là học sinh trung học, sang năm lên đại học. Em gái mình là học sinh tiểu học."
+   ],
+   [
+    "B",
+    "你早上几点上学？",
+    "Nǐ zǎoshang jǐ diǎn shàngxué?",
+    "Buổi sáng bạn đi học lúc mấy giờ?"
+   ],
+   [
+    "A",
+    "很早，七点上课，下午五点下课。白天在学校读书，晚上学汉字。",
+    "Hěn zǎo, qī diǎn shàngkè, xiàwǔ wǔ diǎn xiàkè. Báitiān zài xuéxiào dúshū, wǎnshang xué Hànzì.",
+    "Sớm lắm, bảy giờ vào học, năm giờ chiều tan học. Ban ngày học ở trường, buổi tối học chữ Hán."
+   ],
+   [
+    "B",
+    "星期天也学习吗？",
+    "Xīngqītiān yě xuéxí ma?",
+    "Chủ nhật cũng học à?"
+   ],
+   [
+    "A",
+    "星期日没有课。我爸爸下班回家，我们在家吃饭。",
+    "Xīngqīrì méiyǒu kè. Wǒ bàba xiàbān huí jiā, wǒmen zài jiā chī fàn.",
+    "Chủ nhật không có tiết. Bố mình tan làm về nhà, cả nhà ăn cơm ở nhà."
+   ],
+   [
+    "B",
+    "你晚上几点睡？",
+    "Nǐ wǎnshang jǐ diǎn shuì?",
+    "Buổi tối bạn mấy giờ ngủ?"
+   ],
+   [
+    "A",
+    "十一点。有点儿晚，没事。",
+    "Shíyī diǎn. Yǒudiǎnr wǎn, méishì.",
+    "Mười một giờ. Hơi muộn, không sao đâu."
+   ],
+   [
+    "B",
+    "不要太晚睡！我说的事，你听见了吗？明天见！",
+    "Búyào tài wǎn shuì! Wǒ shuō de shì, nǐ tīngjiàn le ma? Míngtiān jiàn!",
+    "Đừng ngủ muộn quá! Chuyện mình nói, bạn nghe thấy chưa? Mai gặp nhé!"
+   ]
+  ],
+  "sentences": [
+   [
+    "我 妹妹 是 小学生",
+    "Wǒ mèimei shì xiǎoxuéshēng.",
+    "Em gái tôi là học sinh tiểu học."
+   ],
+   [
+    "他 今天 没有 上学",
+    "Tā jīntiān méiyǒu shàngxué.",
+    "Hôm nay cậu ấy không đi học."
+   ],
+   [
+    "我们 八 点 上课",
+    "Wǒmen bā diǎn shàngkè.",
+    "Chúng tôi vào học lúc tám giờ."
+   ],
+   [
+    "下课 后 我 回 家",
+    "Xiàkè hòu wǒ huí jiā.",
+    "Tan học xong tôi về nhà."
+   ],
+   [
+    "不要 在 这里 睡",
+    "Búyào zài zhèlǐ shuì.",
+    "Đừng ngủ ở đây."
+   ],
+   [
+    "你 听见 了 吗",
+    "Nǐ tīngjiàn le ma?",
+    "Bạn có nghe thấy không?"
+   ],
+   [
+    "她 在 中学 学 汉语",
+    "Tā zài zhōngxué xué Hànyǔ.",
+    "Cô ấy học tiếng Trung ở trường trung học."
+   ],
+   [
+    "明年 我 哥哥 上 大学",
+    "Míngnián wǒ gēge shàng dàxué.",
+    "Sang năm anh tôi vào đại học."
+   ]
+  ],
+  "tips": "Hán Việt giúp nhớ nhanh: 大学 = đại học, 中学 = trung học, 小学 = tiểu học, 汉字 = Hán tự, 读书 = độc thư (đọc sách, đi học). 上学/上课 (thượng học, thượng khóa) = đi học/vào lớp; 下课/下班 (hạ khóa, hạ ban) = tan học/tan làm: 上 = bắt đầu, 下 = kết thúc. Người Việt hay nói 我不去学校昨天 theo kiểu 'hôm qua tôi không đi học' — sai hai chỗ: thời gian đặt trước động từ, và việc đã qua dùng 没: 我昨天没去学校."
+ },
+ {
+  "id": "h3b-03",
+  "level": 1,
+  "icon": "饭",
+  "title": "Ăn, chơi và người thân",
+  "sub": "Bữa ăn, đi chơi, gọi điện, đi khám bệnh",
+  "goals": [
+   "Gọi tên các bữa ăn và nơi ăn uống",
+   "Nhận xét với 好 + động từ: 好看, 好听, 好玩儿",
+   "Nói về phương tiện: 开车, 坐火车"
+  ],
+  "words": [
+   "饭",
+   "早饭",
+   "午饭",
+   "晚饭",
+   "做饭",
+   "面条儿",
+   "饭店",
+   "店",
+   "书店",
+   "电影院",
+   "歌",
+   "唱",
+   "好听",
+   "好看",
+   "好玩儿",
+   "家人",
+   "女朋友",
+   "男朋友",
+   "小朋友",
+   "男",
+   "女",
+   "车",
+   "开车",
+   "火车",
+   "国",
+   "雨",
+   "电话",
+   "病",
+   "看病"
+  ],
+  "grammar": [
+   {
+    "pattern": "好 + Động từ → Tính từ",
+    "vi": "好 ghép trước động từ tạo tính từ 'dễ/hay': 好看 (đẹp, hay để xem), 好听 (hay, êm tai), 好吃 (ngon), 好玩儿 (vui). Ngược lại dùng 不 + 好看.",
+    "ex": [
+     "这个歌很好听，那个电影不好看。",
+     "Zhège gē hěn hǎotīng, nàge diànyǐng bù hǎokàn.",
+     "Bài hát này rất hay, bộ phim kia không hay."
+    ]
+   },
+   {
+    "pattern": "坐 / 开 + Phương tiện",
+    "vi": "Đi xe, đi tàu với tư cách hành khách dùng 坐: 坐火车, 坐飞机. Tự lái dùng 开: 开车. Cả cụm đứng trước động từ chính: 坐火车去北京.",
+    "ex": [
+     "我们坐火车去，不开车。",
+     "Wǒmen zuò huǒchē qù, bù kāichē.",
+     "Chúng tôi đi tàu hỏa, không lái xe."
+    ]
+   },
+   {
+    "pattern": "在 + Nơi chốn + Động từ",
+    "vi": "Nơi chốn với 在 đứng TRƯỚC động từ, ngược với tiếng Việt ('ăn ở nhà hàng' → 在饭店吃).",
+    "ex": [
+     "我们今天在饭店吃晚饭。",
+     "Wǒmen jīntiān zài fàndiàn chī wǎnfàn.",
+     "Hôm nay chúng tôi ăn tối ở nhà hàng."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "喂，妈妈！我在火车上，晚上到家。",
+    "Wéi, māma! Wǒ zài huǒchē shang, wǎnshang dào jiā.",
+    "Alô, mẹ ơi! Con đang trên tàu, tối về đến nhà."
+   ],
+   [
+    "B",
+    "好！你男朋友也来吗？家人都想见他。",
+    "Hǎo! Nǐ nánpéngyou yě lái ma? Jiārén dōu xiǎng jiàn tā.",
+    "Ừ! Bạn trai con có đến không? Cả nhà đều muốn gặp cậu ấy."
+   ],
+   [
+    "A",
+    "他来。他说想吃你做的饭，还有面条儿。",
+    "Tā lái. Tā shuō xiǎng chī nǐ zuò de fàn, hái yǒu miàntiáor.",
+    "Có ạ. Anh ấy bảo muốn ăn cơm mẹ nấu, cả mì nữa."
+   ],
+   [
+    "B",
+    "好，我做饭。外边下雨了，你爸爸开车去火车站。",
+    "Hǎo, wǒ zuò fàn. Wàibian xià yǔ le, nǐ bàba kāichē qù huǒchēzhàn.",
+    "Được, mẹ nấu. Bên ngoài mưa rồi, bố con lái xe ra ga đón."
+   ],
+   [
+    "A",
+    "谢谢！弟弟呢？他不是病了吗？",
+    "Xièxie! Dìdi ne? Tā bú shì bìng le ma?",
+    "Cảm ơn mẹ! Còn em trai? Nó bị ốm rồi mà?"
+   ],
+   [
+    "B",
+    "上午去医院看病了，现在没事了。",
+    "Shàngwǔ qù yīyuàn kànbìng le, xiànzài méishì le.",
+    "Buổi sáng đi viện khám rồi, giờ không sao nữa."
+   ],
+   [
+    "A",
+    "那太好了！明天我们去书店，再去电影院，好玩儿！",
+    "Nà tài hǎo le! Míngtiān wǒmen qù shūdiàn, zài qù diànyǐngyuàn, hǎowánr!",
+    "Thế thì tốt quá! Mai mình đi hiệu sách, rồi đi rạp chiếu phim, vui lắm!"
+   ],
+   [
+    "B",
+    "好。那个店的书很好看。早饭、午饭都在家吃吧。",
+    "Hǎo. Nàge diàn de shū hěn hǎokàn. Zǎofàn, wǔfàn dōu zài jiā chī ba.",
+    "Ừ. Sách ở cửa hàng đó hay lắm. Bữa sáng, bữa trưa đều ăn ở nhà nhé."
+   ]
+  ],
+  "sentences": [
+   [
+    "我 女朋友 喜欢 唱 歌",
+    "Wǒ nǚpéngyou xǐhuan chàng gē.",
+    "Bạn gái tôi thích hát."
+   ],
+   [
+    "这 个 歌 很 好听",
+    "Zhège gē hěn hǎotīng.",
+    "Bài hát này rất hay."
+   ],
+   [
+    "我们 在 饭店 吃 午饭",
+    "Wǒmen zài fàndiàn chī wǔfàn.",
+    "Chúng tôi ăn trưa ở nhà hàng."
+   ],
+   [
+    "小朋友 们 在 外边 玩",
+    "Xiǎopéngyou men zài wàibian wán.",
+    "Các bạn nhỏ đang chơi bên ngoài."
+   ],
+   [
+    "他 坐 火车 去 北京",
+    "Tā zuò huǒchē qù Běijīng.",
+    "Anh ấy đi tàu hỏa đến Bắc Kinh."
+   ],
+   [
+    "你 是 哪 国 人",
+    "Nǐ shì nǎ guó rén?",
+    "Bạn là người nước nào?"
+   ],
+   [
+    "我 给 妈妈 打电话",
+    "Wǒ gěi māma dǎ diànhuà.",
+    "Tôi gọi điện cho mẹ."
+   ],
+   [
+    "男 学生 和 女 学生 都 来 了",
+    "Nán xuésheng hé nǚ xuésheng dōu lái le.",
+    "Học sinh nam và học sinh nữ đều đến rồi."
+   ]
+  ],
+  "tips": "Hán Việt: 电话 = điện thoại, 电影院 = điện ảnh viện, 饭店 = phạn điếm (ngoài nghĩa 'nhà hàng' còn có thể là khách sạn lớn), 火车 = hỏa xa, 家人 = gia nhân (người nhà, KHÔNG phải 'người giúp việc' như tiếng Việt). 看病 có hai nghĩa: bệnh nhân đi khám, hoặc bác sĩ khám bệnh. Chú ý thanh điệu: 男 (nán, thanh 2) và 女 (nǚ, thanh 3, có ü). Người Việt hay đọc 饭 (fàn) thành 'phan' thanh ngang, hãy hạ giọng mạnh ở thanh 4."
+ },
+ {
+  "id": "h3b-04",
+  "level": 2,
+  "icon": "进",
+  "title": "Ra, vào, lên, xuống",
+  "sub": "Bổ ngữ xu hướng và vị trí",
+  "goals": [
+   "Dùng bổ ngữ xu hướng 来/去: 进来, 出去, 上来, 下去…",
+   "Chỉ vị trí với 上面, 下面, 里面, 外面, 左, 右",
+   "Mô tả chuyển động: 跑, 飞, 走路, 出门"
+  ],
+  "words": [
+   "面",
+   "出来",
+   "回来",
+   "下来",
+   "过来",
+   "出去",
+   "下去",
+   "回去",
+   "进去",
+   "进来",
+   "上去",
+   "上来",
+   "里面",
+   "上面",
+   "外面",
+   "下面",
+   "左",
+   "右",
+   "门口",
+   "路上",
+   "打开",
+   "飞",
+   "跑",
+   "动",
+   "走路",
+   "出门",
+   "床",
+   "间",
+   "忘"
+  ],
+  "grammar": [
+   {
+    "pattern": "Động từ + 来 / 去",
+    "vi": "来 = hướng về phía người nói, 去 = hướng ra xa người nói. 进来 (vào đây), 进去 (vào đó), 出来 (ra đây), 出去 (ra ngoài đó). Người nói ở đâu quyết định dùng 来 hay 去.",
+    "ex": [
+     "外面下雨了，快进来吧！",
+     "Wàimiàn xià yǔ le, kuài jìnlai ba!",
+     "Bên ngoài mưa rồi, mau vào đây đi!"
+    ]
+   },
+   {
+    "pattern": "Động từ + 上/下/进/出/回/过 + 来/去",
+    "vi": "Bổ ngữ xu hướng kép: 跑上来 (chạy lên đây), 走下去 (đi xuống đó), 拿回来 (mang về đây), 飞过去 (bay qua đó). Nếu có tân ngữ chỉ nơi chốn, đặt nó TRƯỚC 来/去: 走进教室去.",
+    "ex": [
+     "小狗从楼上跑下来了。",
+     "Xiǎo gǒu cóng lóu shàng pǎo xiàlai le.",
+     "Con chó nhỏ từ trên lầu chạy xuống."
+    ]
+   },
+   {
+    "pattern": "Danh từ + 上面/下面/里面/外面",
+    "vi": "Phương vị từ đứng SAU danh từ: 桌子上面 (trên bàn), 床下面 (dưới giường), 房间里面 (trong phòng). Ngược với tiếng Việt 'trên bàn'. 左边/右边 = bên trái/bên phải.",
+    "ex": [
+     "你的书在床下面，不在桌子上面。",
+     "Nǐ de shū zài chuáng xiàmiàn, bú zài zhuōzi shàngmiàn.",
+     "Sách của bạn ở dưới giường, không ở trên bàn."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "妈妈，我出门了！",
+    "Māma, wǒ chūmén le!",
+    "Mẹ ơi, con ra ngoài đây!"
+   ],
+   [
+    "B",
+    "等一下！你的手机呢？是不是忘在房间里面了？",
+    "Děng yíxià! Nǐ de shǒujī ne? Shì bu shì wàng zài fángjiān lǐmiàn le?",
+    "Đợi đã! Điện thoại của con đâu? Có phải quên trong phòng rồi không?"
+   ],
+   [
+    "A",
+    "啊，我忘了！我回去拿。",
+    "À, wǒ wàng le! Wǒ huíqu ná.",
+    "A, con quên mất! Con quay lại lấy."
+   ],
+   [
+    "B",
+    "在床上面，左边。我帮你拿下来吧。",
+    "Zài chuáng shàngmiàn, zuǒbian. Wǒ bāng nǐ ná xiàlai ba.",
+    "Ở trên giường, bên trái. Mẹ lấy xuống giúp con nhé."
+   ],
+   [
+    "A",
+    "不，我跑上去，很快就下来。",
+    "Bù, wǒ pǎo shàngqu, hěn kuài jiù xiàlai.",
+    "Không cần đâu, con chạy lên, xuống ngay thôi."
+   ],
+   [
+    "B",
+    "这间房间的门怎么打不开？",
+    "Zhè jiān fángjiān de mén zěnme dǎ bu kāi?",
+    "Sao cửa phòng này mở không ra?"
+   ],
+   [
+    "A",
+    "你别动，我从外面打开。好了，进来吧。",
+    "Nǐ bié dòng, wǒ cóng wàimiàn dǎkāi. Hǎo le, jìnlai ba.",
+    "Mẹ đừng động vào, con mở từ bên ngoài. Được rồi, mẹ vào đi."
+   ],
+   [
+    "B",
+    "你今天走路去学校吗？",
+    "Nǐ jīntiān zǒulù qù xuéxiào ma?",
+    "Hôm nay con đi bộ đến trường à?"
+   ],
+   [
+    "A",
+    "对，路上可以看鸟飞过来飞过去。我出去了！",
+    "Duì, lùshang kěyǐ kàn niǎo fēi guòlai fēi guòqu. Wǒ chūqu le!",
+    "Vâng, trên đường có thể ngắm chim bay qua bay lại. Con đi đây!"
+   ],
+   [
+    "B",
+    "到了门口打电话。右边有车。下午早点儿回来。",
+    "Dàole ménkǒu dǎ diànhuà. Yòubian yǒu chē, xiǎoxīn! Xiàwǔ zǎo diǎnr huílai.",
+    "Đến cổng thì gọi điện. Bên phải có xe. Chiều về sớm nhé."
+   ]
+  ],
+  "sentences": [
+   [
+    "请 你 进来",
+    "Qǐng nǐ jìnlai.",
+    "Mời bạn vào."
+   ],
+   [
+    "他 从 房间 里面 走 出来 了",
+    "Tā cóng fángjiān lǐmiàn zǒu chūlai le.",
+    "Anh ấy từ trong phòng đi ra."
+   ],
+   [
+    "你 快 上来 吧",
+    "Nǐ kuài shànglai ba.",
+    "Bạn mau lên đây đi."
+   ],
+   [
+    "他 跑 进去 了",
+    "Tā pǎo jìnqu le.",
+    "Anh ấy chạy vào trong rồi."
+   ],
+   [
+    "你 的 书 在 桌子 下面",
+    "Nǐ de shū zài zhuōzi xiàmiàn.",
+    "Sách của bạn ở dưới bàn."
+   ],
+   [
+    "请 打开 你 的 书",
+    "Qǐng dǎkāi nǐ de shū.",
+    "Hãy mở sách của bạn ra."
+   ],
+   [
+    "他们 在 门口 等 你",
+    "Tāmen zài ménkǒu děng nǐ.",
+    "Họ đang đợi bạn ở cổng."
+   ],
+   [
+    "别 跑 下去 前面 有 车",
+    "Bié pǎo xiàqu, qiánmiàn yǒu chē.",
+    "Đừng chạy xuống, phía trước có xe."
+   ]
+  ],
+  "tips": "Mẹo nhớ: 来 = 'lại' (về phía mình), 去 = 'khứ' (đi xa mình) — đúng nghĩa Hán Việt 'lai' và 'khứ'. Người Việt hay nói 我进去房间 — sai; phải là 我进房间去 hoặc 我进去. 门口 = môn khẩu (cửa ra vào, cổng), 出门 = xuất môn (ra khỏi nhà). 面 (diện) trong 上面, 里面 thường đọc nhẹ: shàngmian, lǐmian. 忘 (vong) như trong 'vong ân', thường dùng 忘了."
+ },
+ {
+  "id": "h3b-05",
+  "level": 2,
+  "icon": "票",
+  "title": "Đi chơi, đi mua sắm",
+  "sub": "Vé, xe, khách sạn và đồ uống",
+  "goals": [
+   "Đặt vé, gọi xe, hỏi đường đến khách sạn",
+   "So sánh mức độ với 这么 / 那么, 这样 / 那样",
+   "Nói 'sắp …' với 快要 … 了"
+  ],
+  "words": [
+   "酒店",
+   "车站",
+   "公交车",
+   "打车",
+   "机票",
+   "门票",
+   "出国",
+   "外国",
+   "商场",
+   "药店",
+   "网上",
+   "周",
+   "时",
+   "有时",
+   "快要",
+   "这样",
+   "那样",
+   "这么",
+   "那么",
+   "但",
+   "不错",
+   "帮",
+   "手",
+   "头",
+   "肉",
+   "绿茶",
+   "红茶",
+   "奶茶"
+  ],
+  "grammar": [
+   {
+    "pattern": "快要 + Động từ + 了",
+    "vi": "快要…了 = sắp …. Không dùng với thời gian cụ thể; nếu có thời gian cụ thể thì dùng 就要…了.",
+    "ex": [
+     "飞机快要飞了，我们快走吧！",
+     "Fēijī kuàiyào fēi le, wǒmen kuài zǒu ba!",
+     "Máy bay sắp cất cánh rồi, chúng ta đi nhanh thôi!"
+    ]
+   },
+   {
+    "pattern": "这么 / 那么 + Tính từ",
+    "vi": "这么 (thế này, gần) và 那么 (thế kia, xa) nhấn mạnh mức độ: 这么贵 = đắt thế này. 这样/那样 đứng trước động từ hoặc danh từ: 这样做 = làm như thế này.",
+    "ex": [
+     "门票这么贵！我们还是那样做吧，在网上买。",
+     "Ménpiào zhème guì! Wǒmen háishi nàyàng zuò ba, zài wǎngshang mǎi.",
+     "Vé vào cửa đắt thế này! Thôi mình làm như cách kia đi, mua trên mạng."
+    ]
+   },
+   {
+    "pattern": "…，但 …",
+    "vi": "但 = nhưng, ngắn gọn hơn 但是, hay dùng trong câu thứ hai. 有时 = có lúc, đôi khi.",
+    "ex": [
+     "这个酒店不错，但有时人太多。",
+     "Zhège jiǔdiàn búcuò, dàn yǒushí rén tài duō.",
+     "Khách sạn này khá tốt, nhưng đôi khi đông người quá."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "下周我们出国旅游，机票买了吗？",
+    "Xià zhōu wǒmen chūguó lǚyóu, jīpiào mǎi le ma?",
+    "Tuần sau chúng ta đi du lịch nước ngoài, mua vé máy bay chưa?"
+   ],
+   [
+    "B",
+    "在网上买了，酒店也在网上找的，不错。",
+    "Zài wǎngshang mǎi le, jiǔdiàn yě zài wǎngshang zhǎo de, búcuò.",
+    "Mua trên mạng rồi, khách sạn cũng tìm trên mạng, khá ổn."
+   ],
+   [
+    "A",
+    "到了外国，我们坐公交车还是打车？",
+    "Dàole wàiguó, wǒmen zuò gōngjiāochē háishi dǎchē?",
+    "Đến nước ngoài, chúng ta đi xe buýt hay bắt taxi?"
+   ],
+   [
+    "B",
+    "从机场到酒店打车，但去商场可以坐公交车，车站就在酒店门口。",
+    "Cóng jīchǎng dào jiǔdiàn dǎchē, dàn qù shāngchǎng kěyǐ zuò gōngjiāochē, chēzhàn jiù zài jiǔdiàn ménkǒu.",
+    "Từ sân bay đến khách sạn thì đi taxi, nhưng đi trung tâm thương mại có thể đi xe buýt, bến xe ngay trước cửa khách sạn."
+   ],
+   [
+    "A",
+    "看电影的门票呢？",
+    "Kàn diànyǐng de ménpiào ne?",
+    "Còn vé xem phim?"
+   ],
+   [
+    "B",
+    "也在网上买了。那么好看的电影，我们都想看。",
+    "Yě zài wǎngshang mǎi le. Nàme hǎokàn de diànyǐng, wǒmen dōu xiǎng kàn.",
+    "Cũng mua trên mạng rồi. Phim hay như thế, ai cũng muốn xem."
+   ],
+   [
+    "A",
+    "太好了！你帮我拿一下这个包，我的手有点儿疼，头也疼。",
+    "Tài hǎo le! Nǐ bāng wǒ ná yíxià zhège bāo, wǒ de shǒu yǒudiǎnr téng, tóu yě téng.",
+    "Tuyệt quá! Bạn cầm giúp mình cái túi này, tay mình hơi đau, đầu cũng đau."
+   ],
+   [
+    "B",
+    "前面有个药店，我们去买点儿药。你别这样累了。",
+    "Qiánmiàn yǒu ge yàodiàn, wǒmen qù mǎi diǎnr yào. Nǐ bié zhèyàng lèi le.",
+    "Phía trước có hiệu thuốc, mình đi mua ít thuốc. Bạn đừng làm mệt mình như thế nữa."
+   ],
+   [
+    "A",
+    "好。买了药，再去喝杯奶茶吧。",
+    "Hǎo. Mǎile yào, zài qù hē bēi nǎichá ba.",
+    "Ừ. Mua thuốc xong rồi đi uống cốc trà sữa nhé."
+   ],
+   [
+    "B",
+    "我不喝奶茶，我要绿茶，他要红茶。快要到时间了，吃点儿肉再走。",
+    "Wǒ bù hē nǎichá, wǒ yào lǜchá, tā yào hóngchá. Kuàiyào dào shíjiān le, chī diǎnr ròu zài zǒu.",
+    "Mình không uống trà sữa, mình lấy trà xanh, cậu ấy lấy hồng trà. Sắp đến giờ rồi, ăn chút thịt rồi đi."
+   ]
+  ],
+  "sentences": [
+   [
+    "我 快要 出国 了",
+    "Wǒ kuàiyào chūguó le.",
+    "Tôi sắp đi nước ngoài rồi."
+   ],
+   [
+    "你 在 网上 买 机票 吧",
+    "Nǐ zài wǎngshang mǎi jīpiào ba.",
+    "Bạn mua vé máy bay trên mạng đi."
+   ],
+   [
+    "车站 在 商场 前面",
+    "Chēzhàn zài shāngchǎng qiánmiàn.",
+    "Bến xe ở phía trước trung tâm thương mại."
+   ],
+   [
+    "这 个 酒店 不错",
+    "Zhège jiǔdiàn búcuò.",
+    "Khách sạn này khá tốt."
+   ],
+   [
+    "你 帮 我 打车 吧",
+    "Nǐ bāng wǒ dǎchē ba.",
+    "Bạn gọi taxi giúp tôi nhé."
+   ],
+   [
+    "他 有时 喝 红茶",
+    "Tā yǒushí hē hóngchá.",
+    "Anh ấy thỉnh thoảng uống hồng trà."
+   ],
+   [
+    "奶茶 怎么 这么 贵",
+    "Nǎichá zěnme zhème guì?",
+    "Trà sữa sao đắt thế?"
+   ],
+   [
+    "我们 那 时 不 认识",
+    "Wǒmen nà shí bú rènshi.",
+    "Hồi đó chúng tôi chưa quen nhau."
+   ]
+  ],
+  "tips": "Hán Việt: 外国 = ngoại quốc, 出国 = xuất quốc, 商场 = thương trường (ở đây là trung tâm thương mại, không phải 'thương trường' cạnh tranh), 药店 = dược điếm, 酒店 = tửu điếm (khách sạn, không phải quán rượu!). 门票 (môn phiếu) là vé vào cửa, 机票 (cơ phiếu) là vé máy bay. 打车 = gọi taxi (kể cả qua ứng dụng). Trà xanh 绿茶 (lǜchá) — chú ý âm ü, đừng đọc thành lùchá. 周 (chu) = tuần, 下周 = tuần sau, giống 下星期."
+ },
+ {
+  "id": "h3b-06",
+  "level": 2,
+  "icon": "球",
+  "title": "Tuổi thơ, trường lớp & thể thao",
+  "sub": "Đồ dùng học tập, màu sắc, chơi bóng",
+  "goals": [
+   "Kể chuyện hồi nhỏ với 小时候, 从小",
+   "Gọi tên đồ dùng học tập và màu sắc",
+   "Nói về môn thể thao: 打篮球, 踢足球, 游泳"
+  ],
+  "words": [
+   "高中",
+   "考",
+   "开学",
+   "书包",
+   "本子",
+   "笔",
+   "词",
+   "名",
+   "姓名",
+   "球",
+   "足球",
+   "篮球",
+   "游",
+   "打",
+   "红色",
+   "黑色",
+   "白色",
+   "绿色",
+   "过年",
+   "小时候",
+   "从小",
+   "有意思",
+   "没意思",
+   "女孩儿",
+   "男孩儿",
+   "小孩儿"
+  ],
+  "grammar": [
+   {
+    "pattern": "打 / 踢 + 球",
+    "vi": "Chơi bóng bằng tay dùng 打: 打篮球, 打球; bằng chân dùng 踢: 踢足球. 游 = bơi (游泳 là cả cụm).",
+    "ex": [
+     "我喜欢打篮球，我哥哥喜欢踢足球。",
+     "Wǒ xǐhuan dǎ lánqiú, wǒ gēge xǐhuan tī zúqiú.",
+     "Tôi thích chơi bóng rổ, anh tôi thích đá bóng."
+    ]
+   },
+   {
+    "pattern": "小时候 / 从小 + …",
+    "vi": "小时候 = hồi nhỏ (một khoảng thời gian trong quá khứ). 从小 = từ nhỏ (đến bây giờ vẫn vậy). 从小 thường đi với 就.",
+    "ex": [
+     "他从小就喜欢游泳。",
+     "Tā cóngxiǎo jiù xǐhuan yóuyǒng.",
+     "Cậu ấy từ nhỏ đã thích bơi."
+    ]
+   },
+   {
+    "pattern": "Màu + 色 (+ 的 + Danh từ)",
+    "vi": "红色, 黑色, 白色, 绿色 là danh từ chỉ màu. Khi bổ nghĩa cho danh từ thường thêm 的: 红色的书包. Ngắn gọn có thể nói 红书包.",
+    "ex": [
+     "我的书包是黑色的，本子是白色的。",
+     "Wǒ de shūbāo shì hēisè de, běnzi shì báisè de.",
+     "Cặp sách của tôi màu đen, vở màu trắng."
+    ]
+   },
+   {
+    "pattern": "有意思 / 没意思",
+    "vi": "有意思 = thú vị, hay; 没意思 = chán, vô vị. Có thể thêm 很, 太: 太没意思了.",
+    "ex": [
+     "这个词很有意思，那本书太没意思了。",
+     "Zhège cí hěn yǒu yìsi, nà běn shū tài méi yìsi le.",
+     "Từ này rất thú vị, quyển sách kia chán quá."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "快开学了！你买书包了吗？",
+    "Kuài kāixué le! Nǐ mǎi shūbāo le ma?",
+    "Sắp khai giảng rồi! Bạn mua cặp sách chưa?"
+   ],
+   [
+    "B",
+    "买了，红色的。还买了本子和笔。",
+    "Mǎi le, hóngsè de. Hái mǎile běnzi hé bǐ.",
+    "Mua rồi, màu đỏ. Còn mua vở và bút nữa."
+   ],
+   [
+    "A",
+    "今年你上高中了吧？考试多吗？",
+    "Jīnnián nǐ shàng gāozhōng le ba? Kǎoshì duō ma?",
+    "Năm nay bạn lên cấp ba rồi nhỉ? Thi nhiều không?"
+   ],
+   [
+    "B",
+    "多，每个月都考。老师说要多学词。",
+    "Duō, měi ge yuè dōu kǎo. Lǎoshī shuō yào duō xué cí.",
+    "Nhiều, tháng nào cũng thi. Cô giáo bảo phải học nhiều từ."
+   ],
+   [
+    "A",
+    "第一天要在本子上写姓名，你写好了吗？",
+    "Dì yī tiān yào zài běnzi shang xiě xìngmíng, nǐ xiěhǎo le ma?",
+    "Ngày đầu phải viết họ tên lên vở, bạn viết xong chưa?"
+   ],
+   [
+    "B",
+    "写好了。你看，这是我小时候的本子，那时候我是班里第一名！",
+    "Xiěhǎo le. Nǐ kàn, zhè shì wǒ xiǎoshíhou de běnzi, nà shíhou wǒ shì bān li dì yī míng!",
+    "Viết rồi. Bạn xem, đây là vở hồi nhỏ của mình, lúc đó mình đứng nhất lớp!"
+   ],
+   [
+    "A",
+    "真有意思！这个男孩儿是谁？他拿着一个球。",
+    "Zhēn yǒu yìsi! Zhège nánháir shì shéi? Tā názhe yí ge qiú.",
+    "Thú vị thật! Cậu bé này là ai? Cậu ấy cầm một quả bóng."
+   ],
+   [
+    "B",
+    "是我哥哥。他从小喜欢足球，我喜欢打篮球，也喜欢游。",
+    "Shì wǒ gēge. Tā cóngxiǎo xǐhuan zúqiú, wǒ xǐhuan dǎ lánqiú, yě xǐhuan yóu.",
+    "Là anh mình. Anh ấy thích bóng đá từ nhỏ, mình thích bóng rổ, cũng thích bơi."
+   ],
+   [
+    "A",
+    "那个穿白色衣服的女孩儿呢？",
+    "Nàge chuān báisè yīfu de nǚháir ne?",
+    "Còn cô bé mặc áo trắng kia?"
+   ],
+   [
+    "B",
+    "是我妹妹，那是过年的时候。小孩儿过年最高兴。",
+    "Shì wǒ mèimei, nà shì guònián de shíhou. Xiǎoháir guònián zuì gāoxìng.",
+    "Là em gái mình, lúc đó là dịp Tết. Trẻ con đến Tết là vui nhất."
+   ]
+  ],
+  "sentences": [
+   [
+    "我 从小 就 喜欢 打 篮球",
+    "Wǒ cóngxiǎo jiù xǐhuan dǎ lánqiú.",
+    "Tôi thích chơi bóng rổ từ nhỏ."
+   ],
+   [
+    "他 的 书包 是 黑色 的",
+    "Tā de shūbāo shì hēisè de.",
+    "Cặp sách của cậu ấy màu đen."
+   ],
+   [
+    "明天 开学",
+    "Míngtiān kāixué.",
+    "Ngày mai khai giảng."
+   ],
+   [
+    "请 在 这里 写 你 的 姓名",
+    "Qǐng zài zhèlǐ xiě nǐ de xìngmíng.",
+    "Hãy viết họ tên của bạn ở đây."
+   ],
+   [
+    "这 个 电影 没意思",
+    "Zhège diànyǐng méi yìsi.",
+    "Bộ phim này chán."
+   ],
+   [
+    "小时候 我 很 喜欢 绿色",
+    "Xiǎoshíhou wǒ hěn xǐhuan lǜsè.",
+    "Hồi nhỏ tôi rất thích màu xanh lá."
+   ],
+   [
+    "我们 去 踢 足球 吧",
+    "Wǒmen qù tī zúqiú ba.",
+    "Chúng ta đi đá bóng đi."
+   ],
+   [
+    "她 考 了 第 一 名",
+    "Tā kǎole dì yī míng.",
+    "Cô ấy thi được hạng nhất."
+   ]
+  ],
+  "tips": "Hán Việt: 高中 = cao trung (cấp ba), 开学 = khai học (khai giảng), 姓名 = tính danh (họ tên), 黑色 = hắc sắc, 白色 = bạch sắc, 红色 = hồng sắc (nhưng nghĩa là màu ĐỎ, không phải hồng!). 红茶 cũng là 'trà đen' kiểu phương Tây. Người Việt nói 'chơi bóng đá' hay dịch thành 玩足球 — sai, phải dùng 踢足球. 第一名 = hạng nhất (名 ở đây = thứ hạng). 过年 = ăn Tết (quá niên)."
+ },
+ {
+  "id": "h3b-07",
+  "level": 3,
+  "icon": "季",
+  "title": "Bốn mùa & ngày nghỉ",
+  "sub": "Thời tiết, quần áo theo mùa, kỳ nghỉ",
+  "goals": [
+   "Nói về bốn mùa và thời tiết từng mùa",
+   "Gọi tên các mốc thời gian 前天/后天, 前年/后年",
+   "Nói về ngày nghỉ, kỳ nghỉ với 直到…才… và 越来越"
+  ],
+  "words": [
+   "季",
+   "四季",
+   "春天",
+   "夏天",
+   "秋天",
+   "冬天",
+   "风",
+   "冰",
+   "雨衣",
+   "大衣",
+   "上衣",
+   "短裤",
+   "开花",
+   "草地",
+   "山",
+   "海",
+   "新年",
+   "过节",
+   "假期",
+   "放假",
+   "休假",
+   "前天",
+   "后天",
+   "前年",
+   "后年",
+   "半天",
+   "好久",
+   "不久",
+   "直到",
+   "工作日"
+  ],
+  "grammar": [
+   {
+    "pattern": "越来越 + Tính từ",
+    "vi": "'Càng ngày càng…', diễn tả sự thay đổi dần theo thời gian. Cuối câu thường có 了.",
+    "ex": [
+     "秋天到了，风越来越大了。",
+     "Qiūtiān dào le, fēng yuè lái yuè dà le.",
+     "Mùa thu đến rồi, gió càng ngày càng to."
+    ]
+   },
+   {
+    "pattern": "直到 + thời điểm + 才 + Động từ",
+    "vi": "'Mãi đến… mới…', nhấn mạnh việc xảy ra muộn hơn mong đợi. 直到 đứng đầu vế, 才 đứng trước động từ.",
+    "ex": [
+     "我直到后天才放假。",
+     "Wǒ zhídào hòutiān cái fàngjià.",
+     "Phải đến ngày kia tôi mới được nghỉ."
+    ]
+   },
+   {
+    "pattern": "一 + A，就 + B",
+    "vi": "'Hễ A là B / vừa A là B'. Hai việc nối tiếp nhau rất nhanh hoặc luôn đi cùng nhau.",
+    "ex": [
+     "一到春天，山上就开花了。",
+     "Yí dào chūntiān, shān shang jiù kāihuā le.",
+     "Cứ đến mùa xuân là trên núi hoa nở."
+    ]
+   },
+   {
+    "pattern": "前天 · 昨天 · 今天 · 明天 · 后天",
+    "vi": "前 = trước, 后 = sau. Tương tự với năm: 前年 (năm kia) · 去年 · 今年 · 明年 · 后年 (năm sau nữa). Hậu tố 季 = mùa: 春季, 夏季…",
+    "ex": [
+     "我前年去过海边，后年还想去。",
+     "Wǒ qiánnián qùguo hǎibiān, hòunián hái xiǎng qù.",
+     "Năm kia tôi đã đi biển, năm sau nữa tôi còn muốn đi."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "好久不见！你放假了吗？",
+    "Hǎojiǔ bú jiàn! Nǐ fàngjià le ma?",
+    "Lâu lắm không gặp! Bạn được nghỉ chưa?"
+   ],
+   [
+    "B",
+    "还没有。这周都是工作日，我直到后天才休假。",
+    "Hái méiyǒu. Zhè zhōu dōu shì gōngzuòrì, wǒ zhídào hòutiān cái xiūjià.",
+    "Chưa. Tuần này toàn ngày làm việc, đến ngày kia tôi mới được nghỉ phép."
+   ],
+   [
+    "A",
+    "假期你想去哪儿玩儿？",
+    "Jiàqī nǐ xiǎng qù nǎr wánr?",
+    "Kỳ nghỉ bạn muốn đi đâu chơi?"
+   ],
+   [
+    "B",
+    "我想去海边。夏天可以穿短裤，在草地上休息半天。",
+    "Wǒ xiǎng qù hǎibiān. Xiàtiān kěyǐ chuān duǎnkù, zài cǎodì shang xiūxi bàntiān.",
+    "Tôi muốn đi biển. Mùa hè có thể mặc quần đùi, nằm nghỉ cả buổi trên bãi cỏ."
+   ],
+   [
+    "A",
+    "我最喜欢秋天，不冷也不热。北方的冬天太冷了，外面都是冰。",
+    "Wǒ zuì xǐhuan qiūtiān, bù lěng yě bú rè. Běifāng de dōngtiān tài lěng le, wàimiàn dōu shì bīng.",
+    "Tôi thích nhất mùa thu, không lạnh cũng không nóng. Mùa đông miền Bắc lạnh quá, ngoài trời toàn là băng."
+   ],
+   [
+    "B",
+    "冬天要穿大衣，可是新年过节的时候很有意思。",
+    "Dōngtiān yào chuān dàyī, kěshì xīnnián guòjié de shíhou hěn yǒu yìsi.",
+    "Mùa đông phải mặc áo khoác dày, nhưng lúc đón năm mới ăn tết thì rất vui."
+   ],
+   [
+    "A",
+    "对了，你前天不是要去爬山吗？",
+    "Duì le, nǐ qiántiān bú shì yào qù pá shān ma?",
+    "À này, hôm kia chẳng phải bạn định đi leo núi sao?"
+   ],
+   [
+    "B",
+    "那天下雨，我没带雨衣，只穿了一件上衣，就没去。",
+    "Nà tiān xià yǔ, wǒ méi dài yǔyī, zhǐ chuānle yí jiàn shàngyī, jiù méi qù.",
+    "Hôm đó trời mưa, tôi không mang áo mưa, chỉ mặc mỗi một cái áo nên không đi."
+   ],
+   [
+    "A",
+    "不久就是春天了。一到春天，山上就开花，我们一起去吧！",
+    "Bùjiǔ jiù shì chūntiān le. Yí dào chūntiān, shān shang jiù kāihuā, wǒmen yìqǐ qù ba!",
+    "Sắp tới là mùa xuân rồi. Đến xuân là trên núi hoa nở, chúng mình cùng đi nhé!"
+   ]
+  ],
+  "sentences": [
+   [
+    "一 年 有 四季",
+    "Yì nián yǒu sìjì.",
+    "Một năm có bốn mùa."
+   ],
+   [
+    "你 最 喜欢 哪 个 季节",
+    "Nǐ zuì xǐhuan nǎ ge jìjié?",
+    "Bạn thích mùa nào nhất?"
+   ],
+   [
+    "冬天 出门 要 穿 大衣",
+    "Dōngtiān chūmén yào chuān dàyī.",
+    "Mùa đông ra ngoài phải mặc áo khoác dày."
+   ],
+   [
+    "春天 到 了 花 都 开 了",
+    "Chūntiān dào le, huā dōu kāi le.",
+    "Mùa xuân đến rồi, hoa đều nở cả rồi."
+   ],
+   [
+    "我 直到 后天 才 放假",
+    "Wǒ zhídào hòutiān cái fàngjià.",
+    "Phải đến ngày kia tôi mới được nghỉ."
+   ],
+   [
+    "新年 的 时候 大家 都 过节",
+    "Xīnnián de shíhou dàjiā dōu guòjié.",
+    "Dịp năm mới mọi người đều ăn tết."
+   ],
+   [
+    "下雨 了 别 忘 了 带 雨衣",
+    "Xià yǔ le, bié wàng le dài yǔyī.",
+    "Trời mưa rồi, đừng quên mang áo mưa."
+   ],
+   [
+    "我们 好久 没 见面 了",
+    "Wǒmen hǎojiǔ méi jiànmiàn le.",
+    "Chúng ta lâu lắm rồi không gặp nhau."
+   ]
+  ],
+  "tips": "Hán Việt giúp nhớ nhanh: 四季 = tứ quý (bốn mùa), 假期 = giả kỳ (kỳ nghỉ), 休假 = hưu giả (nghỉ phép), 过节 = quá tiết (ăn tết, đón lễ). Người Việt hay nhầm 前天 là 'hôm trước' chung chung: thật ra 前天 = hôm kia, 后天 = ngày kia; 前年 = năm kia, 后年 = năm sau nữa. Với 直到…才…, đừng quên 才; nếu thiếu 才 câu nghe như dịch máy. 好久不见 dùng như lời chào khi gặp lại bạn cũ."
+ },
+ {
+  "id": "h3b-08",
+  "level": 3,
+  "icon": "街",
+  "title": "Phố phường & phương hướng",
+  "sub": "Hỏi đường, đi tàu xe, chuyển nhà",
+  "goals": [
+   "Nói tám hướng đông tây nam bắc",
+   "Hỏi đường và chỉ đường với 离, 往, 先…然后…",
+   "Nói về đi tàu cao tốc, hành lý, chuyển nhà"
+  ],
+  "words": [
+   "北",
+   "南方",
+   "东方",
+   "西方",
+   "东北",
+   "西北",
+   "东南",
+   "西南",
+   "外地",
+   "市",
+   "街",
+   "马路",
+   "路边",
+   "路口",
+   "红绿灯",
+   "小区",
+   "汽车",
+   "高铁",
+   "晚点",
+   "检票",
+   "行李",
+   "箱子",
+   "游客",
+   "地点",
+   "园",
+   "动物园",
+   "大熊猫",
+   "楼梯",
+   "搬家",
+   "房子"
+  ],
+  "grammar": [
+   {
+    "pattern": "东 / 南 / 西 / 北 + 边 / 方",
+    "vi": "Hướng ghép đọc giống tiếng Việt: 东北 = đông bắc, 西南 = tây nam (khác tiếng Anh 'northeast'). 南方/北方 = miền Nam/miền Bắc; 东方/西方 = phương Đông/phương Tây.",
+    "ex": [
+     "我家在这个市的东北边。",
+     "Wǒ jiā zài zhège shì de dōngběi biān.",
+     "Nhà tôi ở phía đông bắc thành phố này."
+    ]
+   },
+   {
+    "pattern": "A + 离 + B + 远 / 近",
+    "vi": "Nói khoảng cách: 'A cách B xa/gần'. Không dùng 从 trong mẫu này.",
+    "ex": [
+     "动物园离这儿不太远。",
+     "Dòngwùyuán lí zhèr bú tài yuǎn.",
+     "Sở thú cách đây không xa lắm."
+    ]
+   },
+   {
+    "pattern": "先 + V1，然后 + V2；往 + hướng + 走",
+    "vi": "Chỉ đường theo thứ tự: 先 (trước tiên) … 然后 (sau đó) …; 往 + hướng = đi về phía.",
+    "ex": [
+     "你先过马路，然后到路口往西走。",
+     "Nǐ xiān guò mǎlù, ránhòu dào lùkǒu wǎng xī zǒu.",
+     "Bạn qua đường trước, sau đó đến ngã tư thì đi về phía tây."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "请问，动物园怎么走？",
+    "Qǐngwèn, dòngwùyuán zěnme zǒu?",
+    "Xin hỏi, đến sở thú đi thế nào?"
+   ],
+   [
+    "B",
+    "你是外地来的游客吧？动物园在市的东南边。",
+    "Nǐ shì wàidì lái de yóukè ba? Dòngwùyuán zài shì de dōngnán biān.",
+    "Bạn là khách du lịch từ nơi khác đến à? Sở thú ở phía đông nam thành phố."
+   ],
+   [
+    "A",
+    "对，我是从南方来的，想去看大熊猫。",
+    "Duì, wǒ shì cóng nánfāng lái de, xiǎng qù kàn dàxióngmāo.",
+    "Vâng, tôi từ miền Nam đến, muốn đi xem gấu trúc."
+   ],
+   [
+    "B",
+    "你先过马路，走到前面的路口，看见红绿灯就往左走。",
+    "Nǐ xiān guò mǎlù, zǒu dào qiánmiàn de lùkǒu, kànjiàn hónglǜdēng jiù wǎng zuǒ zǒu.",
+    "Bạn qua đường trước, đi tới ngã tư phía trước, thấy đèn giao thông thì rẽ trái."
+   ],
+   [
+    "A",
+    "是在这条街上吗？",
+    "Shì zài zhè tiáo jiē shang ma?",
+    "Có phải trên con phố này không?"
+   ],
+   [
+    "B",
+    "不是，在下一条街。路边有很多小店，很好找。",
+    "Bú shì, zài xià yì tiáo jiē. Lùbiān yǒu hěn duō xiǎo diàn, hěn hǎo zhǎo.",
+    "Không, ở phố tiếp theo. Bên đường có nhiều cửa hàng nhỏ, dễ tìm lắm."
+   ],
+   [
+    "A",
+    "我还带着行李和一个大箱子，坐汽车方便吗？",
+    "Wǒ hái dàizhe xíngli hé yí ge dà xiāngzi, zuò qìchē fāngbiàn ma?",
+    "Tôi còn mang hành lý và một cái vali to, đi ô tô có tiện không?"
+   ],
+   [
+    "B",
+    "坐出租车最方便。你今天刚到吗？",
+    "Zuò chūzūchē zuì fāngbiàn. Nǐ jīntiān gāng dào ma?",
+    "Đi taxi là tiện nhất. Hôm nay bạn mới đến à?"
+   ],
+   [
+    "A",
+    "是，我坐高铁来的。高铁晚点了，检票的人也很多。",
+    "Shì, wǒ zuò gāotiě lái de. Gāotiě wǎndiǎn le, jiǎnpiào de rén yě hěn duō.",
+    "Vâng, tôi đi tàu cao tốc. Tàu bị trễ, người soát vé cũng rất đông."
+   ]
+  ],
+  "sentences": [
+   [
+    "我 下 个 月 要 搬家",
+    "Wǒ xià ge yuè yào bānjiā.",
+    "Tháng sau tôi phải chuyển nhà."
+   ],
+   [
+    "新 房子 在 五 楼 要 走 楼梯",
+    "Xīn fángzi zài wǔ lóu, yào zǒu lóutī.",
+    "Nhà mới ở tầng năm, phải đi cầu thang bộ."
+   ],
+   [
+    "我们 小区 旁边 有 一 个 公园",
+    "Wǒmen xiǎoqū pángbiān yǒu yí ge gōngyuán.",
+    "Cạnh khu dân cư của chúng tôi có một công viên."
+   ],
+   [
+    "见面 的 地点 在 哪儿",
+    "Jiànmiàn de dìdiǎn zài nǎr?",
+    "Địa điểm gặp nhau ở đâu?"
+   ],
+   [
+    "过 马路 要 看 红绿灯",
+    "Guò mǎlù yào kàn hónglǜdēng.",
+    "Qua đường phải nhìn đèn giao thông."
+   ],
+   [
+    "很 多 游客 喜欢 去 西南",
+    "Hěn duō yóukè xǐhuan qù xīnán.",
+    "Nhiều du khách thích đi miền tây nam."
+   ],
+   [
+    "东方 人 和 西方 人 的 习惯 不 一样",
+    "Dōngfāng rén hé xīfāng rén de xíguàn bù yíyàng.",
+    "Thói quen của người phương Đông và người phương Tây không giống nhau."
+   ],
+   [
+    "他 是 从 西北 来 的",
+    "Tā shì cóng xīběi lái de.",
+    "Anh ấy đến từ vùng tây bắc."
+   ]
+  ],
+  "tips": "Hướng ghép tiếng Trung xếp đông/tây trước nam/bắc, trùng với tiếng Việt: 东北 đông bắc, 西南 tây nam, nên người Việt rất dễ nhớ. Hán Việt: 游客 = du khách, 地点 = địa điểm, 行李 = hành lý, 外地 = ngoại địa (nơi khác), 高铁 = cao thiết (đường sắt cao tốc). 小区 không phải 'quận nhỏ' mà là khu dân cư/khu chung cư. 晚点 dùng cho tàu xe, máy bay bị trễ; người đến muộn thì nói 迟到."
+ },
+ {
+  "id": "h3b-09",
+  "level": 3,
+  "icon": "校",
+  "title": "Ở trường",
+  "sub": "Lớp học, bài khoá, sở thích học tập",
+  "goals": [
+   "Nói về lớp học, sách vở, ghi chép",
+   "Dùng 除了…以外 và 对…感兴趣",
+   "Nói giới hạn với 以上 / 以下"
+  ],
+  "words": [
+   "初中",
+   "放学",
+   "校园",
+   "班级",
+   "课本",
+   "课文",
+   "笔记",
+   "外语",
+   "留学生",
+   "女生",
+   "男生",
+   "句",
+   "练",
+   "记",
+   "懂得",
+   "认得",
+   "难题",
+   "有用",
+   "名单",
+   "以上",
+   "以下",
+   "以外",
+   "选",
+   "感兴趣",
+   "喜爱",
+   "画家",
+   "室",
+   "常用",
+   "常见",
+   "子",
+   "开会"
+  ],
+  "grammar": [
+   {
+    "pattern": "除了 A 以外，(Chủ ngữ) 还 / 也 + B",
+    "vi": "'Ngoài A ra, còn B' (thêm vào). Nếu dùng 都 thì nghĩa là 'trừ A ra, tất cả đều…'.",
+    "ex": [
+     "除了汉语以外，他还会说两门外语。",
+     "Chúle Hànyǔ yǐwài, tā hái huì shuō liǎng mén wàiyǔ.",
+     "Ngoài tiếng Trung ra, anh ấy còn biết nói hai ngoại ngữ."
+    ]
+   },
+   {
+    "pattern": "对 + N + 感兴趣",
+    "vi": "'Có hứng thú với…'. 对 đứng trước sự vật, 感兴趣 đứng cuối. Không nói 感兴趣对….",
+    "ex": [
+     "我对画画儿很感兴趣，以后想做画家。",
+     "Wǒ duì huà huàr hěn gǎn xìngqù, yǐhòu xiǎng zuò huàjiā.",
+     "Tôi rất có hứng thú với vẽ tranh, sau này muốn làm hoạ sĩ."
+    ]
+   },
+   {
+    "pattern": "Số + 以上 / 以下",
+    "vi": "以上 = từ… trở lên, 以下 = từ… trở xuống. Đặt SAU con số, ngược với tiếng Việt.",
+    "ex": [
+     "考六十分以上就可以了，六十分以下要再考。",
+     "Kǎo liùshí fēn yǐshàng jiù kěyǐ le, liùshí fēn yǐxià yào zài kǎo.",
+     "Thi được từ sáu mươi điểm trở lên là được, dưới sáu mươi điểm phải thi lại."
+    ]
+   },
+   {
+    "pattern": "把 + Tân ngữ + Động từ + 在 / 到 + nơi chốn",
+    "vi": "Đưa vật tới một chỗ: 把 + vật + 放/记/写 + 在 + nơi.",
+    "ex": [
+     "请把这句话记在笔记本上。",
+     "Qǐng bǎ zhè jù huà jì zài bǐjìběn shang.",
+     "Hãy ghi câu này vào vở ghi chép."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "放学以后你去哪儿？",
+    "Fàngxué yǐhòu nǐ qù nǎr?",
+    "Tan học bạn đi đâu?"
+   ],
+   [
+    "B",
+    "我得去办公室。老师们在开会，让我把班级的名单送过去。",
+    "Wǒ děi qù bàngōngshì. Lǎoshīmen zài kāihuì, ràng wǒ bǎ bānjí de míngdān sòng guòqu.",
+    "Mình phải lên văn phòng. Các thầy cô đang họp, bảo mình mang danh sách lớp qua."
+   ],
+   [
+    "A",
+    "听说我们班要来一个留学生？",
+    "Tīngshuō wǒmen bān yào lái yí ge liúxuéshēng?",
+    "Nghe nói lớp mình sắp có một du học sinh?"
+   ],
+   [
+    "B",
+    "对，是个越南女生，在初中就开始学汉语了。",
+    "Duì, shì ge Yuènán nǚshēng, zài chūzhōng jiù kāishǐ xué Hànyǔ le.",
+    "Đúng, là một bạn nữ người Việt, từ cấp hai đã bắt đầu học tiếng Trung."
+   ],
+   [
+    "A",
+    "那她认得很多汉字吧？",
+    "Nà tā rènde hěn duō Hànzì ba?",
+    "Vậy chắc bạn ấy biết nhiều chữ Hán lắm nhỉ?"
+   ],
+   [
+    "B",
+    "认得不少。除了汉语以外，她对画画儿也很感兴趣。",
+    "Rènde bù shǎo. Chúle Hànyǔ yǐwài, tā duì huà huàr yě hěn gǎn xìngqù.",
+    "Biết khá nhiều. Ngoài tiếng Trung, bạn ấy còn thích vẽ tranh."
+   ],
+   [
+    "A",
+    "今天的课文有一句我不懂，这真是个难题。",
+    "Jīntiān de kèwén yǒu yí jù wǒ bù dǒng, zhè zhēn shì ge nántí.",
+    "Bài khoá hôm nay có một câu mình không hiểu, đúng là một câu đố khó."
+   ],
+   [
+    "B",
+    "我的笔记里都记了。这个词很常用，在课本里也很常见。",
+    "Wǒ de bǐjì li dōu jì le. Zhège cí hěn chángyòng, zài kèběn li yě hěn chángjiàn.",
+    "Trong vở ghi của mình có ghi hết. Từ này rất thường dùng, trong sách giáo khoa cũng hay gặp."
+   ],
+   [
+    "A",
+    "谢谢！看来多练才有用。",
+    "Xièxie! Kànlái duō liàn cái yǒuyòng.",
+    "Cảm ơn nhé! Xem ra phải luyện nhiều mới có ích."
+   ]
+  ],
+  "sentences": [
+   [
+    "我们 的 校园 很 大",
+    "Wǒmen de xiàoyuán hěn dà.",
+    "Khuôn viên trường chúng tôi rất rộng."
+   ],
+   [
+    "你 选 了 哪 门 课",
+    "Nǐ xuǎnle nǎ mén kè?",
+    "Bạn đã chọn môn nào?"
+   ],
+   [
+    "他 对 外语 很 感兴趣",
+    "Tā duì wàiyǔ hěn gǎn xìngqù.",
+    "Anh ấy rất hứng thú với ngoại ngữ."
+   ],
+   [
+    "我们 班 男生 比 女生 多",
+    "Wǒmen bān nánshēng bǐ nǚshēng duō.",
+    "Lớp chúng tôi nam nhiều hơn nữ."
+   ],
+   [
+    "十八 岁 以上 才 可以 参加",
+    "Shíbā suì yǐshàng cái kěyǐ cānjiā.",
+    "Từ 18 tuổi trở lên mới được tham gia."
+   ],
+   [
+    "这 是 我 最 喜爱 的 画家",
+    "Zhè shì wǒ zuì xǐ'ài de huàjiā.",
+    "Đây là hoạ sĩ tôi yêu thích nhất."
+   ],
+   [
+    "学 外语 要 懂得 方法",
+    "Xué wàiyǔ yào dǒngde fāngfǎ.",
+    "Học ngoại ngữ phải biết phương pháp."
+   ],
+   [
+    "他 在 教室 里 写 本子",
+    "Tā zài jiàoshì li xiě běnzi.",
+    "Cậu ấy đang viết vở trong lớp học."
+   ]
+  ],
+  "tips": "Hán Việt: 校园 = hiệu viên (sân trường), 班级 = ban cấp (lớp), 课文 = khoá văn (bài khoá), 留学生 = lưu học sinh (du học sinh), 画家 = hoạ gia, 喜爱 = hỷ ái. 初中 = cấp hai (sơ trung), 高中 = cấp ba. 室 (thất) là phòng: 教室, 办公室. 认得 = nhận ra/biết mặt chữ, người; 懂得 = hiểu (đạo lý, cách làm). Lỗi hay gặp: người Việt nói 'trên 60 điểm' nên viết 以上六十分; đúng là 六十分以上 — 以上/以下 luôn đứng SAU con số."
+ },
+ {
+  "id": "h3b-10",
+  "level": 3,
+  "icon": "跳",
+  "title": "Thể thao & vui chơi",
+  "sub": "Hội thao, chụp ảnh, đi làm khách",
+  "goals": [
+   "Kể về hội thao, vận động viên, ghi điểm",
+   "Dùng bổ ngữ trạng thái V + 得 + Tính từ",
+   "Rủ bạn đi chơi, làm khách, nói chuyện với 一边…一边…"
+  ],
+  "words": [
+   "运动员",
+   "运动会",
+   "球场",
+   "体育馆",
+   "得分",
+   "跳",
+   "爬",
+   "相机",
+   "拍照",
+   "照相",
+   "照",
+   "晚会",
+   "名人",
+   "冰激凌",
+   "方便面",
+   "外卖",
+   "酒",
+   "鸡",
+   "牛",
+   "羊",
+   "养",
+   "做客",
+   "一块儿",
+   "聊",
+   "聊天儿",
+   "难听",
+   "声",
+   "黄色",
+   "大小",
+   "身高"
+  ],
+  "grammar": [
+   {
+    "pattern": "Động từ + 得 + (很) + Tính từ",
+    "vi": "Bổ ngữ trạng thái: nhận xét động tác làm ra sao. Nếu có tân ngữ, lặp lại động từ: 爬山爬得很快.",
+    "ex": [
+     "他跳得很高，也跑得很快。",
+     "Tā tiào de hěn gāo, yě pǎo de hěn kuài.",
+     "Anh ấy nhảy rất cao, chạy cũng rất nhanh."
+    ]
+   },
+   {
+    "pattern": "一边 + V1，一边 + V2",
+    "vi": "'Vừa… vừa…', hai hành động cùng lúc của một người.",
+    "ex": [
+     "我们一边吃冰激凌，一边聊天儿。",
+     "Wǒmen yìbiān chī bīngjīlíng, yìbiān liáotiānr.",
+     "Chúng tôi vừa ăn kem vừa tán gẫu."
+    ]
+   },
+   {
+    "pattern": "Động từ + 不动 / 得动",
+    "vi": "Bổ ngữ khả năng: 不动 = không còn sức làm nữa (爬不动, 走不动, 拿不动).",
+    "ex": [
+     "我爬不动了，我们休息一下吧。",
+     "Wǒ pá bu dòng le, wǒmen xiūxi yíxià ba.",
+     "Tôi leo không nổi nữa, chúng ta nghỉ một chút đi."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "昨天的运动会你去了吗？",
+    "Zuótiān de yùndònghuì nǐ qù le ma?",
+    "Hội thao hôm qua bạn có đi không?"
+   ],
+   [
+    "B",
+    "去了，在体育馆。我们班的男生跳得最高，得分也最多。",
+    "Qù le, zài tǐyùguǎn. Wǒmen bān de nánshēng tiào de zuì gāo, défēn yě zuì duō.",
+    "Có, ở nhà thi đấu. Các bạn nam lớp mình nhảy cao nhất, ghi điểm cũng nhiều nhất."
+   ],
+   [
+    "A",
+    "听说还来了一个名人？",
+    "Tīngshuō hái láile yí ge míngrén?",
+    "Nghe nói còn có một người nổi tiếng đến nữa?"
+   ],
+   [
+    "B",
+    "对，是一个篮球运动员，身高两米多！大家都拿着相机拍照。",
+    "Duì, shì yí ge lánqiú yùndòngyuán, shēngāo liǎng mǐ duō! Dàjiā dōu názhe xiàngjī pāizhào.",
+    "Đúng, là một vận động viên bóng rổ, cao hơn hai mét! Mọi người đều cầm máy ảnh chụp hình."
+   ],
+   [
+    "A",
+    "你跟他照相了吗？",
+    "Nǐ gēn tā zhàoxiàng le ma?",
+    "Bạn có chụp ảnh với anh ấy không?"
+   ],
+   [
+    "B",
+    "照了！晚上还有晚会，大家一块儿唱歌，可是我唱得很难听。",
+    "Zhào le! Wǎnshang hái yǒu wǎnhuì, dàjiā yíkuàir chàng gē, kěshì wǒ chàng de hěn nántīng.",
+    "Có chụp! Tối còn có dạ hội, mọi người cùng hát, nhưng mình hát dở lắm."
+   ],
+   [
+    "A",
+    "周末来我家做客吧，我们一边吃一边聊。",
+    "Zhōumò lái wǒ jiā zuòkè ba, wǒmen yìbiān chī yìbiān liáo.",
+    "Cuối tuần đến nhà mình chơi nhé, chúng ta vừa ăn vừa nói chuyện."
+   ],
+   [
+    "B",
+    "好啊！你家还养着鸡和羊吗？",
+    "Hǎo a! Nǐ jiā hái yǎngzhe jī hé yáng ma?",
+    "Được đấy! Nhà bạn vẫn còn nuôi gà với dê à?"
+   ],
+   [
+    "A",
+    "养着呢，还有两头牛。你别带酒，也别再吃方便面和外卖了！",
+    "Yǎngzhe ne, hái yǒu liǎng tóu niú. Nǐ bié dài jiǔ, yě bié zài chī fāngbiànmiàn hé wàimài le!",
+    "Vẫn nuôi, còn có hai con bò nữa. Bạn đừng mang rượu, cũng đừng ăn mì gói với đồ ăn đặt ngoài nữa nhé!"
+   ]
+  ],
+  "sentences": [
+   [
+    "我们 去 球场 踢 足球 吧",
+    "Wǒmen qù qiúchǎng tī zúqiú ba.",
+    "Chúng ta ra sân bóng đá bóng đi."
+   ],
+   [
+    "他 爬 山 爬 得 很 快",
+    "Tā pá shān pá de hěn kuài.",
+    "Anh ấy leo núi rất nhanh."
+   ],
+   [
+    "这 件 黄色 的 衣服 大小 很 合适",
+    "Zhè jiàn huángsè de yīfu dàxiǎo hěn héshì.",
+    "Cái áo màu vàng này kích cỡ rất vừa."
+   ],
+   [
+    "我 一边 吃 冰激凌 一边 聊天儿",
+    "Wǒ yìbiān chī bīngjīlíng yìbiān liáotiānr.",
+    "Tôi vừa ăn kem vừa tán gẫu."
+   ],
+   [
+    "请 你 小 声 一点儿",
+    "Qǐng nǐ xiǎo shēng yìdiǎnr.",
+    "Bạn nói nhỏ một chút nhé."
+   ],
+   [
+    "那 个 运动员 得分 最 多",
+    "Nàge yùndòngyuán défēn zuì duō.",
+    "Vận động viên kia ghi điểm nhiều nhất."
+   ],
+   [
+    "这 张 照片 是 谁 照 的",
+    "Zhè zhāng zhàopiàn shì shéi zhào de?",
+    "Tấm ảnh này ai chụp vậy?"
+   ],
+   [
+    "我 爬 不 动 了",
+    "Wǒ pá bu dòng le.",
+    "Tôi leo không nổi nữa rồi."
+   ]
+  ],
+  "tips": "Hán Việt: 运动员 = vận động viên, 运动会 = vận động hội (hội thao), 体育馆 = thể dục quán, 名人 = danh nhân, 得分 = đắc phân (ghi điểm). 拍照 và 照相 đều là 'chụp ảnh', còn 照 đứng một mình là động từ 'chụp/soi'. 做客 = đến nhà người khác làm khách, không phải 'làm khách sạn'. Người Việt hay quên 得 khi nhận xét: nói 他跳很高 là sai, phải là 他跳得很高. 牛 (ngưu) là bò, 羊 (dương) là dê/cừu."
+ },
+ {
+  "id": "h3b-11",
+  "level": 3,
+  "icon": "心",
+  "title": "Con người & cảm xúc",
+  "sub": "Người thân, ốm đau, thay đổi",
+  "goals": [
+   "Nói về người thân, vợ chồng, người già",
+   "Kể chuyện nằm viện, ra viện, cảm giác lo sợ",
+   "Diễn tả thay đổi với 变 / 变成, 刚, 只是"
+  ],
+  "words": [
+   "病人",
+   "住院",
+   "出院",
+   "牙",
+   "牙刷",
+   "怕",
+   "急",
+   "心里",
+   "感到",
+   "受",
+   "变",
+   "变成",
+   "大人",
+   "老人",
+   "爱人",
+   "夫妻",
+   "姐妹",
+   "身边",
+   "面前",
+   "遇见",
+   "不见",
+   "分开",
+   "关注",
+   "只是",
+   "可",
+   "总",
+   "刚",
+   "常",
+   "常常",
+   "好多"
+  ],
+  "grammar": [
+   {
+    "pattern": "变 + Tính từ / 变成 + Danh từ",
+    "vi": "变 + tính từ: trở nên (变老, 变胖). 变成 + danh từ: biến thành, trở thành (变成大人).",
+    "ex": [
+     "几年不见，小孩儿变成了大人。",
+     "Jǐ nián bú jiàn, xiǎoháir biànchéngle dàrén.",
+     "Mấy năm không gặp, đứa trẻ đã thành người lớn."
+    ]
+   },
+   {
+    "pattern": "刚 + Động từ",
+    "vi": "'Vừa mới', việc xảy ra cách đây không lâu. 刚 là phó từ, đứng sau chủ ngữ, trước động từ.",
+    "ex": [
+     "我爱人昨天刚出院。",
+     "Wǒ àirén zuótiān gāng chūyuàn.",
+     "Vợ tôi hôm qua vừa ra viện."
+    ]
+   },
+   {
+    "pattern": "受 + (Ai) + 欢迎 / 影响",
+    "vi": "受 = chịu, được: 受欢迎 (được hoan nghênh), 受影响 (chịu ảnh hưởng).",
+    "ex": [
+     "这位医生很受病人欢迎。",
+     "Zhè wèi yīshēng hěn shòu bìngrén huānyíng.",
+     "Bác sĩ này rất được bệnh nhân yêu mến."
+    ]
+   },
+   {
+    "pattern": "…，只是 / 可 …",
+    "vi": "只是 = chỉ có điều (nhẹ nhàng hơn 但是); 可 = nhưng (khẩu ngữ). Cả hai nối vế sau mang ý trái ngược.",
+    "ex": [
+     "我很想去看她，只是这几天太忙了。",
+     "Wǒ hěn xiǎng qù kàn tā, zhǐshì zhè jǐ tiān tài máng le.",
+     "Tôi rất muốn đi thăm cô ấy, chỉ là mấy hôm nay bận quá."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "好久不见！听说你爱人住院了？",
+    "Hǎojiǔ bú jiàn! Tīngshuō nǐ àirén zhùyuàn le?",
+    "Lâu rồi không gặp! Nghe nói vợ anh nằm viện à?"
+   ],
+   [
+    "B",
+    "是啊，她上个星期住院，昨天刚出院。",
+    "Shì a, tā shàng ge xīngqī zhùyuàn, zuótiān gāng chūyuàn.",
+    "Ừ, tuần trước cô ấy nhập viện, hôm qua vừa ra viện."
+   ],
+   [
+    "A",
+    "现在好多了吗？",
+    "Xiànzài hǎo duō le ma?",
+    "Bây giờ đỡ nhiều chưa?"
+   ],
+   [
+    "B",
+    "好多了。她在孩子面前总是笑，可心里很怕。",
+    "Hǎo duō le. Tā zài háizi miànqián zǒngshì xiào, kě xīnli hěn pà.",
+    "Đỡ nhiều rồi. Trước mặt con cô ấy luôn cười, nhưng trong lòng rất sợ."
+   ],
+   [
+    "A",
+    "我明白。老人和病人最需要家人关注，大人也常常很急。",
+    "Wǒ míngbai. Lǎorén hé bìngrén zuì xūyào jiārén guānzhù, dàrén yě chángcháng hěn jí.",
+    "Tôi hiểu. Người già và người bệnh cần người nhà quan tâm nhất, người lớn cũng thường rất sốt ruột."
+   ],
+   [
+    "B",
+    "对。这次她的姐妹都来了，一直在她身边。",
+    "Duì. Zhè cì tā de jiěmèi dōu lái le, yìzhí zài tā shēnbiān.",
+    "Đúng vậy. Lần này chị em của cô ấy đều đến, luôn ở bên cạnh."
+   ],
+   [
+    "A",
+    "你们夫妻在一起这么多年，一直没分开过吧？",
+    "Nǐmen fūqī zài yìqǐ zhème duō nián, yìzhí méi fēnkāi guo ba?",
+    "Vợ chồng anh bên nhau bao nhiêu năm, chưa từng xa nhau phải không?"
+   ],
+   [
+    "B",
+    "没有。我们是在大学遇见的，已经二十年了。",
+    "Méiyǒu. Wǒmen shì zài dàxué yùjiàn de, yǐjīng èrshí nián le.",
+    "Chưa. Chúng tôi gặp nhau ở đại học, đã hai mươi năm rồi."
+   ],
+   [
+    "A",
+    "你一点儿都没变！",
+    "Nǐ yìdiǎnr dōu méi biàn!",
+    "Anh chẳng thay đổi chút nào!"
+   ],
+   [
+    "B",
+    "你可别这么说，我早就变老了。",
+    "Nǐ kě bié zhème shuō, wǒ zǎo jiù biàn lǎo le.",
+    "Đừng nói thế, tôi già đi lâu rồi."
+   ]
+  ],
+  "sentences": [
+   [
+    "我 刚 出院",
+    "Wǒ gāng chūyuàn.",
+    "Tôi vừa ra viện."
+   ],
+   [
+    "你 别 急",
+    "Nǐ bié jí.",
+    "Bạn đừng vội."
+   ],
+   [
+    "他 变成 了 一 个 大人",
+    "Tā biànchéngle yí ge dàrén.",
+    "Cậu ấy đã thành người lớn."
+   ],
+   [
+    "每 天 早上 都 要 刷 牙",
+    "Měi tiān zǎoshang dōu yào shuā yá.",
+    "Mỗi sáng đều phải đánh răng."
+   ],
+   [
+    "这 个 牙刷 是 新 的",
+    "Zhège yáshuā shì xīn de.",
+    "Cái bàn chải này là mới."
+   ],
+   [
+    "这 件 事 让 我 感到 很 难过",
+    "Zhè jiàn shì ràng wǒ gǎndào hěn nánguò.",
+    "Chuyện này làm tôi cảm thấy rất buồn."
+   ],
+   [
+    "他 很 受 大家 欢迎",
+    "Tā hěn shòu dàjiā huānyíng.",
+    "Anh ấy rất được mọi người yêu mến."
+   ],
+   [
+    "我 常 去 看 我 奶奶",
+    "Wǒ cháng qù kàn wǒ nǎinai.",
+    "Tôi thường đi thăm bà nội."
+   ]
+  ],
+  "tips": "Hán Việt: 住院 = trú viện (nằm viện), 出院 = xuất viện, 病人 = bệnh nhân, 夫妻 = phu thê, 姐妹 = tỷ muội, 遇见 = ngộ kiến (tình cờ gặp), 感到 = cảm đáo (cảm thấy). Cẩn thận: 爱人 (ái nhân) ở Trung Quốc đại lục là vợ/chồng, không phải 'người yêu' (người yêu là 男朋友/女朋友). 好多了 = đỡ nhiều rồi; 好多 đứng trước danh từ thì là 'rất nhiều' (好多人). 不见 trong 好久不见 = không gặp; 东西不见了 = đồ biến mất."
+ },
+ {
+  "id": "h3b-12",
+  "level": 3,
+  "icon": "卡",
+  "title": "Dịch vụ & cuộc sống số",
+  "sub": "Ngân hàng, email, điện thoại",
+  "goals": [
+   "Làm thẻ ngân hàng, hỏi thủ tục",
+   "Nói về email, điện thoại, sách điện tử",
+   "Dùng 如果…的话, 只有…才…, 该"
+  ],
+  "words": [
+   "电",
+   "电子书",
+   "邮件",
+   "邮箱",
+   "耳机",
+   "开机",
+   "关机",
+   "扫",
+   "卡",
+   "银行卡",
+   "办",
+   "服务",
+   "员",
+   "查",
+   "收到",
+   "听说",
+   "封",
+   "纸",
+   "怎样",
+   "怎么办",
+   "不行",
+   "不用",
+   "只能",
+   "只有",
+   "的话",
+   "或",
+   "该",
+   "有关",
+   "别的",
+   "不同",
+   "中",
+   "起",
+   "加",
+   "得到",
+   "斤"
+  ],
+  "grammar": [
+   {
+    "pattern": "如果 … 的话，(就) …",
+    "vi": "'Nếu… thì…'. Có thể bỏ 如果 và chỉ giữ 的话 ở cuối vế điều kiện.",
+    "ex": [
+     "如果手机没电的话，就不能扫了。",
+     "Rúguǒ shǒujī méi diàn dehuà, jiù bù néng sǎo le.",
+     "Nếu điện thoại hết pin thì không quét được nữa."
+    ]
+   },
+   {
+    "pattern": "只有 A，才 B",
+    "vi": "'Chỉ khi A thì mới B' — A là điều kiện duy nhất. Khác 只能 (chỉ có thể).",
+    "ex": [
+     "只有带护照，才能办银行卡。",
+     "Zhǐyǒu dài hùzhào, cái néng bàn yínhángkǎ.",
+     "Chỉ khi mang hộ chiếu mới làm được thẻ ngân hàng."
+    ]
+   },
+   {
+    "pattern": "或 / 或者 vs 还是",
+    "vi": "或 (hoặc) dùng trong câu kể; 还是 dùng trong câu hỏi lựa chọn.",
+    "ex": [
+     "你可以发邮件或打电话。",
+     "Nǐ kěyǐ fā yóujiàn huò dǎ diànhuà.",
+     "Bạn có thể gửi email hoặc gọi điện."
+    ]
+   },
+   {
+    "pattern": "在 + N + 中；从 + thời gian + 起",
+    "vi": "在…中 = trong (quá trình) …; 从…起 = kể từ … trở đi.",
+    "ex": [
+     "从明天起，在工作中我们该少用纸。",
+     "Cóng míngtiān qǐ, zài gōngzuò zhōng wǒmen gāi shǎo yòng zhǐ.",
+     "Từ mai, trong công việc chúng ta nên dùng ít giấy."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "您好，请问您要办什么？",
+    "Nín hǎo, qǐngwèn nín yào bàn shénme?",
+    "Chào anh, xin hỏi anh muốn làm thủ tục gì?"
+   ],
+   [
+    "B",
+    "我想办一张银行卡。听说只有带护照才能办？",
+    "Wǒ xiǎng bàn yì zhāng yínhángkǎ. Tīngshuō zhǐyǒu dài hùzhào cái néng bàn?",
+    "Tôi muốn làm một thẻ ngân hàng. Nghe nói phải mang hộ chiếu mới làm được?"
+   ],
+   [
+    "A",
+    "对。您带了吗？不带的话就不行。",
+    "Duì. Nín dài le ma? Bú dài dehuà jiù bù xíng.",
+    "Đúng ạ. Anh mang chưa? Không mang thì không được."
+   ],
+   [
+    "B",
+    "带了。可是我的手机快没电了，怎么办？",
+    "Dài le. Kěshì wǒ de shǒujī kuài méi diàn le, zěnme bàn?",
+    "Có mang. Nhưng điện thoại tôi sắp hết pin, làm sao bây giờ?"
+   ],
+   [
+    "A",
+    "不用急，我们的服务员可以帮您，您只能先关机等一下。",
+    "Búyòng jí, wǒmen de fúwùyuán kěyǐ bāng nín, nín zhǐ néng xiān guānjī děng yíxià.",
+    "Không cần vội, nhân viên phục vụ của chúng tôi có thể giúp anh, anh chỉ cần tắt máy đợi một chút."
+   ],
+   [
+    "B",
+    "办好以后，我怎样才能知道？",
+    "Bàn hǎo yǐhòu, wǒ zěnyàng cái néng zhīdào?",
+    "Làm xong rồi, làm sao tôi biết được?"
+   ],
+   [
+    "A",
+    "我们会给您的邮箱发一封邮件，有关的问题都写在里面。",
+    "Wǒmen huì gěi nín de yóuxiāng fā yì fēng yóujiàn, yǒuguān de wèntí dōu xiě zài lǐmiàn.",
+    "Chúng tôi sẽ gửi một email vào hộp thư của anh, các vấn đề liên quan đều viết trong đó."
+   ],
+   [
+    "B",
+    "好的。收到以后我再查一下。还要办别的吗？",
+    "Hǎo de. Shōudào yǐhòu wǒ zài chá yíxià. Hái yào bàn bié de ma?",
+    "Được. Nhận được rồi tôi sẽ kiểm tra lại. Còn phải làm gì khác không?"
+   ],
+   [
+    "A",
+    "不用了。开机以后用手机扫一下这里，就可以得到新卡的号码。",
+    "Búyòng le. Kāijī yǐhòu yòng shǒujī sǎo yíxià zhèlǐ, jiù kěyǐ dédào xīn kǎ de hàomǎ.",
+    "Không cần đâu. Mở máy rồi dùng điện thoại quét chỗ này là nhận được số thẻ mới."
+   ]
+  ],
+  "sentences": [
+   [
+    "上课 了 大家 该 关机 了",
+    "Shàngkè le, dàjiā gāi guānjī le.",
+    "Vào học rồi, mọi người nên tắt máy."
+   ],
+   [
+    "他 不 看 纸 书 只 看 电子书",
+    "Tā bú kàn zhǐ shū, zhǐ kàn diànzǐshū.",
+    "Anh ấy không đọc sách giấy, chỉ đọc sách điện tử."
+   ],
+   [
+    "我 每 天 都 查 一下 邮箱",
+    "Wǒ měi tiān dōu chá yíxià yóuxiāng.",
+    "Ngày nào tôi cũng kiểm tra hộp thư."
+   ],
+   [
+    "苹果 多少 钱 一 斤",
+    "Píngguǒ duōshao qián yì jīn?",
+    "Táo bao nhiêu tiền một cân?"
+   ],
+   [
+    "坐 地铁 的 时候 我 用 耳机 听 歌",
+    "Zuò dìtiě de shíhou wǒ yòng ěrjī tīng gē.",
+    "Khi đi tàu điện ngầm tôi dùng tai nghe nghe nhạc."
+   ],
+   [
+    "这 两 张 卡 有 什么 不同",
+    "Zhè liǎng zhāng kǎ yǒu shénme bù tóng?",
+    "Hai cái thẻ này khác nhau ở đâu?"
+   ],
+   [
+    "请 在 咖啡 里 加 一点儿 糖",
+    "Qǐng zài kāfēi li jiā yìdiǎnr táng.",
+    "Làm ơn cho thêm chút đường vào cà phê."
+   ],
+   [
+    "你 可以 发 邮件 或 打 电话",
+    "Nǐ kěyǐ fā yóujiàn huò dǎ diànhuà.",
+    "Bạn có thể gửi email hoặc gọi điện."
+   ]
+  ],
+  "tips": "Hán Việt: 服务员 = phục vụ viên, 邮件 = bưu kiện (ở đây là email/thư), 邮箱 = bưu tương (hộp thư), 电子书 = điện tử thư, 有关 = hữu quan (liên quan), 不同 = bất đồng (khác nhau). 员 (viên) là hậu tố chỉ người làm nghề: 服务员, 运动员. 斤 = cân Trung Quốc, chỉ bằng 0,5 kg, khác 'cân' (kg) ở Việt Nam. Đừng nhầm 只有…才… (điều kiện duy nhất) với 只要…就… (chỉ cần… là…). 开机/关机 = bật/tắt máy (điện thoại, máy tính)."
+ },
+ {
+  "id": "h3b-13",
+  "level": 4,
+  "icon": "考",
+  "title": "Học tập & thi cử",
+  "sub": "Lớp học, điểm số, học bổng",
+  "goals": [
+   "Nói về thi giữa kỳ, cuối kỳ và kỳ thi đại học (高考)",
+   "Kể cách tự học, ôn bài, luyện nghe và nói",
+   "Dùng 不仅…而且, 无论…都, 把…分为… và 叫作"
+  ],
+  "words": [
+   "教师",
+   "学院",
+   "教学",
+   "课堂",
+   "功课",
+   "自习",
+   "自学",
+   "听力",
+   "口语",
+   "试题",
+   "笔试",
+   "期中",
+   "期末",
+   "高考",
+   "报考",
+   "考生",
+   "分数",
+   "奖学金",
+   "毕业生",
+   "入学",
+   "点名",
+   "师生",
+   "读者",
+   "文字",
+   "例子",
+   "举例",
+   "叫作",
+   "法",
+   "入",
+   "期",
+   "取得",
+   "小组",
+   "答",
+   "者",
+   "分为"
+  ],
+  "grammar": [
+   {
+    "pattern": "不仅 A，而且 B",
+    "vi": "'Không chỉ A mà còn B', vế sau nêu thêm một ý mạnh hơn. Hai vế cùng chủ ngữ thì chủ ngữ đứng trước 不仅.",
+    "ex": [
+     "期末考试不仅有笔试，而且有口语考试。",
+     "Qīmò kǎoshì bùjǐn yǒu bǐshì, érqiě yǒu kǒuyǔ kǎoshì.",
+     "Thi cuối kỳ không chỉ có thi viết mà còn có thi nói."
+    ]
+   },
+   {
+    "pattern": "无论 + (từ để hỏi / A还是B)，都 …",
+    "vi": "'Bất luận… đều…': điều kiện thế nào cũng không đổi kết quả. Sau 无论 phải có từ để hỏi (多, 什么, 谁…) hoặc hai khả năng nối bằng 还是; không dùng câu kể bình thường.",
+    "ex": [
+     "无论功课多难，他都先自己想办法。",
+     "Wúlùn gōngkè duō nán, tā dōu xiān zìjǐ xiǎng bànfǎ.",
+     "Bài tập khó đến đâu, cậu ấy cũng tự nghĩ cách trước."
+    ]
+   },
+   {
+    "pattern": "把 A 分为 B",
+    "vi": "'Chia A thành B'. 分为 là cách nói trang trọng của 分成, hay gặp trong thông báo, sách giáo khoa.",
+    "ex": [
+     "老师把全班分为五个小组。",
+     "Lǎoshī bǎ quán bān fēnwéi wǔ ge xiǎozǔ.",
+     "Thầy giáo chia cả lớp thành năm nhóm."
+    ]
+   },
+   {
+    "pattern": "A 叫作 B",
+    "vi": "'A được gọi là B', dùng để giới thiệu tên gọi của sự vật hay khái niệm (khác 叫 dùng cho tên người).",
+    "ex": [
+     "中国的大学入学考试叫作“高考”。",
+     "Zhōngguó de dàxué rùxué kǎoshì jiàozuò “gāokǎo”.",
+     "Kỳ thi vào đại học của Trung Quốc gọi là “cao khảo”."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "小林，这次期中考试你的分数怎么样？",
+    "Xiǎo Lín, zhè cì qīzhōng kǎoshì nǐ de fēnshù zěnmeyàng?",
+    "Tiểu Lâm, kỳ thi giữa kỳ lần này điểm của bạn thế nào?"
+   ],
+   [
+    "B",
+    "笔试还不错，可是听力和口语都不太好。",
+    "Bǐshì hái búcuò, kěshì tīnglì hé kǒuyǔ dōu bú tài hǎo.",
+    "Thi viết cũng ổn, nhưng nghe và nói đều không tốt lắm."
+   ],
+   [
+    "A",
+    "是不是课堂上老师说得太快了？",
+    "Shì bu shì kètáng shang lǎoshī shuō de tài kuài le?",
+    "Có phải trên lớp thầy nói nhanh quá không?"
+   ],
+   [
+    "B",
+    "有一点儿。我每天晚上都去自习，可是听力试题还是答不好。",
+    "Yǒu yìdiǎnr. Wǒ měi tiān wǎnshang dōu qù zìxí, kěshì tīnglì shìtí háishi dá bu hǎo.",
+    "Hơi hơi. Tối nào mình cũng đi tự học, nhưng đề nghe vẫn làm không tốt."
+   ],
+   [
+    "A",
+    "我的方法是自学：每天听半个小时中文，再把听到的句子写成文字。",
+    "Wǒ de fāngfǎ shì zìxué: měi tiān tīng bàn ge xiǎoshí Zhōngwén, zài bǎ tīngdào de jùzi xiěchéng wénzì.",
+    "Cách của mình là tự học: mỗi ngày nghe nửa tiếng tiếng Trung, rồi chép những câu nghe được ra thành chữ."
+   ],
+   [
+    "B",
+    "这个办法好！你能举个例子吗？",
+    "Zhège bànfǎ hǎo! Nǐ néng jǔ ge lìzi ma?",
+    "Cách này hay đấy! Bạn lấy một ví dụ được không?"
+   ],
+   [
+    "A",
+    "比如新闻、小故事都可以。期末要是取得好成绩，你还能申请学院的奖学金呢。",
+    "Bǐrú xīnwén, xiǎo gùshi dōu kěyǐ. Qīmò yàoshi qǔdé hǎo chéngjì, nǐ hái néng shēnqǐng xuéyuàn de jiǎngxuéjīn ne.",
+    "Ví dụ tin tức, truyện ngắn đều được. Cuối kỳ mà đạt thành tích tốt, bạn còn có thể xin học bổng của học viện đấy."
+   ],
+   [
+    "B",
+    "太好了！高考那年我就报考了这个学院，入学以后一定要更努力。",
+    "Tài hǎo le! Gāokǎo nà nián wǒ jiù bàokǎo le zhège xuéyuàn, rùxué yǐhòu yídìng yào gèng nǔlì.",
+    "Tuyệt quá! Năm thi đại học mình đã đăng ký thi vào học viện này, vào trường rồi nhất định phải cố gắng hơn."
+   ],
+   [
+    "A",
+    "下次小组学习，我们一起练口语吧。",
+    "Xià cì xiǎozǔ xuéxí, wǒmen yìqǐ liàn kǒuyǔ ba.",
+    "Lần học nhóm tới, tụi mình cùng luyện nói nhé."
+   ]
+  ],
+  "sentences": [
+   [
+    "老师 上课 以前 先 点名",
+    "Lǎoshī shàngkè yǐqián xiān diǎnmíng.",
+    "Trước khi vào học thầy giáo điểm danh."
+   ],
+   [
+    "这 本 杂志 的 读者 主要 是 大学生",
+    "Zhè běn zázhì de dúzhě zhǔyào shì dàxuéshēng.",
+    "Độc giả của tạp chí này chủ yếu là sinh viên."
+   ],
+   [
+    "请 你 举例 说明 这个 词 怎么 用",
+    "Qǐng nǐ jǔlì shuōmíng zhège cí zěnme yòng.",
+    "Mời bạn lấy ví dụ giải thích từ này dùng thế nào."
+   ],
+   [
+    "这个 学院 有 很 多 优秀 的 教师",
+    "Zhège xuéyuàn yǒu hěn duō yōuxiù de jiàoshī.",
+    "Học viện này có nhiều giáo viên xuất sắc."
+   ],
+   [
+    "今年 的 毕业生 比 去年 多",
+    "Jīnnián de bìyèshēng bǐ qùnián duō.",
+    "Sinh viên tốt nghiệp năm nay nhiều hơn năm ngoái."
+   ],
+   [
+    "师生 都 喜欢 这 种 教学 方法",
+    "Shīshēng dōu xǐhuan zhè zhǒng jiàoxué fāngfǎ.",
+    "Cả thầy lẫn trò đều thích phương pháp dạy học này."
+   ],
+   [
+    "考生 要 提前 半 个 小时 入 场",
+    "Kǎoshēng yào tíqián bàn ge xiǎoshí rù chǎng.",
+    "Thí sinh phải vào phòng thi sớm nửa tiếng."
+   ],
+   [
+    "他 是 第 一 期 汉语 班 的 学生",
+    "Tā shì dì yī qī Hànyǔ bān de xuésheng.",
+    "Anh ấy là học viên khóa tiếng Trung đầu tiên."
+   ]
+  ],
+  "tips": "Rất nhiều từ của bài đọc gần như y hệt Hán Việt: 教师 giáo sư (nhưng nghĩa là 'giáo viên', không phải 'giáo sư' đại học = 教授), 期中/期末 kỳ trung/kỳ mạt, 毕业生 tất nghiệp sinh, 点名 điểm danh, 例子 lệ tử (ví dụ), 读者 độc giả, 入学 nhập học. 者 (giả) là hậu tố 'người…': 读者, 作者, 记者. 法 (pháp) vừa là 'luật' vừa là 'cách': 方法, 做法, 用法. Người Việt hay nói 'học bổng' rồi dịch thành 学奖 — sai, phải là 奖学金 (tưởng học kim). Nhớ: 考 là thi, 考生 là thí sinh, 报考 là đăng ký dự thi; 高考 riêng chỉ kỳ thi đại học."
+ },
+ {
+  "id": "h3b-14",
+  "level": 4,
+  "icon": "办",
+  "title": "Công việc & thủ tục",
+  "sub": "Văn phòng, phỏng vấn, giấy tờ, đại sứ quán",
+  "goals": [
+   "Nói về việc ở văn phòng, phòng ban, người phụ trách",
+   "Làm thủ tục: điền đơn, mang giấy tờ, hẹn lịch",
+   "Dùng 按照, 由 + người + V, 即使…也…"
+  ],
+  "words": [
+   "部",
+   "管",
+   "定",
+   "约",
+   "改",
+   "提出",
+   "证",
+   "生意",
+   "厂",
+   "负责人",
+   "做法",
+   "今后",
+   "面试",
+   "办事",
+   "办公",
+   "修理",
+   "院长",
+   "打印机",
+   "填写",
+   "使馆",
+   "身份证",
+   "表",
+   "研究",
+   "指出",
+   "提到"
+  ],
+  "grammar": [
+   {
+    "pattern": "按照 + quy định / yêu cầu + V",
+    "vi": "'Theo, căn cứ theo…'. 按照 đứng trước động từ, hay dùng trong công việc và thủ tục giấy tờ.",
+    "ex": [
+     "请按照要求填写这张表。",
+     "Qǐng ànzhào yāoqiú tiánxiě zhè zhāng biǎo.",
+     "Vui lòng điền tờ khai này theo yêu cầu."
+    ]
+   },
+   {
+    "pattern": "由 + Người + Động từ",
+    "vi": "'Do ai làm / phụ trách'. Nhấn mạnh người chịu trách nhiệm; rất hay gặp ở nơi làm việc.",
+    "ex": [
+     "这件事由办公室的小张管。",
+     "Zhè jiàn shì yóu bàngōngshì de Xiǎo Zhāng guǎn.",
+     "Việc này do cậu Trương ở văn phòng quản lý."
+    ]
+   },
+   {
+    "pattern": "即使 A，也 B",
+    "vi": "'Cho dù A thì vẫn B'. A thường là giả thiết chưa xảy ra; vế sau bắt buộc có 也.",
+    "ex": [
+     "即使负责人不在，你也可以先把表交给我。",
+     "Jíshǐ fùzérén bú zài, nǐ yě kěyǐ xiān bǎ biǎo jiāo gěi wǒ.",
+     "Cho dù người phụ trách không có mặt, bạn vẫn có thể nộp tờ khai cho tôi trước."
+    ]
+   },
+   {
+    "pattern": "Động từ + 好 (đã xong, ổn thỏa)",
+    "vi": "好 sau động từ cho biết việc đã làm xong, đạt yêu cầu: 定好, 改好, 约好, 修理好. Phủ định dùng 没 + V + 好.",
+    "ex": [
+     "开会的时间还没定好。",
+     "Kāihuì de shíjiān hái méi dìng hǎo.",
+     "Thời gian họp vẫn chưa định xong."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "张老师，下个月我要去中国开会，签证的事应该找谁？",
+    "Zhāng lǎoshī, xià ge yuè wǒ yào qù Zhōngguó kāihuì, qiānzhèng de shì yīnggāi zhǎo shéi?",
+    "Thầy Trương, tháng sau em phải sang Trung Quốc họp, việc visa nên tìm ai ạ?"
+   ],
+   [
+    "B",
+    "这件事由我们部的小李负责，他是这方面的负责人。",
+    "Zhè jiàn shì yóu wǒmen bù de Xiǎo Lǐ fùzé, tā shì zhè fāngmiàn de fùzérén.",
+    "Việc này do cậu Lý ở bộ phận chúng ta phụ trách, cậu ấy là người phụ trách mảng này."
+   ],
+   [
+    "A",
+    "我需要准备什么证？",
+    "Wǒ xūyào zhǔnbèi shénme zhèng?",
+    "Em cần chuẩn bị giấy tờ gì ạ?"
+   ],
+   [
+    "B",
+    "带你的身份证和护照，先在网上填写申请表，再约个时间去使馆办事。",
+    "Dài nǐ de shēnfènzhèng hé hùzhào, xiān zài wǎngshang tiánxiě shēnqǐngbiǎo, zài yuē ge shíjiān qù shǐguǎn bànshì.",
+    "Mang chứng minh thư và hộ chiếu, điền đơn trên mạng trước, rồi hẹn lịch lên đại sứ quán làm thủ tục."
+   ],
+   [
+    "A",
+    "可是办公室的打印机坏了，表打不出来。",
+    "Kěshì bàngōngshì de dǎyìnjī huài le, biǎo dǎ bu chūlái.",
+    "Nhưng máy in văn phòng hỏng rồi, không in tờ khai ra được."
+   ],
+   [
+    "B",
+    "我已经叫人来修理了，下午就能用。你先把表填写好，有不对的地方我帮你改。",
+    "Wǒ yǐjīng jiào rén lái xiūlǐ le, xiàwǔ jiù néng yòng. Nǐ xiān bǎ biǎo tiánxiě hǎo, yǒu bú duì de dìfang wǒ bāng nǐ gǎi.",
+    "Tôi đã gọi người đến sửa rồi, chiều là dùng được. Em cứ điền xong tờ khai, chỗ nào sai tôi sửa giúp."
+   ],
+   [
+    "A",
+    "谢谢！上次开会院长提到要跟一家汽车厂做生意，研究得怎么样了？",
+    "Xièxie! Shàng cì kāihuì yuànzhǎng tídào yào gēn yì jiā qìchē chǎng zuò shēngyi, yánjiū de zěnmeyàng le?",
+    "Cảm ơn thầy! Lần họp trước viện trưởng có nhắc đến chuyện làm ăn với một nhà máy ô tô, nghiên cứu đến đâu rồi ạ?"
+   ],
+   [
+    "B",
+    "院长指出了几个问题，大家也提出了新的做法，可是时间还没定。",
+    "Yuànzhǎng zhǐchū le jǐ ge wèntí, dàjiā yě tíchū le xīn de zuòfǎ, kěshì shíjiān hái méi dìng.",
+    "Viện trưởng đã chỉ ra vài vấn đề, mọi người cũng đề xuất cách làm mới, nhưng thời gian vẫn chưa chốt."
+   ],
+   [
+    "A",
+    "今后办公有什么问题，我可以直接问您吗？",
+    "Jīnhòu bàngōng yǒu shénme wèntí, wǒ kěyǐ zhíjiē wèn nín ma?",
+    "Sau này làm việc có vấn đề gì, em có thể hỏi thẳng thầy không ạ?"
+   ],
+   [
+    "B",
+    "当然可以。对了，明天上午有个面试，你也来听听吧。",
+    "Dāngrán kěyǐ. Duì le, míngtiān shàngwǔ yǒu ge miànshì, nǐ yě lái tīngting ba.",
+    "Tất nhiên rồi. À, sáng mai có một buổi phỏng vấn, em cũng đến nghe thử nhé."
+   ]
+  ],
+  "sentences": [
+   [
+    "请 按照 要求 填写 这 张 表",
+    "Qǐng ànzhào yāoqiú tiánxiě zhè zhāng biǎo.",
+    "Vui lòng điền tờ khai này theo yêu cầu."
+   ],
+   [
+    "他 明天 上午 有 一 个 面试",
+    "Tā míngtiān shàngwǔ yǒu yí ge miànshì.",
+    "Sáng mai anh ấy có một buổi phỏng vấn."
+   ],
+   [
+    "办 签证 要 带 身份证 和 护照",
+    "Bàn qiānzhèng yào dài shēnfènzhèng hé hùzhào.",
+    "Làm visa phải mang chứng minh thư và hộ chiếu."
+   ],
+   [
+    "我们 约 好 了 下 周 一 去 使馆",
+    "Wǒmen yuē hǎo le xià zhōuyī qù shǐguǎn.",
+    "Chúng tôi đã hẹn thứ hai tuần sau lên đại sứ quán."
+   ],
+   [
+    "这个 问题 还 需要 再 研究 一下",
+    "Zhège wèntí hái xūyào zài yánjiū yíxià.",
+    "Vấn đề này còn cần nghiên cứu thêm."
+   ],
+   [
+    "经理 指出 了 计划 里 的 两 个 问题",
+    "Jīnglǐ zhǐchū le jìhuà lǐ de liǎng ge wèntí.",
+    "Giám đốc đã chỉ ra hai vấn đề trong kế hoạch."
+   ],
+   [
+    "我 爸爸 在 一 个 汽车 厂 工作",
+    "Wǒ bàba zài yí ge qìchē chǎng gōngzuò.",
+    "Bố tôi làm việc ở một nhà máy ô tô."
+   ],
+   [
+    "这些 事 都 由 他 管",
+    "Zhèxiē shì dōu yóu tā guǎn.",
+    "Những việc này đều do anh ấy quản lý."
+   ]
+  ],
+  "tips": "Hán Việt giúp nhớ nhanh: 研究 nghiên cứu, 提出 đề xuất, 修理 tu lý (sửa chữa), 院长 viện trưởng, 面试 diện thí (thi trực diện = phỏng vấn), 今后 kim hậu (từ nay về sau), 身份证 thân phận chứng (CMND/CCCD), 使馆 sứ quán. 证 (chứng) = giấy chứng nhận: 身份证, 学生证. Chú ý: 生意 (sinh ý) là 'việc làm ăn, buôn bán', không phải 'ý kiến'. 提到 là 'nhắc đến', còn 提出 là 'đưa ra (ý kiến)'; người Việt hay nhầm hai từ này. 约 vừa là 'hẹn' (约时间), vừa là 'khoảng' (约十分钟)."
+ },
+ {
+  "id": "h3b-15",
+  "level": 4,
+  "icon": "价",
+  "title": "Mua sắm & giá cả",
+  "sub": "Hàng hiệu, mua online, thuê nhà, các loại phí",
+  "goals": [
+   "Hỏi giá, nói đắt/rẻ, đáng tiền hay không",
+   "Mua hàng online, thanh toán, giao tận nhà",
+   "Nói về tiền thuê nhà, học phí, các khoản phí; dùng 连…都, 既…又…"
+  ],
+  "words": [
+   "值",
+   "普通",
+   "牌",
+   "牌子",
+   "货",
+   "付",
+   "支付",
+   "购买",
+   "网购",
+   "价钱",
+   "低价",
+   "高价",
+   "降价",
+   "推出",
+   "外套",
+   "毛衣",
+   "细",
+   "粗",
+   "千克",
+   "说明书",
+   "学费",
+   "收费",
+   "费",
+   "会员",
+   "出租",
+   "房租",
+   "上门",
+   "现有"
+  ],
+  "grammar": [
+   {
+    "pattern": "连 A 都/也 + V",
+    "vi": "'Ngay cả A cũng…', nhấn mạnh một trường hợp bất ngờ hoặc cực đoan. A có thể là danh từ hay số lượng nhỏ.",
+    "ex": [
+     "连普通的毛衣都要六百块！",
+     "Lián pǔtōng de máoyī dōu yào liùbǎi kuài!",
+     "Đến cái áo len bình thường cũng sáu trăm tệ!"
+    ]
+   },
+   {
+    "pattern": "既 A 又 B",
+    "vi": "'Vừa A vừa B', hai tính chất cùng có. A và B thường cùng loại (hai tính từ hoặc hai động từ); trang trọng hơn 又…又….",
+    "ex": [
+     "这个牌子的外套既便宜又好看。",
+     "Zhège páizi de wàitào jì piányi yòu hǎokàn.",
+     "Áo khoác nhãn hiệu này vừa rẻ vừa đẹp."
+    ]
+   },
+   {
+    "pattern": "值 + số tiền / 值不值",
+    "vi": "值 là động từ 'đáng giá'. 这件衣服值三百块 = đáng giá 300 tệ. Hỏi có đáng không: 值不值？",
+    "ex": [
+     "这么好的外套只要两百块，真值！",
+     "Zhème hǎo de wàitào zhǐ yào liǎngbǎi kuài, zhēn zhí!",
+     "Áo khoác tốt thế mà chỉ hai trăm tệ, thật đáng tiền!"
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "这件外套是什么牌子的？价钱怎么这么高？",
+    "Zhè jiàn wàitào shì shénme páizi de? Jiàqian zěnme zhème gāo?",
+    "Áo khoác này nhãn hiệu gì vậy? Sao giá cao thế?"
+   ],
+   [
+    "B",
+    "这是我们这个月新推出的牌子，现有的货不多，所以是高价。",
+    "Zhè shì wǒmen zhège yuè xīn tuīchū de páizi, xiànyǒu de huò bù duō, suǒyǐ shì gāojià.",
+    "Đây là nhãn hiệu mới ra mắt tháng này, hàng hiện có không nhiều nên giá cao."
+   ],
+   [
+    "A",
+    "连普通的毛衣都要六百块，太贵了。",
+    "Lián pǔtōng de máoyī dōu yào liùbǎi kuài, tài guì le.",
+    "Đến áo len thường cũng sáu trăm tệ, đắt quá."
+   ],
+   [
+    "B",
+    "您是会员吗？下个月降价的时候，会员还能再便宜一些。",
+    "Nín shì huìyuán ma? Xià ge yuè jiàngjià de shíhou, huìyuán hái néng zài piányi yìxiē.",
+    "Chị có phải hội viên không? Tháng sau giảm giá, hội viên còn được rẻ thêm nữa."
+   ],
+   [
+    "A",
+    "我还是网购吧，网上常常有低价的东西。",
+    "Wǒ háishi wǎnggòu ba, wǎngshang chángcháng yǒu dījià de dōngxi.",
+    "Thôi tôi mua online vậy, trên mạng hay có đồ giá thấp."
+   ],
+   [
+    "B",
+    "网上购买的衣服不能试，大小也不好选。",
+    "Wǎngshang gòumǎi de yīfu bù néng shì, dàxiǎo yě bù hǎo xuǎn.",
+    "Quần áo mua trên mạng không thử được, cỡ to nhỏ cũng khó chọn."
+   ],
+   [
+    "A",
+    "没关系，现在很多网店都送货上门，不合适还可以免费换。",
+    "Méi guānxi, xiànzài hěn duō wǎng diàn dōu sòng huò shàngmén, bù héshì hái kěyǐ miǎnfèi huàn.",
+    "Không sao, giờ nhiều shop online giao hàng tận nhà, không vừa còn được đổi miễn phí."
+   ],
+   [
+    "B",
+    "好吧。那这件外套您要吗？用现金付还是用手机支付？",
+    "Hǎo ba. Nà zhè jiàn wàitào nín yào ma? Yòng xiànjīn fù háishi yòng shǒujī zhīfù?",
+    "Vậy thôi. Còn chiếc áo khoác này chị lấy không? Trả tiền mặt hay thanh toán bằng điện thoại?"
+   ],
+   [
+    "A",
+    "要，用手机支付。",
+    "Yào, yòng shǒujī zhīfù.",
+    "Lấy, tôi thanh toán bằng điện thoại."
+   ]
+  ],
+  "sentences": [
+   [
+    "这 个 房子 出租 房租 一 个 月 三千 块",
+    "Zhège fángzi chūzū, fángzū yí ge yuè sānqiān kuài.",
+    "Căn nhà này cho thuê, tiền thuê ba nghìn tệ một tháng."
+   ],
+   [
+    "这 学期 的 学费 我 已经 交 了",
+    "Zhè xuéqī de xuéfèi wǒ yǐjīng jiāo le.",
+    "Học phí kỳ này tôi đã nộp rồi."
+   ],
+   [
+    "这 家 店 送 货 上门 不 收费",
+    "Zhè jiā diàn sòng huò shàngmén bù shōufèi.",
+    "Cửa hàng này giao hàng tận nhà không thu phí."
+   ],
+   [
+    "这 种 苹果 十 块 钱 一 千克",
+    "Zhè zhǒng píngguǒ shí kuài qián yì qiānkè.",
+    "Loại táo này mười tệ một cân (kg)."
+   ],
+   [
+    "这 种 笔 太 粗 了 我 要 细 一点儿 的",
+    "Zhè zhǒng bǐ tài cū le, wǒ yào xì yìdiǎnr de.",
+    "Loại bút này nét to quá, tôi muốn cái nhỏ nét hơn."
+   ],
+   [
+    "买 以前 要 先 看 说明书",
+    "Mǎi yǐqián yào xiān kàn shuōmíngshū.",
+    "Trước khi mua phải đọc sách hướng dẫn trước."
+   ],
+   [
+    "很 多 年轻 人 喜欢 在 网上 购买 衣服",
+    "Hěn duō niánqīngrén xǐhuan zài wǎngshang gòumǎi yīfu.",
+    "Nhiều người trẻ thích mua quần áo trên mạng."
+   ],
+   [
+    "门口 的 牌 上 写 着 停车 费 五 块",
+    "Ménkǒu de pái shang xiězhe tíngchē fèi wǔ kuài.",
+    "Tấm biển ở cửa ghi phí đỗ xe năm tệ."
+   ]
+  ],
+  "tips": "Hán Việt: 购买 cấu mãi (mua), 支付 chi phó (thanh toán), 推出 suy xuất (tung ra), 出租 xuất tô (cho thuê, cũng là 'taxi' trong 出租车), 普通 phổ thông (bình thường), 会员 hội viên, 降价 giáng giá. 费 (phí) ghép rất nhiều: 学费 học phí, 房费, 电费, 收费 thu phí. Lưu ý: 千克 = kilogram; còn 斤 (cân Trung Quốc) chỉ bằng nửa ký, người Việt đi chợ ở Trung Quốc rất hay nhầm. 打八折 nghĩa là trả 80% giá (giảm 20%), không phải giảm 80%! 牌子 là 'nhãn hiệu' hoặc 'tấm biển', còn 牌 đứng một mình thường là 'biển, bài'."
+ },
+ {
+  "id": "h3b-16",
+  "level": 4,
+  "icon": "乘",
+  "title": "Giao thông & đi lại",
+  "sub": "Xe khách, tàu cao tốc, sân bay, bãi đỗ xe",
+  "goals": [
+   "Nói về các phương tiện: xe khách, tàu động lực, xe điện",
+   "Hỏi đường, chuyển tuyến, lên máy bay, kiểm tra an ninh",
+   "Dùng 差点儿, bổ ngữ khả năng 赶得上/赶不上, 即使…也…"
+  ],
+  "words": [
+   "转",
+   "停",
+   "排",
+   "错过",
+   "赶",
+   "赶上",
+   "迟",
+   "列",
+   "公共",
+   "道路",
+   "公路",
+   "停车",
+   "停车场",
+   "车位",
+   "车速",
+   "交警",
+   "十字路口",
+   "大巴",
+   "动车",
+   "电动车",
+   "乘客",
+   "换乘",
+   "转机",
+   "登机",
+   "安检",
+   "前方",
+   "路过",
+   "出行",
+   "加快",
+   "不便",
+   "时间表",
+   "差点儿",
+   "售票员"
+  ],
+  "grammar": [
+   {
+    "pattern": "差点儿 + V (+ 了)",
+    "vi": "'Suýt nữa'. Việc gần xảy ra nhưng cuối cùng không xảy ra. Với việc không mong muốn, 差点儿 V và 差点儿没 V cùng nghĩa: 差点儿迟到 = 差点儿没迟到 (đều là 'suýt muộn').",
+    "ex": [
+     "今天我差点儿错过了动车。",
+     "Jīntiān wǒ chàdiǎnr cuòguò le dòngchē.",
+     "Hôm nay tôi suýt nữa lỡ chuyến tàu cao tốc."
+    ]
+   },
+   {
+    "pattern": "V + 得上 / 不上 (bổ ngữ khả năng)",
+    "vi": "赶得上 = kịp, 赶不上 = không kịp. Chen 得/不 giữa động từ và bổ ngữ để nói có thể hay không thể.",
+    "ex": [
+     "现在出发还赶得上十点的大巴吗？",
+     "Xiànzài chūfā hái gǎn de shàng shí diǎn de dàbā ma?",
+     "Bây giờ đi còn kịp chuyến xe khách 10 giờ không?"
+    ]
+   },
+   {
+    "pattern": "即使 A，也 B",
+    "vi": "'Cho dù A thì vẫn B'; vế sau phải có 也. Dùng để trấn an hoặc đưa ra kế hoạch dự phòng.",
+    "ex": [
+     "即使路上不方便，我们也要按时到。",
+     "Jíshǐ lù shang bù fāngbiàn, wǒmen yě yào ànshí dào.",
+     "Dù đường đi không thuận tiện, chúng ta vẫn phải đến đúng giờ."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "快点儿！我们要赶十点的大巴去机场，错过了就来不及了。",
+    "Kuài diǎnr! Wǒmen yào gǎn shí diǎn de dàbā qù jīchǎng, cuòguò le jiù láibují le.",
+    "Nhanh lên! Mình phải bắt chuyến xe khách 10 giờ ra sân bay, lỡ chuyến là không kịp."
+   ],
+   [
+    "B",
+    "别急，时间表上写着大巴二十分钟一趟，错过了还有下一趟。",
+    "Bié jí, shíjiānbiǎo shang xiězhe dàbā èrshí fēnzhōng yí tàng, cuòguò le hái yǒu xià yí tàng.",
+    "Đừng vội, bảng giờ ghi xe khách hai mươi phút một chuyến, lỡ thì còn chuyến sau."
+   ],
+   [
+    "A",
+    "上次我们就差点儿没赶上飞机，机场安检排了很长的队。",
+    "Shàng cì wǒmen jiù chàdiǎnr méi gǎnshang fēijī, jīchǎng ānjiǎn pái le hěn cháng de duì.",
+    "Lần trước tụi mình suýt trễ máy bay, chỗ kiểm tra an ninh xếp hàng dài lắm."
+   ],
+   [
+    "B",
+    "好吧。这次我们要在北京转机，几点登机？",
+    "Hǎo ba. Zhè cì wǒmen yào zài Běijīng zhuǎnjī, jǐ diǎn dēngjī?",
+    "Ừ được. Lần này mình phải đổi máy bay ở Bắc Kinh, mấy giờ lên máy bay?"
+   ],
+   [
+    "A",
+    "十二点半。车来了！售票员说乘客要从前门上车。",
+    "Shí'èr diǎn bàn. Chē lái le! Shòupiàoyuán shuō chéngkè yào cóng qiánmén shàng chē.",
+    "Mười hai rưỡi. Xe đến rồi! Nhân viên bán vé nói hành khách lên bằng cửa trước."
+   ],
+   [
+    "B",
+    "车速怎么这么慢？前方是不是出事了？",
+    "Chēsù zěnme zhème màn? Qiánfāng shì bu shì chūshì le?",
+    "Sao xe chạy chậm thế? Phía trước có chuyện gì à?"
+   ],
+   [
+    "A",
+    "十字路口有交警，公路上停了好几辆车。",
+    "Shízì lùkǒu yǒu jiāojǐng, gōnglù shang tíng le hǎo jǐ liàng chē.",
+    "Ở ngã tư có cảnh sát giao thông, trên đường dừng mấy chiếc xe."
+   ],
+   [
+    "B",
+    "我们下车换乘地铁吧？公共交通不会堵车。",
+    "Wǒmen xià chē huànchéng dìtiě ba? Gōnggòng jiāotōng bú huì dǔchē.",
+    "Mình xuống xe chuyển sang tàu điện ngầm nhé? Giao thông công cộng không bị tắc đường."
+   ],
+   [
+    "A",
+    "带着这么多行李，换乘太不便了。你看，路通了，车速也加快了。",
+    "Dàizhe zhème duō xíngli, huànchéng tài búbiàn le. Nǐ kàn, lù tōng le, chēsù yě jiākuài le.",
+    "Mang nhiều hành lý thế này, chuyển xe bất tiện lắm. Nhìn kìa, đường thông rồi, xe cũng chạy nhanh hơn rồi."
+   ]
+  ],
+  "sentences": [
+   [
+    "我 每 天 骑 电动车 上班",
+    "Wǒ měi tiān qí diàndòngchē shàngbān.",
+    "Hằng ngày tôi đi xe điện đi làm."
+   ],
+   [
+    "停车场 里 已经 没有 车位 了",
+    "Tíngchēchǎng lǐ yǐjīng méiyǒu chēwèi le.",
+    "Trong bãi đỗ xe đã hết chỗ đỗ rồi."
+   ],
+   [
+    "到 了 十字路口 向 左 转",
+    "Dào le shízì lùkǒu xiàng zuǒ zhuǎn.",
+    "Đến ngã tư thì rẽ trái."
+   ],
+   [
+    "我们 路过 商店 的 时候 停车 买 了 水",
+    "Wǒmen lùguò shāngdiàn de shíhou tíngchē mǎi le shuǐ.",
+    "Lúc đi ngang qua cửa hàng, chúng tôi dừng xe mua nước."
+   ],
+   [
+    "这 列 动车 一 个 小时 跑 三百 公里",
+    "Zhè liè dòngchē yí ge xiǎoshí pǎo sānbǎi gōnglǐ.",
+    "Đoàn tàu cao tốc này một giờ chạy ba trăm cây số."
+   ],
+   [
+    "对不起 我 来 迟 了",
+    "Duìbuqǐ, wǒ lái chí le.",
+    "Xin lỗi, tôi đến muộn."
+   ],
+   [
+    "节假日 出行 的 人 特别 多",
+    "Jiéjiàrì chūxíng de rén tèbié duō.",
+    "Ngày lễ người đi lại đặc biệt đông."
+   ],
+   [
+    "城市 的 道路 越 来 越 宽",
+    "Chéngshì de dàolù yuè lái yuè kuān.",
+    "Đường sá trong thành phố ngày càng rộng."
+   ]
+  ],
+  "tips": "Hán Việt: 乘客 thặng khách (hành khách), 换乘 hoán thặng (chuyển tuyến), 登机 đăng cơ (lên máy bay), 安检 = 安全检查 an toàn kiểm tra, 公路 công lộ, 道路 đạo lộ, 前方 tiền phương, 不便 bất tiện, 交警 = 交通警察 giao thông cảnh sát. 动车 là tàu cao tốc loại thường (chữ D), 高铁 là tàu siêu tốc (chữ G). Người Việt hay nói 我差点儿迟到了 và 我差点儿没迟到 rồi lo sai nghĩa: với việc xấu, cả hai đều là 'suýt muộn'. 转 đọc zhuǎn khi là 'rẽ, chuyển' (左转, 转机), đọc zhuàn khi là 'quay vòng'."
+ },
+ {
+  "id": "h3b-17",
+  "level": 4,
+  "icon": "游",
+  "title": "Du lịch & nghỉ dưỡng",
+  "sub": "Đặt phòng, nhận phòng, điểm tham quan, kỳ nghỉ",
+  "goals": [
+   "Lên kế hoạch kỳ nghỉ hè, ngày lễ",
+   "Đặt và nhận phòng nhà nghỉ, hỏi về khu du lịch",
+   "Dùng 既然…就…, 尽管…但是…, V + 了 + thời lượng"
+  ],
+  "words": [
+   "美",
+   "城",
+   "区",
+   "待",
+   "留下",
+   "眼前",
+   "旅行",
+   "旅馆",
+   "旅客",
+   "入住",
+   "度假",
+   "景点",
+   "景区",
+   "美景",
+   "游玩",
+   "外出",
+   "假日",
+   "节假日",
+   "暑假",
+   "订",
+   "各地",
+   "大厅",
+   "市区",
+   "目的地",
+   "背包",
+   "村"
+  ],
+  "grammar": [
+   {
+    "pattern": "既然 A，就 B",
+    "vi": "'Đã A thì B': A là sự thật đã biết, B là kết luận hay lời khuyên. Khác 如果 (giả thiết).",
+    "ex": [
+     "既然来了，就在这儿多待几天吧。",
+     "Jìrán lái le, jiù zài zhèr duō dāi jǐ tiān ba.",
+     "Đã đến rồi thì ở lại đây thêm mấy ngày đi."
+    ]
+   },
+   {
+    "pattern": "尽管 A，但是/可是 B",
+    "vi": "'Mặc dù A nhưng B'. A là sự thật; B trái với điều người ta mong đợi.",
+    "ex": [
+     "尽管是节假日，景区里的人却不太多。",
+     "Jǐnguǎn shì jiéjiàrì, jǐngqū lǐ de rén què bú tài duō.",
+     "Mặc dù là ngày lễ nhưng trong khu du lịch không đông lắm."
+    ]
+   },
+   {
+    "pattern": "V + 了 + thời lượng (+ 了)",
+    "vi": "Thời lượng đứng SAU động từ (khác tiếng Việt có thể nói 'ba ngày ở'). Thêm 了 cuối câu nghĩa là việc vẫn đang tiếp diễn.",
+    "ex": [
+     "我们在那个小村待了三天。",
+     "Wǒmen zài nàge xiǎo cūn dāi le sān tiān.",
+     "Chúng tôi ở ngôi làng nhỏ đó ba ngày."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "暑假你打算去哪儿度假？",
+    "Shǔjià nǐ dǎsuàn qù nǎr dùjià?",
+    "Nghỉ hè bạn định đi đâu nghỉ dưỡng?"
+   ],
+   [
+    "B",
+    "我想去云南旅行，听说那儿的美景就像画一样。",
+    "Wǒ xiǎng qù Yúnnán lǚxíng, tīngshuō nàr de měijǐng jiù xiàng huà yíyàng.",
+    "Mình muốn đi Vân Nam du lịch, nghe nói cảnh đẹp ở đó như tranh vẽ."
+   ],
+   [
+    "A",
+    "假日去的旅客太多了，景点里到处都是人。",
+    "Jiàrì qù de lǚkè tài duō le, jǐngdiǎn lǐ dàochù dōu shì rén.",
+    "Ngày nghỉ khách du lịch đông lắm, điểm tham quan chỗ nào cũng toàn người."
+   ],
+   [
+    "B",
+    "所以我不住市区，我订了一个村里的小旅馆，又安静又便宜。",
+    "Suǒyǐ wǒ bú zhù shìqū, wǒ dìng le yí ge cūn lǐ de xiǎo lǚguǎn, yòu ānjìng yòu piányi.",
+    "Nên mình không ở nội thành, mình đặt một nhà nghỉ nhỏ trong làng, vừa yên tĩnh vừa rẻ."
+   ],
+   [
+    "A",
+    "什么时候入住？",
+    "Shénme shíhou rùzhù?",
+    "Khi nào nhận phòng?"
+   ],
+   [
+    "B",
+    "七月十号。我在网上看了照片，旅馆的大厅特别美。",
+    "Qī yuè shí hào. Wǒ zài wǎngshang kàn le zhàopiàn, lǚguǎn de dàtīng tèbié měi.",
+    "Ngày 10 tháng 7. Mình xem ảnh trên mạng rồi, sảnh nhà nghỉ đẹp lắm."
+   ],
+   [
+    "A",
+    "一个人外出要小心，背包一定要放在眼前。",
+    "Yí ge rén wàichū yào xiǎoxīn, bēibāo yídìng yào fàng zài yǎnqián.",
+    "Đi xa một mình phải cẩn thận, ba lô nhất định để trước mắt."
+   ],
+   [
+    "B",
+    "放心吧。既然去了，我就多待几天，每天去一个景区游玩。",
+    "Fàngxīn ba. Jìrán qù le, wǒ jiù duō dāi jǐ tiān, měi tiān qù yí ge jǐngqū yóuwán.",
+    "Yên tâm. Đã đi thì mình ở thêm mấy hôm, mỗi ngày đi chơi một khu du lịch."
+   ],
+   [
+    "A",
+    "别忘了多拍照片，给我们留下几张！",
+    "Bié wàng le duō pāi zhàopiàn, gěi wǒmen liúxià jǐ zhāng!",
+    "Đừng quên chụp nhiều ảnh, để lại cho tụi mình vài tấm nhé!"
+   ]
+  ],
+  "sentences": [
+   [
+    "我们 的 目的地 是 一 个 小 村",
+    "Wǒmen de mùdìdì shì yí ge xiǎo cūn.",
+    "Điểm đến của chúng tôi là một ngôi làng nhỏ."
+   ],
+   [
+    "这个 城 有 很 多 有名 的 景点",
+    "Zhège chéng yǒu hěn duō yǒumíng de jǐngdiǎn.",
+    "Thành phố này có nhiều điểm tham quan nổi tiếng."
+   ],
+   [
+    "从 各地 来 的 旅客 都 在 大厅 等 车",
+    "Cóng gèdì lái de lǚkè dōu zài dàtīng děng chē.",
+    "Du khách từ khắp nơi đều đang chờ xe ở sảnh."
+   ],
+   [
+    "这个 区 的 旅馆 比较 便宜",
+    "Zhège qū de lǚguǎn bǐjiào piányi.",
+    "Nhà nghỉ ở khu này tương đối rẻ."
+   ],
+   [
+    "他 每 个 假日 都 外出 游玩",
+    "Tā měi ge jiàrì dōu wàichū yóuwán.",
+    "Ngày nghỉ nào anh ấy cũng ra ngoài đi chơi."
+   ],
+   [
+    "眼前 的 美景 让 我 不 想 走",
+    "Yǎnqián de měijǐng ràng wǒ bù xiǎng zǒu.",
+    "Cảnh đẹp trước mắt khiến tôi không muốn rời đi."
+   ],
+   [
+    "节假日 景区 的 门票 比较 贵",
+    "Jiéjiàrì jǐngqū de ménpiào bǐjiào guì.",
+    "Ngày lễ vé vào khu du lịch khá đắt."
+   ],
+   [
+    "我们 在 市区 待 了 两 天",
+    "Wǒmen zài shìqū dāi le liǎng tiān.",
+    "Chúng tôi ở nội thành hai ngày."
+   ]
+  ],
+  "tips": "Hán Việt quen thuộc: 旅行 lữ hành, 旅客 lữ khách, 旅馆 lữ quán, 游玩 du ngoạn, 目的地 mục đích địa, 市区 thị khu, 暑假 thử giả (thử = nóng, như 'tiểu thử, đại thử'), 节假日 tiết giả nhật. 待 ở đây đọc dāi = 'ở lại, lưu lại' (待几天), khác dài trong 对待/等待. 订 = đặt trước (订旅馆, 订票). Chú ý trật tự: tiếng Việt 'ở Hà Nội hai ngày' → 在河内待了两天, thời lượng phải đứng sau động từ, không đặt trước như 两天在河内待."
+ },
+ {
+  "id": "h3b-18",
+  "level": 4,
+  "icon": "食",
+  "title": "Ăn uống & nhà bếp",
+  "sub": "Ba bữa, liên hoan, đầu bếp, rác bếp",
+  "goals": [
+   "Nói về bữa sáng, trưa, tối và đồ ăn nhanh",
+   "Rủ nhau liên hoan, gọi món, chọn đồ uống",
+   "Dùng lượng từ 道, bổ ngữ kết quả 熟, cấu trúc 不是…就是…"
+  ],
+  "words": [
+   "油",
+   "垃圾",
+   "早餐",
+   "午餐",
+   "晚餐",
+   "快餐",
+   "中餐",
+   "美食",
+   "厨师",
+   "食堂",
+   "聚",
+   "聚餐",
+   "烤",
+   "鲜",
+   "熟",
+   "凉",
+   "酸奶",
+   "汽水",
+   "茶叶",
+   "白酒",
+   "葡萄酒",
+   "月饼",
+   "味",
+   "桶",
+   "袋子",
+   "纸巾",
+   "道"
+  ],
+  "grammar": [
+   {
+    "pattern": "Số + 道 + 菜 / 题",
+    "vi": "道 là lượng từ cho món ăn (一道菜) và câu hỏi, đề bài (一道题). Đừng dùng 个 cho món ăn trong văn trang trọng.",
+    "ex": [
+     "这道菜是厨师做得最好的。",
+     "Zhè dào cài shì chúshī zuò de zuì hǎo de.",
+     "Món này là món đầu bếp nấu ngon nhất."
+    ]
+   },
+   {
+    "pattern": "V + 熟 / 好 / 完 (bổ ngữ kết quả)",
+    "vi": "熟 = chín: 烤熟, 煮熟. Hỏi đã chín chưa: V + 熟了吗？; chưa chín: 没 + V + 熟.",
+    "ex": [
+     "鱼还没烤熟，再等五分钟。",
+     "Yú hái méi kǎo shú, zài děng wǔ fēnzhōng.",
+     "Cá nướng chưa chín, đợi thêm năm phút."
+    ]
+   },
+   {
+    "pattern": "不是 A，就是 B",
+    "vi": "'Không phải A thì là B': chỉ có hai khả năng, thường dùng để than phiền sự đơn điệu.",
+    "ex": [
+     "他的午餐不是快餐，就是方便面。",
+     "Tā de wǔcān bú shì kuàicān, jiù shì fāngbiànmiàn.",
+     "Bữa trưa của anh ấy không phải đồ ăn nhanh thì là mì gói."
+    ]
+   },
+   {
+    "pattern": "少/多 + V + (一)点儿",
+    "vi": "Khuyên làm ít/nhiều hơn: 少放点儿油, 多吃点儿菜. 少/多 đứng TRƯỚC động từ, khác tiếng Việt 'cho ít dầu'.",
+    "ex": [
+     "做菜的时候少放点儿油。",
+     "Zuò cài de shíhou shǎo fàng diǎnr yóu.",
+     "Khi nấu ăn cho ít dầu thôi."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "周末我们班要聚餐，你说去哪儿好？",
+    "Zhōumò wǒmen bān yào jùcān, nǐ shuō qù nǎr hǎo?",
+    "Cuối tuần lớp mình liên hoan, bạn nói đi đâu thì hay?"
+   ],
+   [
+    "B",
+    "学校食堂的菜太普通了，我们去吃烤肉吧！那家店的厨师很有名。",
+    "Xuéxiào shítáng de cài tài pǔtōng le, wǒmen qù chī kǎoròu ba! Nà jiā diàn de chúshī hěn yǒumíng.",
+    "Đồ ăn căng tin trường bình thường quá, đi ăn thịt nướng đi! Đầu bếp quán đó nổi tiếng lắm."
+   ],
+   [
+    "A",
+    "好主意。我们也可以点几道南方的中餐，那里的鱼很鲜。",
+    "Hǎo zhǔyi. Wǒmen yě kěyǐ diǎn jǐ dào nánfāng de zhōngcān, nàlǐ de yú hěn xiān.",
+    "Ý hay. Mình cũng có thể gọi vài món Trung kiểu miền Nam, cá ở đó tươi lắm."
+   ],
+   [
+    "B",
+    "喝什么呢？有的同学喝白酒，有的喝葡萄酒。",
+    "Hē shénme ne? Yǒu de tóngxué hē báijiǔ, yǒu de hē pútaojiǔ.",
+    "Uống gì nhỉ? Có bạn uống rượu trắng, có bạn uống rượu vang."
+   ],
+   [
+    "A",
+    "我不喝酒，给我一个凉汽水或者酸奶就行。",
+    "Wǒ bù hē jiǔ, gěi wǒ yí ge liáng qìshuǐ huòzhě suānnǎi jiù xíng.",
+    "Mình không uống rượu, cho mình nước ngọt lạnh hoặc sữa chua là được."
+   ],
+   [
+    "B",
+    "对了，快到八月十五了，我们给老师买点儿月饼和茶叶吧。",
+    "Duì le, kuài dào bā yuè shíwǔ le, wǒmen gěi lǎoshī mǎi diǎnr yuèbing hé cháyè ba.",
+    "À, sắp Rằm tháng Tám rồi, mình mua ít bánh trung thu với trà biếu thầy cô nhé."
+   ],
+   [
+    "A",
+    "好啊。大家很久没聚了，这次一定很热闹。",
+    "Hǎo a. Dàjiā hěn jiǔ méi jù le, zhè cì yídìng hěn rènao.",
+    "Được đó. Mọi người lâu rồi chưa tụ tập, lần này chắc vui lắm."
+   ],
+   [
+    "B",
+    "吃完别忘了把垃圾扔进桶里，用过的纸巾和袋子也一起扔。",
+    "Chī wán bié wàng le bǎ lājī rēng jìn tǒng lǐ, yòng guo de zhǐjīn hé dàizi yě yìqǐ rēng.",
+    "Ăn xong đừng quên bỏ rác vào thùng, khăn giấy và túi đã dùng cũng vứt luôn."
+   ]
+  ],
+  "sentences": [
+   [
+    "我 早餐 一般 吃 面包 喝 酸奶",
+    "Wǒ zǎocān yìbān chī miànbāo hē suānnǎi.",
+    "Bữa sáng tôi thường ăn bánh mì, uống sữa chua."
+   ],
+   [
+    "上班 的 人 午餐 常常 吃 快餐",
+    "Shàngbān de rén wǔcān chángcháng chī kuàicān.",
+    "Người đi làm bữa trưa thường ăn đồ ăn nhanh."
+   ],
+   [
+    "今天 的 晚餐 我们 吃 中餐 吧",
+    "Jīntiān de wǎncān wǒmen chī zhōngcān ba.",
+    "Bữa tối nay mình ăn món Trung nhé."
+   ],
+   [
+    "这 块 肉 还 没 烤 熟",
+    "Zhè kuài ròu hái méi kǎo shú.",
+    "Miếng thịt này nướng chưa chín."
+   ],
+   [
+    "这 种 茶叶 有 一 种 特别 的 味",
+    "Zhè zhǒng cháyè yǒu yì zhǒng tèbié de wèi.",
+    "Loại trà này có một mùi vị đặc biệt."
+   ],
+   [
+    "厨师 做 的 这 道 菜 很 好吃",
+    "Chúshī zuò de zhè dào cài hěn hǎochī.",
+    "Món này đầu bếp làm rất ngon."
+   ],
+   [
+    "来 中国 一定 要 尝 一下 各地 的 美食",
+    "Lái Zhōngguó yídìng yào cháng yíxià gèdì de měishí.",
+    "Đến Trung Quốc nhất định phải nếm món ngon các nơi."
+   ],
+   [
+    "做 菜 的 时候 少 放 一点儿 油",
+    "Zuò cài de shíhou shǎo fàng yìdiǎnr yóu.",
+    "Khi nấu ăn cho ít dầu thôi."
+   ]
+  ],
+  "tips": "餐 (xan) = bữa ăn: 早餐 tảo xan, 午餐 ngọ xan, 晚餐 vãn xan, 快餐 khoái xan, 聚餐 tụ xan. Văn nói hằng ngày hay dùng 早饭/午饭/晚饭; 早餐/午餐/晚餐 trang trọng hơn, gặp ở thực đơn, khách sạn. 食堂 thực đường = căng tin. 鲜 (tiên) = tươi, như 新鲜; 熟 (thục) = chín, cũng là 'quen' (很熟). 凉 (lương) = mát, nguội: 凉水 nước nguội. Người Việt dễ nói 葡萄酒 thành 'rượu nho' — đúng, đó chính là rượu vang. 白酒 không phải 'rượu trắng' kiểu rượu vang trắng mà là rượu mạnh chưng cất."
+ },
+ {
+  "id": "h3b-19",
+  "level": 4,
+  "icon": "温",
+  "title": "Thời tiết & thiên nhiên",
+  "sub": "Nhiệt độ, các vùng miền, bảo vệ môi trường",
+  "goals": [
+   "Nghe và nói bản tin thời tiết: nhiệt độ, độ C, âm độ",
+   "Nói về các vùng Đông Tây Nam Bắc và cảnh thiên nhiên",
+   "Dùng 将 (sẽ, văn viết), 高于/低于, 随着…"
+  ],
+  "words": [
+   "流",
+   "落",
+   "下降",
+   "降",
+   "降温",
+   "土",
+   "熊",
+   "到来",
+   "早晨",
+   "夜晚",
+   "西部",
+   "南部",
+   "东部",
+   "北部",
+   "江",
+   "星星",
+   "寒冷",
+   "鲜花",
+   "树林",
+   "气温",
+   "高温",
+   "低温",
+   "零下",
+   "摄氏度",
+   "大自然",
+   "环保",
+   "塑料"
+  ],
+  "grammar": [
+   {
+    "pattern": "将 + Động từ",
+    "vi": "将 = 'sẽ' trong văn viết, bản tin, thông báo (văn nói dùng 会/要). Đặt trước động từ.",
+    "ex": [
+     "明天北部的气温将下降很多。",
+     "Míngtiān běibù de qìwēn jiāng xiàjiàng hěn duō.",
+     "Ngày mai nhiệt độ miền Bắc sẽ giảm mạnh."
+    ]
+   },
+   {
+    "pattern": "A + 高于 / 低于 + B",
+    "vi": "'Cao hơn / thấp hơn B' theo lối viết, hay dùng với số liệu. Tương đương A 比 B 高/低 nhưng trang trọng, ngắn gọn.",
+    "ex": [
+     "今天的最低气温低于零下五摄氏度。",
+     "Jīntiān de zuì dī qìwēn dī yú língxià wǔ shèshìdù.",
+     "Nhiệt độ thấp nhất hôm nay dưới âm năm độ C."
+    ]
+   },
+   {
+    "pattern": "随着 + sự thay đổi，…",
+    "vi": "'Cùng với / theo đà…': vế đầu nêu một sự thay đổi, vế sau là thay đổi kéo theo.",
+    "ex": [
+     "随着冬天的到来，天气越来越寒冷。",
+     "Suízhe dōngtiān de dàolái, tiānqì yuè lái yuè hánlěng.",
+     "Mùa đông đến, thời tiết ngày càng giá lạnh."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "你听说了吗？明天要降温了。",
+    "Nǐ tīngshuō le ma? Míngtiān yào jiàngwēn le.",
+    "Bạn nghe chưa? Mai trời trở lạnh rồi."
+   ],
+   [
+    "B",
+    "听说了。北部和西部将下雪，气温会降到零下十摄氏度。",
+    "Tīngshuō le. Běibù hé xībù jiāng xià xuě, qìwēn huì jiàng dào língxià shí shèshìdù.",
+    "Nghe rồi. Miền Bắc và miền Tây sẽ có tuyết, nhiệt độ sẽ xuống âm mười độ C."
+   ],
+   [
+    "A",
+    "这么寒冷！可是南部还是高温，白天高于三十摄氏度。",
+    "Zhème hánlěng! Kěshì nánbù háishi gāowēn, báitiān gāoyú sānshí shèshìdù.",
+    "Lạnh thế! Nhưng miền Nam vẫn nóng, ban ngày trên ba mươi độ C."
+   ],
+   [
+    "B",
+    "东部在海边，天气比较舒服。我最喜欢早晨去江边走走。",
+    "Dōngbù zài hǎi biān, tiānqì bǐjiào shūfu. Wǒ zuì xǐhuan zǎochen qù jiāng biān zǒuzou.",
+    "Miền Đông gần biển, thời tiết khá dễ chịu. Tôi thích nhất là sáng sớm ra bờ sông đi dạo."
+   ],
+   [
+    "A",
+    "我更喜欢去大自然里玩。在树林里能看到很多鲜花，有的地方还有熊呢。",
+    "Wǒ gèng xǐhuan qù dàzìrán lǐ wán. Zài shùlín lǐ néng kàn dào hěn duō xiānhuā, yǒu de dìfang hái yǒu xióng ne.",
+    "Tôi thích ra thiên nhiên chơi hơn. Trong rừng thấy nhiều hoa tươi, có nơi còn có gấu nữa."
+   ],
+   [
+    "B",
+    "夜晚在山上还能看到满天的星星，河水在旁边慢慢地流。",
+    "Yèwǎn zài shān shang hái néng kàn dào mǎn tiān de xīngxing, héshuǐ zài pángbiān mànmàn de liú.",
+    "Ban đêm trên núi còn thấy sao đầy trời, nước sông chảy chầm chậm bên cạnh."
+   ],
+   [
+    "A",
+    "秋天的时候，叶子一片一片地落下来，特别美。",
+    "Qiūtiān de shíhou, yèzi yí piàn yí piàn de luò xiàlái, tèbié měi.",
+    "Mùa thu lá rơi từng chiếc một, đẹp lắm."
+   ],
+   [
+    "B",
+    "不过去玩的时候一定要环保，别把塑料袋子留在那里，土和水都会被污染。",
+    "Búguò qù wán de shíhou yídìng yào huánbǎo, bié bǎ sùliào dàizi liú zài nàlǐ, tǔ hé shuǐ dōu huì bèi wūrǎn.",
+    "Nhưng khi đi chơi phải bảo vệ môi trường, đừng để túi nhựa lại đó, đất và nước đều sẽ bị ô nhiễm."
+   ]
+  ],
+  "sentences": [
+   [
+    "今天 的 气温 是 零下 五 摄氏度",
+    "Jīntiān de qìwēn shì língxià wǔ shèshìdù.",
+    "Nhiệt độ hôm nay là âm năm độ C."
+   ],
+   [
+    "明天 的 气温 将 高于 三十 摄氏度",
+    "Míngtiān de qìwēn jiāng gāo yú sānshí shèshìdù.",
+    "Nhiệt độ ngày mai sẽ trên ba mươi độ."
+   ],
+   [
+    "早晨 的 空气 特别 新鲜",
+    "Zǎochen de kōngqì tèbié xīnxiān.",
+    "Không khí buổi sáng sớm đặc biệt trong lành."
+   ],
+   [
+    "夜晚 的 天 上 有 很 多 星星",
+    "Yèwǎn de tiān shang yǒu hěn duō xīngxing.",
+    "Ban đêm trên trời có rất nhiều sao."
+   ],
+   [
+    "低温 天气 要 多 穿 衣服",
+    "Dīwēn tiānqì yào duō chuān yīfu.",
+    "Trời nhiệt độ thấp phải mặc nhiều áo."
+   ],
+   [
+    "我们 应该 少 用 塑料 袋子",
+    "Wǒmen yīnggāi shǎo yòng sùliào dàizi.",
+    "Chúng ta nên dùng ít túi nhựa."
+   ],
+   [
+    "高温 的 时候 不要 在 外面 待 太 久",
+    "Gāowēn de shíhou búyào zài wàimiàn dāi tài jiǔ.",
+    "Lúc nắng nóng đừng ở ngoài trời quá lâu."
+   ],
+   [
+    "这 几 天 的 气温 一直 在 下降",
+    "Zhè jǐ tiān de qìwēn yìzhí zài xiàjiàng.",
+    "Mấy ngày nay nhiệt độ liên tục giảm."
+   ]
+  ],
+  "tips": "Hán Việt: 气温 khí ôn (nhiệt độ không khí), 降温 giáng ôn, 下降 hạ giáng, 寒冷 hàn lãnh, 大自然 đại tự nhiên, 早晨 tảo thần, 夜晚 dạ vãn, 树林 thụ lâm, 鲜花 tiên hoa (hoa tươi), 环保 = 环境保护 hoàn cảnh bảo hộ. Bốn hướng + 部 = miền: 北部 bắc bộ, 南部 nam bộ — y hệt cách gọi miền Bắc, miền Nam của Việt Nam! 零下 = âm (dưới 0 độ); 摄氏度 = độ C, khi nói thường rút gọn thành 度. 落 đọc luò (rơi: 落下来); 江 (giang) là sông lớn như 长江, 河 (hà) là sông nói chung."
+ },
+ {
+  "id": "h3b-20",
+  "level": 4,
+  "icon": "健",
+  "title": "Sức khỏe & cơ thể",
+  "sub": "Đi khám, đo nhiệt độ, sống lành mạnh",
+  "goals": [
+   "Mô tả triệu chứng khi đi khám: 头痛, 咳, 量体温",
+   "Nói về thói quen tốt và xấu cho sức khỏe",
+   "Dùng 好好 + động từ, 对…起到…作用, phân biệt 减 và 减轻"
+  ],
+  "words": [
+   "步",
+   "痛",
+   "头痛",
+   "有效",
+   "压",
+   "烟",
+   "吸",
+   "量",
+   "卫生",
+   "加强",
+   "全身",
+   "体重",
+   "减",
+   "减轻",
+   "远离",
+   "健身",
+   "咳",
+   "体温",
+   "体检",
+   "身",
+   "起到",
+   "着火",
+   "空",
+   "好好",
+   "坏处"
+  ],
+  "grammar": [
+   {
+    "pattern": "好好 + Động từ",
+    "vi": "Lặp tính từ 好 thành 好好 rồi đặt trước động từ: làm việc gì đó cho đàng hoàng, cẩn thận, hết lòng. Rất hay dùng khi khuyên nhủ: 好好休息, 好好学习.",
+    "ex": [
+     "你发烧了，今天在家好好休息吧。",
+     "Nǐ fāshāo le, jīntiān zài jiā hǎohǎo xiūxi ba.",
+     "Bạn sốt rồi, hôm nay ở nhà nghỉ ngơi cho tốt nhé."
+    ]
+   },
+   {
+    "pattern": "A 对 B 起到 + (tính từ) + 作用",
+    "vi": "起到…作用 = 'có tác dụng…'. Dùng để nói hiệu quả của một việc. Trước 作用 thường có tính từ: 很大的, 很好的, 一定的.",
+    "ex": [
+     "每天多走几千步，对身体能起到很好的作用。",
+     "Měi tiān duō zǒu jǐ qiān bù, duì shēntǐ néng qǐdào hěn hǎo de zuòyòng.",
+     "Mỗi ngày đi bộ thêm vài nghìn bước có tác dụng rất tốt cho cơ thể."
+    ]
+   },
+   {
+    "pattern": "减 + con số  /  减轻 + gánh nặng",
+    "vi": "减 (giảm) đi với con số cụ thể: 减了三公斤. 减轻 (giảm nhẹ) đi với những thứ 'đè nặng' như 压力, 头痛, 体重: 减轻压力. Không nói 减轻三公斤.",
+    "ex": [
+     "健身两个月以后，他的体重减了五公斤。",
+     "Jiànshēn liǎng ge yuè yǐhòu, tā de tǐzhòng jiǎn le wǔ gōngjīn.",
+     "Sau hai tháng tập thể hình, cân nặng của anh ấy giảm năm cân."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "你哪儿不舒服？",
+    "Nǐ nǎr bù shūfu?",
+    "Anh thấy khó chịu ở đâu?"
+   ],
+   [
+    "B",
+    "我头痛，全身没有力气，晚上还一直咳。",
+    "Wǒ tóutòng, quánshēn méiyǒu lìqi, wǎnshang hái yìzhí ké.",
+    "Tôi đau đầu, cả người không có sức, buổi tối còn ho suốt."
+   ],
+   [
+    "A",
+    "我先给你量一下体温。体温有点儿高，你发烧了。",
+    "Wǒ xiān gěi nǐ liáng yíxià tǐwēn. Tǐwēn yǒudiǎnr gāo, nǐ fāshāo le.",
+    "Để tôi đo nhiệt độ cho bạn trước. Nhiệt độ hơi cao, bạn bị sốt rồi."
+   ],
+   [
+    "B",
+    "这个药有效吗？吃了以后头就不痛了吗？",
+    "Zhège yào yǒuxiào ma? Chī le yǐhòu tóu jiù bú tòng le ma?",
+    "Thuốc này có hiệu quả không? Uống xong đầu sẽ hết đau chứ?"
+   ],
+   [
+    "A",
+    "很有效。你平时吸烟吗？",
+    "Hěn yǒuxiào. Nǐ píngshí xī yān ma?",
+    "Rất hiệu quả. Bình thường anh có hút thuốc không?"
+   ],
+   [
+    "B",
+    "吸，工作压力大的时候一天吸半包。",
+    "Xī, gōngzuò yālì dà de shíhou yì tiān xī bàn bāo.",
+    "Có, lúc áp lực công việc lớn thì một ngày hút nửa bao."
+   ],
+   [
+    "A",
+    "烟对身体只有坏处，没有好处。你最好远离它。",
+    "Yān duì shēntǐ zhǐ yǒu huàichu, méiyǒu hǎochu. Nǐ zuìhǎo yuǎnlí tā.",
+    "Thuốc lá chỉ có hại cho cơ thể, chẳng có lợi gì. Tốt nhất anh nên tránh xa nó."
+   ],
+   [
+    "B",
+    "我知道。我打算多去健身，减轻一点儿压力。",
+    "Wǒ zhīdào. Wǒ dǎsuàn duō qù jiànshēn, jiǎnqīng yìdiǎnr yālì.",
+    "Tôi biết. Tôi định đi tập thể hình nhiều hơn để giảm bớt áp lực."
+   ],
+   [
+    "A",
+    "好。注意卫生，有空就多锻炼，下个月再来做一次体检。",
+    "Hǎo. Zhùyì wèishēng, yǒu kòng jiù duō duànliàn, xià ge yuè zài lái zuò yí cì tǐjiǎn.",
+    "Được. Chú ý vệ sinh, rảnh thì tập luyện nhiều vào, tháng sau quay lại khám sức khỏe một lần nữa."
+   ],
+   [
+    "B",
+    "谢谢医生，我一定好好休息。",
+    "Xièxie yīshēng, wǒ yídìng hǎohǎo xiūxi.",
+    "Cảm ơn bác sĩ, tôi nhất định sẽ nghỉ ngơi cho tốt."
+   ]
+  ],
+  "sentences": [
+   [
+    "我 走 了 几 步 就 累 了",
+    "Wǒ zǒu le jǐ bù jiù lèi le.",
+    "Tôi mới đi vài bước đã mệt rồi."
+   ],
+   [
+    "加强 锻炼 对 健康 有 好处",
+    "Jiāqiáng duànliàn duì jiànkāng yǒu hǎochu.",
+    "Tăng cường tập luyện có lợi cho sức khỏe."
+   ],
+   [
+    "她 的 体重 减 了 三 公斤",
+    "Tā de tǐzhòng jiǎn le sān gōngjīn.",
+    "Cân nặng của cô ấy giảm ba cân."
+   ],
+   [
+    "运动 能 起到 减轻 压力 的 作用",
+    "Yùndòng néng qǐdào jiǎnqīng yālì de zuòyòng.",
+    "Vận động có tác dụng giảm áp lực."
+   ],
+   [
+    "那边 好像 着火 了",
+    "Nàbiān hǎoxiàng zháohuǒ le.",
+    "Bên kia hình như bị cháy rồi."
+   ],
+   [
+    "他 换 了 一 身 新 衣服",
+    "Tā huàn le yì shēn xīn yīfu.",
+    "Anh ấy thay một bộ quần áo mới."
+   ],
+   [
+    "吸 烟 对 身体 有 坏处",
+    "Xī yān duì shēntǐ yǒu huàichu.",
+    "Hút thuốc có hại cho cơ thể."
+   ],
+   [
+    "你 先 量 一下 体温 吧",
+    "Nǐ xiān liáng yíxià tǐwēn ba.",
+    "Bạn đo nhiệt độ trước đã nhé."
+   ]
+  ],
+  "tips": "Hán Việt giúp nhớ nhanh: 体重 thể trọng, 体温 thể ôn, 体检 thể kiểm (khám thể chất), 健身 kiện thân, 远离 viễn ly, 有效 hữu hiệu, 卫生 vệ sinh, 加强 gia cường, 全身 toàn thân. Chú ý 量 có hai cách đọc: liáng là động từ 'đo' (量体温), liàng là danh từ 'lượng' (大量). 着火 đọc zháohuǒ, không đọc zhe. 空 đọc kōng khi là 'trống, rỗng' (空气), nhưng đọc kòng trong 有空 'rảnh'. 咳 thường dùng trong khẩu ngữ, đầy đủ là 咳嗽 (késou). Người Việt hay nói 'giảm cân' thành 减轻体重, câu này đúng, nhưng khi có con số thì phải dùng 减: 减了两公斤."
+ },
+ {
+  "id": "h3b-21",
+  "level": 4,
+  "icon": "家",
+  "title": "Gia đình & các thế hệ",
+  "sub": "Từ tuổi thơ đến tuổi già",
+  "goals": [
+   "Gọi tên các cặp quan hệ: 父子, 母女, 父女, 母子",
+   "Nói về các giai đoạn cuộc đời: 童年, 少年, 青年, 中年, 老年",
+   "Dùng 来自, 生在 / 活到 và 俩"
+  ],
+  "words": [
+   "活",
+   "生",
+   "自",
+   "性",
+   "女性",
+   "男性",
+   "男士",
+   "各位",
+   "父母",
+   "父子",
+   "父女",
+   "母女",
+   "母子",
+   "孙女",
+   "家长",
+   "老家",
+   "童年",
+   "少年",
+   "青年",
+   "中年",
+   "老年",
+   "一生",
+   "日子",
+   "晚安",
+   "院子",
+   "窗",
+   "零花钱"
+  ],
+  "grammar": [
+   {
+    "pattern": "Chủ ngữ + 来自 + Nơi chốn",
+    "vi": "来自 (lai tự) = 'đến từ', trang trọng hơn 是…人, hay dùng khi tự giới thiệu trước nhiều người. 自 là 'từ' trong văn viết.",
+    "ex": [
+     "各位好，我叫阿红，来自越南河内。",
+     "Gèwèi hǎo, wǒ jiào Ā Hóng, láizì Yuènán Hénèi.",
+     "Chào mọi người, tôi là A Hồng, đến từ Hà Nội, Việt Nam."
+    ]
+   },
+   {
+    "pattern": "Động từ + 在 / 到 (bổ ngữ)",
+    "vi": "生在 + nơi chốn: sinh ra ở đâu; 活到 + tuổi: sống đến bao nhiêu tuổi. 在 chỉ nơi chốn của kết quả, 到 chỉ mốc đạt tới.",
+    "ex": [
+     "我爷爷生在农村，活到了九十八岁。",
+     "Wǒ yéye shēng zài nóngcūn, huó dào le jiǔshíbā suì.",
+     "Ông nội tôi sinh ra ở nông thôn, sống đến chín mươi tám tuổi."
+    ]
+   },
+   {
+    "pattern": "A + B + 俩",
+    "vi": "Ghép hai danh xưng (父子, 母女, 父女, 母子) rồi thêm 俩 = 'hai bố con, hai mẹ con'. 俩 = 两个, nên sau 俩 không thêm 个.",
+    "ex": [
+     "他们父子俩长得很像。",
+     "Tāmen fùzǐ liǎ zhǎng de hěn xiàng.",
+     "Hai bố con họ trông rất giống nhau."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "各位，这是我们家的老照片。",
+    "Gèwèi, zhè shì wǒmen jiā de lǎo zhàopiàn.",
+    "Mọi người ơi, đây là ảnh cũ của nhà tôi."
+   ],
+   [
+    "B",
+    "院子里的小女孩是谁？",
+    "Yuànzi lǐ de xiǎo nǚhái shì shéi?",
+    "Cô bé trong sân là ai vậy?"
+   ],
+   [
+    "A",
+    "是我。旁边是我奶奶，我是她的孙女。那是我的童年。",
+    "Shì wǒ. Pángbiān shì wǒ nǎinai, wǒ shì tā de sūnnǚ. Nà shì wǒ de tóngnián.",
+    "Là tôi. Bên cạnh là bà nội, tôi là cháu gái của bà. Đó là tuổi thơ của tôi."
+   ],
+   [
+    "B",
+    "你的老家在哪儿？",
+    "Nǐ de lǎojiā zài nǎr?",
+    "Quê bạn ở đâu?"
+   ],
+   [
+    "A",
+    "在农村。每天早上，奶奶都打开窗，叫我起床。",
+    "Zài nóngcūn. Měi tiān zǎoshang, nǎinai dōu dǎkāi chuāng, jiào wǒ qǐchuáng.",
+    "Ở nông thôn. Sáng nào bà cũng mở cửa sổ gọi tôi dậy."
+   ],
+   [
+    "B",
+    "真好。小时候你父母给你零花钱吗？",
+    "Zhēn hǎo. Xiǎoshíhou nǐ fùmǔ gěi nǐ línghuāqián ma?",
+    "Hay thật. Hồi nhỏ bố mẹ có cho bạn tiền tiêu vặt không?"
+   ],
+   [
+    "A",
+    "给，一个星期十块。家长都说孩子要自己学着管钱。",
+    "Gěi, yí ge xīngqī shí kuài. Jiāzhǎng dōu shuō háizi yào zìjǐ xuézhe guǎn qián.",
+    "Có, mỗi tuần mười đồng. Phụ huynh đều nói trẻ con phải tự tập quản lý tiền."
+   ],
+   [
+    "B",
+    "我爸爸也这样。我们父女俩关系一直很好。",
+    "Wǒ bàba yě zhèyàng. Wǒmen fùnǚ liǎ guānxi yìzhí hěn hǎo.",
+    "Bố tôi cũng vậy. Hai bố con tôi lúc nào cũng thân nhau."
+   ],
+   [
+    "A",
+    "现在我奶奶八十多岁了，日子过得很开心。",
+    "Xiànzài wǒ nǎinai bāshí duō suì le, rìzi guò de hěn kāixīn.",
+    "Bây giờ bà tôi ngoài tám mươi rồi, sống rất vui vẻ."
+   ],
+   [
+    "B",
+    "祝她身体健康！时间不早了，晚安！",
+    "Zhù tā shēntǐ jiànkāng! Shíjiān bù zǎo le, wǎn'ān!",
+    "Chúc bà mạnh khỏe! Muộn rồi, chúc ngủ ngon!"
+   ]
+  ],
+  "sentences": [
+   [
+    "这 对 母女 常常 一起 去 买 东西",
+    "Zhè duì mǔnǚ chángcháng yìqǐ qù mǎi dōngxi.",
+    "Hai mẹ con này thường cùng nhau đi mua sắm."
+   ],
+   [
+    "母子 俩 在 家 看 电视",
+    "Mǔzǐ liǎ zài jiā kàn diànshì.",
+    "Hai mẹ con ở nhà xem tivi."
+   ],
+   [
+    "青年 是 一生 中 最 美好 的 时候",
+    "Qīngnián shì yìshēng zhōng zuì měihǎo de shíhou.",
+    "Tuổi thanh niên là quãng đẹp nhất trong đời."
+   ],
+   [
+    "中年 男性 的 工作 压力 很 大",
+    "Zhōngnián nánxìng de gōngzuò yālì hěn dà.",
+    "Đàn ông trung niên chịu áp lực công việc rất lớn."
+   ],
+   [
+    "这 家 店 只 卖 男士 衣服",
+    "Zhè jiā diàn zhǐ mài nánshì yīfu.",
+    "Cửa hàng này chỉ bán quần áo nam."
+   ],
+   [
+    "老年 人 要 多 注意 身体",
+    "Lǎonián rén yào duō zhùyì shēntǐ.",
+    "Người cao tuổi cần chú ý sức khỏe nhiều hơn."
+   ],
+   [
+    "现在 很 多 女性 自己 开 公司",
+    "Xiànzài hěn duō nǚxìng zìjǐ kāi gōngsī.",
+    "Bây giờ nhiều phụ nữ tự mở công ty."
+   ],
+   [
+    "他 是 一 个 爱 读书 的 少年",
+    "Tā shì yí ge ài dú shū de shàonián.",
+    "Cậu ấy là một thiếu niên ham đọc sách."
+   ]
+  ],
+  "tips": "Hán Việt: 童年 đồng niên, 少年 thiếu niên, 青年 thanh niên, 中年 trung niên, 老年 lão niên, chỉ cần đổi chữ đầu là nhớ cả nhóm. 父母 phụ mẫu, 孙女 tôn nữ (cháu gái nội), 一生 nhất sinh (cả đời). 家长 (gia trưởng) trong tiếng Trung hiện đại thường là 'phụ huynh học sinh', không mang ý 'gia trưởng, độc đoán' như tiếng Việt. 老家 không phải 'nhà già' mà là quê gốc. Chú ý chữ thứ hai cho biết giới tính của con: 父女 = bố và con gái, 母子 = mẹ và con trai. 男士/女士 là cách gọi lịch sự, gặp nhiều trên biển cửa hàng và nhà vệ sinh. 晚安 chỉ nói trước khi đi ngủ, không dùng như 'chào buổi tối'."
+ },
+ {
+  "id": "h3b-22",
+  "level": 4,
+  "icon": "网",
+  "title": "Internet & cuộc sống số",
+  "sub": "Video, mã QR, chuyển phát nhanh",
+  "goals": [
+   "Nói về các thao tác trên mạng: 扫码, 转发, 发送, 查找",
+   "Phân biệt 线上 / 线下, 回复 / 回信",
+   "Dùng 用来 / 用于, 便于, 按 và 通过"
+  ],
+  "words": [
+   "按",
+   "通",
+   "图",
+   "图片",
+   "全球",
+   "发出",
+   "科技",
+   "视频",
+   "快速",
+   "回复",
+   "回信",
+   "互联网",
+   "网页",
+   "网址",
+   "网友",
+   "线上",
+   "线下",
+   "扫码",
+   "转发",
+   "发送",
+   "查看",
+   "查找",
+   "获取",
+   "播放",
+   "收听",
+   "暂停",
+   "用于",
+   "用来",
+   "便于",
+   "快递",
+   "红包",
+   "进入"
+  ],
+  "grammar": [
+   {
+    "pattern": "A + 用来 + Động từ  /  A + 用于 + Danh từ",
+    "vi": "Cả hai đều là 'dùng để'. 用来 thiên về khẩu ngữ, sau là động từ; 用于 trang trọng hơn, hay gặp trên sách hướng dẫn, sau là danh từ hoặc động từ.",
+    "ex": [
+     "这个手机我只用来看视频。",
+     "Zhège shǒujī wǒ zhǐ yònglái kàn shìpín.",
+     "Chiếc điện thoại này tôi chỉ dùng để xem video."
+    ]
+   },
+   {
+    "pattern": "…, 便于 + Động từ",
+    "vi": "便于 (tiện vu) = 'để tiện cho…, để dễ…'. Thường đứng ở vế sau, nói mục đích của hành động trước.",
+    "ex": [
+     "请把网址发送给我，便于以后查找。",
+     "Qǐng bǎ wǎngzhǐ fāsòng gěi wǒ, biànyú yǐhòu cházhǎo.",
+     "Hãy gửi địa chỉ trang web cho tôi, để sau này tiện tìm."
+    ]
+   },
+   {
+    "pattern": "按 + Danh từ",
+    "vi": "按 có hai cách dùng: động từ 'ấn, bấm' (按这里) và giới từ 'theo' (按时间, 按要求).",
+    "ex": [
+     "按这里就能暂停播放。",
+     "Àn zhèlǐ jiù néng zàntíng bōfàng.",
+     "Bấm vào đây là có thể tạm dừng phát."
+    ]
+   },
+   {
+    "pattern": "通过 + phương tiện + Động từ",
+    "vi": "通过 (thông qua) đặt trước động từ, chỉ cách thức hoặc con đường để làm việc gì.",
+    "ex": [
+     "我们通过互联网获取全球的新闻。",
+     "Wǒmen tōngguò hùliánwǎng huòqǔ quánqiú de xīnwén.",
+     "Chúng ta có được tin tức toàn cầu thông qua Internet."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "你在看什么视频？",
+    "Nǐ zài kàn shénme shìpín?",
+    "Bạn đang xem video gì thế?"
+   ],
+   [
+    "B",
+    "一个线上汉语课。我把网址发给你了，你查看一下。",
+    "Yí ge xiànshàng Hànyǔ kè. Wǒ bǎ wǎngzhǐ fā gěi nǐ le, nǐ chákàn yíxià.",
+    "Một lớp tiếng Trung trực tuyến. Mình gửi địa chỉ web cho bạn rồi, bạn xem thử đi."
+   ],
+   [
+    "A",
+    "收到了，可是网页打不开。",
+    "Shōudào le, kěshì wǎngyè dǎ bu kāi.",
+    "Nhận được rồi, nhưng trang web không mở được."
+   ],
+   [
+    "B",
+    "那你扫码进入吧，更快速。",
+    "Nà nǐ sǎomǎ jìnrù ba, gèng kuàisù.",
+    "Vậy bạn quét mã để vào đi, nhanh hơn."
+   ],
+   [
+    "A",
+    "进去了！线下也有课吗？",
+    "Jìnqu le! Xiànxià yě yǒu kè ma?",
+    "Vào được rồi! Có cả lớp học trực tiếp không?"
+   ],
+   [
+    "B",
+    "有，每个周末一次，很多网友都去。",
+    "Yǒu, měi ge zhōumò yí cì, hěn duō wǎngyǒu dōu qù.",
+    "Có, mỗi cuối tuần một buổi, nhiều bạn trên mạng đều đi."
+   ],
+   [
+    "A",
+    "好，我先回复老师的邮件，报名线下课。",
+    "Hǎo, wǒ xiān huífù lǎoshī de yóujiàn, bàomíng xiànxià kè.",
+    "Được, mình trả lời email của cô giáo trước, đăng ký lớp trực tiếp."
+   ],
+   [
+    "B",
+    "对了，你的快递到了，在门口。",
+    "Duì le, nǐ de kuàidì dào le, zài ménkǒu.",
+    "À này, hàng chuyển phát của bạn tới rồi, ở ngoài cửa."
+   ],
+   [
+    "A",
+    "是我妈妈寄来的，里面还有一个红包！",
+    "Shì wǒ māma jì lái de, lǐmiàn hái yǒu yí ge hóngbāo!",
+    "Là mẹ mình gửi tới, bên trong còn có một bao lì xì!"
+   ],
+   [
+    "B",
+    "科技真方便！你拍张照片发送给她吧。",
+    "Kējì zhēn fāngbiàn! Nǐ pāi zhāng zhàopiàn fāsòng gěi tā ba.",
+    "Công nghệ tiện thật! Bạn chụp một tấm ảnh gửi cho mẹ đi."
+   ]
+  ],
+  "sentences": [
+   [
+    "他 转发 了 一 个 有意思 的 视频",
+    "Tā zhuǎnfā le yí ge yǒu yìsi de shìpín.",
+    "Anh ấy chia sẻ lại một video thú vị."
+   ],
+   [
+    "这 张 图片 是 网友 发 的",
+    "Zhè zhāng túpiàn shì wǎngyǒu fā de.",
+    "Bức ảnh này do một cư dân mạng đăng."
+   ],
+   [
+    "我 每 天 早上 收听 中文 广播",
+    "Wǒ měi tiān zǎoshang shōutīng Zhōngwén guǎngbō.",
+    "Sáng nào tôi cũng nghe đài tiếng Trung."
+   ],
+   [
+    "这 种 技术 用于 教学",
+    "Zhè zhǒng jìshù yòngyú jiàoxué.",
+    "Loại công nghệ này được dùng trong giảng dạy."
+   ],
+   [
+    "手机 发出 了 奇怪 的 声音",
+    "Shǒujī fāchū le qíguài de shēngyīn.",
+    "Điện thoại phát ra âm thanh lạ."
+   ],
+   [
+    "请 看 第 三 张 图",
+    "Qǐng kàn dì sān zhāng tú.",
+    "Mời xem hình thứ ba."
+   ],
+   [
+    "收到 信 以后 他 马上 回信 了",
+    "Shōudào xìn yǐhòu tā mǎshàng huíxìn le.",
+    "Nhận được thư, anh ấy liền viết thư trả lời."
+   ],
+   [
+    "电话 打 了 很 久 都 没 打 通",
+    "Diànhuà dǎ le hěn jiǔ dōu méi dǎ tōng.",
+    "Gọi điện rất lâu mà vẫn không gọi được."
+   ]
+  ],
+  "tips": "Hán Việt: 互联网 hỗ liên võng (mạng liên kết với nhau), 科技 khoa kỹ, 全球 toàn cầu, 获取 hoạch thủ, 快递 khoái đệ (đưa nhanh), 红包 hồng bao, 暂停 tạm đình, 快速 khoái tốc. 回复 (hồi phục) ở đây là 'hồi đáp' tin nhắn, email; 回信 là trả lời bằng thư. Chữ 网 (võng = lưới) có mặt trong mọi từ về mạng: 网页, 网址, 网友. 线上/线下 = 'trên mạng/ngoài đời' (online/offline). Người Việt hay nói 'quét mã' thành 扫描码, khẩu ngữ chỉ cần 扫码 (sǎomǎ). Nhóm từ với 发: 发送 (gửi đi), 转发 (chuyển tiếp, chia sẻ lại), 发出 (phát ra âm thanh, ánh sáng). 视频 (shìpín) là video, đừng nhầm với 电视 (tivi)."
+ },
+ {
+  "id": "h3b-23",
+  "level": 4,
+  "icon": "赛",
+  "title": "Thi đấu & nghệ thuật",
+  "sub": "Đội bóng, cuộc thi, sân khấu",
+  "goals": [
+   "Nói về đội, cuộc thi và giải thưởng",
+   "Nói về ca hát, kịch, phim và đàn",
+   "Dùng 为…加油, 被…打败, lượng từ 首 và phân biệt 加入/参加/参赛"
+  ],
+  "words": [
+   "队",
+   "队员",
+   "队长",
+   "球队",
+   "组",
+   "首",
+   "强",
+   "加入",
+   "加油",
+   "演",
+   "奖",
+   "获奖",
+   "赢得",
+   "打败",
+   "大赛",
+   "参赛",
+   "歌手",
+   "演唱",
+   "歌声",
+   "作家",
+   "电视剧",
+   "话剧",
+   "剧院",
+   "观看",
+   "听众",
+   "钢琴",
+   "琴"
+  ],
+  "grammar": [
+   {
+    "pattern": "为 / 给 + Ai + 加油",
+    "vi": "加油 (gia du, nghĩa gốc 'đổ thêm dầu') = 'cố lên'. Cổ vũ ai thì dùng 为/给 + người + 加油.",
+    "ex": [
+     "比赛那天，我们都去为球队加油。",
+     "Bǐsài nà tiān, wǒmen dōu qù wèi qiúduì jiāyóu.",
+     "Hôm thi đấu, chúng tôi đều đi cổ vũ cho đội bóng."
+    ]
+   },
+   {
+    "pattern": "A + 被 + B + 打败了",
+    "vi": "Câu bị động: A bị B đánh bại. Muốn nói chủ động thì đổi thành A + 打败了 + B.",
+    "ex": [
+     "上个星期，我们队被三班打败了。",
+     "Shàng ge xīngqī, wǒmen duì bèi sān bān dǎbài le.",
+     "Tuần trước, đội chúng tôi bị lớp 3 đánh bại."
+    ]
+   },
+   {
+    "pattern": "一 + 首 + 歌",
+    "vi": "首 là lượng từ cho bài hát, bài thơ. Nói 一首歌 tự nhiên hơn 一个歌.",
+    "ex": [
+     "她在晚会上演唱了一首中文歌。",
+     "Tā zài wǎnhuì shang yǎnchàng le yì shǒu Zhōngwén gē.",
+     "Cô ấy hát một bài hát tiếng Trung ở buổi dạ hội."
+    ]
+   },
+   {
+    "pattern": "加入 / 参加 / 参赛",
+    "vi": "加入 + tổ chức (加入球队: vào làm thành viên); 参加 + hoạt động (参加比赛); 参赛 = dự thi, không có tân ngữ phía sau.",
+    "ex": [
+     "他去年加入了学校的足球队。",
+     "Tā qùnián jiārù le xuéxiào de zúqiú duì.",
+     "Năm ngoái cậu ấy gia nhập đội bóng đá của trường."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "听说你们队参加了全市的篮球大赛？",
+    "Tīngshuō nǐmen duì cānjiā le quán shì de lánqiú dàsài?",
+    "Nghe nói đội các bạn tham gia giải bóng rổ lớn của cả thành phố à?"
+   ],
+   [
+    "B",
+    "对！一共有二十个球队参赛。",
+    "Duì! Yígòng yǒu èrshí ge qiúduì cānsài.",
+    "Đúng! Tổng cộng có hai mươi đội bóng dự thi."
+   ],
+   [
+    "A",
+    "结果怎么样？",
+    "Jiéguǒ zěnmeyàng?",
+    "Kết quả thế nào?"
+   ],
+   [
+    "B",
+    "我们打败了好几个很强的队，最后赢得了第二名。",
+    "Wǒmen dǎbài le hǎo jǐ ge hěn qiáng de duì, zuìhòu yíngdé le dì-èr míng.",
+    "Bọn mình đánh bại mấy đội rất mạnh, cuối cùng giành giải nhì."
+   ],
+   [
+    "A",
+    "太棒了！你们队长一定很高兴。",
+    "Tài bàng le! Nǐmen duìzhǎng yídìng hěn gāoxìng.",
+    "Tuyệt quá! Đội trưởng các bạn chắc vui lắm."
+   ],
+   [
+    "B",
+    "是啊，每个队员都获奖了。你周末做什么？",
+    "Shì a, měi ge duìyuán dōu huòjiǎng le. Nǐ zhōumò zuò shénme?",
+    "Ừ, đội viên nào cũng được thưởng. Cuối tuần bạn làm gì?"
+   ],
+   [
+    "A",
+    "我去剧院观看话剧，晚上还要听一个歌手演唱。",
+    "Wǒ qù jùyuàn guānkàn huàjù, wǎnshang hái yào tīng yí ge gēshǒu yǎnchàng.",
+    "Mình đến nhà hát xem kịch nói, buổi tối còn đi nghe một ca sĩ hát."
+   ],
+   [
+    "B",
+    "哪个歌手？",
+    "Nǎge gēshǒu?",
+    "Ca sĩ nào?"
+   ],
+   [
+    "A",
+    "就是那个会弹钢琴的女歌手，她的歌声特别好听。",
+    "Jiù shì nàge huì tán gāngqín de nǚ gēshǒu, tā de gēshēng tèbié hǎotīng.",
+    "Chính là nữ ca sĩ biết chơi piano đó, giọng hát cô ấy hay cực kỳ."
+   ],
+   [
+    "B",
+    "我知道她！她还在电视剧里演过医生，听众和观众都喜欢她。",
+    "Wǒ zhīdào tā! Tā hái zài diànshìjù lǐ yǎn guo yīshēng, tīngzhòng hé guānzhòng dōu xǐhuan tā.",
+    "Mình biết cô ấy! Cô ấy còn từng đóng vai bác sĩ trong phim truyền hình, cả người nghe lẫn khán giả đều thích cô ấy."
+   ]
+  ],
+  "sentences": [
+   [
+    "我们 班 一共 有 三 个 组",
+    "Wǒmen bān yígòng yǒu sān ge zǔ.",
+    "Lớp chúng tôi có tổng cộng ba nhóm."
+   ],
+   [
+    "这 位 作家 获得 了 一 个 大 奖",
+    "Zhè wèi zuòjiā huòdé le yí ge dà jiǎng.",
+    "Nhà văn này giành được một giải thưởng lớn."
+   ],
+   [
+    "我 从小 学 弹 琴",
+    "Wǒ cóngxiǎo xué tán qín.",
+    "Tôi học chơi đàn từ nhỏ."
+   ],
+   [
+    "大家 一起 为 他 加油",
+    "Dàjiā yìqǐ wèi tā jiāyóu.",
+    "Mọi người cùng cổ vũ cho anh ấy."
+   ],
+   [
+    "他 是 我们 的 队长",
+    "Tā shì wǒmen de duìzhǎng.",
+    "Anh ấy là đội trưởng của chúng tôi."
+   ],
+   [
+    "她 唱 了 一 首 很 美 的 歌",
+    "Tā chàng le yì shǒu hěn měi de gē.",
+    "Cô ấy hát một bài hát rất hay."
+   ],
+   [
+    "观众 都 很 喜欢 这 个 电视剧",
+    "Guānzhòng dōu hěn xǐhuan zhège diànshìjù.",
+    "Khán giả đều rất thích bộ phim truyền hình này."
+   ],
+   [
+    "我们 队 赢 了 比赛",
+    "Wǒmen duì yíng le bǐsài.",
+    "Đội chúng tôi thắng trận đấu."
+   ]
+  ],
+  "tips": "Hán Việt: 队长 đội trưởng, 队员 đội viên, 参赛 tham tái (dự thi), 大赛 đại tái, 获奖 hoạch tưởng (đoạt giải), 打败 đả bại, 赢得 doanh đắc, 演唱 diễn xướng, 歌手 ca thủ, 作家 tác gia, 剧院 kịch viện, 话剧 thoại kịch (kịch nói), 听众 thính chúng, 观看 quan khán. Chú ý 听众 là người nghe (đài, buổi hòa nhạc), 观众 là người xem. 演 + vai = đóng vai: 演医生. 加油 nghĩa đen là đổ xăng, nên ở cây xăng bạn cũng nghe 加油. 钢琴 cương cầm (piano); chơi đàn là 弹琴 (tán qín), không dùng 打 hay 玩. 强 (qiáng) = mạnh, Hán Việt 'cường' như trong 加强."
+ },
+ {
+  "id": "h3b-24",
+  "level": 4,
+  "icon": "既",
+  "title": "Liên từ & phó từ văn viết",
+  "sub": "Nối câu dài, nói trang trọng hơn",
+  "goals": [
+   "Nối ý bằng 既…又…, 不光…还…, 不论…都…",
+   "Dùng 将/将要, 已, 仍, 仅 trong văn viết và tin tức",
+   "Hiểu thông báo có 此次, 最终, 实际上, 能否"
+  ],
+  "words": [
+   "将",
+   "将要",
+   "就是",
+   "并",
+   "已",
+   "此",
+   "此次",
+   "另",
+   "能够",
+   "无法",
+   "能否",
+   "最终",
+   "同样",
+   "再次",
+   "仍",
+   "仅",
+   "仅仅",
+   "既",
+   "加上",
+   "不光",
+   "不论",
+   "再说",
+   "实际上",
+   "基本上",
+   "共",
+   "全都",
+   "相互",
+   "从中",
+   "有着"
+  ],
+  "grammar": [
+   {
+    "pattern": "既 + A + 又 + B",
+    "vi": "'Vừa A vừa B'. A và B thường cùng loại (cùng là tính từ hoặc cùng là động từ). Trang trọng hơn 又…又….",
+    "ex": [
+     "这份工作既能学到东西，又能多认识朋友。",
+     "Zhè fèn gōngzuò jì néng xuédào dōngxi, yòu néng duō rènshi péngyou.",
+     "Công việc này vừa học được nhiều thứ, vừa quen thêm bạn bè."
+    ]
+   },
+   {
+    "pattern": "不光 + A，还 / 也 + B",
+    "vi": "= 不但…而且…: 'không chỉ A mà còn B', khẩu ngữ hơn 不仅. Nếu hai vế cùng chủ ngữ thì chủ ngữ đứng trước 不光.",
+    "ex": [
+     "他不光会说汉语，还会写汉字。",
+     "Tā bùguāng huì shuō Hànyǔ, hái huì xiě Hànzì.",
+     "Anh ấy không chỉ biết nói tiếng Trung mà còn biết viết chữ Hán."
+    ]
+   },
+   {
+    "pattern": "不论 + câu hỏi / A还是B，… 都 …",
+    "vi": "'Bất luận… thì cũng…'. Sau 不论 phải là một câu hỏi (谁, 什么, 好不好) hoặc lựa chọn A还是B; vế sau dùng 都 hoặc 也.",
+    "ex": [
+     "不论天气好不好，他都去跑步。",
+     "Búlùn tiānqì hǎo bu hǎo, tā dōu qù pǎobù.",
+     "Bất kể trời đẹp hay không, anh ấy đều đi chạy bộ."
+    ]
+   },
+   {
+    "pattern": "将 / 将要 + Động từ",
+    "vi": "'Sẽ, sắp' trong văn viết, tin tức, thông báo (khẩu ngữ dùng 要, 会). Cùng nhóm văn viết: 已 = 已经, 仍 = 还, 仅 = 只, 此 = 这.",
+    "ex": [
+     "此次比赛将在下个月举行。",
+     "Cǐ cì bǐsài jiāng zài xià ge yuè jǔxíng.",
+     "Cuộc thi lần này sẽ được tổ chức vào tháng sau."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "你看到学校的通知了吗？交流活动将要开始报名了。",
+    "Nǐ kàndào xuéxiào de tōngzhī le ma? Jiāoliú huódòng jiāngyào kāishǐ bàomíng le.",
+    "Bạn thấy thông báo của trường chưa? Hoạt động giao lưu sắp mở đăng ký rồi."
+   ],
+   [
+    "B",
+    "看到了，可是这次仅仅要十个人。",
+    "Kàndào le, kěshì zhè cì jǐnjǐn yào shí ge rén.",
+    "Thấy rồi, nhưng lần này chỉ lấy có mười người."
+   ],
+   [
+    "A",
+    "我已报名了，你呢？",
+    "Wǒ yǐ bàomíng le, nǐ ne?",
+    "Mình đăng ký rồi, còn bạn?"
+   ],
+   [
+    "B",
+    "我还在想。实际上，我怕自己的汉语不够好。另外，路费也不便宜。",
+    "Wǒ hái zài xiǎng. Shíjìshang, wǒ pà zìjǐ de Hànyǔ bú gòu hǎo. Lìngwài, lùfèi yě bù piányi.",
+    "Mình còn đang nghĩ. Thật ra mình sợ tiếng Trung của mình chưa đủ tốt. Ngoài ra, tiền đi lại cũng không rẻ."
+   ],
+   [
+    "A",
+    "别担心，基本上大家的水平都差不多，你同样有机会。再说，这次活动就是为了相互学习。",
+    "Bié dānxīn, jīběnshang dàjiā de shuǐpíng dōu chàbuduō, nǐ tóngyàng yǒu jīhuì. Zàishuō, zhè cì huódòng jiù shì wèile xiānghù xuéxí.",
+    "Đừng lo, trình độ mọi người về cơ bản là như nhau, bạn cũng có cơ hội như vậy. Hơn nữa, hoạt động này chính là để học hỏi lẫn nhau."
+   ],
+   [
+    "B",
+    "你说得对。加上我本来就想去中国看看，那我也报名！",
+    "Nǐ shuō de duì. Jiāshang wǒ běnlái jiù xiǎng qù Zhōngguó kànkan, nà wǒ yě bàomíng!",
+    "Bạn nói đúng. Thêm vào đó mình vốn đã muốn sang Trung Quốc xem thử, vậy mình cũng đăng ký!"
+   ],
+   [
+    "A",
+    "太好了！不过最终能否参加，还要看面试的结果。",
+    "Tài hǎo le! Búguò zuìzhōng néngfǒu cānjiā, hái yào kàn miànshì de jiéguǒ.",
+    "Tuyệt! Nhưng cuối cùng có được tham gia hay không còn tùy kết quả phỏng vấn."
+   ],
+   [
+    "B",
+    "不论结果怎么样，我都要试一试。",
+    "Búlùn jiéguǒ zěnmeyàng, wǒ dōu yào shì yi shì.",
+    "Bất kể kết quả thế nào, mình cũng phải thử một lần."
+   ]
+  ],
+  "sentences": [
+   [
+    "这 本 书 共 有 十 课",
+    "Zhè běn shū gòng yǒu shí kè.",
+    "Cuốn sách này có tất cả mười bài."
+   ],
+   [
+    "他 并 不 知道 这 件 事",
+    "Tā bìng bù zhīdào zhè jiàn shì.",
+    "Thật ra anh ấy hoàn toàn không biết chuyện này."
+   ],
+   [
+    "雨 已 停 了 可是 天 仍 很 冷",
+    "Yǔ yǐ tíng le, kěshì tiān réng hěn lěng.",
+    "Mưa đã tạnh nhưng trời vẫn rất lạnh."
+   ],
+   [
+    "我 无法 回答 这 个 问题",
+    "Wǒ wúfǎ huídá zhège wèntí.",
+    "Tôi không thể trả lời câu hỏi này."
+   ],
+   [
+    "我们 从中 学 到 了 很 多 东西",
+    "Wǒmen cóngzhōng xuédào le hěn duō dōngxi.",
+    "Chúng tôi học được rất nhiều điều từ đó."
+   ],
+   [
+    "这 个 城市 有着 很 长 的 历史",
+    "Zhège chéngshì yǒuzhe hěn cháng de lìshǐ.",
+    "Thành phố này có lịch sử rất lâu đời."
+   ],
+   [
+    "他 再次 去 了 北京",
+    "Tā zàicì qù le Běijīng.",
+    "Anh ấy lại đến Bắc Kinh một lần nữa."
+   ],
+   [
+    "我们 全都 能够 参加",
+    "Wǒmen quándōu nénggòu cānjiā.",
+    "Tất cả chúng tôi đều có thể tham gia."
+   ]
+  ],
+  "tips": "Bài này là 'phiên bản văn viết' của những từ bạn đã biết: 已 = 已经 (dĩ), 仍 = 还 (nhưng → 'vẫn'), 仅 / 仅仅 = 只 (cận), 将 = 要/会 (tương lai), 此 = 这 (thử), 此次 = 这次, 共 = 一共, 能否 = 能不能, 无法 = 没办法, 全都 = 都. Hán Việt giúp đoán nghĩa: 最终 tối chung (cuối cùng), 相互 tương hỗ, 同样 đồng dạng, 再次 tái thứ, 基本上 cơ bản thượng, 实际上 thực tế thượng. 并 + 不/没 dùng để bác bỏ một suy đoán: 他并不知道 = 'thật ra anh ấy đâu có biết'. 另 (lánh) = khác: 另一个人, 另外. Lỗi hay gặp: sau 不论 lại dùng câu khẳng định (不论天气好 → sai), phải là câu hỏi hoặc lựa chọn. Các từ này dùng nhiều trong bài đọc HSK 4 và tin tức, khi nói chuyện thân mật dùng quá nhiều sẽ nghe cứng như đọc bản tin."
+ },
+ {
+  "id": "h3b-25",
+  "level": 4,
+  "icon": "数",
+  "title": "Số lượng, so sánh & thời điểm",
+  "sub": "Bao nhiêu, hơn kém, trước sau",
+  "goals": [
+   "Nói về số lượng: 大量, 少量, 多数, 少数, 左右, 以内",
+   "So sánh bằng 高于, 低于, 跟…相比",
+   "Diễn đạt mốc thời gian: 之前, 之后, 年底, 月份, 等到"
+  ],
+  "words": [
+   "全",
+   "整",
+   "数",
+   "之后",
+   "之前",
+   "之间",
+   "之中",
+   "左右",
+   "不够",
+   "缺",
+   "各种",
+   "各个",
+   "大量",
+   "少量",
+   "多数",
+   "少数",
+   "人数",
+   "相比",
+   "高于",
+   "低于",
+   "以内",
+   "多样",
+   "末",
+   "等到",
+   "月份",
+   "年底",
+   "前后",
+   "底下"
+  ],
+  "grammar": [
+   {
+    "pattern": "A + 高于 / 低于 + B",
+    "vi": "高于 = cao hơn, 低于 = thấp hơn (于 = 'so với', văn viết). Dùng nhiều khi nói số liệu, nhiệt độ, giá cả.",
+    "ex": [
+     "今年参加活动的人数高于去年。",
+     "Jīnnián cānjiā huódòng de rénshù gāoyú qùnián.",
+     "Số người tham gia hoạt động năm nay cao hơn năm ngoái."
+    ]
+   },
+   {
+    "pattern": "跟 + B + 相比，A + …",
+    "vi": "'So với B thì A…'. Cụm 跟…相比 đặt đầu câu, vế sau nêu kết quả so sánh.",
+    "ex": [
+     "跟上个月相比，这个月的电费少了一半。",
+     "Gēn shàng ge yuè xiāngbǐ, zhège yuè de diànfèi shǎo le yíbàn.",
+     "So với tháng trước, tiền điện tháng này giảm một nửa."
+    ]
+   },
+   {
+    "pattern": "Số lượng + 左右 / 以内",
+    "vi": "左右 đặt SAU con số để chỉ 'khoảng chừng': 三十人左右. 以内 cũng đứng sau: 一个小时以内 = trong vòng một tiếng.",
+    "ex": [
+     "我们公司有一百人左右。",
+     "Wǒmen gōngsī yǒu yìbǎi rén zuǒyòu.",
+     "Công ty chúng tôi có khoảng một trăm người."
+    ]
+   },
+   {
+    "pattern": "… 之前 / 之后 / 之间 / 之中",
+    "vi": "之前 = trước (khi), 之后 = sau (khi), trang trọng hơn 以前/以后. 之间 = giữa (hai bên), 之中 = trong số.",
+    "ex": [
+     "下班之前，请把表交给我。",
+     "Xiàbān zhīqián, qǐng bǎ biǎo jiāo gěi wǒ.",
+     "Trước khi tan làm, hãy nộp bảng cho tôi."
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "年底的晚会准备得怎么样了？",
+    "Niándǐ de wǎnhuì zhǔnbèi de zěnmeyàng le?",
+    "Buổi tiệc cuối năm chuẩn bị đến đâu rồi?"
+   ],
+   [
+    "B",
+    "全公司一共八十人左右，人数已经定了。",
+    "Quán gōngsī yígòng bāshí rén zuǒyòu, rénshù yǐjīng dìng le.",
+    "Cả công ty tổng cộng khoảng tám mươi người, số người đã chốt rồi."
+   ],
+   [
+    "A",
+    "大家想吃中餐还是快餐？",
+    "Dàjiā xiǎng chī zhōngcān háishi kuàicān?",
+    "Mọi người muốn ăn món Trung hay đồ ăn nhanh?"
+   ],
+   [
+    "B",
+    "多数人想吃中餐，少数人想吃快餐。所以菜要多样一点儿。",
+    "Duōshù rén xiǎng chī zhōngcān, shǎoshù rén xiǎng chī kuàicān. Suǒyǐ cài yào duōyàng yìdiǎnr.",
+    "Đa số muốn ăn món Trung, số ít muốn ăn đồ ăn nhanh. Vì vậy món ăn phải đa dạng một chút."
+   ],
+   [
+    "A",
+    "钱够吗？花的钱要在两万块以内。",
+    "Qián gòu ma? Huā de qián yào zài liǎngwàn kuài yǐnèi.",
+    "Tiền có đủ không? Số tiền tiêu phải trong vòng hai vạn tệ."
+   ],
+   [
+    "B",
+    "买菜的钱还不够，缺两千。我打算买大量的水果，只买少量的酒。",
+    "Mǎi cài de qián hái bú gòu, quē liǎngqiān. Wǒ dǎsuàn mǎi dàliàng de shuǐguǒ, zhǐ mǎi shǎoliàng de jiǔ.",
+    "Tiền mua đồ ăn vẫn chưa đủ, thiếu hai nghìn. Tôi định mua thật nhiều trái cây, chỉ mua ít rượu."
+   ],
+   [
+    "A",
+    "好。各个部门之间还要准备节目。",
+    "Hǎo. Gègè bùmén zhījiān hái yào zhǔnbèi jiémù.",
+    "Được. Các phòng ban còn phải chuẩn bị tiết mục với nhau."
+   ],
+   [
+    "B",
+    "时间定在十二月份，月末那个周末。整个晚会三个小时左右。",
+    "Shíjiān dìng zài shí'èr yuèfèn, yuèmò nàge zhōumò. Zhěnggè wǎnhuì sān ge xiǎoshí zuǒyòu.",
+    "Thời gian chốt vào tháng Mười Hai, cuối tuần cuối tháng. Cả buổi tiệc khoảng ba tiếng."
+   ],
+   [
+    "A",
+    "那七点之前开始，十点之后结束，对吧？",
+    "Nà qī diǎn zhīqián kāishǐ, shí diǎn zhīhòu jiéshù, duì ba?",
+    "Vậy bắt đầu trước bảy giờ, kết thúc sau mười giờ, đúng không?"
+   ],
+   [
+    "B",
+    "对。那天我会数一下来了多少人。",
+    "Duì. Nà tiān wǒ huì shǔ yíxià lái le duōshao rén.",
+    "Đúng. Hôm đó tôi sẽ đếm xem có bao nhiêu người đến."
+   ]
+  ],
+  "sentences": [
+   [
+    "他 是 我们 之中 最 高 的",
+    "Tā shì wǒmen zhīzhōng zuì gāo de.",
+    "Anh ấy cao nhất trong số chúng tôi."
+   ],
+   [
+    "这 家 商店 有 各种 水果",
+    "Zhè jiā shāngdiàn yǒu gè zhǒng shuǐguǒ.",
+    "Cửa hàng này có đủ loại trái cây."
+   ],
+   [
+    "等到 放假 我们 再 去 旅游",
+    "Děngdào fàngjià wǒmen zài qù lǚyóu.",
+    "Đợi đến khi nghỉ lễ chúng ta hãy đi du lịch."
+   ],
+   [
+    "过年 前后 机票 很 贵",
+    "Guònián qiánhòu jīpiào hěn guì.",
+    "Khoảng trước và sau Tết vé máy bay rất đắt."
+   ],
+   [
+    "猫 在 桌子 底下 睡觉",
+    "Māo zài zhuōzi dǐxia shuìjiào.",
+    "Con mèo ngủ dưới gầm bàn."
+   ],
+   [
+    "今天 的 气温 低于 昨天",
+    "Jīntiān de qìwēn dīyú zuótiān.",
+    "Nhiệt độ hôm nay thấp hơn hôm qua."
+   ],
+   [
+    "跟 去年 相比 今年 的 人数 多 了",
+    "Gēn qùnián xiāngbǐ, jīnnián de rénshù duō le.",
+    "So với năm ngoái, số người năm nay đông hơn."
+   ],
+   [
+    "全 班 同学 都 来 了",
+    "Quán bān tóngxué dōu lái le.",
+    "Cả lớp đều đến rồi."
+   ]
+  ],
+  "tips": "Hán Việt: 大量 đại lượng, 少量 thiểu lượng, 多数 đa số, 少数 thiểu số, 人数 nhân số, 多样 đa dạng, 相比 tương tỉ, 以内 dĩ nội, 年底 niên để (cuối năm), 月份 nguyệt phần, 整 chỉnh (cả, nguyên vẹn), 缺 khuyết (thiếu). Lỗi điển hình của người Việt: đặt 左右 trước số theo kiểu 'khoảng 30' → 左右三十 là sai, phải nói 三十左右. 以内 cũng vậy: 一个小时以内. 数 đọc shǔ khi là động từ 'đếm', đọc shù khi là danh từ 'số' (人数, 多数). 各 = các/mỗi: 各种 (các loại), 各个 (từng cái). 底下 (dǐxia) = 下面, rất hay dùng trong khẩu ngữ: 桌子底下. 末 (mạt) = cuối: 周末, 月末, 年末."
+ },
+ {
+  "id": "h3b-26",
+  "level": 4,
+  "icon": "想",
+  "title": "Cảm xúc & suy nghĩ",
+  "sub": "Vui, buồn, bực bội và ước mơ",
+  "goals": [
+   "Diễn tả cảm xúc: 烦, 不满, 感人, 难忘, 好笑",
+   "Nói về suy nghĩ và ước mơ: 想法, 说法, 梦想",
+   "Dùng 老是, 稍 + động từ, 气得…, 真巧"
+  ],
+  "words": [
+   "心",
+   "气",
+   "感",
+   "准",
+   "嗯",
+   "想法",
+   "说法",
+   "梦想",
+   "美好",
+   "内心",
+   "烦",
+   "不满",
+   "好笑",
+   "少见",
+   "巧",
+   "细心",
+   "难忘",
+   "感人",
+   "友情",
+   "抬头",
+   "做梦",
+   "客气",
+   "老是",
+   "稍",
+   "大大"
+  ],
+  "grammar": [
+   {
+    "pattern": "老是 + Động từ",
+    "vi": "'Cứ, lúc nào cũng…', thường mang ý phàn nàn, không hài lòng. Muốn trung tính thì dùng 总是.",
+    "ex": [
+     "他老是迟到，老师很不满。",
+     "Tā lǎoshì chídào, lǎoshī hěn bùmǎn.",
+     "Cậu ấy cứ đi muộn hoài, thầy giáo rất không hài lòng."
+    ]
+   },
+   {
+    "pattern": "稍 + Động từ / Tính từ + 一下 / 一点儿",
+    "vi": "稍 = 'hơi, một chút', mang sắc thái lịch sự hoặc văn viết. 请稍等一下 = 'xin vui lòng đợi một chút', câu quen thuộc ở quầy dịch vụ.",
+    "ex": [
+     "请稍等一下，经理马上就来。",
+     "Qǐng shāo děng yíxià, jīnglǐ mǎshàng jiù lái.",
+     "Xin vui lòng đợi một chút, quản lý sẽ đến ngay."
+    ]
+   },
+   {
+    "pattern": "Ai + 气 + 得 + kết quả",
+    "vi": "气 làm động từ = 'tức giận, làm tức'. 气得说不出话 = tức đến không nói nên lời. Nói chung chung thì dùng 很生气.",
+    "ex": [
+     "弟弟把我的电脑弄坏了，我气得说不出话。",
+     "Dìdi bǎ wǒ de diànnǎo nòng huài le, wǒ qì de shuō bu chū huà.",
+     "Em trai làm hỏng máy tính của tôi, tôi tức đến không nói nên lời."
+    ]
+   },
+   {
+    "pattern": "真巧 / 太巧了",
+    "vi": "巧 = 'khéo, trùng hợp'. Tình cờ gặp hay trùng ý nhau: 真巧！ 巧 còn nghĩa 'khéo tay': 她的手很巧.",
+    "ex": [
+     "真巧，我也要去那儿！",
+     "Zhēn qiǎo, wǒ yě yào qù nàr!",
+     "Thật trùng hợp, tôi cũng định đi đến đó!"
+    ]
+   }
+  ],
+  "dialogue": [
+   [
+    "A",
+    "嗯？你怎么了？看起来很烦。",
+    "Ńg? Nǐ zěnme le? Kàn qǐlai hěn fán.",
+    "Hả? Bạn sao thế? Trông bực bội quá."
+   ],
+   [
+    "B",
+    "别提了，同事老是让我帮他做事，我心里很不满。",
+    "Bié tí le, tóngshì lǎoshì ràng wǒ bāng tā zuò shì, wǒ xīnli hěn bùmǎn.",
+    "Đừng nhắc nữa, đồng nghiệp cứ nhờ tôi làm hộ việc, trong lòng tôi rất không vui."
+   ],
+   [
+    "A",
+    "你应该跟他说说你的想法，别太客气。",
+    "Nǐ yīnggāi gēn tā shuōshuo nǐ de xiǎngfǎ, bié tài kèqi.",
+    "Bạn nên nói với anh ta suy nghĩ của mình, đừng khách sáo quá."
+   ],
+   [
+    "B",
+    "好，我稍想一想怎么说。对了，昨天我看了一部电影，特别感人。",
+    "Hǎo, wǒ shāo xiǎng yi xiǎng zěnme shuō. Duì le, zuótiān wǒ kàn le yí bù diànyǐng, tèbié gǎnrén.",
+    "Ừ, để tôi nghĩ một chút xem nói thế nào. À, hôm qua tôi xem một bộ phim, cảm động lắm."
+   ],
+   [
+    "A",
+    "真巧，我昨天也看了！最后我都哭了。",
+    "Zhēn qiǎo, wǒ zuótiān yě kàn le! Zuìhòu wǒ dōu kū le.",
+    "Trùng hợp ghê, hôm qua tôi cũng xem! Đoạn cuối tôi khóc luôn."
+   ],
+   [
+    "B",
+    "电影里说，友情是一生中最美好的东西。我很喜欢这个说法。",
+    "Diànyǐng lǐ shuō, yǒuqíng shì yìshēng zhōng zuì měihǎo de dōngxi. Wǒ hěn xǐhuan zhège shuōfǎ.",
+    "Trong phim nói tình bạn là điều đẹp nhất trong đời. Tôi rất thích cách nói này."
+   ],
+   [
+    "A",
+    "我觉得它还想说：有梦想很好，但不能只做梦。",
+    "Wǒ juéde tā hái xiǎng shuō: yǒu mèngxiǎng hěn hǎo, dàn bù néng zhǐ zuòmèng.",
+    "Tôi thấy phim còn muốn nói: có ước mơ thì tốt, nhưng không thể chỉ mơ mộng."
+   ],
+   [
+    "B",
+    "对，这样的好电影现在很少见，真让人难忘。",
+    "Duì, zhèyàng de hǎo diànyǐng xiànzài hěn shǎojiàn, zhēn ràng rén nánwàng.",
+    "Đúng vậy, phim hay như thế bây giờ hiếm lắm, thật khó quên."
+   ]
+  ],
+  "sentences": [
+   [
+    "这 部 电影 大大 改变 了 我 的 想法",
+    "Zhè bù diànyǐng dàdà gǎibiàn le wǒ de xiǎngfǎ.",
+    "Bộ phim này đã thay đổi rất nhiều suy nghĩ của tôi."
+   ],
+   [
+    "她 的 内心 很 美",
+    "Tā de nèixīn hěn měi.",
+    "Tâm hồn cô ấy rất đẹp."
+   ],
+   [
+    "他 是 一 个 很 细心 的 人",
+    "Tā shì yí ge hěn xìxīn de rén.",
+    "Anh ấy là một người rất chu đáo, tỉ mỉ."
+   ],
+   [
+    "你 说 得 真 准",
+    "Nǐ shuō de zhēn zhǔn.",
+    "Bạn nói chuẩn thật."
+   ],
+   [
+    "听 到 声音 他 抬头 看 了 看",
+    "Tīngdào shēngyīn, tā táitóu kàn le kàn.",
+    "Nghe thấy tiếng động, anh ấy ngẩng đầu nhìn."
+   ],
+   [
+    "这 个 笑话 太 好笑 了",
+    "Zhège xiàohua tài hǎoxiào le.",
+    "Câu chuyện cười này buồn cười quá."
+   ],
+   [
+    "不要 跟 我 客气",
+    "Búyào gēn wǒ kèqi.",
+    "Đừng khách sáo với tôi."
+   ],
+   [
+    "他 气 得 什么 都 不 说",
+    "Tā qì de shénme dōu bù shuō.",
+    "Anh ấy tức đến mức chẳng nói gì cả."
+   ]
+  ],
+  "tips": "Hán Việt: 内心 nội tâm, 感人 cảm nhân (làm người ta cảm động), 友情 hữu tình (ở đây là 'tình bạn', không phải 'hữu tình' kiểu phong cảnh), 梦想 mộng tưởng (ước mơ), 不满 bất mãn, 难忘 nan vong (khó quên), 细心 tế tâm (tỉ mỉ, chu đáo), 烦 phiền, 巧 xảo. Chú ý: 客气 (khách khí) = khách sáo; câu 别客气 / 不要客气 là 'đừng khách sáo'. 老是 (lão thị) không liên quan đến 'già', mà là 'cứ… mãi', thường để phàn nàn. 少见 (thiểu kiến) = hiếm thấy. 准 (chuẩn) = chính xác: 说得准, 猜得准. 嗯 có nhiều thanh tùy ngữ điệu: ńg (hỏi lại 'hả?'), ǹg (đồng ý 'ừ'). Phân biệt 想法 (ý nghĩ của mình) và 说法 (cách nói, ý kiến được đưa ra)."
+ }
+]
