@@ -1,47 +1,124 @@
 // Bộ định tuyến hash và khởi tạo ứng dụng
 (function () {
   const view = document.getElementById("view");
-  const nav = document.getElementById("nav");
+  const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
+
+  // Nhóm của từng trang, để tô sáng đúng mục trên thanh tab điện thoại
+  const TAB_OF = { "": "home", lessons: "learn", lesson: "learn", words: "learn", read: "learn", pinyin: "learn", radicals: "learn", roadmap: "learn", review: "review", exam: "exam" };
+  const SIDE_OF = { lesson: "/lessons" };
 
   function route() {
     const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
     const name = parts[0] || "";
     App.keyHandler = null;
+    setFocus(false);
+    UI.closeSheet();
     if (window.speechSynthesis) speechSynthesis.cancel();
     let r;
-    switch (name) {
-      case "": r = Views.home(); break;
-      case "roadmap": r = Views.roadmap(); break;
-      case "pinyin": r = Views.pinyin(parts[1]); break;
-      case "radicals": r = Views.radicals(); break;
-      case "lessons": r = Views.lessons(parts[1]); break;
-      case "lesson": r = Views.lesson(parts[1], parts[2]); break;
-      case "review": r = Views.review(); break;
-      case "write": r = Views.write(parts[1], parts[2]); break;
-      case "read": r = parts[1] ? Views.reading(parts[1]) : Views.readList(); break;
-      case "speak": r = Views.speak(); break;
-      case "dictionary": r = Views.dictionary(); break;
-      case "exam": r = Views.exam(parts[1]); break;
-      case "settings": r = Views.settings(); break;
-      default: r = { html: `<div class="card center"><h2>Không tìm thấy trang</h2><a class="btn btn-primary" href="#/">Về trang chủ</a></div>` };
+    try {
+      switch (name) {
+        case "": r = Views.home(); break;
+        case "roadmap": r = Views.roadmap(); break;
+        case "pinyin": r = Views.pinyin(parts[1]); break;
+        case "radicals": r = Views.radicals(); break;
+        case "lessons": r = Views.lessons(parts[1]); break;
+        case "lesson": r = Views.lesson(parts[1], parts[2]); break;
+        case "review": r = Views.review(); break;
+        case "write": r = Views.write(parts[1], parts[2]); break;
+        case "read": r = parts[1] ? Views.reading(parts[1]) : Views.readList(); break;
+        case "speak": r = Views.speak(); break;
+        case "dictionary": r = Views.dictionary(); break;
+        case "exam": r = parts[1] && parts[1].startsWith("h3-") ? H3V.exam(parts[1]) : Views.exam(parts[1]); break;
+        case "words": r = H3V.words(parts[1]); break;
+        case "about": r = H3V.about(); break;
+        case "settings": r = Views.settings(); break;
+        default: r = { html: `<div class="card center empty"><h2>Không tìm thấy trang</h2><p class="muted">Đường dẫn này không tồn tại.</p><a class="btn btn-primary" href="#/">Về trang chủ</a></div>` };
+      }
+    } catch (err) {
+      console.error(err);
+      r = { html: `<div class="card center empty"><h2>Trang gặp lỗi</h2><p class="muted">${String(err.message || err)}</p><a class="btn btn-primary" href="#/">Về trang chủ</a></div>` };
     }
     view.innerHTML = r.html;
     if (r.after) r.after(view);
+    fitTabs(view);
+    shortenSubtitle(view);
+    // hiệu ứng vào trang nhẹ, bỏ qua nếu hệ điều hành bật "giảm chuyển động"
+    if (!reduceMotion.matches) { view.classList.remove("enter"); void view.offsetWidth; view.classList.add("enter"); }
     window.scrollTo(0, 0);
-    nav.querySelectorAll("a").forEach((a) => a.classList.toggle("active", a.dataset.route === "/" + (name === "lesson" ? "lessons" : name)));
-    nav.classList.remove("open");
+    const sideKey = SIDE_OF[name] || "/" + name;
+    document.querySelectorAll("[data-route]").forEach((a) => {
+      const on = a.dataset.route === sideKey;
+      a.classList.toggle("active", on);
+      if (on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+    });
+    const tab = TAB_OF[name] || "more";
+    document.querySelectorAll(".tabbar [data-tab]").forEach((a) => a.classList.toggle("active", a.dataset.tab === tab));
+    const h1 = view.querySelector("h1");
+    document.title = (h1 && name ? h1.textContent.trim() + " · " : "") + "Nǐ hǎo – Học tiếng Trung từ số 0";
     App.updateBadge();
   }
 
-  function updateBadge() {
-    const b = document.getElementById("due-badge");
-    const n = SRS.dueIds().length;
-    b.textContent = n; b.classList.toggle("zero", n === 0);
+  // Đoạn giới thiệu dài: giữ câu đầu, phần còn lại gập vào "Xem thêm" để trang thoáng hơn
+  function shortenSubtitle(root) {
+    const p = root.querySelector(":scope > p.subtitle");
+    if (!p || p.textContent.length < 170) return;
+    const nodes = [...p.childNodes];
+    for (let i = 0; i < nodes.length; i++) {
+      const n = nodes[i];
+      if (n.nodeType !== 3) continue;
+      const m = n.data.search(/\.\s/);
+      if (m < 0) continue;
+      const rest = n.data.slice(m + 2);
+      if (p.textContent.length - (p.textContent.indexOf(n.data) + m) < 60) return;
+      n.data = n.data.slice(0, m + 1);
+      const d = document.createElement("details");
+      d.className = "hint";
+      d.innerHTML = `<summary>${ic("info")}Xem thêm</summary>`;
+      d.append(rest, ...nodes.slice(i + 1));
+      p.after(d);
+      return;
+    }
   }
+
+  // Dải tab quá dài thì cuộn ngang: làm mờ mép phải và đưa tab đang chọn vào giữa
+  function fitTabs(root) {
+    root.querySelectorAll(".tabs").forEach((t) => {
+      const upd = () => {
+        const sc = t.scrollWidth > t.clientWidth + 2;
+        t.classList.toggle("scrollable", sc);
+        t.classList.toggle("at-end", !sc || t.scrollLeft + t.clientWidth >= t.scrollWidth - 4);
+      };
+      if (!t._fit) {
+        t._fit = true;
+        t.addEventListener("scroll", upd, { passive: true });
+        const a = t.querySelector(".active");
+        if (a && t.scrollWidth > t.clientWidth) t.scrollLeft = a.offsetLeft - t.offsetLeft - (t.clientWidth - a.offsetWidth) / 2;
+      }
+      upd();
+    });
+  }
+  addEventListener("resize", () => fitTabs(view));
+  // các trang tự vẽ lại một phần (đổi tab trong trang) cũng cần kiểm tra lại
+  let fitRaf = 0;
+  new MutationObserver(() => { cancelAnimationFrame(fitRaf); fitRaf = requestAnimationFrame(() => fitTabs(view)); }).observe(view, { childList: true, subtree: true });
+
+  function updateBadge() {
+    const n = SRS.dueIds().length;
+    document.querySelectorAll("[data-due]").forEach((b) => { b.textContent = n > 99 ? "99+" : n; b.classList.toggle("zero", n === 0); });
+  }
+
+  // Chế độ tập trung: ẩn thanh điều hướng điện thoại khi ôn thẻ / làm đề
+  function setFocus(on) { document.body.classList.toggle("focus-mode", !!on); }
 
   function setTheme(t) {
     document.documentElement.dataset.theme = t;
     Store.state.settings.theme = t; Store.save();
+    const dark = t === "dark";
+    document.querySelectorAll(".theme-toggle use").forEach((u) => u.setAttribute("href", dark ? "#i-sun" : "#i-moon"));
+    const lbl = document.querySelector("#theme-toggle span");
+    if (lbl) lbl.textContent = dark ? "Giao diện sáng" : "Giao diện tối";
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = dark ? "#141210" : "#f7f5f1";
   }
 
   function setZh(size) {
@@ -49,14 +126,18 @@
     Store.state.settings.zhSize = size || "normal"; Store.save();
   }
 
-  window.App = { route, updateBadge, setTheme, setZh, keyHandler: null };
+  window.App = { route, updateBadge, setTheme, setZh, setFocus, keyHandler: null };
 
   // init
   setTheme(Store.state.settings.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
   setZh(Store.state.settings.zhSize);
-  document.getElementById("theme-toggle").onclick = () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
-  document.getElementById("menu-toggle").onclick = () => nav.classList.toggle("open");
-  document.addEventListener("keydown", (e) => { if (App.keyHandler) App.keyHandler(e); });
+  document.querySelectorAll(".theme-toggle").forEach((b) => b.onclick = () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark"));
+  document.getElementById("more-btn").onclick = () => UI.openSheet();
+  document.getElementById("sheet-backdrop").onclick = () => UI.closeSheet();
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && document.getElementById("sheet").classList.contains("open")) { UI.closeSheet(); return; }
+    if (App.keyHandler) App.keyHandler(e);
+  });
   window.addEventListener("hashchange", route);
   if (!location.hash) location.hash = "#/";
   route();

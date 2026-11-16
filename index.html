@@ -4,42 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nǐ hǎo – Học tiếng Trung từ số 0</title>
-  <meta name="description" content="Web tự học tiếng Trung cho người Việt từ con số 0 đến HSK 5: Pinyin, thanh điệu, bộ thủ, 2.500 từ HSK 1–5 trong 149 bài học, ôn tập ngắt quãng, luyện viết, luyện nói và thi thử HSK chấm điểm.">
+  <meta name="description" content="Web tự học tiếng Trung cho người Việt từ con số 0: Pinyin, thanh điệu, bộ thủ, 2.500 từ HSK 1–5 trong 149 bài học, 5.334 từ HSK 3.0 (đề cương 2025) cấp 1–6, ôn tập ngắt quãng, luyện viết, luyện nói, thi thử HSK 2.0 và đề luyện HSK 3.0 có giải thích.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#f7f5f1">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23c0392b'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif'>你</text></svg>">
 </head>
 <body>
-  <div id="app">
+  <a class="skip-link" href="#view">Bỏ qua menu</a>
+  <div id="app" class="shell">
+    <aside class="sidebar" aria-label="Điều hướng chính">
+      <a href="#/" class="brand"><span class="brand-logo">你</span><span class="brand-name">Nǐ hǎo</span></a>
+      <nav class="side-nav" id="nav">
+        <div class="side-group"><div class="side-label">Học</div><a href="#/" data-route="/" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-home"></use></svg><span>Trang chủ</span></a><a href="#/lessons" data-route="/lessons" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-book"></use></svg><span>Bài học</span></a><a href="#/words" data-route="/words" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-words"></use></svg><span>Từ vựng HSK 3.0</span></a><a href="#/read" data-route="/read" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-read"></use></svg><span>Bài đọc</span></a><a href="#/pinyin" data-route="/pinyin" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-pinyin"></use></svg><span>Pinyin</span></a><a href="#/radicals" data-route="/radicals" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-radical"></use></svg><span>Bộ thủ</span></a><a href="#/roadmap" data-route="/roadmap" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-map"></use></svg><span>Lộ trình</span></a></div>
+        <div class="side-group"><div class="side-label">Luyện</div><a href="#/review" data-route="/review" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-repeat"></use></svg><span>Ôn tập</span> <span class="badge" data-due>0</span></a><a href="#/write" data-route="/write" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-pen"></use></svg><span>Luyện viết</span></a><a href="#/speak" data-route="/speak" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-mic"></use></svg><span>Luyện nói</span></a><a href="#/exam" data-route="/exam" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-exam"></use></svg><span>Thi thử</span></a></div>
+        <div class="side-group"><div class="side-label">Công cụ</div><a href="#/dictionary" data-route="/dictionary" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-search"></use></svg><span>Từ điển</span></a><a href="#/settings" data-route="/settings" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-settings"></use></svg><span>Cài đặt</span></a><a href="#/about" data-route="/about" class="side-link"><svg class="ic" aria-hidden="true"><use href="#i-info"></use></svg><span>Nguồn dữ liệu</span></a></div>
+      </nav>
+      <button class="side-link theme-toggle" id="theme-toggle" type="button"><svg class="ic" aria-hidden="true"><use href="#i-moon"></use></svg><span>Giao diện tối</span></button>
+    </aside>
     <header class="topbar">
       <a href="#/" class="brand"><span class="brand-logo">你</span><span class="brand-name">Nǐ hǎo</span></a>
-      <nav class="nav" id="nav">
-        <a href="#/" data-route="/" class="nav-home"><span class="nav-ic">🏠</span>Trang chủ</a>
-        <a href="#/roadmap" data-route="/roadmap"><span class="nav-ic">🗺️</span>Lộ trình</a>
-        <a href="#/pinyin" data-route="/pinyin"><span class="nav-ic">🔤</span>Pinyin</a>
-        <a href="#/radicals" data-route="/radicals"><span class="nav-ic">部</span>Bộ thủ</a>
-        <a href="#/lessons" data-route="/lessons"><span class="nav-ic">📚</span>Bài học</a>
-        <a href="#/read" data-route="/read"><span class="nav-ic">📖</span>Đọc</a>
-        <a href="#/review" data-route="/review" class="nav-review"><span class="nav-ic">🔁</span>Ôn tập <span class="badge" id="due-badge">0</span></a>
-        <a href="#/write" data-route="/write"><span class="nav-ic">✍️</span>Luyện viết</a>
-        <a href="#/speak" data-route="/speak"><span class="nav-ic">🎙️</span>Luyện nói</a>
-        <a href="#/exam" data-route="/exam"><span class="nav-ic">📝</span>Thi thử</a>
-        <a href="#/dictionary" data-route="/dictionary"><span class="nav-ic">🔍</span>Từ điển</a>
-        <a href="#/settings" data-route="/settings"><span class="nav-ic">⚙️</span>Cài đặt</a>
-      </nav>
-      <button class="theme-toggle" id="theme-toggle" title="Đổi giao diện sáng/tối">◐</button>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+      <a href="#/dictionary" class="icon-btn" aria-label="Từ điển" title="Từ điển"><svg class="ic" aria-hidden="true"><use href="#i-search"></use></svg></a>
+      <button class="icon-btn theme-toggle" id="theme-toggle-m" type="button" aria-label="Đổi giao diện sáng/tối"><svg class="ic" aria-hidden="true"><use href="#i-moon"></use></svg></button>
     </header>
-    <main id="view" class="view"></main>
-    <footer class="footer">
-      <span>Nǐ hǎo · Từ vựng theo chuẩn HSK 1–5 · Nét chữ bởi <a href="https://hanziwriter.org" target="_blank" rel="noopener">Hanzi Writer</a></span>
-    </footer>
+    <div class="main-col">
+      <main id="view" class="view" tabindex="-1"></main>
+      <footer class="footer">
+        <span>Nǐ hǎo · HSK 2.0 cấp 1–5 và HSK 3.0 (đề cương 2025) · Nét chữ bởi <a href="https://hanziwriter.org" target="_blank" rel="noopener">Hanzi Writer</a> · <a href="#/about">Nguồn dữ liệu và giấy phép</a></span>
+      </footer>
+    </div>
+    <nav class="tabbar" aria-label="Điều hướng nhanh"><a href="#/" data-tab="home" class="tab-link"><span class="tab-ic"><svg class="ic" aria-hidden="true"><use href="#i-home"></use></svg></span><span>Trang chủ</span></a><a href="#/lessons" data-tab="learn" class="tab-link"><span class="tab-ic"><svg class="ic" aria-hidden="true"><use href="#i-book"></use></svg></span><span>Học</span></a><a href="#/review" data-tab="review" class="tab-link"><span class="tab-ic"><svg class="ic" aria-hidden="true"><use href="#i-repeat"></use></svg> <span class="badge dot" data-due>0</span></span><span>Ôn tập</span></a><a href="#/exam" data-tab="exam" class="tab-link"><span class="tab-ic"><svg class="ic" aria-hidden="true"><use href="#i-exam"></use></svg></span><span>Thi thử</span></a><button type="button" class="tab-link" data-tab="more" id="more-btn" aria-haspopup="dialog"><span class="tab-ic"><svg class="ic" aria-hidden="true"><use href="#i-more"></use></svg></span><span>Thêm</span></button></nav>
+  </div>
+  <div class="sheet-backdrop" id="sheet-backdrop"></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Tất cả mục">
+    <div class="sheet-handle"></div>
+      <div class="sheet-group"><div class="side-label">Học</div><div class="sheet-grid"><a href="#/" data-route="/" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-home"></use></svg><span>Trang chủ</span></a><a href="#/lessons" data-route="/lessons" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-book"></use></svg><span>Bài học</span></a><a href="#/words" data-route="/words" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-words"></use></svg><span>Từ vựng HSK 3.0</span></a><a href="#/read" data-route="/read" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-read"></use></svg><span>Bài đọc</span></a><a href="#/pinyin" data-route="/pinyin" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-pinyin"></use></svg><span>Pinyin</span></a><a href="#/radicals" data-route="/radicals" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-radical"></use></svg><span>Bộ thủ</span></a><a href="#/roadmap" data-route="/roadmap" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-map"></use></svg><span>Lộ trình</span></a></div></div>
+      <div class="sheet-group"><div class="side-label">Luyện</div><div class="sheet-grid"><a href="#/review" data-route="/review" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-repeat"></use></svg><span>Ôn tập</span> <span class="badge" data-due>0</span></a><a href="#/write" data-route="/write" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-pen"></use></svg><span>Luyện viết</span></a><a href="#/speak" data-route="/speak" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-mic"></use></svg><span>Luyện nói</span></a><a href="#/exam" data-route="/exam" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-exam"></use></svg><span>Thi thử</span></a></div></div>
+      <div class="sheet-group"><div class="side-label">Công cụ</div><div class="sheet-grid"><a href="#/dictionary" data-route="/dictionary" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-search"></use></svg><span>Từ điển</span></a><a href="#/settings" data-route="/settings" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-settings"></use></svg><span>Cài đặt</span></a><a href="#/about" data-route="/about" class="sheet-link"><svg class="ic" aria-hidden="true"><use href="#i-info"></use></svg><span>Nguồn dữ liệu</span></a></div></div>
   </div>
   <div id="toast" class="toast"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.7.0/dist/hanzi-writer.min.js"></script>
+  <script src="js/ui.js"></script>
   <script src="js/data/pinyin.js"></script>
   <script src="js/data/radicals.js"></script>
   <script src="js/data/vocab.js"></script>
@@ -62,12 +70,16 @@
   <script src="js/data/hsk5-f.js"></script>
   <script src="js/data/hsk5-g.js"></script>
   <script src="js/data/hsk5-h.js"></script>
+  <script src="js/data/h30-words.js"></script>
+  <script src="js/data/h30-lessons.js"></script>
+  <script src="js/h30.js"></script>
   <script src="js/store.js"></script>
   <script src="js/srs.js"></script>
   <script src="js/tts.js"></script>
   <script src="js/views.js"></script>
   <script src="js/exam.js"></script>
   <script src="js/views-exam.js"></script>
+  <script src="js/views-h30.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

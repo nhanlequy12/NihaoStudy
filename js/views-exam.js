@@ -21,7 +21,7 @@
   // ---------- Chọn cấp ----------
   function chooser() {
     const hist = (Store.state.exams || []).slice().reverse().slice(0, 12);
-    const html = `<h1>Thi thử HSK</h1>
+    const html = `<h1>Thi thử HSK</h1>${window.H3V ? H3V.examCards() + `<h2>Đề sinh ngẫu nhiên · HSK 2.0 (bộ cũ)</h2>` : ""}
       <p class="subtitle">Đề được sinh ngẫu nhiên từ kho từ, câu mẫu, hội thoại và bài đọc của web theo đúng cấu trúc, số câu, thời gian và thang điểm của đề thi chính thức (bộ cũ, 2010–nay). Mỗi lần thi là một đề mới. Vì web không có tranh, các phần "nhìn tranh" được thay bằng nghĩa tiếng Việt; phần nghe dùng giọng đọc của trình duyệt.</p>
       <div class="grid grid-2">${Object.values(EXAM_SPEC).map((sp, k) => `
         <div class="card"><div class="row between"><h3 style="margin:0">${esc(sp.name)}</h3><span class="pill ${["blue", "gold", "green", "red", "purple"][k]}">${sp.questions} câu · ${sp.minutes} phút</span></div>
@@ -102,6 +102,7 @@
   }
 
   function render(box) {
+    App.setFocus(true);
     const { exam, si, qi } = current;
     const sec = exam.sections[si];
     const it = sec.items[qi];
@@ -139,7 +140,7 @@
         <div class="qnav">${sec.items.map((x, k) => `<button class="${k === qi ? "cur" : ""} ${answered(x) ? "done" : ""}" data-q="${k}">${x.no}</button>`).join("")}</div>
       </div>
       <div class="card mt exam-body">${body}</div>
-      <div class="row between mt"><button class="btn" id="prev" ${qi === 0 ? "disabled" : ""}>← Câu trước</button>
+      <div class="row between mt exam-nav"><button class="btn" id="prev" ${qi === 0 ? "disabled" : ""}>← Câu trước</button>
         <span class="small muted">${sec.items.filter(answered).length}/${sec.items.length} câu đã trả lời</span>
         ${qi + 1 < sec.items.length ? `<button class="btn btn-primary" id="next">Câu tiếp →</button>` : `<button class="btn btn-gold" id="submit">${si + 1 < exam.sections.length ? `Nộp phần ${esc(sec.vi)} →` : "Nộp bài"}</button>`}</div>
       <div class="center mt"><button class="btn btn-sm btn-ghost" id="submit2">Nộp phần này ngay</button></div>`;
@@ -172,11 +173,11 @@
     } else { speechSynthesis && speechSynthesis.cancel(); current.seq++; }
   }
 
-  function submitSection(box, force) {
+  async function submitSection(box, force) {
     const { exam, si } = current;
     const sec = exam.sections[si];
     const left = sec.items.filter((x) => x.user == null || x.user === "").length;
-    if (!force && left && !confirm(`Còn ${left} câu chưa trả lời. Nộp phần ${sec.vi}? Nộp rồi không quay lại được.`)) return;
+    if (!force && left && !(await uiConfirm(`Còn <b>${left} câu</b> chưa trả lời. Nộp rồi sẽ không quay lại phần này được.`, { title: `Nộp phần ${sec.vi}?`, okText: "Nộp phần này", cancelText: "Làm tiếp" }))) return;
     speechSynthesis && speechSynthesis.cancel(); current.seq++;
     sec.usedMs = Math.min(sec.minutes * 60000, sec.minutes * 60000 - (current.deadline - Date.now()));
     if (si + 1 < exam.sections.length) {
@@ -204,6 +205,7 @@
   }
 
   function results(box) {
+    App.setFocus(false);
     const { exam, result: r } = current;
     const sp = exam.spec;
     const minutes = Math.round((Date.now() - current.startedAt) / 60000);
@@ -221,9 +223,9 @@
         const ok = Exam.isCorrect(it);
         const fmt = (v) => v == null || v === "" ? "<i>bỏ trống</i>" : it.kind === "tf" ? (v ? "✓" : "✗") : it.kind === "choice" ? `${LET[v]}. ${esc(it.options[v])}` : it.kind === "pool" ? `${LET[v]}. ${esc(it.group.pool[v])}` : esc(v);
         return `<div class="sentence ${ok ? "" : "wrong"}"><span class="who">${it.no}</span><div class="body">
-          ${it.listening ? `<div class="zh">🔊 ${esc(it.audio.join(" "))}</div>` : ""}${it.stem ? `<div class="${it.listening ? "" : "zh"}">${esc(it.stem)}</div>` : ""}${it.sub ? `<div class="small muted">${esc(it.sub)}</div>` : ""}
+          ${it.listening ? `<div class="zh">${ic("volume")} ${esc(it.audio.join(" "))}</div>` : ""}${it.stem ? `<div class="${it.listening ? "" : "zh"}">${esc(it.stem)}</div>` : ""}${it.sub ? `<div class="small muted">${esc(it.sub)}</div>` : ""}
           <div class="small">Bạn: ${fmt(it.user)} ${ok ? `<span class="pill green">đúng</span>` : `<span class="pill red">sai</span> · Đáp án: <b>${fmt(it.answer)}</b>`}</div>
-          <div class="small muted">${esc(it.explain)}</div></div>${it.listening ? `<button class="btn btn-icon btn-sm" data-say="${esc(it.audio.join("。"))}">🔊</button>` : ""}</div>`; }).join("")}`).join("");
+          <div class="small muted">${esc(it.explain)}</div></div>${it.listening ? `<button class="btn btn-icon btn-sm" data-say="${esc(it.audio.join("。"))}" aria-label="Nghe">${ic("volume")}</button>` : ""}</div>`; }).join("")}`).join("");
       rv.querySelectorAll("[data-say]").forEach((b) => b.onclick = () => TTS.speak(b.dataset.say));
       box.querySelector("#review").disabled = true;
     };
