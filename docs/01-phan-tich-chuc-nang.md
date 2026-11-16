@@ -77,7 +77,7 @@ Giá của HiHSK, Hack Chinese và HelloChinese không khớp giữa các nguồ
 1. **HSK 3.0 (9 cấp):**
    - HiHSK và Prep đã có, đều thu phí.
    - Đề mới có thêm phần Dịch, phần Viết từ HSK 2 và phần Nói từ HSK 3.
-2. **HSK 6 và HSK 7–9:** chưa có từ vựng tiếng Việt, bài học hay đề.
+2. **HSK 7–9:** chưa có bài học hay đề. (HSK 2.0 cấp 6 đã có từ 16/11/2026: 121 bài, thi thử, xem docs/hsk2-2012-va-cap6.md.)
 3. **Giải thích đáp án bằng tiếng Việt và phân tích lỗi theo kỹ năng:** đối thủ đều thu phí phần này.
 4. **Audio người thật, chép chính tả.**
 5. **Đồng bộ nhiều thiết bị:** web chưa có tài khoản.
