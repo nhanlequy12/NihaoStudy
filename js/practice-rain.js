@@ -53,6 +53,52 @@
     });
   }
 
+  // ---------- Nghĩa hiển thị cho chế độ "Nghĩa Việt" ----------
+  // lấy ý đầu; bỏ ngoặc có chữ Hán, cách đọc («đọc …»), chú thích «A: …» hoặc chính pinyin của từ, để không lộ đáp án
+  const PY_ONLY_MARK = /[āǎēěīǐōǒūǔǖǘǚǜ]/;
+  const bareLat = (x) => String(x || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z]/g, "");
+  function viText(s, py) {
+    // ý đầu: cắt ở dấu ; đầu tiên nằm ngoài ngoặc
+    let depth = 0, end = String(s || "").length;
+    for (let k = 0; k < end; k++) { const c = s[k]; if (c === "(") depth++; else if (c === ")") depth = Math.max(0, depth - 1); else if ((c === ";" || c === "；") && !depth) { end = k; break; } }
+    const first = String(s || "").slice(0, end).trim(), pyb = bareLat(py);
+    const drop = (inner) => /[\u3400-\u9fff]/.test(inner) || /(^|[\s,(])đọc(\s|$)/.test(inner) || PY_ONLY_MARK.test(inner) || inner.includes(":") || (pyb.length > 1 && bareLat(inner).includes(pyb));
+    const clean = (x) => x.replace(/[\u3400-\u9fff]+/g, "").replace(/\(\s*[,.…+\/]*\s*\)/g, "").replace(/\s+([,.])/g, "$1").replace(/\s{2,}/g, " ").trim().replace(/^[,.;:–\-\s]+|[,;:–\-\s]+$/g, "");
+    const raw = first.replace(/\s*\(([^)]*)\)/g, (m, inner) => (drop(inner) ? "" : m));
+    const hanTail = /[\u3400-\u9fff][\s,.…、，]*$/.test(raw);   // ý kết thúc bằng ví dụ chữ Hán (… như trong 桌子)
+    let t = clean(raw);
+    if (hanTail) for (let k = 0; k < 3; k++) t = t.replace(/(^|\s+)(như trong|ví dụ|vd)[:,]?$/i, "").replace(/(\S)\s+(như|trong|của|là|với|cho)[:,]?$/i, "$1").trim();   // từ nối bị treo sau khi bỏ chữ Hán
+    if (/^(như trong|như)$/i.test(t)) t = "";
+    if (!/\p{L}{2}/u.test(t)) return "";
+    const MAX = 44;                                                                       // vừa 3 dòng trong bong bóng
+    if (t.length > MAX) t = clean(t.replace(/\s*\([^)]*\)/g, ""));                      // quá dài: bỏ phần trong ngoặc
+    if (t.length > MAX) {                                                                 // vẫn dài: giữ trọn các ý (ngăn bởi dấu phẩy) vừa chỗ
+      const parts = t.split(/,\s*/); let keep = parts[0];
+      for (const p of parts.slice(1)) { if ((keep + ", " + p).length > MAX) break; keep += ", " + p; }
+      t = keep;
+    }
+    return t;
+  }
+  // khoá đồng nghĩa: đúng chữ hiển thị trên bong bóng (kể cả phần trong ngoặc), bỏ dấu câu, không phân biệt hoa thường
+  const viKey = (w) => viText(w.vi, w.py).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+  // ngắt dòng: tối đa khoảng 16 ký tự mỗi dòng, 3 dòng
+  const linesCache = new WeakMap();
+  function viLines(w) {
+    if (linesCache.has(w)) return linesCache.get(w);
+    const wrap = (text) => {
+      const o = []; let cur = "";
+      text.split(" ").forEach((word) => { if ((cur + " " + word).trim().length > 16 && cur) { o.push(cur); cur = word; } else cur = (cur + " " + word).trim(); });
+      if (cur) o.push(cur);
+      return o;
+    };
+    const full = viText(w.vi, w.py);
+    let out = wrap(full);
+    if (out.length > 3) out = wrap(full.replace(/\s*\([^)]*\)/g, "").replace(/\s+,/g, ","));   // quá 3 dòng: bỏ phần trong ngoặc
+    if (out.length > 3) { out.length = 3; out[2] = out[2].replace(/…?$/, "…"); }
+    linesCache.set(w, out);
+    return out;
+  }
+
   // ---------- Âm thanh 8-bit ----------
   let ac = null;
   const muted = () => !!Store.state.settings.sfxOff;
@@ -108,15 +154,17 @@
       std,
       counts: [20, 40, 60],
       intro: "Bong bóng chứa từ rơi xuống. Bắn vỡ trước khi chạm đáy: mỗi bong bóng lọt xuống mất một mạng.",
-      extra: `<div class="setup-row"><div class="setup-label">Chế độ</div><div class="chips" data-name="mode"><button type="button" data-v="py" class="on">Phiên âm<small>gõ pinyin</small></button><button type="button" data-v="hz">Chữ Hán<small>vẽ từng nét</small></button></div></div>
+      extra: `<div class="setup-row"><div class="setup-label">Chế độ</div><div class="chips" data-name="mode"><button type="button" data-v="py" class="on">Phiên âm<small>gõ pinyin</small></button><button type="button" data-v="hz">Chữ Hán<small>vẽ từng nét</small></button><button type="button" data-v="vi">Nghĩa Việt<small>gõ pinyin ra chữ Hán</small></button></div></div>
         <details class="hint" style="margin:4px 0 0"><summary>${ic("info")}Cách chơi</summary>
         <b>Phiên âm:</b> bong bóng hiện chữ Hán và nghĩa; gõ pinyin rồi bóng tự vỡ. Gõ số thanh (<span class="kbd">ni3hao3</span>) hay dấu (<span class="kbd">nǐhǎo</span>) đều được; <span class="kbd">v</span> thay cho ü. Dễ: không cần thanh; Vừa: cần thanh, thanh nhẹ tuỳ ý; Khó: đúng cả thanh nhẹ.<br>
         <b>Chữ Hán:</b> bong bóng hiện pinyin và nghĩa; viết từng chữ vào khung theo đúng thứ tự nét. Dễ: có chữ mờ để tô; Vừa: hiện gợi ý sau 2 nét sai; Khó: không gợi ý.<br>
+        <b>Nghĩa Việt:</b> bong bóng chỉ hiện nghĩa tiếng Việt; nhớ ra từ rồi gõ pinyin, bóng vỡ và hiện chữ Hán. Từ đồng nghĩa trong cùng cấp đều được tính. Dễ: có thêm âm Hán Việt làm gợi ý.<br>
         Vỡ liên tiếp để tăng combo (×2 từ 5 lần, tối đa ×5). Cứ 6 bóng vỡ lên một màn, bóng rơi nhanh hơn.</details>`,
       bestKeyOf: (v) => `rain:${std}:${v.mode}:${v.level}`,
       onStart: (v) => {
         let words = Practice.wordsOf(std, v.level).filter((w) => w.py && w.hz);
         if (v.mode === "hz") words = words.filter((w) => /^[\u3400-\u9fff]{1,2}$/.test(w.hz));
+        if (v.mode === "vi") words = words.filter((w) => viText(w.vi, w.py));
         if (!words.length) { toast("Cấp này chưa có từ phù hợp"); return; }
         game(box, std, v, shuffle(words).slice(0, v.count));
       },
@@ -125,7 +173,14 @@
 
   // ---------- Trò chơi ----------
   function game(box, std, cfg, words) {
-    const isHz = cfg.mode === "hz";
+    const isHz = cfg.mode === "hz", isVi = cfg.mode === "vi";
+    // chế độ nghĩa: các từ cùng cấp có cùng nghĩa hiển thị đều được chấp nhận (đẹp: 漂亮/美丽…)
+    const synOf = (() => {
+      if (!isVi) return null;
+      const m = new Map();
+      Practice.wordsOf(std, cfg.level).filter((w) => w.py && w.hz).forEach((w) => { const k = viKey(w); if (k) m.set(k, (m.get(k) || []).concat([w])); });
+      return (w) => { const list = m.get(viKey(w)) || []; return [w, ...list.filter((x) => x.hz !== w.hz)]; };
+    })();
     App.setFocus(true);
     document.body.classList.add("in-game");
     box.innerHTML = `<div class="rain">
@@ -139,7 +194,7 @@
         <div class="rain-stage" id="stage"><canvas id="cv"></canvas><div class="rain-msg" id="msg"></div></div>
         ${isHz
           ? `<div class="rain-pad"><div class="pad-info"><div id="pad-py" class="pad-py"></div><div id="pad-vi" class="muted small"></div><div id="pad-step" class="small"></div><button class="btn btn-sm" id="skip">Bỏ qua từ này</button></div><div class="writer-target pad" id="pad"></div></div>`
-          : `<div class="rain-input"><input id="ans" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Gõ pinyin, ví dụ ni3hao3 hoặc nǐhǎo" aria-label="Gõ pinyin"><button class="btn" id="enter">Bắn</button></div>`}
+          : `<div class="rain-input"><input id="ans" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="${isVi ? "Nhớ ra từ rồi gõ pinyin, ví dụ ni3hao3" : "Gõ pinyin, ví dụ ni3hao3 hoặc nǐhǎo"}" aria-label="Gõ pinyin"><button class="btn" id="enter">Bắn</button></div>`}
         <p class="small muted center rain-foot">${esc(Practice.STD[std].long)} · cấp ${cfg.level} · ${words.length} từ · ${({ easy: "Dễ", normal: "Vừa", hard: "Khó" })[cfg.diff]} · <span class="kbd">Esc</span> tạm dừng</p>
       </div>`;
 
@@ -158,7 +213,7 @@
     addEventListener("resize", onResize);
 
     const queue = words.slice();
-    const S = { score: 0, level: 1, combo: 0, lives: 3, popped: 0, bubbles: [], parts: [], floats: [], stars: [], wrong: [], spawnAt: 0, paused: false, over: false, started: performance.now(), pausedFor: 0, pauseStart: 0, flash: 0 };
+    const S = { score: 0, level: 1, combo: 0, lives: 3, popped: 0, bubbles: [], parts: [], floats: [], reveals: [], stars: [], wrong: [], spawnAt: 0, paused: false, over: false, started: performance.now(), pausedFor: 0, pauseStart: 0, flash: 0 };
     for (let i = 0; i < 60; i++) S.stars.push({ x: Math.random(), y: Math.random(), s: Math.random() < 0.2 ? 2 : 1, v: 0.004 + Math.random() * 0.01 });
     const T = { easy: 15, normal: 11.5, hard: 8.5 }[cfg.diff] * (isHz ? 2.4 : 1);   // giây để bóng rơi hết màn hình ở màn 1
     const GAP = { easy: 2700, normal: 2100, hard: 1500 }[cfg.diff] * (isHz ? 2.2 : 1);
@@ -177,6 +232,12 @@
     const mult = () => Math.min(5, 1 + Math.floor(S.combo / 5));
 
     function measure(w) {
+      if (isVi) {
+        ctx.font = "700 15px 'Be Vietnam Pro', sans-serif";
+        const lines = viLines(w);
+        const wmax = Math.max(...lines.map((l) => ctx.measureText(l).width));
+        return Math.max(44, Math.min(92, Math.max(wmax / 2 + 14, lines.length * 10 + 22)));
+      }
       ctx.font = `700 ${isHz ? 17 : 26}px ${isHz ? "'Be Vietnam Pro'" : "'Noto Sans SC'"}, sans-serif`;
       const top = ctx.measureText(isHz ? w.py : w.hz).width;
       ctx.font = "500 12px 'Be Vietnam Pro', sans-serif";
@@ -196,12 +257,13 @@
       const w = queue.shift();
       const r = measure(w);
       const x = r + 6 + Math.random() * Math.max(1, W - 2 * r - 12);
-      S.bubbles.push({ w, tgt: isHz ? null : target(w), x, y: -r, r, vy: (H + 2 * r) / fallTime(), color: COLORS[Math.floor(Math.random() * COLORS.length)], phase: Math.random() * 6, born: now });
+      S.bubbles.push({ w, tgt: isHz ? null : target(w), tgts: isHz ? null : (isVi ? synOf(w) : [w]).map((x) => ({ w: x, t: target(x) })), x, y: -r, r, vy: (H + 2 * r) / fallTime(), color: COLORS[Math.floor(Math.random() * COLORS.length)], phase: Math.random() * 6, born: now });
       S.spawnAt = now + gapTime();
     }
 
-    function pop(b, now) {
+    function pop(b, now, hitWord) {
       S.bubbles.splice(S.bubbles.indexOf(b), 1);
+      if (isVi) S.reveals.push({ x: Math.min(W - 50, Math.max(50, b.x)), y: Math.max(64, b.y), hz: (hitWord || b.w).hz, py: (hitWord || b.w).py, t: 0, bad: false });
       S.combo++; S.popped++;
       const pts = 10 * S.level * mult() + Math.round(20 * Math.max(0, 1 - b.y / H));
       S.score += pts;
@@ -222,6 +284,7 @@
       S.bubbles.splice(S.bubbles.indexOf(b), 1);
       S.lives--; S.combo = 0; S.flash = 1;
       S.wrong.push(b.w);
+      if (isVi) S.reveals.push({ x: Math.min(W - 60, Math.max(60, b.x)), y: H - 46, hz: b.w.hz, py: b.w.py, t: 0, bad: true });
       SFX.miss();
       drawHud();
       if (S.lives <= 0) return gameOver(false);
@@ -246,6 +309,8 @@
         S.parts = S.parts.filter((p) => p.t < p.life);
         S.floats.forEach((f) => { f.t += dt; f.y -= 40 * dt; });
         S.floats = S.floats.filter((f) => f.t < 0.9);
+        S.reveals.forEach((r) => (r.t += dt));
+        S.reveals = S.reveals.filter((r) => r.t < 1.6);
         (S.rings || []).forEach((r) => (r.t += dt));
         S.rings = (S.rings || []).filter((r) => r.t < 0.35);
         S.stars.forEach((s) => { s.y += s.v * dt * 10; if (s.y > 1) { s.y = 0; s.x = Math.random(); } });
@@ -272,6 +337,15 @@
         ctx.drawImage(sp, Math.round(b.x + wob - size / 2), Math.round(b.y - size / 2), size, size);
         ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillStyle = "#fff";
         ctx.shadowColor = "rgba(0,0,0,.6)"; ctx.shadowBlur = 4;
+        if (isVi) {
+          const lines = viLines(b.w), hv = cfg.diff === "easy" && b.w.hv ? b.w.hv : "";
+          const lh = 18, y0 = b.y - ((lines.length - 1) * lh) / 2 - (hv ? 7 : 0);
+          ctx.font = "700 15px 'Be Vietnam Pro', sans-serif";
+          lines.forEach((l, i) => ctx.fillText(l, b.x + wob, y0 + i * lh));
+          if (hv) { ctx.font = "500 12px 'Be Vietnam Pro', sans-serif"; ctx.fillStyle = "#ffe9a8"; ctx.fillText(hv, b.x + wob, y0 + lines.length * lh); }
+          ctx.shadowBlur = 0;
+          return;
+        }
         if (isHz) {
           ctx.font = "700 17px 'Be Vietnam Pro', sans-serif"; ctx.fillText(b.w.py, b.x + wob, b.y - 7);
         } else {
@@ -286,6 +360,15 @@
       ctx.globalAlpha = 1;
       S.floats.forEach((f) => { ctx.globalAlpha = 1 - f.t / 0.9; ctx.fillStyle = "#ffe14d"; ctx.font = "12px 'Press Start 2P', monospace"; ctx.textAlign = "center"; ctx.fillText(f.text, f.x, f.y); });
       ctx.globalAlpha = 1;
+      // chữ Hán hiện ra khi bắn trúng (vàng) hoặc khi để lọt (đỏ) ở chế độ nghĩa
+      S.reveals.forEach((r) => {
+        ctx.globalAlpha = Math.min(1, 2.2 * (1 - r.t / 1.6)); ctx.textAlign = "center"; ctx.textBaseline = "middle";
+        ctx.shadowColor = "rgba(0,0,0,.7)"; ctx.shadowBlur = 6;
+        ctx.fillStyle = r.bad ? "#ff8fa0" : "#ffe14d"; ctx.font = "700 30px 'Noto Sans SC', sans-serif"; ctx.fillText(r.hz, r.x, r.y - 12 - r.t * 14);
+        ctx.fillStyle = "#fff"; ctx.font = "600 13px 'Be Vietnam Pro', sans-serif"; ctx.fillText(r.py, r.x, r.y + 14 - r.t * 14);
+        ctx.shadowBlur = 0;
+      });
+      ctx.globalAlpha = 1;
       if (S.flash) { ctx.fillStyle = `rgba(255,60,80,${0.35 * S.flash})`; ctx.fillRect(0, 0, W, H); }
     }
 
@@ -295,14 +378,15 @@
       const tryPop = (final) => {
         const val = input.value.trim();
         if (!val) return;
-        const hit = S.bubbles.slice().sort((a, b) => b.y - a.y).find((b) => matches(val, b.tgt, cfg.diff));
-        if (hit) { pop(hit, performance.now()); input.value = ""; return; }
+        let hitWord = null;
+        const hit = S.bubbles.slice().sort((a, b) => b.y - a.y).find((b) => { const m = b.tgts.find((x) => matches(val, x.t, cfg.diff)); if (m) hitWord = m.w; return !!m; });
+        if (hit) { pop(hit, performance.now(), hitWord); input.value = ""; return; }
         if (final) {
           S.combo = 0; drawHud(); SFX.wrong();
           input.classList.remove("shake"); void input.offsetWidth; input.classList.add("shake");
           // gợi ý khi chữ cái đúng mà thiếu/sai thanh
           const a = analyze(val);
-          if (cfg.diff !== "easy" && S.bubbles.some((b) => b.tgt.letters === a.letters)) banner("Kiểm tra lại thanh điệu");
+          if (cfg.diff !== "easy" && S.bubbles.some((b) => b.tgts.some((x) => x.t.letters === a.letters))) banner("Kiểm tra lại thanh điệu");
         }
       };
       input.addEventListener("input", () => tryPop(false));
@@ -402,7 +486,7 @@
       banner(cleared ? "HẾT BONG BÓNG!" : "GAME OVER", true);
       const seconds = Math.round((performance.now() - S.started - S.pausedFor) / 1000);
       const total = S.popped + S.wrong.length;
-      const modeName = isHz ? "chữ Hán" : "phiên âm";
+      const modeName = isHz ? "chữ Hán" : isVi ? "nghĩa Việt" : "phiên âm";
       const isBest = Practice.record({ type: "rain", std, level: cfg.level, title: `Mưa từ vựng (${modeName}) · ${Practice.STD[std].name} cấp ${cfg.level}`, score: S.score, correct: S.popped, total, seconds, bestKey: `rain:${std}:${cfg.mode}:${cfg.level}` });
       setTimeout(() => {
         cleanup();
@@ -429,5 +513,5 @@
   }
 
   Practice.register("rain", { run });
-  window.RainGame = { analyze, target, matches, shortVi: (s) => { const f = String(s || "").split(/[;；]/)[0]; let t = f.replace(/\s*\(.*?\)\s*/g, " ").trim(); if (!t) t = f.replace(/[()]/g, "").trim(); return t; } };   // dùng cho kiểm thử
+  window.RainGame = { analyze, target, matches, viText, viKey, lines: viLines, shortVi: (s) => { const f = String(s || "").split(/[;；]/)[0]; let t = f.replace(/\s*\(.*?\)\s*/g, " ").trim(); if (!t) t = f.replace(/[()]/g, "").trim(); return t; } };   // dùng cho kiểm thử
 })();

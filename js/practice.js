@@ -6,7 +6,7 @@
   // ---------- Danh mục ----------
   // std: "hsk2" = HSK cũ (HSK 2.0, cấp 1–5 của web), "hsk3" = HSK 3.0 (đề cương 2025, cấp 1–6)
   const FEATURES = [
-    { key: "rain", icon: "bubbles", tone: 1, name: "Mưa từ vựng", desc: "Bắn vỡ bong bóng từ bằng pinyin hoặc nét chữ", std: ["hsk2"], badge: { hsk2: "HOT" } },
+    { key: "rain", icon: "bubbles", tone: 1, name: "Mưa từ vựng", desc: "Bắn vỡ bong bóng từ: gõ pinyin, viết chữ Hán hoặc nhớ từ theo nghĩa", std: ["hsk2"], badge: { hsk2: "HOT" } },
     { key: "translate", icon: "translate", tone: 2, name: "Luyện dịch", desc: "Dịch câu Trung sang Việt, chấm theo ý chính", std: ["hsk2", "hsk3"] },
     { key: "position", icon: "pin", tone: 3, name: "Chọn vị trí từ", desc: "Đặt từ cho sẵn vào đúng chỗ A · B · C · D", std: ["hsk2", "hsk3"], badge: { hsk2: "NEW", hsk3: "NEW" } },
     { key: "dictation", icon: "headphones", tone: 4, name: "Chép chính tả", desc: "Nghe máy đọc rồi gõ lại chữ Hán hoặc pinyin", std: ["hsk2", "hsk3"], badge: { hsk2: "NEW" } },
