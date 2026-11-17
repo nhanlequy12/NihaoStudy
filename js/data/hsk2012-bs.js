@@ -15,7 +15,7 @@
         ["B", "我去踢足球。你去吗？", "Wǒ qù tī zúqiú. Nǐ qù ma?", "Tôi đi đá bóng. Bạn đi không?"],
         ["A", "我没有时间，我要去饭店吃饭。", "Wǒ méiyǒu shíjiān, wǒ yào qù fàndiàn chī fàn.", "Tôi không có thời gian, tôi phải đi nhà hàng ăn cơm."],
         ["B", "哪个饭店？你说一下。", "Nǎge fàndiàn? Nǐ shuō yíxià.", "Nhà hàng nào? Bạn nói thử xem."],
-        ["A", "学校前面的那个饭店。我想喝一点儿汤。", "Xuéxiào qiánmiàn de nàge fàndiàn. Wǒ xiǎng hē yìdiǎnr tāng.", "Cái nhà hàng trước cổng trường. Tôi muốn ăn chút canh."],
+        ["A", "学校前面的那个饭店。我想喝一点儿茶。", "Xuéxiào qiánmiàn de nàge fàndiàn. Wǒ xiǎng hē yìdiǎnr chá.", "Cái nhà hàng trước cổng trường. Tôi muốn uống chút trà."],
         ["B", "你和谁去？男同学还是女同学？", "Nǐ hé shéi qù? Nán tóngxué háishi nǚ tóngxué?", "Bạn đi với ai? Bạn nam hay bạn nữ?"],
         ["A", "两个女同学，一个男同学。", "Liǎng ge nǚ tóngxué, yí ge nán tóngxué.", "Hai bạn nữ, một bạn nam."],
       ],
@@ -49,7 +49,7 @@
         ["B", "好吧。别忘了带刷牙的东西，那儿的宾馆不一定有。", "Hǎo ba. Bié wàng le dài shuāyá de dōngxi, nàr de bīnguǎn bù yídìng yǒu.", "Được rồi. Đừng quên mang đồ đánh răng, khách sạn ở đó chưa chắc đã có."],
       ],
       sentences: [
-        ["我 每天 晚上 都 刷牙", "Wǒ měi tiān wǎnshang dōu shuāyá.", "Tối nào tôi cũng đánh răng."],
+        ["我 每天 晚上 都 刷牙", "Wǒ měi tiān wǎnshang dōu shuāyá.", "Tối nào tôi cũng đánh răng.", ["每天 晚上 我 都 刷牙"]],
         ["我 给 老师 发 了 一 封 电子邮件", "Wǒ gěi lǎoshī fā le yì fēng diànzǐ yóujiàn.", "Tôi đã gửi một email cho thầy giáo."],
         ["今天 刮风 了", "Jīntiān guāfēng le.", "Hôm nay trời nổi gió."],
         ["我 想 去 看看 黄河", "Wǒ xiǎng qù kànkan Huáng Hé.", "Tôi muốn đi xem sông Hoàng Hà."],
@@ -73,7 +73,7 @@
         ["A", "你们上个星期去旅行了？怎么样？", "Nǐmen shàng ge xīngqī qù lǚxíng le? Zěnmeyàng?", "Tuần trước các bạn đi du lịch à? Thế nào?"],
         ["B", "别提了！我们刚上高速公路，车就停了。", "Bié tí le! Wǒmen gāng shàng gāosù gōnglù, chē jiù tíng le.", "Đừng nhắc nữa! Bọn tôi vừa lên đường cao tốc thì xe chết máy."],
         ["A", "后来呢？找人修理了吗？", "Hòulái ne? Zhǎo rén xiūlǐ le ma?", "Sau đó thì sao? Có tìm người sửa không?"],
-        ["B", "我们先在互联网上找到最近的修理地点，又修理了两个小时左右。", "Wǒmen xiān zài hùliánwǎng shang zhǎo dào zuì jìn de xiūlǐ dìdiǎn, yòu xiūlǐ le liǎng ge xiǎoshí zuǒyòu.", "Bọn tôi tìm trên mạng chỗ sửa xe gần nhất, rồi sửa mất khoảng hai tiếng."],
+        ["B", "我们先在互联网上找到最近的修车地点，请人修理了两个小时左右。", "Wǒmen xiān zài hùliánwǎng shang zhǎo dào zuì jìn de xiū chē dìdiǎn, qǐng rén xiūlǐ le liǎng ge xiǎoshí zuǒyòu.", "Bọn tôi tìm trên mạng chỗ sửa xe gần nhất, rồi nhờ người ta sửa mất khoảng hai tiếng."],
         ["A", "那你们晚上赶到酒店了吗？", "Nà nǐmen wǎnshang gǎn dào jiǔdiàn le ma?", "Thế buổi tối các bạn có kịp đến khách sạn không?"],
         ["B", "赶到了。酒店老板是个作家，还会弹钢琴，晚上给我们弹了一首歌。", "Gǎn dào le. Jiǔdiàn lǎobǎn shì ge zuòjiā, hái huì tán gāngqín, wǎnshang gěi wǒmen tán le yì shǒu gē.", "Kịp. Chủ khách sạn là một nhà văn, còn biết chơi piano, tối đó đàn cho bọn tôi nghe một bài."],
         ["A", "真羡慕你们！下次旅行我也想去那儿照几张相。", "Zhēn xiànmù nǐmen! Xià cì lǚxíng wǒ yě xiǎng qù nàr zhào jǐ zhāng xiàng.", "Ghen tị với các bạn thật! Lần sau đi chơi tôi cũng muốn đến đó chụp vài kiểu ảnh."],
@@ -95,7 +95,7 @@
       goals: ["Nói về việc học chữ: bính âm, chữ cái, từ vựng, chữ viết", "Kể về hoạt động lớp học: đọc to, viết văn, diễn thuyết, chia nhóm", "Chỉ ra mấu chốt với 在于 và đặt giả thiết với 假设…就"],
       grammar: [
         { pattern: "A + 的关键/问题 + 在于 + B", vi: "'Mấu chốt của A là ở B': 在于 nối chủ đề với nguyên nhân hoặc bản chất, dùng nhiều trong văn viết và lời nói trang trọng.", ex: ["学好汉语的关键在于多朗读、多写作。", "Xué hǎo Hànyǔ de guānjiàn zàiyú duō lǎngdú, duō xiězuò.", "Mấu chốt để học giỏi tiếng Hán là đọc to nhiều, viết nhiều."] },
-        { pattern: "假设 + điều kiện, + … + 就 + kết quả", vi: "'Giả sử… thì…': đặt một giả thiết rồi suy ra kết quả; trang trọng hơn 如果.", ex: ["假设你每天记二十个词汇，一年就能记七千多个。", "Jiǎshè nǐ měi tiān jì èrshí ge cíhuì, yì nián jiù néng jì qīqiān duō ge.", "Giả sử mỗi ngày bạn nhớ hai mươi từ, một năm sẽ nhớ được hơn bảy nghìn từ."] },
+        { pattern: "假设 + điều kiện, + … + 就 + kết quả", vi: "'Giả sử… thì…': đặt một giả thiết rồi suy ra kết quả; trang trọng hơn 如果.", ex: ["假设你每天记二十个生词，一年就能记七千多个。", "Jiǎshè nǐ měi tiān jì èrshí ge shēngcí, yì nián jiù néng jì qīqiān duō ge.", "Giả sử mỗi ngày bạn nhớ hai mươi từ, một năm sẽ nhớ được hơn bảy nghìn từ."] },
         { pattern: "从 + A + 中 + 吸取 + 经验/教训", vi: "'Rút ra kinh nghiệm/bài học từ A'. 吸取 thường đi với 经验, 教训.", ex: ["我从这次演讲中吸取了很多经验。", "Wǒ cóng zhè cì yǎnjiǎng zhōng xīqǔ le hěn duō jīngyàn.", "Tôi rút ra được nhiều kinh nghiệm từ lần diễn thuyết này."] },
         { pattern: "通过 + cách thức, + kết quả", vi: "'Thông qua…': nêu cách thức để đạt kết quả, đặt đầu câu hoặc sau chủ ngữ.", ex: ["通过一个月的培训，我的写作水平提高了。", "Tōngguò yí ge yuè de péixùn, wǒ de xiězuò shuǐpíng tígāo le.", "Qua một tháng bồi dưỡng, trình độ viết của tôi đã tiến bộ."] },
       ],
@@ -156,7 +156,7 @@
       grammar: [
         { pattern: "随着 + sự thay đổi, + …", vi: "'Cùng với, theo đà…': nêu một thay đổi kéo theo thay đổi khác; thường đặt đầu câu.", ex: ["随着网络的发展，报社的读者越来越少。", "Suízhe wǎngluò de fāzhǎn, bàoshè de dúzhě yuè lái yuè shǎo.", "Cùng với sự phát triển của mạng, độc giả của tòa soạn ngày càng ít."] },
         { pattern: "一旦 + điều kiện, + 就 + kết quả", vi: "'Một khi… thì…': việc chưa chắc xảy ra, nhưng nếu xảy ra sẽ dẫn tới kết quả (thường quan trọng, khó thay đổi).", ex: ["合同一旦签了，就不能随便改。", "Hétong yídàn qiān le, jiù bù néng suíbiàn gǎi.", "Hợp đồng một khi đã ký thì không thể tùy tiện sửa."] },
-        { pattern: "不得不 + động từ", vi: "'Đành phải, buộc phải': làm việc mình không muốn vì hoàn cảnh bắt buộc.", ex: ["为了挣学费，他不得不去兼职。", "Wèile zhèng xuéfèi, tā bùdébù qù jiānzhí.", "Để kiếm học phí, cậu ấy đành phải đi làm thêm."] },
+        { pattern: "不得不 + động từ", vi: "'Đành phải, buộc phải': làm việc mình không muốn vì hoàn cảnh bắt buộc.", ex: ["为了挣学费，他不得不去兼职。", "Wèile zhèng xuéfèi, tā bùdébú qù jiānzhí.", "Để kiếm học phí, cậu ấy đành phải đi làm thêm."] },
         { pattern: "A + 占 + B + 的 + 百分之 + số", vi: "Nói tỉ lệ: A chiếm bao nhiêu phần trăm của B.", ex: ["女员工占公司员工的百分之六十。", "Nǚ yuángōng zhàn gōngsī yuángōng de bǎifēnzhī liùshí.", "Nhân viên nữ chiếm sáu mươi phần trăm nhân viên công ty."] },
       ],
       dialogue: [
@@ -214,7 +214,7 @@
       id: 308, level: 5, icon: "岛", title: "Du lịch & thiên nhiên", sub: "Tàu xe, lệch múi giờ, danh thắng, đảo và cây cỏ",
       goals: ["Nói về hành trình: tàu hỏa, lệch múi giờ, xuất trình giấy tờ, đồ mang theo", "Giới thiệu nơi đến: vị trí, danh thắng, đảo, món đặc sắc", "Kể về thiên nhiên: ao hồ, côn trùng, cây cối, khí hậu ẩm"],
       grammar: [
-        { pattern: "A + 位于 + nơi chốn", vi: "'A nằm ở…': văn viết, giới thiệu vị trí địa lý; trang trọng hơn 在.", ex: ["这个岛屿位于越南的南部。", "Zhège dǎoyǔ wèiyú Yuènán de nánbù.", "Hòn đảo này nằm ở miền Nam Việt Nam."] },
+        { pattern: "A + 位于 + nơi chốn", vi: "'A nằm ở…': văn viết, giới thiệu vị trí địa lý; trang trọng hơn 在.", ex: ["这个岛位于越南的南部。", "Zhège dǎo wèiyú Yuènán de nánbù.", "Hòn đảo này nằm ở miền Nam Việt Nam."] },
         { pattern: "趁 + thời cơ, + động từ", vi: "'Nhân lúc, tranh thủ': tận dụng thời điểm thuận lợi để làm việc gì.", ex: ["趁年轻，多去欧洲看看名胜古迹。", "Chèn niánqīng, duō qù Ōuzhōu kànkan míngshènggǔjì.", "Tranh thủ lúc còn trẻ, hãy đi châu Âu ngắm nhiều danh thắng di tích."] },
         { pattern: "既然 + sự thật, + 就 + …", vi: "'Đã… thì…': dựa vào sự thật đã biết để đưa ra đề nghị hoặc kết luận.", ex: ["既然还有时差，就先在酒店休息吧。", "Jìrán hái yǒu shíchā, jiù xiān zài jiǔdiàn xiūxi ba.", "Đã còn bị lệch múi giờ thì cứ nghỉ ở khách sạn trước đi."] },
         { pattern: "尽管 + sự thật, + 还是/但是 + …", vi: "'Mặc dù… nhưng vẫn…': nhượng bộ một sự thật có thật, vế sau nêu kết quả ngược lại.", ex: ["尽管天气很潮湿，游客还是很多。", "Jǐnguǎn tiānqì hěn cháoshī, yóukè háishi hěn duō.", "Mặc dù thời tiết rất ẩm, khách du lịch vẫn rất đông."] },
@@ -345,7 +345,7 @@
     { hz: "看望", py: "kànwàng", hv: "khán vọng", vi: "thăm, thăm hỏi", pos: "động từ", ex: ["周末我去医院看望爷爷。", "Zhōumò wǒ qù yīyuàn kànwàng yéye.", "Cuối tuần tôi vào viện thăm ông."], l: 305, level: 5 },
     { hz: "称", py: "chēng", hv: "xưng", vi: "gọi, gọi là; cân (đồ vật); (đọc chèn: vừa, hợp)", pos: "động từ", ex: ["我们都称他老王。", "Wǒmen dōu chēng tā Lǎo Wáng.", "Chúng tôi đều gọi anh ấy là anh Vương."], l: 305, level: 5 },
     { hz: "成人", py: "chéngrén", hv: "thành nhân", vi: "người lớn, người trưởng thành; trưởng thành", pos: "danh từ, động từ", ex: ["这部电影只适合成人看。", "Zhè bù diànyǐng zhǐ shìhé chéngrén kàn.", "Bộ phim này chỉ phù hợp cho người lớn xem."], l: 305, level: 5 },
-    { hz: "平安", py: "píng’ān", hv: "bình an", vi: "bình an, an toàn", pos: "tính từ", ex: ["祝你一路平安！", "Zhù nǐ yílù píng'ān!", "Chúc bạn thượng lộ bình an!"], l: 305, level: 5 },
+    { hz: "平安", py: "píng'ān", hv: "bình an", vi: "bình an, an toàn", pos: "tính từ", ex: ["祝你一路平安！", "Zhù nǐ yílù píng'ān!", "Chúc bạn thượng lộ bình an!"], l: 305, level: 5 },
     { hz: "哎", py: "āi", hv: "ai", vi: "này, ơi (gọi, gây chú ý); ôi, ủa (ngạc nhiên, tiếc)", pos: "thán từ", ex: ["哎，你的钱包掉了！", "Āi, nǐ de qiánbāo diào le!", "Này, bạn đánh rơi ví rồi!"], l: 305, level: 5 },
     { hz: "嗯", py: "ǹg", hv: "ân", vi: "ừ, ừm (đáp lời, đồng ý); hả (hỏi lại)", pos: "thán từ", ex: ["嗯，我知道了。", "Ǹg, wǒ zhīdào le.", "Ừ, tôi biết rồi."], l: 305, level: 5 },
     { hz: "夸张", py: "kuāzhāng", hv: "khoa trương", vi: "khoa trương, phóng đại, cường điệu", pos: "tính từ", ex: ["你说得太夸张了吧！", "Nǐ shuō de tài kuāzhāng le ba!", "Bạn nói quá lên rồi đấy!"], l: 305, level: 5 },

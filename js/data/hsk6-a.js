@@ -5,7 +5,7 @@
       id: 150, level: 6, icon: "家", title: "Gia đình và họ hàng", sub: "Vợ chồng, cha mẹ, quê quán và việc nuôi dạy con",
       goals: ["Gọi tên các vai trong gia đình: 伴侣, 配偶, 夫妇, 夫人, 伯母, 家属","Nói về quê quán, xuất thân và việc nuôi dạy con cái","Dùng 以…为…, 固然…但…, 毕竟 để bàn chuyện gia đình"],
       grammar: [
-        { pattern: "以 + A + 为 + B", vi: "'Lấy A làm B, coi A là B': cấu trúc văn viết, hay gặp trong 以家庭为重 (coi trọng gia đình), 以…为主 (lấy… làm chính).", ex: ["她一直以家庭为重，从不抱怨负担重。","Tā yìzhí yǐ jiātíng wéi zhòng, cóng bù bàoyuàn fùdān zhòng.","Cô ấy luôn đặt gia đình lên hàng đầu, chưa bao giờ than gánh nặng lớn."] },
+        { pattern: "以 + A + 为 + B", vi: "'Lấy A làm B, coi A là B': cấu trúc văn viết, hay gặp trong 以家庭为重 (coi trọng gia đình), 以…为主 (lấy… làm chính).", ex: ["她一直以家庭为重，从不抱怨负担重。","Tā yìzhí yǐ jiātíng wéi zhòng, cóng bú bàoyuàn fùdān zhòng.","Cô ấy luôn đặt gia đình lên hàng đầu, chưa bao giờ than gánh nặng lớn."] },
         { pattern: "A 固然 + …, 但(是) + B", vi: "'A tất nhiên là…, nhưng B': thừa nhận một mặt đúng của A rồi chuyển sang ý quan trọng hơn ở B.", ex: ["请保姆固然方便，但孩子还是需要父母陪伴。","Qǐng bǎomǔ gùrán fāngbiàn, dàn háizi háishi xūyào fùmǔ péibàn.","Thuê người giúp việc tất nhiên tiện, nhưng con cái vẫn cần bố mẹ ở bên."] },
         { pattern: "…, 毕竟 + lý do", vi: "'Dù sao thì, suy cho cùng': nêu lý do căn bản để người nghe thông cảm hoặc chấp nhận điều vừa nói.", ex: ["刚结婚的夫妇难免吵架，毕竟两个人需要时间磨合。","Gāng jiéhūn de fūfù nánmiǎn chǎojià, bìjìng liǎng ge rén xūyào shíjiān móhé.","Vợ chồng mới cưới khó tránh cãi nhau, dù sao hai người cũng cần thời gian để hòa hợp."] },
       ],
@@ -314,7 +314,7 @@
     { hz: "家属", py: "jiāshǔ", hv: "gia thuộc", vi: "người nhà, thân nhân", pos: "danh từ", ex: ["病人家属请在外面等。","Bìngrén jiāshǔ qǐng zài wàimiàn děng.","Người nhà bệnh nhân vui lòng đợi bên ngoài."], l: 150 },
     { hz: "美满", py: "měimǎn", hv: "mỹ mãn", vi: "hạnh phúc, tốt đẹp, viên mãn", pos: "tính từ", ex: ["他们有一个美满的家庭。","Tāmen yǒu yí ge měimǎn de jiātíng.","Họ có một gia đình hạnh phúc."], l: 150 },
     { hz: "磨合", py: "móhé", hv: "ma hợp", vi: "chạy rô-đa (máy); làm quen, hòa hợp với nhau", pos: "động từ", ex: ["新同事之间需要时间磨合。","Xīn tóngshì zhījiān xūyào shíjiān móhé.","Các đồng nghiệp mới cần thời gian để hòa hợp."], l: 150 },
-    { hz: "配偶", py: "pèi’ǒu", hv: "phối ngẫu", vi: "vợ hoặc chồng, người phối ngẫu", pos: "danh từ", ex: ["请填写配偶的姓名。","Qǐng tiánxiě pèi'ǒu de xìngmíng.","Vui lòng điền họ tên vợ hoặc chồng."], l: 150 },
+    { hz: "配偶", py: "pèi'ǒu", hv: "phối ngẫu", vi: "vợ hoặc chồng, người phối ngẫu", pos: "danh từ", ex: ["请填写配偶的姓名。","Qǐng tiánxiě pèi'ǒu de xìngmíng.","Vui lòng điền họ tên vợ hoặc chồng."], l: 150 },
     // ---- Bài 151: Hôn nhân và thế hệ ----
     { hz: "亲密", py: "qīnmì", hv: "thân mật", vi: "thân mật, thân thiết", pos: "tính từ", ex: ["他们是亲密的朋友。","Tāmen shì qīnmì de péngyou.","Họ là những người bạn thân thiết."], l: 151 },
     { hz: "亲热", py: "qīnrè", hv: "thân nhiệt", vi: "thân mật, thân thiết; âu yếm", pos: "tính từ, động từ", ex: ["她们俩很亲热，像亲姐妹一样。","Tāmen liǎ hěn qīnrè, xiàng qīn jiěmèi yíyàng.","Hai cô ấy rất thân thiết, như chị em ruột vậy."], l: 151 },
@@ -328,7 +328,7 @@
     { hz: "媳妇", py: "xífu", hv: "tức phụ", vi: "con dâu; (đọc xífu, khẩu ngữ) vợ", pos: "danh từ", ex: ["王大妈对媳妇很好。","Wáng dàmā duì xífu hěn hǎo.","Bác Vương rất tốt với con dâu."], l: 151 },
     { hz: "新郎", py: "xīnláng", hv: "tân lang", vi: "chú rể", pos: "danh từ", ex: ["新郎今天看起来特别帅。","Xīnláng jīntiān kàn qǐlai tèbié shuài.","Hôm nay chú rể trông đặc biệt đẹp trai."], l: 151 },
     { hz: "新娘", py: "xīnniáng", hv: "tân nương", vi: "cô dâu", pos: "danh từ", ex: ["今天的新娘真漂亮。","Jīntiān de xīnniáng zhēn piàoliang.","Cô dâu hôm nay đẹp thật."], l: 151 },
-    { hz: "婴儿", py: "yīng’ér", hv: "anh nhi", vi: "trẻ sơ sinh, em bé", pos: "danh từ", ex: ["婴儿在床上睡得很香。","Yīng'ér zài chuáng shang shuì de hěn xiāng.","Em bé ngủ rất ngon trên giường."], l: 151 },
+    { hz: "婴儿", py: "yīng'ér", hv: "anh nhi", vi: "trẻ sơ sinh, em bé", pos: "danh từ", ex: ["婴儿在床上睡得很香。","Yīng'ér zài chuáng shang shuì de hěn xiāng.","Em bé ngủ rất ngon trên giường."], l: 151 },
     { hz: "岳母", py: "yuèmǔ", hv: "nhạc mẫu", vi: "mẹ vợ", pos: "danh từ", ex: ["岳母做的菜特别好吃。","Yuèmǔ zuò de cài tèbié hǎochī.","Món mẹ vợ nấu đặc biệt ngon."], l: 151 },
     { hz: "孕育", py: "yùnyù", hv: "dựng dục", vi: "mang thai, thai nghén; nuôi dưỡng, ấp ủ", pos: "động từ", ex: ["黄河孕育了中华文明。","Huáng Hé yùnyù le Zhōnghuá wénmíng.","Sông Hoàng Hà đã nuôi dưỡng nền văn minh Trung Hoa."], l: 151 },
     { hz: "侄子", py: "zhízi", hv: "điệt tử", vi: "cháu trai (con của anh em trai)", pos: "danh từ", ex: ["我侄子今年十岁了。","Wǒ zhízi jīnnián shí suì le.","Cháu trai tôi năm nay mười tuổi."], l: 151 },
@@ -440,7 +440,7 @@
     { hz: "扎", py: "zhā", hv: "trát", vi: "đâm, châm (kim); chui vào, lao vào (đọc zhā); buộc, bó (đọc zā)", pos: "động từ", ex: ["我的手指被针扎了一下。","Wǒ de shǒuzhǐ bèi zhēn zhāle yíxià.","Ngón tay tôi bị kim đâm một cái."], l: 156 },
     { hz: "折", py: "zhé", hv: "chiết", vi: "bẻ gãy, gập; giảm giá (打折); gấp (giấy); quay lại", pos: "động từ", ex: ["他不小心把树枝折断了。","Tā bù xiǎoxīn bǎ shùzhī zhéduàn le.","Anh ấy vô ý bẻ gãy cành cây."], l: 156 },
     { hz: "拄", py: "zhǔ", hv: "trụ", vi: "chống (gậy)", pos: "động từ", ex: ["老人拄着拐杖慢慢走。","Lǎorén zhǔ zhe guǎizhàng mànmàn zǒu.","Cụ già chống gậy chậm rãi bước đi."], l: 156 },
-    { hz: "拽", py: "zhuài", hv: "duệ", vi: "kéo, lôi; (zhuāi) ném, quăng; (khẩu ngữ) vênh váo", pos: "động từ", ex: ["他拽着我的手不放。","Tā zhuàizhe wǒ de shǒu bú fàng.","Anh ấy kéo chặt tay tôi không buông."], l: 156 },
+    { hz: "拽", py: "zhuài", hv: "duệ", vi: "kéo, lôi; (zhuāi) ném, quăng; (zhuǎi, khẩu ngữ) vênh váo", pos: "động từ", ex: ["他拽着我的手不放。","Tā zhuàizhe wǒ de shǒu bú fàng.","Anh ấy kéo chặt tay tôi không buông."], l: 156 },
     // ---- Bài 157: Nhìn và ánh mắt ----
     { hz: "打量", py: "dǎliang", hv: "đả lượng", vi: "nhìn từ đầu đến chân, quan sát; tưởng là", pos: "động từ", ex: ["他上下打量着我。","Tā shàngxià dǎliang zhe wǒ.","Anh ta nhìn tôi từ đầu đến chân."], l: 157 },
     { hz: "瞪", py: "dèng", hv: "trừng", vi: "trợn mắt, lườm, trừng mắt", pos: "động từ", ex: ["妈妈瞪了我一眼。","Māma dèng le wǒ yì yǎn.","Mẹ lườm tôi một cái."], l: 157 },

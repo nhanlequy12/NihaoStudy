@@ -38,7 +38,7 @@
         { pattern: "A, + 免得 + B", vi: "'Kẻo, để khỏi B': giống 以免 nhưng khẩu ngữ hơn, vế sau là điều không mong muốn.", ex: ["出门前我再叮嘱你一遍，免得你忘了。", "Chūmén qián wǒ zài dīngzhǔ nǐ yí biàn, miǎnde nǐ wàng le.", "Trước khi ra ngoài mẹ dặn con lần nữa, kẻo con quên."] },
       ],
       dialogue: [
-        ["A", "经理刚才吩咐我，把会议的意思传达给大家。", "Jīnglǐ gāngcái fēnfù wǒ, bǎ huìyì de yìsi chuándá gěi dàjiā.", "Giám đốc vừa dặn tôi truyền đạt tinh thần cuộc họp cho mọi người."],
+        ["A", "经理刚才吩咐我，把会议精神传达给大家。", "Jīnglǐ gāngcái fēnfù wǒ, bǎ huìyì jīngshén chuándá gěi dàjiā.", "Giám đốc vừa dặn tôi truyền đạt tinh thần cuộc họp cho mọi người."],
         ["B", "那你简要说说吧，别太啰唆。", "Nà nǐ jiǎnyào shuōshuo ba, bié tài luōsuo.", "Vậy bạn nói ngắn gọn thôi, đừng dài dòng quá."],
         ["A", "他先阐述了明年的计划，又列举了几个问题，最后交代我们下周一定要答复客户。", "Tā xiān chǎnshù le míngnián de jìhuà, yòu lièjǔ le jǐ ge wèntí, zuìhòu jiāodài wǒmen xià zhōu yídìng yào dáfù kèhù.", "Ông ấy trình bày kế hoạch năm sau, rồi kể ra mấy vấn đề, cuối cùng dặn chúng ta tuần sau nhất định phải trả lời khách hàng."],
         ["B", "加工资的事呢？他上次口头答应过的。", "Jiā gōngzī de shì ne? Tā shàng cì kǒutóu dāying guo de.", "Còn chuyện tăng lương? Lần trước ông ấy hứa miệng rồi mà."],
@@ -225,7 +225,7 @@
         ["我们 要 不断 超越 自己", "Wǒmen yào búduàn chāoyuè zìjǐ.", "Chúng ta phải không ngừng vượt qua chính mình."],
         ["他们 之间 终于 爆发 了 争吵", "Tāmen zhījiān zhōngyú bàofā le zhēngchǎo.", "Giữa họ cuối cùng đã nổ ra cãi vã."],
       ],
-      tips: "爆发 (bạo phát) là nổ ra đột ngột (núi lửa, chiến tranh, cơn giận); 暴发 cùng đọc bàofā nhưng là lũ đổ về hoặc 'phất lên' (暴发户 kẻ mới giàu). 迸发 (bính phát) là bật ra từ bên trong (tia lửa, tiếng vỗ tay, cảm hứng). 恶化 là chuyển sang xấu, 加剧 là vốn đã xấu nay xấu thêm; 急剧 là trạng từ 'nhanh, đột ngột' đứng trước động từ: 急剧下降. 递增 (đệ tăng) là tăng đều theo bậc, hay đi với 逐年. 动态 ngày nay còn chỉ 'bài đăng, trạng thái' trên mạng xã hội: 发动态, 朋友圈动态.",
+      tips: "爆发 (bạo phát) là nổ ra đột ngột (núi lửa, chiến tranh, cơn giận); 暴发 cùng đọc bàofā nhưng là lũ đổ về hoặc 'phất lên' (暴发户 kẻ mới giàu). 迸发 (bính phát) là bật ra từ bên trong (tia lửa, tiếng vỗ tay, cảm hứng). 恶化 là chuyển sang xấu, 加剧 là vốn đã xấu nay xấu thêm; 急剧 là tính từ 'nhanh, đột ngột', thường làm trạng ngữ trước động từ: 急剧下降. 递增 (đệ tăng) là tăng đều theo bậc, hay đi với 逐年. 动态 ngày nay còn chỉ 'bài đăng, trạng thái' trên mạng xã hội: 发动态, 朋友圈动态.",
     },
     {
       id: 248, level: 6, icon: "转", title: "Bước ngoặt và tồn tại", sub: "Bành trướng, đột phá, diễn biến; tệ nạn, bế tắc",
@@ -277,7 +277,7 @@
         ["我们 要 正视 自己 的 弱点", "Wǒmen yào zhèngshì zìjǐ de ruòdiǎn.", "Chúng ta phải nhìn thẳng vào điểm yếu của mình."],
         ["很多 野生 动物 濒临 灭绝", "Hěn duō yěshēng dòngwù bīnlín mièjué.", "Nhiều động vật hoang dã đang đứng trước nguy cơ tuyệt chủng."],
         ["洗 水果 时 要 把 残留 的 农药 洗 掉", "Xǐ shuǐguǒ shí yào bǎ cánliú de nóngyào xǐ diào.", "Khi rửa hoa quả phải rửa sạch thuốc trừ sâu còn sót lại."],
-        ["今晚 你 就 在 沙发 上 将就 一下 吧", "Jīnwǎn nǐ jiù zài shāfā shang jiāngjiu yíxià ba.", "Tối nay bạn chịu khó ngủ tạm trên sofa nhé."],
+        ["今晚 你 就 在 沙发 上 将就 一下 吧", "Jīnwǎn nǐ jiù zài shāfā shang jiāngjiu yíxià ba.", "Tối nay bạn chịu khó ngủ tạm trên sofa nhé.", ["你 今晚 就 在 沙发 上 将就 一下 吧"]],
         ["这个 小区 实行 封闭 管理", "Zhège xiǎoqū shíxíng fēngbì guǎnlǐ.", "Khu dân cư này áp dụng quản lý khép kín."],
         ["我 只是 一个 平凡 的 人", "Wǒ zhǐshì yí ge píngfán de rén.", "Tôi chỉ là một người bình thường."],
         ["夕阳 下 的 湖面 呈现 出 一片 金色", "Xīyáng xià de húmiàn chéngxiàn chū yí piàn jīnsè.", "Dưới ánh hoàng hôn, mặt hồ hiện lên một màu vàng óng."],

@@ -55,7 +55,7 @@
         ["这 杯 咖啡 有点儿 苦涩","Zhè bēi kāfēi yǒudiǎnr kǔsè.","Cốc cà phê này hơi đắng chát."],
         ["饺子 的 馅儿 是 白菜 和 猪肉","Jiǎozi de xiànr shì báicài hé zhūròu.","Nhân sủi cảo là cải thảo và thịt lợn."],
         ["小狗 正 啃 着 一 块 骨头","Xiǎo gǒu zhèng kěn zhe yí kuài gǔtou.","Chú chó con đang gặm một khúc xương."],
-        ["厨房 里 飘 出 一 股 香 的 气味","Chúfáng lǐ piāo chū yì gǔ xiāng de qìwèi.","Trong bếp tỏa ra một mùi thơm."],
+        ["厨房 里 飘 出 一 股 诱人 的 气味","Chúfáng lǐ piāo chū yì gǔ yòurén de qìwèi.","Trong bếp tỏa ra một mùi thơm hấp dẫn."],
       ],
       tips: "烹饪 (phanh nhẫm) là từ trang trọng cho 'nấu nướng', khẩu ngữ nói 做饭/做菜. 品尝 là nếm kỹ để thưởng thức, còn 尝 là nếm thử thông thường. 滋味 vừa là mùi vị vừa là cảm giác trong lòng: 心里不是滋味 = thấy chạnh lòng, khó chịu. 正宗 hay dùng để khen món ăn 'chuẩn vị, đúng gốc', giống 'chính tông' trong tiếng Việt. 狼吞虎咽 (lang thôn hổ yến) làm trạng ngữ với 地: 狼吞虎咽地吃. 舔 (liếm) khác 啃 (gặm): 舔冰淇淋, 啃骨头.",
     },

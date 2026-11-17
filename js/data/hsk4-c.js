@@ -56,7 +56,7 @@
       id: 67, level: 4, icon: "泪", title: "Cảm xúc tiêu cực", sub: "Buồn, thất vọng, áp lực, khó khăn",
       goals: ["Nói về nỗi buồn, thất vọng và hối hận", "Diễn đạt áp lực và khó khăn trong cuộc sống", "An ủi và thể hiện sự đồng cảm"],
       grammar: [
-        { pattern: "不得不", vi: "'Không thể không, buộc phải', diễn tả hành động bắt buộc dù không muốn.", ex: ["压力太大，他不得不换工作。", "Yālì tài dà, tā bùdébù huàn gōngzuò.", "Áp lực quá lớn, anh ấy buộc phải đổi việc."] },
+        { pattern: "不得不", vi: "'Không thể không, buộc phải', diễn tả hành động bắt buộc dù không muốn.", ex: ["压力太大，他不得不换工作。", "Yālì tài dà, tā bùdébú huàn gōngzuò.", "Áp lực quá lớn, anh ấy buộc phải đổi việc."] },
         { pattern: "恐怕", vi: "'E rằng, sợ rằng', nêu dự đoán về điều không hay, đặt trước động từ hoặc đầu câu.", ex: ["这次考试恐怕又要失望了。", "Zhè cì kǎoshì kǒngpà yòu yào shīwàng le.", "Kỳ thi lần này e là lại thất vọng rồi."] },
         { pattern: "即使…也…", vi: "'Cho dù… cũng…', nêu giả thiết rồi khẳng định kết quả không đổi.", ex: ["即使很辛苦，我也不会放弃。", "Jíshǐ hěn xīnkǔ, wǒ yě bú huì fàngqì.", "Dù rất vất vả, tôi cũng sẽ không bỏ cuộc."] },
       ],

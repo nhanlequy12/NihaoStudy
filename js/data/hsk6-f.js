@@ -86,7 +86,7 @@
         ["我们 队 在 下半场 发起 了 进攻","Wǒmen duì zài xiàbànchǎng fāqǐ le jìngōng.","Đội chúng tôi phát động tấn công ở hiệp hai."],
         ["侵略者 掠夺 了 这个 地区 的 资源","Qīnlüèzhě lüèduó le zhège dìqū de zīyuán.","Kẻ xâm lược đã cướp đoạt tài nguyên của khu vực này."],
         ["这种 武器 的 威力 非常 大","Zhè zhǒng wǔqì de wēilì fēicháng dà.","Loại vũ khí này có uy lực rất lớn."],
-        ["他 年轻 时 在 军队 里 负责 后勤","Tā niánqīng shí zài jūnduì lǐ fùzé hòuqín.","Hồi trẻ ông ấy phụ trách hậu cần trong quân đội."],
+        ["他 年轻 时 在 军队 里 负责 后勤","Tā niánqīng shí zài jūnduì lǐ fùzé hòuqín.","Hồi trẻ ông ấy phụ trách hậu cần trong quân đội.", ["年轻 时 他 在 军队 里 负责 后勤"]],
       ],
       tips: "将军 có hai nghĩa: 'tướng quân' (danh từ) và 'chiếu tướng' khi chơi cờ (động từ, 将军!); cả hai đều đọc jiāngjūn. 率领 đọc shuàilǐng: 率 đọc shuài khi là 'dẫn đầu', đọc lǜ trong 效率, 概率 (tiếng Việt đều là 'suất' nên dễ nhầm). 进攻 là chủ động tiến lên tấn công (dùng cả trong thể thao); 攻击 là tấn công một mục tiêu cụ thể, còn có nghĩa 'công kích' bằng lời. 情报 là thông tin thu thập có mục đích (tình báo, thông tin thị trường), không dùng cho tin tức thường ngày (消息, 新闻).",
     },
@@ -203,7 +203,7 @@
         ["老人 被 埋葬 在 家乡 的 山坡 上","Lǎorén bèi máizàng zài jiāxiāng de shānpō shàng.","Cụ già được chôn cất trên sườn đồi quê nhà."],
         ["这位 科学家 于 去年 逝世","Zhè wèi kēxuéjiā yú qùnián shìshì.","Nhà khoa học này qua đời năm ngoái."],
         ["网上 购物 已经 成为 消费 的 主流","Wǎngshàng gòuwù yǐjīng chéngwéi xiāofèi de zhǔliú.","Mua sắm trực tuyến đã trở thành xu hướng tiêu dùng chủ đạo."],
-        ["人们 在 追悼会 上 默默 流泪","Rénmen zài zhuīdàohuì shàng mòmò liú lèi.","Mọi người lặng lẽ rơi nước mắt tại lễ truy điệu."],
+        ["人们 在 追悼会 上 默默 流泪","Rénmen zài zhuīdàohuì shàng mòmò liú lèi.","Mọi người lặng lẽ rơi nước mắt tại lễ truy điệu.", ["在 追悼会 上 人们 默默 流泪"]],
         ["国旗 在 庄严 的 音乐 中 升起","Guóqí zài zhuāngyán de yīnyuè zhōng shēngqǐ.","Quốc kỳ được kéo lên trong tiếng nhạc trang nghiêm."],
       ],
       tips: "Các cách nói về cái chết theo mức trang trọng: 死 (trung tính, thẳng) → 去世 (lịch sự) → 逝世 (trang trọng, cho người có địa vị). 埋葬 vừa là 'chôn cất' vừa có nghĩa bóng 'chôn vùi' (埋葬旧制度). Mười hai con giáp của Việt Nam có mèo thay thỏ, trâu thay bò; khi nói với người Trung Quốc nên giải thích. 正月 đọc zhēngyuè (thanh 1), không đọc zhèng. 忌讳 vừa là động từ (忌讳说…) vừa là danh từ (犯忌讳). 隆重 dùng cho buổi lễ quy mô lớn, 庄严 nhấn không khí nghiêm trang.",
@@ -243,7 +243,7 @@
       grammar: [
         { pattern: "(没想到) + … + 反倒 + kết quả trái dự đoán", vi: "'Ngược lại, trái lại': kết quả đi ngược lẽ thường hoặc điều người ta nghĩ.", ex: ["他学了十年舞蹈，没想到演话剧反倒更受欢迎。","Tā xué le shí nián wǔdǎo, méi xiǎngdào yǎn huàjù fǎndào gèng shòu huānyíng.","Anh ấy học múa mười năm, không ngờ đóng kịch nói lại được yêu thích hơn."] },
         { pattern: "不至于 + động từ/tính từ", vi: "'Chưa đến mức': khẳng định tình hình không tệ như lo ngại.", ex: ["多排练几次，明天的演出不至于出问题。","Duō páiliàn jǐ cì, míngtiān de yǎnchū bú zhìyú chū wèntí.","Tập thêm mấy lần thì buổi diễn ngày mai chưa đến mức gặp sự cố."] },
-        { pattern: "岂不 + …?", vi: "'Há chẳng phải… sao': câu hỏi tu từ để khẳng định mạnh, văn viết.", ex: ["把这么贵的陶瓷放在门口，岂不太危险了？","Bǎ zhème guì de táocí fàng zài ménkǒu, qǐbù tài wēixiǎn le?","Đặt đồ gốm đắt như vậy ở cửa chẳng phải quá nguy hiểm sao?"] },
+        { pattern: "岂不 + …?", vi: "'Há chẳng phải… sao': câu hỏi tu từ để khẳng định mạnh, văn viết.", ex: ["把这么贵的陶瓷放在门口，岂不太危险了？","Bǎ zhème guì de táocí fàng zài ménkǒu, qǐbú tài wēixiǎn le?","Đặt đồ gốm đắt như vậy ở cửa chẳng phải quá nguy hiểm sao?"] },
         { pattern: "Thành ngữ: … + 描绘/塑造 + 得 + 栩栩如生", vi: "栩栩如生 'sống động như thật': thường làm bổ ngữ sau 得 hoặc làm vị ngữ khi khen tranh, tượng, nhân vật.", ex: ["画家把小鸟描绘得栩栩如生。","Huàjiā bǎ xiǎo niǎo miáohuì de xǔxǔrúshēng.","Hoạ sĩ vẽ chú chim nhỏ sống động như thật."] },
       ],
       dialogue: [
@@ -297,7 +297,7 @@
   ];
   const vocab = [
     { hz: "威望", py: "wēiwàng", hv: "uy vọng", vi: "uy tín, uy danh", pos: "danh từ", ex: ["他在村里很有威望。","Tā zài cūn lǐ hěn yǒu wēiwàng.","Ông ấy rất có uy tín trong làng."], l: 200 },
-    { hz: "威信", py: "wēixìn", hv: "uy tín", vi: "uy tín, uy danh", pos: "danh từ", ex: ["他在村里很有威信。","Tā zài cūn lǐ hěn yǒu wēixìn.","Ông ấy rất có uy tín trong làng."], l: 200 },
+    { hz: "威信", py: "wēixìn", hv: "uy tín", vi: "uy tín, uy danh", pos: "danh từ", ex: ["说话不算数的人会失去威信。","Shuōhuà bú suànshù de rén huì shīqù wēixìn.","Người nói không giữ lời sẽ mất uy tín."], l: 200 },
     { hz: "委员", py: "wěiyuán", hv: "uỷ viên", vi: "uỷ viên, thành viên uỷ ban", pos: "danh từ", ex: ["他是委员会的委员。","Tā shì wěiyuánhuì de wěiyuán.","Ông ấy là uỷ viên của uỷ ban."], l: 200 },
     { hz: "响应", py: "xiǎngyìng", hv: "hưởng ứng", vi: "hưởng ứng; đáp ứng, phản hồi", pos: "động từ", ex: ["大家积极响应学校的号召。","Dàjiā jījí xiǎngyìng xuéxiào de hàozhào.","Mọi người tích cực hưởng ứng lời kêu gọi của nhà trường."], l: 200 },
     { hz: "行政", py: "xíngzhèng", hv: "hành chính", vi: "hành chính; quản lý, điều hành", pos: "danh từ, tính từ", ex: ["他在市政府做行政工作。","Tā zài shì zhèngfǔ zuò xíngzhèng gōngzuò.","Anh ấy làm công tác hành chính ở chính quyền thành phố."], l: 200 },
@@ -463,7 +463,7 @@
     { hz: "书法", py: "shūfǎ", hv: "thư pháp", vi: "thư pháp; cách viết chữ", pos: "danh từ", ex: ["爷爷每天都练书法。","Yéye měi tiān dōu liàn shūfǎ.","Ông ngày nào cũng luyện thư pháp."], l: 208 },
     { hz: "塑造", py: "sùzào", hv: "tố tạo", vi: "nặn, đắp; xây dựng, khắc hoạ (nhân vật, hình ảnh)", pos: "động từ", ex: ["作者成功地塑造了一个英雄形象。","Zuòzhě chénggōng de sùzào le yí ge yīngxióng xíngxiàng.","Tác giả đã khắc hoạ thành công hình tượng một người anh hùng."], l: 208 },
     { hz: "陶瓷", py: "táocí", hv: "đào từ", vi: "đồ gốm sứ", pos: "danh từ", ex: ["这个城市以陶瓷闻名。","Zhège chéngshì yǐ táocí wénmíng.","Thành phố này nổi tiếng về gốm sứ."], l: 208 },
-    { hz: "图案", py: "tú’àn", hv: "đồ án", vi: "hoa văn, họa tiết, hình vẽ", pos: "danh từ", ex: ["这条裙子上的图案很漂亮。","Zhè tiáo qúnzi shang de tú'àn hěn piàoliang.","Họa tiết trên chiếc váy này rất đẹp."], l: 208 },
+    { hz: "图案", py: "tú'àn", hv: "đồ án", vi: "hoa văn, họa tiết, hình vẽ", pos: "danh từ", ex: ["这条裙子上的图案很漂亮。","Zhè tiáo qúnzi shang de tú'àn hěn piàoliang.","Họa tiết trên chiếc váy này rất đẹp."], l: 208 },
     { hz: "文艺", py: "wényì", hv: "văn nghệ", vi: "văn nghệ, văn học nghệ thuật", pos: "danh từ", ex: ["学校晚上有文艺表演。","Xuéxiào wǎnshang yǒu wényì biǎoyǎn.","Tối nay trường có biểu diễn văn nghệ."], l: 208 },
     { hz: "舞蹈", py: "wǔdǎo", hv: "vũ đạo", vi: "múa, vũ đạo", pos: "danh từ", ex: ["她从小就学习舞蹈。","Tā cóngxiǎo jiù xuéxí wǔdǎo.","Cô ấy học múa từ nhỏ."], l: 208 },
     { hz: "鲜明", py: "xiānmíng", hv: "tiên minh", vi: "tươi sáng (màu sắc); rõ ràng, rõ nét", pos: "tính từ", ex: ["这两个人物的性格特点很鲜明。","Zhè liǎng ge rénwù de xìnggé tèdiǎn hěn xiānmíng.","Tính cách của hai nhân vật này rất rõ nét."], l: 208 },

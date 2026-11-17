@@ -34,7 +34,7 @@
       goals: ["Nói về việc dạy và học: truyền thụ, làm mẫu, sửa lỗi, xin chỉ giáo","Nói về bằng cấp và thủ tục: học vị, văn bằng, bảo vệ luận văn, chỉ tiêu","Diễn đạt sự bắt buộc và lựa chọn với 非…不可, 宁可…也不, 难免"],
       grammar: [
         { pattern: "非 + Động từ/cụm từ + 不可", vi: "'Không… không được', tức là nhất định phải làm. Giọng điệu mạnh hơn 必须; khẩu ngữ có thể bỏ 不可 thành 非…不行.", ex: ["明天要考这首诗，今天我非背诵下来不可。","Míngtiān yào kǎo zhè shǒu shī, jīntiān wǒ fēi bèisòng xiàlai bùkě.","Mai thi bài thơ này, hôm nay tôi nhất định phải học thuộc."] },
-        { pattern: "宁可 + A, + 也不 + B", vi: "'Thà A còn hơn B': chấp nhận cái thiệt A để không phải làm B. Vế sau dùng 也不/也要.", ex: ["他宁可多学一年，也不随便拿一张文凭。","Tā nìngkě duō xué yì nián, yě bù suíbiàn ná yì zhāng wénpíng.","Anh ấy thà học thêm một năm còn hơn lấy đại một tấm bằng."] },
+        { pattern: "宁可 + A, + 也不 + B", vi: "'Thà A còn hơn B': chấp nhận cái thiệt A để không phải làm B. Vế sau thường dùng 也不 (也不肯, 也不愿). Nếu vế sau là 也要 B thì nghĩa là 'thà chịu A cũng phải làm B' (B là điều nhất định muốn làm).", ex: ["他宁可多学一年，也不随便拿一张文凭。","Tā nìngkě duō xué yì nián, yě bù suíbiàn ná yì zhāng wénpíng.","Anh ấy thà học thêm một năm còn hơn lấy đại một tấm bằng."] },
         { pattern: "难免 + Động từ/Tính từ", vi: "'Khó tránh khỏi': nói điều tất yếu sẽ xảy ra, thường là điều không hay. Có thể đứng trước động từ hoặc làm vị ngữ (是难免的).", ex: ["刚学外语，发音难免有错，老师会帮你纠正。","Gāng xué wàiyǔ, fāyīn nánmiǎn yǒu cuò, lǎoshī huì bāng nǐ jiūzhèng.","Mới học ngoại ngữ, phát âm khó tránh có lỗi, thầy sẽ giúp em sửa."] },
       ],
       dialogue: [
@@ -43,7 +43,7 @@
         ["A","对。我上学期缺席了几次课，会不会影响拿学位？","Duì. Wǒ shàng xuéqī quēxí le jǐ cì kè, huì bu huì yǐngxiǎng ná xuéwèi?","Dạ. Học kỳ trước em vắng mấy buổi, có ảnh hưởng đến việc nhận học vị không ạ?"],
         ["B","请过假的不算旷课，没关系。你每个科目的成绩都很好。","Qǐngguo jià de bú suàn kuàngkè, méi guānxi. Nǐ měi ge kēmù de chéngjì dōu hěn hǎo.","Vắng có xin phép thì không tính là trốn học, không sao. Môn nào của em điểm cũng tốt."],
         ["A","太好了。另外，学校还有去师范大学交流的名额吗？","Tài hǎo le. Lìngwài, xuéxiào hái yǒu qù shīfàn dàxué jiāoliú de míng'é ma?","Tốt quá. Ngoài ra trường còn suất đi giao lưu ở đại học sư phạm không ạ?"],
-        ["B","还有两个。去了以后多看老教授示范上课，把心得写下来。","Hái yǒu liǎng ge. Qù le yǐhòu duō kàn lǎo jiàoshòu shìfàn shàngkè, bǎ xīndé xiě xiàlai.","Còn hai suất. Đến đó thì dự nhiều giờ dạy mẫu của các giáo sư lâu năm, ghi lại những điều tâm đắc."],
+        ["B","还有两个。去了以后多听老教授的示范课，把心得写下来。","Hái yǒu liǎng ge. Qù le yǐhòu duō tīng lǎo jiàoshòu de shìfàn kè, bǎ xīndé xiě xiàlai.","Còn hai suất. Đến đó thì dự nhiều giờ dạy mẫu của các giáo sư lâu năm, ghi lại những điều tâm đắc."],
       ],
       sentences: [
         ["师父 把 手艺 传授 给 了 徒弟","Shīfu bǎ shǒuyì chuánshòu gěi le túdì.","Sư phụ đã truyền nghề cho đồ đệ."],
@@ -162,7 +162,7 @@
       sentences: [
         ["水 加热 到 一百 度 就 会 沸腾","Shuǐ jiārè dào yìbǎi dù jiù huì fèiténg.","Nước đun đến một trăm độ thì sẽ sôi."],
         ["月亮 反射 的 是 太阳 的 光","Yuèliang fǎnshè de shì tàiyáng de guāng.","Mặt trăng phản chiếu ánh sáng của mặt trời."],
-        ["用 放大镜 可以 看清 很 小 的 字","Yòng fàngdàjìng kěyǐ kàn qīng hěn xiǎo de zì.","Dùng kính lúp có thể nhìn rõ chữ rất nhỏ."],
+        ["用 放大镜 可以 看清 很 小 的 字","Yòng fàngdàjìng kěyǐ kàn qīng hěn xiǎo de zì.","Dùng kính lúp có thể nhìn rõ chữ rất nhỏ.", ["可以 用 放大镜 看清 很 小 的 字"]],
         ["长时间 接触 辐射 对 身体 有害","Cháng shíjiān jiēchù fúshè duì shēntǐ yǒuhài.","Tiếp xúc lâu với bức xạ có hại cho cơ thể."],
         ["用 杠杆 搬 石头 能 省 不少 力","Yòng gànggǎn bān shítou néng shěng bù shǎo lì.","Dùng đòn bẩy để chuyển đá sẽ đỡ tốn nhiều sức."],
         ["细菌 能 把 落叶 分解 成 肥料","Xìjūn néng bǎ luòyè fēnjiě chéng féiliào.","Vi khuẩn có thể phân hủy lá rụng thành phân bón."],
@@ -244,10 +244,10 @@
         ["B","误差是难免的。关键是按规定操作，并且及时备份数据。","Wùchā shì nánmiǎn de. Guānjiàn shì àn guīdìng cāozuò, bìngqiě jíshí bèifèn shùjù.","Sai số là khó tránh. Quan trọng là thao tác đúng quy định và sao lưu số liệu kịp thời."],
       ],
       sentences: [
-        ["植物 白天 会 放出 氧气","Zhíwù báitiān huì fàng chū yǎngqì.","Ban ngày cây xanh thải ra khí oxy."],
+        ["植物 白天 会 放出 氧气","Zhíwù báitiān huì fàng chū yǎngqì.","Ban ngày cây xanh thải ra khí oxy.", ["白天 植物 会 放出 氧气"]],
         ["水 是 由 两 种 元素 组成 的","Shuǐ shì yóu liǎng zhǒng yuánsù zǔchéng de.","Nước được cấu tạo từ hai nguyên tố."],
         ["地球 上 的 水 不停 地 循环","Dìqiú shang de shuǐ bùtíng de xúnhuán.","Nước trên trái đất tuần hoàn không ngừng."],
-        ["夏天 地 上 的 水 很 快 就 蒸发 了","Xiàtiān dì shang de shuǐ hěn kuài jiù zhēngfā le.","Mùa hè nước trên mặt đất bốc hơi rất nhanh."],
+        ["夏天 地 上 的 水 很 快 就 蒸发 了","Xiàtiān dì shang de shuǐ hěn kuài jiù zhēngfā le.","Mùa hè nước trên mặt đất bốc hơi rất nhanh.", ["地 上 的 水 夏天 很 快 就 蒸发 了"]],
         ["这 台 电脑 的 运算 能力 很 强","Zhè tái diànnǎo de yùnsuàn nénglì hěn qiáng.","Khả năng tính toán của máy tính này rất mạnh."],
         ["电池 有 正负 两 极","Diànchí yǒu zhèngfù liǎng jí.","Pin có hai cực dương và âm."],
         ["他 用 遥控器 操纵 小 飞机","Tā yòng yáokòngqì cāozòng xiǎo fēijī.","Cậu ấy dùng điều khiển từ xa để lái chiếc máy bay nhỏ."],
@@ -312,7 +312,7 @@
     { hz: "纠正", py: "jiūzhèng", hv: "củ chính", vi: "sửa, uốn nắn, chỉnh lại", pos: "động từ", ex: ["老师纠正了我的发音。","Lǎoshī jiūzhèng le wǒ de fāyīn.","Cô giáo đã sửa phát âm cho tôi."], l: 211 },
     { hz: "科目", py: "kēmù", hv: "khoa mục", vi: "môn học; hạng mục (thi cử, kế toán)", pos: "danh từ", ex: ["你最喜欢哪个科目？","Nǐ zuì xǐhuan nǎge kēmù?","Bạn thích môn học nào nhất?"], l: 211 },
     { hz: "旷课", py: "kuàngkè", hv: "khoáng khóa", vi: "trốn học, bỏ tiết", pos: "động từ", ex: ["他因为旷课被老师批评了。","Tā yīnwèi kuàngkè bèi lǎoshī pīpíng le.","Cậu ấy bị thầy phê bình vì trốn học."], l: 211 },
-    { hz: "名额", py: "míng’é", hv: "danh ngạch", vi: "chỉ tiêu, suất, số lượng người", pos: "danh từ", ex: ["这次比赛只有三个名额。","Zhè cì bǐsài zhǐyǒu sān ge míng'é.","Cuộc thi lần này chỉ có ba suất."], l: 211 },
+    { hz: "名额", py: "míng'é", hv: "danh ngạch", vi: "chỉ tiêu, suất, số lượng người", pos: "danh từ", ex: ["这次比赛只有三个名额。","Zhè cì bǐsài zhǐyǒu sān ge míng'é.","Cuộc thi lần này chỉ có ba suất."], l: 211 },
     { hz: "墨水儿", py: "mòshuǐr", hv: "mặc thuỷ nhi", vi: "mực (nước) (khẩu ngữ, âm cuộn lưỡi)", pos: "danh từ", ex: ["我的钢笔没墨水儿了。","Wǒ de gāngbǐ méi mòshuǐr le.","Bút máy của tôi hết mực rồi."], l: 211 },
     { hz: "普及", py: "pǔjí", hv: "phổ cập", vi: "phổ cập, phổ biến", pos: "động từ, tính từ", ex: ["手机已经很普及了。","Shǒujī yǐjīng hěn pǔjí le.","Điện thoại di động đã rất phổ biến."], l: 211 },
     { hz: "启蒙", py: "qǐméng", hv: "khải mông", vi: "dạy vỡ lòng; khai sáng", pos: "động từ", ex: ["奶奶是我的启蒙老师，教我认了第一个字。","Nǎinai shì wǒ de qǐméng lǎoshī, jiāo wǒ rèn le dì-yī ge zì.","Bà nội là người dạy vỡ lòng cho tôi, dạy tôi biết chữ đầu tiên."], l: 211 },

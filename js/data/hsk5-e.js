@@ -37,7 +37,7 @@
       grammar: [
         { pattern: "与其 + A, + 不如 + B", vi: "'Thà B còn hơn A'. So sánh hai lựa chọn và cho rằng B tốt hơn; B là điều người nói khuyên làm.", ex: ["与其把钱放在家里，不如投资股票。", "Yǔqí bǎ qián fàng zài jiā lǐ, bùrú tóuzī gǔpiào.", "Thay vì để tiền ở nhà, chi bằng đầu tư cổ phiếu."] },
         { pattern: "越 + A + 越 + B", vi: "'Càng A càng B'. A và B có thể cùng chủ ngữ hoặc khác chủ ngữ; A thay đổi thì B thay đổi theo.", ex: ["贷款越多，利息就越高。", "Dàikuǎn yuè duō, lìxī jiù yuè gāo.", "Vay càng nhiều, lãi càng cao."] },
-        { pattern: "不得不 + Động từ", vi: "'Không thể không, buộc phải'. Diễn tả việc bắt buộc phải làm dù không muốn, mạnh hơn 必须.", ex: ["公司破产了，他不得不卖掉自己的车。", "Gōngsī pòchǎn le, tā bùdébù mài diào zìjǐ de chē.", "Công ty phá sản, anh ấy buộc phải bán xe của mình."] },
+        { pattern: "不得不 + Động từ", vi: "'Không thể không, buộc phải'. Diễn tả việc bắt buộc phải làm dù không muốn, mạnh hơn 必须.", ex: ["公司破产了，他不得不卖掉自己的车。", "Gōngsī pòchǎn le, tā bùdébú mài diào zìjǐ de chē.", "Công ty phá sản, anh ấy buộc phải bán xe của mình."] },
         { pattern: "据说 + Câu", vi: "'Nghe nói, theo lời đồn'. Dẫn thông tin nghe từ người khác, không nêu nguồn cụ thể, đặt ở đầu câu.", ex: ["据说明年汇率会涨。", "Jùshuō míngnián huìlǜ huì zhǎng.", "Nghe nói năm sau tỷ giá sẽ tăng."] },
       ],
       dialogue: [
@@ -52,7 +52,7 @@
         ["这 些 财产 都 是 他 父亲 留 下 的", "Zhè xiē cáichǎn dōu shì tā fùqīn liú xià de.", "Những tài sản này đều do bố anh ấy để lại."],
         ["我 每 个 月 都 要 交 税", "Wǒ měi ge yuè dōu yào jiāo shuì.", "Tháng nào tôi cũng phải đóng thuế."],
         ["公司 去年 的 利润 涨 了 百分之 二十", "Gōngsī qùnián de lìrùn zhǎng le bǎi fēn zhī èrshí.", "Lợi nhuận năm ngoái của công ty tăng 20%."],
-        ["为了 挣钱 他 不得不 做 两 份 工作", "Wèile zhèngqián tā bùdébù zuò liǎng fèn gōngzuò.", "Để kiếm tiền anh ấy buộc phải làm hai việc."],
+        ["为了 挣钱 他 不得不 做 两 份 工作", "Wèile zhèngqián tā bùdébú zuò liǎng fèn gōngzuò.", "Để kiếm tiền anh ấy buộc phải làm hai việc."],
         ["买 保险 可以 减少 意外 的 损失", "Mǎi bǎoxiǎn kěyǐ jiǎnshǎo yìwài de sǔnshī.", "Mua bảo hiểm có thể giảm thiệt hại khi gặp chuyện bất ngờ."],
         ["这 个 城市 的 经济 越来越 繁荣", "Zhège chéngshì de jīngjì yuèláiyuè fánróng.", "Kinh tế thành phố này ngày càng phồn vinh."],
         ["发达 国家 的 生活 费用 很 高", "Fādá guójiā de shēnghuó fèiyòng hěn gāo.", "Chi phí sinh hoạt ở nước phát triển rất cao."],

@@ -42,7 +42,7 @@
         ["A", "这次假期你打算去哪儿？", "Zhè cì jiàqī nǐ dǎsuan qù nǎr?", "Kỳ nghỉ này bạn định đi đâu?"],
         ["B", "我想去山里看瀑布。听说那条山脉风景特别美。", "Wǒ xiǎng qù shān lǐ kàn pùbù. Tīngshuō nà tiáo shānmài fēngjǐng tèbié měi.", "Tôi muốn vào núi xem thác. Nghe nói dãy núi đó phong cảnh rất đẹp."],
         ["A", "山路是不是很曲折？我最怕爬坡了。", "Shānlù shì bu shì hěn qūzhé? Wǒ zuì pà pá pō le.", "Đường núi có quanh co không? Tôi sợ nhất là leo dốc."],
-        ["B", "前面一段是丘陵，比较平坦，后面才开始起伏。", "Qiánmiàn yí duàn shì qiūlíng, bǐjiào píngtǎn, hòumiàn cái kāishǐ qǐfú.", "Đoạn đầu là đồi thấp, khá bằng phẳng, đoạn sau mới bắt đầu lên xuống."],
+        ["B", "前面一段比较平坦，后面是丘陵，地势才开始起伏。", "Qiánmiàn yí duàn bǐjiào píngtǎn, hòumiàn shì qiūlíng, dìshì cái kāishǐ qǐfú.", "Đoạn đầu khá bằng phẳng, đoạn sau là đồi thấp, địa thế mới bắt đầu lên xuống."],
         ["A", "瀑布下面有湖吗？", "Pùbù xiàmiàn yǒu hú ma?", "Dưới thác có hồ không?"],
         ["B", "有，湖水非常清澈，湖畔还有一个小村子。", "Yǒu, húshuǐ fēicháng qīngchè, húpàn hái yǒu yí ge xiǎo cūnzi.", "Có, nước hồ trong vắt, bên hồ còn có một ngôi làng nhỏ."],
         ["A", "听起来真不错！站在山顶，一定能看到辽阔的平原。", "Tīng qǐlai zhēn búcuò! Zhàn zài shāndǐng, yídìng néng kàndào liáokuò de píngyuán.", "Nghe hay thật! Đứng trên đỉnh núi chắc chắn sẽ thấy đồng bằng bao la."],
@@ -102,7 +102,7 @@
         ["A", "难怪今天这么闷，气压也很低。", "Nánguài jīntiān zhème mēn, qìyā yě hěn dī.", "Thảo nào hôm nay oi thế, khí áp cũng thấp."],
         ["B", "是啊，今天最高三十八摄氏度，太炎热了。", "Shì a, jīntiān zuìgāo sānshíbā shèshìdù, tài yánrè le.", "Đúng vậy, hôm nay cao nhất 38 độ C, nóng quá."],
         ["A", "我老家在北方，冬天严寒，夏天也没这么热。", "Wǒ lǎojiā zài běifāng, dōngtiān yánhán, xiàtiān yě méi zhème rè.", "Quê tôi ở phương Bắc, mùa đông giá rét, mùa hè cũng không nóng thế này."],
-        ["B", "倘若台风真的来了，低的地方可能会被淹没，你最好别出门。", "Tǎngruò táifēng zhēn de lái le, dī de dìfang kěnéng huì bèi yānmò, nǐ zuìhǎo bié chūmén.", "Nếu bão đến thật, chỗ trũng có thể bị ngập, tốt nhất bạn đừng ra ngoài."],
+        ["B", "倘若台风真的来了，地势低的地方可能会被淹没，你最好别出门。", "Tǎngruò táifēng zhēn de lái le, dìshì dī de dìfang kěnéng huì bèi yānmò, nǐ zuìhǎo bié chūmén.", "Nếu bão đến thật, chỗ trũng có thể bị ngập, tốt nhất bạn đừng ra ngoài."],
         ["A", "好，我今天就去超市买点儿吃的，以免到时候没东西吃。", "Hǎo, wǒ jīntiān jiù qù chāoshì mǎi diǎnr chī de, yǐmiǎn dào shíhou méi dōngxi chī.", "Được, hôm nay tôi đi siêu thị mua ít đồ ăn, kẻo đến lúc đó không có gì ăn."],
       ],
       sentences: [
@@ -182,13 +182,13 @@
       grammar: [
         { pattern: "A + 尚且 + …，何况 + B", vi: "'A còn… huống hồ B': A là trường hợp thuận lợi hơn mà còn như vậy, B lại càng hiển nhiên.", ex: ["大人尚且捕捉不到这种鸟，何况孩子呢？", "Dàrén shàngqiě bǔzhuō bu dào zhè zhǒng niǎo, hékuàng háizi ne?", "Người lớn còn không bắt được loài chim này, huống hồ trẻ con?"] },
         { pattern: "非 + A + 不可", vi: "'Nhất định phải A, không A không được': nhấn mạnh sự cần thiết hoặc quyết tâm.", ex: ["想种好庄稼，非下功夫不可。", "Xiǎng zhòng hǎo zhuāngjia, fēi xià gōngfu bùkě.", "Muốn trồng hoa màu tốt thì nhất định phải bỏ công sức."] },
-        { pattern: "Động từ + 不得", vi: "'Không được, không thể': cấm đoán hoặc không nên làm vì hậu quả xấu (碰不得, 吃不得, 马虎不得).", ex: ["鸟儿正在繁殖，它们的巢穴碰不得。", "Niǎor zhèngzài fánzhí, tāmen de cháoxué pèng bu dé.", "Chim đang sinh sản, tổ của chúng không được động vào."] },
+        { pattern: "Động từ + 不得", vi: "'Không được, không thể': cấm đoán hoặc không nên làm vì hậu quả xấu (碰不得, 吃不得, 马虎不得).", ex: ["鸟儿正在繁殖，它们的巢穴碰不得。", "Niǎor zhèngzài fánzhí, tāmen de cháoxué pèng bu de.", "Chim đang sinh sản, tổ của chúng không được động vào."] },
       ],
       dialogue: [
         ["A", "周末我们去海边捡贝壳吧？", "Zhōumò wǒmen qù hǎibiān jiǎn bèiké ba?", "Cuối tuần mình ra biển nhặt vỏ sò nhé?"],
         ["B", "好啊，不过我更想去森林公园，那里有各种飞禽走兽。", "Hǎo a, búguò wǒ gèng xiǎng qù sēnlín gōngyuán, nàlǐ yǒu gè zhǒng fēiqínzǒushòu.", "Được thôi, nhưng mình thích đi công viên rừng hơn, ở đó có đủ loại chim muông thú vật."],
         ["A", "我爷爷年轻时常在那片森林里打猎。", "Wǒ yéye niánqīng shí cháng zài nà piàn sēnlín lǐ dǎliè.", "Hồi trẻ ông mình hay đi săn trong khu rừng đó."],
-        ["B", "现在可不行了，那里的动物都受保护，打不得。", "Xiànzài kě bùxíng le, nàlǐ de dòngwù dōu shòu bǎohù, dǎ bu dé.", "Bây giờ thì không được nữa, động vật ở đó đều được bảo vệ, không được săn."],
+        ["B", "现在可不行了，那里的动物都受保护，打不得。", "Xiànzài kě bùxíng le, nàlǐ de dòngwù dōu shòu bǎohù, dǎ bu de.", "Bây giờ thì không được nữa, động vật ở đó đều được bảo vệ, không được săn."],
         ["A", "我想用相机捕捉小鸟飞翔的样子。", "Wǒ xiǎng yòng xiàngjī bǔzhuō xiǎoniǎo fēixiáng de yàngzi.", "Mình muốn dùng máy ảnh bắt lấy dáng chim bay."],
         ["B", "那得早点儿去。听说傍晚还能听到狮子吼，不过是旁边动物园里的。", "Nà děi zǎo diǎnr qù. Tīngshuō bàngwǎn hái néng tīngdào shīzi hǒu, búguò shì pángbiān dòngwùyuán lǐ de.", "Thế thì phải đi sớm. Nghe nói chiều tối còn nghe được sư tử gầm, nhưng là ở sở thú bên cạnh."],
         ["A", "太好了！春天的时候，林子里花瓣落了一地，可漂亮了。", "Tài hǎo le! Chūntiān de shíhou, línzi lǐ huābàn luò le yí dì, kě piàoliang le.", "Tuyệt quá! Mùa xuân cánh hoa rơi đầy mặt đất trong rừng, đẹp lắm."],

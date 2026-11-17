@@ -40,7 +40,7 @@
       ],
       dialogue: [
         ["A", "听说你们公司在资助山区的学校？", "Tīngshuō nǐmen gōngsī zài zīzhù shānqū de xuéxiào?", "Nghe nói công ty các anh đang tài trợ cho trường học ở vùng núi?"],
-        ["B", "对，我们无偿给予了一批电脑，还派人去协助老师上课。", "Duì, wǒmen wúcháng jǐyǔ le yì pī diànnǎo, hái pài rén qù xiézhù lǎoshī shàngkè.", "Đúng, chúng tôi tặng không một lô máy tính, còn cử người đến hỗ trợ giáo viên dạy học."],
+        ["B", "对，我们无偿捐赠了一批电脑，还派人去协助老师上课。", "Duì, wǒmen wúcháng juānzèng le yì pī diànnǎo, hái pài rén qù xiézhù lǎoshī shàngkè.", "Đúng, chúng tôi tặng không một lô máy tính, còn cử người đến hỗ trợ giáo viên dạy học."],
         ["A", "真了不起！这种支援比单纯救济更有意义。", "Zhēn liǎobuqǐ! Zhè zhǒng zhīyuán bǐ dānchún jiùjì gèng yǒu yìyì.", "Thật đáng nể! Kiểu chi viện này có ý nghĩa hơn cứu tế đơn thuần."],
         ["B", "是啊，借助网络，孩子们也能上城里的课。", "Shì a, jièzhù wǎngluò, háizimen yě néng shàng chéng lǐ de kè.", "Đúng vậy, nhờ mạng internet, các em cũng có thể học các lớp ở thành phố."],
         ["A", "你们不求回报，这份心意真让人感动。", "Nǐmen bù qiú huíbào, zhè fèn xīnyì zhēn ràng rén gǎndòng.", "Các anh không cầu đền đáp, tấm lòng này thật khiến người ta cảm động."],
@@ -104,7 +104,7 @@
       ],
       sentences: [
         ["这 首 歌 引起 了 年轻人 的 共鸣", "Zhè shǒu gē yǐnqǐ le niánqīngrén de gòngmíng.", "Bài hát này khiến giới trẻ đồng cảm."],
-        ["看到 老 照片 他 心里 很 感慨", "Kàndào lǎo zhàopiàn, tā xīnli hěn gǎnkǎi.", "Nhìn những bức ảnh cũ, lòng ông ấy bùi ngùi."],
+        ["看到 老 照片 他 心里 很 感慨", "Kàndào lǎo zhàopiàn, tā xīnli hěn gǎnkǎi.", "Nhìn những bức ảnh cũ, lòng ông ấy bùi ngùi.", ["他 看到 老 照片 心里 很 感慨"]],
         ["她 的 眼神 里 流露 出 一丝 不安", "Tā de yǎnshén lǐ liúlù chū yì sī bù'ān.", "Trong ánh mắt cô ấy lộ ra một chút bất an."],
         ["我 很 留恋 在 越南 的 日子", "Wǒ hěn liúliàn zài Yuènán de rìzi.", "Tôi rất lưu luyến những ngày ở Việt Nam."],
         ["他 把 希望 寄托 在 下 一代 身上", "Tā bǎ xīwàng jìtuō zài xià yí dài shēnshang.", "Ông ấy gửi gắm hy vọng vào thế hệ sau."],
@@ -147,7 +147,7 @@
       goals: ["Diễn tả lo âu, sợ hãi và tuyệt vọng: 焦急, 恐惧, 沮丧, 绝望", "Nói về cảm giác ngượng ngùng, cô đơn, trống rỗng: 尴尬, 难堪, 孤独, 空虚", "Nhận xét, phê phán nhẹ nhàng với 未免, động từ + 不得 và 宁可…也不"],
       grammar: [
         { pattern: "未免 + (太/有点儿) + tính từ", vi: "'Có phần hơi…': nhận xét một việc là quá mức với giọng nhẹ nhàng, mềm hơn 太…了.", ex: ["为了这点儿小事就埋怨他，未免太过分了。", "Wèile zhè diǎnr xiǎoshì jiù mányuàn tā, wèimiǎn tài guòfèn le.", "Vì chuyện nhỏ này mà trách móc anh ấy thì có phần hơi quá."] },
-        { pattern: "Động từ + 不得", vi: "'Không được, không thể': 不得 sau động từ biểu thị không nên làm vì sẽ có hậu quả xấu, như 马虎不得, 碰不得, 急不得.", ex: ["考试的事马虎不得，否则会悔恨一辈子。", "Kǎoshì de shì mǎhu bu dé, fǒuzé huì huǐhèn yí bèizi.", "Chuyện thi cử không được qua loa, nếu không sẽ hối hận cả đời."] },
+        { pattern: "Động từ + 不得", vi: "'Không được, không thể': 不得 sau động từ biểu thị không nên làm vì sẽ có hậu quả xấu, như 马虎不得, 碰不得, 急不得.", ex: ["考试的事马虎不得，否则会悔恨一辈子。", "Kǎoshì de shì mǎhu bu de, fǒuzé huì huǐhèn yí bèizi.", "Chuyện thi cử không được qua loa, nếu không sẽ hối hận cả đời."] },
         { pattern: "宁可 + A, + 也不 + B", vi: "'Thà A chứ không B': chấp nhận A dù không tốt, kiên quyết không làm B.", ex: ["他宁可一个人孤独地生活，也不向别人低头。", "Tā nìngkě yí ge rén gūdú de shēnghuó, yě bú xiàng biérén dītóu.", "Anh ấy thà sống cô độc một mình chứ không cúi đầu trước người khác."] },
       ],
       dialogue: [
@@ -161,7 +161,7 @@
       sentences: [
         ["她 焦急 地 在 门口 等 孩子 回来", "Tā jiāojí de zài ménkǒu děng háizi huílai.", "Cô ấy sốt ruột đứng ở cửa đợi con về."],
         ["很多 人 对 黑暗 有 一种 恐惧", "Hěn duō rén duì hēi'àn yǒu yì zhǒng kǒngjù.", "Nhiều người có nỗi sợ bóng tối."],
-        ["退休 后 他 常常 觉得 空虚", "Tuìxiū hòu tā chángcháng juéde kōngxū.", "Sau khi nghỉ hưu ông ấy thường thấy trống trải."],
+        ["退休 后 他 常常 觉得 空虚", "Tuìxiū hòu tā chángcháng juéde kōngxū.", "Sau khi nghỉ hưu ông ấy thường thấy trống trải.", ["他 退休 后 常常 觉得 空虚"]],
         ["这 份 工作 又 枯燥 又 辛苦", "Zhè fèn gōngzuò yòu kūzào yòu xīnkǔ.", "Công việc này vừa tẻ nhạt vừa vất vả."],
         ["无论 多 困难 都 不要 绝望", "Wúlùn duō kùnnan dōu búyào juéwàng.", "Dù khó khăn đến đâu cũng đừng tuyệt vọng."],
         ["他 被 大雨 淋 得 十分 狼狈", "Tā bèi dàyǔ lín de shífēn lángbèi.", "Anh ấy bị mưa to dội cho ướt sũng, trông thật thảm hại."],
@@ -187,8 +187,8 @@
         ["B", "我也这么想，只是怕家里人为难。", "Wǒ yě zhème xiǎng, zhǐshì pà jiālǐ rén wéinán.", "Tôi cũng nghĩ thế, chỉ sợ người nhà khó xử."],
       ],
       sentences: [
-        ["他 晚年 一个 人 生活 十分 凄凉", "Tā wǎnnián yí ge rén shēnghuó, shífēn qīliáng.", "Tuổi già ông ấy sống một mình, rất hiu quạnh."],
-        ["大家 都 为 他 的 离开 感到 惋惜", "Dàjiā dōu wèi tā de líkāi gǎndào wǎnxī.", "Mọi người đều tiếc nuối vì anh ấy ra đi."],
+        ["他 晚年 一个 人 生活 十分 凄凉", "Tā wǎnnián yí ge rén shēnghuó, shífēn qīliáng.", "Tuổi già ông ấy sống một mình, rất hiu quạnh.", ["晚年 他 一个 人 生活 十分 凄凉"]],
+        ["大家 都 为 他 的 离开 感到 惋惜", "Dàjiā dōu wèi tā de líkāi gǎndào wǎnxī.", "Mọi người đều tiếc nuối vì anh ấy rời đi."],
         ["勇敢 的 人 在 困难 面前 毫不 畏惧", "Yǒnggǎn de rén zài kùnnan miànqián háo bú wèijù.", "Người dũng cảm không hề sợ hãi trước khó khăn."],
         ["欺负 弱者 的 行为 会 被 人们 唾弃", "Qīfu ruòzhě de xíngwéi huì bèi rénmen tuòqì.", "Hành vi bắt nạt kẻ yếu sẽ bị mọi người phỉ nhổ."],
         ["做错 了 事 应该 感到 羞耻", "Zuòcuò le shì yīnggāi gǎndào xiūchǐ.", "Làm sai thì nên thấy hổ thẹn."],
@@ -428,7 +428,7 @@
     { hz: "忧郁", py: "yōuyù", hv: "ưu uất", vi: "u sầu, buồn rầu, trầm uất", pos: "tính từ", ex: ["她看起来很忧郁。", "Tā kàn qǐlai hěn yōuyù.", "Trông cô ấy rất u sầu."], l: 236 },
     { hz: "责怪", py: "zéguài", hv: "trách quái", vi: "trách móc, đổ lỗi", pos: "động từ", ex: ["这不是你的错，别责怪自己。", "Zhè bú shì nǐ de cuò, bié zéguài zìjǐ.", "Đây không phải lỗi của bạn, đừng tự trách mình."], l: 236 },
     { hz: "折腾", py: "zhēteng", hv: "chiết đằng", vi: "trằn trọc; làm đi làm lại, loay hoay; giày vò", pos: "động từ", ex: ["他折腾了一晚上也没睡着。", "Tā zhēteng le yì wǎnshang yě méi shuìzháo.", "Anh ấy trằn trọc cả đêm cũng không ngủ được."], l: 236 },
-    { hz: "折磨", py: "zhémó", hv: "chiết ma", vi: "giày vò, hành hạ; nỗi đau khổ", pos: "động từ", ex: ["这种病折磨了他好几年。", "Zhè zhǒng bìng zhémó le tā hǎo jǐ nián.", "Căn bệnh này đã hành hạ ông ấy mấy năm trời."], l: 236 },
+    { hz: "折磨", py: "zhémó", hv: "chiết ma", vi: "giày vò, hành hạ; nỗi đau khổ", pos: "động từ, danh từ", ex: ["这种病折磨了他好几年。", "Zhè zhǒng bìng zhémó le tā hǎo jǐ nián.", "Căn bệnh này đã hành hạ ông ấy mấy năm trời."], l: 236 },
     { hz: "挣扎", py: "zhēngzhá", hv: "tranh trát", vi: "giãy giụa, vùng vẫy; vật lộn, gắng gượng", pos: "động từ", ex: ["小鸟在网里拼命挣扎。", "Xiǎo niǎo zài wǎng lǐ pīnmìng zhēngzhá.", "Chú chim nhỏ giãy giụa hết sức trong lưới."], l: 236 },
     { hz: "自卑", py: "zìbēi", hv: "tự ti", vi: "tự ti", pos: "tính từ", ex: ["别自卑，你很优秀。", "Bié zìbēi, nǐ hěn yōuxiù.", "Đừng tự ti, bạn giỏi lắm mà."], l: 236 },
     // ---- Bài 237: Phép lịch sự ----

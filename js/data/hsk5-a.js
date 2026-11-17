@@ -91,7 +91,7 @@
       grammar: [
         { pattern: "除非 + A, + 否则 + B", vi: "'Trừ phi A, nếu không thì B': A là điều kiện duy nhất để tránh kết quả xấu B.", ex: ["除非你戒烟，否则咳嗽不会好。", "Chúfēi nǐ jièyān, fǒuzé késou bú huì hǎo.", "Trừ phi bạn bỏ thuốc, nếu không ho sẽ không khỏi."] },
         { pattern: "…, + 以免 + hậu quả xấu", vi: "'Để khỏi, để tránh': vế trước là hành động nên làm, sau 以免 là điều không mong muốn.", ex: ["多穿点儿衣服，以免着凉。", "Duō chuān diǎnr yīfu, yǐmiǎn zháoliáng.", "Mặc thêm áo để khỏi bị cảm lạnh."] },
-        { pattern: "不得不 + Động từ", vi: "'Không thể không, buộc phải': làm việc gì vì hoàn cảnh bắt buộc, không phải vì muốn.", ex: ["医生说他不得不做手术。", "Yīshēng shuō tā bùdébù zuò shǒushù.", "Bác sĩ nói anh ấy buộc phải phẫu thuật."] },
+        { pattern: "不得不 + Động từ", vi: "'Không thể không, buộc phải': làm việc gì vì hoàn cảnh bắt buộc, không phải vì muốn.", ex: ["医生说他不得不做手术。", "Yīshēng shuō tā bùdébú zuò shǒushù.", "Bác sĩ nói anh ấy buộc phải phẫu thuật."] },
         { pattern: "Chủ ngữ + 被 + Động từ + 了 (không có tác nhân)", vi: "Câu bị động có thể bỏ người gây ra hành động khi không biết hoặc không cần nói rõ; động từ vẫn phải có 了 hoặc bổ ngữ.", ex: ["他被传染了，发烧三天。", "Tā bèi chuánrǎn le, fāshāo sān tiān.", "Anh ấy bị lây bệnh, sốt ba ngày."] },
       ],
       dialogue: [
