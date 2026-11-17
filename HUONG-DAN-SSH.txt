@@ -1,0 +1,158 @@
+HƯỚNG DẪN: THÊM SSH KEY VÀO GITHUB, LẤY CODE NIHAOSTUDY VÀ CHẠY WEB LOCAL
+Repo: git@github.com:nhanlequy12/NihaoStudy.git
+Làm lần lượt từng bước trên máy mới. Mỗi khối lệnh chạy riêng.
+
+======================================================================
+BƯỚC 0. KIỂM TRA MÁY ĐÃ CÓ GIT VÀ PYTHON CHƯA
+======================================================================
+    git --version
+    python3 --version        (Windows: python --version)
+
+Nếu báo không có lệnh:
+  - Windows: cài Git tại https://git-scm.com/download/win
+             cài Python tại https://www.python.org/downloads/ (tick "Add python.exe to PATH")
+  - macOS:   xcode-select --install
+  - Ubuntu:  sudo apt install git python3
+
+Khai báo tên và email cho commit (làm một lần trên mỗi máy):
+    git config --global user.name "Ten Cua Ban"
+    git config --global user.email "email-github-cua-ban@example.com"
+
+======================================================================
+BƯỚC 1. KIỂM TRA ĐÃ CÓ SSH KEY CHƯA
+======================================================================
+  Linux / macOS / Git Bash:
+    ls ~/.ssh
+
+  Windows PowerShell:
+    dir $HOME\.ssh
+
+Nếu đã có file id_ed25519.pub thì bỏ qua Bước 2, sang Bước 3.
+
+======================================================================
+BƯỚC 2. TẠO SSH KEY MỚI
+======================================================================
+  Linux / macOS / Git Bash / Windows PowerShell (cùng một lệnh):
+    ssh-keygen -t ed25519 -C "email-github-cua-ban@example.com"
+
+  - Hỏi "Enter file in which to save the key": bấm Enter (giữ mặc định).
+  - Hỏi "Enter passphrase": gõ mật khẩu cho key, hoặc bấm Enter để bỏ trống.
+    Có passphrase thì an toàn hơn nếu máy bị mất.
+
+Kết quả là hai file:
+  id_ed25519      = KHOÁ BÍ MẬT. Không gửi cho ai, không dán lên đâu.
+  id_ed25519.pub  = khoá công khai. File này mới là file dán lên GitHub.
+
+======================================================================
+BƯỚC 3. COPY KHOÁ CÔNG KHAI (.pub)
+======================================================================
+  Linux:               cat ~/.ssh/id_ed25519.pub
+  macOS:               pbcopy < ~/.ssh/id_ed25519.pub        (đã copy sẵn)
+  Windows PowerShell:  Get-Content $HOME\.ssh\id_ed25519.pub | Set-Clipboard   (đã copy sẵn)
+  Windows cmd:         type %USERPROFILE%\.ssh\id_ed25519.pub | clip           (đã copy sẵn)
+
+Nội dung có dạng một dòng:
+  ssh-ed25519 AAAAC3Nza...rất dài... email-github-cua-ban@example.com
+Copy cả dòng.
+
+======================================================================
+BƯỚC 4. DÁN KHOÁ VÀO GITHUB
+======================================================================
+1. Đăng nhập GitHub bằng tài khoản nhanlequy12 (hoặc tài khoản có quyền ghi vào repo).
+2. Mở: https://github.com/settings/ssh/new
+3. Title: đặt tên máy, ví dụ "May van phong".
+4. Key type: Authentication Key.
+5. Key: dán dòng vừa copy.
+6. Bấm "Add SSH key" (GitHub có thể hỏi lại mật khẩu).
+
+======================================================================
+BƯỚC 5. KIỂM TRA KẾT NỐI
+======================================================================
+    ssh -T git@github.com
+
+  - Lần đầu sẽ hỏi "Are you sure you want to continue connecting (yes/no)?"
+    gõ: yes
+  - Thành công khi thấy:
+    Hi nhanlequy12! You've successfully authenticated, but GitHub does not provide shell access.
+
+Nếu báo "Permission denied (publickey)": xem mục SỬA LỖI ở cuối file.
+
+======================================================================
+BƯỚC 6. LẤY CODE VỀ MÁY
+======================================================================
+Trường hợp A: máy này CHƯA có code
+    git clone git@github.com:nhanlequy12/NihaoStudy.git
+    cd NihaoStudy
+
+Trường hợp B: máy này ĐÃ có code, lấy qua https trước đó
+    cd đường-dẫn-tới/NihaoStudy
+    git remote set-url origin git@github.com:nhanlequy12/NihaoStudy.git
+    git remote -v          (phải thấy git@github.com:nhanlequy12/NihaoStudy.git)
+    git pull
+
+======================================================================
+BƯỚC 7. CHẠY WEB LOCAL
+======================================================================
+Đây là web tĩnh (HTML/CSS/JS), không cần cài thư viện hay build.
+Đứng trong thư mục NihaoStudy:
+
+  Linux / macOS:
+    python3 -m http.server 8787 --bind 127.0.0.1
+  Windows:
+    python -m http.server 8787 --bind 127.0.0.1
+
+Mở trình duyệt: http://localhost:8787
+Nên dùng Chrome hoặc Edge (có giọng đọc tiếng Trung và nhận dạng giọng nói).
+Sửa file xong chỉ cần F5, không phải chạy lại server.
+Tắt server: bấm Ctrl + C trong cửa sổ terminal đang chạy.
+
+Các file chính để chỉnh:
+  index.html          khung trang
+  css/style.css       giao diện
+  js/app.js           điều hướng, khởi động
+  js/views.js         các màn hình
+  js/data/            từ vựng, bài học, bài đọc
+
+======================================================================
+BƯỚC 8. LƯU VÀ ĐẨY CODE LÊN GITHUB
+======================================================================
+    git pull                         (lấy bản mới nhất trước khi sửa)
+    git status                       (xem file nào đã đổi)
+    git add .
+    git commit -m "Mo ta ngan thay doi"
+    git push
+
+======================================================================
+SỬA LỖI THƯỜNG GẶP
+======================================================================
+1) "Permission denied (publickey)"
+   - Kiểm tra đã dán đúng file .pub (không phải file không đuôi).
+   - Kiểm tra key đã nằm trong https://github.com/settings/keys
+   - Nạp key vào ssh-agent rồi thử lại Bước 5:
+       Linux / macOS / Git Bash:
+         eval "$(ssh-agent -s)"
+         ssh-add ~/.ssh/id_ed25519
+       Windows PowerShell (mở PowerShell bằng "Run as Administrator" cho 2 lệnh đầu):
+         Get-Service ssh-agent | Set-Service -StartupType Automatic
+         Start-Service ssh-agent
+         ssh-add $HOME\.ssh\id_ed25519
+
+2) Mạng công ty chặn cổng 22 (lệnh ssh -T bị treo hoặc "Connection timed out")
+   Tạo hoặc mở file ~/.ssh/config (Windows: C:\Users\<ten>\.ssh\config), thêm:
+       Host github.com
+           Hostname ssh.github.com
+           Port 443
+           User git
+   Rồi chạy lại: ssh -T git@github.com
+
+3) "ERROR: Permission to nhanlequy12/NihaoStudy.git denied to <ten-khac>"
+   Key đang gắn với một tài khoản GitHub khác, không có quyền ghi repo.
+   Hoặc dán key vào đúng tài khoản nhanlequy12,
+   hoặc nhờ chủ repo mời tài khoản kia làm Collaborator
+   (repo > Settings > Collaborators > Add people).
+
+4) Cổng 8787 đang bị dùng ("Address already in use")
+   Đổi sang số khác, ví dụ 8788, rồi mở http://localhost:8788
+
+5) "python" hoặc "python3" không tìm thấy trên Windows
+   Thử lệnh: py -m http.server 8787 --bind 127.0.0.1
