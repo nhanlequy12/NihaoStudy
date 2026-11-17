@@ -91,8 +91,46 @@
   };
 
   // ---------- Bảng "Thêm" (điện thoại) ----------
+  const sheet = document.getElementById("sheet"), backdrop = document.getElementById("sheet-backdrop");
   window.UI = {
-    openSheet() { document.getElementById("sheet").classList.add("open"); document.getElementById("sheet-backdrop").classList.add("open"); },
-    closeSheet() { document.getElementById("sheet").classList.remove("open"); document.getElementById("sheet-backdrop").classList.remove("open"); },
+    openSheet() { sheet.style.transform = ""; backdrop.style.opacity = ""; sheet.classList.add("open"); backdrop.classList.add("open"); },
+    closeSheet() { sheet.style.transform = ""; backdrop.style.opacity = ""; sheet.classList.remove("open"); backdrop.classList.remove("open"); },
   };
+
+  // Vuốt xuống để đóng bảng "Thêm": bảng bám theo ngón tay, nền mờ nhạt dần theo quãng kéo;
+  // thả ra thì đóng nếu kéo quá 30% chiều cao hoặc vuốt nhanh, không thì bật về.
+  let sg = null;
+  sheet.addEventListener("pointerdown", (e) => {
+    if (e.pointerType === "mouse" || !sheet.classList.contains("open")) return;
+    // chỉ bắt đầu kéo khi nội dung đang ở đầu (không giành cử chỉ cuộn)
+    if (sheet.scrollTop > 0 && !e.target.closest(".sheet-handle")) return;
+    sg = { id: e.pointerId, y: e.clientY, x: e.clientX, dy: 0, on: false, h: sheet.offsetHeight, lastY: e.clientY, lastT: performance.now(), v: 0 };
+  });
+  sheet.addEventListener("pointermove", (e) => {
+    if (!sg || e.pointerId !== sg.id) return;
+    const dy = e.clientY - sg.y;
+    if (!sg.on) {
+      if (dy < 8 || Math.abs(e.clientX - sg.x) > Math.abs(dy)) { if (dy < -4 || Math.abs(e.clientX - sg.x) > 10) sg = null; return; }
+      sg.on = true; sheet.classList.add("dragging"); backdrop.style.transition = "none"; try { sheet.setPointerCapture(sg.id); } catch (err) {}
+    }
+    const now = performance.now();
+    sg.v = (e.clientY - sg.lastY) / Math.max(1, now - sg.lastT); sg.lastY = e.clientY; sg.lastT = now;
+    sg.dy = Math.max(0, dy);
+    sheet.style.transform = `translate3d(0, ${sg.dy}px, 0)`;
+    backdrop.style.opacity = String(1 - Math.min(1, sg.dy / sg.h));
+  });
+  const endSheet = (e) => {
+    if (!sg || e.pointerId !== sg.id) return;
+    const st = sg; sg = null;
+    if (!st.on) return;
+    sheet.classList.remove("dragging"); backdrop.style.transition = "";
+    // chặn cú bấm nhầm vào ô vừa nhả tay
+    const stop = (ev) => { ev.preventDefault(); ev.stopPropagation(); };
+    sheet.addEventListener("click", stop, { capture: true, once: true });
+    setTimeout(() => sheet.removeEventListener("click", stop, { capture: true }), 0);
+    if (st.dy > st.h * 0.3 || st.v > 0.5) UI.closeSheet();
+    else { sheet.style.transform = ""; backdrop.style.opacity = ""; }
+  };
+  sheet.addEventListener("pointerup", endSheet);
+  sheet.addEventListener("pointercancel", endSheet);
 })();

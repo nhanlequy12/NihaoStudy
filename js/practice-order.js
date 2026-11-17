@@ -118,9 +118,12 @@
       const hb = box.querySelector("#hint"); if (hb) hb.onclick = () => { box.querySelector("#hintv").textContent = it.vi; hb.remove(); };
 
       // Vẽ lại hai vùng; hiệu ứng FLIP cho chuyển động mượt
-      function render() {
+      // from: vị trí bắt đầu của một cụm (khi thả từ bóng kéo), để cụm trượt từ chỗ ngón tay về chỗ mới
+      const calm = matchMedia("(prefers-reduced-motion: reduce)");
+      function render(from) {
         const before = new Map();
         box.querySelectorAll(".od-chip").forEach((c) => before.set(c.dataset.k, c.getBoundingClientRect()));
+        if (from) before.set(String(from.k), from.rect);
         const chip = (k, n) => `<button type="button" class="od-chip zh" data-k="${k}">${n != null ? `<small>${n}</small>` : ""}${esc(it.chunks[k])}</button>`;
         ans.innerHTML = (answer.length ? answer.map((k) => chip(k)).join("") : `<span class="od-empty muted small">Kéo hoặc bấm các cụm bên dưới vào đây</span>`) + (it.end ? `<span class="od-end zh">${esc(it.end)}</span>` : "");
         const inBank = it.order.filter((k) => !answer.includes(k));
@@ -128,14 +131,14 @@
         box.querySelectorAll(".od-chip").forEach((c) => {
           const a = before.get(c.dataset.k); if (!a) return;
           const b = c.getBoundingClientRect(), dx = a.left - b.left, dy = a.top - b.top;
-          if (dx || dy) c.animate([{ transform: `translate(${dx}px,${dy}px)` }, { transform: "none" }], { duration: 180, easing: "ease-out" });
+          if ((dx || dy) && !calm.matches) c.animate([{ transform: `translate(${dx}px,${dy}px)` }, { transform: "none" }], { duration: 200, easing: "cubic-bezier(0.23, 1, 0.32, 1)" });
         });
       }
-      const move = (k, toAns, at) => {
+      const move = (k, toAns, at, from) => {
         if (done) return;
         answer = answer.filter((x) => x !== k);
         if (toAns) answer.splice(at == null ? answer.length : at, 0, k);
-        render();
+        render(from);
       };
 
       // Bấm: chuyển qua lại giữa hai vùng
@@ -149,8 +152,20 @@
       let drag = null;
       box.querySelector(".od-card").addEventListener("pointerdown", (e) => {
         const c = e.target.closest(".od-chip"); if (!c || done || e.button > 0) return;
-        drag = { c, k: +c.dataset.k, x: e.clientX, y: e.clientY, moved: false, ghost: null };
+        drag = { c, k: +c.dataset.k, x: e.clientX, y: e.clientY, moved: false, ghost: null, id: e.pointerId };
       });
+      // vị trí chèn theo điểm thả: trước cụm đầu tiên có tâm nằm sau điểm thả (theo hàng, rồi theo cột)
+      const inAnswer = (e) => { const o = ans.getBoundingClientRect(); return e.clientX >= o.left && e.clientX <= o.right && e.clientY >= o.top - 20 && e.clientY <= o.bottom + 20; };
+      const dropIndex = (e, k) => {
+        const chips = [...ans.querySelectorAll(".od-chip")].filter((x) => +x.dataset.k !== k);
+        for (let n = 0; n < chips.length; n++) {
+          const r = chips[n].getBoundingClientRect();
+          if (e.clientY < r.top) return { at: n, el: chips[n] };
+          if (e.clientY <= r.bottom && e.clientX < r.left + r.width / 2) return { at: n, el: chips[n] };
+        }
+        return { at: chips.length, el: null };
+      };
+      const caret = document.createElement("span"); caret.className = "od-caret"; caret.setAttribute("aria-hidden", "true");
       const onMove = (e) => {
         if (!drag) return;
         if (!drag.moved && Math.hypot(e.clientX - drag.x, e.clientY - drag.y) < 6) return;
@@ -159,33 +174,26 @@
           drag.moved = true;
           const r = drag.c.getBoundingClientRect();
           drag.ghost = drag.c.cloneNode(true); drag.ghost.classList.add("od-ghost");
+          // đặt bóng kéo một lần, sau đó chỉ đổi transform: không tính lại bố cục mỗi lần ngón tay di chuyển
           Object.assign(drag.ghost.style, { left: r.left + "px", top: r.top + "px", width: r.width + "px" });
-          drag.dx = drag.x - r.left; drag.dy = drag.y - r.top;
           document.body.appendChild(drag.ghost); drag.c.classList.add("od-lifted");
+          try { drag.c.setPointerCapture(drag.id); } catch (err) {}
         }
-        drag.ghost.style.left = e.clientX - drag.dx + "px"; drag.ghost.style.top = e.clientY - drag.dy + "px";
-        const over = ans.getBoundingClientRect();
-        ans.classList.toggle("od-over", e.clientX >= over.left && e.clientX <= over.right && e.clientY >= over.top - 20 && e.clientY <= over.bottom + 20);
+        drag.ghost.style.transform = `translate3d(${e.clientX - drag.x}px, ${e.clientY - drag.y}px, 0) rotate(-2deg) scale(1.05)`;
+        const over = inAnswer(e);
+        ans.classList.toggle("od-over", over);
+        if (over) { const d = dropIndex(e, drag.k); const end = ans.querySelector(".od-end"); ans.insertBefore(caret, d.el || end || null); } else caret.remove();
       };
       const onUp = (e) => {
         if (!drag) return;
         const d = drag; drag = null;
         if (!d.moved) return;
         d.c.dataset.dragged = "1";
-        d.ghost.remove(); ans.classList.remove("od-over");
-        const over = ans.getBoundingClientRect();
-        const inAns = e.clientX >= over.left && e.clientX <= over.right && e.clientY >= over.top - 20 && e.clientY <= over.bottom + 20;
-        if (inAns) {
-          // chèn trước cụm đầu tiên có tâm nằm sau điểm thả (theo hàng, rồi theo cột)
-          const chips = [...ans.querySelectorAll(".od-chip")].filter((x) => +x.dataset.k !== d.k);
-          let at = chips.length;
-          for (let n = 0; n < chips.length; n++) {
-            const r = chips[n].getBoundingClientRect();
-            if (e.clientY < r.top) { at = n; break; }
-            if (e.clientY <= r.bottom && e.clientX < r.left + r.width / 2) { at = n; break; }
-          }
-          move(d.k, true, at);
-        } else move(d.k, false);
+        const from = { k: d.k, rect: d.ghost.getBoundingClientRect() };
+        caret.remove(); d.ghost.remove(); ans.classList.remove("od-over");
+        // cụm trượt từ chỗ thả về vị trí mới (hoặc về lại khay nếu thả ra ngoài)
+        if (inAnswer(e)) move(d.k, true, dropIndex(e, d.k).at, from);
+        else move(d.k, false, null, from);
         setTimeout(() => { const c = box.querySelector(`.od-chip[data-k="${d.k}"]`); if (c) delete c.dataset.dragged; }, 0);
       };
       document.addEventListener("pointermove", onMove, { passive: false });

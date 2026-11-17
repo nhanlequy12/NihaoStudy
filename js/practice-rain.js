@@ -148,7 +148,16 @@
   }
 
   // ---------- Màn chọn ----------
+  // Font pixel chỉ dùng trong trò chơi: tải khi mở trò chơi, không tải ở mọi trang
+  function loadPixelFont() {
+    if (document.getElementById("font-px")) return;
+    const l = document.createElement("link");
+    l.id = "font-px"; l.rel = "stylesheet"; l.href = "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap";
+    document.head.appendChild(l);
+  }
+
   function run(std, box) {
+    loadPixelFont();
     App.setFocus(false);
     Practice.setup(box, {
       std,
@@ -199,21 +208,34 @@
       </div>`;
 
     const stage = box.querySelector("#stage"), cv = box.querySelector("#cv"), ctx = cv.getContext("2d"), msg = box.querySelector("#msg");
-    let W = 0, H = 0, dpr = 1;
+    let W = 0, H = 0, dpr = 1, bg = null;
+    const vv = window.visualViewport;
     function resize() {
+      const oldH = H;
       dpr = Math.min(2, window.devicePixelRatio || 1);
       W = stage.clientWidth;
       const phone = innerWidth < 700;
-      H = Math.round(isHz ? (phone ? Math.max(220, Math.min(300, innerHeight * 0.3)) : Math.max(300, Math.min(400, innerHeight * 0.42))) : Math.max(280, Math.min(520, innerHeight * (phone ? 0.5 : 0.56))));
+      // điện thoại: tính theo vùng nhìn thấy thật (đã trừ bàn phím) để ô gõ không bị bàn phím che
+      const vh = phone && vv ? vv.height : innerHeight;
+      if (isHz) H = Math.round(phone ? Math.max(220, Math.min(300, innerHeight * 0.3)) : Math.max(300, Math.min(400, innerHeight * 0.42)));
+      else if (phone) { const rest = (box.querySelector(".rain-hud")?.offsetHeight || 56) + (box.querySelector(".rain-input")?.offsetHeight || 72) + 24; H = Math.round(Math.max(220, Math.min(520, vh - rest, innerHeight * 0.5))); }
+      else H = Math.round(Math.max(280, Math.min(520, innerHeight * 0.56)));
       stage.style.height = H + "px";
       cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + "px"; cv.style.height = H + "px";
+      bg = null; // vẽ lại nền tĩnh cho kích thước mới
+      // giữ vị trí tương đối của bong bóng khi sân đổi chiều cao (bàn phím mở/đóng), tránh bóng nhảy
+      if (oldH && oldH !== H && S) S.bubbles.forEach((b) => { b.y *= H / oldH; b.vy = (H + 2 * b.r) / fallTime(); });
+      if (S) draw();
     }
+    let S = null;
     resize();
-    const onResize = () => resize();
+    let rzRaf = 0;
+    const onResize = () => { cancelAnimationFrame(rzRaf); rzRaf = requestAnimationFrame(resize); };
     addEventListener("resize", onResize);
+    if (vv) vv.addEventListener("resize", onResize);
 
     const queue = words.slice();
-    const S = { score: 0, level: 1, combo: 0, lives: 3, popped: 0, bubbles: [], parts: [], floats: [], reveals: [], stars: [], wrong: [], spawnAt: 0, paused: false, over: false, started: performance.now(), pausedFor: 0, pauseStart: 0, flash: 0 };
+    S = { score: 0, level: 1, combo: 0, lives: 3, popped: 0, bubbles: [], parts: [], floats: [], reveals: [], stars: [], wrong: [], spawnAt: 0, paused: false, over: false, started: performance.now(), pausedFor: 0, pauseStart: 0, flash: 0 };
     for (let i = 0; i < 60; i++) S.stars.push({ x: Math.random(), y: Math.random(), s: Math.random() < 0.2 ? 2 : 1, v: 0.004 + Math.random() * 0.01 });
     const T = { easy: 15, normal: 11.5, hard: 8.5 }[cfg.diff] * (isHz ? 2.4 : 1);   // giây để bóng rơi hết màn hình ở màn 1
     const GAP = { easy: 2700, normal: 2100, hard: 1500 }[cfg.diff] * (isHz ? 2.2 : 1);
@@ -316,34 +338,46 @@
         S.stars.forEach((s) => { s.y += s.v * dt * 10; if (s.y > 1) { s.y = 0; s.x = Math.random(); } });
         S.flash = Math.max(0, S.flash - dt * 2.5);
       }
-      draw();
+      // đang tạm dừng: khung hình đứng yên, không cần vẽ lại (đỡ tốn pin)
+      const idle = S.paused && !S.parts.length && !S.floats.length && !S.reveals.length;
+      if (!idle || !S.drewIdle) { draw(); S.drewIdle = idle; }
       raf = requestAnimationFrame(frame);
     }
-    function draw() {
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      ctx.imageSmoothingEnabled = false;
-      // nền
-      const g = ctx.createLinearGradient(0, 0, 0, H);
+    // Nền tĩnh (dải màu + mặt đất) vẽ một lần vào canvas phụ, mỗi khung chỉ chép lại
+    function background() {
+      if (bg) return bg;
+      bg = document.createElement("canvas"); bg.width = W * dpr; bg.height = H * dpr;
+      const c = bg.getContext("2d"); c.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const g = c.createLinearGradient(0, 0, 0, H);
       g.addColorStop(0, "#14122b"); g.addColorStop(1, "#2a1b3d");
-      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-      S.stars.forEach((s) => { ctx.fillStyle = s.s > 1 ? "#cfc6ff" : "#6d64a8"; ctx.fillRect(Math.round(s.x * W), Math.round(s.y * H), s.s * 2, s.s * 2); });
-      // mặt đất
-      for (let x = 0; x < W; x += 12) { ctx.fillStyle = (x / 12) % 2 ? "#ff5d73" : "#c23a52"; ctx.fillRect(x, H - 6, 12, 6); }
-      // bong bóng
-      S.bubbles.forEach((b) => {
-        const wob = Math.sin(b.phase) * 3;
-        const sp = bubbleSprite(b.r, b.color, isHz && b === hzTarget);
-        const size = sp.width * 3;
-        ctx.drawImage(sp, Math.round(b.x + wob - size / 2), Math.round(b.y - size / 2), size, size);
-        ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillStyle = "#fff";
-        ctx.shadowColor = "rgba(0,0,0,.6)"; ctx.shadowBlur = 4;
+      c.fillStyle = g; c.fillRect(0, 0, W, H);
+      for (let x = 0; x < W; x += 12) { c.fillStyle = (x / 12) % 2 ? "#ff5d73" : "#c23a52"; c.fillRect(x, H - 6, 12, 6); }
+      return bg;
+    }
+    // Chữ trên bong bóng (có bóng đổ) vẽ sẵn một lần cho mỗi bong bóng; shadowBlur mỗi khung hình rất tốn trên điện thoại
+    const fontsReady = () => !document.fonts || document.fonts.status === "loaded";
+    function labelOf(b) {
+      if (b.label) return b.label;
+      const lw = Math.ceil(b.r * 2 + 48), lh = Math.ceil(b.r * 2 + 24);
+      const c = document.createElement("canvas"); c.width = lw * dpr; c.height = lh * dpr;
+      const x = c.getContext("2d"); x.setTransform(dpr, 0, 0, dpr, 0, 0);
+      x.translate(lw / 2, lh / 2);
+      paintLabel(x, b);
+      c.cssW = lw; c.cssH = lh;
+      if (fontsReady()) b.label = c;   // font chưa tải xong thì vẽ lại ở khung sau
+      return c;
+    }
+    function paintLabel(ctx, b) {
+      ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillStyle = "#fff";
+      ctx.shadowColor = "rgba(0,0,0,.6)"; ctx.shadowBlur = 4;
+      {
+        const wob = 0; b = { w: b.w, x: 0, y: 0 };
         if (isVi) {
           const lines = viLines(b.w), hv = cfg.diff === "easy" && b.w.hv ? b.w.hv : "";
           const lh = 18, y0 = b.y - ((lines.length - 1) * lh) / 2 - (hv ? 7 : 0);
           ctx.font = "700 15px 'Be Vietnam Pro', sans-serif";
           lines.forEach((l, i) => ctx.fillText(l, b.x + wob, y0 + i * lh));
           if (hv) { ctx.font = "500 12px 'Be Vietnam Pro', sans-serif"; ctx.fillStyle = "#ffe9a8"; ctx.fillText(hv, b.x + wob, y0 + lines.length * lh); }
-          ctx.shadowBlur = 0;
           return;
         }
         if (isHz) {
@@ -352,7 +386,22 @@
           ctx.font = "700 26px 'Noto Sans SC', sans-serif"; ctx.fillText(b.w.hz, b.x + wob, b.y - 7);
         }
         ctx.font = "500 12px 'Be Vietnam Pro', sans-serif"; ctx.fillStyle = "#ffe9a8"; ctx.fillText(shortVi(b.w.vi), b.x + wob, b.y + 15);
-        ctx.shadowBlur = 0;
+      }
+    }
+    const snap = (v) => Math.round(v * dpr) / dpr;
+    function draw() {
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.imageSmoothingEnabled = false;
+      ctx.drawImage(background(), 0, 0, W, H);
+      S.stars.forEach((s) => { ctx.fillStyle = s.s > 1 ? "#cfc6ff" : "#6d64a8"; ctx.fillRect(Math.round(s.x * W), Math.round(s.y * H), s.s * 2, s.s * 2); });
+      // bong bóng
+      S.bubbles.forEach((b) => {
+        const wob = Math.sin(b.phase) * 3;
+        const sp = bubbleSprite(b.r, b.color, isHz && b === hzTarget);
+        const size = sp.width * 3;
+        ctx.drawImage(sp, Math.round(b.x + wob - size / 2), Math.round(b.y - size / 2), size, size);
+        const lb = labelOf(b);
+        ctx.drawImage(lb, snap(b.x + wob - lb.cssW / 2), snap(b.y - lb.cssH / 2), lb.cssW, lb.cssH);
       });
       // vòng nổ, mảnh vỡ, điểm bay
       (S.rings || []).forEach((r) => { ctx.strokeStyle = r.c; ctx.globalAlpha = 1 - r.t / 0.35; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(r.x, r.y, r.r + r.t * 140, 0, Math.PI * 2); ctx.stroke(); ctx.globalAlpha = 1; });

@@ -3,7 +3,7 @@
 .dc-big { min-height: 56px; padding: 0 26px; font-size: 1.1rem; border-radius: 999px; gap: 10px; }
 .dc-big .ic { width: 24px; height: 24px; }
 .dc-hint { margin-top: 14px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-height: 28px; }
-.dc-novoice { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: var(--gold-soft); color: var(--gold-text); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.dc-novoice { margin-top: 12px; padding: 10px 12px; border-radius: var(--radius-sm); background: var(--gold-soft); color: var(--gold-text); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .dc-revealed { color: var(--text); font-size: 1.1rem; }
 .dc-input { width: 100%; font-size: 1.15rem; min-height: 48px; }
 .dc-input.zh { font-family: var(--font-zh); font-size: calc(1.3rem * var(--zh-scale)); }

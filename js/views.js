@@ -65,7 +65,6 @@
 
     const html = `
       ${fresh ? `<section class="hero">
-        <div class="eyebrow" style="color:#ffd8d0">Bắt đầu từ con số 0</div>
         <h1>你好! Học tiếng Trung đúng cách ngay từ ngày đầu</h1>
         <p>Phát âm chuẩn trước, học từ trong câu, ôn tập ngắt quãng mỗi ngày. Viết riêng cho người Việt, có âm Hán Việt cho từng từ.</p>
         <div class="row"><a class="btn btn-primary btn-lg" href="#/pinyin">Bắt đầu với Pinyin ${ic("next")}</a><a class="btn btn-ghost btn-lg" href="#/roadmap">Xem lộ trình</a></div>
@@ -88,19 +87,17 @@
 
       <div class="grid grid-2 mt">
         <div class="card">
-          <div class="eyebrow">Gợi ý 30 phút mỗi ngày</div>
-          <h3 style="margin-top:4px">Thói quen học</h3>
+          <h3 style="margin-top:0">Thói quen 30 phút mỗi ngày</h3>
           <div class="checklist">
             ${DAILY_ROUTINE.map((r) => `<label class="${routine[r.key] ? "done" : ""}"><input type="checkbox" disabled ${routine[r.key] ? "checked" : ""}><span style="flex:1"><b>${r.min} phút</b> · ${esc(r.what)}</span><a class="btn btn-sm" href="${r.route}">Đi ${ic("next")}</a></label>`).join("")}
           </div>
           <p class="small muted" style="margin:10px 0 0">Ô tự tích khi bạn làm xong hoạt động tương ứng.</p>
         </div>
         <div class="card">
-          <div class="eyebrow">Bộ thẻ ôn tập</div>
-          <h3 style="margin-top:4px">${st.total} thẻ</h3>
+          <h3 style="margin-top:0">Bộ thẻ ôn tập <span class="muted" style="font-weight:600">· ${st.total} thẻ</span></h3>
           <div class="row small"><span class="pill gold">Đang học ${st.learning}</span><span class="pill blue">Non ${st.young}</span><span class="pill green">Thuộc ${st.mature}</span></div>
           <div class="forecast mt" aria-label="Dự báo số thẻ 7 ngày tới">${st.forecast.map((n, i) => { const mx = Math.max(1, ...st.forecast); return `<div title="${n} thẻ"><span style="height:${Math.round((n / mx) * 100)}%"></span><small>${i === 0 ? "Nay" : "+" + i}</small></div>`; }).join("")}</div>
-          <p class="small muted" style="margin:10px 0 0">Thẻ viết đến hạn: <a href="#/write">${wdue}</a> · Bài đọc đã làm: <a href="#/read">${Object.keys(s.readings || {}).length}/${READINGS.length}</a></p>
+          <p class="small muted" style="margin:10px 0 0">Thẻ viết đến hạn: <a href="#/write">${wdue}</a> · Đọc hiểu đã làm: <a href="#/read">${Object.keys(s.readings || {}).length}/${READINGS.length}</a></p>
         </div>
       </div>
 
@@ -234,7 +231,7 @@
   // ---------- Bộ thủ ----------
   function radicals() {
     const html = `<h1>40 bộ thủ thường gặp</h1><p class="subtitle">Bộ thủ là "bảng chữ cái" của chữ Hán. Biết bộ thủ, bạn sẽ đoán được nghĩa và nhớ chữ nhanh hơn nhiều. Bấm nút loa để nghe, nút bút để luyện viết.</p>
-      <div class="grid grid-2">${RADICALS.map((r) => `<div class="card radical-card"><div class="r">${esc(r.r.split(" ")[0])}</div><div style="flex:1"><div><b>${esc(r.r)}</b> · <span class="t${toneOf(r.py)}">${esc(r.py)}</span> · <i class="muted">${esc(r.hv)}</i> · ${esc(r.vi)}</div><div class="exs">${esc(r.ex)}</div>${r.note ? `<div class="small muted">${esc(r.note)}</div>` : ""}</div><div class="stack">${speakBtn(r.r.split(" ")[0])}<a class="btn btn-icon btn-sm" href="#/write/${encodeURIComponent(r.r.split(" ")[0])}" title="Luyện viết" aria-label="Luyện viết">${ic("pen")}</a></div></div>`).join("")}</div>`;
+      <div class="grid grid-2">${RADICALS.map((r) => `<div class="card radical-card"><div class="r">${esc(r.r.split(" ")[0])}</div><div style="flex:1"><div><b>${esc(r.r)}</b> · <span class="t${toneOf(r.py)}">${esc(r.py)}</span> · <span class="hv">${esc(r.hv)}</span> · ${esc(r.vi)}</div><div class="exs">${esc(r.ex)}</div>${r.note ? `<div class="small muted">${esc(r.note)}</div>` : ""}</div><div class="stack">${speakBtn(r.r.split(" ")[0])}<a class="btn btn-icon btn-sm" href="#/write/${encodeURIComponent(r.r.split(" ")[0])}" title="Luyện viết" aria-label="Luyện viết">${ic("pen")}</a></div></div>`).join("")}</div>`;
     return { html, after: bindSpeak };
   }
 
@@ -340,7 +337,7 @@
       } else {
         const w = q.w;
         const prompt = q.type === "meaning" ? `<div class="prompt">Từ này nghĩa là gì?</div><div class="main">${esc(w.hz)}</div><div class="sub">${pyHtml(w.py)}</div>`
-          : q.type === "reverse" ? `<div class="prompt">Chọn chữ Hán đúng</div><div class="main vi-text">${esc(w.vi)}</div><div class="sub muted small">${esc(w.hv)}</div>`
+          : q.type === "reverse" ? `<div class="prompt">Chọn chữ Hán đúng</div><div class="main vi-text">${esc(w.vi)}</div><div class="sub hv">${esc(w.hv)}</div>`
           : `<div class="prompt">Nghe và chọn từ đúng</div><button class="btn btn-primary btn-lg" id="play">${ic("volume")} Nghe</button>`;
         html += `<div class="quiz-q">${prompt}</div><div class="options">${q.opts.map((o, k) => `<button class="option ${q.type === "meaning" ? "vi-text" : ""}" data-k="${k}">${q.type === "meaning" ? esc(o.vi) : esc(o.hz)}${q.type === "listen" ? "" : ""}</button>`).join("")}</div><div id="fb"></div>`;
         box.innerHTML = html;
@@ -418,11 +415,13 @@
           const id = queue[0], w = vocabById(id);
           if (!w) { queue.shift(); return render(); }
           const mode = front === "cloze" && !canCloze(w) ? "hz" : front;
-          box.innerHTML = `<div class="row between mb"><span class="pill red">Còn ${queue.length} thẻ</span><div class="row"><span class="small muted">Mặt trước:</span>${MODES.map(([k, v]) => `<button class="btn btn-sm ${front === k ? "btn-primary" : ""}" data-front="${k}">${v}</button>`).join("")}</div></div>
+          box.innerHTML = `<div class="rv-bar"><span class="pill red">Còn ${queue.length} thẻ</span><span class="rv-front"><label for="rv-front">Mặt trước</label><select id="rv-front">${MODES.map(([k, v]) => `<option value="${k}" ${front === k ? "selected" : ""}>${v}</option>`).join("")}</select></span></div>
             <div class="card flashcard" id="fc">${cardFace(w, mode)}</div>
-            <div id="grades">${flipped ? gradeBtns(id) : ["type", "tone"].includes(mode) ? "" : `<button class="btn btn-primary btn-block btn-lg mt" id="flip">Lật thẻ (Space)</button>`}</div>`;
-          box.querySelectorAll("[data-front]").forEach((b) => b.onclick = () => { front = b.dataset.front; Store.state.settings.reviewFront = front; Store.save(); flipped = false; answer = null; tones = []; render(); });
-          if (!["type", "tone"].includes(mode)) box.querySelector("#fc").onclick = (e) => { if (!flipped && !e.target.closest("button")) flip(w); };
+            <div id="grades">${flipped ? gradeBtns(id) + `<p class="swipe-tip small muted">Vuốt thẻ sang phải: Tốt · sang trái: Quên</p>` : ["type", "tone"].includes(mode) ? "" : `<button class="btn btn-primary btn-block btn-lg mt" id="flip">Lật thẻ (Space)</button>`}</div>`;
+          box.querySelector("#rv-front").onchange = (e) => { front = e.target.value; Store.state.settings.reviewFront = front; Store.save(); flipped = false; answer = null; tones = []; render(); };
+          if (!["type", "tone"].includes(mode)) box.querySelector("#fc").onclick = (e) => { if (!flipped && !e.target.closest("button, a") && !swiped) { revealByTap = true; flip(w); } };
+          const fcEl = box.querySelector("#fc");
+          if (flipped) { if (revealByTap) fcEl.classList.add("reveal"); revealByTap = false; swipeCard(fcEl); }
           const fl = box.querySelector("#flip"); if (fl) fl.onclick = () => flip(w);
           bindSpeak(box);
           box.querySelectorAll("[data-grade]").forEach((b) => b.onclick = () => doGrade(+b.dataset.grade));
@@ -435,6 +434,61 @@
           const undo = box.querySelector("#toneundo"); if (undo) undo.onclick = () => { tones.pop(); render(); };
         }
         function flip(w) { flipped = true; render(); TTS.speak(w.hz); }
+
+        // Vuốt thẻ đã lật: phải = Tốt, trái = Quên. Khi kéo, thẻ bám theo ngón tay 1:1;
+        // thả ra thì chấm nếu kéo đủ xa (35% bề rộng) hoặc vuốt nhanh, không thì thẻ bật về chỗ cũ.
+        let swiped = false, revealByTap = false;
+        const calm = matchMedia("(prefers-reduced-motion: reduce)");
+        function swipeCard(card) {
+          const lockedRight = answer && !answer.ok;          // trả lời sai thì không được chấm Tốt
+          const hint = document.createElement("div"); hint.className = "swipe-hint"; hint.setAttribute("aria-hidden", "true");
+          card.appendChild(hint);
+          let g = null;
+          card.addEventListener("pointerdown", (e) => {
+            if (g || e.button > 0 || e.target.closest("button, a, input")) return;
+            g = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now(), dx: 0, on: false, w: card.offsetWidth, lastX: e.clientX, lastT: performance.now(), v: 0 };
+          });
+          card.addEventListener("pointermove", (e) => {
+            if (!g || e.pointerId !== g.id) return;
+            const dx = e.clientX - g.x, dy = e.clientY - g.y;
+            if (!g.on) {
+              if (Math.abs(dy) > 10 && Math.abs(dy) > Math.abs(dx)) { g = null; return; }   // đang cuộn dọc: nhường cho trình duyệt
+              if (Math.abs(dx) < 8) return;
+              g.on = true; swiped = true; try { card.setPointerCapture(g.id); } catch (err) {}
+              card.classList.add("dragging");
+            }
+            const now = performance.now();
+            g.v = (e.clientX - g.lastX) / Math.max(1, now - g.lastT); g.lastX = e.clientX; g.lastT = now;
+            // bên không được phép: kéo có lực cản
+            g.dx = dx > 0 && lockedRight ? dx * 0.25 : dx;
+            card.style.transform = `translate3d(${g.dx}px,0,0) rotate(${g.dx / 24}deg)`;
+            const p = Math.min(1, Math.abs(g.dx) / (g.w * 0.35));
+            hint.textContent = g.dx > 0 ? (lockedRight ? "" : "Tốt") : "Quên";
+            hint.className = `swipe-hint ${g.dx > 0 ? "good" : "bad"}`;
+            hint.style.opacity = p;
+          });
+          const end = (e) => {
+            if (!g || e.pointerId !== g.id) return;
+            const st = g; g = null;
+            if (!st.on) return;
+            card.classList.remove("dragging");
+            const dir = Math.sign(st.dx), far = Math.abs(st.dx) > st.w * 0.35, fast = Math.abs(st.v) > 0.5 && Math.sign(st.v) === dir;
+            const ok = (far || fast) && !(dir > 0 && lockedRight) && e.type !== "pointercancel";
+            setTimeout(() => (swiped = false), 0);
+            if (!ok) { // bật về nhanh
+              card.style.transition = "transform 220ms cubic-bezier(0.23, 1, 0.32, 1)"; card.style.transform = ""; hint.style.transition = "opacity 160ms"; hint.style.opacity = 0;
+              setTimeout(() => { card.style.transition = ""; hint.style.transition = ""; }, 240);
+              return;
+            }
+            const grade = dir > 0 ? 3 : 1;
+            if (calm.matches) return doGrade(grade);
+            card.style.transition = "transform 200ms cubic-bezier(0.23, 1, 0.32, 1), opacity 200ms";
+            card.style.transform = `translate3d(${dir * (st.w + 80)}px,0,0) rotate(${dir * 12}deg)`; card.style.opacity = 0;
+            setTimeout(() => doGrade(grade), 180);
+          };
+          card.addEventListener("pointerup", end);
+          card.addEventListener("pointercancel", end);
+        }
         function checkTyped(w, val) {
           const ok = stripTone(val) === stripTone(w.py);
           answer = { ok, text: val };
@@ -463,7 +517,7 @@
             }
           }
           const fb = answer ? `<div class="feedback ${answer.ok ? "ok" : "bad"}" style="margin-bottom:10px">${answer.ok ? "Chính xác!" : "Chưa đúng"} · bạn trả lời: <b>${esc(answer.text || "(trống)")}</b>${answer.want && !answer.ok ? ` · đúng là <b>${esc(answer.want)}</b>` : ""}</div>` : "";
-          return `${fb}<div class="hz">${esc(w.hz)}</div><div class="py">${pyHtml(w.py)}</div><div class="vi">${esc(w.vi)} <span class="hv">(${esc(w.hv)})</span></div><div class="ex"><span class="zh">${esc(w.ex[0])}</span> · ${pyHtml(w.ex[1])}<br>${esc(w.ex[2])}</div><div class="mt">${speakBtn(w.hz, "btn btn-sm", "Từ")} ${speakBtn(w.ex[0], "btn btn-sm", "Câu")} <a class="btn btn-sm" href="#/write/${encodeURIComponent(w.hz[0])}">${ic("pen")}<span>Viết</span></a></div>`;
+          return `${fb}<div class="hz">${esc(w.hz)}</div><div class="py">${pyHtml(w.py)}</div><div class="vi">${esc(w.vi)}</div>${w.hv ? `<div class="hv">${esc(w.hv)}</div>` : ""}<div class="ex"><span class="zh">${esc(w.ex[0])}</span> · ${pyHtml(w.ex[1])}<br>${esc(w.ex[2])}</div><div class="mt">${speakBtn(w.hz, "btn btn-sm", "Từ")} ${speakBtn(w.ex[0], "btn btn-sm", "Câu")} <a class="btn btn-sm" href="#/write/${encodeURIComponent(w.hz[0])}">${ic("pen")}<span>Viết</span></a></div>`;
         }
         function gradeBtns(id) {
           // Trả lời sai thì chỉ được chấm Quên/Khó; đúng thì gợi ý Tốt
@@ -536,7 +590,7 @@
           const chars = w.hz.split(""), size = chars.length === 1 ? 240 : chars.length === 2 ? 190 : 150;
           idx = 0; mistakes = 0; hinted = false; finished = false; writers = [];
           box.innerHTML = `<div class="row between mb"><span class="pill red">Còn ${queue.length} thẻ viết</span><span class="small muted">Từ ${chars.length} chữ · viết lần lượt từng chữ</span></div>
-            <div class="card center"><div style="font-size:1.6rem;font-weight:700">${pyHtml(w.py)}</div><div class="muted">${esc(w.vi)} <i>(${esc(w.hv)})</i></div>
+            <div class="card center"><div style="font-size:1.6rem;font-weight:700">${pyHtml(w.py)}</div><div class="muted">${esc(w.vi)} ${w.hv ? `<span class="hv">${esc(w.hv)}</span>` : ""}</div>
               <div class="row mt" style="justify-content:center;gap:12px">${chars.map((c, i) => `<div class="writer-target" id="wt${i}" style="width:${size}px;height:${size}px;${i === 0 ? "border-color:var(--primary)" : ""}"></div>`).join("")}</div>
               <p class="small muted" id="wmsg" style="min-height:1.4em;margin:10px 0 4px">Viết chữ 1/${chars.length}: <b class="zh">${esc(w.hz)}</b> được che, hãy viết từ trí nhớ</p>
               <div class="row" style="justify-content:center"><button class="btn btn-sm" id="hint">💡 Gợi ý nét (tính là Khó)</button><button class="btn btn-sm" id="reveal">👁 Xem đáp án (tính là Quên)</button>${speakBtn(w.hz, "btn btn-sm")}</div>
@@ -682,7 +736,7 @@
     const ALL = window.H3 ? VOCAB.concat(H3.extraList()) : VOCAB;
     const h3opts = window.H3 ? [1, 2, 3, 4, 5, 6].map((n) => `<option value="h${n}">HSK 3.0 cấp ${n} (${H3.byLevel(n).length})</option>`).join("") : "";
     const html = `<h1>Từ điển HSK</h1><p class="subtitle">Tra ${ALL.length} từ (HSK 2.0 cấp 1–${maxLevel()} và HSK 3.0 cấp 1–6) theo chữ Hán, pinyin (có hoặc không dấu), Hán Việt hoặc tiếng Việt.</p>
-      <div class="row"><input class="search" id="q" placeholder="Ví dụ: 你好, nihao, hảo, tốt…" style="flex:1" autofocus><select id="lv"><option value="0">Mọi cấp</option><optgroup label="HSK 2.0">${levelStats().map((x) => `<option value="${x.level}">${x.name} (${x.words})</option>`).join("")}</optgroup>${h3opts ? `<optgroup label="HSK 3.0 (2025)">${h3opts}</optgroup>` : ""}</select></div><div id="res" class="mt"></div>`;
+      <div class="row filter-bar"><input class="search" id="q" type="search" enterkeyhint="search" autocomplete="off" placeholder="Ví dụ: 你好, nihao, hảo, tốt…" style="flex:1" autofocus><select id="lv"><option value="0">Mọi cấp</option><optgroup label="HSK 2.0">${levelStats().map((x) => `<option value="${x.level}">${x.name} (${x.words})</option>`).join("")}</optgroup>${h3opts ? `<optgroup label="HSK 3.0 (2025)">${h3opts}</optgroup>` : ""}</select></div><div id="res" class="mt"></div>`;
     return {
       html,
       after(el) {
@@ -691,6 +745,14 @@
           const t = strip(q.value.trim()), lvv = lv.value, L = +lvv;
           let list = lvv[0] === "h" ? H3.byLevel(+lvv.slice(1)) : L ? VOCAB.filter((w) => levelOfWord(w) === L) : ALL;
           if (t) list = list.filter((w) => w.hz.includes(q.value.trim()) || strip(w.py).replace(/[\s']/g, "").includes(t.replace(/[\s'’]/g, "")) || strip(w.hv).includes(t) || strip(w.vi).includes(t));
+          if (!list.length && t) {
+            res.innerHTML = `<div class="card center empty"><div class="big-ic">${ic("search")}</div><h3 style="margin:4px 0 6px">Không tìm thấy “${esc(q.value.trim())}”</h3>
+              <p class="muted small" style="max-width:46ch;margin:0 auto 14px">Thử gõ ngắn hơn (một ý của nghĩa), gõ pinyin không dấu như <b>nihao</b>, hoặc âm Hán Việt như <b>hảo</b>.${lvv !== "0" ? " Bạn đang lọc theo một cấp; thử tìm ở mọi cấp." : ""}</p>
+              <div class="row" style="justify-content:center">${lvv !== "0" ? `<button class="btn btn-primary" id="all-lv">Tìm ở mọi cấp</button>` : ""}<button class="btn" id="clear-q">Xoá ô tìm</button></div></div>`;
+            const al = res.querySelector("#all-lv"); if (al) al.onclick = () => { lv.value = "0"; run(); };
+            res.querySelector("#clear-q").onclick = () => { q.value = ""; run(); q.focus(); };
+            return;
+          }
           const shown = list.slice(0, 300);
           res.innerHTML = `<p class="small muted">${list.length} kết quả${list.length > 300 ? " (hiện 300 đầu, gõ thêm để lọc)" : ""}</p><table class="vocab-table"><thead><tr><th>Chữ</th><th>Pinyin</th><th>Hán Việt</th><th>Nghĩa</th><th>Bài</th><th></th></tr></thead><tbody>${shown.map((w) => { const c = Store.state.cards[w.id]; const L2 = w.l ? LEVELS[levelOfWord(w)] : null; const lessonCell = L2 ? `<a href="#/lesson/${w.l}" class="pill ${L2.color}" title="${L2.name}">Bài ${w.l}</a>` : w.h3l ? `<a href="#/lesson/${w.h3l}" class="pill blue" title="Bài bổ sung HSK 3.0">3.0 · ${H3.findLesson(w.h3l).no}</a>` : w.h3 ? `<a href="#/words/${w.h3}" class="pill" title="HSK 3.0 cấp ${w.h3}">3.0 · cấp ${w.h3}</a>` : ""; return `<tr><td class="hz">${esc(w.hz)}</td><td class="py">${pyHtml(w.py)}</td><td class="hv">${esc(w.hv)}</td><td>${esc(w.vi)}<br><span class="small muted zh">${esc(w.ex[0])}</span></td><td>${lessonCell}</td><td><div class="row">${speakBtn(w.hz)}<a class="btn btn-icon btn-sm" href="#/write/${encodeURIComponent(w.hz[0])}" title="Luyện viết" aria-label="Luyện viết">${ic("pen")}</a>${c ? `<span class="pill green" title="Đã trong bộ thẻ">${ic("check")} Trong thẻ</span>` : `<button class="btn btn-sm" data-add="${w.id}">${ic("plus")} Thẻ</button>`}</div></td></tr>`; }).join("")}</tbody></table>`;
           bindSpeak(res);
@@ -733,6 +795,44 @@
   }
 
   // toast() nằm ở js/ui.js
+  // ---------- Hội thoại: gom hội thoại của mọi bài học theo cấp ----------
+  function dialogues(levelArg) {
+    const s = Store.state;
+    const stats = levelStats();
+    const hasH3 = !!(window.H3 && H3.lessons.length);
+    const nextLesson = LESSONS.find((l) => !s.completedLessons.includes(l.id));
+    const level = levelArg === "h3" && hasH3 ? "h3" : LEVELS[levelArg] ? +levelArg : nextLesson ? levelOfLesson(nextLesson) : 1;
+    const list = level === "h3" ? H3.lessons : LESSONS.filter((l) => levelOfLesson(l) === level);
+    const name = (L) => (L.h3 ? `Bổ sung ${L.no}` : lessonName(L));
+    const total = list.reduce((a, L) => a + (L.dialogue || []).length, 0);
+    const html = `<h1>Hội thoại</h1><p class="subtitle">Hội thoại của từng bài học, sắp theo cấp. Mở một đoạn để nghe và đọc theo (shadowing); bấm «Mở bài học» để học cả bài.</p>
+      <div class="tabs">${stats.map((x) => `<button class="${x.level === level ? "active" : ""}" data-level="${x.level}">${x.name}</button>`).join("")}${hasH3 ? `<button class="${level === "h3" ? "active" : ""}" data-level="h3">HSK 3.0 · bổ sung</button>` : ""}</div>
+      <div class="row between mb dlg-tools"><span class="small muted">${list.length} đoạn · ${total} câu</span><div class="row"><button class="btn btn-sm" id="t-py" aria-pressed="false">Ẩn pinyin</button><button class="btn btn-sm" id="t-vi" aria-pressed="false">Ẩn bản dịch</button></div></div>
+      <div class="dlg-list" id="dl">${list.map((L, i) => { const d = L.dialogue || []; const done = s.completedLessons.includes(L.id); return `
+        <details class="dlg" data-i="${i}"><summary><span class="lesson-icon ${done ? "done" : ""}">${esc(L.icon || "话")}</span><span class="dlg-text"><span class="dlg-title">${esc(name(L))}: ${esc(L.title)}</span><span class="dlg-first zh">${esc(d[0] ? d[0][1] : "")}</span></span><span class="dlg-n">${d.length} câu</span>${ic("down", "dlg-chev")}</summary><div class="dlg-body"></div></details>`; }).join("")}</div>`;
+    return {
+      html,
+      after(el) {
+        el.querySelectorAll("[data-level]").forEach((b) => b.onclick = () => (location.hash = "#/dialogues/" + b.dataset.level));
+        const dl = el.querySelector("#dl");
+        const tog = (btn, cls, on, off) => { btn.onclick = () => { const v = dl.classList.toggle(cls); btn.setAttribute("aria-pressed", v); btn.textContent = v ? on : off; }; };
+        tog(el.querySelector("#t-py"), "no-py", "Hiện pinyin", "Ẩn pinyin");
+        tog(el.querySelector("#t-vi"), "no-vi", "Hiện bản dịch", "Ẩn bản dịch");
+        // chỉ dựng nội dung khi mở, trang ~120 đoạn vẫn nhẹ
+        dl.querySelectorAll("details").forEach((d) => d.addEventListener("toggle", () => {
+          const body = d.querySelector(".dlg-body");
+          if (!d.open || body.childElementCount) return;
+          const L = list[+d.dataset.i];
+          body.innerHTML = L.dialogue.map((x) => sentenceHtml(x[1], x[2], x[3], x[0])).join("") +
+            `<div class="row dlg-actions"><button class="btn btn-sm" data-play>${ic("play")} Nghe cả đoạn</button><a class="btn btn-sm" href="#/lesson/${L.id}/dialogue">Mở bài học ${ic("next")}</a></div>`;
+          bindSpeak(body);
+          body.querySelector("[data-play]").onclick = () => { let i = 0; const go = () => { if (i < L.dialogue.length && d.open) TTS.speak(L.dialogue[i++][1], { onend: () => setTimeout(go, 500) }); }; go(); };
+        }));
+        const first = dl.querySelector("details"); if (first) first.open = true;
+      },
+    };
+  }
+
   // ---------- Bài đọc ----------
   // Tách đoạn văn thành từ theo từ điển (ghép dài nhất trước)
   let DICT = null;
@@ -761,7 +861,7 @@
   function readList() {
     const s = Store.state;
     const groups = levelStats().map((x) => ({ x, rs: READINGS.filter((r) => r.level === x.level) })).filter((g) => g.rs.length);
-    const html = `<h1>Bài đọc ngắn</h1><p class="subtitle">Sau mỗi 5 bài có một đoạn văn 80–150 chữ chỉ dùng từ đã học. Bấm vào từng từ để xem nghĩa, nghe cả đoạn, rồi trả lời 3 câu hỏi. Đọc là cách rẻ nhất để ôn lại hàng trăm từ trong vài phút.</p>
+    const html = `<h1>Đọc hiểu</h1><p class="subtitle">Sau mỗi 5 bài có một đoạn văn 80–150 chữ chỉ dùng từ đã học. Bấm vào từng từ để xem nghĩa, nghe cả đoạn, rồi trả lời 3 câu hỏi. Đọc là cách rẻ nhất để ôn lại hàng trăm từ trong vài phút.</p>
       ${groups.map((g) => `<h2>${g.x.name}</h2><div class="grid grid-2">${g.rs.map((r) => { const done = s.readings[r.id]; const open = s.completedLessons.includes(r.after); return `<a class="card lesson-card ${done ? "done" : ""}" href="#/read/${r.id}"><div class="lesson-icon">${done ? "✓" : "读"}</div><div class="lesson-body"><div class="lesson-title">${esc(r.title)}</div><div class="lesson-meta">Sau bài ${r.after} · ${[...r.zh].filter((c) => /[一-鿿]/.test(c)).length} chữ${done ? ` · ${done.score}/3 câu đúng` : ""}</div></div>${open ? `<span class="pill green">Mở</span>` : `<span class="pill" title="Nên học xong bài ${r.after} trước">Bài ${r.after}</span>`}</a>`; }).join("")}</div>`).join("")}`;
     return { html };
   }
@@ -770,7 +870,7 @@
     const r = READINGS.find((x) => x.id === id);
     if (!r) return { html: `<p>Không tìm thấy bài đọc.</p>` };
     const toks = segment(r.zh, r.extra);
-    const html = `<a href="#/read" class="backlink">← Tất cả bài đọc</a>
+    const html = `<a href="#/read" class="backlink">← Đọc hiểu</a>
       <div class="row between"><div><div class="eyebrow">Bài đọc · sau bài ${r.after} · ${LEVELS[r.level].name}</div><h1>${esc(r.title)}</h1></div></div>
       <div class="row mb">${speakBtn(r.zh, "btn")}<button class="btn" id="slow">🐢 Đọc chậm</button><button class="btn" id="tpy">Hiện pinyin</button><button class="btn" id="tvi">Hiện bản dịch</button></div>
       <div class="card"><div class="zh rtext" id="rtext">${toks.map((k, i) => k.w ? `<span class="rtok" data-i="${i}">${esc(k.t)}</span>` : esc(k.t)).join("")}</div>
@@ -788,7 +888,7 @@
         el.querySelectorAll(".rtok").forEach((t) => t.onclick = () => {
           el.querySelectorAll(".rtok").forEach((x) => x.classList.remove("hl")); t.classList.add("hl");
           const w = toks[+t.dataset.i].w;
-          pop.innerHTML = `<div class="row between"><div><span class="zh" style="font-size:1.6rem;font-weight:500">${esc(w.hz)}</span> <b>${pyHtml(w.py)}</b> ${w.hv ? `<i class="muted">(${esc(w.hv)})</i>` : ""}<div>${esc(w.vi)}${w.l ? ` · <a href="#/lesson/${w.l}" class="small">Bài ${w.l}</a>` : ""}</div></div><div class="row">${speakBtn(w.hz)}${w.id ? (SRS.has(w.id) ? `<span class="pill green">✓ trong bộ thẻ</span>` : `<button class="btn btn-sm" id="addc">+ Thẻ</button>`) : ""}</div></div>`;
+          pop.innerHTML = `<div class="row between"><div><span class="zh" style="font-size:1.6rem;font-weight:500">${esc(w.hz)}</span> <b>${pyHtml(w.py)}</b> ${w.hv ? `<span class="hv">${esc(w.hv)}</span>` : ""}<div>${esc(w.vi)}${w.l ? ` · <a href="#/lesson/${w.l}" class="small">Bài ${w.l}</a>` : ""}</div></div><div class="row">${speakBtn(w.hz)}${w.id ? (SRS.has(w.id) ? `<span class="pill green">✓ trong bộ thẻ</span>` : `<button class="btn btn-sm" id="addc">+ Thẻ</button>`) : ""}</div></div>`;
           bindSpeak(pop);
           const ac = pop.querySelector("#addc"); if (ac) ac.onclick = () => { SRS.addWords([w.id]); toast("Đã thêm vào bộ thẻ"); ac.replaceWith(Object.assign(document.createElement("span"), { className: "pill green", textContent: "✓ trong bộ thẻ" })); App.updateBadge(); };
           TTS.speak(w.hz);
@@ -820,5 +920,5 @@
     };
   }
 
-  window.Views = { home, roadmap, pinyin, radicals, lessons, lesson, review, write, speak, dictionary, settings, readList, reading, util: { esc, pyHtml, speakBtn, bindSpeak, sentenceHtml, shuffle } };
+  window.Views = { home, roadmap, pinyin, radicals, lessons, lesson, dialogues, review, write, speak, dictionary, settings, readList, reading, util: { esc, pyHtml, speakBtn, bindSpeak, sentenceHtml, shuffle } };
 })();

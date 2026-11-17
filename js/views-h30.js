@@ -37,21 +37,28 @@
   }
 
   // ---------- Từ vựng theo cấp ----------
-  function words(levelArg) {
-    const level = [1, 2, 3, 4, 5, 6, 7].includes(+levelArg) ? +levelArg : 1;
-    let all = level === 7 ? [] : H3.byLevel(level);
+  // std = "hsk2": danh sách từ HSK 2.0 (bản 2012) theo cấp, lấy từ dữ liệu các bài học; mặc định HSK 3.0
+  function words(levelArg, std) {
+    const h2 = std === "hsk2";
+    const byLv = (n) => (h2 ? Practice.wordsOf("hsk2", n) : H3.byLevel(n));
+    const level = (h2 ? [1, 2, 3, 4, 5, 6] : [1, 2, 3, 4, 5, 6, 7]).includes(+levelArg) ? +levelArg : 1;
+    if (Store.state.settings.course !== (h2 ? "hsk2" : "hsk3")) { Store.state.settings.course = h2 ? "hsk2" : "hsk3"; Store.save(); }
+    const base = h2 ? "#/words/hsk2/" : "#/words/";
+    let all = level === 7 ? [] : byLv(level);
     const strip = (x) => String(x || "").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ü/g, "u").toLowerCase();
-    const html = `<h1>Từ vựng HSK 3.0</h1><p class="subtitle">Danh sách từ theo đề cương thi HSK 2025 (CLEC), dùng cho kỳ thi HSK 3.0 từ 13/12/2026. Mỗi cấp chỉ gồm từ mới của cấp đó. Nghĩa, âm Hán Việt và câu ví dụ do Nǐ hǎo biên soạn.</p>
-      <div class="tabs">${[1, 2, 3, 4, 5, 6].map((n) => { const ws = H3.byLevel(n); return `<button class="${n === level ? "active" : ""}" data-lv="${n}">Cấp ${n} <span class="muted small">${learnedIn(ws)}/${ws.length}</span></button>`; }).join("")}<button class="${level === 7 ? "active" : ""}" data-lv="7">Cấp 7–9</button></div>
+    const html = `<div class="row between page-head"><h1 style="margin:0">Từ vựng</h1>
+        <div class="segmented" role="tablist" aria-label="Chuẩn HSK"><a role="tab" href="#/words/1" aria-selected="${!h2}" class="${h2 ? "" : "active"}">HSK 3.0</a><a role="tab" href="#/words/hsk2/1" aria-selected="${h2}" class="${h2 ? "active" : ""}">HSK 2.0</a></div></div>
+      <p class="subtitle">${h2 ? "Từ vựng HSK 2.0 của các bài học, xếp theo cấp của bài (danh sách 2010 và phần bổ sung 2012). Mỗi cấp chỉ gồm từ mới của cấp đó; vài chục từ được dạy sớm hơn cấp chính thức nên nằm ở cấp thấp hơn, và có thêm một số từ dạy kèm trong bài như 哪儿, 没有." : "Danh sách từ theo đề cương thi HSK 2025 (CLEC), dùng cho kỳ thi HSK 3.0 từ 13/12/2026. Mỗi cấp chỉ gồm từ mới của cấp đó. Nghĩa, âm Hán Việt và câu ví dụ do Nǐ hǎo biên soạn."}</p>
+      <div class="tabs">${[1, 2, 3, 4, 5, 6].map((n) => { const ws = byLv(n); return `<button class="${n === level ? "active" : ""}" data-lv="${n}">Cấp ${n} <span class="muted small">${learnedIn(ws)}/${ws.length}</span></button>`; }).join("")}${h2 ? "" : `<button class="${level === 7 ? "active" : ""}" data-lv="7">Cấp 7–9</button>`}</div>
       ${level === 7 ? `<div class="tip mb"><b>Cấp 7–9</b> (5.562 từ) hiện chỉ để tra cứu, chưa thêm vào bộ thẻ được. Từ có nhãn <span class="pill gold">CVDICT</span> lấy nghĩa từ từ điển mở CVDICT (dịch máy từ CC-CEDICT, giấy phép CC BY-SA 4.0), chưa được Nǐ hǎo biên tập và chưa có câu ví dụ.</div>` : ""}
-      <div class="row mb ${level === 7 ? "hidden" : ""}"><input class="search" id="q" placeholder="Lọc theo chữ Hán, pinyin, Hán Việt, nghĩa…" style="flex:1"><select id="f"><option value="all">Tất cả</option><option value="new">Chưa học</option><option value="known">Đã trong thẻ</option></select><button class="btn" id="add10">+ 10 từ chưa học vào thẻ</button></div>
+      <div class="row mb filter-bar ${level === 7 ? "hidden" : ""}"><input class="search" id="q" placeholder="Lọc theo chữ Hán, pinyin, Hán Việt, nghĩa…" style="flex:1"><select id="f"><option value="all">Tất cả</option><option value="new">Chưa học</option><option value="known">Đã trong thẻ</option></select><button class="btn" id="add10">+ 10 từ chưa học vào thẻ</button></div>
       <div id="res"></div>`;
     return {
       html,
       after(el) {
-        el.querySelectorAll("[data-lv]").forEach((b) => b.onclick = () => (location.hash = "#/words/" + b.dataset.lv));
+        el.querySelectorAll("[data-lv]").forEach((b) => b.onclick = () => (location.hash = base + b.dataset.lv));
         const q = el.querySelector("#q"), f = el.querySelector("#f"), res = el.querySelector("#res");
-        const lessonCell = (w) => w.l ? `<a class="pill" href="#/lesson/${w.l}">Bài ${w.l}</a>` : w.h3l ? `<a class="pill blue" href="#/lesson/${w.h3l}">Bổ sung ${H3.findLesson(w.h3l).no}</a>` : "";
+        const lessonCell = (w) => w.l ? `<a class="pill" href="#/lesson/${w.l}">${w.l > 300 ? "Bổ sung 2012" : "Bài " + w.l}</a>` : w.h3l ? `<a class="pill blue" href="#/lesson/${w.h3l}">Bổ sung ${H3.findLesson(w.h3l).no}</a>` : "";
         function run() {
           const t = strip(q.value.trim()), raw = q.value.trim();
           let list = all;

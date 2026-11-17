@@ -1,11 +1,13 @@
 // Bộ định tuyến hash và khởi tạo ứng dụng
 (function () {
   const view = document.getElementById("view");
-  const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
 
   // Nhóm của từng trang, để tô sáng đúng mục trên thanh tab điện thoại
-  const TAB_OF = { "": "home", lessons: "learn", lesson: "learn", words: "learn", read: "learn", pinyin: "learn", radicals: "learn", roadmap: "learn", review: "review", practice: "practice", notebook: "practice" };
+  const TAB_OF = { "": "home", lessons: "learn", lesson: "learn", words: "learn", dialogues: "learn", read: "learn", pinyin: "learn", radicals: "learn", roadmap: "learn", review: "review", practice: "practice", notebook: "practice" };
   const SIDE_OF = { lesson: "/lessons", notebook: "/notebook" };
+  const LEARN = [["lessons", "Bài học", "book"], ["words", "Từ vựng", "words"], ["dialogues", "Hội thoại", "chat"], ["read", "Đọc hiểu", "read"], ["radicals", "Bộ thủ", "radical"], ["pinyin", "Pinyin", "pinyin"]];
+  const LEARN_OF = { lessons: "lessons", words: "words", dialogues: "dialogues", read: "read", radicals: "radicals", pinyin: "pinyin" };
+  const learnNav = (cur) => `<nav class="learn-nav" aria-label="Mục học">${LEARN.map(([k, v, i]) => `<a href="#/${k}" class="${k === cur ? "active" : ""}"${k === cur ? ' aria-current="page"' : ""}>${ic(i)}<span>${v}</span></a>`).join("")}</nav>`;
 
   function route() {
     const parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
@@ -29,7 +31,8 @@
         case "speak": r = Views.speak(); break;
         case "dictionary": r = Views.dictionary(); break;
         case "exam": r = parts[1] && parts[1].startsWith("h3-") ? H3V.exam(parts[1]) : Views.exam(parts[1]); break;
-        case "words": r = H3V.words(parts[1]); break;
+        case "words": r = parts[1] === "hsk2" || (!parts[1] && Store.state.settings.course === "hsk2") ? H3V.words(parts[2], "hsk2") : H3V.words(parts[1]); break;
+        case "dialogues": r = Views.dialogues(parts[1]); break;
         case "about": r = H3V.about(); break;
         case "settings": r = Views.settings(); break;
         case "practice": r = parts[1] ? Practice.view(parts[1], parts[2]) : Practice.hub(); break;
@@ -40,12 +43,15 @@
       console.error(err);
       r = { html: `<div class="card center empty"><h2>Trang gặp lỗi</h2><p class="muted">${String(err.message || err)}</p><a class="btn btn-primary" href="#/">Về trang chủ</a></div>` };
     }
-    view.innerHTML = r.html;
+    // Dải mục "Học" trên điện thoại: Bài học · Từ vựng · Hội thoại · Đọc hiểu · Bộ thủ · Pinyin, một chạm là tới
+    const learnKey = LEARN_OF[name] && !(name === "read" && parts[1]) ? LEARN_OF[name] : null;
+    view.innerHTML = (learnKey ? learnNav(learnKey) : "") + r.html;
     if (r.after) r.after(view);
+    // mục đang xem trong dải "Học" luôn nằm trong tầm nhìn
+    const ln = view.querySelector(".learn-nav"), la = ln && ln.querySelector(".active");
+    if (la && ln.scrollWidth > ln.clientWidth) ln.scrollLeft = la.offsetLeft - ln.offsetLeft - (ln.clientWidth - la.offsetWidth) / 2;
     fitTabs(view);
     shortenSubtitle(view);
-    // hiệu ứng vào trang nhẹ, bỏ qua nếu hệ điều hành bật "giảm chuyển động"
-    if (!reduceMotion.matches) { view.classList.remove("enter"); void view.offsetWidth; view.classList.add("enter"); }
     window.scrollTo(0, 0);
     const sideKey = SIDE_OF[name] || "/" + name;
     document.querySelectorAll("[data-route]").forEach((a) => {
@@ -119,8 +125,8 @@
     document.querySelectorAll(".theme-toggle use").forEach((u) => u.setAttribute("href", dark ? "#i-sun" : "#i-moon"));
     const lbl = document.querySelector("#theme-toggle span");
     if (lbl) lbl.textContent = dark ? "Giao diện sáng" : "Giao diện tối";
-    const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.content = dark ? "#141210" : "#f7f5f1";
+    // màu thanh trạng thái theo giao diện đang chọn (có thể khác giao diện của hệ điều hành)
+    document.querySelectorAll('meta[name="theme-color"]').forEach((m) => (m.content = dark ? "#141210" : "#f7f5f1"));
   }
 
   function setZh(size) {

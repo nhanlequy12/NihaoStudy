@@ -31,7 +31,7 @@
 .qa-kbd { margin-top: 10px; }
 
 .qa-dialog { display: grid; gap: 8px; margin: 8px 0 4px; }
-.qa-line { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); }
+.qa-line { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: var(--radius-sm); background: var(--surface); border: 1px solid var(--border); }
 .qa-lbody { flex: 1; min-width: 0; }
 .qa-lzh { font-size: calc(1.2rem * var(--zh-scale)); line-height: 1.45; overflow-wrap: anywhere; }
 .qa-lbody .qa-py, .qa-lbody .qa-vi { font-size: 0.92rem; }
@@ -39,7 +39,7 @@
 .qa-tag.ok { background: var(--green-soft); color: var(--green); }
 .qa-explain { display: flex; gap: 8px; align-items: flex-start; margin: 10px 0 6px; }
 .qa-explain .ic, .qa-why .ic { flex: 0 0 auto; width: 18px; height: 18px; margin-top: 2px; }
-.qa-mine { margin: 8px 0; padding: 10px 12px; border-radius: 12px; background: var(--surface); border: 1px dashed var(--danger); }
+.qa-mine { margin: 8px 0; padding: 10px 12px; border-radius: var(--radius-sm); background: var(--surface); border: 1px dashed var(--danger); }
 .qa-mine .zh { font-size: calc(1.1rem * var(--zh-scale)); }
 .qa-why { display: flex; gap: 6px; align-items: flex-start; margin-top: 6px; color: var(--danger); font-weight: 600; }
 .qa-others summary { cursor: pointer; min-height: 44px; display: inline-flex; align-items: center; color: var(--text-2); font-weight: 600; }

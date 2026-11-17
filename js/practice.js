@@ -114,24 +114,32 @@
     return n;
   }
 
-  // ---------- Menu "Luyện tập" (máy tính: bảng nổi 2 cột) ----------
-  function itemHtml(f, std, cls = "pm-item") {
-    const b = f.badge && f.badge[std];
+  // ---------- Menu "Luyện tập": mỗi dạng bài một dòng, chọn chuẩn HSK ngay trên dòng ----------
+  // Chuẩn dùng gần nhất được nhớ lại, để bấm thẳng vào dòng là vào đúng chuẩn đang học
+  const lastStd = () => { try { return localStorage.getItem("practice.std") === "hsk3" ? "hsk3" : "hsk2"; } catch (e) { return "hsk2"; } };
+  const rememberStd = (std) => { try { localStorage.setItem("practice.std", std); } catch (e) {} };
+  function rowHtml(f, cls = "") {
+    const std = f.std.includes(lastStd()) ? lastStd() : f.std[0];
+    const isNew = f.badge && Object.values(f.badge).includes("NEW");
     const soon = !ready(f.key);
-    return `<a class="${cls}" href="#/practice/${f.key}/${std}" data-practice="${f.key}">
-      <span class="pm-ic tone-${f.tone}">${ic(f.icon)}</span>
-      <span class="pm-text"><span class="pm-name">${esc(nameIn(f, std))}${b ? ` <span class="pm-badge ${b === "HOT" ? "hot" : "new"}">${b}</span>` : ""}${soon ? ` <span class="pm-soon">Sắp có</span>` : ""}</span>
-      <span class="pm-desc" title="${esc(f.desc)}">${esc(f.desc)}</span></span></a>`;
+    return `<div class="pm-row ${cls}">
+      <a class="pm-item" href="#/practice/${f.key}/${std}" data-practice="${f.key}" data-std-go="${std}">
+        <span class="pm-ic tone-${f.tone}">${ic(f.icon)}</span>
+        <span class="pm-text"><span class="pm-name">${esc(f.name)}${isNew ? ` <span class="pm-new">Mới</span>` : ""}${soon ? ` <span class="pm-soon">Sắp có</span>` : ""}</span>
+        <span class="pm-desc">${esc(f.desc)}</span></span></a>
+      <span class="pm-stds" aria-label="Chọn chuẩn HSK">${["hsk2", "hsk3"].map((k) => f.std.includes(k) ? `<a class="pm-std ${k === std ? "on" : ""}" href="#/practice/${f.key}/${k}" data-std-go="${k}" title="${esc(nameIn(f, k))}">${k === "hsk2" ? "HSK 2.0" : "HSK 3.0"}</a>` : "").join("")}</span>
+    </div>`;
   }
-  function columnsHtml(cls) {
-    return ["hsk2", "hsk3"].map((std) => `<div class="pm-col"><div class="pm-head">${STD[std].long}</div>${FEATURES.filter((f) => f.std.includes(std)).map((f) => itemHtml(f, std, cls)).join("")}</div>`).join("");
-  }
+  const rowsHtml = (cls) => FEATURES.map((f) => rowHtml(f, cls)).join("");
+  // nhớ chuẩn vừa chọn (bắt ở tầng tài liệu, dùng cho cả menu và trang tổng hợp)
+  document.addEventListener("click", (e) => { const a = e.target.closest("[data-std-go]"); if (a) rememberStd(a.dataset.stdGo); });
+
   function initMenu() {
     const btn = document.getElementById("practice-btn"), pop = document.getElementById("practice-menu");
     if (!btn || !pop) return;
     const close = () => { pop.classList.remove("open"); btn.setAttribute("aria-expanded", "false"); };
     const open = () => {
-      pop.innerHTML = `<div class="pm-cols">${columnsHtml("pm-item")}</div><div class="pm-foot"><a href="#/practice">${ic("target")} Tất cả bài luyện</a><a href="#/notebook">${ic("notebook")} Sổ tay</a></div>`;
+      pop.innerHTML = `<div class="pm-list">${rowsHtml("")}</div><div class="pm-foot"><a href="#/practice">${ic("target")} Tất cả bài luyện</a><a href="#/notebook">${ic("notebook")} Sổ tay</a></div>`;
       pop.classList.add("open");
       const r = btn.getBoundingClientRect(), h = pop.offsetHeight;
       pop.style.top = Math.max(12, Math.min(r.top - 14, innerHeight - h - 12)) + "px";
@@ -149,25 +157,15 @@
   function hub() {
     const p = pstate();
     const last = p.history.slice(0, 5);
-    const html = `<h1>Luyện tập</h1><p class="subtitle">Chọn dạng bài, chọn cấp rồi luyện. Kết quả và câu sai được lưu lại để ôn.</p>
-      <div class="segmented hub-switch" role="tablist"><button data-std="hsk2" class="active">HSK cũ</button><button data-std="hsk3">HSK 3.0</button></div>
-      <div class="pm-hub">${columnsHtml("pm-item card-item")}</div>
+    const html = `<h1>Luyện tập</h1><p class="subtitle">Chọn dạng bài và chuẩn HSK, rồi chọn cấp. Kết quả và câu sai được lưu lại để ôn.</p>
+      <div class="pm-hub">${rowsHtml("card-row")}</div>
       <div class="grid grid-2 mt">
         <div class="card"><h3 style="margin-top:0">Lần luyện gần đây</h3>${last.length ? `<ul class="hist">${last.map((h) => `<li><span>${esc(h.title)}</span><span class="muted small">${new Date(h.at).toLocaleDateString("vi-VN")} · ${h.correct}/${h.total} · ${h.score} điểm</span></li>`).join("")}</ul>` : `<p class="muted small">Chưa có lần luyện nào.</p>`}</div>
         <div class="card"><h3 style="margin-top:0">Sổ tay</h3><p class="muted small">${Store.state.notebook.length} mục đã lưu từ các bài luyện.</p><a class="btn" href="#/notebook">${ic("notebook")} Mở sổ tay</a> <a class="btn" href="#/exam">${ic("exam")} Thi thử</a></div>
       </div>`;
     return {
       html,
-      after(el) {
-        const cols = el.querySelectorAll(".pm-hub .pm-col");
-        const set = (std) => {
-          el.querySelectorAll("[data-std]").forEach((b) => b.classList.toggle("active", b.dataset.std === std));
-          cols.forEach((c, i) => c.classList.toggle("show", ["hsk2", "hsk3"][i] === std));
-        };
-        el.querySelectorAll("[data-std]").forEach((b) => b.onclick = () => set(b.dataset.std));
-        set(sessionStorage.getItem("practice.std") || "hsk2");
-        el.querySelectorAll("[data-std]").forEach((b) => b.addEventListener("click", () => { try { sessionStorage.setItem("practice.std", b.dataset.std); } catch (e) {} }));
-      },
+      after() {}
     };
   }
 
@@ -175,6 +173,7 @@
   function view(key, std) {
     const f = feature(key);
     std = std === "hsk3" ? "hsk3" : "hsk2";
+    if (f && f.std.includes(std)) rememberStd(std);
     if (!f || !f.std.includes(std)) return { html: `<div class="card center empty"><h2>Không có bài luyện này</h2><a class="btn btn-primary" href="#/practice">Về Luyện tập</a></div>` };
     const head = `<a class="backlink" href="#/practice">${ic("back")} Luyện tập</a>
       <div class="practice-head"><span class="pm-ic lg tone-${f.tone}">${ic(f.icon)}</span><div><div class="eyebrow">${STD[std].long}</div><h1 style="margin:0">${esc(nameIn(f, std))}</h1><p class="muted" style="margin:2px 0 0">${esc(f.desc)}</p></div></div>`;
