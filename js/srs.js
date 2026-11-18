@@ -40,6 +40,7 @@
       c.ef = Math.max(1.3, c.ef + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02)));
       c.last = now();
       Store.logToday(logField, 1);
+      Store.logToday(logField + (q >= 3 ? "Ok" : "Bad"), 1); // đúng (Khó/Tốt/Dễ) hay quên, cho tỉ lệ nhớ ở trang Thống kê
       Store.addXp(grade >= 3 ? 2 : 1);
       Store.save();
       return c;

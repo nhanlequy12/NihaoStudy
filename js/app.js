@@ -40,6 +40,7 @@
         case "settings": r = Views.settings(); break;
         case "practice": r = parts[1] ? Practice.view(parts[1], parts[2]) : Practice.hub(); break;
         case "notebook": r = Practice.notebook(); break;
+        case "stats": r = StatsView.page(); break;
         default: r = { html: `<div class="card center empty"><h2>Không tìm thấy trang</h2><p class="muted">Đường dẫn này không tồn tại.</p><a class="btn btn-primary" href="#/">Về trang chủ</a></div>` };
       }
     } catch (err) {

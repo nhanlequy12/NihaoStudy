@@ -105,7 +105,7 @@
       </div>
 
       <div class="card mt">
-        <div class="row between"><h3 style="margin:0">Hoạt động 8 tuần gần đây</h3><span class="small muted">mỗi ô = 1 ngày</span></div>
+        <div class="row between"><h3 style="margin:0">Hoạt động 8 tuần gần đây</h3><a class="small" href="#/stats">Xem thống kê đầy đủ</a></div>
         <div class="heat mt">${days.join("")}</div>
       </div>
 
