@@ -230,6 +230,7 @@
         <p>${r.pass ? `<span class="pill green">ĐẬU</span> Vượt mốc ${r.passMark} điểm.` : `<span class="pill">CHƯA ĐẬU</span> Cần ${r.passMark} điểm, còn thiếu ${r.passMark - r.total}.`} <span class="muted small">· ${r.answered}/${r.questions} câu đã trả lời · ${minutes} phút</span></p>
         <div class="grid grid-3 mt">${r.sections.map((sec) => `<div class="card stat"><div class="stat-value">${sec.score}</div><div class="stat-label">${esc(sec.name)} ${esc(sec.vi)} · ${sec.correct}/${sec.total} câu</div>
           <div class="small" style="text-align:left;margin-top:8px">${sec.parts.map((p) => `<div class="row between"><span>${esc(p.name)}</span><span class="${p.correct / p.total >= 0.7 ? "" : "muted"}">${p.correct}/${p.total}</span></div>`).join("")}</div></div>`).join("")}</div>
+        ${window.Path && Path.examNote ? Path.examNote(exam.level, r) : ""}
         <div class="row mt" style="justify-content:center"><button class="btn" id="review">Xem lại từng câu</button><button class="btn btn-primary" id="again">Thi đề mới</button><a class="btn" href="#/exam">Chọn cấp khác</a></div></div>
       <div id="rv" class="mt"></div>`;
     box.querySelector("#again").onclick = () => { current = null; intro(box, exam.level); };

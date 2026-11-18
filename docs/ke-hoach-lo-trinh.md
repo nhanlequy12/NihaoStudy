@@ -9,16 +9,18 @@ Trạng thái: ✅ xong · ⏳ đang làm · ⬜ chưa làm
 | Giai đoạn | Chuẩn | Nguồn nội dung | Bài HSK sẵn có | Từ | Ngữ pháp | Bài đọc | Bài nhỏ dự kiến | Trạng thái |
 |---|---|---|---|---|---|---|---|---|
 | 0 · Nhập môn | trước HSK 1 | `js/data/stage0.js`, bảng âm tiết | – | 60 | – | – | 10 + kiểm tra | ✅ |
-| 1 · HSK 1 | HSK 2.0 | bài 1–12 + Bổ sung 2012 bài 1 | 13 | 155 | 52 | 3 | ~26 | ⬜ |
-| 2 · HSK 2 | HSK 2.0 | bài 13–24 | 12 | 154 | 48 | 3 | ~24 | ⬜ |
-| 3 · HSK 3 | HSK 2.0 | bài 25–44 + 1 bài bổ sung | 21 | 304 | 64 | 4 | ~42 | ⬜ |
-| 4 · HSK 4 | HSK 2.0 | bài 45–84 + 1 bài bổ sung | 41 | 615 | 124 | 7 | ~82 | ⬜ |
-| 5 · HSK 5 | HSK 2.0 | bài 85–149 + 6 bài bổ sung | 71 | 1.420 | 250 | 8 | ~142–213 | ⬜ |
-| 6 · HSK 6 | HSK 2.0 | bài 150–270 | 121 | 2.421 | 402 | 12 | ~242–363 | ⬜ |
+| 1 · HSK 1 | HSK 2.0 | bài 1–12 + Bổ sung 2012 bài 1 | 13 | 159 | 52 | 3 | 26 | ✅ |
+| 2 · HSK 2 | HSK 2.0 | bài 13–24 | 12 | 150 | 48 | 3 | 24 | ✅ |
+| 3 · HSK 3 | HSK 2.0 | bài 25–44 + 1 bài bổ sung | 21 | 304 | 64 | 4 | 42 | ✅ |
+| 4 · HSK 4 | HSK 2.0 | bài 45–84 + 1 bài bổ sung | 41 | 615 | 124 | 7 | 82 + 4 bài ôn chặng | ✅ |
+| 5 · HSK 5 | HSK 2.0 | bài 85–149 + 6 bài bổ sung | 71 | 1.420 | 250 | 8 | 213 + 9 bài ôn chặng | ✅ |
+| 6 · HSK 6 | HSK 2.0 | bài 150–270 | 121 | 2.421 | 402 | 12 | 363 + 12 bài ôn chặng | ✅ |
 
-Số bài nhỏ là ước lượng: bài HSK 1–4 (12–15 từ/bài) chia làm 2 phần, bài HSK 5–6 (khoảng 20 từ/bài) chia làm 2–3 phần.
+Số phần đã sinh: bài dưới 18 từ chia 2 phần, bài từ 18 từ trở lên (mọi bài HSK 5–6) chia 3 phần. Chi tiết và kết quả kiểm tra ở [lo-trinh-giai-doan-1-6.md](lo-trinh-giai-doan-1-6.md).
 
-## Cách làm chung cho Giai đoạn 1–6
+## Cách làm chung cho Giai đoạn 1–6 ✅
+
+Đã làm theo đúng các bước dưới đây (18/11/2026), sinh tự động trong `js/path-hsk.js`; riêng bước 10 còn chờ commit và push.
 
 Áp dụng cho mọi giai đoạn, để không phải soạn lại nội dung tiếng Trung đã rà soát.
 
@@ -59,54 +61,56 @@ Còn treo:
 - ⬜ **Nghe thử trên thiết bị thật** (Chrome, Edge, điện thoại): kiểm tra máy đọc đúng chữ trong câu hỏi nghe và ô bảng âm tiết. Chữ nhiều cách đọc đã được thay bằng từ ví dụ nhưng chưa nghe bằng tai.
 - ⬜ Theo dõi tỉ lệ đúng từng câu nếu sau này có thống kê. Câu nào sai quá nhiều thì xem lại cách hỏi.
 
-## Giai đoạn 1 · HSK 1 (HSK 2.0) ⬜
+## Giai đoạn 1 · HSK 1 (HSK 2.0) ✅
 
-- ⬜ Dựng khung dữ liệu giai đoạn sinh từ bài 1–12 và Bổ sung 2012 bài 1 (13 bài → khoảng 26 phần).
-- ⬜ Mở rộng `js/path.js`: phần Học hiển thị ngữ pháp và hội thoại của bài gốc; kiểm tra nhanh dùng câu sắp xếp và câu nghe.
-- ⬜ Đồng bộ với `completedLessons` theo hai chiều.
-- ⬜ Gắn 3 bài đọc HSK 1 vào sau phần tương ứng (`READINGS.after`).
-- ⬜ Luyện tập: Mưa từ vựng, Điền từ, Sắp xếp câu, Chép chính tả, Hỏi đáp cho HSK 2.0 cấp 1. Kiểm tra dữ liệu từng chức năng có lọc được theo cấp 1 không.
-- ⬜ Kiểm tra tổng hợp: đề HSK 1 sinh ngẫu nhiên (Nghe + Đọc).
-- ⬜ Kiểm tra đầu vào: thêm câu HSK 1 để xếp lên Giai đoạn 2.
-- ⬜ Trang «Bắt đầu học»: Giai đoạn 1 chuyển từ «dẫn tới bài cũ» sang trang giai đoạn có khóa và mở.
-- ⬜ `check_path.py`, chạy thử, báo cáo `lo-trinh-giai-doan-1.md`, commit và push.
+- ✅ Dựng khung dữ liệu giai đoạn sinh từ bài 1–12 và Bổ sung 2012 bài 1: 13 bài → 26 phần, 159 từ.
+- ✅ Mở rộng `js/path.js`: phần Học hiển thị từ vựng, ngữ pháp, mẹo, hội thoại và câu mẫu của bài gốc; kiểm tra nhanh có câu nghĩa, chọn chữ, nghe chọn pinyin và sắp xếp câu.
+- ✅ Đồng bộ với `completedLessons` theo hai chiều.
+- ✅ Gắn 3 bài đọc HSK 1 (r05, r10, r12) vào phần cuối của bài tương ứng.
+- ✅ Luyện tập: Mưa từ vựng, Điền từ, Sắp xếp câu, Chép chính tả, Hỏi đáp, tự chọn sẵn cấp 1. Đã kiểm, chức năng nào cũng có dữ liệu cấp 1.
+- ✅ Kiểm tra tổng hợp: đề HSK 1 sinh ngẫu nhiên (Nghe + Đọc, 40 câu), đạt từ 70% tổng điểm.
+- ✅ Kiểm tra đầu vào: thêm câu từng cấp HSK 1–6, xếp lên đúng giai đoạn.
+- ✅ Trang «Bắt đầu học»: Giai đoạn 1–6 là trang giai đoạn có khóa và mở.
+- ✅ `check_path.py` (0 lỗi), chạy thử, báo cáo [lo-trinh-giai-doan-1-6.md](lo-trinh-giai-doan-1-6.md).
+- ⬜ Commit và push.
 
-## Giai đoạn 2 · HSK 2 (HSK 2.0) ⬜
+## Giai đoạn 2 · HSK 2 (HSK 2.0) ✅
 
-- ⬜ Khung giai đoạn từ bài 13–24 (12 bài → khoảng 24 phần). Ngữ pháp trọng tâm: 过, 正在, 比, 得 (bổ ngữ), lượng từ, 因为…所以.
-- ⬜ 3 bài đọc HSK 2; luyện tập như Giai đoạn 1 cho cấp 2.
-- ⬜ Kiểm tra tổng hợp: đề HSK 2.
-- ⬜ Kiểm tra đầu vào: thêm câu HSK 2.
-- ⬜ Kiểm tra, chạy thử, báo cáo, commit và push.
+- ✅ Khung từ bài 13–24: 12 bài → 24 phần, 150 từ. Ngữ pháp trọng tâm (过, 正在, 比, 得, lượng từ, 因为…所以) lấy nguyên từ bài gốc.
+- ✅ 3 bài đọc HSK 2 (r15, r20, r24); luyện tập như Giai đoạn 1 cho cấp 2.
+- ✅ Kiểm tra tổng hợp: đề HSK 2 (60 câu).
+- ✅ Kiểm tra đầu vào: thêm câu HSK 2.
+- ✅ Kiểm tra và chạy thử. ⬜ Commit và push.
 
-## Giai đoạn 3 · HSK 3 (HSK 2.0) ⬜
+## Giai đoạn 3 · HSK 3 (HSK 2.0) ✅
 
-- ⬜ Khung từ bài 25–44 và 1 bài bổ sung (21 bài → khoảng 42 phần).
-- ⬜ Thêm luyện tập Chọn vị trí từ, Sửa câu sai, Luyện dịch (có từ cấp này).
-- ⬜ Đề HSK 3 có phần Viết: kiểm tra bộ sinh đề có phần này không; nếu chưa có thì thêm dạng sắp xếp câu và điền chữ.
-- ⬜ 4 bài đọc; kiểm tra đầu vào thêm câu HSK 3.
-- ⬜ Kiểm tra, chạy thử, báo cáo, commit và push.
+- ✅ Khung từ bài 25–44 và Bổ sung 2012 bài 2: 21 bài → 42 phần, 304 từ.
+- ✅ Thêm luyện tập Chọn vị trí từ, Sửa câu sai, Luyện dịch (đều có dữ liệu cấp 3).
+- ✅ Đề HSK 3 có phần Viết: bộ sinh đề đã có sắp xếp câu (5) và viết chữ theo pinyin (5).
+- ✅ 4 bài đọc; kiểm tra đầu vào thêm câu HSK 3.
+- ✅ Kiểm tra và chạy thử. ⬜ Commit và push.
 
-## Giai đoạn 4 · HSK 4 (HSK 2.0) ⬜
+## Giai đoạn 4 · HSK 4 (HSK 2.0) ✅
 
-- ⬜ Khung từ bài 45–84 và 1 bài bổ sung (41 bài → khoảng 82 phần). Giai đoạn dài (8–12 tháng), nên chia thành 4–5 chặng nhỏ, mỗi chặng có một bài ôn ngắn.
-- ⬜ 7 bài đọc; luyện tập đủ 8 chức năng.
-- ⬜ Kiểm tra tổng hợp: đề HSK 4. Thêm kiểm tra giữa giai đoạn sau mỗi chặng.
-- ⬜ Kiểm tra, chạy thử, báo cáo, commit và push.
+- ✅ Khung từ bài 45–84 và Bổ sung 2012 bài 3: 41 bài → 82 phần, 615 từ. Chia 4 chặng (45–54, 55–64, 65–74, 75–84 + BS 3), mỗi chặng có một bài ôn ngắn 20 câu.
+- ✅ 7 bài đọc; luyện tập đủ 8 chức năng.
+- ✅ Kiểm tra tổng hợp: đề HSK 4. Bài ôn cuối mỗi chặng là kiểm tra giữa giai đoạn; đạt 70% mới mở chặng sau.
+- ✅ Kiểm tra và chạy thử. ⬜ Commit và push.
 
-## Giai đoạn 5 · HSK 5 (HSK 2.0) ⬜
+## Giai đoạn 5 · HSK 5 (HSK 2.0) ✅
 
-- ⬜ Khung từ bài 85–149 và 6 bài bổ sung (71 bài, khoảng 20 từ/bài → 2–3 phần mỗi bài).
-- ⬜ Chia chặng theo chủ đề và kiểm tra giữa giai đoạn.
-- ⬜ 8 bài đọc; đề HSK 5 (có viết đoạn ngắn: kiểm tra bộ sinh đề).
-- ⬜ Kiểm tra hiệu năng: nhiều phần thì trang giai đoạn cần gập theo chặng, tránh danh sách quá dài trên điện thoại.
-- ⬜ Kiểm tra, chạy thử, báo cáo, commit và push.
+- ✅ Khung từ bài 85–149 và 6 bài bổ sung: 71 bài → 213 phần (3 phần mỗi bài), 1.420 từ.
+- ✅ Chia 9 chặng, mỗi chặng 8 bài, khớp nhịp bài đọc; mỗi chặng có bài ôn. ⬜ Chưa chia theo chủ đề.
+- ✅ 8 bài đọc; đề HSK 5. ⬜ Bộ sinh đề chưa có dạng viết đoạn 80 chữ (hiện là 8 câu sắp xếp và 2 câu đặt câu).
+- ✅ Hiệu năng: trang giai đoạn gập theo chặng, mỗi dòng là một bài có các nút phần A/B/C, danh sách trên điện thoại ngắn.
+- ✅ Kiểm tra và chạy thử. ⬜ Commit và push.
 
-## Giai đoạn 6 · HSK 6 (HSK 2.0) ⬜
+## Giai đoạn 6 · HSK 6 (HSK 2.0) ✅
 
-- ⬜ Khung từ bài 150–270 (121 bài, 2.421 từ → khoảng 242–363 phần), chia chặng.
-- ⬜ 12 bài đọc; đề HSK 6 (101 câu, 135 phút, có viết tóm tắt 缩写: đã có trong thi thử).
-- ⬜ Kiểm tra, chạy thử, báo cáo, commit và push.
+- ✅ Khung từ bài 150–270: 121 bài → 363 phần, 2.421 từ. Chia 12 chặng, mỗi chặng có bài ôn.
+- ✅ 12 bài đọc; đề HSK 6 (101 câu, 135 phút, có 缩写).
+- ⏳ Kho Sửa câu sai, Điền từ, Hỏi đáp cấp 6 đang được bổ sung. Lộ trình đã dẫn tới đủ 8 chức năng.
+- ✅ Kiểm tra và chạy thử. ⬜ Commit và push.
 
 ## Việc chung chưa quyết
 

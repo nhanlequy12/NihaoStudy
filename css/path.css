@@ -116,3 +116,33 @@ button.syl-cell:active { transform: scale(0.97); }
 .syl-cell.empty { opacity: 0.45; background: transparent; border-style: dashed; }
 .syl-info { min-height: 1.5em; margin-top: 10px; font-weight: 600; }
 @media (max-width: 420px) { .syl-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Giai đoạn 1–6: dòng bài HSK có các phần A/B/C, chặng gập được ---------- */
+.step-card.lesson-row { align-items: flex-start; }
+.part-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.part-chip {
+  display: inline-flex; align-items: center; gap: 4px; min-height: 36px; padding: 6px 12px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 0.85rem; font-weight: 600; white-space: nowrap;
+}
+.part-chip .ic { width: 14px; height: 14px; }
+a.part-chip:hover { text-decoration: none; }
+@media (hover: hover) and (pointer: fine) { a.part-chip:hover { border-color: var(--primary); background: var(--primary-soft); } }
+.part-chip.done { border-color: color-mix(in srgb, var(--green) 45%, var(--border)); background: var(--green-soft); color: var(--green); }
+.part-chip.cur { border-color: var(--primary); background: var(--primary); color: #fff; }
+.part-chip.read { border-style: dashed; }
+.part-chip.locked { color: var(--muted); opacity: 0.7; cursor: not-allowed; }
+details.chang { padding: 0; margin-bottom: 10px; }
+details.chang > summary {
+  list-style: none; cursor: pointer; display: flex; align-items: center; gap: 10px; padding: 14px 16px; min-height: 52px;
+}
+details.chang > summary::-webkit-details-marker { display: none; }
+.chang-head { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.chang-ic { width: 18px; height: 18px; color: var(--muted); transition: transform var(--dur-fast); }
+details.chang[open] .chang-ic { transform: rotate(90deg); }
+details.chang > .steps { padding: 0 12px 14px; }
+@media (max-width: 480px) {
+  .part-chip { padding: 6px 10px; font-size: 0.8rem; }
+  .part-chip .pc-w { display: none; }
+  details.chang > summary { padding: 12px; }
+  details.chang > .steps { padding: 0 8px 12px; }
+}

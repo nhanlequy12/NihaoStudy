@@ -14,21 +14,62 @@
     s.path.steps = s.path.steps || {}; s.path.tests = s.path.tests || {};
     return s.path;
   }
-  const stageOf = (id) => STAGES.find((st) => st.steps.some((x) => x.id === id) || st.test.id === id);
-  const stepOf = (id) => { for (const st of STAGES) { const x = st.steps.find((y) => y.id === id); if (x) return x; } return null; };
-  const isDone = (id) => !!(ps().steps[id] && ps().steps[id].done) || !!(ps().tests[id] && ps().tests[id].done);
-  const best = (id) => (ps().steps[id] || ps().tests[id] || {}).best;
+  // Chỉ mục tra nhanh (Giai đoạn 1–6 có hàng trăm phần): mã bài/phần → bài, giai đoạn; mã bài HSK → các phần của nó
+  let IDX = null;
+  function idx() {
+    if (IDX) return IDX;
+    IDX = { step: new Map(), stage: new Map(), at: new Map(), parts: new Map(), testLv: new Map(), word: new Map(), lw: new Map() };
+    STAGES.forEach((st) => {
+      st.steps.forEach((x, i) => {
+        IDX.step.set(x.id, x); IDX.stage.set(x.id, st); IDX.at.set(x.id, i);
+        if (x.lesson) { if (!IDX.parts.has(x.lesson)) IDX.parts.set(x.lesson, []); IDX.parts.get(x.lesson).push(x); }
+      });
+      IDX.stage.set(st.test.id, st);
+      if (st.test.exam) IDX.testLv.set(st.test.id, st.test.exam);
+    });
+    VOCAB.forEach((w) => { IDX.word.set(w.id, w); if (!IDX.lw.has(w.l)) IDX.lw.set(w.l, []); IDX.lw.get(w.l).push(w); });
+    return IDX;
+  }
+  const stageOf = (id) => idx().stage.get(id);
+  const wordById = (id) => idx().word.get(id);
+  const lessonOf = (id) => LESSONS.find((l) => l.id === id);
+  // Đề HSK của giai đoạn: tính theo phần trăm tổng điểm trong lịch sử thi thử (exams)
+  const examPct = (e) => (e.max ? Math.round((e.total / e.max) * 100) : 0);
+  const examsOf = (lv) => (Store.state.exams || []).filter((e) => e.level === lv && e.max);
+  function isDone(id) {
+    const p = ps();
+    if ((p.steps[id] && p.steps[id].done) || (p.tests[id] && p.tests[id].done)) return true;
+    const x = idx().step.get(id);
+    if (x && x.lesson && Store.state.completedLessons.includes(x.lesson)) return true; // đã xong bài HSK cũ → xong mọi phần của bài
+    const lv = idx().testLv.get(id);
+    return !!(lv && examsOf(lv).some((e) => examPct(e) >= PASS));
+  }
+  function best(id) {
+    const b = (ps().steps[id] || ps().tests[id] || {}).best, lv = idx().testLv.get(id);
+    const all = [b, ...(lv ? examsOf(lv).map(examPct) : [])].filter((v) => v != null);
+    return all.length ? Math.max(...all) : undefined;
+  }
   const stageDone = (st) => st.steps.every((x) => isDone(x.id)) && isDone(st.test.id);
+  // Giai đoạn 1–6 mở khi đạt kiểm tra tổng hợp giai đoạn trước, được xếp lên qua kiểm tra đầu vào, hoặc đã học dở (kể cả bài HSK cũ)
+  function stageOpen(st) {
+    if (st.id === 0 || ps().placed >= st.id) return true;
+    const prev = STAGES.find((s) => s.id === st.id - 1);
+    return !prev || isDone(prev.test.id) || st.steps.some((x) => isDone(x.id));
+  }
   function unlocked(st, i) { // i = chỉ số bài; i = st.steps.length là bài kiểm tra tổng hợp
     if (ps().placed > st.id) return true;
+    if (!stageOpen(st)) return false;
     return i === 0 || isDone(st.steps[i - 1].id);
   }
+  const testOpen = (st) => st.steps.every((x) => isDone(x.id)) || ps().placed > st.id;
+  // Tên hiển thị của một bài/phần: Giai đoạn 0 «Bài 3: …», Giai đoạn 1–6 «Bài 5: Chủ đề · Phần A», «Ôn tập chặng 2 · …»
+  const stepName = (x, i) => (x.kind === "part" ? `${x.lessonName}: ${x.title}` : x.kind === "review" ? x.label : `Bài ${i + 1}: ${x.title}`);
   // Bài tiếp theo cần học trong lộ trình, hoặc null nếu đã xong / đã được xếp lên giai đoạn sau
   function next() {
     for (const st of STAGES) {
       if (ps().placed > st.id) continue;
       const i = st.steps.findIndex((x) => !isDone(x.id));
-      if (i >= 0) return { href: `#/step/${st.steps[i].id}`, label: `${st.name} · Bài ${i + 1}: ${st.steps[i].title}`, stage: st, i };
+      if (i >= 0) return { href: `#/step/${st.steps[i].id}`, label: `${st.name} · ${stepName(st.steps[i], i)}`, stage: st, i };
       if (!isDone(st.test.id)) return { href: `#/step/${st.test.id}`, label: `${st.name} · ${st.test.title}`, stage: st, i: st.steps.length };
     }
     return null;
@@ -94,6 +135,27 @@
       const near = shuffle(SYLLABLES.filter((r) => r !== pick.r && (r[1] === pick.r[1] || fin(r) === fin(pick.r)))).slice(0, 3).map((r) => r[2][pick.t]);
       return { kind: "listen", prompt: "Nghe và chọn âm tiết đúng", say: pick.c[0], opts: shuffle([pick.r[2][pick.t], ...near]), answer: pick.r[2][pick.t], explain: `${pick.c[0]} ${pick.r[2][pick.t]}` };
     }
+    // Giai đoạn 1–6: câu hỏi theo mã từ (nghĩa, chọn chữ, nghe chọn pinyin) và câu sắp xếp lấy từ câu mẫu của bài gốc
+    if (item.t === "mean" || item.t === "char" || item.t === "hear") {
+      const w = wordById(item.id), nf = (s) => String(s).normalize("NFC").toLowerCase();
+      // phương án nhiễu: từ cùng bài trước, rồi từ cùng giai đoạn; không trùng chữ, nghĩa hay pinyin với đáp án
+      const lvWords = stage._words || (stage._words = (stage.lessons || []).flatMap((l) => idx().lw.get(l) || []));
+      const cand = [...shuffle(idx().lw.get(w.l) || []), ...shuffle(lvWords).slice(0, 60)];
+      const ds = [], seen = new Set([w.hz, w.vi, nf(w.py)]);
+      const ok = (d) => !seen.has(d.hz) && !seen.has(d.vi) && !seen.has(nf(d.py));
+      if (item.t === "hear") cand.sort((a, b) => (a.hz.length === w.hz.length ? 0 : 1) - (b.hz.length === w.hz.length ? 0 : 1));
+      for (const d of cand) { if (ds.length === 3) break; if (ok(d)) { ds.push(d); seen.add(d.hz); seen.add(d.vi); seen.add(nf(d.py)); } }
+      const ex = `${w.hz} ${w.py} · ${w.vi}`;
+      if (item.t === "mean") return { kind: "word", prompt: "Từ này nghĩa là gì?", show: w, say: w.hz, opts: shuffle([w.vi, ...ds.map((d) => d.vi)]), answer: w.vi, explain: ex };
+      if (item.t === "char") return { kind: "char", prompt: "Chọn chữ Hán đúng", show: w, say: w.hz, opts: shuffle([w.hz, ...ds.map((d) => d.hz)]), answer: w.hz, explain: ex };
+      return { kind: "listen", prompt: "Nghe và chọn pinyin đúng", say: w.hz, opts: shuffle([w.py, ...ds.map((d) => d.py)]), answer: w.py, explain: ex };
+    }
+    if (item.t === "order") {
+      const s = lessonOf(item.lesson).sentences[item.k], zh = s[0].replace(/ /g, "");
+      let tokens = shuffle(s[0].split(" "));
+      for (let k = 0; k < 6 && tokens.join(" ") === s[0]; k++) tokens = shuffle(tokens); // tránh đưa ra đúng thứ tự sẵn
+      return { kind: "order", prompt: `Sắp xếp thành câu: ${s[2]}`, sub: s[1], tokens, answer: s[0], alts: s[3] || [], say: zh, explain: `${zh} · ${s[1]}` };
+    }
     if (item.t === "radical") {
       const list = RADICALS.slice(0, 12), r = list[Math.floor(Math.random() * list.length)];
       const others = shuffle(list.filter((x) => x !== r)).slice(0, 3);
@@ -118,27 +180,50 @@
       const sec = sections ? sections.find((s) => i >= s.from && i < s.to) : null;
       const head = q.kind === "listen" ? `<button class="btn btn-primary btn-lg" id="play">${ic("volume")} Nghe lại</button>`
         : q.kind === "word" ? `<div class="main">${esc(q.show.hz)}</div><div class="sub">${pyHtml(q.show.py)}</div>`
+        : q.kind === "char" ? `<div class="main vi-text">${esc(q.show.vi)}</div><div class="sub hv">${esc(q.show.hv)}</div>`
+        : q.kind === "order" ? `<div class="sub">${pyHtml(q.sub)}</div>`
         : "";
+      const body = q.kind === "order"
+        ? `<div class="tiles" id="answer"></div><p class="small muted center" style="margin:6px">Bấm vào từ để chuyển lên / xuống</p><div class="tiles" id="bank">${q.tokens.map((t, k) => `<button class="tile zh" data-k="${k}">${esc(t)}</button>`).join("")}</div>
+          <div class="row mt" style="justify-content:center"><button class="btn btn-primary" id="check">Kiểm tra</button></div>`
+        : `<div class="options">${q.opts.map((o, k) => `<button class="option ${q.kind === "listen" ? "py-opt" : q.kind === "char" ? "zh" : "vi-text"}" data-k="${k}"><span class="kbd-hint">${k + 1}</span>${q.kind === "listen" ? pyHtml(o) : esc(o)}</button>`).join("")}</div>`;
       box.innerHTML = `<div class="quiz-progress">${list.map((_, k) => `<span class="${k < i ? (results[k] ? "ok" : "bad") : k === i ? "cur" : ""}"></span>`).join("")}</div>
         ${sec ? `<div class="eyebrow center">${esc(sec.name)}</div>` : ""}
         <div class="quiz-q"><div class="prompt">${q.html ? q.prompt : esc(q.prompt)}</div>${head}</div>
-        <div class="options">${q.opts.map((o, k) => `<button class="option ${q.kind === "listen" ? "py-opt" : "vi-text"}" data-k="${k}"><span class="kbd-hint">${k + 1}</span>${q.kind === "listen" ? pyHtml(o) : esc(o)}</button>`).join("")}</div><div id="fb"></div>`;
+        ${body}<div id="fb"></div>`;
       const play = box.querySelector("#play");
       if (play) { play.onclick = () => say(q); say(q); }
       box.querySelectorAll(".option").forEach((o) => (o.onclick = () => pick(+o.dataset.k)));
+      if (q.kind === "order") {
+        const ans = box.querySelector("#answer"), bank = box.querySelector("#bank");
+        box.querySelectorAll(".tile").forEach((t) => (t.onclick = () => { if (!answered) (t.parentElement === bank ? ans : bank).appendChild(t); }));
+        box.querySelector("#check").onclick = checkOrder;
+      }
       App.keyHandler = (e) => {
         if (e.target.closest("input, textarea, select")) return;
-        if (!answered && /^[1-9]$/.test(e.key) && +e.key <= q.opts.length) pick(+e.key - 1);
+        if (!answered && q.opts && /^[1-9]$/.test(e.key) && +e.key <= q.opts.length) pick(+e.key - 1);
+        else if (!answered && q.kind === "order" && e.key === "Enter") { e.preventDefault(); checkOrder(); }
         else if (answered && e.key === "Enter") { e.preventDefault(); i++; render(); }
         else if (e.key === " " && play) { e.preventDefault(); say(q); }
       };
     }
+    function checkOrder() {
+      if (answered) return;
+      const q = list[i], got = [...box.querySelectorAll("#answer .tile")].map((t) => t.textContent).join(" ");
+      answered = true;
+      box.querySelector("#check").disabled = true;
+      grade(got === q.answer || q.alts.includes(got));
+    }
     function pick(k) {
       if (answered) return; answered = true;
       const q = list[i], ok = q.opts[k] === q.answer;
-      results[i] = ok; if (ok) correct++;
       box.querySelectorAll(".option").forEach((x) => { x.disabled = true; if (q.opts[+x.dataset.k] === q.answer) x.classList.add("correct"); });
       if (!ok) box.querySelector(`.option[data-k="${k}"]`).classList.add("wrong");
+      grade(ok);
+    }
+    function grade(ok) {
+      const q = list[i];
+      results[i] = ok; if (ok) correct++;
       if (q.kind !== "listen" && q.say) TTS.speak(q.say);
       box.querySelector("#fb").innerHTML = `<div class="feedback ${ok ? "ok" : "bad"}">${ok ? "Chính xác!" : "Chưa đúng."} Đáp án: ${esc(q.explain)}</div>
         <div class="center mt"><button class="btn btn-primary" id="nx">${i + 1 < list.length ? "Câu tiếp" : mode === "practice" ? "Xong" : "Xem kết quả"} ${ic("next")}</button></div>`;
@@ -193,60 +278,52 @@
       Store.markRoutine("lesson");
       App.updateBadge();
     }
+    // Giai đoạn 1–6: qua hết các phần của một bài → bài HSK cũ cũng được đánh dấu hoàn thành (mở bài đọc, tính tiến độ cấp)
+    let lessonNow = false;
+    const x = idx().step.get(id);
+    if (pass && x && x.lesson && !Store.state.completedLessons.includes(x.lesson) && idx().parts.get(x.lesson).every((y) => isDone(y.id))) {
+      Store.state.completedLessons.push(x.lesson); lessonNow = true;
+    }
     Store.save();
-    return { pass, added, first };
+    return { pass, added, first, lessonNow };
   }
 
   // ---------- Trang «Bắt đầu học» ----------
-  const LATER = [ // các giai đoạn sau: dùng bài học HSK 2.0 sẵn có, sẽ chia lại thành bài nhỏ ở các đợt tiếp theo
-    { name: "Giai đoạn 1", title: "HSK 1", level: 1, time: "6–8 tuần" },
-    { name: "Giai đoạn 2", title: "HSK 2", level: 2, time: "8–12 tuần" },
-    { name: "Giai đoạn 3", title: "HSK 3", level: 3, time: "4–6 tháng" },
-    { name: "Giai đoạn 4", title: "HSK 4", level: 4, time: "8–12 tháng" },
-    { name: "Giai đoạn 5", title: "HSK 5", level: 5, time: "12–16 tháng" },
-    { name: "Giai đoạn 6", title: "HSK 6", level: 6, time: "18–24 tháng" },
-  ];
-  function lessonsOfLevel(lv) { return LESSONS.filter((l) => !l.h3 && (l.level || (l.id <= 12 ? 1 : l.id <= 24 ? 2 : l.id <= 44 ? 3 : l.id <= 84 ? 4 : l.id <= 149 ? 5 : 6)) === lv); }
-
   function start(sub) {
     if (sub === "test") return placement();
-    const n = next(), st0 = STAGES[0], s = Store.state, began = started();
+    const n = next(), began = started();
+    const card = (st) => {
+      const done = stageDone(st), open = stageOpen(st) || ps().placed > st.id, cur = !done && n && n.stage === st;
+      const total = st.steps.length + 1, d = doneCount(st), nParts = st.steps.filter((x) => x.kind === "part").length;
+      const desc = st.id === 0 ? `${st.sub} ${st.steps.length} bài + kiểm tra tổng hợp.` : `${st.sub} ${nParts} phần 15–30 phút + kiểm tra tổng hợp dạng đề HSK ${st.id}.`;
+      return `<li class="stage ${done ? "done" : cur ? "current" : open ? "" : "locked"}">
+          <a class="card stage-card" href="#/path/${st.id}">
+            <div class="stage-num">${done ? ic("check") : open ? st.id : ic("lock")}</div>
+            <div class="stage-body"><div class="row between"><b>${esc(st.name)} · ${esc(st.title)}${st.id ? ` <span class="muted" style="font-weight:500">(HSK 2.0)</span>` : ""}</b><span class="pill ${st.id ? "" : "gold"}">${esc(st.time)}</span></div>
+              <div class="small muted">${esc(desc)}</div>
+              <div class="row between small mt"><span>${d}/${total} mục${ps().placed > st.id && !done ? ` · đã xếp lên Giai đoạn ${ps().placed}` : ""}${!open ? ` · mở khi đạt kiểm tra tổng hợp Giai đoạn ${st.id - 1}` : ""}</span></div>
+              <div class="progress green"><span style="width:${(d / total) * 100}%"></span></div></div>
+          </a></li>`;
+    };
     const html = `<h1>Bắt đầu học</h1>
       <p class="subtitle">Lộ trình đi từng bước từ con số 0: phát âm trước, rồi từ vựng theo cấp HSK. Mỗi bài 15–30 phút, gồm phần học, luyện tập và kiểm tra nhanh; đạt từ ${PASS}% thì mở bài tiếp theo. Từ đã học tự vào bộ thẻ ôn tập ngắt quãng.</p>
       <div class="card start-cta">
-        <div><div class="eyebrow">${n ? (began ? "Đang học" : "Bắt đầu từ đây") : "Bước tiếp theo"}</div>
-          <h2 style="margin:4px 0 0">${n ? esc(n.label) : "Học tiếp bài HSK 1"}</h2></div>
-        <div class="row">${n ? `<a class="btn btn-primary btn-lg" href="${n.href}">${ic("play")} ${began ? "Tiếp tục học" : "Bắt đầu Bài 1"}</a>` : `<a class="btn btn-primary btn-lg" href="#/lessons/1">${ic("book")} Vào bài học HSK 1</a>`}
+        <div><div class="eyebrow">${n ? (began ? "Đang học" : "Bắt đầu từ đây") : "Đã đi hết lộ trình"}</div>
+          <h2 style="margin:4px 0 0">${n ? esc(n.label) : "Ôn tập và thi thử để giữ vững HSK 6"}</h2></div>
+        <div class="row">${n ? `<a class="btn btn-primary btn-lg" href="${n.href}">${ic("play")} ${began ? "Tiếp tục học" : "Bắt đầu Bài 1"}</a>` : `<a class="btn btn-primary btn-lg" href="#/exam">${ic("exam")} Thi thử HSK</a>`}
           ${!began ? `<a class="btn btn-lg" href="#/start/test">${ic("target")} Kiểm tra đầu vào</a>` : ""}</div>
-        ${!began ? `<p class="small muted" style="margin:0">Đã biết pinyin? Làm kiểm tra đầu vào (khoảng 5 phút, không bắt buộc) để bỏ qua phần Nhập môn.</p>` : ""}
+        ${!began ? `<p class="small muted" style="margin:0">Đã biết pinyin hoặc đã học tiếng Trung? Làm kiểm tra đầu vào (5–15 phút, không bắt buộc) để được xếp lên đúng giai đoạn.</p>` : ""}
       </div>
       <h2>Các giai đoạn</h2>
-      <ol class="stage-list">
-        <li class="stage ${stageDone(st0) ? "done" : "current"}">
-          <a class="card stage-card" href="#/path/${st0.id}">
-            <div class="stage-num">${stageDone(st0) ? ic("check") : "0"}</div>
-            <div class="stage-body"><div class="row between"><b>${esc(st0.name)} · ${esc(st0.title)}</b><span class="pill gold">${esc(st0.time)}</span></div>
-              <div class="small muted">${esc(st0.sub)} ${st0.steps.length} bài + kiểm tra tổng hợp.</div>
-              <div class="row between small mt"><span>${doneCount(st0)}/${st0.steps.length + 1} mục${ps().placed > 0 && !stageDone(st0) ? " · đã xếp lên Giai đoạn 1" : ""}</span></div>
-              <div class="progress green"><span style="width:${(doneCount(st0) / (st0.steps.length + 1)) * 100}%"></span></div></div>
-          </a></li>
-        ${LATER.map((g) => { const ls = lessonsOfLevel(g.level), d = ls.filter((l) => s.completedLessons.includes(l.id)).length; return `
-        <li class="stage ${ls.length && d === ls.length ? "done" : ""}">
-          <a class="card stage-card" href="#/lessons/${g.level}">
-            <div class="stage-num">${ls.length && d === ls.length ? ic("check") : g.level}</div>
-            <div class="stage-body"><div class="row between"><b>${g.name} · ${g.title} <span class="muted" style="font-weight:500">(HSK 2.0)</span></b><span class="pill">${g.time}</span></div>
-              <div class="small muted">${ls.length} bài theo chủ đề, mỗi bài có từ vựng, ngữ pháp, hội thoại, luyện tập; cuối cấp có thi thử HSK ${g.level}.</div>
-              <div class="row between small mt"><span>${d}/${ls.length} bài</span></div>
-              <div class="progress"><span style="width:${ls.length ? (d / ls.length) * 100 : 0}%"></span></div></div>
-          </a></li>`; }).join("")}
-      </ol>
-      <p class="small muted">Giai đoạn 1–6 đang dùng bài học HSK 2.0 sẵn có. Học theo HSK 3.0 (đề cương 2025)? Xem <a href="#/lessons/h3">bài bổ sung HSK 3.0</a> và <a href="#/words">từ vựng theo cấp</a>.</p>`;
+      <ol class="stage-list">${STAGES.map(card).join("")}</ol>
+      <p class="small muted">Giai đoạn 1–6 chia các bài học HSK 2.0 sẵn có thành phần nhỏ; bài HSK đã hoàn thành trước đây được tính là xong mọi phần của bài. Học theo HSK 3.0 (đề cương 2025)? Xem <a href="#/lessons/h3">bài bổ sung HSK 3.0</a> và <a href="#/words">từ vựng theo cấp</a>.</p>`;
     return { html };
   }
 
   // ---------- Trang giai đoạn ----------
   function stage(id) {
     const st = STAGES.find((x) => x.id === +id) || STAGES[0];
+    if (st.id > 0) return stageHsk(st);
     const due = SRS.dueIds().length, n = next();
     const total = st.steps.length + 1, d = doneCount(st);
     const item = (x, i) => {
@@ -283,12 +360,16 @@
   function step(id, tab = "learn") {
     const st = stageOf(id);
     if (!st) return { html: `<p>Không tìm thấy bài.</p>` };
-    if (id === st.test.id) return stageTest(st);
-    const i = st.steps.findIndex((x) => x.id === id), x = st.steps[i];
+    if (id === st.test.id) return st.test.exam ? examTest(st) : stageTest(st);
+    const i = idx().at.get(id), x = st.steps[i];
     if (!unlocked(st, i)) {
-      const prev = st.steps[i - 1];
-      return { html: `<a href="#/path/${st.id}" class="backlink">${ic("back")} ${esc(st.name)}</a><div class="card center empty">${ic("lock", "big-ic")}<h2>Bài ${i + 1} chưa mở</h2><p class="muted">Hoàn thành Bài ${i}: ${esc(prev.title)} với điểm từ ${PASS}% trở lên để mở bài này.</p><a class="btn btn-primary" href="#/step/${prev.id}">Học Bài ${i}</a></div>` };
+      const back = `<a href="#/path/${st.id}" class="backlink">${ic("back")} ${esc(st.name)}</a>`;
+      if (!stageOpen(st)) return { html: `${back}<div class="card center empty">${ic("lock", "big-ic")}<h2>${esc(st.name)} chưa mở</h2><p class="muted">Đạt từ ${PASS}% kiểm tra tổng hợp Giai đoạn ${st.id - 1}, hoặc làm kiểm tra đầu vào để được xếp lên giai đoạn này.</p><div class="row" style="justify-content:center"><a class="btn btn-primary" href="#/path/${st.id - 1}">Về Giai đoạn ${st.id - 1}</a><a class="btn" href="#/start/test">Kiểm tra đầu vào</a></div></div>` };
+      const prev = st.steps[i - 1], short = (y, k) => (y.kind ? y.label : `Bài ${k + 1}`);
+      return { html: `${back}<div class="card center empty">${ic("lock", "big-ic")}<h2>${esc(short(x, i))} chưa mở</h2><p class="muted">Hoàn thành ${esc(stepName(prev, i - 1))} với điểm từ ${PASS}% trở lên để mở bài này.</p><a class="btn btn-primary" href="#/step/${prev.id}">Học ${esc(short(prev, i - 1))}</a></div>` };
     }
+    if (x.kind === "part") return partStep(st, i, x, tab);
+    if (x.kind === "review") return reviewStep(st, i, x);
     const words = x.words.map(vocabOf).filter(Boolean);
     const tabs = [["learn", "Học"], ["practice", "Luyện tập"], ["quiz", "Kiểm tra nhanh"]];
     const done = isDone(x.id);
@@ -365,7 +446,7 @@
             const r = saveResult(st.test.id, pct, true);
             box.innerHTML = `<div class="card center"><div class="result-ic ${r.pass ? "ok" : ""}">${ic(r.pass ? "trophy" : "repeat")}</div><h2 style="margin:6px 0">${pct}% · ${c}/${n} câu đúng</h2>
               <p class="muted">${r.pass ? `Chúc mừng, bạn đã hoàn thành ${esc(st.name)} · ${esc(st.title)}! Giờ bạn đã đọc được pinyin, biết viết và gõ chữ Hán. Bước tiếp theo là từ vựng HSK 1.` : `Cần đạt ${PASS}%. Xem lại các bài có điểm thấp rồi làm lại; mỗi lần là một đề mới.`}</p>
-              <div class="row" style="justify-content:center"><button class="btn" id="again">Làm đề khác</button>${r.pass ? `<a class="btn btn-primary" href="#/lessons/1">Vào HSK 1 · Bài 1 ${ic("next")}</a>` : `<a class="btn btn-primary" href="#/path/${st.id}">Về danh sách bài</a>`}</div></div>`;
+              <div class="row" style="justify-content:center"><button class="btn" id="again">Làm đề khác</button>${r.pass ? `<a class="btn btn-primary" href="#/path/1">Vào Giai đoạn 1 · HSK 1 ${ic("next")}</a>` : `<a class="btn btn-primary" href="#/path/${st.id}">Về danh sách bài</a>`}</div></div>`;
             box.querySelector("#again").onclick = () => App.route();
           },
         });
@@ -373,47 +454,248 @@
     };
   }
 
-  // ---------- Kiểm tra đầu vào (tùy chọn) ----------
-  function placement() {
-    const st = STAGES[0];
-    const pool = st.steps.flatMap((x) => x.quiz.filter((q) => q.t === "tone" || q.t === "listen").map((q) => ({ q, x })));
-    const a = shuffle(pool).slice(0, 8).map((o) => expand(o.q, o.x, st));
-    const hsk1 = VOCAB.filter((w) => w.l >= 1 && w.l <= 12);
-    const b = shuffle(hsk1).slice(0, 6).map((w) => {
-      const ds = shuffle(hsk1.filter((d) => d.hz !== w.hz && d.vi !== w.vi)).slice(0, 3);
-      return { kind: "word", prompt: "Từ này nghĩa là gì?", show: w, say: w.hz, opts: shuffle([w.vi, ...ds.map((d) => d.vi)]), answer: w.vi, explain: `${w.hz} ${w.py} · ${w.vi}` };
-    });
-    const html = `<a href="#/start" class="backlink">${ic("back")} Bắt đầu học</a><h1>Kiểm tra đầu vào</h1>
-      <p class="subtitle">14 câu, khoảng 5 phút: 8 câu nghe pinyin và thanh điệu, 6 câu từ vựng HSK 1. Không biết thì cứ đoán, kết quả chỉ để gợi ý chỗ bắt đầu.</p><div id="quiz"></div>`;
+  // ---------- Giai đoạn 1–6: trang giai đoạn ----------
+  // Mỗi dòng là một bài HSK, các phần A/B/C là nút nhỏ trong dòng; giai đoạn dài gập theo chặng để danh sách ngắn trên điện thoại.
+  function stageHsk(st) {
+    const due = SRS.dueIds().length, n = next(), open = stageOpen(st) || ps().placed > st.id, pos = idx().at;
+    const total = st.steps.length + 1, d = doneCount(st), cur = n && n.stage === st ? n : null;
+    const nParts = st.steps.filter((x) => x.kind === "part").length, nRev = st.steps.length - nParts;
+    const lessonRow = (lid) => {
+      const parts = idx().parts.get(lid), L = lessonOf(lid), last = parts[parts.length - 1];
+      const doneAll = parts.every((p) => isDone(p.id)), isOpen = unlocked(st, pos.get(parts[0].id));
+      const isCur = cur && parts.some((p) => pos.get(p.id) === cur.i);
+      const R = last.reading && READINGS.find((r) => r.id === last.reading);
+      const chip = (p) => {
+        const k = pos.get(p.id), dn = isDone(p.id), b = best(p.id), lab = `<span class="pc-w">Phần </span>${"ABC"[p.part]} · ${p.min}′`;
+        return unlocked(st, k) ? `<a class="part-chip ${dn ? "done" : cur && cur.i === k ? "cur" : ""}" href="#/step/${p.id}" title="${esc(p.label)}${b != null ? ` · điểm cao nhất ${b}%` : ""}">${dn ? ic("check") : ""}${lab}</a>`
+          : `<span class="part-chip locked" title="Cần đạt ${PASS}% phần trước">${ic("lock")}${lab}</span>`;
+      };
+      return `<li class="step ${doneAll ? "done" : isOpen ? "open" : "locked"} ${isCur ? "current" : ""}">
+        <span class="step-dot" aria-hidden="true">${doneAll ? ic("check") : isOpen ? st.lessons.indexOf(lid) + 1 : ic("lock")}</span>
+        <div class="card step-card lesson-row"><div class="lesson-icon">${esc(L.icon)}</div>
+          <div class="lesson-body"><div class="lesson-title">${esc(parts[0].lessonName)}: ${esc(L.title)}</div>
+            <div class="part-chips">${parts.map(chip).join("")}${R ? (doneAll ? `<a class="part-chip read" href="#/read/${R.id}">${ic("read")}Bài đọc</a>` : `<span class="part-chip locked" title="Mở khi xong bài">${ic("read")}Bài đọc</span>`) : ""}</div></div>
+          ${doneAll ? `<span class="pill green">Xong</span>` : isCur ? `<span class="pill red">Học tiếp</span>` : ""}</div></li>`;
+    };
+    const reviewRow = (x) => {
+      const k = pos.get(x.id), done = isDone(x.id), op = unlocked(st, k), b = best(x.id), isC = cur && cur.i === k;
+      return `<li class="step ${done ? "done" : op ? "open" : "locked"} ${isC ? "current" : ""}">
+        <span class="step-dot" aria-hidden="true">${done ? ic("check") : op ? ic("repeat") : ic("lock")}</span>
+        ${op ? `<a class="card step-card" href="#/step/${x.id}">` : `<div class="card step-card" aria-disabled="true">`}
+          <div class="lesson-icon">${esc(x.icon)}</div>
+          <div class="lesson-body"><div class="lesson-title">${esc(x.title)}</div><div class="lesson-meta">${ic("clock")} ${x.min} phút · ${x.n} câu ôn ${x.lessons.length} bài của chặng${b != null ? ` · điểm cao nhất ${b}%` : ""}${!op ? " · mở khi xong các phần của chặng" : ""}</div></div>
+          ${done ? `<span class="pill green">Xong</span>` : isC ? `<span class="pill red">Học tiếp</span>` : ""}
+        ${op ? `</a>` : `</div>`}</li>`;
+    };
+    const rows = (ids) => {
+      const seen = new Set();
+      return ids.map((id) => {
+        const x = idx().step.get(id);
+        if (x.kind === "review") return reviewRow(x);
+        if (seen.has(x.lesson)) return "";
+        seen.add(x.lesson);
+        return lessonRow(x.lesson);
+      }).join("");
+    };
+    const sp = window.EXAM_SPEC && EXAM_SPEC[st.test.exam];
+    const tOpen = open && testOpen(st), tDone = isDone(st.test.id), tb = best(st.test.id);
+    const testRow = `<li class="step ${tDone ? "done" : tOpen ? "open" : "locked"} ${cur && cur.i === st.steps.length ? "current" : ""}">
+        <span class="step-dot" aria-hidden="true">${tDone ? ic("check") : tOpen ? ic("trophy") : ic("lock")}</span>
+        ${tOpen ? `<a class="card step-card test" href="#/step/${st.test.id}">` : `<div class="card step-card test" aria-disabled="true">`}
+          <div class="lesson-icon">${ic("exam")}</div>
+          <div class="lesson-body"><div class="lesson-title">${esc(st.test.title)}</div><div class="lesson-meta">${sp ? `${ic("clock")} ${sp.minutes} phút · đề ${esc(sp.name)} ${sp.questions} câu` : ""} · đạt từ ${PASS}%${tb != null ? ` · điểm cao nhất ${tb}%` : ""}${!tOpen ? " · mở khi xong mọi phần" : ""}</div></div>
+          ${tDone ? `<span class="pill green">Đạt</span>` : ""}
+        ${tOpen ? `</a>` : `</div>`}</li>`;
+    let list;
+    if (st.chang.length) {
+      const curId = cur && cur.i < st.steps.length ? st.steps[cur.i].id : null;
+      const openNo = curId ? (st.chang.find((c) => c.steps.includes(curId)) || {}).no : d ? 0 : 1;
+      list = st.chang.map((c) => {
+        const dn = c.steps.filter((id) => isDone(id)).length;
+        return `<details class="chang card" ${c.no === openNo ? "open" : ""}><summary><span class="chang-head"><b>${esc(c.name)}</b><span class="small muted">${esc(c.label)} · ${c.lessons.length} bài</span></span>
+          ${dn === c.steps.length ? `<span class="pill green">Xong</span>` : `<span class="small muted">${dn}/${c.steps.length}</span>`}${ic("next", "chang-ic")}</summary>
+          <ol class="steps">${rows(c.steps)}</ol></details>`;
+      }).join("") + `<ol class="steps mt">${testRow}</ol>`;
+    } else list = `<ol class="steps">${rows(st.steps.map((x) => x.id))}${testRow}</ol>`;
+    const html = `<a href="#/start" class="backlink">${ic("back")} Bắt đầu học</a>
+      <div class="eyebrow">${esc(st.name)} · ${esc(st.std)}</div><h1>${esc(st.title)}</h1>
+      <p class="subtitle">${esc(st.sub)} Chia thành ${nParts} phần nhỏ 15–30 phút${nRev ? `, ${nRev} bài ôn chặng` : ""} và một bài kiểm tra tổng hợp dạng đề HSK, dự kiến ${esc(st.time)}.</p>
+      ${!open ? `<div class="warn">${ic("lock")} Giai đoạn này chưa mở. Đạt từ ${PASS}% <a href="#/path/${st.id - 1}">kiểm tra tổng hợp Giai đoạn ${st.id - 1}</a> hoặc làm <a href="#/start/test">kiểm tra đầu vào</a> để mở. Vẫn xem được bài gốc ở <a href="#/lessons/${st.level}">Bài học HSK ${st.level}</a>.</div>` : ""}
+      <div class="card mb"><div class="row between small"><b>Tiến độ giai đoạn</b><span>${d}/${total}</span></div><div class="progress green mt"><span style="width:${(d / total) * 100}%"></span></div>
+        ${cur ? `<a class="btn btn-primary mt" href="${cur.href}">${ic("play")} Tiếp tục: ${esc(cur.i < st.steps.length ? stepName(st.steps[cur.i], cur.i) : "Kiểm tra tổng hợp")}</a>` : ""}</div>
+      ${due ? `<div class="tip">${ic("repeat")} Có <b>${due}</b> thẻ từ vựng đến hạn ôn. Ôn trước khi học bài mới để nhớ lâu hơn. <a href="#/review">Ôn ngay</a></div>` : ""}
+      ${list}`;
+    return { html };
+  }
+
+  // ---------- Giai đoạn 1–6: một phần nhỏ của bài HSK ----------
+  function resultCard(box, r, pct, c, n, text, nextBtn, again, backHref) {
+    box.innerHTML = `<div class="card center"><div class="result-ic ${r.pass ? "ok" : ""}">${ic(r.pass ? "trophy" : "repeat")}</div><h2 style="margin:6px 0">${pct}% · ${c}/${n} câu đúng</h2>
+      <p class="muted">${r.pass ? text : `Cần đạt ${PASS}% để mở bài sau. Xem lại phần Học hoặc Luyện tập rồi thử lại.`}</p>
+      <div class="row" style="justify-content:center"><button class="btn" id="again">Làm lại</button>${r.pass ? nextBtn : `<a class="btn btn-primary" href="${backHref}">Xem lại bài</a>`}</div></div>`;
+    box.querySelector("#again").onclick = again;
+  }
+  const nextBtnOf = (st, i) => {
+    const nx = st.steps[i + 1];
+    return nx ? `<a class="btn btn-primary" href="#/step/${nx.id}">${esc(stepName(nx, i + 1))} ${ic("next")}</a>` : `<a class="btn btn-primary" href="#/step/${st.test.id}">Làm kiểm tra tổng hợp ${ic("next")}</a>`;
+  };
+
+  function partStep(st, i, x, tab) {
+    const L = lessonOf(x.lesson), words = x.words.map(wordById).filter(Boolean), parts = idx().parts.get(x.lesson);
+    const tabs = [["learn", "Học"], ["practice", "Luyện tập"], ["quiz", "Kiểm tra nhanh"]];
+    if (!tabs.some((t) => t[0] === tab)) tab = "learn";
+    const done = isDone(x.id), lessonDone = parts.every((p) => isDone(p.id));
+    const R = x.reading && READINGS.find((r) => r.id === x.reading);
+    let body = "";
+    if (tab === "learn") {
+      body = `<p class="small muted">${esc(x.lessonName)} chia ${x.of} phần; phần này có ${words.length} từ${x.grammar.length ? `, ${x.grammar.length} điểm ngữ pháp` : ""}${x.dialogue ? ", hội thoại và câu mẫu của bài" : ""}. Bài gốc đầy đủ: <a href="#/lesson/${L.id}">${esc(x.lessonName)}</a>.</p>
+        <h2>Từ vựng</h2><div class="row between mb"><span class="small muted">Qua Kiểm tra nhanh thì các từ này vào bộ thẻ ôn tập và bộ thẻ luyện viết.</span><button class="btn btn-sm" id="play-all">${ic("volume")} Nghe tất cả</button></div>${wordsTable(words)}
+        ${x.grammar.length ? `<h2>Ngữ pháp</h2>${x.grammar.map((k) => { const g = L.grammar[k]; return `<div class="grammar"><div class="pattern">${esc(g.pattern)}</div><div class="small">${esc(g.vi)}</div><div class="ex">${sentenceHtml(g.ex[0], g.ex[1], g.ex[2])}</div></div>`; }).join("")}` : ""}
+        ${x.tips && L.tips ? `<div class="tip"><b>Mẹo cho người Việt:</b> ${esc(L.tips)}</div>` : ""}
+        ${x.dialogue ? `<h2>Hội thoại</h2><div class="row mb"><button class="btn btn-sm" id="play-dialog">${ic("play")} Nghe cả đoạn</button><button class="btn btn-sm" id="toggle-vi">Ẩn/hiện dịch</button></div><div id="dialog">${L.dialogue.map((dl) => sentenceHtml(dl[1], dl[2], dl[3], dl[0])).join("")}</div>` : ""}
+        ${x.sentences.length ? `<h2>Câu mẫu</h2>${x.sentences.map((k) => { const s = L.sentences[k]; return sentenceHtml(s[0].replace(/ /g, ""), s[1], s[2]); }).join("")}` : ""}
+        ${R ? `<h2>Bài đọc</h2>${lessonDone ? `<a class="card lesson-card" href="#/read/${R.id}"><div class="lesson-icon">${ic("read")}</div><div class="lesson-body"><div class="lesson-title">${esc(R.title)}</div><div class="lesson-meta">Đã mở · đoạn văn chỉ dùng từ đã học, kèm 3 câu hỏi</div></div></a>`
+          : `<div class="card lesson-card" aria-disabled="true"><div class="lesson-icon">${ic("lock")}</div><div class="lesson-body"><div class="lesson-title">${esc(R.title)}</div><div class="lesson-meta">Mở khi bạn qua Kiểm tra nhanh của phần này (xong cả bài)</div></div></div>`}` : ""}`;
+    } else if (tab === "practice") {
+      body = `<h3>Luyện nhanh trong phần</h3><p class="small muted">Các từ của phần này với dạng câu khác Kiểm tra nhanh; làm bao nhiêu lần cũng được, không tính điểm.</p><div id="pq"></div>
+        <h3>Luyện thêm bằng công cụ có sẵn</h3><p class="small muted">Mở công cụ với cấp HSK ${st.level} chọn sẵn; công cụ dùng từ và câu của cả cấp.</p>
+        <div class="grid grid-2">${st.practice.map((p) => `<a class="card lesson-card" href="${p.href}" data-plevel="${st.level}"><div class="lesson-icon">${ic("target")}</div><div class="lesson-body"><div class="lesson-title">${esc(p.label)}</div><div class="lesson-meta">${esc(p.desc)}</div></div></a>`).join("")}
+          <a class="card lesson-card" href="#/lesson/${L.id}/quiz"><div class="lesson-icon">${esc(L.icon)}</div><div class="lesson-body"><div class="lesson-title">Luyện tập bài gốc</div><div class="lesson-meta">Bài luyện cuối ${esc(x.lessonName)} (cả bài)</div></div></a></div>`;
+    } else {
+      body = `<p class="small muted">${x.quiz.length} câu. Đạt từ ${PASS}% để hoàn thành phần này${i + 1 < st.steps.length ? ` và mở ${esc(stepName(st.steps[i + 1], i + 1))}` : " và mở bài kiểm tra tổng hợp"}. Phím tắt: 1–4 chọn, Enter kiểm tra / sang câu, Space nghe lại.</p><div id="quiz"></div>`;
+    }
+    const ti = tabs.findIndex((t) => t[0] === tab), nextTab = tabs[ti + 1], prevTab = tabs[ti - 1];
+    const html = `<a href="#/path/${st.id}" class="backlink">${ic("back")} ${esc(st.name)} · ${esc(st.title)}</a>
+      <div class="eyebrow">${esc(x.label)} · khoảng ${x.min} phút${done ? ` · Đã hoàn thành${best(x.id) != null ? ` (${best(x.id)}%)` : ""}` : ""}</div>
+      <h1>${esc(x.title)} <span class="zh-serif muted" style="font-weight:500">${esc(x.icon)}</span></h1>
+      <div class="card mb"><b>Mục tiêu:</b> ${L.goals.map((g) => `<span class="pill blue">${esc(g)}</span>`).join(" ")}</div>
+      <div class="tabs">${tabs.map(([k, v]) => `<button class="${k === tab ? "active" : ""}" data-tab="${k}">${v}</button>`).join("")}</div>
+      <div class="step-body">${body}</div>
+      ${tab === "quiz" ? "" : `<div class="lesson-nav">${prevTab ? `<a class="btn" href="#/step/${x.id}/${prevTab[0]}">${ic("back")} ${prevTab[1]}</a>` : `<a class="btn" href="#/path/${st.id}">${ic("back")} Danh sách bài</a>`}<a class="btn btn-primary" href="#/step/${x.id}/${nextTab[0]}">Tiếp: ${nextTab[1]} ${ic("next")}</a></div>`}`;
+    return {
+      html,
+      after(el) {
+        el.querySelectorAll("[data-tab]").forEach((b) => (b.onclick = () => (location.hash = `#/step/${x.id}/${b.dataset.tab}`)));
+        bindSpeak(el);
+        const pa = el.querySelector("#play-all");
+        if (pa) pa.onclick = () => { let k = 0; const go = () => { if (k < words.length) TTS.speak(words[k++].hz, { onend: () => setTimeout(go, 400) }); }; go(); };
+        const pd = el.querySelector("#play-dialog");
+        if (pd) pd.onclick = () => { let k = 0; const go = () => { if (k < L.dialogue.length) TTS.speak(L.dialogue[k++][1], { onend: () => setTimeout(go, 500) }); }; go(); };
+        const tv = el.querySelector("#toggle-vi");
+        if (tv) tv.onclick = () => el.querySelectorAll("#dialog .vi, #dialog .py").forEach((y) => y.classList.toggle("hidden"));
+        // công cụ luyện tập: chọn sẵn cấp HSK của giai đoạn (giữ các lựa chọn khác của lần trước)
+        el.querySelectorAll("[data-plevel]").forEach((a) => a.addEventListener("click", () => {
+          const s = Store.state; s.practice = s.practice || { history: [], best: {} }; s.practice.last = s.practice.last || {};
+          s.practice.last.hsk2 = Object.assign({}, s.practice.last.hsk2, { level: +a.dataset.plevel }); Store.save();
+        }));
+        if (tab === "practice") runQuiz(el.querySelector("#pq"), shuffle(x.drill).map((q) => expand(q, x, st)), { mode: "practice" });
+        if (tab === "quiz") {
+          const box = el.querySelector("#quiz");
+          const go = () => runQuiz(box, shuffle(x.quiz).map((q) => expand(q, x, st)), {
+            onFinish(pct, c, n) {
+              const r = saveResult(x.id, pct, false, words);
+              const lessonNow = r.lessonNow, nx = st.steps[i + 1];
+              resultCard(box, r, pct, c, n,
+                `Bạn đã hoàn thành ${esc(x.label)}.${r.added ? ` ${r.added} từ mới đã vào bộ thẻ ôn tập và bộ thẻ luyện viết.` : ""}${lessonNow ? ` ${esc(x.lessonName)} được đánh dấu hoàn thành.` : ""}${R && r.pass && Store.state.completedLessons.includes(L.id) ? ` Bài đọc «${esc(R.title)}» đã mở.` : ""} ${nx ? `${esc(stepName(nx, i + 1))} đã mở.` : "Bài kiểm tra tổng hợp đã mở."}`,
+                (R ? `<a class="btn" href="#/read/${R.id}">${ic("read")} Bài đọc</a>` : "") + nextBtnOf(st, i), go, `#/step/${x.id}/learn`);
+            },
+          });
+          go();
+        }
+      },
+    };
+  }
+
+  // ---------- Giai đoạn 4–6: bài ôn cuối chặng ----------
+  function reviewStep(st, i, x) {
+    const pool = x.parts.flatMap((pid) => idx().step.get(pid).quiz);
+    const html = `<a href="#/path/${st.id}" class="backlink">${ic("back")} ${esc(st.name)} · ${esc(st.title)}</a>
+      <div class="eyebrow">${esc(st.name)} · khoảng ${x.min} phút${isDone(x.id) ? ` · Đã hoàn thành (${best(x.id)}%)` : ""}</div><h1>${esc(x.title)}</h1>
+      <p class="subtitle">${x.n} câu lấy ngẫu nhiên từ ${x.lessons.length} bài của chặng (${esc(x.label.replace(/^[^·]+· /, ""))}): nghĩa từ, chọn chữ, nghe và sắp xếp câu. Đạt từ ${PASS}% để mở chặng tiếp theo; mỗi lần làm là một đề khác.</p>
+      <div id="quiz"></div>`;
     return {
       html,
       after(el) {
         const box = el.querySelector("#quiz");
-        const items = [...a, ...b];
-        runQuiz(box, items, {
-          sections: [{ name: "Phần 1 · Pinyin và thanh điệu", from: 0, to: a.length }, { name: "Phần 2 · Từ vựng HSK 1", from: a.length, to: items.length }],
-          onFinish(pct, c, n, results) {
-            const partA = results.slice(0, a.length).filter(Boolean).length;
-            const pa = Math.round((partA / a.length) * 100), pb = Math.round(((c - partA) / b.length) * 100);
-            const skip = pa >= PASS;
-            box.innerHTML = `<div class="card"><h2 style="margin-top:0">Kết quả: pinyin ${pa}% · từ vựng HSK 1 ${pb}%</h2>
-              <p>${skip ? `Bạn đã nghe và đọc pinyin khá chắc. Bạn có thể <b>bỏ qua Giai đoạn 0</b> và bắt đầu từ HSK 1; các bài Nhập môn vẫn mở để xem lại khi cần.` : `Nên học <b>Giai đoạn 0 · Nhập môn</b> trước: chỉ 1–2 tuần nhưng giúp bạn phát âm đúng ngay từ đầu.`}${skip && pb >= 80 ? " Bạn cũng đã biết khá nhiều từ HSK 1: làm phần Luyện tập cuối mỗi bài HSK 1, đạt 70% là qua nhanh." : ""}</p>
-              <div class="row">${skip ? `<button class="btn btn-primary" id="place">Bỏ qua Nhập môn, vào HSK 1</button><a class="btn" href="#/path/0">Vẫn học Nhập môn</a>` : `<a class="btn btn-primary" href="#/step/s0-1">Bắt đầu Bài 1</a>`}</div></div>`;
-            const pl = box.querySelector("#place");
-            if (pl) pl.onclick = () => { ps().placed = Math.max(ps().placed || 0, 1); Store.save(); location.hash = "#/lessons/1"; };
+        const go = () => runQuiz(box, shuffle(pool).slice(0, x.n).map((q) => expand(q, x, st)), {
+          onFinish(pct, c, n) {
+            const r = saveResult(x.id, pct, false);
+            resultCard(box, r, pct, c, n, `Bạn đã ôn xong ${esc(x.title)}.${st.steps[i + 1] ? ` ${esc(stepName(st.steps[i + 1], i + 1))} đã mở.` : " Bài kiểm tra tổng hợp đã mở."}`, nextBtnOf(st, i), go, `#/path/${st.id}`);
           },
         });
+        go();
+      },
+    };
+  }
+
+  // ---------- Giai đoạn 1–6: kiểm tra tổng hợp bằng đề thi thử HSK 2.0 (js/exam.js) ----------
+  function examTest(st) {
+    const lv = st.test.exam, sp = EXAM_SPEC[lv], back = `<a href="#/path/${st.id}" class="backlink">${ic("back")} ${esc(st.name)} · ${esc(st.title)}</a>`;
+    if (!testOpen(st)) return { html: `${back}<div class="card center empty">${ic("lock", "big-ic")}<h2>Chưa mở</h2><p class="muted">Hoàn thành mọi phần của ${esc(st.name)} để làm bài kiểm tra tổng hợp.</p><a class="btn btn-primary" href="#/path/${st.id}">Về danh sách bài</a></div>` };
+    const hist = examsOf(lv).slice().reverse().slice(0, 8), done = isDone(st.test.id), nextSt = STAGES.find((s) => s.id === st.id + 1);
+    const need = Math.ceil((sp.total * PASS) / 100);
+    const html = `${back}<div class="eyebrow">${esc(st.name)} · ${sp.minutes} phút</div><h1>${esc(st.test.title)}</h1>
+      <p class="subtitle">Một đề ${esc(sp.name)} sinh ngẫu nhiên theo đúng cấu trúc đề chính thức: ${sp.questions} câu, ${sp.minutes} phút, gồm ${sp.sections.map((s) => `${s.vi.toLowerCase()} ${s.parts.reduce((a, p) => a + p.n, 0)} câu`).join(", ")}. Đạt từ ${PASS}% tổng điểm (${need}/${sp.total}) để hoàn thành giai đoạn${nextSt ? ` và mở ${esc(nextSt.name)}` : ""}; mốc đậu của đề thật là ${sp.pass}/${sp.total}. Kết quả lưu vào lịch sử thi thử.</p>
+      ${done ? `<div class="tip">${ic("trophy")} Bạn đã đạt bài kiểm tra này (cao nhất ${best(st.test.id)}%).${nextSt ? ` <a href="#/path/${nextSt.id}">Vào ${esc(nextSt.name)} · ${esc(nextSt.title)}</a>` : ""}</div>` : ""}
+      <div class="row mt"><a class="btn btn-primary btn-lg" href="#/exam/${lv}">${ic("exam")} Vào thi ${esc(sp.name)}</a><a class="btn btn-lg" href="#/path/${st.id}">Về danh sách bài</a></div>
+      <div class="card mt"><h3 style="margin-top:0">Các lần thi ${esc(sp.name)}</h3>${hist.length ? `<table class="vocab-table"><thead><tr><th>Ngày</th><th>Điểm</th><th>Tỉ lệ</th><th></th></tr></thead><tbody>${hist.map((h) => `<tr><td>${esc(h.date)}</td><td><b>${h.total}</b>/${h.max}</td><td>${examPct(h)}%</td><td>${examPct(h) >= PASS ? `<span class="pill green">Đạt lộ trình</span>` : `<span class="pill">Chưa đạt</span>`}</td></tr>`).join("")}</tbody></table>` : `<p class="small muted">Chưa có lần thi nào.</p>`}</div>`;
+    return { html };
+  }
+  // Ghi chú trên trang kết quả thi thử (views-exam.js) cho người đang học theo lộ trình
+  function examNote(level, r) {
+    const st = STAGES.find((s) => s.test.exam === level);
+    if (!st || !started()) return "";
+    const pct = r.max ? Math.round((r.total / r.max) * 100) : 0, nextSt = STAGES.find((s) => s.id === st.id + 1);
+    return `<div class="tip mt" style="text-align:left">${ic("map")} <b>Lộ trình · ${esc(st.name)}:</b> ${pct}% tổng điểm. ${pct >= PASS ? `Đã đạt kiểm tra tổng hợp${nextSt ? `, ${esc(nextSt.name)} đã mở. <a href="#/path/${nextSt.id}">Vào ${esc(nextSt.name)}</a>` : "."}` : isDone(st.test.id) ? `Bạn đã đạt bài kiểm tra này ở lần thi trước. <a href="#/path/${st.id}">Về ${esc(st.name)}</a>` : `Cần ${PASS}% để hoàn thành giai đoạn. <a href="#/path/${st.id}">Về ${esc(st.name)}</a>`}</div>`;
+  }
+
+  // ---------- Kiểm tra đầu vào (tùy chọn) ----------
+  // Phần 1: 8 câu nghe pinyin/thanh điệu. Sau đó mỗi cấp HSK 6 câu từ vựng, lên dần từ HSK 1; đạt từ 70% mới sang cấp tiếp.
+  function placement() {
+    const st = STAGES[0], PER = 6;
+    const pool = st.steps.flatMap((x) => x.quiz.filter((q) => q.t === "tone" || q.t === "listen").map((q) => ({ q, x })));
+    const a = shuffle(pool).slice(0, 8).map((o) => expand(o.q, o.x, st));
+    const levels = STAGES.filter((s) => s.id > 0);
+    const wordQ = (s) => shuffle(s.lessons.flatMap((l) => idx().lw.get(l) || [])).slice(0, PER).map((w) => expand({ t: "mean", id: w.id }, null, s));
+    const html = `<a href="#/start" class="backlink">${ic("back")} Bắt đầu học</a><h1>Kiểm tra đầu vào</h1>
+      <p class="subtitle">Khoảng 5–15 phút: 8 câu nghe pinyin và thanh điệu, sau đó mỗi cấp HSK ${PER} câu từ vựng, lên dần từ HSK 1. Đúng từ ${PASS}% thì sang cấp tiếp theo, chưa đạt thì dừng. Không biết thì cứ đoán, kết quả chỉ để gợi ý chỗ bắt đầu.</p><div id="quiz"></div>`;
+    return {
+      html,
+      after(el) {
+        const box = el.querySelector("#quiz"), res = [];
+        let pa = 0;
+        runQuiz(box, a, { sections: [{ name: "Phần 1 · Pinyin và thanh điệu", from: 0, to: a.length }], onFinish(pct) { pa = pct; round(0); } });
+        function round(k) {
+          if (k >= levels.length) return show();
+          const s = levels[k], items = wordQ(s);
+          runQuiz(box, items, {
+            sections: [{ name: `Phần ${k + 2} · Từ vựng HSK ${s.level}`, from: 0, to: items.length }],
+            onFinish(pct) { res.push({ s, pct }); if (pct >= PASS) round(k + 1); else show(); },
+          });
+        }
+        function show() {
+          let passed = 0; for (const x of res) { if (x.pct >= PASS) passed = x.s.id; else break; }
+          const skip = pa >= PASS, target = skip ? Math.min(passed + 1, levels[levels.length - 1].id) : 0, tg = STAGES.find((s) => s.id === target);
+          box.innerHTML = `<div class="card"><h2 style="margin-top:0">Kết quả: pinyin ${pa}%${res.map((x) => ` · HSK ${x.s.level} ${x.pct}%`).join("")}</h2>
+            <p>${!skip ? `Nên học <b>Giai đoạn 0 · Nhập môn</b> trước: chỉ 1–2 tuần nhưng giúp bạn phát âm đúng ngay từ đầu.${passed ? ` Bạn đã biết khá nhiều từ đến HSK ${passed}: khi qua Nhập môn, làm lại kiểm tra này để được xếp lên.` : ""}`
+              : target === 1 ? `Bạn đã nghe và đọc pinyin khá chắc. Bạn có thể <b>bỏ qua Giai đoạn 0</b> và bắt đầu từ HSK 1; các bài Nhập môn vẫn mở để xem lại khi cần.`
+              : `Bạn đã nắm pinyin và từ vựng đến HSK ${passed}. Bạn có thể bắt đầu từ <b>${esc(tg.name)} · ${esc(tg.title)}</b>; các giai đoạn trước vẫn mở để xem lại, từ của chúng không tự vào bộ thẻ.`}</p>
+            <div class="row">${skip ? `<button class="btn btn-primary" id="place">${target === 1 ? "Bỏ qua Nhập môn, vào HSK 1" : `Vào ${esc(tg.name)} · ${esc(tg.title)}`}</button><a class="btn" href="#/path/0">Vẫn học từ Nhập môn</a>` : `<a class="btn btn-primary" href="#/step/s0-1">Bắt đầu Bài 1</a>`}</div></div>`;
+          const pl = box.querySelector("#place");
+          if (pl) pl.onclick = () => { ps().placed = Math.max(ps().placed || 0, target); Store.save(); location.hash = `#/path/${target}`; };
+        }
       },
     };
   }
 
   // ---------- Thẻ trên trang chủ ----------
   function homeCard() {
-    const st = STAGES[0], n = next(), d = doneCount(st), total = st.steps.length + 1;
-    if (!n && stageDone(st)) return "";
-    return `<a class="card lesson-card path-home" href="${n ? n.href : "#/start"}"><div class="lesson-icon">${ic("map")}</div><div class="lesson-body"><div class="lesson-title">Lộ trình · ${esc(st.name)} ${esc(st.title)}</div>
-      <div class="lesson-meta">${n ? `Tiếp theo: ${esc(n.label.replace(/^[^·]+· /, ""))}` : "Đã xếp lên Giai đoạn 1"}</div><div class="progress green mt"><span style="width:${(d / total) * 100}%"></span></div></div><span class="pill">${d}/${total}</span></a>`;
+    const n = next();
+    if (!n) return "";
+    const st = n.stage, d = doneCount(st), total = st.steps.length + 1;
+    return `<a class="card lesson-card path-home" href="${n.href}"><div class="lesson-icon">${ic("map")}</div><div class="lesson-body"><div class="lesson-title">Lộ trình · ${esc(st.name)} ${esc(st.title)}</div>
+      <div class="lesson-meta">Tiếp theo: ${esc(n.label.replace(/^[^·]+· /, ""))}</div><div class="progress green mt"><span style="width:${(d / total) * 100}%"></span></div></div><span class="pill">${d}/${total}</span></a>`;
   }
 
-  window.Path = { start, stage, step, next, started, homeCard, syllableTable, markTone };
+  window.Path = { start, stage, step, next, started, homeCard, syllableTable, markTone, examNote, isDone, unlocked, stageOpen, expand, saveResult };
 })();
