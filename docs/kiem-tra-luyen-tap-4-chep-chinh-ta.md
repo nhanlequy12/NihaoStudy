@@ -38,3 +38,15 @@ Nội dung không soạn mới: Dễ dùng từ vựng của cấp, Vừa/Khó d
 | Thanh nhẹ ở đầu mục từ HSK 3.0 | giữ pinyin đầu mục theo đề cương 2025; câu ví dụ theo CC-CEDICT | không đổi | đề cương 2025 |
 
 Chi tiết từng chỗ sửa: [chuan-hoa-pinyin-thanh-nhe.md](chuan-hoa-pinyin-thanh-nhe.md).
+
+## Cấp 6 (HSK 2.0) – kiểm tra 18/11/2026
+
+Chép chính tả không có danh sách câu đóng băng như các bài khác: nội dung lấy thẳng từ từ vựng và câu ví dụ của cấp (`Practice.wordsOf` / `Practice.sentencesOf`), giống cấp 1–5. Vì vậy cấp 6 chạy được ngay khi dữ liệu bài 150–270 được nạp; thông báo «chưa có câu luyện» không xảy ra với bài này, không cần sửa mã hay thêm dữ liệu (`js/data/practice-dictation-data.js` vẫn để trống như trước).
+
+| Mục | Số lượng | Kết quả |
+|---|---|---|
+| Mục luyện cấp 6 (Dễ: từ / Vừa: nửa câu ngắn / Khó: nửa câu dài) | 2.421 / 1.211 / 1.210 | đủ, không mục nào bị bỏ vì số âm tiết pinyin lệch số chữ |
+| Chấm chữ Hán và pinyin bằng chính đáp án → 100% | 4.842 mục × 2 cách gõ | đạt |
+| Chạy thử trên web: cấp 6, ba độ khó, gõ sai câu đầu | — | chấm và tô chỗ sai đúng, không lỗi console |
+
+Câu ví dụ cấp 6 đã được rà soát khi biên soạn bài 150–270 (xem [hsk2-2012-va-cap6.md](hsk2-2012-va-cap6.md)), nên không rà soát lại nội dung ở đây.

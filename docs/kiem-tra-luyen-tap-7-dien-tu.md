@@ -79,3 +79,57 @@ Chuẩn: **HSK cũ (HSK 2.0)** cấp 1–5 và **HSK 3.0** cấp 1–6. Câu là
 | Thanh nhẹ ở đầu mục từ HSK 3.0 | giữ pinyin đầu mục theo đề cương 2025; câu ví dụ theo CC-CEDICT | không đổi | đề cương 2025 |
 
 Chi tiết từng chỗ sửa: [chuan-hoa-pinyin-thanh-nhe.md](chuan-hoa-pinyin-thanh-nhe.md).
+
+## Cấp 6 (HSK 2.0) – bổ sung 18/11/2026
+
+Câu là câu ví dụ đã rà soát của 2.421 từ cấp 6 (bài 150–270). Phương án nhiễu lấy trong từ cấp 6 và cấp 5 HSK 2.0, sinh bằng `FillDrill.itemsOf("hsk2", 6, true)` (bộ sinh chặt; bộ «loose» cho cùng 120 câu), rồi rà soát từng câu như cấp 1–5: thay mọi nhiễu điền vào vẫn thành câu đúng hoặc gần chấp nhận được.
+
+| Mục | Số lượng | Kết quả |
+|---|---|---|
+| Câu ứng viên (giới hạn 120/cấp) | 120 | rà soát toàn bộ |
+| Giữ nguyên bộ nhiễu | 91 | dùng |
+| Thay 1–3 nhiễu (lấy từ danh sách nhiễu dự phòng của bộ sinh) | 28 | dùng |
+| Loại cả câu | 1 | 那只小狗被主人＿了。 (抛弃): cả ba nhiễu 销售, 想念, 炒 đều là động từ, «被主人卖了 / 炒了» hiểu được; không còn nhiễu dự phòng |
+| Câu dùng trong bài | 119 | |
+| Kiểm tự động (`FillDrill.check`; gõ pinyin/chữ Hán của đáp án được chấp nhận, gõ nhiễu bị chấm sai) | 119 | đạt |
+| Chạy thử trên web: cấp 6, ba độ khó, trả lời câu đầu | — | không lỗi console |
+
+8 câu trùng với câu HSK 3.0 đã rà soát (这次事故没有造成人员死亡, 这栋楼一共有三十层…); mã câu HSK 2.0 khác (`h2…`) nên vẫn phải có dòng riêng.
+
+### Nhiễu đã thay
+
+| Câu | Nhiễu bỏ | Lý do | Nhiễu mới |
+|---|---|---|---|
+| 这个产品有一些＿。 – 缺陷 | 镜头 | «sản phẩm có vài ống kính» đúng ngữ pháp, hợp nghĩa | 码头 |
+| 我们需要改变一下销售＿。 – 策略 | 格局 | 销售格局 là cụm có thật | 山脉 |
+| ＿的空气特别新鲜。 – 清晨 | 故乡 | 故乡的空气特别新鲜 hoàn toàn đúng | 膝盖 |
+| 他送我一＿花。 – 束 | 株, 磅 | 一株花 đúng; 一磅花 gượng nhưng nói được | 幢, 届 |
+| 听到这个消息，大家心情都很＿。 – 沉重 | 焦急, 愚昧, 繁忙 | 心情很焦急 đúng | dùng bộ đã duyệt của HSK 3.0: 衰老, 顽强, 优异 |
+| 去别人家要注意＿。 – 礼节 | 噪音, 镜头 | 注意噪音 đúng và tự nhiên; 注意镜头 có thể hiểu (chưa chắc) | 丘陵, 阶层 |
+| 公司派他去上海＿设备。 – 采购 | 扩充 | 扩充设备 là cụm có thật | 致辞 |
+| 这家超市的东西很＿。 – 齐全 | 娇气 | khẩu ngữ dùng 娇气 cho đồ dễ hỏng (chưa chắc) | 愚蠢 |
+| 她们一边做饭一边聊＿。 – 家常 | 考古 | 聊考古 đúng | 部位 |
+| 爷爷喜欢收藏＿。 – 古董 | 武侠 | 收藏武侠(小说) nghe được | 部位 |
+| 爷爷每天都练＿。 – 书法 | 意志 | 练意志 gần với 磨练意志 | 盆地 |
+| 我要努力工作＿父母。 – 回报 | 探望 | «努力工作，探望父母» chấp nhận được về ngữ pháp | 衰退 |
+| 这是一则＿广告。 – 虚假 | 欢乐 | 欢乐广告 dùng được | 吝啬 |
+| 下个月这里要举办＿。 – 博览会 | 端午节 | gần với 举办端午节活动 (chưa chắc) | 纽扣儿 |
+| 猫的动作非常＿。 – 敏捷 | 懒惰 | «động tác lười» nói được (chưa chắc) | 愚昧 |
+| 他的生活非常＿。 – 奢侈 | 吝啬 | gần nghĩa «sống keo kiệt» (chưa chắc) | 优异 |
+| 我们要为＿保护环境。 – 后代 | 庄稼, 患者 | «vì hoa màu / vì bệnh nhân mà bảo vệ môi trường» đúng ngữ pháp | 火药, 喉咙 |
+| 我＿今年十岁了。 – 侄子 | 患者 | «我患者» gần với 我的患者 (chưa chắc) | 导弹 |
+| 我的＿今年八十岁了。 – 祖父 | 华侨 | danh từ chỉ người, dễ gây tranh cãi | 花瓣 |
+| 这两个人物的性格特点很＿。 – 鲜明 | 卓越 | gần chấp nhận được (chưa chắc) | 衰老 |
+| 别总是＿，开心点儿！ – 叹气 | 承认 | 承认 dùng không tân ngữ được (chưa chắc) | 销售 |
+| 他终于在这个城市＿了。 – 立足 | 销售 | «bắt đầu bán ở thành phố này» (chưa chắc) | 炒 |
+| 你这样做只会引起对方的＿。 – 报复 | 想念 | 引起…的想念 đúng ngữ pháp | 炒 |
+| 这份文件需要＿。 – 盖章 | 称 | 称 còn có nghĩa «cân», «tài liệu cần cân» nói được | 促进 |
+| 过年时孩子们都能拿到＿。 – 压岁钱 | 纽扣儿 | «nhận được cúc áo» đúng ngữ pháp | 心眼儿 |
+| 妹妹抱着一个布＿睡觉。 – 娃娃 | 床单 | «ôm tấm ga vải ngủ» gần chấp nhận được | 书记 |
+| 院子里种了两＿桃树。 – 株; 这＿楼一共有三十层。 – 栋 | 副 | nghĩa đầu của 副 là «phó (chức vụ)», phần «vì sao sai» hiển thị «lượng từ «phó (chức vụ)»» gây hiểu nhầm | 枚 / 艘 |
+
+### Tổng kết cấp 6
+
+- Đã kiểm tra: 120 câu ứng viên.
+- Đã sửa: thay nhiễu ở 28 câu; loại 1 câu.
+- Chưa chắc chắn: các nhiễu ghi «chưa chắc» đã được thay cho an toàn. Câu dùng: **119**.

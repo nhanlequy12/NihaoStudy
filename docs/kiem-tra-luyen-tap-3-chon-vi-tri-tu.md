@@ -118,3 +118,24 @@ Vòng 1 loại thêm 40 câu (nằm trong danh sách `BAD` của `js/practice-po
 - Đã kiểm tra: 1.578 lượt câu hỏi qua hai vòng rà soát (846 + 732), 4.697 ứng viên qua bộ lọc CC-CEDICT, 20 từ cũ ngẫu nhiên.
 - Đã sửa: 4 mục dữ liệu, 10 lỗi mẫu giải thích/bộ sinh, 21 giải thích riêng; loại 66 câu có thể có hơn một đáp án.
 - Chưa chắc chắn: 1 mục (大都), đã được bạn xác nhận.
+
+## Cấp 6 (HSK 2.0) – bổ sung 18/11/2026
+
+Mã câu không phụ thuộc chuẩn, nên 73 câu cấp 6 trùng với câu HSK 3.0 đã duyệt có sẵn trong bài. Đợt này sinh bằng `PositionDrill.itemsOf("hsk2", 6, true)` (160 câu), bỏ 43 câu đã duyệt, còn 117 câu mới; lọc tách từ bằng CC-CEDICT (bản mdbg tải ngày 18/11/2026: từ cần đặt có nằm trong một từ dài hơn của câu không) rồi rà soát từng câu như cấp 1–5.
+
+| Mục | Số lượng | Kết quả |
+|---|---|---|
+| Câu ứng viên mới | 117 | rà soát toàn bộ |
+| CC-CEDICT báo từ cần đặt nằm trong từ dài hơn | 20 | 12 loại: 皆 (人人皆知), 不 (不大, 不能 ×2, 不想, 不愿), 就 (早就, 就要 ×2), 向 (走向), 能 (不能 ×2), 次 (多次); 8 giữ vì chỉ trùng ngẫu nhiên qua ranh giới từ (下去+势必 → «去势», 明明+知道 → «明知», 双方+正在 → «方正», 各国+都 → «国都», 这不是, 晚上+都 → «上都») hoặc là chỉ từ/số + lượng từ (一个, 这位) như cấp 1–5 |
+| Có chỗ khác cũng đặt được | 11 | loại: 大致 (了解了一下大致情况), 屡次 (屡次被老板批评), 就近 (找个酒店就近住下), 任意 (选择任意一本书), 很 (很像亲姐妹), 应该 (应该不撒谎), 不 (太不自然), 一定 (要有一定节制); chưa chắc nên loại: 预先 (预先最好), 迎面 (一阵迎面冷风), 姑且 (姑且这件事不提) |
+| Phương án hiển thị bắt đầu bằng dấu phẩy (总而言之，…) | 1 | loại |
+| Câu dùng thêm | 93 | 35 câu hỏi về chính từ cấp 6 (以至, 免得, 不由得, 倘若, 况且, 偏偏, 宁肯, 无非, 照样, 势必, 随即, 宁愿, 明明, 未免, 及早, 接连, 逐年, 恰巧, 索性, 连同, 万分, 亦, 唯独, 私自, 鉴于, 以致, 一度, 甭, 反之, 大肆, 统统, 成心, 枚, 磅, 幢) + 58 câu về hư từ thông dụng (很, 被, 都, 才, 个, 位…) |
+| Ghép từ vào chỗ đáp án ra đúng câu gốc; giải thích hiển thị được; chạy thử trên web ba độ khó | 93 | đạt, không lỗi console |
+
+Số câu cấp 6 sau khi thêm: **166**; phân bố đáp án A/B/C/D: 51 / 41 / 38 / 36. Vì mã câu dùng chung, 6 câu mới cũng có ở HSK 3.0 cấp 6 (164 → 170 câu).
+
+### Tổng kết cấp 6
+
+- Đã kiểm tra: 117 câu ứng viên mới.
+- Đã sửa: không sửa dữ liệu từ/câu; loại 24 câu (12 tách từ, 11 có hơn một chỗ đúng hoặc chưa chắc, 1 lỗi hiển thị).
+- Chưa chắc chắn: các mục «chưa chắc» đã được loại.

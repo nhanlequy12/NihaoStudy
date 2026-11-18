@@ -313,3 +313,33 @@ Số câu theo cấp (Dễ/Vừa/Khó): HSK cũ 1: 74/51/5 · 2: 34/52/26 · 3: 
 | Thanh nhẹ ở đầu mục từ HSK 3.0 | giữ pinyin đầu mục theo đề cương 2025; câu ví dụ theo CC-CEDICT | không đổi | đề cương 2025 |
 
 Chi tiết từng chỗ sửa: [chuan-hoa-pinyin-thanh-nhe.md](chuan-hoa-pinyin-thanh-nhe.md).
+
+## Cấp 6 (HSK 2.0) – bổ sung 18/11/2026
+
+Mã câu của Sắp xếp câu không phụ thuộc chuẩn, nên 37 câu cấp 6 trùng với câu HSK 3.0 đã duyệt có sẵn trong bài. Đợt này rà thêm câu riêng của cấp 6: 110 câu ứng viên đầu tiên (6–16 chữ Hán, xếp theo mã câu, bỏ các câu đã có trong `ORDER_OK`), theo đúng quy tắc cấp 1–5: chỉ giữ câu có một trật tự đúng.
+
+Khác cấp 1–5: bộ chia cụm tự động tách đôi nhiều từ cấp 6 (植/树, 恐/龙, 礼/服, 树/叶, 走/向, 致力/于, 工人/们). Thay vì loại, ranh giới cụm của các câu giữ lại được đặt tay theo ranh giới từ (đối chiếu CC-CEDICT), rồi lưu vào `ORDER_OK` như cũ.
+
+| Mục | Số lượng | Kết quả |
+|---|---|---|
+| Câu ứng viên | 110 | rà soát toàn bộ |
+| Đã bị loại ở đợt rà soát HSK 3.0 (cùng câu): 村子里有一口老井, 一个人在国外…, 她是经理的得力助手, 今年房价…, 请把文章的要点写下来, 你近来身体怎么样, 我们队在第一轮…, 他认定这件事是我做的 | 8 | loại |
+| Trạng ngữ thời gian / nơi chốn / phó từ / cụm 对, 因为… đưa lên trước chủ ngữ vẫn đúng (公司今年要裁员, 我们明天就动手准备, 他在学校负责后勤工作…) | 22 | loại |
+| Đổi vai người/vật vẫn đúng ngữ pháp (学校动员学生…, 医生救了他的性命 → 他的医生…, 新同学被大家排斥, 他的级别比我高两级) | 6 | loại |
+| A是B đảo thành B是A (生活是创作的源泉, 这句话是我的座右铭, 眼睛是人的视觉器官…) | 4 | loại |
+| Đưa tân ngữ lên làm chủ đề vẫn tự nhiên (首饰她很少戴, 这次袭击各国都谴责了…) | 3 | loại |
+| Trật tự khác cũng đúng vì lý do riêng (语言学习要循序渐进, 公司周转资金困难, 合作双方签订了意向书, 见义勇为，他救了…, 我们对别人不应该有偏见…) | 13 | loại |
+| Câu có dấu phẩy giữa câu, nhiều vế, khó bảo đảm một trật tự (这孩子太娇气了…, 在父母的熏陶下…) | 5 | loại |
+| Chỉ chia được 2 cụm (下水道堵塞了) | 1 | loại |
+| Câu dùng thêm | 48 | dùng |
+| Ghép cụm ra đúng câu, xáo không trùng thứ tự đúng; chạy thử trên web ba độ khó | 48 | đạt, không lỗi console |
+
+Số câu cấp 6 sau khi thêm: **85** (Dễ/Vừa/Khó: 39/72/46). Vì mã câu dùng chung, 2 câu mới cũng có ở HSK 3.0 cấp 6 (73 → 75 câu).
+
+Ví dụ câu giữ (cụm): 她 / 凝视着 / 远方 · 双方 / 正在 / 洽谈 / 合作事宜 · 背叛朋友的 / 行为 / 会 / 被大家 / 唾弃 · 航班 / 将于 / 晚上八点 / 抵达 / 北京 · 考试完毕， / 请 / 把 / 试卷 / 交上来.
+
+### Tổng kết cấp 6
+
+- Đã kiểm tra: 110 câu ứng viên.
+- Đã sửa: chia cụm lại theo ranh giới từ cho các câu giữ; loại 62 câu (8 đã loại từ trước, 48 có trật tự khác cũng đúng, 5 câu nhiều vế, 1 câu quá ngắn).
+- Chưa chắc chắn: không giữ câu nào còn nghi ngờ có trật tự khác.
