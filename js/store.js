@@ -15,6 +15,7 @@
     log: {},             // date -> { reviews, newWords, lessons, xp }
     routine: {},         // date -> { review: true, lesson: true, ... }
     toneDrill: { total: 0, correct: 0 },
+    path: { steps: {}, tests: {}, placed: 0 }, // lộ trình từng bước: bài nhỏ đã qua, bài kiểm tra tổng hợp, giai đoạn được xếp lên
     settings: { theme: "light", newPerDay: 10, voice: "", rate: 0.85 },
   });
 

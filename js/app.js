@@ -3,8 +3,8 @@
   const view = document.getElementById("view");
 
   // Nhóm của từng trang, để tô sáng đúng mục trên thanh tab điện thoại
-  const TAB_OF = { "": "home", lessons: "learn", lesson: "learn", words: "learn", dialogues: "learn", read: "learn", pinyin: "learn", radicals: "learn", roadmap: "learn", review: "review", practice: "practice", notebook: "practice" };
-  const SIDE_OF = { lesson: "/lessons", notebook: "/notebook" };
+  const TAB_OF = { "": "home", start: "learn", path: "learn", step: "learn", lessons: "learn", lesson: "learn", words: "learn", dialogues: "learn", read: "learn", pinyin: "learn", radicals: "learn", roadmap: "learn", review: "review", practice: "practice", notebook: "practice" };
+  const SIDE_OF = { lesson: "/lessons", notebook: "/notebook", path: "/start", step: "/start" };
   const LEARN = [["lessons", "Bài học", "book"], ["words", "Từ vựng", "words"], ["dialogues", "Hội thoại", "chat"], ["read", "Đọc hiểu", "read"], ["radicals", "Bộ thủ", "radical"], ["pinyin", "Pinyin", "pinyin"]];
   const LEARN_OF = { lessons: "lessons", words: "words", dialogues: "dialogues", read: "read", radicals: "radicals", pinyin: "pinyin" };
   const learnNav = (cur) => `<nav class="learn-nav" aria-label="Mục học">${LEARN.map(([k, v, i]) => `<a href="#/${k}" class="${k === cur ? "active" : ""}"${k === cur ? ' aria-current="page"' : ""}>${ic(i)}<span>${v}</span></a>`).join("")}</nav>`;
@@ -21,6 +21,9 @@
       switch (name) {
         case "": r = Views.home(); break;
         case "roadmap": r = Views.roadmap(); break;
+        case "start": r = Path.start(parts[1]); break;
+        case "path": r = Path.stage(parts[1]); break;
+        case "step": r = Path.step(parts[1], parts[2]); break;
         case "pinyin": r = Views.pinyin(parts[1]); break;
         case "radicals": r = Views.radicals(); break;
         case "lessons": r = Views.lessons(parts[1]); break;

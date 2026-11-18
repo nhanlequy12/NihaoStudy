@@ -53,12 +53,14 @@
     const days = [];
     for (let i = 55; i >= 0; i--) { const d = new Date(); d.setDate(d.getDate() - i); const k = d.toISOString().slice(0, 10); const v = s.log[k]; const n = v ? (v.reviews || 0) + (v.newWords || 0) * 2 + (v.lessons || 0) * 10 : 0; days.push(`<span class="${n === 0 ? "" : n < 10 ? "l1" : n < 30 ? "l2" : "l3"}" title="${k}: ${n} điểm hoạt động"></span>`); }
 
-    // Một việc chính cho hôm nay: ôn thẻ đến hạn trước, rồi học bài mới
-    const nextLink = next ? `#/lesson/${next.id}` : "#/review";
-    const nextLabel = next ? `${done ? "Học tiếp" : "Bắt đầu"} ${lessonName(next)}: ${esc(next.title)}` : "Ôn tập";
+    // Một việc chính cho hôm nay: ôn thẻ đến hạn trước, rồi học bài mới (bài tiếp theo của lộ trình nếu chưa xong Nhập môn)
+    // người đã học bài HSK từ trước (chưa đụng tới lộ trình mới) vẫn giữ nút học tiếp như cũ
+    const cont = window.Path && (done === 0 || Path.started()) ? Path.next() : null;
+    const nextLink = cont ? cont.href : next ? `#/lesson/${next.id}` : "#/review";
+    const nextLabel = cont ? `Tiếp tục học: ${esc(cont.label)}` : next ? `${done ? "Học tiếp" : "Bắt đầu"} ${lessonName(next)}: ${esc(next.title)}` : "Ôn tập";
     const primary = st.due > 0
-      ? `<a class="btn btn-primary btn-lg" href="#/review">${ic("repeat")} Ôn ${st.due} thẻ đến hạn</a>${next ? `<a class="btn btn-lg" href="${nextLink}">${ic("book")} ${nextLabel}</a>` : ""}`
-      : `<a class="btn btn-primary btn-lg" href="${nextLink}">${ic("book")} ${nextLabel}</a>${wdue ? `<a class="btn btn-lg" href="#/write">${ic("pen")} ${wdue} thẻ viết đến hạn</a>` : ""}`;
+      ? `<a class="btn btn-primary btn-lg" href="#/review">${ic("repeat")} Ôn ${st.due} thẻ đến hạn</a>${next || cont ? `<a class="btn btn-lg" href="${nextLink}">${ic(cont ? "play" : "book")} ${nextLabel}</a>` : ""}`
+      : `<a class="btn btn-primary btn-lg" href="${nextLink}">${ic(cont ? "play" : "book")} ${nextLabel}</a>${wdue ? `<a class="btn btn-lg" href="#/write">${ic("pen")} ${wdue} thẻ viết đến hạn</a>` : ""}`;
 
     const hsk2Progress = `<div class="card"><div class="row between"><h3 style="margin:0">Bài học HSK 2.0 cấp 1–${maxLevel()}</h3><span class="small muted">${done}/${LESSONS.length} bài · ${learnedWords} từ trong thẻ</span></div>
       <div class="level-bars mt">${levelStats().map((x) => `<a class="level-bar" href="#/lessons/${x.level}"><span class="small"><b>${x.name}</b> <span class="muted">${x.done}/${x.lessons} bài</span></span><div class="progress ${x.color}"><span style="width:${x.lessons ? (x.done / x.lessons) * 100 : 0}%"></span></div></a>`).join("")}</div></div>`;
@@ -67,7 +69,7 @@
       ${fresh ? `<section class="hero">
         <h1>你好! Học tiếng Trung đúng cách ngay từ ngày đầu</h1>
         <p>Phát âm chuẩn trước, học từ trong câu, ôn tập ngắt quãng mỗi ngày. Viết riêng cho người Việt, có âm Hán Việt cho từng từ.</p>
-        <div class="row"><a class="btn btn-primary btn-lg" href="#/pinyin">Bắt đầu với Pinyin ${ic("next")}</a><a class="btn btn-ghost btn-lg" href="#/roadmap">Xem lộ trình</a></div>
+        <div class="row"><a class="btn btn-primary btn-lg" href="#/start">Bắt đầu học ${ic("next")}</a><a class="btn btn-ghost btn-lg" href="#/start/test">Đã biết pinyin? Kiểm tra đầu vào</a></div>
       </section>` : `<section class="card today">
         <div class="today-head"><div><div class="eyebrow">${esc(dateStr)}</div><h1>Chào bạn trở lại</h1></div>
           <div class="streak-chip ${streak ? "on" : ""}" title="Số ngày học liên tiếp">${ic("flame")}<b>${streak}</b><span>ngày liên tiếp</span></div></div>
@@ -75,6 +77,7 @@
         <div class="today-foot"><span class="small muted">Thói quen hôm nay: <b>${routineDone}/${DAILY_ROUTINE.length}</b> hoạt động</span><div class="routine-dots">${DAILY_ROUTINE.map((r) => `<span class="${routine[r.key] ? "on" : ""}" title="${esc(r.what)}"></span>`).join("")}</div></div>
       </section>`}
 
+      ${cont && !fresh ? `<div class="mt">${Path.homeCard()}</div>` : ""}
       <div class="row between mt course-row"><h2 style="margin:0">Tiến độ</h2>
         <div class="segmented" role="tablist" aria-label="Chương trình">${[["hsk3", "HSK 3.0"], ["hsk2", "HSK 2.0"]].map(([k, v]) => `<button role="tab" aria-selected="${course === k}" class="${course === k ? "active" : ""}" data-course="${k}">${v}</button>`).join("")}</div></div>
       <div class="mt">${course === "hsk3" && window.H3V ? H3V.homeCard() : hsk2Progress}</div>
@@ -127,6 +130,7 @@
     const html = `
       <h1>Lộ trình học từ số 0 đến HSK ${maxLevel()}</h1>
       <p class="subtitle">Tổng hợp từ cách HelloChinese dạy người mới, cách Anki/Hack Chinese ôn tập, cách Skritter luyện viết, và lộ trình 30 phút/ngày của HSK Lord. Mốc tham khảo: 2–3 tháng cho HSK 1 (150 từ), 5–6 tháng cho HSK 2 (300 từ), 9–12 tháng cho HSK 3 (600 từ), 18–24 tháng cho HSK 4 (1.200 từ), 30–40 tháng cho HSK 5 (2.500 từ) với 30–45 phút mỗi ngày.</p>
+      <div class="tip">${ic("play")} <b>Mới:</b> lộ trình từng bước có bài nhỏ 15–30 phút, kiểm tra cuối bài và mở khóa dần. <a href="#/start">Vào trang Bắt đầu học</a></div>
       <div class="warn"><b>Nguyên tắc quan trọng nhất:</b> học ít nhưng đều. 30 phút mỗi ngày tốt hơn 4 giờ cuối tuần. Đừng bỏ qua thanh điệu, đừng học quá 10 từ mới/ngày, đừng học từ rời rạc không có câu.</div>
       <div class="stack mt">
       ${ROADMAP.map((p, i) => `
@@ -165,7 +169,7 @@
 
   // ---------- Pinyin Lab ----------
   function pinyin(tab = "tones") {
-    const tabs = [["tones", "Thanh điệu"], ["initials", "Thanh mẫu (21)"], ["finals", "Vận mẫu (36)"], ["drill", "Luyện nghe thanh điệu"], ["pairs", "Âm dễ nhầm"]];
+    const tabs = [["tones", "Thanh điệu"], ["initials", "Thanh mẫu (21)"], ["finals", "Vận mẫu (36)"], ["table", "Bảng âm tiết"], ["drill", "Luyện nghe thanh điệu"], ["pairs", "Âm dễ nhầm"]];
     let body = "";
     if (tab === "tones") {
       body = `<div class="grid grid-3">${PINYIN.tones.map((t) => `
@@ -183,13 +187,15 @@
         <div class="py-grid">${list.map((x) => `<div class="py-cell" data-say="${esc(x.ex.split(" ")[1] || x.ex)}"><div class="py">${esc(x.py)}</div><div class="hint">${esc(x.ex)}</div></div>`).join("")}</div>
         <table class="vocab-table mt"><thead><tr><th>${tab === "initials" ? "Thanh mẫu" : "Vận mẫu"}</th><th>Ví dụ</th><th>Cách đọc với người Việt</th></tr></thead><tbody>
         ${list.map((x) => `<tr><td class="py">${esc(x.py)}</td><td class="zh">${esc(x.ex)} ${speakBtn(x.ex.split(" ")[1] || x.ex)}</td><td class="small">${esc(x.vi)}</td></tr>`).join("")}</tbody></table>`;
+    } else if (tab === "table") {
+      body = `<p class="muted small">Mọi âm tiết tiếng Trung xếp theo phụ âm đầu, mỗi âm tiết 4 thanh (và thanh nhẹ nếu có trợ từ đọc nhẹ). Chữ ví dụ lấy từ từ vựng HSK.</p><div class="card" id="syl-box"></div>`;
     } else if (tab === "drill") {
       body = `<div class="card" id="drill"></div>`;
     } else {
       body = `<p class="muted small">Bấm nghe lần lượt hai âm và để ý sự khác nhau về bật hơi / vị trí lưỡi.</p>
         <div class="grid grid-2">${PINYIN.minimalPairs.map((p) => `<div class="card row between"><div class="row"><button class="btn zh" data-say="${esc(p.a.split(" ")[1])}">${esc(p.a)}</button><span class="muted">vs</span><button class="btn zh" data-say="${esc(p.b.split(" ")[1])}">${esc(p.b)}</button></div><span class="small muted">${esc(p.note)}</span></div>`).join("")}</div>`;
     }
-    const html = `<h1>Pinyin Lab</h1><p class="subtitle">Giai đoạn 1 của lộ trình. Dành 1–2 tuần, mỗi ngày 20 phút, trước khi học từ vựng.</p>
+    const html = `<h1>Pinyin Lab</h1><p class="subtitle">Dùng kèm <a href="#/path/0">Giai đoạn 0 · Nhập môn</a> của lộ trình. Dành 1–2 tuần, mỗi ngày 20 phút, trước khi học từ vựng.</p>
       <div class="tabs">${tabs.map(([k, v]) => `<button class="${k === tab ? "active" : ""}" data-tab="${k}">${v}</button>`).join("")}</div>${body}`;
     return {
       html,
@@ -197,6 +203,7 @@
         el.querySelectorAll("[data-tab]").forEach((b) => b.onclick = () => (location.hash = "#/pinyin/" + b.dataset.tab));
         bindSpeak(el);
         if (tab === "drill") toneDrill(el.querySelector("#drill"));
+        if (tab === "table" && window.Path) Path.syllableTable(el.querySelector("#syl-box"), { full: true });
       },
     };
   }

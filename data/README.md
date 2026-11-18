@@ -105,6 +105,19 @@ python3 data/scripts/export_web.py
 - Lệnh 2 ghép dữ liệu và tạo `data/hsk/`.
 - Lệnh 3 tạo các tệp `js/data/h30-*.js` cho web. Web đọc các tệp này, nên vẫn chạy khi mở thẳng `index.html`.
 
+Bảng âm tiết và kiểm tra lộ trình Giai đoạn 0 (sau lệnh 2):
+
+```bash
+python3 data/scripts/build_syllables.py
+```
+
+```bash
+python3 data/scripts/check_stage0.py
+```
+
+- `build_syllables.py` tạo `js/data/syllables.js` (âm tiết × thanh, chữ ví dụ lấy từ từ vựng HSK). Tệp dựa trên cách đọc của CC-CEDICT nên theo **CC BY-SA 4.0**.
+- `check_stage0.py` đối chiếu nội dung `js/data/stage0.js` và bảng âm tiết với CC-CEDICT, Unihan và VOCAB (cần `node`). Xem `docs/lo-trinh-giai-doan-0.md`.
+
 ### Bổ sung nghĩa tiếng Việt
 
 1. Mở `data/hsk/thieu-nghia-viet.csv`, hoặc `can-bien-tap.csv` nếu muốn sửa nghĩa máy dịch.
