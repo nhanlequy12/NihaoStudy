@@ -14,6 +14,8 @@
     { key: "fix", icon: "bug", tone: 6, name: "Sửa câu sai", desc: "Tìm câu sai ngữ pháp và hiểu vì sao sai", std: ["hsk2", "hsk3"] },
     { key: "fill", icon: "blank", tone: 7, name: "Điền từ", desc: "Chọn hoặc gõ từ còn thiếu vào chỗ trống", std: ["hsk2", "hsk3"] },
     { key: "qa", icon: "chat", tone: 8, name: "Hỏi đáp", desc: "Chọn câu đáp hợp với câu hỏi, luyện phản xạ", std: ["hsk2", "hsk3"] },
+    { key: "tones", icon: "soundon", tone: 1, name: "Cặp thanh điệu", desc: "Nghe từ hai âm tiết, chọn cặp thanh (2 + 3, 1 + 4…), xem ma trận cặp yếu", std: ["hsk2", "hsk3"], badge: { hsk2: "NEW", hsk3: "NEW" } },
+    { key: "hanviet", icon: "read", tone: 3, name: "Đoán nghĩa qua Hán Việt", desc: "Nhìn âm Hán Việt, đoán nghĩa tiếng Việt, xem từng chữ", std: ["hsk2", "hsk3"], badge: { hsk2: "NEW", hsk3: "NEW" } },
   ];
   const STD = {
     hsk2: { name: "HSK cũ", long: "HSK cũ (HSK 2.0)", levels: [1, 2, 3, 4, 5, 6] },
