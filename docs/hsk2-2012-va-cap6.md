@@ -47,4 +47,4 @@ Pinyin câu ví dụ cho khớp đầu mục: 媳妇, 拳头, 薪水, 格式, �
 
 - Hán Việt: 抢救 (thưởng/thương cứu), 涮 (xoát), 酗酒 (hú tửu), 濒临 (tân/tần lâm), 咋 (chạ), 包庇 (bao tý/tí).
 - Câu ví dụ trùng nhau giữa 品德/高尚, 镇定/镇静, 威望/威信.
-- Luyện tập dùng kho câu riêng (Sửa câu sai, Điền từ, Sắp xếp, Hỏi đáp, Chép chính tả, Vị trí từ) chưa có câu cấp 6; chọn cấp 6 sẽ báo «chưa có câu luyện». Mưa từ vựng và Luyện dịch chạy được.
+- ~~Luyện tập cấp 6 chưa có câu~~: đã bổ sung 18/11/2026 (Điền từ 119, Sắp xếp 85, Vị trí từ 166, Sửa câu sai 19, Hỏi đáp 22; Chép chính tả vốn đã chạy). Chi tiết ở các tệp `kiem-tra-luyen-tap-*.md`, mục «Cấp 6 (HSK 2.0)».

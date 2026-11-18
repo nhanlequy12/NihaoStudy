@@ -58,3 +58,39 @@ Khi soạn, người soạn đã tự sửa 18 chỗ: thanh nhẹ ghi sai (哪�
 | Thanh nhẹ ở đầu mục từ HSK 3.0 | giữ pinyin đầu mục theo đề cương 2025; câu ví dụ theo CC-CEDICT | không đổi | đề cương 2025 |
 
 Chi tiết từng chỗ sửa: [chuan-hoa-pinyin-thanh-nhe.md](chuan-hoa-pinyin-thanh-nhe.md).
+
+## Cấp 6 (HSK 2.0) – bổ sung 18/11/2026
+
+HSK 2.0 cấp 6 trước đây chưa có câu luyện (báo «Cấp này chưa có câu luyện»). Đã soạn mới 22 câu sai kiểu đề HSK 6 phần 病句, dùng từ cấp 6 (固然, 不料, 未免, 何必, 立场, 精通, 杰出, 钻研, 启示, 成本, 不由得…) cùng từ cấp thấp hơn; mã `h2-6-NN` trong `js/data/practice-fix-data.js`. Các câu này cũng vào phần 第一部分 (chọn câu có lỗi) của đề thi thử HSK 6, vì `exam.js` lấy câu HSK 2.0 cấp ≥ 4.
+
+| Mục | Số lượng | Kết quả |
+|---|---|---|
+| Câu soạn mới | 22 | người soạn tự kiểm, sau đó rà soát lại như người rà soát thứ hai |
+| Kiểm tự động (node): mã không trùng, đủ trường, 4 đoạn ghép đúng câu sai, chỗ khác nhau giữa câu sai và câu đúng nằm trong đoạn `bad`, số âm tiết pinyin khớp số chữ, câu đúng có dấu kết câu | 19 | đạt |
+| Câu «sai» mà người bản ngữ có thể chấp nhận | 3 | loại |
+| Câu dùng trong bài | 19 | |
+| Mức Khó (3 câu đúng lấy từ câu ví dụ cấp 6) | 19 | mỗi câu đủ 3 câu đúng |
+| Đề thi thử: câu cấp 6 trong kho «chọn câu có lỗi» | 19 / 92 | |
+
+Phân bố loại lỗi (19 câu dùng): Dùng sai từ 4 (启事/启示, 何况/何必, 难免/未免, 果然/不料) · Kết hợp từ 3 (缩短成本, 造成习惯, 改善缺点) · Trật tự từ 3 (一致完全, 不仅 đặt trước chủ ngữ chung, 研究进一步) · Lặp ý/mâu thuẫn 3 (大约…左右, 不由得忍不住, 基本完全) · Liên từ 2 (固然…而且, 因此 thay cho 否则) · Phủ định sai 1 (不能否认他不是) · Thiếu thành phần 1 (那种刻苦钻研 thiếu 的精神) · Câu chữ 被 1 (被引起) · Giới từ 1 (被 thay cho 由). Hai nhãn «Lặp ý/mâu thuẫn» và «Phủ định sai» mới thêm cho kiểu lỗi 重复/语义矛盾 và 否定不当 của HSK 6.
+
+Ví dụ:
+
+| Câu sai | Đoạn sai | Câu đúng |
+|---|---|---|
+| 这个办法固然省钱，而且效果不太理想。 | C 而且 | 这个办法固然省钱，但是效果不太理想。 |
+| 谁也不能否认他不是一位杰出的科学家。 | C 他不是 | 谁也不能否认他是一位杰出的科学家。 |
+| 听了他的话，大家不由得忍不住笑了起来。 | C 不由得忍不住 | 听了他的话，大家不由得笑了起来。 |
+| 为一点小事就发这么大的火，你这样做难免太过分了。 | D 难免太过分了 | …你这样做未免太过分了。 |
+
+### Rà soát lần hai
+
+| Câu | Vấn đề | Xử lý |
+|---|---|---|
+| 经过反复讨论，公司最终采取了他的建议。 (h2-6-02) | «采取…建议» vẫn gặp trong văn nói và văn viết của người bản ngữ, nên không chắc bị coi là sai. (chưa chắc) | Loại khỏi bài |
+| 使用新系统以后，大家的工作效率明显增强了。 (h2-6-04) | «效率增强» kém chuẩn nhưng không hẳn sai; ngoài ra có thể sửa ở chỗ khác (效率 → 能力). (chưa chắc) | Loại khỏi bài |
+| 这么重的箱子，大人尚且搬不动，况且是孩子呢？ (h2-6-21) | 况且 cũng mang nghĩa tăng tiến, có từ điển chấp nhận cách dùng gần với 何况, nên lỗi không đủ rõ. (chưa chắc) | Loại khỏi bài |
+| 听了他的话，大家不由得忍不住笑了起来。 (h2-6-11) | Pinyin 起来 ghi «qilai» (thiếu thanh); theo quy ước của web, bổ ngữ 起来 ghi qǐlai. | Đã sửa: qǐlai |
+| h2-6-08, h2-6-10, h2-6-18, h2-6-22 | Dùng từ ngoài danh sách HSK 2.0 (酒店, 座谈会, 社会各界, 基本上) trong khi có từ trong danh sách cùng nghĩa. | Đã đổi: 宾馆, 讲座, 全社会, 基本 |
+
+Còn để ý (giữ lại): h2-6-06 (不仅他精通英语…) – theo ngữ pháp chuẩn, hai vế cùng chủ ngữ thì chủ ngữ đứng trước 不仅, nhưng trong khẩu ngữ đôi khi vẫn nghe 不仅他…; h2-6-10 (大约…左右) – lỗi lặp ý kinh điển của đề 病句, dù người bản ngữ vẫn hay nói. Nếu muốn chặt hơn có thể xoá hai dòng này.
