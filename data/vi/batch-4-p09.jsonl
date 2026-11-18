@@ -16,7 +16,7 @@
 {"hz":"塑造","vi":"nặn, đắp; xây dựng, khắc hoạ (nhân vật, hình ảnh)","hv":"tố tạo","pos_vi":"động từ","ex":["作者成功地塑造了一个英雄形象。","Zuòzhě chénggōng de sùzào le yí ge yīngxióng xíngxiàng.","Tác giả đã khắc hoạ thành công hình tượng một người anh hùng."]}
 {"hz":"连锁","vi":"liên hoàn, dây chuyền; chuỗi (cửa hàng)","hv":"liên toả","pos_vi":"tính từ, động từ","ex":["这是一家连锁超市。","Zhè shì yì jiā liánsuǒ chāoshì.","Đây là một siêu thị thuộc chuỗi."]}
 {"hz":"疲惫","vi":"mệt mỏi, kiệt sức","hv":"bì bại","pos_vi":"tính từ","ex":["下班后他感到十分疲惫。","Xiàbān hòu tā gǎndào shífēn píbèi.","Tan làm anh ấy cảm thấy vô cùng mệt mỏi."]}
-{"hz":"拧","vi":"vắt (khăn, quần áo); véo; (đọc nǐng) vặn (ốc, nắp); (đọc nìng) bướng bỉnh","hv":"ninh","pos_vi":"động từ","ex":["把毛巾拧干。","Bǎ máojīn níng gān.","Vắt khô khăn mặt."]}
+{"hz":"拧","vi":"vắt (khăn); véo; (nǐng) vặn (ốc, nắp); (nìng) bướng bỉnh","hv":"ninh","pos_vi":"động từ","ex":["把毛巾拧干。","Bǎ máojīn níng gān.","Vắt khô khăn mặt."]}
 {"hz":"莫名其妙","vi":"khó hiểu, chẳng hiểu ra sao, vô cớ","hv":"mạc danh kỳ diệu","pos_vi":"thành ngữ","ex":["他莫名其妙地生气了。","Tā mòmíngqímiào de shēngqì le.","Anh ấy tự dưng nổi giận chẳng rõ vì sao."]}
 {"hz":"束缚","vi":"trói buộc, ràng buộc","hv":"thúc phược","pos_vi":"động từ","ex":["不要被传统观念束缚。","Búyào bèi chuántǒng guānniàn shùfù.","Đừng để quan niệm truyền thống trói buộc."]}
 {"hz":"复活","vi":"sống lại, hồi sinh, phục sinh","hv":"phục hoạt","pos_vi":"động từ","ex":["这个古老的传统又复活了。","Zhège gǔlǎo de chuántǒng yòu fùhuó le.","Truyền thống lâu đời này lại được hồi sinh."]}
@@ -36,7 +36,7 @@
 {"hz":"卡通","vi":"phim hoạt hình, tranh hoạt hình","hv":"tạp thông","pos_vi":"danh từ","ex":["弟弟最喜欢看卡通片。","Dìdi zuì xǐhuan kàn kǎtōngpiàn.","Em trai thích xem phim hoạt hình nhất."]}
 {"hz":"生效","vi":"có hiệu lực","hv":"sinh hiệu","pos_vi":"động từ","ex":["新规定从下个月起生效。","Xīn guīdìng cóng xià ge yuè qǐ shēngxiào.","Quy định mới có hiệu lực từ tháng sau."]}
 {"hz":"兑现","vi":"đổi ra tiền mặt; thực hiện (lời hứa)","hv":"đoái hiện","pos_vi":"động từ","ex":["他终于兑现了自己的承诺。","Tā zhōngyú duìxiàn le zìjǐ de chéngnuò.","Anh ấy cuối cùng đã thực hiện lời hứa của mình."]}
-{"hz":"拳头","vi":"nắm đấm; (sản phẩm) chủ lực, mũi nhọn","hv":"quyền đầu","pos_vi":"danh từ","ex":["他气得握紧了拳头。","Tā qì de wò jǐn le quántou.","Anh ấy tức đến nắm chặt tay lại."]}
+{"hz":"拳头","vi":"nắm đấm; (sản phẩm) chủ lực, mũi nhọn","hv":"quyền đầu","pos_vi":"danh từ","ex":["他气得握紧了拳头。","Tā qì de wò jǐn le quántóu.","Anh ấy tức đến nắm chặt tay lại."]}
 {"hz":"遵循","vi":"tuân theo, tuân thủ","hv":"tuân tuần","pos_vi":"động từ","ex":["我们要遵循自然规律。","Wǒmen yào zūnxún zìrán guīlǜ.","Chúng ta phải tuân theo quy luật tự nhiên."]}
 {"hz":"下属","vi":"cấp dưới, thuộc cấp","hv":"hạ thuộc","pos_vi":"danh từ","ex":["他对下属很严格。","Tā duì xiàshǔ hěn yángé.","Ông ấy rất nghiêm khắc với cấp dưới."]}
 {"hz":"可行","vi":"khả thi, làm được","hv":"khả hành","pos_vi":"tính từ","ex":["这个计划可行吗？","Zhège jìhuà kěxíng ma?","Kế hoạch này có khả thi không?"]}
@@ -44,7 +44,7 @@
 {"hz":"引用","vi":"trích dẫn, dẫn","hv":"dẫn dụng","pos_vi":"động từ","ex":["他在文章中引用了一句名言。","Tā zài wénzhāng zhōng yǐnyòng le yí jù míngyán.","Anh ấy trích dẫn một câu danh ngôn trong bài viết."]}
 {"hz":"作弊","vi":"gian lận, quay cóp","hv":"tác tệ","pos_vi":"động từ","ex":["考试作弊是不对的。","Kǎoshì zuòbì shì bú duì de.","Gian lận trong thi cử là sai."]}
 {"hz":"惊奇","vi":"ngạc nhiên, kinh ngạc","hv":"kinh kỳ","pos_vi":"tính từ","ex":["大家都惊奇地看着他。","Dàjiā dōu jīngqí de kànzhe tā.","Mọi người đều ngạc nhiên nhìn anh ấy."]}
-{"hz":"扛","vi":"vác (trên vai), khiêng (thường đọc káng); gánh vác, chịu đựng; (đọc gāng) nâng bằng hai tay","hv":"giang","pos_vi":"động từ","ex":["他扛着一袋米上楼。","Tā kángzhe yí dài mǐ shàng lóu.","Anh ấy vác một bao gạo lên lầu."]}
+{"hz":"扛","vi":"vác (trên vai); gánh vác, chịu đựng; (gāng) nâng bằng hai tay","hv":"giang","pos_vi":"động từ","ex":["他扛着一袋米上楼。","Tā kángzhe yí dài mǐ shàng lóu.","Anh ấy vác một bao gạo lên lầu."]}
 {"hz":"偿还","vi":"hoàn trả, trả (nợ)","hv":"thường hoàn","pos_vi":"động từ","ex":["他用了三年才偿还了债务。","Tā yòng le sān nián cái chánghuán le zhàiwù.","Anh ấy mất ba năm mới trả hết nợ."]}
 {"hz":"啃","vi":"gặm, cắn; cày, học cật lực (sách vở)","hv":"khẳng","pos_vi":"động từ","ex":["小狗在啃骨头。","Xiǎo gǒu zài kěn gǔtou.","Chú chó con đang gặm xương."]}
 {"hz":"吸取","vi":"hấp thụ; rút ra (bài học, kinh nghiệm)","hv":"hấp thủ","pos_vi":"động từ","ex":["我们要从失败中吸取教训。","Wǒmen yào cóng shībài zhōng xīqǔ jiàoxùn.","Chúng ta phải rút ra bài học từ thất bại."]}
@@ -78,7 +78,7 @@
 {"hz":"掀起","vi":"nhấc lên, vén lên; dấy lên, tạo nên (phong trào, làn sóng)","hv":"hiên khởi","pos_vi":"động từ","ex":["这部电影掀起了一股热潮。","Zhè bù diànyǐng xiānqǐ le yì gǔ rècháo.","Bộ phim này đã tạo nên một cơn sốt."]}
 {"hz":"界限","vi":"ranh giới, giới hạn","hv":"giới hạn","pos_vi":"danh từ","ex":["工作和生活要有明确的界限。","Gōngzuò hé shēnghuó yào yǒu míngquè de jièxiàn.","Công việc và cuộc sống cần có ranh giới rõ ràng."]}
 {"hz":"旋律","vi":"giai điệu","hv":"toàn luật","pos_vi":"danh từ","ex":["这首歌的旋律很好听。","Zhè shǒu gē de xuánlǜ hěn hǎotīng.","Giai điệu bài hát này rất hay."]}
-{"hz":"固执","vi":"cố chấp, bướng bỉnh","hv":"cố chấp","pos_vi":"tính từ","ex":["老人有时候很固执。","Lǎorén yǒu shíhou hěn gùzhí.","Người già đôi khi rất cố chấp."]}
+{"hz":"固执","vi":"cố chấp, bướng bỉnh","hv":"cố chấp","pos_vi":"tính từ","ex":["老人有时候很固执。","Lǎorén yǒu shíhou hěn gùzhi.","Người già đôi khi rất cố chấp."]}
 {"hz":"借助","vi":"nhờ vào, dựa vào","hv":"tá trợ","pos_vi":"động từ","ex":["他借助字典读懂了这篇文章。","Tā jièzhù zìdiǎn dú dǒng le zhè piān wénzhāng.","Nhờ có từ điển anh ấy đã đọc hiểu bài này."]}
 {"hz":"一度","vi":"có một thời, đã từng; một lần","hv":"nhất độ","pos_vi":"phó từ","ex":["他一度想放弃学业。","Tā yídù xiǎng fàngqì xuéyè.","Có thời anh ấy từng muốn bỏ học."]}
 {"hz":"侧面","vi":"mặt bên, phía bên; khía cạnh; gián tiếp","hv":"trắc diện","pos_vi":"danh từ","ex":["我从侧面了解了一些情况。","Wǒ cóng cèmiàn liǎojiě le yìxiē qíngkuàng.","Tôi đã tìm hiểu gián tiếp được một số tình hình."]}

@@ -38,7 +38,7 @@ Giữ theo đề cương 2025 và CC-CEDICT (đầu mục dùng chung với HSK 
 
 ## Sửa nhỏ trên dữ liệu đã rà soát (do người biên soạn báo)
 
-Pinyin câu ví dụ cho khớp đầu mục: 媳妇, 拳头, 薪水, 格式, 固执, 摸索, 一帆风顺; 个 → ge (唠叨, 无赖). Hán Việt thống nhất: 吃苦 ngật khổ, 采购 thái cấu, 定期 định kỳ, 炊烟 xuy yên. Rút gọn nghĩa quá dài: 哄, 扛, 拧, 拽, 盛, 公道, 空, 划; bỏ chú thích địa danh ở 富裕. Các mục này nằm trong tệp web, **chưa** đồng bộ ngược về `data/vi/`.
+Pinyin câu ví dụ cho khớp đầu mục: 媳妇, 拳头, 薪水, 格式, 固执, 摸索, 一帆风顺; 个 → ge (唠叨, 无赖). Hán Việt thống nhất: 吃苦 ngật khổ, 采购 thái cấu, 定期 định kỳ, 炊烟 xuy yên. Rút gọn nghĩa quá dài: 哄, 扛, 拧, 拽, 盛, 公道, 空, 划; bỏ chú thích địa danh ở 富裕. Các mục này sửa trên tệp web trước, rồi ngày 18/11/2026 đồng bộ ngược về `data/vi/`: 25 từ có mục trong `data/vi/` (gồm cả 4 câu ví dụ mới của 高尚, 得力, 镇静, 威信) được chép đúng nghĩa, Hán Việt, từ loại, câu ví dụ trên web; 炊烟 không có mục trong `data/vi/`. Sau đó build lại `data/hsk/` và `js/data/h30-words*.js`: 2.353 từ chuyển sang lấy nội dung từ web (`vi_src = nihao-site`), 211 từ trước chỉ có nghĩa CVDICT nay có nghĩa biên soạn; HSK 2.0 cấp 6 còn 4 từ nghĩa CVDICT (từ bản 2010 đã bị bỏ trong bản 2012).
 
 ## Còn nên rà
 

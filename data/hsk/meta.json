@@ -53,8 +53,8 @@
   {
    "set": "HSK 3.0 (2025) cấp 7–9",
    "words": 5562,
-   "vi_nihao": 1741,
-   "vi_cvdict": 3811,
+   "vi_nihao": 1946,
+   "vi_cvdict": 3606,
    "vi_missing": 10
   },
   {
@@ -95,8 +95,8 @@
   {
    "set": "HSK 2.0 cấp 6",
    "words": 2500,
-   "vi_nihao": 2372,
-   "vi_cvdict": 128,
+   "vi_nihao": 2496,
+   "vi_cvdict": 4,
    "vi_missing": 0
   },
   {
@@ -116,36 +116,36 @@
   {
    "set": "HSK 3.0 (2021) cấp 3",
    "words": 953,
-   "vi_nihao": 952,
-   "vi_cvdict": 1,
+   "vi_nihao": 953,
+   "vi_cvdict": 0,
    "vi_missing": 0
   },
   {
    "set": "HSK 3.0 (2021) cấp 4",
    "words": 972,
-   "vi_nihao": 967,
-   "vi_cvdict": 5,
+   "vi_nihao": 972,
+   "vi_cvdict": 0,
    "vi_missing": 0
   },
   {
    "set": "HSK 3.0 (2021) cấp 5",
    "words": 1059,
-   "vi_nihao": 1047,
-   "vi_cvdict": 12,
+   "vi_nihao": 1059,
+   "vi_cvdict": 0,
    "vi_missing": 0
   },
   {
    "set": "HSK 3.0 (2021) cấp 6",
    "words": 1123,
-   "vi_nihao": 1096,
-   "vi_cvdict": 27,
+   "vi_nihao": 1120,
+   "vi_cvdict": 3,
    "vi_missing": 0
   },
   {
    "set": "HSK 3.0 (2021) cấp 7–9",
    "words": 5606,
-   "vi_nihao": 1884,
-   "vi_cvdict": 3708,
+   "vi_nihao": 2014,
+   "vi_cvdict": 3578,
    "vi_missing": 14
   }
  ]

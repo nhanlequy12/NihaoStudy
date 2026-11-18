@@ -103,4 +103,4 @@ Trước thanh 4, 不 cuối của 不得不 ghi bú theo quy tắc biến đi�
 | Bạn xác nhận giữ nguyên | B 8 âm Hán Việt |
 | Còn chờ xác nhận | 0 |
 
-Các sửa nằm trong tệp `js/data/hsk6-*.js`, `js/data/hsk2012-bs.js` (và 5 chỗ 不得不 ở `hsk4-c.js`, `hsk5-a.js`, `hsk5-b.js`, `hsk5-e.js`), chưa đồng bộ ngược về `data/vi/` (giống ghi chú trong [hsk2-2012-va-cap6.md](hsk2-2012-va-cap6.md)).
+Các sửa nằm trong tệp `js/data/hsk6-*.js`, `js/data/hsk2012-bs.js` (và 5 chỗ 不得不 ở `hsk4-c.js`, `hsk5-a.js`, `hsk5-b.js`, `hsk5-e.js`). Ngày 18/11/2026 đã đồng bộ ngược về `data/vi/` (25 từ có trong `data/vi/`) và build lại `data/hsk/`, xem [hsk2-2012-va-cap6.md](hsk2-2012-va-cap6.md). Các câu 不得不 là câu bài học, không có trong `data/`.

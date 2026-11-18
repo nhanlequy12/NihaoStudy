@@ -18,7 +18,7 @@ Ngoài ra có thêm từ loại và câu ví dụ.
 | `hsk2/hsk2-1.json` … `hsk2-6.json` (+ `.csv`) | Từ mới của từng cấp HSK 2.0: 150 / 147 / 298 / 598 / 1.298 / 2.500 |
 | `all-words.json` / `.csv` | Toàn bộ 12.309 từ, đủ các cột cấp `hsk3`, `hsk2`, `hsk3_2021` |
 | **`thieu-nghia-viet.csv`** | Từ **chưa có nghĩa tiếng Việt** nào (22 từ), để bạn bổ sung |
-| **`can-bien-tap.csv`** | Từ chỉ có nghĩa máy dịch từ CVDICT, chưa biên tập và chưa có câu ví dụ (4.439 từ, phần lớn ở cấp 7–9) |
+| **`can-bien-tap.csv`** | Từ chỉ có nghĩa máy dịch từ CVDICT, chưa biên tập và chưa có câu ví dụ (4.228 từ, phần lớn ở cấp 7–9) |
 | `chars-unihan.json` | 3.132 chữ Hán: số nét, bộ thủ + số nét, âm Mandarin, âm đọc tiếng Việt, nghĩa tiếng Anh ngắn |
 | `chars-makemeahanzi.json` | Phân tách chữ, bộ, loại cấu tạo (hình thanh, hội ý…), gợi ý nguồn gốc (LGPL) |
 | `chars-strokes-makemeahanzi.json` | **Thứ tự nét** của 3.132 chữ: nét dạng SVG theo đúng thứ tự viết, kèm đường giữa nét (`medians`) cho biết hướng viết (Arphic Public License) |
