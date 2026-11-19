@@ -97,7 +97,7 @@
         ] },
         { key: "writing", name: "三、书写", vi: "Viết", minutes: 40, parts: [
           { name: "第一部分", vi: "Sắp xếp các từ cho sẵn thành câu đúng.", type: "w_order", n: 8 },
-          { name: "第二部分", vi: "Viết đoạn văn ngắn (đề thật 80 chữ, theo 5 từ cho sẵn hoặc theo tranh). Ở đây viết một đoạn có dùng từ cho sẵn; máy chỉ kiểm tra sơ bộ, hãy tự đối chiếu với câu ví dụ.", type: "w_sentence", n: 2 },
+          { name: "第二部分", vi: "Viết đoạn văn khoảng 80 chữ: câu 99 dùng đủ 5 từ cho sẵn; câu 100 đề thật cho một bức tranh, ở đây thay bằng một chủ đề kèm từ gợi ý. Máy chỉ kiểm tra độ dài và từ bắt buộc; đề thật do giám khảo chấm.", type: "w_paragraph", n: 2 },
         ] },
       ],
     },
@@ -152,7 +152,7 @@
     });
     const readings = (window.READINGS || []).filter((r) => r.level <= level && r.level >= Math.max(1, level - 1));
     const tokenSentences = lessons.flatMap((l) => l.sentences.filter((s) => s[0].split(" ").length >= 4 && s[0].split(" ").length <= 8).map((s) => ({ tokens: s[0].split(" "), zh: s[0].replace(/ /g, ""), vi: s[2], alts: s[3] || [] })));
-    return { level, words, sentences, qa, dialogs, readings, tokenSentences };
+    return { level, words, sentences, qa, dialogs, readings, tokenSentences, lessons };
   }
 
   // ---------- Sinh câu hỏi ----------
@@ -302,6 +302,24 @@
       const ws = pick(P.words.filter((w) => w.hz.length >= 2), n);
       return ws.map((w) => ({ kind: "text", free: true, stem: w.hz, sub: `${w.py} · ${w.vi}`, answer: w.hz, explain: `Ví dụ: ${w.ex[0]}` }));
     },
+    // HSK 5 viết phần 2: đoạn văn khoảng 80 chữ. Câu đầu dùng đủ 5 từ của cùng một bài (cùng chủ đề, như đề thật);
+    // câu sau thay tranh bằng chủ đề của một bài khác kèm 3 từ gợi ý, phải dùng ít nhất 2 từ.
+    w_paragraph(P, n) {
+      const NO_POS = /lượng từ|thán từ|trợ từ|danh từ riêng/;
+      const cands = shuffle(P.lessons.filter((l) => !l.h3 && levelOfLesson(l) === P.level)).map((l) => ({
+        l, ws: shuffle(VOCAB.filter((w) => w.l === l.id && w.hz.length >= 2 && !NO_POS.test(w.pos || "") && w.ex && w.ex[0])),
+      })).filter((c) => c.ws.length >= 5);
+      const out = [];
+      cands.slice(0, n).forEach((c, k) => {
+        const words = k === 0 ? c.ws.slice(0, 5) : c.ws.slice(0, 3);
+        const need = k === 0 ? words.length : 2;
+        const ex = words.map((w) => `${w.hz} ${w.py} (${w.vi}): ${w.ex[0]}`).join(" · ");
+        out.push(k === 0
+          ? { kind: "text", free: true, para: true, words, need, minLen: 60, maxLen: 120, stem: "请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。", sub: `Viết đoạn khoảng 80 chữ Hán, dùng đủ 5 từ (thứ tự tùy ý).`, answer: words.map((w) => w.hz).join("、"), explain: `Câu ví dụ để đối chiếu cách dùng: ${ex}` }
+          : { kind: "text", free: true, para: true, words, need, minLen: 60, maxLen: 120, stem: "请围绕下面的话题写一篇80字左右的短文。", sub: `Chủ đề: ${c.l.title}${c.l.sub ? ` (${c.l.sub})` : ""}. Dùng ít nhất 2 trong 3 từ gợi ý.`, answer: `ít nhất 2 trong: ${words.map((w) => w.hz).join("、")}`, explain: `Đề thật cho một bức tranh. Câu ví dụ để đối chiếu: ${ex}` });
+      });
+      return out;
+    },
     // HSK 6 đọc phần 1: một câu sai (từ kho Sửa câu sai, cấp cao) và ba câu đúng (câu ví dụ cùng cấp)
     r_error(P, n) {
       const bad = pick((window.FIX_ITEMS || []).filter((x) => (x.std === "hsk2" && x.level >= 4) || (x.std === "hsk3" && x.level >= 5)), n);
@@ -386,6 +404,10 @@
         let copied = false;
         for (let i = 0; i + 20 <= u.length && !copied; i += 5) copied = it.group.passage.includes(u.slice(i, i + 20));
         return !copied && han >= it.minLen && han <= it.maxLen + 60 && hit >= Math.ceil(it.keys.length * 0.4);
+      }
+      if (it.para) {
+        const u = String(it.user), han = [...u].filter((c) => /[一-鿿]/.test(c)).length;
+        return han >= it.minLen && han <= it.maxLen && it.words.filter((w) => u.includes(w.hz)).length >= it.need;
       }
       if (it.free) { const u = norm(it.user); return u.includes(it.answer) && u.length >= it.answer.length + 4; }
       return norm(it.user) === it.answer;

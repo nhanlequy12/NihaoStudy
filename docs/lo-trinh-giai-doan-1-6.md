@@ -173,7 +173,7 @@ Không có lỗi.
 ## Còn lại / cần xem thêm
 
 - ~~Giai đoạn 0: chưa chạy lại `check_stage0.py`~~: đã chạy ngày 19/11 trên máy có `data/raw/cedict.txt.gz`; `check_stage0.py` và `check_path.py` (dùng CC-CEDICT gốc) đều 0 lỗi.
-- **Đề HSK 5:** phần Viết của bộ sinh đề có 8 câu sắp xếp và 2 câu đặt câu với từ cho sẵn, chưa có dạng viết đoạn 80 chữ như đề thật. Đề HSK 3 đã có phần Viết; đề HSK 6 đã có 缩写.
+- ~~Đề HSK 5 chưa có viết đoạn 80 chữ~~: đã thêm ngày 19/11 (dạng `w_paragraph` trong `js/exam.js`). Câu 100 của đề thật cho tranh; web thay bằng chủ đề kèm từ gợi ý vì chưa có tranh.
 - ~~Kho luyện tập HSK 6~~: đã bổ sung (xem bảng Luyện tập theo cấp).
 - **Chặng Giai đoạn 5:** chia theo số bài (8 bài, trùng nhịp bài đọc), chưa theo chủ đề.
 - **Thời lượng:** công thức ước lượng, chưa đo trên người học thật.

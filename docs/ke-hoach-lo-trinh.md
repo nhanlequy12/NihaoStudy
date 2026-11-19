@@ -101,7 +101,7 @@ Còn treo:
 
 - ✅ Khung từ bài 85–149 và 6 bài bổ sung: 71 bài → 213 phần (3 phần mỗi bài), 1.420 từ.
 - ✅ Chia 9 chặng, mỗi chặng 8 bài, khớp nhịp bài đọc; mỗi chặng có bài ôn. ⬜ Chưa chia theo chủ đề.
-- ✅ 8 bài đọc; đề HSK 5. ⬜ Bộ sinh đề chưa có dạng viết đoạn 80 chữ (hiện là 8 câu sắp xếp và 2 câu đặt câu).
+- ✅ 8 bài đọc; đề HSK 5. ✅ Phần Viết có dạng viết đoạn 80 chữ (19/11): câu 99 dùng đủ 5 từ cùng một bài; câu 100 thay tranh bằng chủ đề của một bài kèm 3 từ gợi ý (dùng ít nhất 2). Máy chấm sơ bộ: 60–120 chữ Hán và đủ từ bắt buộc.
 - ✅ Hiệu năng: trang giai đoạn gập theo chặng, mỗi dòng là một bài có các nút phần A/B/C, danh sách trên điện thoại ngắn.
 - ✅ Kiểm tra, chạy thử, commit và push.
 

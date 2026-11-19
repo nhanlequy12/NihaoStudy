@@ -140,6 +140,11 @@
         ? `<div class="center"><button class="btn btn-primary" id="hidePassage">Đã đọc xong: ẩn bài và bắt đầu viết</button><p class="small muted mt">Ẩn rồi sẽ không xem lại được bài, giống đề thật.</p></div>`
         : `<textarea class="search zh" id="txt" rows="12" style="width:100%;line-height:1.8" placeholder="Dòng đầu là tiêu đề, sau đó là bài tóm tắt…">${esc(it.user || "")}</textarea>
           <div class="row between small muted mt"><span id="hanCount"></span><span>Máy chỉ kiểm tra độ dài (${it.minLen}–${it.maxLen} chữ) và ý chính; đề thật do giám khảo chấm.</span></div>`;
+    } else if (it.kind === "text" && it.para) {
+      const u = String(it.user || "");
+      body += `<div class="tiles" style="justify-content:center">${it.words.map((w) => `<span class="tile zh ${u.includes(w.hz) ? "used" : ""}" data-w="${esc(w.hz)}">${esc(w.hz)}</span>`).join("")}</div>
+        <textarea class="search zh" id="txt" rows="6" style="width:100%;line-height:1.8" placeholder="Viết đoạn văn khoảng 80 chữ…">${esc(u)}</textarea>
+        <div class="row between small muted mt"><span id="hanCount"></span><span>Cần ${it.minLen}–${it.maxLen} chữ Hán và ${it.need === it.words.length ? "đủ các" : `ít nhất ${it.need}`} từ trên (từ đã dùng được đánh dấu). Máy chỉ kiểm tra sơ bộ.</span></div>`;
     } else if (it.kind === "text") {
       body += `<div class="center"><input class="search zh" id="txt" style="max-width:420px;text-align:center" placeholder="${it.free ? "Viết một câu có từ này" : "Gõ chữ Hán"}" value="${esc(it.user || "")}" autocomplete="off"></div>
         ${it.candidates ? `<p class="small muted center" style="margin:8px 0 4px">Không có bàn phím tiếng Trung? Bấm chữ:</p><div class="tiles" style="justify-content:center">${it.candidates.map((c) => `<button class="tile zh" data-c="${esc(c)}">${esc(c)}</button>`).join("")}</div>` : `<p class="small muted center mt">Máy chỉ kiểm tra câu có chứa từ cho sẵn và đủ dài; đề thật do giám khảo chấm.</p>`}`;
@@ -176,7 +181,7 @@
     const countHan = () => { if (hc) hc.textContent = `${[...txt.value].filter((c) => /[一-鿿]/.test(c)).length} chữ Hán`; };
     if (txt) {
       countHan();
-      txt.oninput = () => { it.user = txt.value; countHan(); box.querySelectorAll(".qnav button")[qi].classList.toggle("done", !!txt.value.trim()); };
+      txt.oninput = () => { it.user = txt.value; countHan(); box.querySelectorAll("[data-w]").forEach((t) => t.classList.toggle("used", txt.value.includes(t.dataset.w))); box.querySelectorAll(".qnav button")[qi].classList.toggle("done", !!txt.value.trim()); };
       box.querySelectorAll("[data-c]").forEach((b) => b.onclick = () => { txt.value = (txt.value || "") + b.dataset.c; it.user = txt.value; txt.focus(); });
     }
     if (it.listening) {
