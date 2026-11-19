@@ -31,19 +31,19 @@ Giai đoạn 1–6 được **sinh tự động** từ bài học HSK 2.0 sẵn 
   - Từ nhiều chữ chỉ có một cách đọc trong VOCAB. Máy đọc cả từ, đáp án là pinyin của từ đó.
   - Chữ đơn chỉ có một cách đọc theo CC-CEDICT, lấy từ bảng âm tiết (ô không kèm từ ví dụ). Trong 731 từ một chữ có 308 chữ dùng được cho câu nghe. Chữ nhiều âm như 好, 的, 没, 还 chỉ dùng câu nghĩa hoặc chọn chữ.
 
-**Luyện tập theo cấp.** Đã đếm số câu bằng hàm `itemsOf` của từng chức năng, chuẩn HSK 2.0, ngày 18/11:
+**Luyện tập theo cấp.** Đếm số câu bằng hàm `itemsOf` của từng chức năng, chuẩn HSK 2.0 (cập nhật 19/11, sau khi bổ sung kho cấp 6):
 
 | Chức năng | HSK 1 | HSK 2 | HSK 3 | HSK 4 | HSK 5 | HSK 6 |
 |---|---|---|---|---|---|---|
-| Sắp xếp câu | 80 | 62 | 76 | 72 | 78 | 37 |
-| Chọn vị trí từ | 14 | 33 | 49 | 98 | 188 | 73 |
-| Chép chính tả | 77 | 77 | 152 | 308 | 708 | 1.211 |
-| Sửa câu sai | 20 | 18 | 19 | 19 | 16 | 0* |
-| Điền từ | 51 | 45 | 104 | 115 | 118 | 0* |
-| Hỏi đáp | 20 | 19 | 20 | 20 | 18 | 0* |
+| Sắp xếp câu | 80 | 62 | 76 | 72 | 78 | 85 |
+| Chọn vị trí từ | 14 | 33 | 49 | 98 | 188 | 166 |
+| Chép chính tả | 77 | 77 | 152 | 307 | 709 | 1.210 |
+| Sửa câu sai | 20 | 18 | 19 | 19 | 16 | 19 |
+| Điền từ | 51 | 45 | 104 | 115 | 118 | 119 |
+| Hỏi đáp | 20 | 19 | 20 | 20 | 18 | 22 |
 | Mưa từ vựng, Luyện dịch | có | có | có | có | có | có |
 
-\* Kho HSK 6 đang được bổ sung. Giai đoạn 6 vẫn dẫn tới đủ 8 chức năng và để chức năng tự xử lý khi chưa có câu.
+Cả 8 chức năng đều có câu ở mọi cấp.
 
 Giai đoạn 1–2 dẫn tới 5 chức năng: Mưa từ vựng, Điền từ, Sắp xếp câu, Chép chính tả, Hỏi đáp. Từ Giai đoạn 3 thêm Chọn vị trí từ, Sửa câu sai, Luyện dịch.
 
@@ -172,9 +172,9 @@ Không có lỗi.
 
 ## Còn lại / cần xem thêm
 
-- **Giai đoạn 0:** chưa chạy lại `check_stage0.py` trên máy này vì thiếu `data/raw/cedict.txt.gz` (chưa chạy `fetch_sources.sh`). Dữ liệu `stage0.js` không đổi.
+- ~~Giai đoạn 0: chưa chạy lại `check_stage0.py`~~: đã chạy ngày 19/11 trên máy có `data/raw/cedict.txt.gz`; `check_stage0.py` và `check_path.py` (dùng CC-CEDICT gốc) đều 0 lỗi.
 - **Đề HSK 5:** phần Viết của bộ sinh đề có 8 câu sắp xếp và 2 câu đặt câu với từ cho sẵn, chưa có dạng viết đoạn 80 chữ như đề thật. Đề HSK 3 đã có phần Viết; đề HSK 6 đã có 缩写.
-- **Kho luyện tập HSK 6:** Sửa câu sai, Điền từ, Hỏi đáp đang được bổ sung.
+- ~~Kho luyện tập HSK 6~~: đã bổ sung (xem bảng Luyện tập theo cấp).
 - **Chặng Giai đoạn 5:** chia theo số bài (8 bài, trùng nhịp bài đọc), chưa theo chủ đề.
 - **Thời lượng:** công thức ước lượng, chưa đo trên người học thật.
 - **Người đã học bài HSK cũ:** khi bắt đầu lộ trình, vẫn phải làm bài ôn chặng (Giai đoạn 4–6) trước khi mở chặng sau và kiểm tra tổng hợp.

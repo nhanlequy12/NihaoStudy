@@ -20,7 +20,7 @@ Số phần đã sinh: bài dưới 18 từ chia 2 phần, bài từ 18 từ tr�
 
 ## Cách làm chung cho Giai đoạn 1–6 ✅
 
-Đã làm theo đúng các bước dưới đây (18/11/2026), sinh tự động trong `js/path-hsk.js`; riêng bước 10 còn chờ commit và push.
+Đã làm theo đúng các bước dưới đây (18/11/2026), sinh tự động trong `js/path-hsk.js`; đã commit và push (`5ec1fd3`).
 
 Áp dụng cho mọi giai đoạn, để không phải soạn lại nội dung tiếng Trung đã rà soát.
 
@@ -72,7 +72,7 @@ Còn treo:
 - ✅ Kiểm tra đầu vào: thêm câu từng cấp HSK 1–6, xếp lên đúng giai đoạn.
 - ✅ Trang «Bắt đầu học»: Giai đoạn 1–6 là trang giai đoạn có khóa và mở.
 - ✅ `check_path.py` (0 lỗi), chạy thử, báo cáo [lo-trinh-giai-doan-1-6.md](lo-trinh-giai-doan-1-6.md).
-- ⬜ Commit và push.
+- ✅ Commit và push (`5ec1fd3`).
 
 ## Giai đoạn 2 · HSK 2 (HSK 2.0) ✅
 
@@ -80,7 +80,7 @@ Còn treo:
 - ✅ 3 bài đọc HSK 2 (r15, r20, r24); luyện tập như Giai đoạn 1 cho cấp 2.
 - ✅ Kiểm tra tổng hợp: đề HSK 2 (60 câu).
 - ✅ Kiểm tra đầu vào: thêm câu HSK 2.
-- ✅ Kiểm tra và chạy thử. ⬜ Commit và push.
+- ✅ Kiểm tra, chạy thử, commit và push.
 
 ## Giai đoạn 3 · HSK 3 (HSK 2.0) ✅
 
@@ -88,14 +88,14 @@ Còn treo:
 - ✅ Thêm luyện tập Chọn vị trí từ, Sửa câu sai, Luyện dịch (đều có dữ liệu cấp 3).
 - ✅ Đề HSK 3 có phần Viết: bộ sinh đề đã có sắp xếp câu (5) và viết chữ theo pinyin (5).
 - ✅ 4 bài đọc; kiểm tra đầu vào thêm câu HSK 3.
-- ✅ Kiểm tra và chạy thử. ⬜ Commit và push.
+- ✅ Kiểm tra, chạy thử, commit và push.
 
 ## Giai đoạn 4 · HSK 4 (HSK 2.0) ✅
 
 - ✅ Khung từ bài 45–84 và Bổ sung 2012 bài 3: 41 bài → 82 phần, 615 từ. Chia 4 chặng (45–54, 55–64, 65–74, 75–84 + BS 3), mỗi chặng có một bài ôn ngắn 20 câu.
 - ✅ 7 bài đọc; luyện tập đủ 8 chức năng.
 - ✅ Kiểm tra tổng hợp: đề HSK 4. Bài ôn cuối mỗi chặng là kiểm tra giữa giai đoạn; đạt 70% mới mở chặng sau.
-- ✅ Kiểm tra và chạy thử. ⬜ Commit và push.
+- ✅ Kiểm tra, chạy thử, commit và push.
 
 ## Giai đoạn 5 · HSK 5 (HSK 2.0) ✅
 
@@ -103,19 +103,20 @@ Còn treo:
 - ✅ Chia 9 chặng, mỗi chặng 8 bài, khớp nhịp bài đọc; mỗi chặng có bài ôn. ⬜ Chưa chia theo chủ đề.
 - ✅ 8 bài đọc; đề HSK 5. ⬜ Bộ sinh đề chưa có dạng viết đoạn 80 chữ (hiện là 8 câu sắp xếp và 2 câu đặt câu).
 - ✅ Hiệu năng: trang giai đoạn gập theo chặng, mỗi dòng là một bài có các nút phần A/B/C, danh sách trên điện thoại ngắn.
-- ✅ Kiểm tra và chạy thử. ⬜ Commit và push.
+- ✅ Kiểm tra, chạy thử, commit và push.
 
 ## Giai đoạn 6 · HSK 6 (HSK 2.0) ✅
 
 - ✅ Khung từ bài 150–270: 121 bài → 363 phần, 2.421 từ. Chia 12 chặng, mỗi chặng có bài ôn.
 - ✅ 12 bài đọc; đề HSK 6 (101 câu, 135 phút, có 缩写).
-- ⏳ Kho Sửa câu sai, Điền từ, Hỏi đáp cấp 6 đang được bổ sung. Lộ trình đã dẫn tới đủ 8 chức năng.
-- ✅ Kiểm tra và chạy thử. ⬜ Commit và push.
+- ✅ Kho luyện tập cấp 6 đã bổ sung (`5cf2322`, `dc5b479`): Sắp xếp câu 85, Chọn vị trí từ 166, Sửa câu sai 19, Điền từ 119, Hỏi đáp 22 câu. Cả 8 chức năng đều có câu cấp 6.
+- ✅ Kiểm tra, chạy thử, commit và push.
 
 ## Việc chung chưa quyết
 
 - ⬜ **Lộ trình HSK 3.0** (đề cương 2025, thi từ 13/12/2026): web có 5.334 từ HSK 3.0 cấp 1–6, 26 bài bổ sung và 6 đề luyện. Cần chọn một trong hai hướng:
   - (a) Làm lộ trình song song theo HSK 3.0.
   - (b) Giữ lộ trình HSK 2.0 và thêm bài bù phần chênh lệch theo từng cấp.
+- ⬜ **Học offline:** service worker lưu sẵn mọi tệp nạp trong `index.html`, nhưng `js/data/h30-exams.js` (đề luyện HSK 3.0) và `js/data/h30-words-79.js` (từ cấp 7–9) chỉ tải khi mở trang, nên phải mở một lần lúc có mạng mới dùng được offline. Cân nhắc lưu sẵn hai tệp này lúc cài.
 - ⬜ Đồng bộ tiến độ giữa nhiều thiết bị: hiện chỉ lưu trên trình duyệt (xem `03-ke-hoach-trien-khai.md`, giai đoạn 2 có tài khoản).
 - ⬜ Máy jili (`~/nhanle/NihaoStudy`) đang ở bản cũ: chạy `rm HUONG-DAN-SSH.txt`, `git pull`, rồi `git fetch -p` để bỏ các nhánh đã xoá.
