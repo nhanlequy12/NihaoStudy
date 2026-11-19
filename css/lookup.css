@@ -3,7 +3,7 @@
 /* bài đọc: hộp tra thay cho khung nghĩa cũ bên dưới đoạn văn */
 html.lk-on #rpop { display: none; }
 
-.lk-w { cursor: pointer; border-radius: 4px; transition: background 0.12s; -webkit-tap-highlight-color: transparent; }
+.lk-w { cursor: pointer; border-radius: 4px; transition: background 0.12s; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
 @media (hover: hover) and (pointer: fine) { .lk-w:hover { background: var(--primary-soft); } }
 .lk-w.lk-miss { text-decoration: underline dotted var(--border-strong); text-underline-offset: 4px; }
 .lk-w:focus-visible, #rtext .rtok:focus-visible { outline: 2px solid var(--primary-text); outline-offset: 1px; }
@@ -13,7 +13,7 @@ html.lk-on #rpop { display: none; }
   position: fixed; z-index: 110; width: min(360px, calc(100vw - 16px)); max-height: min(70vh, 520px); overflow-y: auto; overscroll-behavior: contain;
   background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius);
   box-shadow: var(--shadow-lg); padding: 14px 16px 16px; outline: none;
-  opacity: 0; transform: translateY(4px); transition: opacity var(--dur-fast, 160ms) var(--ease), transform var(--dur-fast, 160ms) var(--ease);
+  opacity: 0; transform: translateY(4px); transition: opacity var(--dur-fast, 160ms) var(--ease-out), transform var(--dur-fast, 160ms) var(--ease-out);
 }
 .lk-pop.show { opacity: 1; transform: none; }
 .lk-pop[hidden] { display: none; }
@@ -49,7 +49,8 @@ html.lk-on #rpop { display: none; }
 .lk-pop.lk-sheet {
   left: 0; right: 0; top: auto; bottom: 0; width: auto; max-height: 60vh; max-height: 60dvh;
   border-radius: var(--radius-lg) var(--radius-lg) 0 0; border-bottom: 0;
-  padding: 10px 16px calc(16px + env(safe-area-inset-bottom)); transform: translateY(16px);
+  padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(16px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+  transform: translateY(16px);
 }
 .lk-pop.lk-sheet::before { content: ""; display: block; width: 40px; height: 4px; border-radius: 2px; background: var(--border-strong); margin: 0 auto 10px; }
 .lk-pop.lk-sheet.show { transform: none; }

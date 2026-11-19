@@ -23,6 +23,9 @@
   // hoặc chữ đơn một âm theo CC-CEDICT (lấy từ bảng âm tiết: ô không kèm từ ví dụ là chữ chỉ có một cách đọc).
   const pyOfHz = new Map();
   W.VOCAB.forEach((w) => { const s = pyOfHz.get(w.hz) || new Set(); s.add(nfc(w.py)); pyOfHz.set(w.hz, s); });
+  // mã bài → từ của bài (giữ thứ tự VOCAB), dựng một lần thay vì lọc VOCAB cho từng bài
+  const wordsOf = new Map();
+  W.VOCAB.forEach((w) => { const a = wordsOf.get(w.l); if (a) a.push(w); else wordsOf.set(w.l, [w]); });
   const MONO = new Map();
   (W.SYLLABLES || []).forEach((r) => r[3].forEach((c, t) => { if (c && !c[1] && t < 4) MONO.set(c[0], nfc(r[2][t])); }));
   const canHear = (w) => /^[一-鿿]+$/.test(w.hz) && pyOfHz.get(w.hz).size === 1 && (w.hz.length > 1 || MONO.get(w.hz) === nfc(w.py));
@@ -34,7 +37,7 @@
     p.sentences.length * MIN.sentence + p.quiz.length * MIN.question + (p.tips ? MIN.tips : 0) + MIN.base);
 
   function partsOf(L, N) {
-    const words = W.VOCAB.filter((w) => w.l === L.id);
+    const words = wordsOf.get(L.id) || [];
     const k = words.length >= 18 ? 3 : 2;
     const ws = cut(words, k), gs = cut(L.grammar.map((_, i) => i), k);
     // câu sắp xếp: tối đa 3 câu mẫu có từ 3 mảnh trở lên, rải đều trong danh sách

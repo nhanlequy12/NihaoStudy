@@ -490,7 +490,7 @@
           <div class="zh fl-sent" id="flsent">${esc(it.before)}${blank}${esc(it.after)}</div>
           ${easy || hard ? `<div class="fl-vi">${esc(it.vi)}</div>` : `<details class="fl-hint"><summary>${ic("info")}Gợi ý: xem nghĩa câu</summary><div class="fl-vi">${esc(it.vi)}</div></details>`}
           ${hard
-            ? `<div class="fl-type"><input id="flin" class="search" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Chữ Hán hoặc pinyin" aria-label="Từ còn thiếu"><button class="btn btn-primary" id="check">${ic("check")} Kiểm tra</button></div>
+            ? `<div class="fl-type"><input id="flin" class="search" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="Chữ Hán hoặc pinyin" aria-label="Từ còn thiếu"><button class="btn btn-primary" id="check">${ic("check")} Kiểm tra</button></div>
                <div class="small muted fl-len">Từ cần điền có ${nHz(it.hz)} chữ.</div>`
             : `<div class="options fl-opts" id="opts">${opts.map((o, k) => `<button class="option fl-opt" data-o="${esc(o.hz)}"><span class="opt-key">${L4[k]}</span><span class="fl-ot"><span class="zh">${esc(o.hz)}</span>${easy ? `<span class="fl-opy">${esc(o.py)}</span>` : ""}</span></button>`).join("")}</div>`}
           <div id="fb"></div>

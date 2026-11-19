@@ -10,7 +10,8 @@ Mọi giá trị dưới đây là biến CSS trong `css/style.css` (`:root` và
 |---|---|
 | `--bg`, `--surface`, `--surface-2`, `--surface-3` | Nền trang, thẻ, nền phụ (ô, thanh tab), nền nhấn |
 | `--text`, `--text-2`, `--muted` | Chữ chính, chữ phụ, chú thích |
-| `--border`, `--border-strong` | Viền thẻ, viền nút và ô nhập |
+| `--border`, `--border-strong` | Viền thẻ, viền nút |
+| `--border-input` | Viền ô nhập (ô tìm, ô chọn, ô số): đậm hơn để đạt 3:1 |
 | `--primary` (đỏ son) | Chỉ cho **một** hành động chính mỗi màn hình, huy hiệu đếm thẻ |
 | `--green` / `--danger` / `--gold` / `--blue` | Đúng, sai, đang học/nhắc nhở, thông tin |
 | `--tone1`…`--tone5` | Màu thanh điệu của pinyin (1 xanh dương, 2 xanh lá, 3 tím, 4 đỏ, nhẹ xám đậm) |
@@ -65,7 +66,8 @@ Nguyên tắc: ít mà có lý do. Thao tác lặp hàng trăm lần mỗi ngày
 
 - Chỉ animate `transform` và `opacity`; không dùng `transition: all`.
 - Hiệu ứng hover luôn nằm trong `@media (hover: hover) and (pointer: fine)` để không bị «dính» trên điện thoại.
-- Có `prefers-reduced-motion`: bỏ chuyển động vị trí, giữ đổi màu.
+- Có `prefers-reduced-motion`: bỏ chuyển động vị trí và co giãn (rung khi sai, co khi nhấn, bảng trượt chỉ mờ dần), giữ đổi màu và mờ dần.
+- Sai: rung ±3px trong 180ms; đúng: chỉ đổi màu, không nảy. Khung chờ tải: mờ nhịp 1.2s, trễ 300ms.
 
 ## Cử chỉ
 

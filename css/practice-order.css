@@ -7,9 +7,9 @@
 .od-bank { display: flex; flex-wrap: wrap; gap: 10px; min-height: 52px; padding: 4px 0; }
 .od-chip { position: relative; display: inline-flex; align-items: center; gap: 6px; min-height: 46px; padding: 6px 14px; border: 1px solid var(--border-strong); border-radius: var(--radius-sm);
   background: var(--surface); color: var(--text); font-size: calc(1.3rem * var(--zh-scale)); cursor: grab; touch-action: none; user-select: none; box-shadow: var(--shadow-sm);
-  transition: transform 0.12s var(--ease), box-shadow 0.12s var(--ease), background 0.12s var(--ease); }
+  transition: border-color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out); }
 .od-chip small { font: 600 0.7rem var(--font); color: var(--muted); }
-@media (hover: hover) and (pointer: fine) { .od-chip:hover:not(:disabled) { transform: translateY(-2px); box-shadow: var(--shadow); } }
+@media (hover: hover) and (pointer: fine) { .od-chip:hover:not(:disabled) { border-color: var(--text-2); } }
 .od-chip:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
 .od-answer .od-chip { border-color: var(--text-2); background: var(--surface); }
 .od-chip.od-lifted { opacity: 0.3; }

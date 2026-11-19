@@ -145,9 +145,9 @@
   setZh(Store.state.settings.zhSize);
   document.querySelectorAll(".theme-toggle").forEach((b) => b.onclick = () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark"));
   document.getElementById("more-btn").onclick = () => UI.openSheet();
-  document.getElementById("sheet-backdrop").onclick = () => UI.closeSheet();
+  document.getElementById("sheet-backdrop").onclick = () => UI.closeSheet(true);
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && document.getElementById("sheet").classList.contains("open")) { UI.closeSheet(); return; }
+    if (e.key === "Escape" && document.getElementById("sheet").classList.contains("open")) { UI.closeSheet(true); return; }
     if (App.keyHandler) App.keyHandler(e);
   });
   Practice.initMenu();

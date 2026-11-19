@@ -17,17 +17,17 @@
 @media (hover: hover) and (pointer: fine) { .fx-seg:hover:not(:disabled) { border-color: var(--border-strong); background: var(--surface-2); } }
 .fx-seg:focus-visible, .fx-opt:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
 .fx-seg:disabled { cursor: default; }
-.fx-seg.fx-answer { border-color: var(--danger); background: var(--danger-soft); animation: pop 0.25s var(--ease); }
+.fx-seg.fx-answer { border-color: var(--danger); background: var(--danger-soft); }
 .fx-seg.fx-answer .fx-seg-zh { border-bottom: 2px dashed var(--danger); color: var(--danger); }
 .fx-seg.fx-answer .fx-seg-key { color: var(--danger); }
-.fx-seg.fx-miss { border-style: dashed; opacity: 0.7; animation: shake 0.3s; }
+.fx-seg.fx-miss { border-style: dashed; opacity: 0.7; animation: shake 180ms var(--ease-out); }
 
 /* Mức Khó: 4 câu */
 .fx-opts { margin-top: 0; gap: 10px; }
 .fx-opt { display: flex; gap: 12px; align-items: center; text-align: left; padding: 12px 16px; min-height: 56px; }
 .fx-opt-zh { font-size: calc(1.3rem * var(--zh-scale)); line-height: 1.45; overflow-wrap: anywhere; }
-.fx-opt.fx-answer { border-color: var(--danger); background: var(--danger-soft); animation: pop 0.25s var(--ease); }
-.fx-opt.fx-miss { border-style: dashed; opacity: 0.75; animation: shake 0.3s; }
+.fx-opt.fx-answer { border-color: var(--danger); background: var(--danger-soft); }
+.fx-opt.fx-miss { border-style: dashed; opacity: 0.75; animation: shake 180ms var(--ease-out); }
 .fx-kbd { margin-top: 12px; }
 
 /* Phản hồi */

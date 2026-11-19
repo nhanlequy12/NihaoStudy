@@ -10,6 +10,14 @@
     return esc(py).replace(SYL, (syl) => `<span class="t${toneOf(syl)}">${syl}</span>`);
   }
   const speakBtn = (text, cls = "btn btn-icon btn-sm", label = "") => `<button class="${cls} speak" data-say="${esc(text)}" title="${label ? "Nghe " + label.toLowerCase() : "Nghe"}" aria-label="${label ? "Nghe " + label.toLowerCase() : "Nghe"}">${ic("volume")}${label ? `<span>${label}</span>` : ""}</button>`;
+  // Chấm bằng phím 1–4: nháy nút tương ứng ~100ms để thấy mình vừa chọn gì
+  const flashGrade = (root, g, fn) => {
+    const b = root.querySelector(`.grade-btns [data-grade="${g}"]`);
+    if (!b || b.disabled) return fn();
+    if (root.querySelector(".grade-btns .flash")) return;
+    b.classList.add("flash");
+    setTimeout(() => { if (b.isConnected) fn(); }, 100); // thẻ đã đổi (bấm/vuốt) hoặc đã rời trang thì bỏ
+  };
   const bindSpeak = (el) => el.querySelectorAll("[data-say]").forEach((b) => b.addEventListener("click", (e) => { e.stopPropagation(); TTS.speak(b.dataset.say); }));
 
   // Cấp độ HSK: suy ra từ trường level hoặc id bài
@@ -82,32 +90,32 @@
         <div class="segmented" role="tablist" aria-label="Chương trình">${[["hsk3", "HSK 3.0"], ["hsk2", "HSK 2.0"]].map(([k, v]) => `<button role="tab" aria-selected="${course === k}" class="${course === k ? "active" : ""}" data-course="${k}">${v}</button>`).join("")}</div></div>
       <div class="mt">${course === "hsk3" && window.H3V ? H3V.homeCard() : hsk2Progress}</div>
 
-      <div class="grid grid-3 mt stat-row">
+      ${fresh ? "" : `<div class="grid grid-3 mt stat-row">
         <div class="card stat"><div class="stat-value">${learnedWords}</div><div class="stat-label">từ trong bộ thẻ</div></div>
-        <div class="card stat"><div class="stat-value" style="color:var(--green)">${st.mature}</div><div class="stat-label">từ đã thuộc (≥ 21 ngày)</div></div>
-        <div class="card stat"><div class="stat-value" style="color:var(--gold-text)">${s.xp}</div><div class="stat-label">điểm kinh nghiệm</div></div>
-      </div>
+        <div class="card stat"><div class="stat-value green">${st.mature}</div><div class="stat-label">từ đã thuộc (≥ 21 ngày)</div></div>
+        <div class="card stat"><div class="stat-value gold">${s.xp}</div><div class="stat-label">điểm kinh nghiệm</div></div>
+      </div>`}
 
       <div class="grid grid-2 mt">
         <div class="card">
-          <h3 style="margin-top:0">Thói quen 30 phút mỗi ngày</h3>
+          <h3>Thói quen 30 phút mỗi ngày</h3>
           <div class="checklist">
             ${DAILY_ROUTINE.map((r) => `<label class="${routine[r.key] ? "done" : ""}"><input type="checkbox" disabled ${routine[r.key] ? "checked" : ""}><span style="flex:1"><b>${r.min} phút</b> · ${esc(r.what)}</span><a class="btn btn-sm" href="${r.route}">Đi ${ic("next")}</a></label>`).join("")}
           </div>
           <p class="small muted" style="margin:10px 0 0">Ô tự tích khi bạn làm xong hoạt động tương ứng.</p>
         </div>
         <div class="card">
-          <h3 style="margin-top:0">Bộ thẻ ôn tập <span class="muted" style="font-weight:600">· ${st.total} thẻ</span></h3>
+          <h3>Bộ thẻ ôn tập <span class="muted" style="font-weight:600">· ${st.total} thẻ</span></h3>
           <div class="row small"><span class="pill gold">Đang học ${st.learning}</span><span class="pill blue">Non ${st.young}</span><span class="pill green">Thuộc ${st.mature}</span></div>
-          <div class="forecast mt" aria-label="Dự báo số thẻ 7 ngày tới">${st.forecast.map((n, i) => { const mx = Math.max(1, ...st.forecast); return `<div title="${n} thẻ"><span style="height:${Math.round((n / mx) * 100)}%"></span><small>${i === 0 ? "Nay" : "+" + i}</small></div>`; }).join("")}</div>
+          ${fresh ? "" : `<div class="forecast mt" aria-label="Dự báo số thẻ 7 ngày tới">${st.forecast.map((n, i) => { const mx = Math.max(1, ...st.forecast); return `<div title="${n} thẻ"><span style="height:${Math.round((n / mx) * 100)}%"></span><small>${i === 0 ? "Nay" : "+" + i}</small></div>`; }).join("")}</div>`}
           <p class="small muted" style="margin:10px 0 0">Thẻ viết đến hạn: <a href="#/write">${wdue}</a> · Đọc hiểu đã làm: <a href="#/read">${Object.keys(s.readings || {}).length}/${READINGS.length}</a></p>
         </div>
       </div>
 
-      <div class="card mt">
+      ${fresh ? "" : `<div class="card mt">
         <div class="row between"><h3 style="margin:0">Hoạt động 8 tuần gần đây</h3><a class="small" href="#/stats">Xem thống kê đầy đủ</a></div>
         <div class="heat mt">${days.join("")}</div>
-      </div>
+      </div>`}
 
       <div class="grid grid-3 mt">
         <a class="card lesson-card" href="#/pinyin"><div class="lesson-icon">拼</div><div class="lesson-body"><div class="lesson-title">Pinyin Lab</div><div class="lesson-meta">Thanh mẫu, vận mẫu, luyện nghe thanh điệu</div></div></a>
@@ -146,7 +154,7 @@
       </div>
       <h2>Phương pháp đã được so sánh</h2>
       <div class="grid grid-2">
-        <div class="card"><h3 style="margin-top:0">Lấy từ các app tốt nhất</h3>
+        <div class="card"><h3>Lấy từ các app tốt nhất</h3>
           <ul class="small">
             <li><b>HelloChinese:</b> bài học theo chủ đề, ngữ pháp ngắn kèm ví dụ, nhận dạng giọng nói, viết chữ theo nét.</li>
             <li><b>Anki / Hack Chinese:</b> ôn tập ngắt quãng theo từng từ (SM-2), chấm 4 mức, dự báo số thẻ.</li>
@@ -154,7 +162,7 @@
             <li><b>Pleco:</b> từ điển tra nhanh, thêm thẳng vào bộ thẻ.</li>
             <li><b>Du Chinese / Migaku:</b> học từ trong câu thật, nghe nhiều lượt.</li>
           </ul></div>
-        <div class="card"><h3 style="margin-top:0">Tránh điểm yếu của chúng</h3>
+        <div class="card"><h3>Tránh điểm yếu của chúng</h3>
           <ul class="small">
             <li>Duolingo: ôn lặp cơ bản, không bám HSK, ít luyện thanh điệu → ở đây có SRS thật và Pinyin Lab riêng.</li>
             <li>HelloChinese: ôn theo bài chứ không theo từ → ở đây mỗi từ có lịch ôn riêng.</li>
@@ -176,7 +184,7 @@
         <div class="card tone-card"><div class="mark t${t.n}">${t.mark}</div>
           <svg viewBox="0 0 100 70"><line x1="5" y1="10" x2="5" y2="65" stroke="var(--border)"/><line x1="5" y1="65" x2="95" y2="65" stroke="var(--border)"/><path d="${t.path}" stroke="var(--tone${t.n})" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
           <b>${esc(t.name)}</b><p class="small" style="margin:6px 0">${esc(t.desc)}</p><p class="small muted" style="margin:0 0 8px"><b>Người Việt:</b> ${esc(t.vi)}</p>
-          <div class="row" style="justify-content:center">${t.ex.map((e) => `<button class="btn btn-sm" data-say="${esc(e.split(" ")[1])}">${esc(e)}</button>`).join("")}</div>
+          <div class="row center">${t.ex.map((e) => `<button class="btn btn-sm" data-say="${esc(e.split(" ")[1])}">${esc(e)}</button>`).join("")}</div>
         </div>`).join("")}</div>
         <h2>Quy tắc biến điệu</h2>
         <div class="grid grid-2">${PINYIN.toneRules.map((r) => `<div class="grammar"><div class="pattern">${esc(r.title)}</div><div class="small">${esc(r.body)}</div></div>`).join("")}</div>
@@ -333,7 +341,7 @@
         const tokens = q.s[0].split(" ");
         html += `<div class="quiz-q"><div class="prompt">Sắp xếp thành câu: <b>${esc(q.s[2])}</b></div><div class="sub">${pyHtml(q.s[1])}</div></div>
           <div class="tiles" id="answer"></div><p class="small muted center" style="margin:6px">bấm vào từ để chuyển lên / xuống</p><div class="tiles" id="bank">${shuffle(tokens).map((t, k) => `<button class="tile" data-k="${k}">${esc(t)}</button>`).join("")}</div>
-          <div class="row mt" style="justify-content:center"><button class="btn btn-primary" id="check">Kiểm tra</button></div><div id="fb"></div>`;
+          <div class="row mt center"><button class="btn btn-primary" id="check">Kiểm tra</button></div><div id="fb"></div>`;
         box.innerHTML = html;
         const ans = box.querySelector("#answer"), bank = box.querySelector("#bank");
         box.querySelectorAll(".tile").forEach((t) => t.onclick = () => (t.parentElement === bank ? ans : bank).appendChild(t));
@@ -361,7 +369,7 @@
       results[i] = ok; if (ok) correct++;
       if (say) TTS.speak(say);
       const fb = box.querySelector("#fb");
-      fb.innerHTML = `<div class="feedback ${ok ? "ok" : "bad"}">${ok ? "Chính xác! 🎉" : "Chưa đúng."} Đáp án: ${answerHtml}</div><div class="center mt"><button class="btn btn-primary" id="nx">${i + 1 < list.length ? "Câu tiếp →" : "Xem kết quả"}</button></div>`;
+      fb.innerHTML = `<div class="feedback ${ok ? "ok" : "bad"}">${ok ? "Chính xác!" : "Chưa đúng."} Đáp án: ${answerHtml}</div><div class="center mt"><button class="btn btn-primary" id="nx">${i + 1 < list.length ? "Câu tiếp →" : "Xem kết quả"}</button></div>`;
       box.querySelector("#check") && (box.querySelector("#check").disabled = true);
       fb.querySelector("#nx").onclick = () => { i++; render(); };
       fb.querySelector("#nx").focus();
@@ -380,9 +388,9 @@
         Store.save();
         App.updateBadge();
       }
-      box.innerHTML = `<div class="card center"><div style="font-size:3rem">${pass ? "🎉" : "💪"}</div><h2 style="margin:6px 0">${pct}% · ${correct}/${list.length} câu đúng</h2>
+      box.innerHTML = `<div class="card center"><div class="result-ic ${pass ? "ok" : ""}">${ic(pass ? "trophy" : "repeat")}</div><h2 style="margin:6px 0">${pct}% · ${correct}/${list.length} câu đúng</h2>
         <p class="muted">${pass ? `Bạn đã hoàn thành ${esc(lessonName(L))}!${added ? ` ${added} từ mới đã được thêm vào bộ thẻ ôn tập và bộ thẻ luyện viết.` : ""}${READINGS.find((r) => r.after === L.id) ? ` Có bài đọc mới mở khóa: <a href="#/read/${READINGS.find((r) => r.after === L.id).id}">đọc ngay</a>.` : ""}` : "Cần đạt 70% để hoàn thành. Hãy xem lại từ vựng rồi thử lại nhé."}</p>
-        <div class="row" style="justify-content:center"><button class="btn" id="again">Làm lại</button>${pass ? `<a class="btn btn-primary" href="#/review">Ôn tập ngay</a>${L.h3 ? (H3.lessons[L.no] ? `<a class="btn" href="#/lesson/${H3.lessons[L.no].id}">Bài bổ sung ${L.no + 1} →</a>` : "") : nextLessonOf(L) ? `<a class="btn" href="#/lesson/${nextLessonOf(L).id}">${lessonName(nextLessonOf(L))} →</a>` : ""}` : `<a class="btn btn-primary" href="#/lesson/${L.id}/vocab">Xem lại từ vựng</a>`}</div></div>`;
+        <div class="row center"><button class="btn" id="again">Làm lại</button>${pass ? `<a class="btn btn-primary" href="#/review">Ôn tập ngay</a>${L.h3 ? (H3.lessons[L.no] ? `<a class="btn" href="#/lesson/${H3.lessons[L.no].id}">Bài bổ sung ${L.no + 1} →</a>` : "") : nextLessonOf(L) ? `<a class="btn" href="#/lesson/${nextLessonOf(L).id}">${lessonName(nextLessonOf(L))} →</a>` : ""}` : `<a class="btn btn-primary" href="#/lesson/${L.id}/vocab">Xem lại từ vựng</a>`}</div></div>`;
       box.querySelector("#again").onclick = () => quiz(box, L, words);
     }
     render();
@@ -403,7 +411,7 @@
         let front = Store.state.settings.reviewFront || "hz", flipped = false, doneCount = 0, answer = null; // answer: { ok, text }
         let tones = [];
         const st = SRS.stats();
-        if (st.total === 0) { box.innerHTML = `<div class="card center"><p>Bạn chưa có thẻ nào. Hoàn thành bài học đầu tiên để bắt đầu bộ thẻ.</p><a class="btn btn-primary" href="#/lesson/1">Vào Bài 1</a></div>`; return; }
+        if (st.total === 0) { box.innerHTML = `<div class="card center empty"><div class="big-ic">${ic("repeat")}</div><h2>Chưa có thẻ nào</h2><p class="muted">Hoàn thành bài học đầu tiên để bắt đầu bộ thẻ.</p><a class="btn btn-primary" href="#/lesson/1">Vào Bài 1</a></div>`; return; }
         const MODES = [["hz", "Chữ Hán"], ["vi", "Tiếng Việt"], ["audio", "Nghe"], ["cloze", "Câu"], ["type", "Gõ pinyin"], ["tone", "Thanh điệu"]];
         const canCloze = (w) => w.ex && w.ex[0] && w.ex[0].includes(w.hz) && w.ex[0].replace(w.hz, "").replace(/[，。！？、,.!?\s]/g, "").length >= 2;
 
@@ -412,9 +420,9 @@
           if (!queue.length) {
             Store.markRoutine("review");
             const s2 = SRS.stats(), hard = SRS.hardest(8).map(vocabById).filter(Boolean);
-            box.innerHTML = `<div class="card center"><div style="font-size:3rem">✅</div><h2 style="margin:6px 0">${doneCount ? `Đã ôn ${doneCount} thẻ. ` : ""}Hết thẻ cần ôn!</h2><p class="muted">Bộ thẻ: ${s2.total} từ · Ngày mai: ${s2.forecast[1]} thẻ · 7 ngày tới: ${s2.forecast.reduce((a, b) => a + b, 0)} thẻ</p>
-              <div class="row" style="justify-content:center"><a class="btn btn-primary" href="#/lessons">Học bài mới</a><button class="btn" id="extra">Ôn thêm 10 thẻ bất kỳ</button>${WSRS.dueIds().length ? `<a class="btn" href="#/write">${ic("pen")} ${WSRS.dueIds().length} thẻ viết đến hạn</a>` : ""}</div></div>
-              ${hard.length ? `<div class="card mt"><h3 style="margin-top:0">Từ hay quên nhất</h3><div class="row">${hard.map((w) => `<span class="pill red zh" title="${esc(w.vi)}">${esc(w.hz)} ${esc(w.py)} · quên ${Store.state.cards[w.id].lapses} lần</span>`).join("")}</div><button class="btn btn-sm mt" id="hardbtn">Ôn riêng nhóm này</button></div>` : ""}`;
+            box.innerHTML = `<div class="card center"><div class="result-ic ok">${ic("check")}</div><h2 style="margin:6px 0">${doneCount ? `Đã ôn ${doneCount} thẻ. ` : ""}Hết thẻ cần ôn!</h2><p class="muted">Bộ thẻ: ${s2.total} từ · Ngày mai: ${s2.forecast[1]} thẻ · 7 ngày tới: ${s2.forecast.reduce((a, b) => a + b, 0)} thẻ</p>
+              <div class="row center"><a class="btn btn-primary" href="#/lessons">Học bài mới</a><button class="btn" id="extra">Ôn thêm 10 thẻ bất kỳ</button>${WSRS.dueIds().length ? `<a class="btn" href="#/write">${ic("pen")} ${WSRS.dueIds().length} thẻ viết đến hạn</a>` : ""}</div></div>
+              ${hard.length ? `<div class="card mt"><h3>Từ hay quên nhất</h3><div class="row">${hard.map((w) => `<span class="pill red zh" title="${esc(w.vi)}">${esc(w.hz)} ${esc(w.py)} · quên ${Store.state.cards[w.id].lapses} lần</span>`).join("")}</div><button class="btn btn-sm mt" id="hardbtn">Ôn riêng nhóm này</button></div>` : ""}`;
             box.querySelector("#extra").onclick = () => { queue = shuffle(SRS.allIds()).slice(0, 10); render(); };
             const hb = box.querySelector("#hardbtn"); if (hb) hb.onclick = () => { queue = shuffle(SRS.hardest(8)); render(); };
             return;
@@ -422,7 +430,7 @@
           const id = queue[0], w = vocabById(id);
           if (!w) { queue.shift(); return render(); }
           const mode = front === "cloze" && !canCloze(w) ? "hz" : front;
-          box.innerHTML = `<div class="rv-bar"><span class="pill red">Còn ${queue.length} thẻ</span><span class="rv-front"><label for="rv-front">Mặt trước</label><select id="rv-front">${MODES.map(([k, v]) => `<option value="${k}" ${front === k ? "selected" : ""}>${v}</option>`).join("")}</select></span></div>
+          box.innerHTML = `<div class="rv-bar"><span class="pill">Còn ${queue.length} thẻ</span><span class="rv-front"><label for="rv-front">Mặt trước</label><select id="rv-front">${MODES.map(([k, v]) => `<option value="${k}" ${front === k ? "selected" : ""}>${v}</option>`).join("")}</select></span></div>
             <div class="card flashcard" id="fc">${cardFace(w, mode)}</div>
             <div id="grades">${flipped ? gradeBtns(id) + `<p class="swipe-tip small muted">Vuốt thẻ sang phải: Tốt · sang trái: Quên</p>` : ["type", "tone"].includes(mode) ? "" : `<button class="btn btn-primary btn-block btn-lg mt" id="flip">Lật thẻ (Space)</button>`}</div>`;
           box.querySelector("#rv-front").onchange = (e) => { front = e.target.value; Store.state.settings.reviewFront = front; Store.save(); flipped = false; answer = null; tones = []; render(); };
@@ -517,10 +525,10 @@
             if (mode === "vi") return `<div class="vi" style="font-size:1.8rem;font-weight:700">${esc(w.vi)}</div><div class="hv">${esc(w.hv)}</div><p class="muted small">Nhớ chữ Hán và cách đọc, rồi lật thẻ</p>`;
             if (mode === "audio") return `<div class="big-ic">${ic("volume")}</div>${speakBtn(w.hz, "btn", "Nghe lại")}<p class="muted small">Nghe và nhớ chữ, nghĩa, rồi lật thẻ</p>`;
             if (mode === "cloze") return `<div class="zh" style="font-size:2rem;font-weight:500;line-height:1.5">${clozeHtml(w)}</div><div class="muted" style="margin-top:8px">${esc(w.ex[2])}</div><p class="muted small">Từ nào điền vào chỗ trống? Nhớ chữ và cách đọc, rồi lật thẻ</p>`;
-            if (mode === "type") return `<div class="hz">${esc(w.hz)}</div><p class="muted small" style="margin:6px 0">Gõ pinyin không dấu (có thể thêm số thanh: ni3hao3)</p><div class="row" style="justify-content:center"><input class="search" id="pyin" style="max-width:260px;text-align:center;font-size:1.2rem" autocomplete="off" placeholder="nihao"><button class="btn btn-primary" id="pycheck">Kiểm tra</button></div>`;
+            if (mode === "type") return `<div class="hz">${esc(w.hz)}</div><p class="muted small" style="margin:6px 0">Gõ pinyin không dấu (có thể thêm số thanh: ni3hao3)</p><div class="row center"><input class="search" id="pyin" style="max-width:260px;text-align:center;font-size:1.2rem" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="nihao"><button class="btn btn-primary" id="pycheck">Kiểm tra</button></div>`;
             if (mode === "tone") {
               const syls = sylsOf(w.py), n = syls.length;
-              return `<div class="hz">${esc(w.hz)}</div><div class="row" style="justify-content:center;margin:8px 0;font-size:1.4rem;font-weight:600">${syls.map((s, i) => `<span class="pill ${i === tones.length ? "red" : tones[i] ? "green" : ""}" style="font-size:1.1rem">${esc(stripTone(s))}${tones[i] ? " · " + (tones[i] === 5 ? "nhẹ" : tones[i]) : ""}</span>`).join("")}</div><p class="muted small">Chọn thanh điệu cho âm tiết ${tones.length + 1}/${n}</p><div class="row" style="justify-content:center">${TONE_MARKS.map((m, i) => `<button class="btn btn-lg t${i + 1}" data-tone="${i + 1}" style="font-size:1.4rem;min-width:60px">${m}<br><small>${i === 4 ? "nhẹ" : i + 1}</small></button>`).join("")}</div>${tones.length ? `<button class="btn btn-sm btn-ghost mt" id="toneundo">↶ Chọn lại</button>` : ""}`;
+              return `<div class="hz">${esc(w.hz)}</div><div class="row center" style="margin:8px 0;font-size:1.4rem;font-weight:600">${syls.map((s, i) => `<span class="pill ${i === tones.length ? "red" : tones[i] ? "green" : ""}" style="font-size:1.1rem">${esc(stripTone(s))}${tones[i] ? " · " + (tones[i] === 5 ? "nhẹ" : tones[i]) : ""}</span>`).join("")}</div><p class="muted small">Chọn thanh điệu cho âm tiết ${tones.length + 1}/${n}</p><div class="row center">${TONE_MARKS.map((m, i) => `<button class="btn btn-lg t${i + 1}" data-tone="${i + 1}" style="font-size:1.4rem;min-width:60px">${m}<br><small>${i === 4 ? "nhẹ" : i + 1}</small></button>`).join("")}</div>${tones.length ? `<button class="btn btn-sm btn-ghost mt" id="toneundo">↶ Chọn lại</button>` : ""}`;
             }
           }
           const fb = answer ? `<div class="feedback ${answer.ok ? "ok" : "bad"}" style="margin-bottom:10px">${answer.ok ? "Chính xác!" : "Chưa đúng"} · bạn trả lời: <b>${esc(answer.text || "(trống)")}</b>${answer.want && !answer.ok ? ` · đúng là <b>${esc(answer.want)}</b>` : ""}</div>` : "";
@@ -542,7 +550,7 @@
         App.keyHandler = (e) => {
           if (e.target.tagName === "INPUT") return;
           if (e.code === "Space") { e.preventDefault(); if (!flipped && queue.length && !["type", "tone"].includes(front)) flip(vocabById(queue[0])); }
-          else if (flipped && ["1", "2", "3", "4"].includes(e.key)) doGrade(+e.key);
+          else if (flipped && ["1", "2", "3", "4"].includes(e.key)) flashGrade(box, +e.key, () => doGrade(+e.key));
           else if (!flipped && front === "tone" && ["1", "2", "3", "4", "5"].includes(e.key)) { const w = vocabById(queue[0]); tones.push(+e.key); if (tones.length >= sylsOf(w.py).length) checkTones(w); else render(); }
         };
         render();
@@ -575,7 +583,7 @@
     const st = WSRS.stats();
     if (st.total === 0) {
       const learned = SRS.allIds().filter((id) => { const w = vocabById(id); return w && /^[一-鿿]+$/.test(w.hz); });
-      return { html: `<div class="card center"><p>Chưa có thẻ viết. Từ vựng tự vào bộ thẻ viết khi bạn hoàn thành bài học.</p>${learned.length ? `<button class="btn btn-primary" id="seed">Thêm ${learned.length} từ đã học vào bộ thẻ viết</button>` : `<a class="btn btn-primary" href="#/lesson/1">Vào Bài 1</a>`}</div>`, after(el) { const s = el.querySelector("#seed"); if (s) s.onclick = () => { WSRS.addWords(learned); toast("Đã thêm"); App.route(); }; } };
+      return { html: `<div class="card center empty"><div class="big-ic">${ic("pen")}</div><h2>Chưa có thẻ viết</h2><p class="muted">Từ vựng tự vào bộ thẻ viết khi bạn hoàn thành bài học.</p>${learned.length ? `<button class="btn btn-primary" id="seed">Thêm ${learned.length} từ đã học vào bộ thẻ viết</button>` : `<a class="btn btn-primary" href="#/lesson/1">Vào Bài 1</a>`}</div>`, after(el) { const s = el.querySelector("#seed"); if (s) s.onclick = () => { WSRS.addWords(learned); toast("Đã thêm"); App.route(); }; } };
     }
     return {
       html: `<div id="wsrs"></div>`,
@@ -588,7 +596,7 @@
           if (!queue.length) {
             Store.markRoutine("write");
             const s2 = WSRS.stats();
-            box.innerHTML = `<div class="card center"><div class="big-ic">${ic("pen")}</div><h2 style="margin:6px 0">${done ? `Đã viết ${done} từ. ` : ""}Hết thẻ viết cần ôn!</h2><p class="muted">Bộ thẻ viết: ${s2.total} từ · Ngày mai: ${s2.forecast[1]} · 7 ngày tới: ${s2.forecast.reduce((x, y) => x + y, 0)}</p><div class="row" style="justify-content:center"><button class="btn" id="extra">Viết thêm 5 từ bất kỳ</button><a class="btn" href="#/write/free">Luyện từng chữ</a></div></div>`;
+            box.innerHTML = `<div class="card center"><div class="big-ic">${ic("pen")}</div><h2 style="margin:6px 0">${done ? `Đã viết ${done} từ. ` : ""}Hết thẻ viết cần ôn!</h2><p class="muted">Bộ thẻ viết: ${s2.total} từ · Ngày mai: ${s2.forecast[1]} · 7 ngày tới: ${s2.forecast.reduce((x, y) => x + y, 0)}</p><div class="row center"><button class="btn" id="extra">Viết thêm 5 từ bất kỳ</button><a class="btn" href="#/write/free">Luyện từng chữ</a></div></div>`;
             box.querySelector("#extra").onclick = () => { queue = shuffle(WSRS.allIds()).slice(0, 5); render(); };
             return;
           }
@@ -596,11 +604,11 @@
           if (!w) { queue.shift(); return render(); }
           const chars = w.hz.split(""), size = chars.length === 1 ? 240 : chars.length === 2 ? 190 : 150;
           idx = 0; mistakes = 0; hinted = false; finished = false; writers = [];
-          box.innerHTML = `<div class="row between mb"><span class="pill red">Còn ${queue.length} thẻ viết</span><span class="small muted">Từ ${chars.length} chữ · viết lần lượt từng chữ</span></div>
+          box.innerHTML = `<div class="row between mb"><span class="pill">Còn ${queue.length} thẻ viết</span><span class="small muted">Từ ${chars.length} chữ · viết lần lượt từng chữ</span></div>
             <div class="card center"><div style="font-size:1.6rem;font-weight:700">${pyHtml(w.py)}</div><div class="muted">${esc(w.vi)} ${w.hv ? `<span class="hv">${esc(w.hv)}</span>` : ""}</div>
-              <div class="row mt" style="justify-content:center;gap:12px">${chars.map((c, i) => `<div class="writer-target" id="wt${i}" style="width:${size}px;height:${size}px;${i === 0 ? "border-color:var(--primary)" : ""}"></div>`).join("")}</div>
+              <div class="row mt center" style="gap:12px">${chars.map((c, i) => `<div class="writer-target" id="wt${i}" style="width:${size}px;height:${size}px;${i === 0 ? "border-color:var(--primary)" : ""}"></div>`).join("")}</div>
               <p class="small muted" id="wmsg" style="min-height:1.4em;margin:10px 0 4px">Viết chữ 1/${chars.length}: <b class="zh">${esc(w.hz)}</b> được che, hãy viết từ trí nhớ</p>
-              <div class="row" style="justify-content:center"><button class="btn btn-sm" id="hint">💡 Gợi ý nét (tính là Khó)</button><button class="btn btn-sm" id="reveal">👁 Xem đáp án (tính là Quên)</button>${speakBtn(w.hz, "btn btn-sm")}</div>
+              <div class="row center"><button class="btn btn-sm" id="hint">💡 Gợi ý nét (tính là Khó)</button><button class="btn btn-sm" id="reveal">👁 Xem đáp án (tính là Quên)</button>${speakBtn(w.hz, "btn btn-sm")}</div>
               <div id="wgrades"></div></div>`;
           bindSpeak(box);
           writers = chars.map((c, i) => HanziWriter.create("wt" + i, c, Object.assign({ width: size, height: size, padding: 10, showCharacter: false, showOutline: false, showHintAfterMisses: 3, strokeAnimationSpeed: 1 }, WRITER_OPTS())));
@@ -625,7 +633,7 @@
           box.querySelector("#wmsg").innerHTML = `${revealed ? "Đã xem đáp án." : `Hoàn thành <b class="zh">${esc(w.hz)}</b> với ${mistakes} nét sai${hinted ? " (có gợi ý)" : ""}.`} Gợi ý chấm: <b>${["", "Quên", "Khó", "Tốt", "Dễ"][sug]}</b>`;
           box.querySelector("#wgrades").innerHTML = `<div class="grade-btns"><button class="btn g1 ${sug === 1 ? "btn-primary" : ""}" data-grade="1">Quên<small>${WSRS.preview(id, 1)} · 1</small></button><button class="btn g2 ${sug === 2 ? "btn-primary" : ""}" data-grade="2" ${maxAllowed < 2 ? "disabled" : ""}>Khó<small>${WSRS.preview(id, 2)} · 2</small></button><button class="btn g3 ${sug === 3 ? "btn-primary" : ""}" data-grade="3" ${maxAllowed < 3 ? "disabled" : ""}>Tốt<small>${WSRS.preview(id, 3)} · 3</small></button><button class="btn g4 ${sug === 4 ? "btn-primary" : ""}" data-grade="4" ${maxAllowed < 4 ? "disabled" : ""}>Dễ<small>${WSRS.preview(id, 4)} · 4</small></button></div>`;
           box.querySelectorAll("[data-grade]").forEach((b) => b.onclick = () => grade(+b.dataset.grade, maxAllowed));
-          App.keyHandler = (e) => { if (["1", "2", "3", "4"].includes(e.key)) grade(+e.key, maxAllowed); };
+          App.keyHandler = (e) => { if (["1", "2", "3", "4"].includes(e.key)) flashGrade(box, +e.key, () => grade(+e.key, maxAllowed)); };
           TTS.speak(w.hz);
         }
         function grade(g, maxAllowed) {
@@ -649,9 +657,9 @@
     const html = `<div class="writer-wrap">
         <div class="card writer-box"><div class="big-zh" style="font-size:2rem;margin-bottom:6px">${esc(target)} ${info ? `<span class="muted" style="font-size:1rem">${pyHtml(info.py)} · ${esc(info.vi)}</span>` : rad ? `<span class="muted" style="font-size:1rem">${esc(rad.py)} · ${esc(rad.hv)} · ${esc(rad.vi)}</span>` : ""}</div>
           <div class="writer-target" id="writer"></div>
-          <div class="row mt" style="justify-content:center"><button class="btn" id="anim">▶ Xem nét</button><button class="btn btn-primary" id="quiz">${ic("pen")} Tự viết</button>${speakBtn(target, "btn")}${info && !WSRS.has(info.id) ? `<button class="btn" id="addw" title="Thêm từ ${esc(info.hz)} vào bộ thẻ viết">+ Thẻ viết</button>` : ""}</div>
+          <div class="row mt center"><button class="btn" id="anim">▶ Xem nét</button><button class="btn btn-primary" id="quiz">${ic("pen")} Tự viết</button>${speakBtn(target, "btn")}${info && !WSRS.has(info.id) ? `<button class="btn" id="addw" title="Thêm từ ${esc(info.hz)} vào bộ thẻ viết">+ Thẻ viết</button>` : ""}</div>
           <p class="small muted center" id="wmsg" style="min-height:1.4em;margin:8px 0 0">Nét: <span id="stroke-count">–</span></p></div>
-        <div class="card"><h3 style="margin-top:0">Chọn chữ ${learned.length ? "đã học" : "(Bài 1)"}</h3><div class="char-picker">${pool.map((c) => `<button class="${c === target ? "active" : ""}" data-ch="${esc(c)}">${esc(c)}</button>`).join("")}</div>${STROKE_RULES}</div>
+        <div class="card"><h3>Chọn chữ ${learned.length ? "đã học" : "(Bài 1)"}</h3><div class="char-picker">${pool.map((c) => `<button class="${c === target ? "active" : ""}" data-ch="${esc(c)}">${esc(c)}</button>`).join("")}</div>${STROKE_RULES}</div>
       </div>`;
     return {
       html,
@@ -698,7 +706,7 @@
           const c = order[i % order.length];
           box.innerHTML = `<div class="row between"><span class="pill gold">Bài ${c.l}</span><span class="small muted">${(i % order.length) + 1}/${order.length}</span></div>
             <div class="quiz-q"><div class="main" style="font-size:2.4rem">${esc(c.zh)}</div><div class="sub">${pyHtml(c.py)}</div><div class="muted">${esc(c.vi)}</div></div>
-            <div class="row" style="justify-content:center"><button class="btn" data-say="${esc(c.zh)}">${ic("volume")} Bình thường</button><button class="btn" id="slow">🐢 Chậm</button></div>
+            <div class="row center"><button class="btn" data-say="${esc(c.zh)}">${ic("volume")} Bình thường</button><button class="btn" id="slow">🐢 Chậm</button></div>
             <button class="mic" id="mic" title="Bấm rồi nói" aria-label="Bấm rồi nói">${ic("mic")}</button>
             <div class="center small muted" id="smsg">Bấm micro, đợi 1 giây rồi đọc câu trên</div><div id="sfb"></div>
             <div class="row mt" style="justify-content:space-between"><button class="btn" id="prev">← Trước</button><button class="btn btn-primary" id="next">Câu tiếp →</button></div>`;
@@ -719,7 +727,7 @@
               alts.forEach((a) => { const sc = similarity(norm(a), target); if (sc > bestScore) { bestScore = sc; best = a; } });
               const pct = Math.round(bestScore * 100);
               msg.textContent = "Máy nghe được:";
-              fb.innerHTML = `<div class="feedback ${pct >= 80 ? "ok" : pct >= 50 ? "" : "bad"}" style="${pct >= 50 && pct < 80 ? "background:var(--gold-soft);color:var(--gold-text)" : ""}"><span class="zh" style="font-size:1.3rem">${esc(best)}</span><br>Khớp ${pct}% ${pct >= 80 ? "· Rất tốt! 🎉" : pct >= 50 ? "· Khá, thử lại chú ý thanh điệu" : "· Nghe lại mẫu rồi thử lại"}</div>`;
+              fb.innerHTML = `<div class="feedback ${pct >= 80 ? "ok" : pct >= 50 ? "" : "bad"}" style="${pct >= 50 && pct < 80 ? "background:var(--gold-soft);color:var(--gold-text)" : ""}"><span class="zh" style="font-size:1.3rem">${esc(best)}</span><br>Khớp ${pct}% ${pct >= 80 ? "· Rất tốt!" : pct >= 50 ? "· Khá, thử lại chú ý thanh điệu" : "· Nghe lại mẫu rồi thử lại"}</div>`;
               if (pct >= 50) { Store.addXp(pct >= 80 ? 3 : 1); Store.markRoutine("speak"); }
             }, (err) => { mic.classList.remove("rec"); rec = null; msg.textContent = err; });
           };
@@ -755,7 +763,7 @@
           if (!list.length && t) {
             res.innerHTML = `<div class="card center empty"><div class="big-ic">${ic("search")}</div><h3 style="margin:4px 0 6px">Không tìm thấy “${esc(q.value.trim())}”</h3>
               <p class="muted small" style="max-width:46ch;margin:0 auto 14px">Thử gõ ngắn hơn (một ý của nghĩa), gõ pinyin không dấu như <b>nihao</b>, hoặc âm Hán Việt như <b>hảo</b>.${lvv !== "0" ? " Bạn đang lọc theo một cấp; thử tìm ở mọi cấp." : ""}</p>
-              <div class="row" style="justify-content:center">${lvv !== "0" ? `<button class="btn btn-primary" id="all-lv">Tìm ở mọi cấp</button>` : ""}<button class="btn" id="clear-q">Xoá ô tìm</button></div></div>`;
+              <div class="row center">${lvv !== "0" ? `<button class="btn btn-primary" id="all-lv">Tìm ở mọi cấp</button>` : ""}<button class="btn" id="clear-q">Xoá ô tìm</button></div></div>`;
             const al = res.querySelector("#all-lv"); if (al) al.onclick = () => { lv.value = "0"; run(); };
             res.querySelector("#clear-q").onclick = () => { q.value = ""; run(); q.focus(); };
             return;
@@ -775,16 +783,16 @@
     const s = Store.state.settings;
     const voices = TTS.voices;
     const html = `<h1>Cài đặt</h1>
-      <div class="card"><h3 style="margin-top:0">Giọng đọc</h3>
+      <div class="card"><h3>Giọng đọc</h3>
         <p class="small muted">Web dùng giọng tiếng Trung có sẵn trong trình duyệt/hệ điều hành. ${voices.length ? `Tìm thấy ${voices.length} giọng tiếng Trung.` : "<b>Chưa tìm thấy giọng tiếng Trung.</b> Trên Windows: Settings → Time &amp; Language → Language → Add a language → 中文(简体) → tick Text-to-speech. Hoặc mở web bằng Microsoft Edge (có sẵn giọng Xiaoxiao online)."}</p>
         <div class="row"><label>Giọng: <select id="voice"><option value="">Tự động</option>${voices.map((v) => `<option value="${esc(v.name)}" ${s.voice === v.name ? "selected" : ""}>${esc(v.name)} (${esc(v.lang)})</option>`).join("")}</select></label>
         <label>Tốc độ: <input type="number" id="rate" min="0.5" max="1.2" step="0.05" value="${s.rate}"></label><button class="btn btn-sm" data-say="你好，我是你的汉语老师。">${ic("volume")} Thử</button></div></div>
-      <div class="card mt"><h3 style="margin-top:0">Giao diện</h3><div class="row"><button class="btn" id="light">☀ Sáng</button><button class="btn" id="dark">🌙 Tối</button></div>
+      <div class="card mt"><h3>Giao diện</h3><div class="row"><button class="btn" id="light">☀ Sáng</button><button class="btn" id="dark">🌙 Tối</button></div>
         <h3>Cỡ chữ Hán</h3><p class="small muted">Phóng to chữ Hán trong bảng từ vựng, thẻ ôn tập, bài đọc và đề thi. Chữ tiếng Việt giữ nguyên.</p>
         <div class="row">${[["normal", "Bình thường"], ["large", "Lớn"], ["xlarge", "Rất lớn"]].map(([k, v]) => `<button class="btn ${(s.zhSize || "normal") === k ? "btn-primary" : ""}" data-zh="${k}">${v}</button>`).join("")}<span class="zh" style="font-size:calc(1.6rem * var(--zh-scale))">你好，谢谢</span></div></div>
-      <div class="card mt"><h3 style="margin-top:0">Dữ liệu học</h3><p class="small muted">Tiến độ lưu trong trình duyệt này (localStorage). Xuất tệp để sao lưu hoặc chuyển sang máy khác.</p>
+      <div class="card mt"><h3>Dữ liệu học</h3><p class="small muted">Tiến độ lưu trong trình duyệt này (localStorage). Xuất tệp để sao lưu hoặc chuyển sang máy khác.</p>
         <div class="row"><button class="btn" id="export">⬇ Xuất tiến độ (JSON)</button><label class="btn">⬆ Nhập tiến độ <input type="file" id="import" accept=".json" class="hidden"></label><button class="btn" id="reset" style="color:var(--primary)">Xoá toàn bộ tiến độ</button></div></div>
-      <div class="card mt"><h3 style="margin-top:0">Về Nǐ hǎo</h3><p class="small muted">Từ vựng HSK 2.0 cấp 1–6 theo danh sách chính thức 2012 (${VOCAB.length} từ, ${LESSONS.length} bài) và HSK 3.0 theo đề cương 2025 cấp 1–6 (${window.H3 ? H3.words.length : 0} từ, ${window.H3 ? H3.lessons.length : 0} bài bổ sung, 6 đề luyện). Nghĩa tiếng Việt, âm Hán Việt, câu ví dụ, bài học và đề luyện do Nǐ hǎo tự biên soạn. Phát âm và nhận dạng giọng nói dùng Web Speech API của trình duyệt.</p><a class="btn btn-sm" href="#/about">Nguồn dữ liệu và giấy phép</a></div>`;
+      <div class="card mt"><h3>Về Nǐ hǎo</h3><p class="small muted">Từ vựng HSK 2.0 cấp 1–6 theo danh sách chính thức 2012 (${VOCAB.length} từ, ${LESSONS.length} bài) và HSK 3.0 theo đề cương 2025 cấp 1–6 (${window.H3 ? H3.words.length : 0} từ, ${window.H3 ? H3.lessons.length : 0} bài bổ sung, 6 đề luyện). Nghĩa tiếng Việt, âm Hán Việt, câu ví dụ, bài học và đề luyện do Nǐ hǎo tự biên soạn. Phát âm và nhận dạng giọng nói dùng Web Speech API của trình duyệt.</p><a class="btn btn-sm" href="#/about">Nguồn dữ liệu và giấy phép</a></div>`;
     return {
       html,
       after(el) {
@@ -908,7 +916,7 @@
             const prev = Store.state.readings[r.id];
             if (!prev || prev.score < score) { Store.state.readings[r.id] = { done: true, score, at: Date.now() }; Store.addXp(5 + score * 3); Store.save(); }
             const next = READINGS.find((x) => x.after > r.after);
-            qbox.innerHTML = `<div class="card center"><div style="font-size:2.5rem">${score === 3 ? "🎉" : "👍"}</div><h3 style="margin:4px 0">${score}/3 câu đúng</h3><div class="row" style="justify-content:center"><button class="btn" id="rq-again">Làm lại</button>${next ? `<a class="btn btn-primary" href="#/read/${next.id}">Bài đọc tiếp →</a>` : `<a class="btn btn-primary" href="#/read">Danh sách bài đọc</a>`}</div></div>`;
+            qbox.innerHTML = `<div class="card center"><div class="result-ic ${score === 3 ? "ok" : ""}">${ic(score === 3 ? "trophy" : "repeat")}</div><h3 style="margin:4px 0">${score}/3 câu đúng</h3><div class="row center"><button class="btn" id="rq-again">Làm lại</button>${next ? `<a class="btn btn-primary" href="#/read/${next.id}">Bài đọc tiếp →</a>` : `<a class="btn btn-primary" href="#/read">Danh sách bài đọc</a>`}</div></div>`;
             qbox.querySelector("#rq-again").onclick = () => { qi = 0; score = 0; renderQ(); };
             return;
           }

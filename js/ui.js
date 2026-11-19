@@ -94,9 +94,21 @@
   // ---------- Bảng "Thêm" (điện thoại) ----------
   const sheet = document.getElementById("sheet"), backdrop = document.getElementById("sheet-backdrop");
   window.UI = {
-    openSheet() { sheet.style.transform = ""; backdrop.style.opacity = ""; sheet.classList.add("open"); backdrop.classList.add("open"); },
-    closeSheet() { sheet.style.transform = ""; backdrop.style.opacity = ""; sheet.classList.remove("open"); backdrop.classList.remove("open"); },
+    openSheet() {
+      sheet.style.transform = ""; backdrop.style.opacity = ""; sheet.classList.add("open"); backdrop.classList.add("open");
+      const first = sheet.querySelector(".sheet-link"); if (first) first.focus({ preventScroll: true });
+    },
+    closeSheet(restoreFocus = false) { // chỉ trả focus về nút "Thêm" khi người dùng tự đóng, không khi chuyển trang
+      const hadFocus = sheet.contains(document.activeElement);
+      sheet.style.transform = ""; backdrop.style.opacity = ""; sheet.classList.remove("open"); backdrop.classList.remove("open");
+      const more = document.getElementById("more-btn"); if (restoreFocus && hadFocus && more) more.focus({ preventScroll: true });
+    },
   };
+
+  // Vùng nắm để kéo: tay nắm + nhãn nhóm đầu tiên. touch-action:none để trình duyệt không giành cử chỉ cuộn ở đây;
+  // phần còn lại của bảng vẫn cuộn bình thường.
+  const dragZone = [sheet.querySelector(".sheet-handle"), sheet.querySelector(".side-label")].filter(Boolean);
+  dragZone.forEach((z) => { z.style.touchAction = "none"; });
 
   // Vuốt xuống để đóng bảng "Thêm": bảng bám theo ngón tay, nền mờ nhạt dần theo quãng kéo;
   // thả ra thì đóng nếu kéo quá 30% chiều cao hoặc vuốt nhanh, không thì bật về.
@@ -104,7 +116,7 @@
   sheet.addEventListener("pointerdown", (e) => {
     if (e.pointerType === "mouse" || !sheet.classList.contains("open")) return;
     // chỉ bắt đầu kéo khi nội dung đang ở đầu (không giành cử chỉ cuộn)
-    if (sheet.scrollTop > 0 && !e.target.closest(".sheet-handle")) return;
+    if (sheet.scrollTop > 0 && !dragZone.some((z) => z.contains(e.target))) return;
     sg = { id: e.pointerId, y: e.clientY, x: e.clientX, dy: 0, on: false, h: sheet.offsetHeight, lastY: e.clientY, lastT: performance.now(), v: 0 };
   });
   sheet.addEventListener("pointermove", (e) => {
@@ -129,7 +141,7 @@
     const stop = (ev) => { ev.preventDefault(); ev.stopPropagation(); };
     sheet.addEventListener("click", stop, { capture: true, once: true });
     setTimeout(() => sheet.removeEventListener("click", stop, { capture: true }), 0);
-    if (st.dy > st.h * 0.3 || st.v > 0.5) UI.closeSheet();
+    if (st.dy > st.h * 0.3 || st.v > 0.5) UI.closeSheet(true);
     else { sheet.style.transform = ""; backdrop.style.opacity = ""; }
   };
   sheet.addEventListener("pointerup", endSheet);

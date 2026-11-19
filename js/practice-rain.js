@@ -203,7 +203,7 @@
         <div class="rain-stage" id="stage"><canvas id="cv"></canvas><div class="rain-msg" id="msg"></div></div>
         ${isHz
           ? `<div class="rain-pad"><div class="pad-info"><div id="pad-py" class="pad-py"></div><div id="pad-vi" class="muted small"></div><div id="pad-step" class="small"></div><button class="btn btn-sm" id="skip">Bỏ qua từ này</button></div><div class="writer-target pad" id="pad"></div></div>`
-          : `<div class="rain-input"><input id="ans" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="${isVi ? "Nhớ ra từ rồi gõ pinyin, ví dụ ni3hao3" : "Gõ pinyin, ví dụ ni3hao3 hoặc nǐhǎo"}" aria-label="Gõ pinyin"><button class="btn" id="enter">Bắn</button></div>`}
+          : `<div class="rain-input"><input id="ans" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="send" placeholder="${isVi ? "Nhớ ra từ rồi gõ pinyin, ví dụ ni3hao3" : "Gõ pinyin, ví dụ ni3hao3 hoặc nǐhǎo"}" aria-label="Gõ pinyin"><button class="btn" id="enter">Bắn</button></div>`}
         <p class="small muted center rain-foot">${esc(Practice.STD[std].long)} · cấp ${cfg.level} · ${words.length} từ · ${({ easy: "Dễ", normal: "Vừa", hard: "Khó" })[cfg.diff]} · <span class="kbd">Esc</span> tạm dừng</p>
       </div>`;
 

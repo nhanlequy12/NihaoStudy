@@ -51,7 +51,7 @@
 
   function deckCard(split, wsplit) {
     const seg = (sp) => {
-      if (!sp.total) return `<div class="st-stack empty" aria-hidden="true"></div>`;
+      if (!sp.total) return `<div class="st-stack is-empty" aria-hidden="true"></div>`;
       return `<div class="st-stack" role="img" aria-label="${sp.new} mới, ${sp.learning} đang học, ${sp.mature} đã thuộc trên ${sp.total} thẻ">${[["new", "gold"], ["learning", "blue"], ["mature", "green"]].map(([k, c]) => sp[k] ? `<span class="${c}" style="flex-grow:${sp[k]}" title="${sp[k]} thẻ"></span>` : "").join("")}</div>`;
     };
     const legend = (sp) => `<div class="row small st-legend"><span class="pill gold">Mới ${sp.new}</span><span class="pill blue">Đang học ${sp.learning}</span><span class="pill green">Đã thuộc ${sp.mature}</span></div>`;

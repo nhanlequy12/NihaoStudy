@@ -352,5 +352,16 @@ window.VOCAB = [
 ];
 
 window.VOCAB.forEach((w, i) => { w.id = "w" + i; });
-window.vocabById = (id) => window.VOCAB.find((w) => w.id === id);
+// Tra theo mã bằng Map; dựng lại khi VOCAB đổi (tệp dữ liệu sau còn push thêm từ). Mã trùng: lấy từ đầu tiên như find.
+window.vocabById = (() => {
+  let src = null, n = -1, map = new Map();
+  return (id) => {
+    const V = window.VOCAB;
+    if (src !== V || n !== V.length) {
+      src = V; n = V.length; map = new Map();
+      V.forEach((w) => { if (!map.has(w.id)) map.set(w.id, w); });
+    }
+    return map.get(id);
+  };
+})();
 window.vocabByLesson = (l) => window.VOCAB.filter((w) => w.l === l);

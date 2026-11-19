@@ -178,14 +178,14 @@
       }
       const q = list[i]; answered = false;
       const sec = sections ? sections.find((s) => i >= s.from && i < s.to) : null;
-      const head = q.kind === "listen" ? `<button class="btn btn-primary btn-lg" id="play">${ic("volume")} Nghe lại</button>`
+      const head = q.kind === "listen" ? `<button class="btn btn-lg" id="play">${ic("volume")} Nghe lại</button>`
         : q.kind === "word" ? `<div class="main">${esc(q.show.hz)}</div><div class="sub">${pyHtml(q.show.py)}</div>`
         : q.kind === "char" ? `<div class="main vi-text">${esc(q.show.vi)}</div><div class="sub hv">${esc(q.show.hv)}</div>`
         : q.kind === "order" ? `<div class="sub">${pyHtml(q.sub)}</div>`
         : "";
       const body = q.kind === "order"
         ? `<div class="tiles" id="answer"></div><p class="small muted center" style="margin:6px">Bấm vào từ để chuyển lên / xuống</p><div class="tiles" id="bank">${q.tokens.map((t, k) => `<button class="tile zh" data-k="${k}">${esc(t)}</button>`).join("")}</div>
-          <div class="row mt" style="justify-content:center"><button class="btn btn-primary" id="check">Kiểm tra</button></div>`
+          <div class="row mt center"><button class="btn btn-primary" id="check">Kiểm tra</button></div>`
         : `<div class="options">${q.opts.map((o, k) => `<button class="option ${q.kind === "listen" ? "py-opt" : q.kind === "char" ? "zh" : "vi-text"}" data-k="${k}"><span class="kbd-hint">${k + 1}</span>${q.kind === "listen" ? pyHtml(o) : esc(o)}</button>`).join("")}</div>`;
       box.innerHTML = `<div class="quiz-progress">${list.map((_, k) => `<span class="${k < i ? (results[k] ? "ok" : "bad") : k === i ? "cur" : ""}"></span>`).join("")}</div>
         ${sec ? `<div class="eyebrow center">${esc(sec.name)}</div>` : ""}
@@ -241,7 +241,7 @@
       case "tones": return `<div class="grid grid-3 path-tones">${PINYIN.tones.map((t) => `<div class="card tone-card"><div class="mark t${t.n}">${t.mark}</div>
           <svg viewBox="0 0 100 70" aria-hidden="true"><line x1="5" y1="10" x2="5" y2="65" stroke="var(--border)"/><line x1="5" y1="65" x2="95" y2="65" stroke="var(--border)"/><path d="${t.path}" stroke="var(--tone${t.n})" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
           <b>${esc(t.name)}</b><p class="small" style="margin:6px 0">${esc(t.desc)}</p><p class="small muted" style="margin:0 0 8px"><b>Người Việt:</b> ${esc(t.vi)}</p>
-          <div class="row" style="justify-content:center">${t.ex.map((e) => `<button class="btn btn-sm" data-say="${esc(e.split(" ")[1])}">${esc(e)}</button>`).join("")}</div></div>`).join("")}</div>`;
+          <div class="row center">${t.ex.map((e) => `<button class="btn btn-sm" data-say="${esc(e.split(" ")[1])}">${esc(e)}</button>`).join("")}</div></div>`).join("")}</div>`;
       case "toneRules": return `<div class="grid grid-2">${PINYIN.toneRules.map((r) => `<div class="grammar"><div class="pattern">${esc(r.title)}</div><div class="small">${esc(r.body)}</div></div>`).join("")}</div>`;
       case "pinyin": {
         const list = PINYIN[b.key].filter((x) => b.only.includes(x.py));
@@ -251,7 +251,7 @@
       case "strokes": return `<h3>Bảy quy tắc thứ tự nét</h3><div class="grid grid-2">${b.items.map(([rule, ch]) => `<a class="card lesson-card" href="#/write/${encodeURIComponent(ch)}"><div class="lesson-icon">${esc(ch)}</div><div class="lesson-body"><div class="lesson-title">${esc(rule)}</div><div class="lesson-meta">Bấm để xem hoạt hình và tập viết ${esc(ch)}</div></div></a>`).join("")}</div>`;
       case "radicals": return `<div class="grid grid-2">${RADICALS.slice(0, b.n).map((r) => `<div class="card radical-card"><div class="r">${esc(r.r.split(" ")[0])}</div><div style="flex:1"><div><b>${esc(r.r)}</b> · <span class="t${toneOf(r.py)}">${esc(r.py)}</span> · <span class="hv">${esc(r.hv)}</span> · ${esc(r.vi)}</div><div class="exs">${esc(r.ex)}</div></div>${speakBtn(r.r.split(" ")[0])}</div>`).join("")}</div>`;
       case "syllables": return `<div class="card" id="syl-box"></div>`;
-      case "typing": return `<h3>Gõ thử</h3><p class="small muted">Bật bộ gõ tiếng Trung, nghe rồi gõ lại từ vào ô. Gõ đúng chữ Hán là ô chuyển xanh.</p><div class="stack typing">${b.items.map((hz) => { const w = vocabOf(hz); return `<label class="typing-row"><span class="typing-q">${speakBtn(hz)}<span><b>${esc(w.vi)}</b><details class="small muted"><summary>Gợi ý</summary>${pyHtml(w.py)} · gõ «${esc(plain(w.py).replace(/ü/g, "v").replace(/\s/g, "").toLowerCase())}»</details></span></span><input class="search zh" data-want="${esc(hz)}" autocomplete="off" autocapitalize="off" spellcheck="false" lang="zh-CN" aria-label="Gõ chữ Hán của: ${esc(w.vi)}"><span class="typing-ok" aria-hidden="true">${ic("check")}</span></label>`; }).join("")}</div>`;
+      case "typing": return `<h3>Gõ thử</h3><p class="small muted">Bật bộ gõ tiếng Trung, nghe rồi gõ lại từ vào ô. Gõ đúng chữ Hán là ô chuyển xanh.</p><div class="stack typing">${b.items.map((hz) => { const w = vocabOf(hz); return `<label class="typing-row"><span class="typing-q">${speakBtn(hz)}<span><b>${esc(w.vi)}</b><details class="small muted"><summary>Gợi ý</summary>${pyHtml(w.py)} · gõ «${esc(plain(w.py).replace(/ü/g, "v").replace(/\s/g, "").toLowerCase())}»</details></span></span><input class="search zh" data-want="${esc(hz)}" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" lang="zh-CN" aria-label="Gõ chữ Hán của: ${esc(w.vi)}"><span class="typing-ok" aria-hidden="true">${ic("check")}</span></label>`; }).join("")}</div>`;
       default: return "";
     }
   }
@@ -334,7 +334,7 @@
           <div class="lesson-icon">${esc(x.icon)}</div>
           <div class="lesson-body"><div class="lesson-title">Bài ${i + 1}: ${esc(x.title)}</div>
             <div class="lesson-meta">${ic("clock")} ${x.min} phút${b != null ? ` · điểm cao nhất ${b}%` : ""}${!open ? ` · cần đạt ${PASS}% bài trước` : ""}</div></div>
-          ${done ? `<span class="pill green">Xong</span>` : isCur ? `<span class="pill red">Học tiếp</span>` : ""}
+          ${done ? `<span class="pill green">Xong</span>` : isCur ? `<span class="pill primary">Học tiếp</span>` : ""}
         ${open ? `</a>` : `</div>`}</li>`;
     };
     const tOpen = unlocked(st, st.steps.length) && st.steps.every((x) => isDone(x.id) || ps().placed > st.id), tDone = isDone(st.test.id);
@@ -342,7 +342,7 @@
       <div class="eyebrow">${esc(st.name)} · ${esc(st.std)}</div><h1>${esc(st.title)}</h1>
       <p class="subtitle">${esc(st.sub)} ${st.steps.length} bài nhỏ và một bài kiểm tra tổng hợp, dự kiến ${esc(st.time)}.</p>
       <div class="card mb"><div class="row between small"><b>Tiến độ giai đoạn</b><span>${d}/${total}</span></div><div class="progress green mt"><span style="width:${(d / total) * 100}%"></span></div>
-        ${n && n.stage === st ? `<a class="btn btn-primary mt" href="${n.href}">${ic("play")} Tiếp tục: ${n.i < st.steps.length ? `Bài ${n.i + 1}` : "Kiểm tra tổng hợp"}</a>` : ""}</div>
+        ${n && n.stage === st ? `<a class="btn btn-sm mt" href="${n.href}">${ic("play")} Tiếp tục: ${n.i < st.steps.length ? `Bài ${n.i + 1}` : "Kiểm tra tổng hợp"}</a>` : ""}</div>
       ${due ? `<div class="tip">${ic("repeat")} Có <b>${due}</b> thẻ từ vựng đến hạn ôn. Ôn trước khi học bài mới để nhớ lâu hơn. <a href="#/review">Ôn ngay</a></div>` : ""}
       <ol class="steps">${st.steps.map(item).join("")}
         <li class="step ${tDone ? "done" : tOpen ? "open" : "locked"} ${n && n.stage === st && n.i === st.steps.length ? "current" : ""}">
@@ -364,9 +364,9 @@
     const i = idx().at.get(id), x = st.steps[i];
     if (!unlocked(st, i)) {
       const back = `<a href="#/path/${st.id}" class="backlink">${ic("back")} ${esc(st.name)}</a>`;
-      if (!stageOpen(st)) return { html: `${back}<div class="card center empty">${ic("lock", "big-ic")}<h2>${esc(st.name)} chưa mở</h2><p class="muted">Đạt từ ${PASS}% kiểm tra tổng hợp Giai đoạn ${st.id - 1}, hoặc làm kiểm tra đầu vào để được xếp lên giai đoạn này.</p><div class="row" style="justify-content:center"><a class="btn btn-primary" href="#/path/${st.id - 1}">Về Giai đoạn ${st.id - 1}</a><a class="btn" href="#/start/test">Kiểm tra đầu vào</a></div></div>` };
+      if (!stageOpen(st)) return { html: `${back}<div class="card center empty"><div class="big-ic">${ic("lock")}</div><h2>${esc(st.name)} chưa mở</h2><p class="muted">Đạt từ ${PASS}% kiểm tra tổng hợp Giai đoạn ${st.id - 1}, hoặc làm kiểm tra đầu vào để được xếp lên giai đoạn này.</p><div class="row center"><a class="btn btn-primary" href="#/path/${st.id - 1}">Về Giai đoạn ${st.id - 1}</a><a class="btn" href="#/start/test">Kiểm tra đầu vào</a></div></div>` };
       const prev = st.steps[i - 1], short = (y, k) => (y.kind ? y.label : `Bài ${k + 1}`);
-      return { html: `${back}<div class="card center empty">${ic("lock", "big-ic")}<h2>${esc(short(x, i))} chưa mở</h2><p class="muted">Hoàn thành ${esc(stepName(prev, i - 1))} với điểm từ ${PASS}% trở lên để mở bài này.</p><a class="btn btn-primary" href="#/step/${prev.id}">Học ${esc(short(prev, i - 1))}</a></div>` };
+      return { html: `${back}<div class="card center empty"><div class="big-ic">${ic("lock")}</div><h2>${esc(short(x, i))} chưa mở</h2><p class="muted">Hoàn thành ${esc(stepName(prev, i - 1))} với điểm từ ${PASS}% trở lên để mở bài này.</p><a class="btn btn-primary" href="#/step/${prev.id}">Học ${esc(short(prev, i - 1))}</a></div>` };
     }
     if (x.kind === "part") return partStep(st, i, x, tab);
     if (x.kind === "review") return reviewStep(st, i, x);
@@ -411,7 +411,7 @@
               const nx = st.steps[i + 1];
               box.innerHTML = `<div class="card center"><div class="result-ic ${r.pass ? "ok" : ""}">${ic(r.pass ? "trophy" : "repeat")}</div><h2 style="margin:6px 0">${pct}% · ${c}/${n} câu đúng</h2>
                 <p class="muted">${r.pass ? `Bạn đã hoàn thành Bài ${i + 1}.${r.added ? ` ${r.added} từ mới đã vào bộ thẻ ôn tập; hệ thống sẽ nhắc ôn đúng lúc bạn sắp quên.` : ""}${nx ? ` Bài ${i + 2} đã mở.` : " Bài kiểm tra tổng hợp đã mở."}` : `Cần đạt ${PASS}% để mở bài sau. Xem lại phần Học hoặc Luyện tập rồi thử lại.`}</p>
-                <div class="row" style="justify-content:center"><button class="btn" id="again">Làm lại</button>${r.pass ? `<a class="btn btn-primary" href="${nx ? `#/step/${nx.id}` : `#/step/${st.test.id}`}">${nx ? `Bài ${i + 2}: ${esc(nx.title)}` : "Làm kiểm tra tổng hợp"} ${ic("next")}</a>` : `<a class="btn btn-primary" href="#/step/${x.id}/learn">Xem lại bài</a>`}</div></div>`;
+                <div class="row center"><button class="btn" id="again">Làm lại</button>${r.pass ? `<a class="btn btn-primary" href="${nx ? `#/step/${nx.id}` : `#/step/${st.test.id}`}">${nx ? `Bài ${i + 2}: ${esc(nx.title)}` : "Làm kiểm tra tổng hợp"} ${ic("next")}</a>` : `<a class="btn btn-primary" href="#/step/${x.id}/learn">Xem lại bài</a>`}</div></div>`;
               box.querySelector("#again").onclick = go;
             },
           });
@@ -424,7 +424,7 @@
   // ---------- Kiểm tra tổng hợp cuối giai đoạn (mô phỏng đề HSK: Nghe + Đọc) ----------
   function stageTest(st) {
     const open = st.steps.every((x) => isDone(x.id)) || ps().placed > st.id;
-    if (!open) return { html: `<a href="#/path/${st.id}" class="backlink">${ic("back")} ${esc(st.name)}</a><div class="card center empty">${ic("lock", "big-ic")}<h2>Chưa mở</h2><p class="muted">Hoàn thành cả ${st.steps.length} bài của ${esc(st.name)} để làm bài kiểm tra tổng hợp.</p><a class="btn btn-primary" href="#/path/${st.id}">Về danh sách bài</a></div>` };
+    if (!open) return { html: `<a href="#/path/${st.id}" class="backlink">${ic("back")} ${esc(st.name)}</a><div class="card center empty"><div class="big-ic">${ic("lock")}</div><h2>Chưa mở</h2><p class="muted">Hoàn thành cả ${st.steps.length} bài của ${esc(st.name)} để làm bài kiểm tra tổng hợp.</p><a class="btn btn-primary" href="#/path/${st.id}">Về danh sách bài</a></div>` };
     const all = st.steps.flatMap((x) => x.quiz.map((q) => ({ q, x })));
     const listen = shuffle(all.filter((o) => o.q.t === "tone" || o.q.t === "listen" || o.q.t === "syl")).slice(0, st.test.listen);
     const read = shuffle(all.filter((o) => o.q.t === "mcq" || o.q.t === "word" || o.q.t === "radical")).slice(0, st.test.read);
@@ -446,7 +446,7 @@
             const r = saveResult(st.test.id, pct, true);
             box.innerHTML = `<div class="card center"><div class="result-ic ${r.pass ? "ok" : ""}">${ic(r.pass ? "trophy" : "repeat")}</div><h2 style="margin:6px 0">${pct}% · ${c}/${n} câu đúng</h2>
               <p class="muted">${r.pass ? `Chúc mừng, bạn đã hoàn thành ${esc(st.name)} · ${esc(st.title)}! Giờ bạn đã đọc được pinyin, biết viết và gõ chữ Hán. Bước tiếp theo là từ vựng HSK 1.` : `Cần đạt ${PASS}%. Xem lại các bài có điểm thấp rồi làm lại; mỗi lần là một đề mới.`}</p>
-              <div class="row" style="justify-content:center"><button class="btn" id="again">Làm đề khác</button>${r.pass ? `<a class="btn btn-primary" href="#/path/1">Vào Giai đoạn 1 · HSK 1 ${ic("next")}</a>` : `<a class="btn btn-primary" href="#/path/${st.id}">Về danh sách bài</a>`}</div></div>`;
+              <div class="row center"><button class="btn" id="again">Làm đề khác</button>${r.pass ? `<a class="btn btn-primary" href="#/path/1">Vào Giai đoạn 1 · HSK 1 ${ic("next")}</a>` : `<a class="btn btn-primary" href="#/path/${st.id}">Về danh sách bài</a>`}</div></div>`;
             box.querySelector("#again").onclick = () => App.route();
           },
         });
@@ -475,7 +475,7 @@
         <div class="card step-card lesson-row"><div class="lesson-icon">${esc(L.icon)}</div>
           <div class="lesson-body"><div class="lesson-title">${esc(parts[0].lessonName)}: ${esc(L.title)}</div>
             <div class="part-chips">${parts.map(chip).join("")}${R ? (doneAll ? `<a class="part-chip read" href="#/read/${R.id}">${ic("read")}Bài đọc</a>` : `<span class="part-chip locked" title="Mở khi xong bài">${ic("read")}Bài đọc</span>`) : ""}</div></div>
-          ${doneAll ? `<span class="pill green">Xong</span>` : isCur ? `<span class="pill red">Học tiếp</span>` : ""}</div></li>`;
+          ${doneAll ? `<span class="pill green">Xong</span>` : isCur ? `<span class="pill primary">Học tiếp</span>` : ""}</div></li>`;
     };
     const reviewRow = (x) => {
       const k = pos.get(x.id), done = isDone(x.id), op = unlocked(st, k), b = best(x.id), isC = cur && cur.i === k;
@@ -484,7 +484,7 @@
         ${op ? `<a class="card step-card" href="#/step/${x.id}">` : `<div class="card step-card" aria-disabled="true">`}
           <div class="lesson-icon">${esc(x.icon)}</div>
           <div class="lesson-body"><div class="lesson-title">${esc(x.title)}</div><div class="lesson-meta">${ic("clock")} ${x.min} phút · ${x.n} câu ôn ${x.lessons.length} bài của chặng${b != null ? ` · điểm cao nhất ${b}%` : ""}${!op ? " · mở khi xong các phần của chặng" : ""}</div></div>
-          ${done ? `<span class="pill green">Xong</span>` : isC ? `<span class="pill red">Học tiếp</span>` : ""}
+          ${done ? `<span class="pill green">Xong</span>` : isC ? `<span class="pill primary">Học tiếp</span>` : ""}
         ${op ? `</a>` : `</div>`}</li>`;
     };
     const rows = (ids) => {
@@ -522,7 +522,7 @@
       <p class="subtitle">${esc(st.sub)} Chia thành ${nParts} phần nhỏ 15–30 phút${nRev ? `, ${nRev} bài ôn chặng` : ""} và một bài kiểm tra tổng hợp dạng đề HSK, dự kiến ${esc(st.time)}.</p>
       ${!open ? `<div class="warn">${ic("lock")} Giai đoạn này chưa mở. Đạt từ ${PASS}% <a href="#/path/${st.id - 1}">kiểm tra tổng hợp Giai đoạn ${st.id - 1}</a> hoặc làm <a href="#/start/test">kiểm tra đầu vào</a> để mở. Vẫn xem được bài gốc ở <a href="#/lessons/${st.level}">Bài học HSK ${st.level}</a>.</div>` : ""}
       <div class="card mb"><div class="row between small"><b>Tiến độ giai đoạn</b><span>${d}/${total}</span></div><div class="progress green mt"><span style="width:${(d / total) * 100}%"></span></div>
-        ${cur ? `<a class="btn btn-primary mt" href="${cur.href}">${ic("play")} Tiếp tục: ${esc(cur.i < st.steps.length ? stepName(st.steps[cur.i], cur.i) : "Kiểm tra tổng hợp")}</a>` : ""}</div>
+        ${cur ? `<a class="btn btn-sm mt" href="${cur.href}">${ic("play")} Tiếp tục: ${esc(cur.i < st.steps.length ? stepName(st.steps[cur.i], cur.i) : "Kiểm tra tổng hợp")}</a>` : ""}</div>
       ${due ? `<div class="tip">${ic("repeat")} Có <b>${due}</b> thẻ từ vựng đến hạn ôn. Ôn trước khi học bài mới để nhớ lâu hơn. <a href="#/review">Ôn ngay</a></div>` : ""}
       ${list}`;
     return { html };
@@ -532,7 +532,7 @@
   function resultCard(box, r, pct, c, n, text, nextBtn, again, backHref) {
     box.innerHTML = `<div class="card center"><div class="result-ic ${r.pass ? "ok" : ""}">${ic(r.pass ? "trophy" : "repeat")}</div><h2 style="margin:6px 0">${pct}% · ${c}/${n} câu đúng</h2>
       <p class="muted">${r.pass ? text : `Cần đạt ${PASS}% để mở bài sau. Xem lại phần Học hoặc Luyện tập rồi thử lại.`}</p>
-      <div class="row" style="justify-content:center"><button class="btn" id="again">Làm lại</button>${r.pass ? nextBtn : `<a class="btn btn-primary" href="${backHref}">Xem lại bài</a>`}</div></div>`;
+      <div class="row center"><button class="btn" id="again">Làm lại</button>${r.pass ? nextBtn : `<a class="btn btn-primary" href="${backHref}">Xem lại bài</a>`}</div></div>`;
     box.querySelector("#again").onclick = again;
   }
   const nextBtnOf = (st, i) => {
@@ -631,7 +631,7 @@
   // ---------- Giai đoạn 1–6: kiểm tra tổng hợp bằng đề thi thử HSK 2.0 (js/exam.js) ----------
   function examTest(st) {
     const lv = st.test.exam, sp = EXAM_SPEC[lv], back = `<a href="#/path/${st.id}" class="backlink">${ic("back")} ${esc(st.name)} · ${esc(st.title)}</a>`;
-    if (!testOpen(st)) return { html: `${back}<div class="card center empty">${ic("lock", "big-ic")}<h2>Chưa mở</h2><p class="muted">Hoàn thành mọi phần của ${esc(st.name)} để làm bài kiểm tra tổng hợp.</p><a class="btn btn-primary" href="#/path/${st.id}">Về danh sách bài</a></div>` };
+    if (!testOpen(st)) return { html: `${back}<div class="card center empty"><div class="big-ic">${ic("lock")}</div><h2>Chưa mở</h2><p class="muted">Hoàn thành mọi phần của ${esc(st.name)} để làm bài kiểm tra tổng hợp.</p><a class="btn btn-primary" href="#/path/${st.id}">Về danh sách bài</a></div>` };
     const hist = examsOf(lv).slice().reverse().slice(0, 8), done = isDone(st.test.id), nextSt = STAGES.find((s) => s.id === st.id + 1);
     const need = Math.ceil((sp.total * PASS) / 100);
     const html = `${back}<div class="eyebrow">${esc(st.name)} · ${sp.minutes} phút</div><h1>${esc(st.test.title)}</h1>

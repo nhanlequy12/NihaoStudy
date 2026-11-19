@@ -172,7 +172,7 @@
             ${easy ? `<span class="pill">${len(it.zh)} chữ</span> <span class="muted">${esc(String(it.vi).split(/[;；]/)[0])}</span>` : normal ? `<button class="btn btn-sm btn-ghost" id="hint">${ic("info")} Gợi ý nghĩa</button><span id="hintv" class="muted"></span>` : `<span class="muted">${len(it.zh)} chữ · không gợi ý</span>`}
           </div>
           <label class="setup-label" for="dca" style="display:block;margin:14px 0 6px">${pin ? "Gõ pinyin" : "Gõ chữ Hán"}</label>
-          <input id="dca" class="search dc-input ${pin ? "" : "zh"}" autocomplete="off" autocapitalize="off" spellcheck="false" ${pin ? "" : 'lang="zh-CN"'} placeholder="${pin ? "vd: ni3 hao3 hoặc nǐ hǎo" : "Gõ bằng bộ gõ tiếng Trung…"}">
+          <input id="dca" class="search dc-input ${pin ? "" : "zh"}" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done" ${pin ? "" : 'lang="zh-CN"'} placeholder="${pin ? "vd: ni3 hao3 hoặc nǐ hǎo" : "Gõ bằng bộ gõ tiếng Trung…"}">
           <div class="row mt between"><span class="small muted kbd-hint"><span class="kbd">Enter</span> kiểm tra · <span class="kbd">Alt</span>+<span class="kbd">R</span> nghe lại · <span class="kbd">Alt</span>+<span class="kbd">Shift</span>+<span class="kbd">R</span> nghe chậm</span><button class="btn btn-primary" id="check">${ic("check")} Kiểm tra</button></div>
           <div id="fb"></div>
         </div>`;

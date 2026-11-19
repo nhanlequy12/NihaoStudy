@@ -17,7 +17,7 @@
       return `<a href="#/words/${lv}" class="h3-bar"><span class="small"><b>Cấp ${lv}</b> <span class="muted">${n}/${ws.length}</span></span><div class="progress"><span style="width:${ws.length ? (n / ws.length) * 100 : 0}%"></span></div></a>`;
     }).join("");
     return `<div class="card mt"><div class="row between"><div><div class="eyebrow">HSK 3.0 · đề cương 2025</div><h3 style="margin:4px 0 0">${d > 0 ? `Còn ${d} ngày đến kỳ thi HSK 3.0 đầu tiên (13/12/2026)` : d === 0 ? "Hôm nay là kỳ thi HSK 3.0 đầu tiên!" : "HSK 3.0 đã chính thức áp dụng"}</h3></div>
-      <div class="row h3-actions"><a class="btn btn-sm" href="#/words">Từ vựng 3.0</a><a class="btn btn-sm" href="#/lessons/h3">Bài bổ sung</a><a class="btn btn-sm btn-primary" href="#/exam">Đề luyện 3.0</a></div></div>
+      <div class="row h3-actions"><a class="btn btn-sm" href="#/words">Từ vựng 3.0</a><a class="btn btn-sm" href="#/lessons/h3">Bài bổ sung</a><a class="btn btn-sm" href="#/exam">Đề luyện 3.0</a></div></div>
       <p class="small muted" style="margin:8px 0 10px">Số từ HSK 3.0 đã vào bộ thẻ ôn tập, theo từng cấp. Từ đã học ở các bài HSK 2.0 được tính luôn.</p>
       <div class="h3-bars">${bars}</div></div>`;
   }
@@ -67,10 +67,10 @@
           if (t) list = list.filter((w) => w.hz.includes(raw) || strip(w.py).replace(/[\s']/g, "").includes(t.replace(/\s/g, "")) || strip(w.hv).includes(t) || strip(w.vi).includes(t));
           const shown = list.slice(0, 200);
           res.innerHTML = `<p class="small muted">${list.length} từ${list.length > 200 ? " (hiện 200 đầu, gõ để lọc)" : ""}</p>
-            <table class="vocab-table"><thead><tr><th>Chữ</th><th>Pinyin</th><th>Hán Việt</th><th>Nghĩa</th><th>Ví dụ</th><th>Bài</th><th></th></tr></thead><tbody>${shown.map((w) => `<tr>
+            <div class="table-wrap"><table class="vocab-table"><thead><tr><th>Chữ</th><th>Pinyin</th><th>Hán Việt</th><th>Nghĩa</th><th>Ví dụ</th><th>Bài</th><th></th></tr></thead><tbody>${shown.map((w) => `<tr>
               <td class="hz">${esc(w.hz)}</td><td class="py">${pyHtml(w.py)}</td><td class="hv">${esc(w.hv)}</td><td>${esc(w.vi)}${w.cv ? ` <span class="pill gold" title="Nghĩa từ CVDICT (CC BY-SA 4.0), chưa biên tập">CVDICT</span>` : ""}<br><span class="small muted">${esc(w.pos)}</span></td>
               <td class="small">${w.ex && w.ex[0] ? `<span class="zh">${esc(w.ex[0])}</span><br><span class="muted">${pyHtml(w.ex[1])}</span><br>${esc(w.ex[2])}` : ""}</td><td>${lessonCell(w)}</td>
-              <td><div class="row">${speakBtn(w.hz, "btn btn-sm", "Nghe")}<a class="btn btn-sm" href="#/write/${encodeURIComponent(w.hz[0])}">${ic("pen")}<span>Viết</span></a>${!w.id ? "" : Store.state.cards[w.id] ? `<span class="pill green" title="Đã trong bộ thẻ">${ic("check")} Trong thẻ</span>` : `<button class="btn btn-sm" data-add="${esc(w.id)}">${ic("plus")} Thẻ</button>`}</div></td></tr>`).join("")}</tbody></table>`;
+              <td><div class="row">${speakBtn(w.hz, "btn btn-sm", "Nghe")}<a class="btn btn-sm" href="#/write/${encodeURIComponent(w.hz[0])}">${ic("pen")}<span>Viết</span></a>${!w.id ? "" : Store.state.cards[w.id] ? `<span class="pill green" title="Đã trong bộ thẻ">${ic("check")} Trong thẻ</span>` : `<button class="btn btn-sm" data-add="${esc(w.id)}">${ic("plus")} Thẻ</button>`}</div></td></tr>`).join("")}</tbody></table></div>`;
           bindSpeak(res);
           res.querySelectorAll("[data-add]").forEach((b) => b.onclick = () => { const id = b.dataset.add; SRS.addWords([id]); toast("Đã thêm vào bộ thẻ ôn tập", { undo: () => { SRS.remove(id); App.updateBadge(); run(); } }); App.updateBadge(); run(); });
         }
@@ -288,7 +288,7 @@
       <div class="tabs mt"><button class="active" data-f="wrong">Câu sai và câu tự chấm</button><button data-f="all">Tất cả câu</button></div><div id="rev"></div>`;
     const revBox = box.querySelector("#rev");
     const show = (f) => {
-      revBox.innerHTML = rev(f === "all" ? () => true : (x) => !grade(x) || !isAuto(x)) || `<p class="muted">Không có câu sai. 🎉</p>`;
+      revBox.innerHTML = rev(f === "all" ? () => true : (x) => !grade(x) || !isAuto(x)) || `<p class="muted">Không có câu sai.</p>`;
       bindSpeak(revBox);
       revBox.querySelectorAll("[data-self]").forEach((b) => b.onclick = () => { cur.self[+b.dataset.self] = b.dataset.v === "1"; resave(); results(box); });
     };

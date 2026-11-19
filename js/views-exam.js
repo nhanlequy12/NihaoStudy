@@ -225,7 +225,7 @@
     const { exam, result: r } = current;
     const sp = exam.spec;
     const minutes = Math.round((Date.now() - current.startedAt) / 60000);
-    box.innerHTML = `<div class="card center"><div style="font-size:3rem">${r.pass ? "🎉" : "💪"}</div>
+    box.innerHTML = `<div class="card center"><div class="result-ic ${r.pass ? "ok" : ""}">${ic(r.pass ? "trophy" : "repeat")}</div>
         <div class="eyebrow">${esc(sp.name)} · thi thử</div><h1 style="margin:4px 0">${r.total} <span class="muted" style="font-size:1.2rem">/ ${r.max}</span></h1>
         <p>${r.pass ? `<span class="pill green">ĐẬU</span> Vượt mốc ${r.passMark} điểm.` : `<span class="pill">CHƯA ĐẬU</span> Cần ${r.passMark} điểm, còn thiếu ${r.passMark - r.total}.`} <span class="muted small">· ${r.answered}/${r.questions} câu đã trả lời · ${minutes} phút</span></p>
         <div class="grid grid-3 mt">${r.sections.map((sec) => `<div class="card stat"><div class="stat-value">${sec.score}</div><div class="stat-label">${esc(sec.name)} ${esc(sec.vi)} · ${sec.correct}/${sec.total} câu</div>

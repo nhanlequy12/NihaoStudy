@@ -16,6 +16,8 @@
 .stage.done .stage-card { border-color: color-mix(in srgb, var(--green) 45%, var(--border)); }
 .stage-body { flex: 1; min-width: 0; display: grid; gap: 6px; }
 .stage-body .progress { margin-top: 2px; }
+.stage.locked .card.stage-card { opacity: 0.62; }
+.stage.locked .progress { display: none; }
 
 /* ---------- Danh sách bài của một giai đoạn ---------- */
 .steps { gap: 10px; }
@@ -47,10 +49,6 @@
 .step.done .step-card { border-color: color-mix(in srgb, var(--green) 40%, var(--border)); }
 .step.locked .step-card { opacity: 0.62; cursor: not-allowed; }
 .step-card.test .lesson-icon { background: var(--gold-soft); color: var(--gold-text); }
-.big-ic { width: 40px; height: 40px; color: var(--muted); }
-.result-ic { width: 64px; height: 64px; margin: 0 auto; border-radius: 50%; display: grid; place-items: center; background: var(--gold-soft); color: var(--gold-text); }
-.result-ic.ok { background: var(--green-soft); color: var(--green); }
-.result-ic .ic { width: 32px; height: 32px; }
 .path-home .lesson-body .progress { max-width: 360px; }
 @media (max-width: 480px) {
   .step { grid-template-columns: 28px 1fr; gap: 8px; }
@@ -63,7 +61,7 @@
 /* ---------- Nội dung bài ---------- */
 .step-body > p { max-width: 72ch; }
 .step-body h2 { margin-top: 28px; }
-.py-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; margin: 12px 0; }
+.py-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 8px; margin: 12px 0; }
 .py-row {
   display: grid; grid-template-columns: 52px minmax(64px, auto) 1fr 20px; gap: 10px; align-items: center; text-align: left;
   padding: 10px 12px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); color: var(--text);
@@ -101,7 +99,7 @@
 /* ---------- Bảng âm tiết ---------- */
 .syl-ini { margin-bottom: 10px; }
 .syl-ini button { min-width: 44px; font-weight: 700; }
-.syl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; margin-top: 10px; }
+.syl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); gap: 10px; margin-top: 10px; }
 .syl-card { border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px; background: var(--surface); }
 .syl-head { font-weight: 800; font-size: 1.05rem; margin-bottom: 6px; }
 .syl-tones { display: grid; grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); gap: 6px; }
@@ -137,9 +135,13 @@ details.chang > summary {
 }
 details.chang > summary::-webkit-details-marker { display: none; }
 .chang-head { flex: 1; min-width: 0; display: grid; gap: 2px; }
-.chang-ic { width: 18px; height: 18px; color: var(--muted); transition: transform var(--dur-fast); }
+.chang-ic { width: 18px; height: 18px; color: var(--muted); transition: transform var(--dur-fast) var(--ease-out); }
 details.chang[open] .chang-ic { transform: rotate(90deg); }
 details.chang > .steps { padding: 0 12px 14px; }
+@media (pointer: coarse) {
+  .part-chip { min-height: 44px; }
+  .syl-tones { grid-template-columns: repeat(auto-fit, minmax(44px, 1fr)); }
+}
 @media (max-width: 480px) {
   .part-chip { padding: 6px 10px; font-size: 0.8rem; }
   .part-chip .pc-w { display: none; }
