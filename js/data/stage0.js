@@ -21,6 +21,7 @@ window.STAGES.push({
       blocks: [
         { t: "p", text: "Tiếng Trung phổ thông có **4 thanh điệu** và **thanh nhẹ**. Cùng một âm «ma» nhưng đổi thanh là đổi nghĩa: mā 妈 (mẹ), mǎ 马 (ngựa), mà 骂 (mắng). Người Việt có lợi thế vì tiếng Việt cũng có thanh, chỉ cần tránh đọc thanh 4 thành dấu nặng ngắn và thanh 3 thành dấu hỏi quá dài." },
         { t: "tones" },
+        { t: "toneChart" },
         { t: "tip", text: "Vừa đọc vừa vẽ đường thanh bằng tay trong không khí: thanh 1 kẻ ngang cao, thanh 2 đưa lên, thanh 3 võng xuống, thanh 4 chém xuống." },
         { t: "p", text: "Trên web, pinyin được tô màu theo thanh: <span class=\"t1\">thanh 1</span>, <span class=\"t2\">thanh 2</span>, <span class=\"t3\">thanh 3</span>, <span class=\"t4\">thanh 4</span>, <span class=\"t5\">thanh nhẹ</span>. Thanh nhẹ không có dấu, thường ở âm tiết sau: māma, bàba." },
       ],

@@ -249,12 +249,43 @@
     render();
   }
 
+  // Biểu đồ cao độ – trường độ của 4 thanh và thanh nhẹ, theo thang 5 bậc của Triệu Nguyên Nhậm (55, 35, 214, 51).
+  // Trục dọc: cao độ bậc 1 (thấp) → 5 (cao). Bề ngang mỗi đường: trường độ tương đối khi đọc riêng một âm tiết
+  // (thanh 3 dài nhất, thanh 4 ngắn nhất trong 4 thanh, thanh nhẹ rất ngắn và cao độ tùy thanh đứng trước).
+  function toneChart() {
+    const Y = (lv) => 190 - (lv - 1) * 34, X0 = 38, SLOT = 64, UNIT = 52;
+    const T = [
+      { n: 1, name: "Thanh 1", code: "55", dur: 0.8, d: (x, w) => `M${x},${Y(5)} L${x + w},${Y(5)}` },
+      { n: 2, name: "Thanh 2", code: "35", dur: 0.8, d: (x, w) => `M${x},${Y(3)} C${x + w * 0.45},${Y(3)} ${x + w * 0.7},${Y(4.2)} ${x + w},${Y(5)}` },
+      { n: 3, name: "Thanh 3", code: "214", dur: 1, d: (x, w) => `M${x},${Y(2)} C${x + w * 0.2},${Y(1.2)} ${x + w * 0.35},${Y(1)} ${x + w * 0.5},${Y(1)} C${x + w * 0.7},${Y(1)} ${x + w * 0.85},${Y(2.6)} ${x + w},${Y(4)}` },
+      { n: 4, name: "Thanh 4", code: "51", dur: 0.6, d: (x, w) => `M${x},${Y(5)} C${x + w * 0.4},${Y(4.6)} ${x + w * 0.75},${Y(2.6)} ${x + w},${Y(1)}` },
+      { n: 5, name: "Thanh nhẹ", code: "ngắn", dur: 0.3, d: (x, w) => `M${x},${Y(2.5)} L${x + w},${Y(2.5)}` },
+    ];
+    const grid = [1, 2, 3, 4, 5].map((lv) => `<line x1="${X0 - 6}" y1="${Y(lv)}" x2="358" y2="${Y(lv)}" class="tc-grid"/><text x="${X0 - 12}" y="${Y(lv) + 4}" class="tc-lv" text-anchor="end">${lv}</text>`).join("");
+    const lines = T.map((t, i) => {
+      const x = X0 + i * SLOT + 4, w = Math.round(t.dur * UNIT), mid = X0 + i * SLOT + SLOT / 2 - 2;
+      return `<path d="${t.d(x, w)}" stroke="var(--tone${t.n})" class="tc-line"/>
+        <line x1="${x}" y1="207" x2="${x + w}" y2="207" stroke="var(--tone${t.n})" class="tc-dur"/>
+        <text x="${mid}" y="224" text-anchor="middle" class="tc-name">${t.name}</text>
+        <text x="${mid}" y="238" text-anchor="middle" class="tc-code" fill="var(--tone${t.n})">${t.code}</text>`;
+    }).join("");
+    return `<figure class="card tone-chart">
+      <svg viewBox="0 26 364 220" role="img" aria-label="Biểu đồ cao độ và trường độ: thanh 1 cao và bằng (55); thanh 2 đi lên từ bậc 3 tới 5 (35); thanh 3 xuống bậc 1 rồi lên bậc 4 (214), dài nhất; thanh 4 rơi từ bậc 5 xuống 1 (51), ngắn nhất trong bốn thanh; thanh nhẹ rất ngắn.">
+        <text x="2" y="${Y(5) - 14}" class="tc-axis">Cao độ</text>
+        ${grid}${lines}
+        <text x="356" y="${Y(5) - 14}" class="tc-axis" text-anchor="end">vạch dưới = trường độ</text>
+      </svg>
+      <figcaption class="small"><b>Cao độ</b> (trục dọc) chia 5 bậc, 1 thấp nhất, 5 cao nhất; con số dưới tên thanh là bậc đầu → cuối. <b>Trường độ</b> (vạch màu bên dưới) là độ dài tương đối khi đọc riêng một âm: thanh 3 dài nhất, thanh 4 ngắn và dứt khoát, thanh 1 và thanh 2 ở giữa. Thanh nhẹ rất ngắn, cao hay thấp tùy thanh đứng trước. Trong câu, thanh 3 thường chỉ đọc nửa đầu (21).</figcaption>
+    </figure>`;
+  }
+
   // ---------- Khối nội dung của phần Học ----------
   function block(b) {
     switch (b.t) {
       case "p": return `<p>${md(b.text)}</p>`;
       case "tip": return `<div class="tip"><b>Mẹo:</b> ${md(b.text)}</div>`;
       case "rule": return `<div class="grammar"><div class="pattern">${esc(b.title)}</div><div class="small">${md(b.text)}</div></div>`;
+      case "toneChart": return toneChart();
       case "tones": return `<div class="grid grid-3 path-tones">${PINYIN.tones.map((t) => `<div class="card tone-card"><div class="mark t${t.n}">${t.mark}</div>
           <svg viewBox="0 0 100 70" aria-hidden="true"><line x1="5" y1="10" x2="5" y2="65" stroke="var(--border)"/><line x1="5" y1="65" x2="95" y2="65" stroke="var(--border)"/><path d="${t.path}" stroke="var(--tone${t.n})" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
           <b>${esc(t.name)}</b><p class="small" style="margin:6px 0">${esc(t.desc)}</p><p class="small muted" style="margin:0 0 8px"><b>Người Việt:</b> ${esc(t.vi)}</p>
