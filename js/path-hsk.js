@@ -2,7 +2,8 @@
 // Không chép hay soạn nội dung tiếng Trung mới: mỗi phần chỉ giữ tham chiếu (mã bài, mã từ, chỉ số ngữ pháp / câu mẫu).
 // Giai đoạn N = các bài HSK 2.0 cấp N (bài chính + «Bổ sung 2012» của cấp đó; không gồm bài HSK 3.0).
 // Mỗi bài chia 2 phần (A/B), bài từ 18 từ trở lên chia 3 phần (A/B/C); hội thoại, câu mẫu và bài đọc ở phần cuối.
-// Giai đoạn 4–6 dài nên gom thành «chặng» (mỗi chặng 8–11 bài) và có một bài ôn ngắn cuối chặng.
+// Giai đoạn 4–6 dài nên gom thành «chặng» và có một bài ôn ngắn cuối chặng: Giai đoạn 4, 6 chia theo số bài (10 bài/chặng),
+// Giai đoạn 5 chia theo chủ đề (bảng TOPICS, 5–11 bài/chặng; bài chưa có trong bảng vào chặng cuối để không sót bài).
 // Kiểm tra bằng data/scripts/check_path.py. Tệp không dùng DOM để chạy được trong Node.
 (function () {
   const W = window;
@@ -17,7 +18,23 @@
 
   // Thời lượng ước lượng (phút) của một phần; check_path.py tính lại theo đúng các hệ số này
   const MIN = { word: 1.2, grammar: 3, line: 0.5, sentence: 0.3, question: 0.4, tips: 1, base: 5 };
-  const META = { 1: { time: "6–8 tuần" }, 2: { time: "8–12 tuần" }, 3: { time: "4–6 tháng" }, 4: { time: "8–12 tháng", chang: 10 }, 5: { time: "12–16 tháng", chang: 8 }, 6: { time: "18–24 tháng", chang: 10 } };
+  const META = { 1: { time: "6–8 tuần" }, 2: { time: "8–12 tuần" }, 3: { time: "4–6 tháng" }, 4: { time: "8–12 tháng", chang: 10 }, 5: { time: "12–16 tháng" }, 6: { time: "18–24 tháng", chang: 10 } };
+  // Chặng theo chủ đề: tên chặng → mã bài (bài chính rồi «Bổ sung 2012»). Chủ đề cụ thể, đời sống trước; từ trừu tượng và ngữ pháp sau.
+  // Bài ôn của chặng chủ đề dùng mã `sN-c<n>` (không phải `sN-r<n>` của cách chia theo số bài) để tiến độ cũ không được tính cho nội dung khác.
+  const TOPICS = {
+    5: [
+      ["Gia đình, con người và sức khỏe", [85, 86, 87, 88, 305, 307]],
+      ["Ăn uống, trang phục và nhà cửa", [89, 90, 91, 92, 93, 94, 309]],
+      ["Thành phố, đi lại và thiên nhiên", [95, 96, 97, 98, 99, 308]],
+      ["Khoa học, kỹ thuật và trường học", [100, 101, 102, 103, 104, 304]],
+      ["Ngôn ngữ, truyền thông và văn hoá", [105, 106, 107, 108, 109, 110]],
+      ["Xã hội, nhà nước và kinh tế", [111, 112, 113, 114, 115, 116, 117, 118, 306]],
+      ["Tính cách và cảm xúc", [119, 120, 121, 122, 123, 124]],
+      ["Hành động, tư duy và phát triển", [125, 126, 127, 128, 129, 130, 131, 132, 133, 134]],
+      ["Miêu tả sự vật và từ trừu tượng", [135, 136, 137, 138, 139, 140, 141, 142]],
+      ["Ngữ pháp: hư từ và bổ ngữ", [143, 144, 145, 146, 147, 148, 149]],
+    ],
+  };
 
   // Câu nghe chỉ đọc: từ nhiều chữ là từ đầu mục có một cách đọc duy nhất trong VOCAB (máy đọc cả từ, đáp án là pinyin của từ),
   // hoặc chữ đơn một âm theo CC-CEDICT (lấy từ bảng âm tiết: ô không kèm từ ví dụ là chữ chỉ có một cách đọc).
@@ -75,33 +92,54 @@
     ...(N >= 3 ? [["position", "Chọn vị trí từ", "Đặt từ vào đúng chỗ trong câu"], ["fix", "Sửa câu sai", "Tìm câu sai ngữ pháp"], ["translate", "Luyện dịch", "Dịch câu Trung sang Việt"]] : []),
   ].map(([key, label, desc]) => ({ key, href: `#/practice/${key}/hsk2`, label, desc: `${desc} · chọn HSK ${N}` }));
 
+  // chia theo số bài: mỗi chặng `size` bài, nhóm lẻ cuối dưới nửa chặng thì nhập vào chặng trước
+  function groupBySize(lessons, size) {
+    const groups = [];
+    for (let i = 0; i < lessons.length; i += size) groups.push(lessons.slice(i, i + size));
+    if (groups.length > 1 && groups[groups.length - 1].length < size / 2) groups[groups.length - 2].push(...groups.pop());
+    return groups.map((g) => ({ topic: null, lessons: g }));
+  }
+  // chia theo chủ đề: giữ thứ tự bài của giai đoạn trong mỗi chặng; mã bài trùng giữa hai chủ đề thì tính cho chủ đề trước;
+  // bài không có trong bảng (bài mới thêm) vào chặng cuối; chủ đề không còn bài nào thì bỏ
+  function groupByTopic(lessons, topics) {
+    const left = new Set(lessons.map((l) => l.id));
+    const groups = topics.map(([topic, ids]) => {
+      const want = new Set(ids.filter((id) => left.has(id)));
+      want.forEach((id) => left.delete(id));
+      return { topic, want };
+    });
+    left.forEach((id) => groups[groups.length - 1].want.add(id));
+    return groups.filter((g) => g.want.size).map((g) => ({ topic: g.topic, lessons: lessons.filter((l) => g.want.has(l.id)) }));
+  }
+  // «Bài 85–92», «Bài 85–88, 93» …: các dãy liên tiếp viết gọn bằng gạch nối
+  const ranges = (ids) => ids.reduce((rs, id) => {
+    const r = rs[rs.length - 1];
+    if (r && id === r[1] + 1) r[1] = id; else rs.push([id, id]);
+    return rs;
+  }, []).map(([a, b]) => (a === b ? `${a}` : `${a}–${b}`)).join(", ");
+
   function build(N) {
     const lessons = W.LESSONS.filter((l) => !l.h3 && lvOf(l) === N).sort((a, b) => isBS(a) - isBS(b) || a.id - b.id);
     if (!lessons.length) return null;
-    const meta = META[N], size = meta.chang;
-    // gom bài thành chặng: mỗi chặng `size` bài, nhóm lẻ cuối dưới nửa chặng thì nhập vào chặng trước
-    let groups = [lessons];
-    if (size) {
-      groups = [];
-      for (let i = 0; i < lessons.length; i += size) groups.push(lessons.slice(i, i + size));
-      if (groups.length > 1 && groups[groups.length - 1].length < size / 2) groups[groups.length - 2].push(...groups.pop());
-    }
+    const meta = META[N], topics = TOPICS[N], size = meta.chang;
+    const groups = topics ? groupByTopic(lessons, topics) : size ? groupBySize(lessons, size) : [{ topic: null, lessons }];
     const steps = [], chang = [];
     groups.forEach((g, gi) => {
-      const ps = g.flatMap((L) => partsOf(L, N));
+      const ps = g.lessons.flatMap((L) => partsOf(L, N));
       steps.push(...ps);
-      if (!size) return;
-      const reg = g.filter((l) => !isBS(l)).map((l) => l.id), bs = g.length - reg.length;
-      const label = (reg.length ? `Bài ${reg[0]}${reg.length > 1 ? `–${reg[reg.length - 1]}` : ""}` : "") + (bs ? `${reg.length ? " + " : ""}${bs} bài bổ sung 2012` : "");
-      const rv = { id: `s${N}-r${gi + 1}`, kind: "review", chang: gi + 1, title: `Ôn tập chặng ${gi + 1}`, label: `Ôn tập chặng ${gi + 1} · ${label}`, icon: "复", min: 15,
-        lessons: g.map((l) => l.id), parts: ps.map((p) => p.id), words: ps.flatMap((p) => p.words), n: 20 };
+      if (!topics && !size) return;
+      const no = gi + 1, reg = g.lessons.filter((l) => !isBS(l)).map((l) => l.id), bs = g.lessons.length - reg.length;
+      const label = (reg.length ? `Bài ${ranges(reg)}` : "") + (bs ? `${reg.length ? " + " : ""}${bs} bài bổ sung 2012` : "");
+      const name = `Chặng ${no}${g.topic ? ` · ${g.topic}` : ""}`, title = `Ôn tập chặng ${no}${g.topic ? ` · ${g.topic}` : ""}`;
+      const rv = { id: `s${N}-${topics ? "c" : "r"}${no}`, kind: "review", chang: no, title, label: `${title} · ${label}`, icon: "复", min: 15,
+        lessons: g.lessons.map((l) => l.id), parts: ps.map((p) => p.id), words: ps.flatMap((p) => p.words), n: 20 };
       steps.push(rv);
-      chang.push({ no: gi + 1, name: `Chặng ${gi + 1}`, label, lessons: rv.lessons, steps: [...rv.parts, rv.id] });
+      chang.push({ no, name, label, lessons: rv.lessons, steps: [...rv.parts, rv.id] });
     });
     const parts = steps.filter((x) => x.kind === "part"), nRead = parts.filter((p) => p.reading).length;
     return {
       id: N, level: N, name: `Giai đoạn ${N}`, title: `HSK ${N}`, std: `HSK 2.0 cấp ${N}`, time: meta.time,
-      sub: `${lessons.length} bài HSK ${N} sẵn có, ${num(parts.reduce((a, p) => a + p.words.length, 0))} từ, ${lessons.reduce((a, l) => a + l.grammar.length, 0)} điểm ngữ pháp${nRead ? `, ${nRead} bài đọc` : ""}.${chang.length ? ` Gom thành ${chang.length} chặng, cuối mỗi chặng có bài ôn ngắn.` : ""}`,
+      sub: `${lessons.length} bài HSK ${N} sẵn có, ${num(parts.reduce((a, p) => a + p.words.length, 0))} từ, ${lessons.reduce((a, l) => a + l.grammar.length, 0)} điểm ngữ pháp${nRead ? `, ${nRead} bài đọc` : ""}.${chang.length ? ` Gom thành ${chang.length} chặng${topics ? " theo chủ đề" : ""}, cuối mỗi chặng có bài ôn ngắn.` : ""}`,
       lessons: lessons.map((l) => l.id), steps, chang,
       practice: PRACTICE(N),
       test: { id: `s${N}-test`, title: `Kiểm tra tổng hợp Giai đoạn ${N}`, exam: N },
@@ -111,4 +149,5 @@
   for (let N = 1; N <= 6; N++) { if (!W.STAGES.some((s) => s.id === N)) { const st = build(N); if (st) W.STAGES.push(st); } }
   W.STAGES.sort((a, b) => a.id - b.id);
   W.PATH_MIN = MIN;
+  W.PATH_TOPICS = TOPICS;
 })();

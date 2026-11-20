@@ -13,6 +13,9 @@ Mở rộng ý của check_stage0.py (Giai đoạn 0 vẫn kiểm bằng check_s
      một cách đọc (không tính thanh nhẹ) theo CC-CEDICT (data/raw/cedict.txt.gz nếu đã tải, nếu không thì py + py_alt
      của data/hsk/all-words.json, vốn lấy từ CC-CEDICT) và cách đọc đó bằng đáp án. Pinyin đáp án phải hợp lệ.
   7. Bài ôn chặng (Giai đoạn 4–6) gồm đúng từ của các phần trong chặng; chặng nối tiếp, phủ hết các phần.
+     Chặng theo chủ đề (PATH_TOPICS, Giai đoạn 5): mỗi bài của giai đoạn nằm trong đúng một chặng, đúng chặng của bảng
+     (bài không có trong bảng vào chặng cuối), 5–11 bài/chặng, giữ thứ tự bài, tên chặng có chủ đề, bài ôn mã `sN-c<n>`.
+     Chặng theo số bài (Giai đoạn 4, 6): bài ôn mã `sN-r<n>`.
   8. Mã bài không trùng; kiểm tra tổng hợp dùng cấp có trong EXAM_SPEC.
 
 Chạy:  python data/scripts/check_path.py   (cần node)
@@ -32,7 +35,7 @@ for(const m of html.matchAll(/<script src="(js\/data\/[^"]+)"|<script>([^<]*)<\/
   vm.runInContext(m[1]?fs.readFileSync(path.join(root,m[1]),'utf8'):m[2],ctx,{filename:m[1]||'inline'});
 for(const f of ['js/path-hsk.js','js/exam.js']) vm.runInContext(fs.readFileSync(path.join(root,f),'utf8'),ctx,{filename:f});
 const W=ctx.window;
-process.stdout.write(JSON.stringify({SYLLS:W.SYLLABLES.map(r=>r[0]).concat(W.SYLLABLES_RARE||[]),STAGES:W.STAGES.filter(s=>s.id>0),MIN:W.PATH_MIN,EXAM:Object.keys(W.EXAM_SPEC),
+process.stdout.write(JSON.stringify({SYLLS:W.SYLLABLES.map(r=>r[0]).concat(W.SYLLABLES_RARE||[]),STAGES:W.STAGES.filter(s=>s.id>0),MIN:W.PATH_MIN,TOPICS:W.PATH_TOPICS,EXAM:Object.keys(W.EXAM_SPEC),
   LESSONS:W.LESSONS.map(l=>({id:l.id,level:l.level,h3:!!l.h3,g:l.grammar.length,d:(l.dialogue||[]).length,s:(l.sentences||[]).map(s=>s[0])})),
   VOCAB:W.VOCAB.map(w=>({id:w.id,hz:w.hz,py:w.py,vi:w.vi,l:w.l})),READINGS:W.READINGS.map(r=>({id:r.id,after:r.after,level:r.level}))}));
 """
@@ -230,10 +233,27 @@ def main():
             flat = [i for c in st["chang"] for i in c["steps"]]
             if flat != [x["id"] for x in st["steps"]]:
                 errs.append(f"Giai đoạn {N}: các chặng không phủ đúng thứ tự các bài")
-            for c in st["chang"]:
+            topics = data["TOPICS"].get(str(N))
+            if topics:
+                # chặng theo chủ đề: dựng lại từ bảng như path-hsk.js (bài trùng tính cho chủ đề trước, bài thiếu vào chặng cuối)
+                left, groups = set(want), []
+                for topic, tids in topics:
+                    got = [i for i in tids if i in left]
+                    left -= set(got)
+                    groups.append((topic, set(got)))
+                groups[-1][1].update(left)
+                groups = [(t, [i for i in want if i in g]) for t, g in groups if g]
+                if [c["lessons"] for c in st["chang"]] != [g for _, g in groups]:
+                    errs.append(f"Giai đoạn {N}: chặng không khớp bảng chủ đề PATH_TOPICS")
+                for c, (topic, _) in zip(st["chang"], groups):
+                    if c["name"] != f"Chặng {c['no']} · {topic}" or not 5 <= len(c["lessons"]) <= 11:
+                        errs.append(f"Giai đoạn {N} chặng {c['no']}: tên «{c['name']}» hoặc số bài {len(c['lessons'])} sai (cần 5–11)")
+            for k, c in enumerate(st["chang"], 1):
                 rv = next(x for x in st["steps"] if x["id"] == c["steps"][-1])
                 ids[rv["id"]] += 1
                 n["bài ôn chặng"] += 1
+                if c["no"] != k or rv["id"] != f"s{N}-{'c' if topics else 'r'}{k}" or rv["chang"] != k:
+                    errs.append(f"{rv['id']}: số thứ tự chặng / mã bài ôn sai (chặng {k})")
                 if rv["kind"] != "review" or rv["parts"] != c["steps"][:-1]:
                     errs.append(f"{rv['id']}: bài ôn không khớp chặng")
                 ws = [w for x in st["steps"] if x["id"] in rv["parts"] for w in x["words"]]

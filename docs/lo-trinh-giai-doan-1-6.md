@@ -14,8 +14,12 @@ Giai đoạn 1–6 được **sinh tự động** từ bài học HSK 2.0 sẵn 
   - 1,2 phút mỗi từ, 3 phút mỗi điểm ngữ pháp, 0,5 phút mỗi câu hội thoại, 0,3 phút mỗi câu mẫu.
   - 0,4 phút mỗi câu kiểm tra, 1 phút đọc mẹo, cộng 5 phút luyện tập.
 - **Chặng:** Giai đoạn 4–6 gom bài thành chặng; mỗi chặng kết thúc bằng một bài ôn 20 câu (15 phút).
-  - Giai đoạn 4, 6: 10 bài/chặng. Giai đoạn 5: 8 bài/chặng.
-  - Nhóm lẻ cuối có ít hơn nửa chặng thì nhập vào chặng trước.
+  - Giai đoạn 4, 6: 10 bài/chặng, nhóm lẻ cuối có ít hơn nửa chặng thì nhập vào chặng trước. Bài ôn mã `sN-r<n>`.
+  - Giai đoạn 5: chia theo **chủ đề** (bảng `TOPICS` trong `js/path-hsk.js`, 10 chặng, 6–10 bài/chặng), tên chặng kèm chủ đề
+    («Chặng 7 · Tính cách và cảm xúc»). Trong mỗi chặng giữ thứ tự bài của giai đoạn (bài chính rồi Bổ sung 2012). Bài chưa có
+    trong bảng tự vào chặng cuối nên không bao giờ sót bài. Bài ôn mã `s5-c<n>` (khác `s5-r<n>` của cách chia 8 bài trước đây):
+    tiến độ bài ôn cũ không được tính cho chặng mới vì nội dung khác; các phần `s5-<bài><a|b|c>` đã học vẫn được giữ, người đang
+    học tiếp tục từ phần chưa xong đầu tiên theo thứ tự mới.
   - Phải đạt bài ôn mới mở chặng sau.
 
 ## Mỗi phần nhỏ (`#/step/sN-<bài><a|b|c>`)
@@ -55,15 +59,25 @@ Giai đoạn 1–2 dẫn tới 5 chức năng: Mưa từ vựng, Điền từ, S
 | 2 · HSK 2 | 12 (13–24) | 24 | 150 | 48 | 3 | – | 186 (36) | 120 | 596 phút ≈ 10 giờ | đề HSK 2: 60 câu, 55 phút |
 | 3 · HSK 3 | 21 (25–44 + BS 2) | 42 | 304 | 64 | 4 | – | 367 (63) | 254 | 1.037 phút ≈ 17 giờ | đề HSK 3: 80 câu, 90 phút (có Viết) |
 | 4 · HSK 4 | 41 (45–84 + BS 3) | 82 | 615 | 124 | 7 | 4 | 738 (123) | 551 | 2.036 phút ≈ 34 giờ | đề HSK 4: 100 câu, 105 phút |
-| 5 · HSK 5 | 71 (85–149 + BS 4–9) | 213 | 1.420 | 250 | 8 | 9 | 1.633 (213) | 1.283 | 4.611 phút ≈ 77 giờ | đề HSK 5: 100 câu, 125 phút |
+| 5 · HSK 5 | 71 (85–149 + BS 4–9) | 213 | 1.420 | 250 | 8 | 10 | 1.633 (213) | 1.283 | 4.611 phút ≈ 77 giờ | đề HSK 5: 100 câu, 125 phút |
 | 6 · HSK 6 | 121 (150–270) | 363 | 2.421 | 402 | 12 | 12 | 2.784 (363) | 2.310 | 7.822 phút ≈ 130 giờ | đề HSK 6: 101 câu, 135 phút (có 缩写) |
-| **Tổng** | **279** | **750** | **5.069** | **940** | **37** | **25** | **5.906** | **4.646** | **≈ 279 giờ** | |
+| **Tổng** | **279** | **750** | **5.069** | **940** | **37** | **26** | **5.906** | **4.646** | **≈ 279 giờ** | |
 
 Thời lượng là thời gian học phần mới, chưa tính ôn thẻ hằng ngày, bài đọc và thi thử.
 
 **Chặng:**
 - Giai đoạn 4: 45–54 · 55–64 · 65–74 · 75–84 + Bổ sung 3.
-- Giai đoạn 5: 85–92 · 93–100 · … · 141–148 · 149 + Bổ sung 4–9.
+- Giai đoạn 5 (theo chủ đề):
+  1. Gia đình, con người và sức khỏe: 85–88 + Bổ sung 5, 7 (6 bài).
+  2. Ăn uống, trang phục và nhà cửa: 89–94 + Bổ sung 9 (7 bài).
+  3. Thành phố, đi lại và thiên nhiên: 95–99 + Bổ sung 8 (6 bài).
+  4. Khoa học, kỹ thuật và trường học: 100–104 + Bổ sung 4 (6 bài).
+  5. Ngôn ngữ, truyền thông và văn hoá: 105–110 (6 bài).
+  6. Xã hội, nhà nước và kinh tế: 111–118 + Bổ sung 6 (9 bài).
+  7. Tính cách và cảm xúc: 119–124 (6 bài).
+  8. Hành động, tư duy và phát triển: 125–134 (10 bài).
+  9. Miêu tả sự vật và từ trừu tượng: 135–142 (8 bài).
+  10. Ngữ pháp: hư từ và bổ ngữ: 143–149 (7 bài).
 - Giai đoạn 6: 150–159 · 160–169 · … · 250–259 · 260–270.
 
 **Bài đọc** mở ở phần cuối của bài tương ứng:
@@ -114,6 +128,36 @@ Thời lượng là thời gian học phần mới, chưa tính ôn thẻ hằng
 - `css/path.css`: nút phần (`.part-chip`), chặng gập (`details.chang`).
 - `data/scripts/check_path.py` (mới): kiểm tra dữ liệu Giai đoạn 1–6.
 
+## Bù HSK 3.0 (20/11/2026)
+
+Đề thi HSK 3.0 (đề cương 2025) áp dụng từ 13/12/2026. Lộ trình vẫn theo HSK 2.0; **cuối mỗi Giai đoạn N** nối thêm các bài
+«Bổ sung HSK 3.0» (`H3_LESSONS`, `level` = N) dưới tên **Bù HSK 3.0**: từ và ngữ pháp HSK 3.0 cấp N chưa có trong HSK 2.0 cấp N.
+
+- **Sinh trong `js/path-h30.js`** (nạp ngay sau `js/path-hsk.js`, sau `h30-words.js`/`h30-lessons.js`; không dùng DOM, chạy được
+  trong Node). Chỉ tham chiếu mã bài `h3b-xx`, mã từ và chỉ số ngữ pháp / câu mẫu; không soạn nội dung tiếng Trung mới.
+- **Từ:** `H3_LESSONS.words` là chữ Hán, tra như `js/h30.js`: có trong `VOCAB` thì dùng chung mã (mục đầu tiên cùng chữ, vd. 说 →
+  `h3_说` của Bổ sung 2012), chỉ có trong `HSK3_WORDS` thì mã `h3_<chữ>`. `path.js` thêm `H3.extraList()` vào chỉ mục từ để
+  `wordById`, bảng từ vựng, câu hỏi và SRS/WSRS dùng được các từ này.
+- **Chia phần** như bài HSK 2.0 (học · luyện nhanh · kiểm tra nhanh, đạt 70 %, từ vào bộ thẻ) nhưng chia theo **thời lượng** thay vì
+  theo số từ: phần cuối mang hội thoại + 8 câu mẫu nên nhận ít từ hơn; lấy k nhỏ nhất (2–4) mà mọi phần ≤ 30 phút. Kết quả: 3 phần/bài,
+  bài 35 từ (h3b-12, h3b-13) thành 4 phần (A–D), 24–30 phút/phần.
+- **Mã mới, tiến độ cũ không đổi:** phần `sN-h3b-xx<a|b|c|d>` (vd. `s1-h3b-01a`); Giai đoạn 4–6 thêm chặng cuối «Bù HSK 3.0»
+  (`opt: true`) với bài ôn `sN-h3r`. Giai đoạn 1–3 không chia chặng: các phần bù là một khối riêng sau bài HSK 2.0, trước kiểm tra.
+- **Không bắt buộc (`opt: true`):** kiểm tra tổng hợp vẫn mở khi xong các phần HSK 2.0; giai đoạn tính «xong» và tiến độ `d/total`
+  chỉ đếm phần HSK 2.0 + kiểm tra. Lý do: người đang học hoặc đã qua giai đoạn không bị khóa lại. Phần bù đầu tiên mở khi xong phần
+  HSK 2.0 cuối *hoặc* đã đạt kiểm tra tổng hợp; các phần bù sau nối tiếp nhau. `next()` gợi ý: phần HSK 2.0 → phần bù (nếu chưa đạt
+  kiểm tra) → kiểm tra tổng hợp; đã đạt kiểm tra thì sang giai đoạn sau.
+- **Đồng bộ với trang Bài bổ sung:** xong mọi phần của một bài bù thì `h3b-xx` vào `completedLessons` (và ngược lại, bài đã hoàn thành
+  ở `#/lesson/h3b-xx` tính là xong mọi phần). Tab Luyện tập liên kết công cụ với chuẩn HSK 3.0 cấp N chọn sẵn.
+- **Câu nghe:** cùng quy tắc với HSK 2.0, tập cách đọc lấy từ `VOCAB` ∪ `HSK3_WORDS`; chữ đơn phải là ô một cách đọc trong bảng
+  âm tiết (vd. 照, 刚, 停 dùng được; 转, 数, 空, 们 không).
+- **Số liệu:** Giai đoạn 1: 3 bài → 9 phần, 91 từ · Giai đoạn 2: 3 → 9, 83 từ · Giai đoạn 3: 6 → 19, 186 từ · Giai đoạn 4: 14 → 43 phần
+  + 1 bài ôn, 394 từ · Giai đoạn 5–6: chưa có bài bổ sung nên không có gì thêm. Tổng 754 lượt từ, 638 từ dùng cho câu nghe.
+- **Kiểm tra:** `python data/scripts/check_path_h30.py` (cần node; đặt `PYTHONIOENCODING=utf-8` trên Windows): đúng bài theo cấp,
+  mọi từ có thật và mỗi chữ của bài đúng một phần, không phần rỗng, thời lượng 15–30, câu nghe chỉ từ một cách đọc (chữ đơn đối chiếu
+  CC-CEDICT như `check_path.py`), mã bước không trùng toàn `STAGES`, chặng bù đúng vị trí. `check_path.py` không đổi (chỉ nạp
+  `path-hsk.js`) và vẫn 0 lỗi.
+
 ## Kiểm tra độ chính xác
 
 `python data/scripts/check_path.py`:
@@ -124,9 +168,9 @@ Nguồn cách đọc chữ đơn: py + py_alt trong data/hsk/all-words.json (l�
   Giai đoạn 2: 12 bài → 24 phần, 150 từ, 3 bài đọc, 0 chặng, 596 phút (phần 22–29 phút), 120 từ dùng cho câu nghe
   Giai đoạn 3: 21 bài → 42 phần, 304 từ, 4 bài đọc, 0 chặng, 1037 phút (phần 17–27 phút), 254 từ dùng cho câu nghe
   Giai đoạn 4: 41 bài → 82 phần, 615 từ, 7 bài đọc, 4 chặng, 2036 phút (phần 23–29 phút), 551 từ dùng cho câu nghe
-  Giai đoạn 5: 71 bài → 213 phần, 1420 từ, 8 bài đọc, 9 chặng, 4611 phút (phần 18–26 phút), 1283 từ dùng cho câu nghe
+  Giai đoạn 5: 71 bài → 213 phần, 1420 từ, 8 bài đọc, 10 chặng, 4611 phút (phần 18–26 phút), 1283 từ dùng cho câu nghe
   Giai đoạn 6: 121 bài → 363 phần, 2421 từ, 12 bài đọc, 12 chặng, 7822 phút (phần 18–26 phút), 2310 từ dùng cho câu nghe
-Đã kiểm: 750 phần, 5069 lượt từ, 16733 phút, 4646 câu nghe (từ an toàn), 5906 câu quiz, 5069 câu drill, 37 bài đọc, 25 bài ôn chặng
+Đã kiểm: 750 phần, 5069 lượt từ, 16733 phút, 4646 câu nghe (từ an toàn), 5906 câu quiz, 5069 câu drill, 37 bài đọc, 26 bài ôn chặng
 Không có lỗi.
 ```
 
@@ -175,7 +219,7 @@ Không có lỗi.
 - ~~Giai đoạn 0: chưa chạy lại `check_stage0.py`~~: đã chạy ngày 19/11 trên máy có `data/raw/cedict.txt.gz`; `check_stage0.py` và `check_path.py` (dùng CC-CEDICT gốc) đều 0 lỗi.
 - ~~Đề HSK 5 chưa có viết đoạn 80 chữ~~: đã thêm ngày 19/11 (dạng `w_paragraph` trong `js/exam.js`). Câu 100 của đề thật cho tranh; web thay bằng chủ đề kèm từ gợi ý vì chưa có tranh.
 - ~~Kho luyện tập HSK 6~~: đã bổ sung (xem bảng Luyện tập theo cấp).
-- **Chặng Giai đoạn 5:** chia theo số bài (8 bài, trùng nhịp bài đọc), chưa theo chủ đề.
+- ~~Chặng Giai đoạn 5 chia theo số bài, chưa theo chủ đề~~: đã chia theo chủ đề ngày 20/11 (10 chặng, bài ôn mã `s5-c<n>`).
 - **Thời lượng:** công thức ước lượng, chưa đo trên người học thật.
 - **Người đã học bài HSK cũ:** khi bắt đầu lộ trình, vẫn phải làm bài ôn chặng (Giai đoạn 4–6) trước khi mở chặng sau và kiểm tra tổng hợp.
 - **Nghe thử trên thiết bị thật:** chưa nghe thử các từ dùng cho câu nghe, giống việc còn treo của Giai đoạn 0.

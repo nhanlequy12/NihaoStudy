@@ -53,12 +53,8 @@ Số phần đã sinh: bài dưới 18 từ chia 2 phần, bài từ 18 từ tr�
 Đã xong: 10 bài, 60 từ, 118 câu kiểm tra, kiểm tra tổng hợp, kiểm tra đầu vào, bảng âm tiết. Chi tiết ở [lo-trinh-giai-doan-0.md](lo-trinh-giai-doan-0.md).
 
 Còn treo:
-- ⬜ **Video trong file zip** («đọc chữ Hán không phụ thuộc pinyin»): chưa có nội dung vì chưa nghe được lời nói. Có hai cách:
-  - (a) Cài ffmpeg và Whisper để chép lời offline trên máy.
-  - (b) Người dùng tự tóm tắt ý chính.
-
-  Có nội dung rồi thì gắn vào Bài 9 (Bộ thủ) hoặc một mục mẹo riêng, sau khi rà độ chính xác.
-- ⬜ **Nghe thử trên thiết bị thật** (Chrome, Edge, điện thoại): kiểm tra máy đọc đúng chữ trong câu hỏi nghe và ô bảng âm tiết. Chữ nhiều cách đọc đã được thay bằng từ ví dụ nhưng chưa nghe bằng tai.
+- ✅ **Video trong file zip** (20/11): chép lời bằng faster-whisper (mô hình small) và ffmpeg. Video nói tiếng Việt về cách nhớ mặt chữ không phụ thuộc pinyin, theo thứ tự chữ → âm → nghĩa, gồm 4 bước: nhìn chữ trước, tách chữ thành các phần (明 = 日 + 月, 休 = 亻 + 木), học chữ trong từ, ôn giãn cách. Đã tóm tắt vào Bài 9 (Bộ thủ). Ví dụ chỉ dùng chữ và từ có trong VOCAB (明天, 休息, 日, 月); không chép câu tiếng Trung mới.
+- ⬜ **Nghe thử trên thiết bị thật** (Chrome, Edge, điện thoại): kiểm tra máy đọc đúng chữ trong câu hỏi nghe và ô bảng âm tiết. Chữ nhiều cách đọc đã được thay bằng từ ví dụ nhưng chưa nghe bằng tai. Máy phát triển (Windows) không có giọng tiếng Trung nào, nên chỉ thử được trên máy người học.
 - ⬜ Theo dõi tỉ lệ đúng từng câu nếu sau này có thống kê. Câu nào sai quá nhiều thì xem lại cách hỏi.
 
 ## Giai đoạn 1 · HSK 1 (HSK 2.0) ✅
@@ -100,7 +96,7 @@ Còn treo:
 ## Giai đoạn 5 · HSK 5 (HSK 2.0) ✅
 
 - ✅ Khung từ bài 85–149 và 6 bài bổ sung: 71 bài → 213 phần (3 phần mỗi bài), 1.420 từ.
-- ✅ Chia 9 chặng, mỗi chặng 8 bài, khớp nhịp bài đọc; mỗi chặng có bài ôn. ⬜ Chưa chia theo chủ đề.
+- ✅ Chia 10 chặng theo chủ đề (20/11), ví dụ «Gia đình, con người và sức khỏe», «Ngữ pháp: hư từ và bổ ngữ»; mỗi chặng 6–10 bài và có bài ôn (`s5-c<n>`). Bài đã đạt vẫn mở được dù thứ tự mới đặt nó sau một bài chưa học.
 - ✅ 8 bài đọc; đề HSK 5. ✅ Phần Viết có dạng viết đoạn 80 chữ (19/11): câu 99 dùng đủ 5 từ cùng một bài; câu 100 thay tranh bằng chủ đề của một bài kèm 3 từ gợi ý (dùng ít nhất 2). Máy chấm sơ bộ: 60–120 chữ Hán và đủ từ bắt buộc.
 - ✅ Hiệu năng: trang giai đoạn gập theo chặng, mỗi dòng là một bài có các nút phần A/B/C, danh sách trên điện thoại ngắn.
 - ✅ Kiểm tra, chạy thử, commit và push.
@@ -112,11 +108,13 @@ Còn treo:
 - ✅ Kho luyện tập cấp 6 đã bổ sung (`5cf2322`, `dc5b479`): Sắp xếp câu 85, Chọn vị trí từ 166, Sửa câu sai 19, Điền từ 119, Hỏi đáp 22 câu. Cả 8 chức năng đều có câu cấp 6.
 - ✅ Kiểm tra, chạy thử, commit và push.
 
-## Việc chung chưa quyết
+## Việc chung (20/11/2026)
 
-- ⬜ **Lộ trình HSK 3.0** (đề cương 2025, thi từ 13/12/2026): web có 5.334 từ HSK 3.0 cấp 1–6, 26 bài bổ sung và 6 đề luyện. Cần chọn một trong hai hướng:
-  - (a) Làm lộ trình song song theo HSK 3.0.
-  - (b) Giữ lộ trình HSK 2.0 và thêm bài bù phần chênh lệch theo từng cấp.
-- ⬜ **Học offline:** service worker lưu sẵn mọi tệp nạp trong `index.html`, nhưng `js/data/h30-exams.js` (đề luyện HSK 3.0) và `js/data/h30-words-79.js` (từ cấp 7–9) chỉ tải khi mở trang, nên phải mở một lần lúc có mạng mới dùng được offline. Cân nhắc lưu sẵn hai tệp này lúc cài.
-- ⬜ Đồng bộ tiến độ giữa nhiều thiết bị: hiện chỉ lưu trên trình duyệt (xem `03-ke-hoach-trien-khai.md`, giai đoạn 2 có tài khoản).
-- ⬜ Máy jili (`~/nhanle/NihaoStudy`) đang ở bản cũ: chạy `rm HUONG-DAN-SSH.txt`, `git pull`, rồi `git fetch -p` để bỏ các nhánh đã xoá.
+- ✅ **Lộ trình HSK 3.0:** chọn hướng (b): giữ lộ trình HSK 2.0 và thêm khối «Bù HSK 3.0» không bắt buộc vào cuối Giai đoạn 1–4, lấy từ 26 bài bổ sung HSK 3.0 (cấp 1: 3 bài, cấp 2: 3, cấp 3: 6, cấp 4: 14; tổng 80 phần, 754 từ). HSK 3.0 cấp 5–6 chưa có bài bổ sung. Kiểm bằng `data/scripts/check_path_h30.py`. Chi tiết ở [lo-trinh-giai-doan-1-6.md](lo-trinh-giai-doan-1-6.md).
+- ✅ **Học offline:** service worker (bản v2) lưu sẵn `js/data/h30-exams.js` và `js/data/h30-words-79.js` ngay lúc cài.
+- ✅ **Chuyển tiến độ giữa các thiết bị** (không cần máy chủ): Cài đặt › Dữ liệu học. Có các cách sau:
+  - Mã đồng bộ (nén gzip) để sao chép và dán.
+  - Nút «Gửi sang máy khác» (chia sẻ tệp trên điện thoại).
+  - Nhập tệp JSON.
+
+  Mặc định là **gộp**: mỗi thẻ giữ lần ôn mới nhất, các bài đã học được hợp lại, điểm lấy cao nhất. Muốn ghi đè thì chọn «Thay toàn bộ». Đồng bộ tự động qua tài khoản vẫn cần máy chủ (xem `03-ke-hoach-trien-khai.md`, giai đoạn 2).

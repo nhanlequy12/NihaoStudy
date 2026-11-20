@@ -4,14 +4,16 @@
 // - Điều hướng (mở trang): trả index.html trong bộ nhớ đệm khi mất mạng.
 // - CDN (Hanzi Writer, dữ liệu nét chữ, Google Fonts): lưu khi dùng, để chữ đã xem vẫn luyện viết được khi offline.
 // Đổi VERSION khi sửa chính tệp này (hoặc muốn ép tải lại toàn bộ); nội dung js/css tự cập nhật qua stale-while-revalidate.
-const VERSION = "v1";
+const VERSION = "v2";
 const SHELL = "nihao-shell-" + VERSION;
 const CDN = "nihao-cdn-v1"; // giữ qua các phiên bản: tệp CDN đều có số phiên bản cố định
 const KEEP = [SHELL, CDN];
 
 const SCOPE = self.registration.scope; // vd. https://nhanlequy12.github.io/NihaoStudy/
 const INDEX = new URL("index.html", SCOPE).href;
-const FIXED = ["index.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/icon.svg", "icons/apple-touch-icon.png"]
+const FIXED = ["index.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/icon.svg", "icons/apple-touch-icon.png",
+  // tệp chỉ nạp khi mở trang (đề luyện HSK 3.0, từ cấp 7–9): lưu sẵn để dùng offline ngay sau khi cài
+  "js/data/h30-exams.js", "js/data/h30-words-79.js"]
   .map((p) => new URL(p, SCOPE).href);
 // Chỉ lưu CDN trong danh sách này (không bao giờ lưu API, đăng nhập...)
 const CDN_HOSTS = ["cdn.jsdelivr.net", "fonts.googleapis.com", "fonts.gstatic.com", "unpkg.com", "cdnjs.cloudflare.com"];

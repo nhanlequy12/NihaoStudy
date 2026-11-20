@@ -779,6 +779,33 @@
   }
 
   // ---------- Cài đặt ----------
+  // Đồng bộ tiến độ giữa các máy: tệp JSON, mã đồng bộ, chia sẻ tệp. Không dùng URL, không gửi lên máy chủ.
+  const syncSummary = () => {
+    const m = Store.summary(), t = m.updatedAt ? new Date(m.updatedAt) : null;
+    return `Cập nhật lần cuối: <b>${t ? t.toLocaleString("vi-VN", { dateStyle: "short", timeStyle: "short" }) : "chưa có"}</b> · ${m.cards} thẻ ôn tập${m.writeCards ? ` · ${m.writeCards} thẻ viết` : ""} · ${m.lessons} bài học xong${m.steps ? ` · ${m.steps} bước lộ trình` : ""}`;
+  };
+  const syncFileName = () => `nihaostudy-${Store.today()}.json`;
+  const syncDownload = () => { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([Store.exportJSON()], { type: "application/json" })); a.download = syncFileName(); a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000); };
+  const syncKB = (n) => (n < 1024 ? `${n} B` : `${(n / 1024).toFixed(n < 10240 ? 1 : 0)} KB`);
+  // Nhập theo chế độ đang chọn; trả về true nếu đã ghi
+  async function syncApply(text, el) {
+    const replace = el.querySelector('input[name="sync-mode"]:checked').value === "replace";
+    if (replace && !(await uiConfirm("Toàn bộ tiến độ trên máy này sẽ bị thay bằng dữ liệu vừa nhập (kể cả cài đặt). Không thể hoàn tác.", { title: "Thay toàn bộ tiến độ?", okText: "Thay toàn bộ", danger: true }))) return false;
+    try {
+      if (replace) { Store.importJSON(text); toast("Đã thay toàn bộ tiến độ"); App.setTheme(Store.state.settings.theme || "light"); App.setZh(Store.state.settings.zhSize); }
+      else {
+        const r = Store.mergeJSON(text), parts = [];
+        if (r.added) parts.push(`${r.added} thẻ mới`);
+        if (r.updated) parts.push(`${r.updated} thẻ cập nhật`);
+        if (r.lessons) parts.push(`${r.lessons} bài học`);
+        if (r.steps) parts.push(`${r.steps} bước lộ trình`);
+        toast(parts.length ? `Đã gộp: ${parts.join(", ")}` : "Đã gộp, không có gì mới");
+      }
+    } catch (err) { toast(/không giải nén/.test(err.message) ? err.message : "Dữ liệu không hợp lệ, tiến độ giữ nguyên", { type: "error" }); return false; }
+    App.updateBadge(); App.route();
+    return true;
+  }
+
   function settings() {
     const s = Store.state.settings;
     const voices = TTS.voices;
@@ -790,8 +817,18 @@
       <div class="card mt"><h3>Giao diện</h3><div class="row"><button class="btn" id="light">☀ Sáng</button><button class="btn" id="dark">🌙 Tối</button></div>
         <h3>Cỡ chữ Hán</h3><p class="small muted">Phóng to chữ Hán trong bảng từ vựng, thẻ ôn tập, bài đọc và đề thi. Chữ tiếng Việt giữ nguyên.</p>
         <div class="row">${[["normal", "Bình thường"], ["large", "Lớn"], ["xlarge", "Rất lớn"]].map(([k, v]) => `<button class="btn ${(s.zhSize || "normal") === k ? "btn-primary" : ""}" data-zh="${k}">${v}</button>`).join("")}<span class="zh" style="font-size:calc(1.6rem * var(--zh-scale))">你好，谢谢</span></div></div>
-      <div class="card mt"><h3>Dữ liệu học</h3><p class="small muted">Tiến độ lưu trong trình duyệt này (localStorage). Xuất tệp để sao lưu hoặc chuyển sang máy khác.</p>
-        <div class="row"><button class="btn" id="export">⬇ Xuất tiến độ (JSON)</button><label class="btn">⬆ Nhập tiến độ <input type="file" id="import" accept=".json" class="hidden"></label><button class="btn" id="reset" style="color:var(--primary)">Xoá toàn bộ tiến độ</button></div></div>
+      <div class="card mt"><h3>Dữ liệu học</h3><p class="small muted">Tiến độ lưu trong trình duyệt này (localStorage), không gửi lên máy chủ nào. Xuất tệp hoặc mã đồng bộ để sao lưu hoặc chuyển sang máy khác.</p>
+        <p class="small sync-sum" id="sync-sum">${syncSummary()}</p>
+        <div class="row"><button class="btn" id="export">⬇ Xuất tiến độ (JSON)</button><label class="btn">⬆ Nhập tiến độ <input type="file" id="import" accept=".json,application/json" class="hidden"></label><button class="btn" id="share">Gửi sang máy khác</button></div>
+        <fieldset class="sync-mode"><legend class="small muted">Khi nhập tệp hoặc mã:</legend>
+          <label><input type="radio" name="sync-mode" value="merge" checked> Gộp với tiến độ hiện có</label>
+          <label><input type="radio" name="sync-mode" value="replace"> Thay toàn bộ</label></fieldset>
+        <h3>Mã đồng bộ</h3><p class="small muted">Sao chép mã ở máy này rồi dán vào ô bên dưới ở máy kia (qua Zalo, ghi chú, email…). Mã chứa toàn bộ tiến độ, đừng chia sẻ công khai.</p>
+        <div class="row"><button class="btn" id="sync-copy">Sao chép mã</button><span class="small muted" id="sync-size">Đang tạo mã…</span></div>
+        <textarea id="sync-out" class="sync-text hidden" readonly rows="3" aria-label="Mã đồng bộ của máy này"></textarea>
+        <textarea id="sync-in" class="sync-text" rows="3" placeholder="Dán mã đồng bộ từ máy khác vào đây" aria-label="Dán mã đồng bộ" spellcheck="false" autocomplete="off"></textarea>
+        <div class="row"><button class="btn btn-primary" id="sync-apply">Nhập mã</button></div>
+        <div class="row mt"><button class="btn" id="reset" style="color:var(--primary)">Xoá toàn bộ tiến độ</button></div></div>
       <div class="card mt"><h3>Về Nǐ hǎo</h3><p class="small muted">Từ vựng HSK 2.0 cấp 1–6 theo danh sách chính thức 2012 (${VOCAB.length} từ, ${LESSONS.length} bài) và HSK 3.0 theo đề cương 2025 cấp 1–6 (${window.H3 ? H3.words.length : 0} từ, ${window.H3 ? H3.lessons.length : 0} bài bổ sung, 6 đề luyện). Nghĩa tiếng Việt, âm Hán Việt, câu ví dụ, bài học và đề luyện do Nǐ hǎo tự biên soạn. Phát âm và nhận dạng giọng nói dùng Web Speech API của trình duyệt.</p><a class="btn btn-sm" href="#/about">Nguồn dữ liệu và giấy phép</a></div>`;
     return {
       html,
@@ -802,8 +839,33 @@
         el.querySelector("#light").onclick = () => App.setTheme("light");
         el.querySelector("#dark").onclick = () => App.setTheme("dark");
         el.querySelectorAll("[data-zh]").forEach((b) => b.onclick = () => { App.setZh(b.dataset.zh); el.querySelectorAll("[data-zh]").forEach((x) => x.classList.toggle("btn-primary", x === b)); });
-        el.querySelector("#export").onclick = () => { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([Store.exportJSON()], { type: "application/json" })); a.download = `nihaostudy-${Store.today()}.json`; a.click(); };
-        el.querySelector("#import").onchange = (e) => { const f = e.target.files[0]; if (!f) return; f.text().then((t) => { try { Store.importJSON(t); toast("Đã nhập tiến độ"); App.updateBadge(); } catch (err) { toast("Tệp không hợp lệ"); } }); };
+        el.querySelector("#export").onclick = syncDownload;
+        el.querySelector("#import").onchange = (e) => { const f = e.target.files[0]; e.target.value = ""; if (!f) return; f.text().then((t) => syncApply(t, el), () => toast("Tệp không hợp lệ")); };
+        // Điện thoại: mở bảng chia sẻ với tệp JSON; không hỗ trợ thì tải tệp về
+        el.querySelector("#share").onclick = async () => {
+          const file = typeof File === "function" ? new File([Store.exportJSON()], syncFileName(), { type: "application/json" }) : null;
+          if (file && navigator.canShare && navigator.share && navigator.canShare({ files: [file] })) {
+            try { await navigator.share({ files: [file], title: "Tiến độ Nǐ hǎo" }); } catch (err) { if (err.name !== "AbortError") { syncDownload(); toast("Không chia sẻ được, đã tải tệp về"); } }
+          } else { syncDownload(); toast("Đã tải tệp tiến độ, hãy gửi tệp này sang máy kia"); }
+        };
+        // Mã đồng bộ: tạo sẵn khi mở trang để bấm sao chép được ngay (Safari cần gọi clipboard trong cú bấm)
+        let code = null;
+        const size = el.querySelector("#sync-size"), out = el.querySelector("#sync-out"), inp = el.querySelector("#sync-in");
+        const prep = () => Store.toCode().then((c) => { code = c; size.textContent = `Mã dài ${c.length.toLocaleString("vi-VN")} ký tự (${syncKB(c.length)})${c.startsWith("NH1j.") ? " · chưa nén" : ""}`; return c; });
+        prep().catch(() => { size.textContent = "Không tạo được mã"; });
+        el.querySelector("#sync-copy").onclick = async () => {
+          const c = code || (await prep().catch(() => null));
+          if (!c) { toast("Không tạo được mã"); return; }
+          try { await navigator.clipboard.writeText(c); toast("Đã sao chép mã đồng bộ"); out.classList.add("hidden"); }
+          catch (err) { out.value = c; out.classList.remove("hidden"); out.focus(); out.select(); toast("Không sao chép tự động được, hãy chọn và sao chép mã trong ô", { type: "info" }); }
+        };
+        el.querySelector("#sync-apply").onclick = async () => {
+          const raw = inp.value.trim();
+          if (!raw) { toast("Hãy dán mã đồng bộ vào ô trước", { type: "info" }); inp.focus(); return; }
+          let text;
+          try { text = await Store.fromCode(raw); } catch (err) { toast(/không giải nén/.test(err.message) ? err.message : "Mã không hợp lệ, tiến độ giữ nguyên", { type: "error" }); return; }
+          await syncApply(text, el);
+        };
         el.querySelector("#reset").onclick = async () => { if (await uiConfirm("Toàn bộ bộ thẻ, bài đã học, lịch sử thi và chuỗi ngày sẽ bị xoá khỏi trình duyệt này. Nên xuất tệp sao lưu trước. Không thể hoàn tác.", { title: "Xoá toàn bộ tiến độ?", okText: "Xoá hết", danger: true })) { Store.reset(); toast("Đã xoá toàn bộ tiến độ"); location.hash = "#/"; } };
       },
     };

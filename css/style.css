@@ -1149,3 +1149,13 @@ html:has(.sheet.open) { overflow: hidden; }
   .sheet.open { opacity: 1; visibility: visible; transition: opacity var(--dur-base) var(--ease-out), visibility 0s !important; }
   @media (hover: hover) and (pointer: fine) { button.ps-slot:hover { transform: none; } }
 }
+
+/* =========================================================
+   Đồng bộ tiến độ (Cài đặt → Dữ liệu học)
+   ========================================================= */
+.sync-sum { margin: 0 0 12px; }
+.sync-mode { border: 0; padding: 0; margin: 14px 0 4px; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.sync-mode legend { padding: 0; margin-bottom: 6px; }
+.sync-mode label { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer; }
+.sync-mode input { accent-color: var(--primary); width: 18px; height: 18px; margin: 0; }
+.sync-text { display: block; width: 100%; box-sizing: border-box; margin: 10px 0; padding: 9px 12px; min-height: 72px; resize: vertical; border: 1px solid var(--border-input); border-radius: var(--radius-sm); background: var(--surface); color: var(--text); font: 0.8rem/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; word-break: break-all; }

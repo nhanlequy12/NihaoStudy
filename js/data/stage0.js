@@ -255,6 +255,12 @@ window.STAGES.push({
         { t: "p", text: "Phần lớn chữ Hán gồm một **bộ thủ** gợi nghĩa và một phần gợi âm. Ví dụ 妈 (mẹ) = 女 (nữ, phụ nữ) + 马 (mǎ, gợi âm «ma»). Biết bộ thủ giúp đoán nghĩa và nhớ chữ lâu hơn nhiều." },
         { t: "radicals", n: 12 },
         { t: "tip", text: "Nhiều bộ có dạng rút gọn khi đứng bên trái: 人 → 亻, 水 → 氵, 心 → 忄, 手 → 扌." },
+        // Tóm tắt video TikTok trong tệp zip «Làm sao nhớ mặt chữ mà không phụ thuộc pinyin» (chép lời bằng Whisper, 20/11/2026)
+        { t: "p", text: "**Nhớ mặt chữ, không phụ thuộc pinyin.** Nhiều người đọc chữ nhớ chữ quên vì học sai thứ tự: pinyin → nghĩa → rồi mới cố nhớ mặt chữ. Hãy đổi thành **chữ → âm → nghĩa**, theo 4 bước:" },
+        { t: "rule", title: "Bước 1 · Nhìn chữ trước, đừng nhìn pinyin", text: "Đọc một đoạn ngắn với pinyin đang ẩn. Từ nào chưa biết thì đánh dấu, tra từ điển hoặc bật pinyin để xem, rồi đọc to khoảng 5 lần: hai lần đầu nhìn dấu thanh, các lần sau che đi và tự nhớ thanh điệu." },
+        { t: "rule", title: "Bước 2 · Tách chữ thành các phần", text: "Chữ chưa nhớ thì tách ra bộ thủ và phần quen thuộc. Ví dụ 明 (sáng, trong 明天) = 日 (mặt trời) + 月 (mặt trăng), cả hai đều phát sáng. 休 (trong 休息, nghỉ ngơi) = 亻 (người) + 木 (cây): người tựa gốc cây nghỉ. Không phải chữ nào cũng giải thích được bằng hình, nhưng nhận ra phần quen thuộc giúp nhớ nhanh hơn." },
+        { t: "rule", title: "Bước 3 · Học chữ trong từ", text: "Đừng học một chữ đứng riêng. Gom 3–4 từ cùng chứa chữ đó, đúng trình độ đang học, và gặp chúng trong nhiều câu khác nhau. Gặp nhiều lần trong các từ khác nhau, mắt sẽ nhận ra chữ rất nhanh." },
+        { t: "rule", title: "Bước 4 · Ôn giãn cách, đừng nhồi một lần", text: "Bài đọc hôm nay thì ngày mai đọc lại, không bật pinyin; quên chỗ nào quay lại bước 1. Mỗi ngày một bài, cuối tuần đọc lại các bài trong tuần. Đọc to thay vì lặp chữ 20 lần cho có. Thẻ Ôn tập và Đọc hiểu (pinyin ẩn sẵn) của web làm đúng việc này." },
       ],
       words: ["你", "吃", "好", "字", "明天", "水"],
       sentences: ["字", "明天", "水"],
